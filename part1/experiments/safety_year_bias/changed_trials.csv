@@ -1,0 +1,3 @@
+experiment,ID,start_year,actual_reasons,original_prediction,adjusted_prediction,original_Safety_probability,adjusted_Safety_probability,original_trial_f1,adjusted_trial_f1,trial_f1_change
+boost_005,TR08868,2008,Other,Other,Safety,8.684505182005609e-05,0.04563927038350635,1.0,0.0,-1.0
+boost_010,TR08868,2008,Other,Other,Safety,8.684505182005609e-05,0.09119169571519263,1.0,0.0,-1.0

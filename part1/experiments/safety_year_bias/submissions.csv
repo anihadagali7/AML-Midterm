@@ -1,0 +1,3 @@
+experiment,maximum_probability_boost,submission_file,test_rows,test_trials_changed_from_unadjusted,test_Safety_predictions,test_fallback_trials,validation_sample_f1,validation_macro_f1,kaggle_score,kaggle_status,submission_sha256
+boost_005,0.05,part1_kmeans_K2_safety_boost_005_submission.csv,312,7,64,24,0.8440170940170939,0.6547007894066718,0.86111,reported; assumed +0.05,d33018dc6c2dd4e15f8112a8483e1ef9cf7ef6ede7662c3316088428e5aa68df
+boost_010,0.1,part1_kmeans_K2_safety_boost_010_submission.csv,312,10,67,22,0.8440170940170939,0.6547007894066718,,pending manual submission,179a52a155420e9f93060ed6c624bba1ce22bd9f745819951cb4f6037a00f262

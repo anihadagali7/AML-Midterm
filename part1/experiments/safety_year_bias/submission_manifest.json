@@ -1,0 +1,45 @@
+{
+  "submissions": [
+    {
+      "experiment": "boost_005",
+      "maximum_probability_boost": 0.05,
+      "submission_file": "part1_kmeans_K2_safety_boost_005_submission.csv",
+      "test_rows": 312,
+      "test_trials_changed_from_unadjusted": 7,
+      "test_Safety_predictions": 64,
+      "test_fallback_trials": 24,
+      "validation_sample_f1": 0.8440170940170939,
+      "validation_macro_f1": 0.6547007894066718,
+      "kaggle_score": 0.86111,
+      "kaggle_status": "reported; assumed +0.05",
+      "submission_sha256": "d33018dc6c2dd4e15f8112a8483e1ef9cf7ef6ede7662c3316088428e5aa68df",
+      "kaggle_change_vs_unadjusted": -0.01282
+    },
+    {
+      "experiment": "boost_010",
+      "maximum_probability_boost": 0.1,
+      "submission_file": "part1_kmeans_K2_safety_boost_010_submission.csv",
+      "test_rows": 312,
+      "test_trials_changed_from_unadjusted": 10,
+      "test_Safety_predictions": 67,
+      "test_fallback_trials": 22,
+      "validation_sample_f1": 0.8440170940170939,
+      "validation_macro_f1": 0.6547007894066718,
+      "kaggle_score": null,
+      "kaggle_status": "pending manual submission",
+      "submission_sha256": "179a52a155420e9f93060ed6c624bba1ce22bd9f745819951cb4f6037a00f262"
+    }
+  ],
+  "prediction_files_identical": false,
+  "kaggle_comparator_unadjusted": 0.87393,
+  "model_file": "experiments/kmeans/models/k02.joblib",
+  "model_sha256": "2c5c8ea2057a3dfa358fa16dba7bc2520f2493c1e129f19afaff8da4a4df326d",
+  "training_year_mean": 2005.0146788990826,
+  "training_year_std": 3.2767970960712236,
+  "formula": "Safety' = min(1, Safety + max_boost * clip((year - training_mean) / training_std, 0, 1))",
+  "threshold": 0.5,
+  "fallback": "highest-probability reason if no label reaches threshold",
+  "validation_selected_maximum_boost": 0.0,
+  "purpose": "User-requested Kaggle comparison of previously tested Safety adjustments",
+  "score_assignment_note": "Score reported by Michael; assigned to +0.05 because it was the recommended first submission. Boost strength was not explicitly confirmed."
+}
