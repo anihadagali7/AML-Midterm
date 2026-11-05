@@ -1,0 +1,880 @@
+disease,training_trials,known_label_trials
+breast cancer,81,12
+lymphoma,48,16
+leukemia,45,13
+lung cancer,41,7
+prostate cancer,41,10
+multiple myeloma,33,5
+colorectal cancer,26,3
+head and neck cancer,25,5
+ovarian cancer,24,5
+pancreatic cancer,22,0
+myelodysplastic syndromes,20,4
+non-small cell lung cancer,18,1
+"carcinoma, non-small-cell lung",17,1
+cancer,16,0
+anemia,16,2
+bladder cancer,15,7
+esophageal cancer,15,3
+schizophrenia,13,0
+hiv infections,13,0
+melanoma,12,0
+metastatic cancer,12,2
+gastric cancer,12,1
+pain,12,1
+breast neoplasms,11,1
+non-hodgkin's lymphoma,11,2
+pulmonary hypertension,11,1
+multiple myeloma and plasma cell neoplasm,11,4
+cervical cancer,10,2
+crohn's disease,10,3
+fallopian tube cancer,10,1
+renal cell carcinoma,9,0
+liver cancer,9,3
+metastatic breast cancer,9,1
+graft versus host disease,9,4
+parkinson's disease,9,6
+chronic lymphocytic leukemia,8,2
+hepatocellular carcinoma,8,0
+sickle cell disease,8,1
+kidney cancer,8,1
+prostatic neoplasms,7,0
+rheumatoid arthritis,7,0
+multiple sclerosis,7,0
+sarcoma,7,3
+myelodysplastic syndrome,7,1
+"diabetes mellitus, type 2",7,2
+non small cell lung cancer,7,1
+brain and central nervous system tumors,7,3
+glioblastoma multiforme,6,0
+hypertension,6,1
+type 2 diabetes,6,0
+acute myeloid leukemia,6,1
+extrahepatic bile duct cancer,6,2
+small cell lung cancer,6,0
+chronic myeloproliferative disorders,6,4
+"lymphoma, non-hodgkin",6,0
+rectal cancer,6,0
+hypercholesterolemia,6,0
+metastatic melanoma,6,1
+non-small-cell lung cancer,6,0
+"unspecified adult solid tumor, protocol specific",6,1
+adenocarcinoma of the prostate,5,1
+metastatic colorectal cancer,5,0
+cardiovascular diseases,5,0
+alzheimer's disease,5,0
+depression,5,1
+fatigue,5,1
+gallbladder cancer,5,1
+"unspecified childhood solid tumor, protocol specific",5,1
+"carcinoma, squamous cell",5,0
+chronic kidney disease,5,0
+primary peritoneal cavity cancer,5,1
+"pulmonary disease, chronic obstructive",4,0
+"lymphoma, follicular",4,0
+osteoarthritis,4,0
+brain tumor,4,0
+recurrent breast cancer,4,0
+stage iv breast cancer,4,0
+stage iv prostate cancer,4,0
+recurrent colon cancer,4,1
+recurrent rectal cancer,4,1
+sepsis,4,0
+asthma,4,1
+psoriasis,4,0
+melanoma (skin),4,2
+heart diseases,4,0
+hematologic diseases,4,1
+lupus nephritis,4,0
+atherosclerosis,4,0
+esophageal neoplasms,4,1
+systemic lupus erythematosus,4,1
+"lymphoma, b-cell",4,1
+overactive bladder,4,1
+ulcerative colitis,4,1
+hiv infection,4,1
+congestive heart failure,4,1
+chronic myelogenous leukemia,4,0
+colorectal neoplasms,4,0
+atrial fibrillation,4,1
+"lung cancer, non-small cell",3,0
+stage i prostate cancer,3,0
+pancreatic neoplasms,3,1
+thromboembolism,3,0
+benign prostatic hyperplasia,3,0
+adenocarcinoma of the colon,3,1
+adenocarcinoma of the rectum,3,1
+stage iv colon cancer,3,1
+stage iv rectal cancer,3,1
+"hepatitis c, chronic",3,0
+chronic hepatitis c,3,0
+secondary myelofibrosis,3,0
+"arthritis, rheumatoid",3,0
+"carcinoma, renal cell",3,1
+epilepsy,3,0
+drug/agent toxicity by tissue/organ,3,1
+mantle cell lymphoma,3,1
+osteoporosis,3,0
+uterine cancer,3,1
+"lupus erythematosus, systemic",3,0
+neoplasms,3,0
+colorectal carcinoma,3,0
+idiopathic pulmonary fibrosis,3,0
+healthy,3,0
+colon cancer,3,0
+myeloma,3,1
+"neoplasms, breast",3,0
+sickle cell anemia,3,1
+neuroblastoma,3,1
+mesothelioma,3,0
+solid tumor,3,0
+non-small-cell lung carcinoma,3,1
+myelodysplastic syndrome (mds),3,0
+cognitive/functional effects,3,1
+nausea,3,0
+polycythemia vera,3,1
+gastrointestinal stromal tumor,3,0
+acute myelogenous leukemia,3,0
+peritoneal cancer,3,0
+recurrent melanoma,3,0
+stage iv melanoma,3,0
+"carcinoma, hepatocellular",3,0
+skin cancer,3,0
+hepatitis b,3,0
+nausea and vomiting,3,0
+acute lymphoblastic leukemia,3,0
+squamous cell carcinoma,3,0
+schizoaffective disorder,2,0
+stage ii prostate cancer,2,0
+pancreatic adenocarcinoma,2,0
+recurrent prostate cancer,2,0
+stage iii prostate cancer,2,0
+neuralgia,2,1
+renal failure,2,0
+diabetes mellitus,2,0
+cognition disorders,2,0
+anaplastic thyroid cancer,2,0
+recurrent adult acute lymphoblastic leukemia,2,0
+recurrent grade 1 follicular lymphoma,2,0
+recurrent grade 2 follicular lymphoma,2,0
+recurrent grade 3 follicular lymphoma,2,0
+refractory chronic lymphocytic leukemia,2,0
+stage i chronic lymphocytic leukemia,2,0
+stage ii chronic lymphocytic leukemia,2,0
+stage iii chronic lymphocytic leukemia,2,0
+stage iv chronic lymphocytic leukemia,2,0
+"heart failure, congestive",2,0
+evidence of liver transplantation,2,0
+infertility,2,0
+hodgkin's disease,2,1
+kidney neoplasms,2,0
+breast neoplasm,2,0
+venous thromboembolism,2,0
+oral complications,2,2
+radiation toxicity,2,1
+acute coronary syndrome (acs),2,0
+advanced non-small cell lung cancer,2,0
+follicular lymphoma,2,0
+thrombocytopenia,2,1
+"stress disorders, post-traumatic",2,1
+interstitial cystitis,2,0
+diabetic macular edema,2,0
+diabetic retinopathy,2,0
+hodgkin lymphoma,2,0
+neurotoxicity,2,0
+non-hodgkins lymphoma,2,0
+gliosarcoma,2,0
+malignant glioma,2,0
+aplastic anemia,2,0
+advanced cancer,2,0
+gastric adenocarcinoma,2,0
+"neoplasms, hormone-dependent",2,0
+lung disease,2,1
+pulmonary fibrosis,2,0
+"carcinoma, large cell",2,0
+cerebrovascular accident,2,0
+myocardial infarction,2,1
+bone marrow disease,2,1
+diabetes complications,2,0
+myelodysplastic/myeloproliferative diseases,2,1
+transitional cell carcinoma of the bladder,2,0
+brain neoplasms,2,1
+"metastases, neoplasm",2,2
+metastatic pancreatic cancer,2,0
+myelodysplastic syndromes (mds),2,0
+thalassemia,2,1
+b-cell lymphoma,2,0
+hormone refractory prostate cancer,2,0
+transitional cell cancer of the renal pelvis and ureter,2,1
+urethral cancer,2,1
+"lymphoma, non-hodgkin's",2,0
+neuropathy,2,0
+tobacco use disorder,2,1
+islet cell tumor,2,0
+heart failure,2,0
+non-hodgkin lymphoma (nhl),2,0
+aged,2,0
+hemoglobins,2,0
+neoplastic meningitis,2,0
+gastrointestinal carcinoid tumor,2,0
+quality of life,2,2
+peritoneal cavity cancer,2,0
+end-stage renal disease,2,1
+stroke,2,0
+recurrent non-small cell lung carcinoma,2,0
+non-hodgkin lymphoma,2,0
+urinary incontinence,2,0
+type 1 diabetes mellitus,2,0
+malignant melanoma,2,0
+"carcinoma, non-small cell lung",2,0
+bipolar disorder,2,1
+adenocarcinoma,2,0
+metastases,2,0
+pleural mesothelioma,2,0
+inflammation,2,0
+neoplasm metastasis,2,0
+carcinoma of unknown primary,2,0
+bipolar i disorder,2,0
+waldenstrom's macroglobulinemia,2,0
+lung diseases,2,1
+diabetes,2,0
+advanced solid tumors,2,0
+myeloproliferative disorders,2,1
+ovarian neoplasms,2,1
+anal cancer,2,0
+liver metastases,2,0
+burkitt lymphoma,2,0
+stage iiib or iv non-small cell lung cancer,2,0
+chronic myelomonocytic leukemia,2,0
+chronic obstructive pulmonary disease,2,0
+cytomegalovirus infections,2,0
+clear cell renal cell carcinoma,1,0
+recurrent renal cell cancer,1,0
+stage iv renal cell cancer,1,0
+male erectile disorder,1,0
+fever,1,0
+neutropenia,1,0
+stage i multiple myeloma,1,0
+stage ii multiple myeloma,1,0
+stage iii multiple myeloma,1,0
+chemotherapeutic agent toxicity,1,0
+astrocytoma,1,0
+glioma,1,0
+cushing's disease,1,0
+stage iiib breast cancer,1,0
+stage iiic breast cancer,1,0
+recurrent ovarian carcinoma,1,0
+stage iii colon cancer,1,0
+stage iii rectal cancer,1,0
+neuropathic peripheral pain,1,1
+elevated prostate specific antigen,1,0
+cirrhosis,1,0
+recurrent fallopian tube cancer,1,0
+recurrent ovarian epithelial cancer,1,0
+recurrent primary peritoneal cavity cancer,1,0
+cutaneous t-cell lymphoma stage i,1,0
+cutaneous t-cell lymphoma stage ii,1,0
+cutaneous t-cell lymphoma stage iii,1,0
+cutaneous t-cell lymphoma stage iv,1,0
+albuminuria,1,0
+colorectal neoplasm,1,0
+esophageal neoplasm,1,0
+head and neck neoplasm,1,0
+chronic prostatitis with chronic pelvic pain syndrome,1,0
+prostatitis,1,0
+metastastic breast cancer,1,0
+extensive disease,1,0
+first-line,1,0
+hand-foot skin reaction,1,0
+rash,1,0
+"complex regional pain syndrome, type i",1,0
+age-related macular degeneration,1,0
+low back pain,1,1
+"low back pain, recurrent",1,1
+hyperglycemia,1,0
+precancerous condition,1,0
+soft tissue sarcoma,1,0
+accelerated phase chronic myelogenous leukemia,1,0
+adult acute lymphoblastic leukemia in remission,1,0
+adult acute myeloid leukemia in remission,1,0
+adult nasal type extranodal nk/t-cell lymphoma,1,0
+blastic phase chronic myelogenous leukemia,1,0
+contiguous stage ii adult burkitt lymphoma,1,0
+contiguous stage ii adult diffuse large cell lymphoma,1,0
+contiguous stage ii adult diffuse mixed cell lymphoma,1,0
+contiguous stage ii adult diffuse small cleaved cell lymphoma,1,0
+contiguous stage ii adult immunoblastic large cell lymphoma,1,0
+contiguous stage ii adult lymphoblastic lymphoma,1,0
+contiguous stage ii grade 1 follicular lymphoma,1,0
+contiguous stage ii grade 2 follicular lymphoma,1,0
+contiguous stage ii grade 3 follicular lymphoma,1,0
+contiguous stage ii mantle cell lymphoma,1,0
+contiguous stage ii marginal zone lymphoma,1,0
+contiguous stage ii small lymphocytic lymphoma,1,0
+de novo myelodysplastic syndromes,1,0
+extranodal marginal zone b-cell lymphoma of mucosa-associated lymphoid tissue,1,0
+nodal marginal zone b-cell lymphoma,1,0
+noncontiguous stage ii adult burkitt lymphoma,1,0
+noncontiguous stage ii adult diffuse large cell lymphoma,1,0
+noncontiguous stage ii adult diffuse mixed cell lymphoma,1,0
+noncontiguous stage ii adult diffuse small cleaved cell lymphoma,1,0
+noncontiguous stage ii adult immunoblastic large cell lymphoma,1,0
+noncontiguous stage ii adult lymphoblastic lymphoma,1,0
+noncontiguous stage ii grade 1 follicular lymphoma,1,0
+noncontiguous stage ii grade 2 follicular lymphoma,1,0
+noncontiguous stage ii grade 3 follicular lymphoma,1,0
+noncontiguous stage ii mantle cell lymphoma,1,0
+noncontiguous stage ii marginal zone lymphoma,1,0
+noncontiguous stage ii small lymphocytic lymphoma,1,0
+previously treated myelodysplastic syndromes,1,0
+recurrent adult acute myeloid leukemia,1,0
+recurrent adult burkitt lymphoma,1,0
+recurrent adult diffuse large cell lymphoma,1,0
+recurrent adult diffuse mixed cell lymphoma,1,0
+recurrent adult diffuse small cleaved cell lymphoma,1,0
+recurrent adult grade iii lymphomatoid granulomatosis,1,0
+recurrent adult immunoblastic large cell lymphoma,1,0
+recurrent adult lymphoblastic lymphoma,1,0
+recurrent adult t-cell leukemia/lymphoma,1,0
+recurrent cutaneous t-cell non-hodgkin lymphoma,1,0
+recurrent mantle cell lymphoma,1,0
+recurrent marginal zone lymphoma,1,0
+recurrent mycosis fungoides/sezary syndrome,1,0
+recurrent small lymphocytic lymphoma,1,0
+relapsing chronic myelogenous leukemia,1,0
+secondary myelodysplastic syndromes,1,0
+splenic marginal zone lymphoma,1,0
+stage i adult burkitt lymphoma,1,0
+stage i adult diffuse large cell lymphoma,1,0
+stage i adult diffuse mixed cell lymphoma,1,0
+stage i adult diffuse small cleaved cell lymphoma,1,0
+stage i adult immunoblastic large cell lymphoma,1,0
+stage i adult lymphoblastic lymphoma,1,0
+stage i adult t-cell leukemia/lymphoma,1,0
+stage i cutaneous t-cell non-hodgkin lymphoma,1,0
+stage i grade 1 follicular lymphoma,1,0
+stage i grade 2 follicular lymphoma,1,0
+stage i grade 3 follicular lymphoma,1,0
+stage i mantle cell lymphoma,1,0
+stage i marginal zone lymphoma,1,0
+stage i mycosis fungoides/sezary syndrome,1,0
+stage i small lymphocytic lymphoma,1,0
+stage ii adult t-cell leukemia/lymphoma,1,0
+stage ii cutaneous t-cell non-hodgkin lymphoma,1,0
+stage ii mycosis fungoides/sezary syndrome,1,0
+stage iii adult burkitt lymphoma,1,0
+stage iii adult diffuse large cell lymphoma,1,0
+stage iii adult diffuse mixed cell lymphoma,1,0
+stage iii adult diffuse small cleaved cell lymphoma,1,0
+stage iii adult immunoblastic large cell lymphoma,1,0
+stage iii adult lymphoblastic lymphoma,1,0
+stage iii adult t-cell leukemia/lymphoma,1,0
+stage iii cutaneous t-cell non-hodgkin lymphoma,1,0
+stage iii grade 1 follicular lymphoma,1,0
+stage iii grade 2 follicular lymphoma,1,0
+stage iii grade 3 follicular lymphoma,1,0
+stage iii mantle cell lymphoma,1,0
+stage iii marginal zone lymphoma,1,0
+stage iii mycosis fungoides/sezary syndrome,1,0
+stage iii small lymphocytic lymphoma,1,0
+stage iv adult burkitt lymphoma,1,0
+stage iv adult diffuse large cell lymphoma,1,0
+stage iv adult diffuse mixed cell lymphoma,1,0
+stage iv adult diffuse small cleaved cell lymphoma,1,0
+stage iv adult immunoblastic large cell lymphoma,1,0
+stage iv adult lymphoblastic lymphoma,1,0
+stage iv adult t-cell leukemia/lymphoma,1,0
+stage iv cutaneous t-cell non-hodgkin lymphoma,1,0
+stage iv grade 1 follicular lymphoma,1,0
+stage iv grade 2 follicular lymphoma,1,0
+stage iv grade 3 follicular lymphoma,1,0
+stage iv mantle cell lymphoma,1,0
+stage iv marginal zone lymphoma,1,0
+stage iv mycosis fungoides/sezary syndrome,1,0
+stage iv small lymphocytic lymphoma,1,0
+untreated adult acute lymphoblastic leukemia,1,0
+untreated adult acute myeloid leukemia,1,0
+waldenström macroglobulinemia,1,0
+fanconi anemia,1,1
+severe aplastic anemia,1,1
+constipation,1,0
+brain cancer,1,0
+thyroid cancer,1,0
+acquired bleeding disorder,1,0
+trauma,1,0
+peripheral vascular diseases,1,0
+colonic neoplasms,1,0
+cardiac arrest,1,0
+sudden cardiac death,1,0
+"tachycardia, ventricular",1,0
+ventricular fibrillation,1,0
+ovarian carcinoma,1,1
+peritoneal carcinoma,1,1
+essential tremor,1,0
+"cardiomyopathy, dilated",1,0
+stomatitis,1,1
+marginal zone lymphoma,1,0
+breast carcinoma,1,0
+hematologic neoplasms,1,1
+"akathisia, drug-induced",1,0
+antipsychotic agents,1,0
+movement disorders,1,0
+"dementia, mixed",1,0
+"dementia, vascular",1,0
+traumatic brain injury,1,0
+gastric carcinoma,1,0
+gastroesophageal junction carcinoma,1,0
+acute kidney injury,1,0
+acute renal failure,1,0
+coronary artery disease (cad),1,0
+head and neck neoplasms,1,0
+new-onset type 1 diabetes mellitus,1,0
+anorexia,1,0
+cachexia,1,0
+weight loss,1,0
+high-grade gliomas,1,0
+pneumonia,1,0
+colorectal liver metastases,1,0
+metabolic syndrome x,1,0
+"hypertension, pulmonary",1,0
+biliary cancer,1,0
+"adenocarcinoma, bronchiolo-alveolar",1,0
+relapsing multiple sclerosis,1,1
+diffuse large b-cell lymphoma,1,0
+post-traumatic stress disorder,1,0
+hemodialysis,1,0
+left ventricular hypertrophy,1,0
+male breast cancer,1,0
+bladder diseases,1,0
+metastasis,1,0
+sur-expressing her2-neu,1,0
+visual acuity,1,0
+cll / sll,1,0
+non hodgkin's lymphoma,1,0
+waldenstroms,1,0
+lymphoproliferative disorder,1,0
+acute coronary syndromes,1,0
+refractory brain tumors,1,0
+chronic myeloid leukemia,1,0
+liver carcinoma,1,0
+hodgkins lymphoma,1,0
+pneumocystis carinii pneumonia,1,0
+"pneumonia, interstitial plasma cell",1,0
+"pneumonia, pneumocystis carinii",1,0
+blast phase,1,0
+"myeloid leukemia, chronic",1,0
+"myeloid leukemia, chronic, accelerated-phase",1,0
+"myeloid leukemia, chronic, chronic-phase",1,0
+"leukemia, myeloid, chronic",1,0
+"pneumonia, bacterial",1,0
+primary peritoneal cancer,1,0
+graft-versus-host disease,1,0
+aids,1,0
+herpes zoster,1,0
+postherpetic neuralgia,1,0
+"dermatitis, atopic",1,0
+urinary bladder,1,0
+esophageal diseases,1,0
+endometriosis,1,0
+"carcinoma, adenosquamous cell",1,0
+head and neck cancers,1,0
+recurrent non small cell lung cancer,1,0
+ascites,1,0
+drug toxicity,1,0
+hormone changes,1,0
+"carcinoma, small cell",1,0
+sclc,1,0
+"lymphoma, large-cell, diffuse",1,1
+coronary disease,1,0
+atopic dermatitis,1,0
+diabetic neuropathies,1,0
+ventilator-associated pneumonia,1,0
+drug resistant,1,0
+intraocular melanoma,1,0
+"foot ulcer, diabetic",1,0
+acute heart failure,1,0
+systemic scleroderma,1,0
+acute ischemic stroke,1,0
+biliary tract cancer,1,0
+b-cell chronic lymphocytic leukemia,1,0
+palliative treatment,1,0
+recurrent disease,1,0
+squamous cell head and neck carcinoma,1,0
+"leukemia, lymphocytic, chronic",1,0
+"lymphoma, small lymphocytic",1,0
+malignant mesothelioma,1,1
+malignant pleural effusion,1,0
+sinusitis,1,0
+painful bladder syndrome,1,0
+parkinson disease,1,1
+genotype 1,1,0
+relapse,1,0
+hematological malignancies,1,0
+localized transitional cell cancer of the renal pelvis and ureter,1,0
+metastatic transitional cell cancer of the renal pelvis and ureter,1,0
+recurrent transitional cell cancer of the renal pelvis and ureter,1,0
+regional transitional cell cancer of the renal pelvis and ureter,1,0
+brain edema,1,0
+bone diseases,1,0
+plasma cell leukemia,1,0
+diffuse large b-cell lymphoma (dlbcl),1,0
+"malignant lymphoma, non-hodgkin",1,0
+stage iib prostate cancer,1,0
+venous thrombosis,1,0
+growth hormone deficiency,1,0
+neurofibromatosis type 1,1,0
+plexiform neurofibroma,1,0
+spinal cord neurofibroma,1,0
+uveitis,1,0
+hepatitis c,1,0
+alcohol dependence,1,0
+borderline personality disorder,1,0
+renal transplant,1,0
+acute myeloid leukemia (aml),1,0
+hemoglobinopathy,1,1
+immunodeficiencies,1,0
+knee osteoarthritis,1,0
+myelodysplasia,1,0
+pediatric cancer,1,0
+hodgkin disease,1,0
+"depressive disorder, major",1,1
+metastatic prostate cancer,1,0
+coronary artery disease,1,0
+valvular heart disease,1,0
+malignant ascites,1,0
+amenorrhea,1,0
+menorrhagia,1,0
+partial epilepsy,1,0
+nicotine dependence,1,0
+nicotine use disorder,1,0
+smoking,1,0
+advanced hepatocellular carcinoma,1,0
+pheochromocytoma,1,0
+relapsing remitting multiple sclerosis,1,0
+injuries,1,0
+"shock, traumatic",1,0
+psoriatic arthritis,1,0
+plasma cell neoplasm,1,1
+"leukemia, myelomonocytic, chronic",1,0
+chronic heart failure,1,0
+high blood b-type (or brain) natriuretic peptide (bnp) level,1,0
+pulmonary complications,1,0
+radiation fibrosis,1,0
+acute lymphoblastic leukemia (all),1,0
+acute myelogenous leukemia (aml),1,0
+chronic lymphocytic leukemia (cll),1,0
+chronic myelogenous leukemia (cml),1,0
+"leukemia, acute",1,0
+duchenne muscular dystrophy,1,0
+aging,1,0
+fibrolamellar hepatocellular carcinoma,1,0
+cutaneous t-cell lymphoma (ctcl),1,0
+peripheral edema,1,0
+hematologic malignancy,1,0
+recurrent breast carcinoma,1,0
+neoplastic syndrome,1,0
+neuroendocrine tumor,1,0
+insulin resistance,1,0
+kidney transplantation,1,1
+obsessive compulsive disorder,1,0
+refractory nasopharyngeal carcinoma,1,0
+macular edema,1,0
+proliferative diabetic retinopathy,1,0
+vomiting,1,0
+patient participation,1,0
+stage iiia non-small cell lung cancer,1,0
+stage iiib non-small cell lung cancer,1,0
+stage iv non-small cell lung cancer,1,0
+clostridium infections,1,0
+nhl,1,0
+extragonadal germ cell tumor,1,0
+testicular germ cell tumor,1,0
+dialysis,1,0
+hyperphosphatemia,1,0
+thrombosis,1,0
+malnutrition,1,0
+weight changes,1,0
+hodgkin's lymphoma,1,0
+dementia,1,0
+scleroderma,1,0
+cystic fibrosis,1,0
+kidney (renal cell) cancer,1,0
+squamous cell carcinoma of the head and neck (scchn),1,0
+iron overload,1,0
+neuroendocrine tumors,1,0
+acute-graft-versus-host disease,1,0
+metastatic renal cell carcinoma,1,0
+insomnia,1,1
+"anemia, sickle cell",1,0
+hemochromatosis,1,0
+"histiocytosis, langerhans-cell",1,0
+hyperuricemia,1,0
+gastroesophageal reflux disease (gerd),1,0
+detrusor overactivity,1,0
+urge urinary incontinence,1,0
+urinary urgency,1,0
+postmenopausal osteoporosis,1,0
+acute stroke,1,0
+cerebral infarction,1,0
+malignant pleural mesothelioma,1,0
+bronchiolitis,1,0
+brain infarction,1,0
+cerebral ischemia,1,0
+endometrial cancer,1,0
+"neuralgia, postherpetic",1,0
+psychotic disorders,1,0
+schizoaffective disorders,1,0
+"melanoma, experimental",1,0
+"spondylitis, ankylosing",1,0
+allergy to native e.coli asparaginase,1,0
+allergy to peg e.coli asparaginase,1,0
+relapsed acute lymphoblastic leukemia,1,0
+bile duct cancer,1,0
+cholangiocarcinoma of the extrahepatic bile duct,1,0
+cholangiocellular carcinoma,1,0
+periampullary adenocarcinoma,1,0
+memory disorders,1,0
+pulmonary arterial hypertension,1,0
+heparin-induced thrombocytopenia,1,0
+bowel obstruction,1,0
+brain tumors,1,1
+central nervous system tumors,1,1
+medulloblastoma,1,1
+juvenile rheumatoid arthritis,1,1
+breakthrough nausea and vomiting,1,0
+benign prostatic hypertrophy,1,0
+tumors,1,0
+chronic prostatitis,1,0
+pelvic pain,1,0
+esophageal adenocarcinoma,1,0
+androgen-insensitive prostate cancer,1,0
+castrate-resistant prostate cancer (crpc),1,0
+hormone-refractory prostate cancer,1,0
+metastatic disease,1,0
+recurrent bladder cancer,1,0
+aneurysmal subarachnoid hemorrhage,1,0
+gastroesophageal reflux disease,1,0
+vulvar vestibulitis,1,1
+obsessive-compulsive disorder,1,0
+"infection, human immunodeficiency virus i",1,0
+major depression,1,0
+"lymphoma, large-cell, ki-1",1,0
+"lymphoma, t-cell",1,0
+sleep disorders,1,0
+attention deficit hyperactivity disorder,1,0
+acute coronary syndrome,1,0
+mild or moderate anaemia,1,1
+sleep initiation and maintenance disorders,1,0
+complex regional pain syndromes,1,0
+narcolepsy,1,0
+leptomeningeal carcinomatosis,1,0
+preleukemia,1,1
+gastric ulcer,1,0
+dyslipidemia,1,0
+liver neoplasms,1,0
+"lymphoma, diffuse",1,0
+metastatic malignant neoplasm in the brain,1,0
+stage iv non-small cell lung cancer ajcc v7,1,0
+refractory solid tumors,1,0
+hormone-resistant prostate cancer,1,0
+prostate adenocarcinoma,1,0
+recurrent prostate carcinoma,1,0
+lymphoproliferative disorders,1,0
+myelodysplastic and myeloproliferative disorders,1,0
+plasma cell dyscrasia,1,0
+carotid stenosis,1,0
+adult giant cell glioblastoma,1,0
+adult glioblastoma,1,0
+adult gliosarcoma,1,0
+recurrent adult brain tumor,1,0
+"arthritis, psoriatic",1,0
+invasive breast carcinoma,1,0
+primary invasive breast cancer,1,0
+stage i breast cancer,1,0
+stage ii breast cancer,1,0
+stage iii breast cancer,1,0
+hermansky-pudlak syndrome (hps),1,0
+metabolic disease,1,0
+oculocutaneous albinism,1,0
+platelet storage pool deficiency,1,0
+non small cell lung carcinoma,1,0
+carcinoma of the appendix,1,0
+small intestine cancer,1,0
+relapsed breast cancer,1,0
+cardiac transplant,1,1
+lung transplant,1,1
+cholangiocarcinoma,1,0
+waldenstrom macroglobulinemia,1,1
+"lymphoma, b cell",1,0
+esophageal metaplasia,1,1
+cardiovascular disease,1,1
+stage iii squamous cell carcinoma of the hypopharynx,1,0
+stage iii squamous cell carcinoma of the larynx,1,0
+stage iii squamous cell carcinoma of the lip and oral cavity,1,0
+stage iii squamous cell carcinoma of the nasopharynx,1,0
+stage iii squamous cell carcinoma of the oropharynx,1,0
+stage iv squamous cell carcinoma of the hypopharynx,1,0
+stage iv squamous cell carcinoma of the larynx,1,0
+stage iv squamous cell carcinoma of the lip and oral cavity,1,0
+stage iv squamous cell carcinoma of the nasopharynx,1,0
+stage iv squamous cell carcinoma of the oropharynx,1,0
+menopause,1,0
+atypical burkitt lymphoma,1,0
+head and neck squamous cell carcinoma,1,0
+blood disease,1,0
+recurrent malignant gliomas,1,0
+intraductal papillary mucinous neoplasm of the pancreas,1,0
+recurrent pancreatic cancer,1,0
+stage ia pancreatic cancer,1,0
+stage ib pancreatic cancer,1,0
+stage iia pancreatic cancer,1,0
+stage iib pancreatic cancer,1,0
+stage iii pancreatic cancer,1,0
+testicular cancer,1,0
+convulsions,1,0
+status epilepticus,1,0
+hyperlipidemia,1,0
+"kidney failure, chronic",1,0
+allogeneic transplantation,1,0
+bone marrow transplantation,1,0
+chronic granulomatous disease,1,0
+combined immune deficiency,1,0
+diamond-blackfan anemia,1,0
+genetic diseases,1,0
+metabolic diseases,1,0
+pediatrics,1,0
+peripheral blood stem cell transplantation,1,0
+stem cell transplantation,1,0
+wiskott-aldrich syndrome,1,0
+x-linked lymphoproliferative disease,1,0
+acute leukemia,1,0
+acute lymphocytic leukemia,1,0
+acute promyelocytic leukemia,1,0
+juvenile myelomonocytic leukemia,1,0
+myelofibrosis,1,0
+gastrointestinal stromal tumors,1,0
+proctitis,1,0
+breakthrough pain,1,0
+chronic pain,1,0
+acinar cell adenocarcinoma of the pancreas,1,0
+duct cell adenocarcinoma of the pancreas,1,0
+stage iv pancreatic cancer,1,0
+colo-rectal cancer,1,0
+recurrent thyroid cancer,1,0
+stage 3 cancer,1,0
+stage 4 cancer,1,0
+hepatoma,1,0
+primary liver cancer,1,0
+renal cell cancer,1,0
+stage iva colon cancer,1,0
+stage iva rectal cancer,1,0
+stage ivb colon cancer,1,0
+stage ivb rectal cancer,1,0
+uterine fibroids,1,0
+cns disease,1,0
+urothelial cancer,1,0
+metastatic head and neck cancer,1,0
+recurrent head and neck cancer,1,0
+mucinous adenocarcinoma of the colon,1,1
+mucinous adenocarcinoma of the rectum,1,1
+signet ring adenocarcinoma of the colon,1,1
+signet ring adenocarcinoma of the rectum,1,1
+inflammatory bowel diseases,1,0
+crohn disease,1,1
+squamous cell cancer of the head and neck,1,0
+hypocalcemia,1,0
+nsclc,1,0
+stage iiia (n2),1,0
+central nervous system neoplasms,1,0
+analgesia,1,0
+"hernia, inguinal",1,0
+childhood germ cell tumor,1,1
+chordoma,1,1
+retinoblastoma,1,1
+"carcinoma, adenosquamous",1,0
+adult brain malignant hemangiopericytoma,1,1
+adult fibrosarcoma,1,1
+adult leiomyosarcoma,1,1
+adult malignant meningioma,1,1
+adult rhabdomyosarcoma,1,1
+chondrosarcoma,1,1
+painful diabetic neuropathy,1,0
+amyotrophic lateral sclerosis,1,0
+social anxiety disorder,1,0
+squamous cell cancer,1,1
+cough,1,1
+brain neoplasm,1,0
+second neoplasm,1,0
+acral lentiginous malignant melanoma,1,0
+lentigo maligna malignant melanoma,1,0
+nodular malignant melanoma,1,0
+solar radiation-related skin melanoma,1,0
+superficial spreading malignant melanoma,1,0
+recurrent pediatric all,1,0
+refractory pediatric all,1,0
+relapsed pediatric all,1,0
+hemangioblastoma,1,0
+von hippel-lindau syndrome,1,0
+hemoglobin sc disease,1,1
+anaplastic astrocytoma,1,0
+anaplastic ependymoma,1,0
+anaplastic oligodendroglioma,1,0
+brain stem glioma,1,0
+giant cell glioblastoma,1,0
+glioblastoma,1,0
+mixed glioma,1,0
+chronic renal failure,1,0
+cancer of liver,1,0
+adult t-cell leukemia,1,0
+adult t-cell lymphoma,1,0
+anaplastic large cell lymphoma,1,0
+angioimmunoblastic t-cell lymphoma,1,0
+cutaneous t-cell lymphoma with nodal/visceral disease,1,0
+peripheral t-cell lymphoma unspecified,1,0
+peripheral t-cell lymphomas,1,0
+t/null cell systemic type,1,0
+metabolic syndrome,1,0
+gastrointestinal cancer,1,0
+peripheral arterial disease,1,0
+primary central nervous system lymphoma,1,0
+exercise triggered asthma,1,0
+gastroesophageal reflux,1,0
+oral cancer,1,0
+autism,1,0
+pervasive developmental disorder,1,0
+primary effusion lymphomas,1,0
+chlamydia infections,1,0
+gonorrhea,1,0
+beta-thalassemia,1,0
+cancer of the head and neck,1,0
+ischemic stroke,1,0
+fatty liver,1,0
+neurogenic detrusor overactivity,1,0
+small lymphocytic leukemia,1,0
+severe combined immunodeficiency disease,1,0
+severe primary immunodeficiency disorder,1,0
+undefined t cell deficiency disorder,1,0
+wiskott-aldrick syndrome,1,0
+transitional cell carcinoma,1,0
+peripheral t-cell lymphoma,1,0
+diabetes mellitus type 2,1,0
+acute myocardial infarction,1,0
+st elevation mi,1,0
+stemi,1,0
+cardiac transplantation,1,0
+renal insufficiency,1,0
+recurrent adult soft tissue sarcoma,1,0
+stage i adult soft tissue sarcoma ajcc v7,1,0
+stage ii adult soft tissue sarcoma ajcc v7,1,0
+stage iii adult soft tissue sarcoma ajcc v7,1,0
+chronic hepatitis b,1,0
+stage iii melanoma,1,0
+kidney failure,1,0
+large granular lymphocytic leukemia,1,0
+lgl leukemia,1,0
+advanced solid malignancies,1,0
+her2-positive breast cancer,1,0
+graft failure,1,1
+major depressive disorder,1,0
+renal transplantation,1,0
+lung neoplasms,1,0

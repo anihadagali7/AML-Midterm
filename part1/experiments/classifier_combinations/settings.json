@@ -1,0 +1,150 @@
+{
+  "C_grid": [
+    100.0,
+    1000.0
+  ],
+  "block_weights": [
+    1.0
+  ],
+  "combinations": {
+    "embeddings_only": [],
+    "diseases_criteria": [
+      "diseases_min5",
+      "criteria_min3"
+    ],
+    "diseases_pathways": [
+      "diseases_min5",
+      "pathways_min30"
+    ],
+    "criteria_pathways": [
+      "criteria_min3",
+      "pathways_min30"
+    ],
+    "diseases_criteria_pathways": [
+      "diseases_min5",
+      "criteria_min3",
+      "pathways_min30"
+    ]
+  },
+  "configurations": 10,
+  "reference_sample_f1": 0.9102564102564102,
+  "reference_macro_f1": 0.811421460284173,
+  "source_experiment": "classifier_features",
+  "generated_labels_changed": false,
+  "generated_weights_changed": false,
+  "preprocessing_refitted": false,
+  "features_added_to": "classifier only",
+  "classifier": "logistic regression",
+  "embedding_scaler_fit_rows": 157,
+  "original_vocabulary_idf_fit_rows": 1171,
+  "validation_rows": 78,
+  "validation_used_for_fit": false,
+  "fitting_weight_total_per_reason": 157,
+  "cutoff": 0.5,
+  "fallback": true,
+  "best_experiment": "embeddings_only_weight1_C1000",
+  "best_sample_f1": 0.9102564102564102,
+  "best_macro_f1": 0.811421460284173,
+  "candidate": null,
+  "protected_input_sha256": {
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "experiments/classifier_features/settings.json": "a6850a793fdd40630c4936fbd7654b4cd088b3f2af12fa3ec4bc8c0b40b80a79",
+    "experiments/classifier_features/comparison.csv": "337b665f74dd8587b015b603b4561b99e12644bf50c30aae6b2645561a9e8488",
+    "experiments/classifier_features/datasets/fixed_targets_weights.csv": "0a68e6e4d363036a49246689bb26ab8e900ca1295c855d7e7e723e351a12387b",
+    "experiments/classifier_features/models/embeddings_only.joblib": "cb9067524cfb6a9472c23bfd0dea9604bc383355102b015d106767eec020014c",
+    "experiments/classifier_features/datasets/embeddings_only.npz": "184d89d7381bb0039fc49ce47d24976f7b4b1b3fe0f1d480ce2559fcba749dda",
+    "experiments/classifier_features/models/diseases_min5.joblib": "c53febacf9d449f477de882bd68699bf7cc0468d70d8d0fd898bc032cdb77fde",
+    "experiments/classifier_features/datasets/diseases_min5.npz": "1484fdea4e5a2c5b6fdd98656b9a4f6b6e7de9d51dfaca1b570a09146569fdc7",
+    "experiments/classifier_features/models/criteria_min3.joblib": "b75f35ffc649150231451eb43775f3146b6266edf92e2c9c7ef8a25440e92fd8",
+    "experiments/classifier_features/datasets/criteria_min3.npz": "fe5c1849dee3a6483b63b10d74a1a09b0ff29c65a90aba635882fefce4433939",
+    "experiments/classifier_features/models/pathways_min30.joblib": "b15ad5db3497c7bb02d34d4e1943da4f32ffe3ea841945dc98868119d082d127",
+    "experiments/classifier_features/datasets/pathways_min30.npz": "9ef3d73549466bf43d32ef10fba1e4583ea243dd5237889e580796a5730f7760",
+    "experiments/additional_methods/datasets/dbscan_m5_q25.csv": "09a4d747e5b43893c4ba4b3c0789577cb4b767304d352ca11b4c199601559810",
+    "experiments/additional_methods/labeling_models/dbscan_m5_q25.joblib": "c5a3110894e08fc03a031e8b9ab057b5cbdd782f450ef19828b12e80b550c0f3",
+    "experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3"
+  },
+  "matrices": {
+    "embeddings_only": {
+      "representations": [],
+      "block_weight": 1.0,
+      "shape": [
+        1171,
+        150
+      ],
+      "file_sha256": "184d89d7381bb0039fc49ce47d24976f7b4b1b3fe0f1d480ce2559fcba749dda"
+    },
+    "diseases_criteria": {
+      "representations": [
+        "diseases_min5",
+        "criteria_min3"
+      ],
+      "block_weight": 1.0,
+      "shape": [
+        1171,
+        2221
+      ],
+      "file_sha256": "1e442e529b89f750189080ead9a1b24f0b4b0e97e1d659443a4e2737056f3422"
+    },
+    "diseases_pathways": {
+      "representations": [
+        "diseases_min5",
+        "pathways_min30"
+      ],
+      "block_weight": 1.0,
+      "shape": [
+        1171,
+        248
+      ],
+      "file_sha256": "c8953c9fe57df28f3e283aaa531799e0ad453c5444f470ccfcdaf672769a5dba"
+    },
+    "criteria_pathways": {
+      "representations": [
+        "criteria_min3",
+        "pathways_min30"
+      ],
+      "block_weight": 1.0,
+      "shape": [
+        1171,
+        2177
+      ],
+      "file_sha256": "489dc66c31190e279bd353389af69f267c27c4d8a58a08dedd0da729fca486d6"
+    },
+    "diseases_criteria_pathways": {
+      "representations": [
+        "diseases_min5",
+        "criteria_min3",
+        "pathways_min30"
+      ],
+      "block_weight": 1.0,
+      "shape": [
+        1171,
+        2248
+      ],
+      "file_sha256": "16f67e81be6ea663f1f18ff9c3cc84c818b08b9471d0bf182e22d8c74f226d4d"
+    }
+  },
+  "dataset_file_sha256": {
+    "datasets/criteria_pathways.npz": "489dc66c31190e279bd353389af69f267c27c4d8a58a08dedd0da729fca486d6",
+    "datasets/criteria_pathways_columns.json": "7f6186765d588040f129e4ae2e50a74c314fde74f089d904d3710f1cee2dcf35",
+    "datasets/diseases_criteria.npz": "1e442e529b89f750189080ead9a1b24f0b4b0e97e1d659443a4e2737056f3422",
+    "datasets/diseases_criteria_columns.json": "227c468cd60f227807dde94069b1afb4d23cfd08368853aa9bc31972e5fd66da",
+    "datasets/diseases_criteria_pathways.npz": "16f67e81be6ea663f1f18ff9c3cc84c818b08b9471d0bf182e22d8c74f226d4d",
+    "datasets/diseases_criteria_pathways_columns.json": "e6b30652c5a6b78153fd87bb1f6d88efcd8c724495df9516eec37b3baa10719a",
+    "datasets/diseases_pathways.npz": "c8953c9fe57df28f3e283aaa531799e0ad453c5444f470ccfcdaf672769a5dba",
+    "datasets/diseases_pathways_columns.json": "ff755e60022e0b854c1dc94522cc8aa3ed8e60889d4372ca460922975fea70d9",
+    "datasets/embeddings_only.npz": "184d89d7381bb0039fc49ce47d24976f7b4b1b3fe0f1d480ce2559fcba749dda",
+    "datasets/embeddings_only_columns.json": "bb52dc1d4563a61ee1f47ca105f10357b4e67ad8569bf5eb066dee9048166651",
+    "datasets/fixed_targets_weights.csv": "0a68e6e4d363036a49246689bb26ab8e900ca1295c855d7e7e723e351a12387b"
+  },
+  "selection": "sample F1; ties prefer current leader, fewer features, then original C",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.0",
+    "scipy": "1.18.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "new_kaggle_scores": null,
+  "reported_best_kaggle": 0.87393
+}

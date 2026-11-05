@@ -1,0 +1,11 @@
+minimum_training_trials,disease_features,broad_pathway_features,criteria_terms_before_cap
+1,879,29,104480
+2,249,28,36515
+3,145,28,23098
+5,71,27,13869
+10,30,27,7141
+20,11,27,3784
+30,6,26,2576
+50,1,22,1533
+75,1,19,1026
+100,0,19,776
