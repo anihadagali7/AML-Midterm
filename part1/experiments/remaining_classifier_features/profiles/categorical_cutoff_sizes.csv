@@ -1,0 +1,11 @@
+field,minimum_training_trials,retained_categories,training_rows_with_no_annotation
+drug_actions,3,21,516
+drug_actions,5,17,516
+icdcodes,3,266,0
+icdcodes,5,186,0
+drug_targets,3,230,514
+drug_targets,5,169,514
+drugs,3,124,0
+drugs,5,82,0
+matched_drugs,3,70,514
+matched_drugs,5,50,514
