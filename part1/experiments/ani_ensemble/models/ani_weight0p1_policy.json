@@ -1,0 +1,15 @@
+{
+  "ani_weight": 0.1,
+  "ours_weight": 0.9,
+  "method": "threshold-centered log-odds pooling",
+  "ours_native_cutoff": 0.5,
+  "ani_native_cutoff": 0.3,
+  "ensemble_score_cutoff": 0.5,
+  "fallback": true,
+  "clip_epsilon": 1e-12,
+  "components": {
+    "ours": "models/ours_component.joblib",
+    "ani": "models/ani_validation_component.joblib"
+  },
+  "score_interpretation": "decision score, not a calibrated marginal probability"
+}

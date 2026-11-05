@@ -1,0 +1,58 @@
+{
+  "ani_source_commit": "a5487215115e30afb68ab865bc5fd98be6b3e199",
+  "ani_source_notebook_sha256": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7",
+  "ani_weights": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "configurations": 5,
+  "mixed_ensembles": 3,
+  "verified_training_labels_each_component": 157,
+  "validation_labels_added_to_training": false,
+  "ani_unsupervised_preprocessing_fit_rows": 1561,
+  "ani_transductive_features_used": true,
+  "our_preprocessing_changed": false,
+  "method": "threshold-centered log-odds pooling",
+  "ours_native_cutoff": 0.5,
+  "ani_native_cutoff": 0.3,
+  "ensemble_decision_score_cutoff": 0.5,
+  "fallback": true,
+  "clip_epsilon": 1e-12,
+  "reference_sample_f1": 0.9102564102564102,
+  "reference_macro_f1": 0.811421460284173,
+  "ani_native_sample_f1": 0.8931623931623932,
+  "ani_native_macro_f1": 0.7137002637312235,
+  "complementary_errors": {
+    "different_reason_sets": 10,
+    "ani_better_trials": 2,
+    "ours_better_trials": 5,
+    "equal_trial_f1": 71
+  },
+  "best_experiment": "ani_weight0",
+  "best_sample_f1": 0.9102564102564102,
+  "best_macro_f1": 0.811421460284173,
+  "leader_changed": false,
+  "candidate": null,
+  "protected_input_sha256": {
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3",
+    "experiments/additional_methods/submissions/part1_dbscan_m5_q25_logistic_C1000_submission.csv": "b4f8e154c6105698d6c7fac2a34d3c0e1ecd3dcd095bd2d8634ee6608d336dba",
+    "experiments/additional_methods/datasets/dbscan_m5_q25.csv": "09a4d747e5b43893c4ba4b3c0789577cb4b767304d352ca11b4c199601559810"
+  },
+  "component_sha256": {
+    "models/ani_validation_component.joblib": "2f2f8a8c06201e02c9117bd86246b9cbd7d00f2118065d61424225914a7d3b89",
+    "models/ours_component.joblib": "17d1e89b7add3e2c27f10fc0542bd0673d653d7852749fbc47a3427383b5d484"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "new_kaggle_scores": null
+}

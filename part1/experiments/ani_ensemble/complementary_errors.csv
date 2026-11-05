@@ -1,0 +1,79 @@
+ID,actual,ours,ani,ours_trial_f1,ani_trial_f1,ani_better,ours_better,different_reason_set
+TR03011,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06614,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR11226,Other,Efficacy,Efficacy Recruitment,0.0,0.0,False,False,True
+TR01691,Efficacy,Other,Efficacy,0.0,1.0,True,False,True
+TR07904,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR05741,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04611,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR10050,Other,Efficacy Other,Safety Efficacy,0.6666666666666666,0.0,False,True,True
+TR08862,Safety,Safety,Safety,1.0,1.0,False,False,False
+TR07302,Funding Recruitment,Funding Recruitment,Recruitment,1.0,0.6666666666666666,False,True,True
+TR05146,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06513,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR02758,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR08868,Other,Other,Other,1.0,1.0,False,False,False
+TR01574,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06757,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR11267,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04350,Efficacy,Efficacy,Recruitment,1.0,0.0,False,True,True
+TR05197,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR09519,Recruitment Other,Recruitment,Recruitment,0.6666666666666666,0.6666666666666666,False,False,False
+TR07141,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07107,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04055,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR09824,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR09218,Safety Efficacy,Efficacy,Safety,0.6666666666666666,0.6666666666666666,False,False,True
+TR07770,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR09219,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR01253,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04114,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07492,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR08642,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07471,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04012,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR11469,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06424,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04125,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR05236,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR03682,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR08905,Safety Efficacy,Safety,Safety,0.6666666666666666,0.6666666666666666,False,False,False
+TR09449,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07268,Safety Efficacy,Safety Efficacy,Safety,1.0,0.6666666666666666,False,True,True
+TR03536,Recruitment Other,Recruitment,Recruitment,0.6666666666666666,0.6666666666666666,False,False,False
+TR09853,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR03061,Funding,Funding Other,Funding,0.6666666666666666,1.0,True,False,True
+TR08001,Safety Efficacy,Safety Efficacy,Safety Efficacy,1.0,1.0,False,False,False
+TR10284,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR07303,Other,Other,Other,1.0,1.0,False,False,False
+TR00640,Funding,Other,Other,0.0,0.0,False,False,False
+TR06983,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR00125,Recruitment Other,Recruitment Other,Recruitment,1.0,0.6666666666666666,False,True,True
+TR03088,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06178,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR04002,Funding,Recruitment,Other,0.0,0.0,False,False,True
+TR03234,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR04696,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR10446,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR09074,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR08230,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR03382,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR03856,Safety,Safety,Safety,1.0,1.0,False,False,False
+TR04981,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR08201,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR01577,Safety,Safety,Safety,1.0,1.0,False,False,False
+TR02404,Efficacy,Efficacy,Efficacy,1.0,1.0,False,False,False
+TR11372,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR11370,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07665,Other,Efficacy,Efficacy,0.0,0.0,False,False,False
+TR10775,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR05696,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR07476,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR06608,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR11010,Other,Other,Other,1.0,1.0,False,False,False
+TR07902,Safety Efficacy,Safety Efficacy,Safety Efficacy,1.0,1.0,False,False,False
+TR04216,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR10091,Safety,Safety,Safety,1.0,1.0,False,False,False
+TR02087,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR02583,Recruitment,Recruitment,Recruitment,1.0,1.0,False,False,False
+TR08431,Other,Other,Other,1.0,1.0,False,False,False
