@@ -1,0 +1,2 @@
+group,raw_columns,clustering_columns,raw_centered_rms,embedding_rms,rms_normalizer,svd_explained_variance,nonempty_raw_training_rows
+criteria,2000,20,0.40743414318774573,12.24744871391589,30.05994691091037,0.19562064966653805,1171
