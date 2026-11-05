@@ -2,7 +2,7 @@
 
 ## Part 1 experiment checkpoint
 
-The current validation leader is **DBSCAN pseudo-labeling + one-vs-rest logistic regression**, with sample-wise F1 **0.910256** and macro F1 **0.811421** on the 78 labeled validation trials. Its Kaggle score is unknown. The best reported Kaggle submission remains the earlier K-means K=2 model, scoring **0.87393**, tagged `current-best-kaggle`.
+The current validation leader on this branch is **DBSCAN pseudo-labeling + one-vs-rest logistic regression**, with sample-wise F1 **0.910256** and macro F1 **0.811421** on the 78 labeled validation trials. Its Kaggle score is unknown. Ani's latest model on `origin/ani` has a reported Kaggle score of **0.89423**; its reproduced validation sample F1 is **0.893162**, macro F1 **0.713700**. See the [verified branch comparison](part1/experiments/branch_comparison/SUMMARY.md) for source and fitting differences. Our earlier K-means K=2 submission scored **0.87393** and retains its existing `current-best-kaggle` tag; no tag has been moved.
 
 The current model uses the original 150 embedding features. DBSCAN uses `eps=0.00012142366141394104` and `min_samples=5`; logistic regression uses `C=1000`. Generated labels are accepted at estimated probability >=0.60 for positives and <=0.10 for negatives, with at least three known supporting trials, and only when both generated classes exist for a reason. Noise remains unlabeled. Generated raw weights are capped at 0.25 per example and at 50% of the corresponding known class weight, preserving the known positive/negative weight ratio. Original labels keep raw weight 1; fitting weights are normalized to total 157 per reason.
 
