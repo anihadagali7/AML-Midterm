@@ -1,0 +1,117 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Part 1: generating the missing reason labels}
+
+\paragraph{Data and features.}
+The Part~1 files, derived from the HINT benchmark~\cite{fu2022hint} and
+ClinicalTrials.gov~\cite{clinicaltrials}, hold 1,561 trials that stopped early: 1,171 training trials of
+which only 157 carry visible labels (the remaining 1,014 have all five reasons
+masked as $-100$), 78 fully labeled validation trials, and 312 unlabeled test
+trials from later start years. Our features are the 150 reason-embedding
+dimensions, standardized with a scaler fit on the pooled train, validation and
+test embeddings; because this uses no labels it is a legitimate transductive
+preprocessing step. We additionally built four optional blocks, each reduced with
+TruncatedSVD (fit without labels) and standardized before being appended:
+eligibility-criteria TF-IDF (1--2 grams, $\mathrm{min\_df}=3$, sublinear, $\to$ 50
+dims), disease TF-IDF ($\to$ 20 dims), RDKit~\cite{rdkit} Morgan (extended-connectivity)
+fingerprints~\cite{rogers2010extended} (radius 2, 1024 bits, element-wise maximum across a trial's matched drugs, all-zero when no drug
+matched, $\to$ 20 dims), and standardized \texttt{start\_year}. Section~\ref{sec:results}
+reports the ablation; none of them help.
+
+\paragraph{Unsupervised step.}
+We reduce the standardized embeddings to 30 principal components and fit a
+Gaussian mixture with $K=30$ diagonal-covariance components on all 1,561 trials.
+Components are initialized from the default $k$-means++ responsibilities of
+\texttt{scikit-learn}~\cite{pedregosa2011scikit}
+with \texttt{n\_init}=3 restarts (best log-likelihood kept) and
+\texttt{random\_state}=0. Expectation--maximization~\cite{dempster1977em} stops when the change in mean
+log-likelihood falls
+below $\texttt{tol}=10^{-3}$; the selected run converged after 30 of the permitted
+100 iterations. Each component $k$ is then turned into a reason distribution by a
+``cluster-then-label'' step: writing $r_{ik}$ for the posterior responsibility of
+component $k$ for labeled trial $i$ and $t_i = y_i / \lVert y_i \rVert_1$ for its
+$L_1$-normalized label vector,
+\begin{equation}
+\pi_k \;=\; \frac{\sum_i r_{ik}\, t_i \;+\; a\,\bar{t}}{\sum_i r_{ik} \;+\; a},
+\qquad a = 1,
+\end{equation}
+which smooths each component toward the global reason mean $\bar{t}$ and keeps
+components containing few or no labeled trials from producing degenerate
+distributions. A query trial's mixture prediction is $\sum_k r_{qk}\pi_k$.
+
+\paragraph{Supervised base model.}
+A multinomial logistic regression over the five reasons ($C = 0.3$,
+\texttt{max\_iter}=3000) handles multi-label targets by duplicating a trial once
+per positive reason with weight $1/\lvert y_i \rvert$, after which classes are
+reweighted to be balanced. This is blended $0.7/0.3$ with a cosine-similarity
+$k$NN ($k=10$) that averages neighbors' normalized label vectors with squared,
+clipped similarity weights. The blend is the ``base model'' below.
+
+\paragraph{Self-training.}
+Self-training~\cite{yarowsky1995unsupervised,triguero2015selflabeled} runs for two
+rounds over the 1,326 unlabeled trials (1,014 train $+$ 312 test). In each
+round the pseudo-posterior is $0.8 \cdot \text{base} + 0.2 \cdot \text{GMM}$; any
+trial whose top reason exceeds confidence 0.8 is added to the labeled pool with
+its thresholded label vector, and the base model is refit. Starting from the 157
+labeled trials, 985 of 1,326 unlabeled trials pass the threshold.
+
+\paragraph{Decision rule.}
+Every trial in this corpus has at least one recorded reason, so we always emit the
+$\arg\max$ reason and additionally emit any reason with probability $\geq 0.3$.
+
+\paragraph{Model selection.}
+The validation set has only 78 trials, so a single trial is worth roughly 1.3 F1
+points. Every design choice was therefore confirmed with 8 repeats of 5-fold
+cross-validation over all 235 labeled trials (157 train $+$ 78 validation); we
+report both numbers throughout and trust the CV column when they disagree.
+
+\subsection{Part 2: predicting trial outcomes}
+
+\paragraph{Baselines.}
+Two per-phase baselines, each fit separately on Phase~I, II and III:
+a multinomial naive Bayes ($\alpha = 1$) on bag-of-words plus bigram counts of the
+eligibility criteria, and a logistic regression ($C = 1$) on criteria TF-IDF
+(1--2 grams, $\mathrm{min\_df}=5$, sublinear).
+
+\paragraph{Feature blocks.}
+Eight blocks were built over the pooled 10,550 rows: criteria TF-IDF (78,254
+features), disease TF-IDF (3,909), drug-name TF-IDF (3,009), ICD codes expanded to
+three granularities---chapter letter, 3-character category, 5-character
+subcategory (2,382), drug targets (804), drug pathways curated by Reactome~\cite{milacic2024reactome} (1,795), binary drug
+actions (31), and five metadata indicators (whether a drug matched, log drug
+count, log criteria length, combined-phase flag, early-Phase-1 flag).
+
+\paragraph{Stacked ensemble.}
+Eight base models---one logistic regression per block, plus a pooled multinomial
+naive Bayes and a cosine $k$NN ($k = 50$) on criteria---are each trained on all
+phases at once with a phase one-hot appended, so Phase~I (only 1,012 training
+rows) borrows strength from the larger phases. Out-of-fold predictions come from
+\texttt{GroupKFold} with 5 folds grouped by \texttt{trial\_id}, which prevents the
+two rows of a combined-phase trial from straddling a fold boundary. The eight
+out-of-fold logits plus a phase one-hot feed a logistic-regression meta-model in
+the manner of stacked generalization~\cite{wolpert1992stacked}
+($C = 1$).
+
+\paragraph{Recency weighting.}
+Trial success rises steeply with start year (0.38 in 2000 to 0.81 in 2013) and
+every test trial started later than every training trial. We therefore weight each
+training row by
+\begin{equation}
+w_i \;=\; \exp\!\left(\frac{\text{year}_i - \max_j \text{year}_j}{\tau}\right),
+\qquad \tau = 3,
+\end{equation}
+normalized to mean 1 and applied to both the base models and the meta-model. We
+chose $\tau$ on two time-based holdouts---fit on trials up to 2009 and evaluate on
+2010--2013, and the harder fit-up-to-2011 / evaluate-2012--2013 split---never on
+the Kaggle leaderboard.
+
+\paragraph{Error-analysis protocol.}
+Of the 452 failed ($\text{label}=0$) validation rows, 198 match a Part~1 trial by
+\texttt{trial\_id}: 27 carry \emph{true} reason labels and 171 carry Part~1
+\emph{predictions}. The 254 unmatched rows ran to completion without stopping
+early and form a separate ``no recorded reason'' group. We analyze each phase
+separately so a combined-phase trial is counted once per phase, and a trial with
+several reasons counts toward each. The reported error rate is the fraction of
+failed trials assigned $p \geq 0.5$. Reason embeddings and reason labels are used
+\emph{only} here; they are never inputs to the outcome classifier.
