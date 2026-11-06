@@ -1,0 +1,37 @@
+{
+  "purpose": "Native same-solver L2 tolerance diagnostic; not an additional penalty candidate",
+  "solver": "lbfgs",
+  "C": 1000,
+  "tol": 1e-09,
+  "max_iter": 20000,
+  "sample_f1": 0.8547008547008546,
+  "macro_f1": 0.7035769764216365,
+  "same_labels_as_full_batch_L2_C1000": true,
+  "fit_audit": [
+    {
+      "reason": "Safety",
+      "original_iterations": 14,
+      "tight_iterations": 64
+    },
+    {
+      "reason": "Funding",
+      "original_iterations": 13,
+      "tight_iterations": 54
+    },
+    {
+      "reason": "Efficacy",
+      "original_iterations": 15,
+      "tight_iterations": 63
+    },
+    {
+      "reason": "Recruitment",
+      "original_iterations": 13,
+      "tight_iterations": 73
+    },
+    {
+      "reason": "Other",
+      "original_iterations": 15,
+      "tight_iterations": 116
+    }
+  ]
+}
