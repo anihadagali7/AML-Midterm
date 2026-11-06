@@ -4,20 +4,13 @@
 \subsection{Part 1: generating the missing reason labels}
 
 \paragraph{Data and features.}
-The Part~1 files, derived from the HINT benchmark~\cite{fu2022hint} and
-ClinicalTrials.gov~\cite{clinicaltrials}, hold 1,561 trials that stopped early: 1,171 training trials of
+ The Part~1 files, derived from
+ClinicalTrials.gov~\cite{clinicaltrials} with some processing performed by course staff, hold 1,561 trials that stopped early: 1,171 training trials of
 which only 157 carry visible labels (the remaining 1,014 have all five reasons
 masked as $-100$), 78 fully labeled validation trials, and 312 unlabeled test
 trials from later start years. Our features are the 150 reason-embedding
 dimensions, standardized with a scaler fit on the pooled train, validation and
-test embeddings; because this uses no labels it is a legitimate transductive
-preprocessing step. We additionally built four optional blocks, each reduced with
-TruncatedSVD (fit without labels) and standardized before being appended:
-eligibility-criteria TF-IDF (1--2 grams, $\mathrm{min\_df}=3$, sublinear, $\to$ 50
-dims), disease TF-IDF ($\to$ 20 dims), RDKit~\cite{rdkit} Morgan (extended-connectivity)
-fingerprints~\cite{rogers2010extended} (radius 2, 1024 bits, element-wise maximum across a trial's matched drugs, all-zero when no drug
-matched, $\to$ 20 dims), and standardized \texttt{start\_year}. Section~\ref{sec:results}
-reports the ablation; none of them help.
+test embeddings. We attempted feature-set variations including additional trial metadata but found that it performed worse than the model trained only on \texttt{why\_stop} embeddings.
 
 \paragraph{Unsupervised step.}
 We reduce the standardized embeddings to 30 principal components and fit a
