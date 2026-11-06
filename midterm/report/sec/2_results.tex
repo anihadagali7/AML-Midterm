@@ -64,7 +64,7 @@ Per-label validation F1 for the final model is Safety 0.947, Funding 0.400,
 Efficacy 0.741, Recruitment 0.980 and Other 0.500, giving sample-F1 0.893 and
 macro-F1 0.714. Trained on the 157 labeled trials it admitted 985 pseudo-labels;
 refit on all 235 labeled trials it scores \textbf{0.89423} sample-F1 on the Kaggle
-test set \TODO{confirm against leaderboard}. Figure~\ref{fig:p1freq} shows the
+test set. Figure~\ref{fig:p1freq} shows the
 predicted reason frequencies: relative to the labeled trials the model assigns
 more Safety (0.173 vs.\ 0.106) and less Recruitment (0.587 vs.\ 0.643) to the
 later test trials, the direction of drift the task description predicts.
@@ -88,38 +88,42 @@ stack gave up.
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{4pt}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{llcccc}
 \toprule
-Model & Phase & F1 & ROC-AUC & PR-AUC & log loss \\
+Phase & Metric & MNB & Base LR & Stack & $+$Rec \\
 \midrule
-\multirow{4}{*}{MNB (per phase)}
- & I    & 0.737 & 0.717 & 0.733 & 2.684 \\
- & II   & 0.645 & 0.694 & 0.623 & 2.945 \\
- & III  & 0.796 & 0.699 & 0.783 & 2.308 \\
- & mean & 0.726 & 0.703 & 0.713 & 2.646 \\
+\multirow{4}{*}{I}
+ & F1       & 0.737 & 0.774 & 0.730 & \textbf{0.793} \\
+ & ROC-AUC  & 0.717 & 0.780 & 0.772 & \textbf{0.793} \\
+ & PR-AUC   & 0.733 & 0.809 & 0.816 & \textbf{0.828} \\
+ & log loss & 2.684 & 0.609 & 0.570 & \textbf{0.557} \\
 \midrule
-\multirow{4}{*}{Baseline LR (per phase)}
- & I    & 0.774 & 0.780 & 0.809 & 0.609 \\
- & II   & 0.631 & 0.729 & 0.711 & 0.610 \\
- & III  & 0.813 & 0.764 & 0.868 & 0.553 \\
- & mean & 0.739 & 0.758 & 0.796 & 0.591 \\
+\multirow{4}{*}{II}
+ & F1       & 0.645 & 0.631 & \textbf{0.661} & 0.648 \\
+ & ROC-AUC  & 0.694 & 0.729 & 0.749 & \textbf{0.754} \\
+ & PR-AUC   & 0.623 & 0.711 & 0.733 & \textbf{0.735} \\
+ & log loss & 2.945 & 0.610 & \textbf{0.591} & 0.593 \\
 \midrule
-\multirow{4}{*}{Improved: stacked}
- & I    & 0.730 & 0.772 & 0.816 & 0.570 \\
- & II   & 0.661 & 0.749 & 0.733 & 0.591 \\
- & III  & 0.817 & 0.787 & 0.883 & 0.516 \\
- & mean & 0.736 & 0.769 & 0.810 & 0.559 \\
+\multirow{4}{*}{III}
+ & F1       & 0.796 & 0.813 & 0.817 & \textbf{0.824} \\
+ & ROC-AUC  & 0.699 & 0.764 & \textbf{0.787} & \textbf{0.787} \\
+ & PR-AUC   & 0.783 & 0.868 & \textbf{0.883} & 0.881 \\
+ & log loss & 2.308 & 0.553 & \textbf{0.516} & 0.518 \\
 \midrule
-\multirow{4}{*}{\textbf{Final: $+$ recency ($\tau{=}3$)}}
- & I    & 0.793 & 0.793 & 0.828 & 0.557 \\
- & II   & 0.648 & 0.754 & 0.735 & 0.593 \\
- & III  & 0.824 & 0.787 & 0.881 & 0.518 \\
- & mean & \textbf{0.755} & \textbf{0.778} & \textbf{0.814} & \textbf{0.556} \\
+\multirow{4}{*}{mean}
+ & F1       & 0.726 & 0.739 & 0.736 & \textbf{0.755} \\
+ & ROC-AUC  & 0.703 & 0.758 & 0.769 & \textbf{0.778} \\
+ & PR-AUC   & 0.713 & 0.796 & 0.810 & \textbf{0.814} \\
+ & log loss & 2.646 & 0.591 & 0.559 & \textbf{0.556} \\
 \bottomrule
 \end{tabular}
-\caption{Part~2 validation metrics by phase. F1 uses a 0.5 threshold; ROC-AUC,
-PR-AUC and log loss use predicted probabilities, with $\text{label}=1$ positive.}
+\caption{Part~2 validation metrics by phase. Columns are the per-phase
+multinomial naive Bayes (MNB), the per-phase criteria-only logistic regression
+(Base LR), the stacked ensemble (Stack) and the recency-weighted stack
+($+$Rec, $\tau{=}3$). F1 uses a 0.5 threshold; ROC-AUC, PR-AUC and log loss use
+predicted probabilities, with $\text{label}=1$ positive. Best value per row in
+bold.}
 \label{tab:p2val}
 \end{table}
 
@@ -131,33 +135,34 @@ $\to$ 0.4657 $\to$ 0.4553).
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{4pt}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{llcccc}
 \toprule
-Holdout & Model & F1 & ROC-AUC & PR-AUC & log loss \\
+Fit cut & Metric & MNB & Base LR & Stack & $+$Rec \\
 \midrule
-\multirow{4}{*}{fit $\leq$ 2009}
- & MNB       & 0.8083 & 0.6295 & 0.7301 & 2.4794 \\
- & Base.\ LR & 0.8051 & 0.6943 & 0.7847 & 0.5879 \\
- & Stacked   & 0.8090 & 0.7248 & 0.8183 & 0.5514 \\
- & $+$ rec.  & \textbf{0.8094} & \textbf{0.7311} & \textbf{0.8205} & \textbf{0.5475} \\
+\multirow{4}{*}{$\leq$2009}
+ & F1       & 0.8083 & 0.8051 & 0.8090 & \textbf{0.8094} \\
+ & ROC-AUC  & 0.6295 & 0.6943 & 0.7248 & \textbf{0.7311} \\
+ & PR-AUC   & 0.7301 & 0.7847 & 0.8183 & \textbf{0.8205} \\
+ & log loss & 2.4794 & 0.5879 & 0.5514 & \textbf{0.5475} \\
 \midrule
-\multirow{4}{*}{fit $\leq$ 2011}
- & MNB       & 0.8576 & 0.5970 & 0.7740 & 2.0120 \\
- & Base.\ LR & 0.8654 & 0.7042 & 0.8290 & 0.5192 \\
- & Stacked   & 0.8697 & 0.7539 & 0.8850 & 0.4657 \\
- & $+$ rec.  & \textbf{0.8758} & \textbf{0.7604} & \textbf{0.8865} & \textbf{0.4553} \\
+\multirow{4}{*}{$\leq$2011}
+ & F1       & 0.8576 & 0.8654 & 0.8697 & \textbf{0.8758} \\
+ & ROC-AUC  & 0.5970 & 0.7042 & 0.7539 & \textbf{0.7604} \\
+ & PR-AUC   & 0.7740 & 0.8290 & 0.8850 & \textbf{0.8865} \\
+ & log loss & 2.0120 & 0.5192 & 0.4657 & \textbf{0.4553} \\
 \bottomrule
 \end{tabular}
-\caption{Part~2 time-based holdouts, mean over phases. The 2009 cut is evaluated
-on 2010--2013 and the 2011 cut on 2012--2013. These mimic the later start years of
-the test set and were used to select $\tau$.}
+\caption{Part~2 time-based holdouts, mean over phases; columns as in
+Table~\ref{tab:p2val}. ``Fit cut'' is the last start year in the fitting set: the
+2009 cut is evaluated on 2010--2013 and the 2011 cut on 2012--2013. These mimic the later start years of the test set and were used to
+select $\tau$. Best value per row in bold.}
 \label{tab:p2holdout}
 \end{table}
 
-On the Kaggle test set the final submission scores \textbf{0.58688} mean log loss
-\TODO{confirm against leaderboard}, against 0.556 on validation---a gap we return
-to in Section~\ref{sec:discussion}.
+On the Kaggle test set the final submission scores \textbf{0.58688} mean log
+loss, against 0.556 on validation---a gap we return to in
+Section~\ref{sec:discussion}.
 
 \subsection{Error analysis across reason categories}
 
