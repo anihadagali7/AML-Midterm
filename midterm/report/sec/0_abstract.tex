@@ -1,15 +1,19 @@
 \begin{abstract}
 We study semi-supervised learning on a clinical-trial corpus in which only 157 of
-1,171 training trials carry stopping-reason labels. \textbf{Part~1} predicts five
-binary stopping reasons (Safety, Funding, Efficacy, Recruitment, Other) from 150-d
-reason embeddings. Our final model couples an unsupervised diagonal-covariance
-Gaussian mixture (30 components, fit on all 1,561 trials without labels) to a
-class-balanced multinomial logistic regression blended with a cosine $k$NN, and
+1,171 training trials carry stopping-reason labels. 
+
+\textbf{Part~1} predicts five
+binary stopping reasons (Safety, Funding, Efficacy, Recruitment, Other) from 150-dimension
+reason embeddings drawn from a sentence embedding model run against the why\_stop field in the original ClinicalTrials.gov dataset. Our final model couples an unsupervised diagonal-covariance
+Gaussian mixture (30 components, fit on all 1,561 trials without labels) with a
+class-balanced multinomial logistic regression fed into a cosine kNN, and
 uses the mixture posterior as a prior inside two rounds of confidence-thresholded
 self-training. It reaches sample-F1 0.893 and macro-F1 0.714 on the validation set
 (0.914 / 0.814 under repeated cross-validation) and 0.894 on the Kaggle test set.
-An ablation shows that eligibility criteria, disease text, Morgan fingerprints and
-start year all fail to improve on the embeddings alone. \textbf{Part~2} predicts
+We tried several variations of feature-sets but found that eligibility criteria, disease text, Morgan fingerprints and
+start year all fail to improve performance versus the embeddings alone.
+
+\textbf{Part~2} predicts
 per-phase trial success. A stacked ensemble of eight field-specific base models,
 combined by a phase-aware logistic meta-model and trained with exponential recency
 weights, cuts mean validation log loss from 0.591 to 0.556 and raises mean PR-AUC

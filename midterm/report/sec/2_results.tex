@@ -13,24 +13,37 @@ configuration we tried.
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{lcccc}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}cccc@{}}
 \toprule
-& \multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
-\cmidrule(lr){2-3}\cmidrule(lr){4-5}
-Model & samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
+\multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
 \midrule
-One-vs-rest LR ($C{=}1$)        & 0.868 & 0.706 & 0.898 & 0.797 \\
-$k$NN cosine ($k{=}10$)         & 0.872 & 0.607 & 0.881 & 0.734 \\
-GMM-30 cluster-then-label       & 0.780 & 0.570 & 0.819 & 0.640 \\
-Multinomial LR, unbalanced      & 0.850 & 0.677 & 0.894 & 0.765 \\
-Balanced mult.\ LR $+$ $k$NN    & 0.885 & 0.724 & 0.898 & 0.800 \\
-Self-training, no GMM           & 0.889 & 0.723 & 0.913 & 0.805 \\
-\textbf{Final: GMM self-train.} & \textbf{0.893} & 0.714 & \textbf{0.914} & \textbf{0.814} \\
+\multicolumn{4}{@{}l@{}}{\textit{One-vs-rest LR ($C{=}1$)}} \\
+0.868 & 0.706 & 0.898 & 0.797 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$k$NN cosine ($k{=}10$)}} \\
+0.872 & 0.607 & 0.881 & 0.734 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{GMM-30 cluster-then-label}} \\
+0.780 & 0.570 & 0.819 & 0.640 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Multinomial LR, unbalanced}} \\
+0.850 & 0.677 & 0.894 & 0.765 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Balanced multinomial LR $+$ $k$NN}} \\
+0.885 & 0.724 & 0.898 & 0.800 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Self-training, no GMM}} \\
+0.889 & 0.723 & 0.913 & 0.805 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textbf{Final: GMM-assisted self-training}} \\
+\textbf{0.893} & 0.714 & \textbf{0.914} & \textbf{0.814} \\
 \bottomrule
-\end{tabular}
-\caption{Part~1 model comparison. Validation is the 78 labeled trials; repeated CV
-is 8 repeats of 5-fold CV over all 235 labeled trials.}
+\end{tabular*}
+\caption{Part~1 model comparison; each model's name heads its row of scores.
+Validation is the 78 labeled trials; repeated CV is 8 repeats of 5-fold CV over
+all 235 labeled trials.}
 \label{tab:p1models}
 \end{table}
 
@@ -41,22 +54,30 @@ submit the embeddings-only model. Section~\ref{sec:discussion} explains why.
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{lcccc}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}cccc@{}}
 \toprule
-& \multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
-\cmidrule(lr){2-3}\cmidrule(lr){4-5}
-Feature set & samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
+\multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
 \midrule
-\textbf{Embeddings only}          & \textbf{0.893} & \textbf{0.714} & 0.914 & 0.814 \\
-$+$ \texttt{start\_year}          & 0.891 & 0.711 & 0.912 & 0.807 \\
-$+$ criteria TF-IDF (SVD 50)      & 0.876 & 0.709 & 0.913 & 0.801 \\
-$+$ diseases TF-IDF (SVD 20)      & 0.876 & 0.696 & 0.914 & 0.806 \\
-$+$ Morgan fingerprints (SVD 20)  & 0.889 & 0.719 & 0.918 & 0.815 \\
+\multicolumn{4}{@{}l@{}}{\textbf{Embeddings only}} \\
+\textbf{0.893} & \textbf{0.714} & 0.914 & 0.814 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ \texttt{start\_year}}} \\
+0.891 & 0.711 & 0.912 & 0.807 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ criteria TF-IDF (SVD 50)}} \\
+0.876 & 0.709 & 0.913 & 0.801 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ diseases TF-IDF (SVD 20)}} \\
+0.876 & 0.696 & 0.914 & 0.806 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ Morgan fingerprints (SVD 20)}} \\
+0.889 & 0.719 & 0.918 & 0.815 \\
 \bottomrule
-\end{tabular}
-\caption{Part~1 feature ablation, final model. Extra blocks never improve
-validation sample-F1.}
+\end{tabular*}
+\caption{Part~1 feature ablation, final model; each feature set heads its row of
+scores. No added block improves validation sample-F1.}
 \label{tab:p1ablation}
 \end{table}
 
