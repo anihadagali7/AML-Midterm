@@ -1,0 +1,27 @@
+{
+  "models": 13,
+  "original_splits": 10,
+  "larger_gap_splits": 3,
+  "preprocessing_tracks": 2,
+  "independently_rescored_model_split_results": 338,
+  "source_and_input_hashes_match": true,
+  "same_trial_ids_and_labels_for_every_model": true,
+  "legacy_training_boundaries_verified": true,
+  "unchanged_control_prediction_files": 130,
+  "native_cache_hashes_verified": 13,
+  "original_component_and_submission_replay_max_error": 4.999423097729049e-11,
+  "label_and_identifier_inference_max_error": 0.0,
+  "deserialized_original_csv_byte_replay": {
+    "01_balanced_ensemble": "2c0799f879775bf5eb19a4fb58814fdde75c4035ee0837a69b64eb09b6675a81",
+    "02_text_heavy": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
+    "03_phase_specialized": "52503212b3b46f347ad5c24c3a185a59843b865cf89d6369d0745c871342d892",
+    "04_capped_year": "423d53f115372ddf717b21d67e33799361892b636ddb23a80ab96c216e2206a4",
+    "05_text_later_phases": "3c8d498a6ed79e3e2267a18784cc9b424576da038b532963cf3459519049dde6",
+    "06_lighter_tree_blend": "064f8ca0935d4a7c4721d39dcd66e0229e1267f5c6a63bc4888a530fd8e27588"
+  },
+  "reporting_source_sha256": {
+    "all_submissions_verify.py": "4839e3758ed14b9bc72b0895884e8bd9003ccb45a8f15fcb9bc6de0c3ff97b65",
+    "all_submissions_report.py": "60332f94b9cb23ee6c344d24ed59fd2d9bb70c1c528b0d5ab383e9f394c0699b"
+  },
+  "new_kaggle_submissions": 0
+}

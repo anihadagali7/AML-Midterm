@@ -1,5 +1,14 @@
 # Part Two manual Kaggle submissions
 
+The [complete common benchmark](../experiments/all_submissions/RESULTS.md) directly
+compares all ten files and both Ani winners on the same fixed splits. Use its
+tables for cross-recipe comparisons; the historical 01–06 temporal scores below
+used a different holdout and should not be compared with the newer scores.
+On the common strict benchmark, file 10 improves file 02's chronological mean
+from 0.540324 to 0.535890 and longer-gap mean from 0.568506 to 0.563189, while
+grouped CV worsens from 0.578048 to 0.586891. The chronological intervals include
+zero; file 10 remains an exploratory submission.
+
 **Try [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv) first.**
 It beats Ani's recency model on all six chronological windows in both preprocessing
 tracks, with a small grouped-CV improvement. [09_ani_replace_knn5.csv](09_ani_replace_knn5.csv)

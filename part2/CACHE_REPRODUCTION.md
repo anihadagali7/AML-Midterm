@@ -1,5 +1,13 @@
 # Model caches and source-checkout reproduction
 
+For the full 01–10 comparison, install `requirements-all-submissions.txt`, then
+run `.venv/bin/python part2/all_submissions_benchmark.py --workers 2`,
+`all_submissions_verify.py`, and `all_submissions_report.py`. Legacy fold models
+live under the ignored `experiments/all_submissions/cache/`. The runner refits
+them when missing and reuses verified Ani/extension predictions on the same
+splits. The initial official-training refit reproduces the six original
+submission files; those historical CSVs are never overwritten.
+
 For the new neighbor extensions, saved benchmark arrays and source audits are
 versioned in `experiments/ani_extensions`; native models under its `cache/` are
 regenerable and ignored. Rebuild the final bundle with

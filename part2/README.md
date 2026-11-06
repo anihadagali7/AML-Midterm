@@ -1,5 +1,14 @@
 # Part Two: clinical-trial outcome prediction
 
+**Direct comparison of every saved submission:** [common benchmark results](experiments/all_submissions/RESULTS.md)
+and [executed notebook](all_submissions.ipynb). All ten numbered recipes, both Ani
+winners, and the trend control use identical fitting/evaluation trials across the
+ten original splits and three longer-gap checks. Files 02/03 include their full
+CatBoost ensembles. See [the comparison policy](ALL_SUBMISSIONS_PROTOCOL.md).
+File 10 beats file 02 in all six chronological windows, but has worse grouped CV
+and supplied-validation loss. The chronological uncertainty intervals include
+zero; these comparisons do not establish a new Kaggle winner.
+
 **Latest extension: try [submission 10](submissions/10_ani_fast2_neighbors_half.csv) first.**
 The recent-neighbor blend improves all six chronological windows in both
 preprocessing tracks and slightly improves grouped CV versus Ani's recency winner.
