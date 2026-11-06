@@ -3,6 +3,17 @@
   "ready_file": null,
   "records": [
     {
+      "file": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
+      "original_file": "submissions/ready/part1_dbscan_logistic_trainval235.csv",
+      "operation": "final refit; archived after reported manual submission",
+      "sha256": "19f29c7bcbda974f8ae9646d3ced83bad2953ead45412e88731e8c12e55d2661",
+      "model": "DBSCAN + logistic; final train+validation fit",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.86452,
+      "note": "235 verified labels. Reported Kaggle 0.86452; historical 0.910256 validation F1 belongs to the earlier 157-label model."
+    },
+    {
       "file": "submissions/archive/submitted/logistic_baseline__kaggle_0.87072.csv",
       "original_file": "part1_logistic_regression_C1000_submission.csv",
       "operation": "moved",
@@ -113,5 +124,9 @@
   },
   "experiment_local_submission_copies_retained": true,
   "upload_performed": false,
-  "post_submission_moves": {}
+  "latest_submitted_file": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
+  "latest_reported_kaggle_score": 0.86452,
+  "post_submission_moves": {
+    "submissions/ready/part1_dbscan_logistic_trainval235.csv": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv"
+  }
 }

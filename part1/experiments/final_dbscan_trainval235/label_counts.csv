@@ -1,0 +1,6 @@
+reason,verified_positive,verified_negative,generated_positive,generated_negative,generated_positive_raw_weight,generated_negative_raw_weight,total_fitting_rows,normalized_weight_total
+Safety,25,210,0,0,0.0,0.0,235,235.0
+Funding,12,223,0,0,0.0,0.0,235,235.0
+Efficacy,31,204,8,165,2.0,13.161290322580644,408,234.99999999999952
+Recruitment,151,84,0,0,0.0,0.0,235,235.0
+Other,35,200,0,0,0.0,0.0,235,235.0
