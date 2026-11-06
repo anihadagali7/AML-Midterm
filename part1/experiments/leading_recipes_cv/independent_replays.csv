@@ -1,0 +1,4 @@
+recipe,context,passed
+gmm_tied_k10,repeat0_fold0,True
+kmeans_k8,repeat0_fold0,True
+dbscan_normalized_C100,repeat0_fold0,True
