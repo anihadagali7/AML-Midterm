@@ -1,5 +1,7 @@
 # Ani branch validation comparison
 
+Later results: Michael reported Kaggle **0.87500** for the original 157-label DBSCAN model and **0.86452** for its 235-label refit; Ani remains higher at **0.89423**. The [new paired CV benchmark](../paired_recipe_cv/SUMMARY.md) uses identical 235-label folds and finds Ani 0.914273 vs DBSCAN 0.888316, with the same ranking under both shared feature-access controls. The review below preserves what was established at the earlier validation-only checkpoint.
+
 Reviewed `origin/ani` at `a5487215115e30afb68ab865bc5fd98be6b3e199`: [midterm/part1_best_model.ipynb](https://github.com/anihadagali7/AML-Midterm/blob/a5487215115e30afb68ab865bc5fd98be6b3e199/midterm/part1_best_model.ipynb). This is the latest notebook associated with the commit message reporting Kaggle 0.89423; the older handoff document describes a previous model.
 
 | Model | Validation sample F1 | Validation macro F1 | Kaggle |
