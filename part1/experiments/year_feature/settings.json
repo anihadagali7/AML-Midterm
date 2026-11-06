@@ -325,8 +325,8 @@
     "experiments/kmeans/label_audits/k02_labels.csv": "1452a5a495cf82975aaf59078e9d22e06637995b2997e27487aecfbaf702801d",
     "experiments/kmeans/clusters/k02_clusters.csv": "550f62fe1e6fb10b54c9dcf4d88d6dfbc79c0b739e10fbeadb0a33829eb8d8ef",
     "experiments/kmeans/models/k02.joblib": "2c5c8ea2057a3dfa358fa16dba7bc2520f2493c1e129f19afaff8da4a4df326d",
-    "part1_logistic_regression_C1000_submission.csv": "bbd05ba89d4ac0a21864bbdd029a21633f2ee3ead391f25eda3148d73a276c10",
-    "part1_kmeans_K2_C1000_submission.csv": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9"
+    "submissions/archive/submitted/logistic_baseline__kaggle_0.87072.csv": "bbd05ba89d4ac0a21864bbdd029a21633f2ee3ead391f25eda3148d73a276c10",
+    "submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9"
   },
   "dataset_sha256": {
     "datasets/baseline_embeddings_train.csv": "682580e5a0e379115a2d22caeaaf86cca8836e8ad56a88080dd49ef064050d24",

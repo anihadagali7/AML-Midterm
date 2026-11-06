@@ -53,4 +53,4 @@ Verification: refactoring reproduced baseline probabilities and predictions; ori
 
 ## K=2 Kaggle submission
 
-Prepared `part1_kmeans_K2_C1000_submission.csv` with 312 predictions from the saved K=2 classifier, trained on 157 known-label and 388 generated-label trials. Test fallback cases: 25. The prediction rule matches the supervised baseline. **Kaggle score: 0.87393 (reported by Michael after manual submission).** Baseline Kaggle reference: **0.87072**. `k02_submission.json` records the model and submission checksums.
+Prepared `submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv` with 312 predictions from the saved K=2 classifier, trained on 157 known-label and 388 generated-label trials. Test fallback cases: 25. The prediction rule matches the supervised baseline. **Kaggle score: 0.87393 (reported by Michael after manual submission).** Baseline Kaggle reference: **0.87072**. `k02_submission.json` records the model and submission checksums.

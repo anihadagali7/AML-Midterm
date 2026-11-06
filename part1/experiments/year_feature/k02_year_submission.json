@@ -164,7 +164,7 @@
   "test_rows": 312,
   "test_fallback_trials": 21,
   "test_trials_changed_from_without_year": 19,
-  "submission_file": "part1_kmeans_K2_year_C1000_submission.csv",
+  "submission_file": "submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv",
   "submission_sha256": "60e59e74f6236b035670b1754e4d10fa4922b14ae3003a74f1907bcc254e82c8",
   "model_file": "models/k02_embeddings_year.joblib",
   "model_sha256": "c5ae8244fbfe8438ec7e39943f10f425f13767099c493c4c79a65cd5ae23f718",

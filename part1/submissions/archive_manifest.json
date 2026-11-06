@@ -1,0 +1,117 @@
+{
+  "path_base": "part1/",
+  "ready_file": null,
+  "records": [
+    {
+      "file": "submissions/archive/submitted/logistic_baseline__kaggle_0.87072.csv",
+      "original_file": "part1_logistic_regression_C1000_submission.csv",
+      "operation": "moved",
+      "sha256": "bbd05ba89d4ac0a21864bbdd029a21633f2ee3ead391f25eda3148d73a276c10",
+      "verified_labels": 157,
+      "model": "Supervised logistic baseline",
+      "status": "submitted",
+      "kaggle_score": 0.87072,
+      "note": "Score previously reported by Michael; verified-label count 157."
+    },
+    {
+      "file": "submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv",
+      "original_file": "part1_kmeans_K2_C1000_submission.csv",
+      "operation": "moved",
+      "sha256": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9",
+      "verified_labels": 157,
+      "model": "K-means k=2 + logistic",
+      "status": "submitted",
+      "kaggle_score": 0.87393,
+      "note": "Historical K-means submission; existing current-best-kaggle tag retained without being moved."
+    },
+    {
+      "file": "submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv",
+      "original_file": "part1_kmeans_K2_year_C1000_submission.csv",
+      "operation": "moved",
+      "sha256": "60e59e74f6236b035670b1754e4d10fa4922b14ae3003a74f1907bcc254e82c8",
+      "verified_labels": 157,
+      "model": "K-means k=2 + logistic + year",
+      "status": "submitted",
+      "kaggle_score": 0.85149,
+      "note": "Score previously reported by Michael."
+    },
+    {
+      "file": "submissions/archive/submitted/kmeans_k2_safety_boost005__reported_0.86111.csv",
+      "original_file": "part1_kmeans_K2_safety_boost_005_submission.csv",
+      "operation": "moved",
+      "sha256": "d33018dc6c2dd4e15f8112a8483e1ef9cf7ef6ede7662c3316088428e5aa68df",
+      "verified_labels": 157,
+      "model": "K-means k=2 + Safety year boost 0.05",
+      "status": "reported; variant assumed",
+      "kaggle_score": 0.86111,
+      "note": "Existing manifest assigns reported 0.86111 to boost 0.05; Michael did not explicitly confirm which boost file was uploaded."
+    },
+    {
+      "file": "submissions/archive/unsubmitted/kmeans_k2_safety_boost010__157labels.csv",
+      "original_file": "part1_kmeans_K2_safety_boost_010_submission.csv",
+      "operation": "moved",
+      "sha256": "179a52a155420e9f93060ed6c624bba1ce22bd9f745819951cb4f6037a00f262",
+      "verified_labels": 157,
+      "model": "K-means k=2 + Safety year boost 0.10",
+      "status": "unsubmitted",
+      "kaggle_score": null,
+      "note": "No confirmed submission or score for this file."
+    },
+    {
+      "file": "submissions/archive/unsubmitted/gmm_tied_k10_logistic__157labels.csv",
+      "original_file": "experiments/method_comparison/submissions/part1_gmm_tied_k10_logistic_C1000_submission.csv",
+      "operation": "copied; experiment original retained",
+      "sha256": "c8366ea1a0e3600295f967fe3e17916d92caaa5823c9724ba23e8f2531863d09",
+      "model": "GMM tied k=10 + logistic; earlier 157-label fit",
+      "verified_labels": 157,
+      "status": "unsubmitted",
+      "kaggle_score": null,
+      "note": "Historical prepared file. A future final fit should use the same 235 labels as the current submission."
+    },
+    {
+      "file": "submissions/archive/unsubmitted/kmeans_k8_logistic__157labels.csv",
+      "original_file": "experiments/method_comparison/submissions/part1_kmeans_k08_logistic_C1000_submission.csv",
+      "operation": "copied; experiment original retained",
+      "sha256": "20b591e87b1868ca579d90b3c62028ad6bc3bfc5ce8414f223c16eaa96a27055",
+      "model": "K-means k=8 + logistic; earlier 157-label fit",
+      "verified_labels": 157,
+      "status": "unsubmitted",
+      "kaggle_score": null,
+      "note": "Historical prepared file. A future final fit should use the same 235 labels as the current submission."
+    }
+  ],
+  "updated_reference_files": [
+    "experiments/additional_methods/settings.json",
+    "experiments/clustering_feature_screen/settings.json",
+    "experiments/dbscan_label_tuning/settings.json",
+    "experiments/dbscan_refinement/settings.json",
+    "experiments/dbscan_weight_fine_tuning/settings.json",
+    "experiments/full_covariance_check/settings.json",
+    "experiments/gmm_pca/settings.json",
+    "experiments/gmm_pca_grid/settings.json",
+    "experiments/kmeans/SUMMARY.md",
+    "experiments/kmeans/k02_submission.json",
+    "experiments/kmeans/settings.json",
+    "experiments/method_comparison/settings.json",
+    "experiments/safety_year_bias/SUMMARY.md",
+    "experiments/safety_year_bias/settings.json",
+    "experiments/safety_year_bias/submission_manifest.json",
+    "experiments/safety_year_bias/submissions.csv",
+    "experiments/self_training/settings.json",
+    "experiments/year_feature/SUMMARY.md",
+    "experiments/year_feature/k02_year_submission.json",
+    "experiments/year_feature/settings.json",
+    "method_comparison.ipynb",
+    "part1.ipynb"
+  ],
+  "moved_files": {
+    "part1_logistic_regression_C1000_submission.csv": "submissions/archive/submitted/logistic_baseline__kaggle_0.87072.csv",
+    "part1_kmeans_K2_C1000_submission.csv": "submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv",
+    "part1_kmeans_K2_year_C1000_submission.csv": "submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv",
+    "part1_kmeans_K2_safety_boost_005_submission.csv": "submissions/archive/submitted/kmeans_k2_safety_boost005__reported_0.86111.csv",
+    "part1_kmeans_K2_safety_boost_010_submission.csv": "submissions/archive/unsubmitted/kmeans_k2_safety_boost010__157labels.csv"
+  },
+  "experiment_local_submission_copies_retained": true,
+  "upload_performed": false,
+  "post_submission_moves": {}
+}

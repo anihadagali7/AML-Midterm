@@ -3,7 +3,7 @@
     {
       "experiment": "boost_005",
       "maximum_probability_boost": 0.05,
-      "submission_file": "part1_kmeans_K2_safety_boost_005_submission.csv",
+      "submission_file": "submissions/archive/submitted/kmeans_k2_safety_boost005__reported_0.86111.csv",
       "test_rows": 312,
       "test_trials_changed_from_unadjusted": 7,
       "test_Safety_predictions": 64,
@@ -18,7 +18,7 @@
     {
       "experiment": "boost_010",
       "maximum_probability_boost": 0.1,
-      "submission_file": "part1_kmeans_K2_safety_boost_010_submission.csv",
+      "submission_file": "submissions/archive/unsubmitted/kmeans_k2_safety_boost010__157labels.csv",
       "test_rows": 312,
       "test_trials_changed_from_unadjusted": 10,
       "test_Safety_predictions": 67,

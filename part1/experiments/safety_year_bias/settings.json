@@ -177,9 +177,9 @@
     "experiments/kmeans/datasets/k02_train.csv": "59b1894160f34008f1e655948a9e650a7d73f5306232e40ca4bd02a99e011724",
     "experiments/kmeans/label_audits/k02_labels.csv": "1452a5a495cf82975aaf59078e9d22e06637995b2997e27487aecfbaf702801d",
     "experiments/kmeans/clusters/k02_clusters.csv": "550f62fe1e6fb10b54c9dcf4d88d6dfbc79c0b739e10fbeadb0a33829eb8d8ef",
-    "part1_logistic_regression_C1000_submission.csv": "bbd05ba89d4ac0a21864bbdd029a21633f2ee3ead391f25eda3148d73a276c10",
-    "part1_kmeans_K2_C1000_submission.csv": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9",
-    "part1_kmeans_K2_year_C1000_submission.csv": "60e59e74f6236b035670b1754e4d10fa4922b14ae3003a74f1907bcc254e82c8"
+    "submissions/archive/submitted/logistic_baseline__kaggle_0.87072.csv": "bbd05ba89d4ac0a21864bbdd029a21633f2ee3ead391f25eda3148d73a276c10",
+    "submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9",
+    "submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv": "60e59e74f6236b035670b1754e4d10fa4922b14ae3003a74f1907bcc254e82c8"
   },
   "validation_sha256": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
   "kaggle_score_unadjusted": 0.87393,

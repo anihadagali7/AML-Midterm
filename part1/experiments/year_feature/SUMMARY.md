@@ -34,7 +34,7 @@ K-means still used 150 embeddings. The K=2 training set remains exactly 157 orig
 Existing Kaggle scores are user-reported. The K=2 year-feature submission is exported in the following section. K=2 plus year scored 0.85149 after manual submission, below K=2 without year at 0.87393. The supervised baseline plus year remains unsubmitted. These validation results use the same small set that informed earlier experiments.
 ## Reported Kaggle result: adding year to K=2
 
-Michael reported **0.85149** after submitting `part1_kmeans_K2_year_C1000_submission.csv`.
+Michael reported **0.85149** after submitting `submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv`.
 
 | K=2 classifier | Validation sample-wise F1 | Kaggle score |
 |---|---:|---:|
@@ -47,4 +47,4 @@ A plausible explanation is that year relationships learned from the selected/enr
 
 ## K=2 plus year Kaggle submission
 
-Prepared `part1_kmeans_K2_year_C1000_submission.csv` with 312 predictions from the saved 151-feature classifier. Test trials using the nonempty fallback: 21. Predictions differ from K=2 without year on 19 trials. **Kaggle result: 0.85149 (reported by Michael after manual submission).** Compare with K=2 without year at **0.87393**. The model and submission checksums are recorded in `k02_year_submission.json`.
+Prepared `submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv` with 312 predictions from the saved 151-feature classifier. Test trials using the nonempty fallback: 21. Predictions differ from K=2 without year on 19 trials. **Kaggle result: 0.85149 (reported by Michael after manual submission).** Compare with K=2 without year at **0.87393**. The model and submission checksums are recorded in `k02_year_submission.json`.

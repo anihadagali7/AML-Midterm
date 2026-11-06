@@ -47,8 +47,8 @@ The following files were prepared at Michael's request to compare with unadjuste
 
 | Maximum boost | File | Changed test trials | Safety predictions | Kaggle status |
 |---|---|---:|---:|---|
-| 0.05 | `part1_kmeans_K2_safety_boost_005_submission.csv` | 7 | 64 | 0.86111 (reported; assumed +0.05) |
-| 0.10 | `part1_kmeans_K2_safety_boost_010_submission.csv` | 10 | 67 | pending manual submission |
+| 0.05 | `submissions/archive/submitted/kmeans_k2_safety_boost005__reported_0.86111.csv` | 7 | 64 | 0.86111 (reported; assumed +0.05) |
+| 0.10 | `submissions/archive/unsubmitted/kmeans_k2_safety_boost010__157labels.csv` | 10 | 67 | pending manual submission |
 
 The two files contain identical predictions: **False**. If identical, upload only one. Otherwise, start with the smaller adjustment when checking only one variant. `submissions.csv` and `submission_manifest.json` record file hashes and settings.
 

@@ -11,7 +11,7 @@
   "validation_macro_f1": 0.6807936507936508,
   "test_rows": 312,
   "test_fallback_trials": 25,
-  "submission_file": "part1_kmeans_K2_C1000_submission.csv",
+  "submission_file": "submissions/archive/submitted/kmeans_k2__kaggle_0.87393.csv",
   "submission_sha256": "497343bd9e24889afb744b46747fe2ba6162651e21776d09cd5a0e5fbfea20a9",
   "model_file": "models/k02.joblib",
   "model_sha256": "2c5c8ea2057a3dfa358fa16dba7bc2520f2493c1e129f19afaff8da4a4df326d",
