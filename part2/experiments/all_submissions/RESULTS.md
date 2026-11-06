@@ -5,7 +5,7 @@ Ani's trend control, on the same ten original splits and three longer-gap splits
 Every table uses identical evaluation trials and equal-phase log loss. Lower is
 better. These are frozen recipes; this run did not tune or generate submissions.
 
-**Later Kaggle result:** `10_ani_fast2_neighbors_half.csv` scored **0.58609**, improving Ani's 0.58688 by **0.00079**. The user reported rank 2, **0.00083** behind the leader. This result was reported after the frozen comparison. Local predictions and selection evidence are unchanged. The current ledger supplies the Kaggle column; its original input snapshot is preserved with the run.
+**Later Kaggle result:** `11_file10_legacy20.csv` scored **0.58474**, improving Ani's 0.58688 by **0.00214**. The user reported rank 1. This result was reported after the frozen comparison. Local predictions and selection evidence are unchanged. The current ledger supplies the Kaggle column; its original input snapshot is preserved with the run.
 
 ## Primary strict comparison
 

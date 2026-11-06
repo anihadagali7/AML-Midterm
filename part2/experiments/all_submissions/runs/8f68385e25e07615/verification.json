@@ -21,8 +21,8 @@
   },
   "reporting_source_sha256": {
     "all_submissions_verify.py": "70b5d3298838a763e6d5e703429838a8f154d8e172737c685ef5f74c6f40fff3",
-    "all_submissions_report.py": "990833fb4b9580464f253298e9e59e0eda2197d6c03e72a89f0268332b55f76e"
+    "all_submissions_report.py": "468b97e1b7feded7096c853bc5fc6d917b2b96412a97e40b264ffc3102cc7456"
   },
-  "current_leaderboard_sha256": "11013051532d3a114967243917e93edb3d7085bce99b7ff13b1a45d88597cd0c",
+  "current_leaderboard_sha256": "4165137a7669a0fdb751a75815552a4cc6250f5c6b4f753beeb8f6d26932ae7a",
   "new_kaggle_submissions": 0
 }

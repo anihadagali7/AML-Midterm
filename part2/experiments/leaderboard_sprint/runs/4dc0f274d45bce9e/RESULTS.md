@@ -1,6 +1,6 @@
 # Iteration after file 10 scored 0.58609
 
-The user has up to four further Kaggle submissions in the current window. File 10 is the scored baseline; these are adaptive local experiments. No new file has a known score until the user returns a Kaggle result.
+File 10 is this round's frozen baseline; these are adaptive local experiments. File 11 scored **0.58474**, with user-reported rank 1. Its exact hash is recorded in the current ledger; the export receipt retains its pre-submission state. One of four additional uploads has been reported. Files 12–14 remain unscored reserves.
 
 ## First candidate
 

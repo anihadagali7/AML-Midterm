@@ -1,15 +1,18 @@
 # Four-submission iteration
 
-The scored reference is **file 10, Kaggle 0.58609**. The user reported a leader
-at 0.58526, leaving a gap of 0.00083. Files 11–14 have unknown Kaggle scores.
+**File 11 scored 0.58474 and reached first place (user-reported).** It improves the
+round's file 10 reference, 0.58609, by 0.00135 and beats the previously reported
+leader's 0.58526 by 0.00052. Files 12–14 remain unscored reserves. One of the four
+additional uploads was used; the original first-place objective has been achieved.
 The [submission queue](../../submissions/sprint_queue.json) records returned scores
 and the limit of four further uploads in the user's current window.
 
-**Submit file 11 first.** It blends 80% file 10 with 20% of the original balanced
+**The winning file 11** blends 80% file 10 with 20% of the original balanced
 ensemble, refitted on all 9,050 labeled rows. Its improvements in both chronological
 averages have supporting paired intervals, and it improves grouped CV. It still
 worsens the worst individual gap window slightly. These are adaptively reused
-historical evaluations, so the intervals do not guarantee a leaderboard gain.
+historical evaluations. The later Kaggle result corroborates this candidate's
+improvement; it does not make those local intervals independent or validate other weights.
 
 All candidates use the same ten original splits and three longer-gap splits.
 Preprocessing is fitted on training rows in the primary strict comparison.
@@ -28,11 +31,12 @@ Lower is better. File 13's larger ensemble weight gives stronger means but more
 regression on adverse periods. File 14 has the strongest standard forward mean
 and improves the latest forward period, with the largest worst-gap regression.
 File 12 gives smaller gains with a favorable worst-gap result and provides a
-different direction if the legacy/tree mixtures fail on Kaggle. Use file 11's
-actual score to choose the next upload; four prepared files are not a commitment
-to spend all four slots on this shortlist.
+different direction. File 11's success supports the complementary-ensemble
+hypothesis, but does not establish that file 13's larger weight will help further.
+Preserve file 11 and hold the three unscored reserves; no further upload is needed
+to meet the reported first-place objective.
 
-## Copy the first candidate
+## Copy the winning submission
 
 Run on the computer used to upload to Kaggle:
 
@@ -40,7 +44,7 @@ Run on the computer used to upload to Kaggle:
 scp matthew@100.91.18.77:/Users/matthew/Desktop/michael/AML-Midterm/part2/submissions/11_file10_legacy20.csv ./part2_submission_11.csv
 ```
 
-Upload `part2_submission_11.csv`. Its SHA-256 is
+The submitted artifact is `part2_submission_11.csv`. Its SHA-256 is
 `26ea655feba5094c2045657d328d8a16041f74eca5106f556f1971c7e4bab635`.
 
 ## Complete evidence

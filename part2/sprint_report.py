@@ -58,8 +58,14 @@ def run():
         same_fixed_splits=True,grouped_inner_boundaries_verified=True,source_hashes_match=True,
         exports_verified=len(exports),baseline_kaggle_score=.58609)
     (out/"verification.json").write_text(json.dumps(verification,indent=2)+"\n")
+    ledger=json.loads((ROOT/"submissions/leaderboard_results.json").read_text())
+    result=ledger["submissions"].get("11_file10_legacy20.csv")
+    score_note=(f"File 11 scored **{result['kaggle_score']:.5f}**, with user-reported rank {result['reported_rank']}. "
+        "Its exact hash is recorded in the current ledger; the export receipt retains its pre-submission state. "
+        "One of four additional uploads has been reported. Files 12–14 remain unscored reserves."
+        if result else "No new file has a known score until the user returns a Kaggle result.")
     sections=["# Iteration after file 10 scored 0.58609",
-        "The user has up to four further Kaggle submissions in the current window. File 10 is the scored baseline; these are adaptive local experiments. No new file has a known score until the user returns a Kaggle result.",
+        "File 10 is this round's frozen baseline; these are adaptive local experiments. "+score_note,
         "## First candidate\n\nFile 11 uses **80% file 10 + 20% the original balanced ensemble**, with every final component trained on all 9,050 labeled rows. The 30% mixture has the best local means, but 20% limits regression on the latest forward window and worst gap. Use the first Kaggle result before increasing this weight. File 12 is a distinct reserve: 50% file 10, 25% sharper neighbors (file 09), and 25% Ani's Phase III trend control.",
         "The first batch freezes 32 proposals: five fast-neighbor blend weights, complementary mixtures, and ten small meta-model changes. Every recipe uses the same ten original splits plus three longer-gap checks. Strict preprocessing is the primary comparison; the published-recipe sensitivity track preserves each component's original feature policy. Equal-phase log loss is lower-is-better."]
     for track in ["strict","published"]:
