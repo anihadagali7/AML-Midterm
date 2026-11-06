@@ -4,6 +4,25 @@ PYTHON ?= ../.venv/bin/python
 .PHONY: improve improve-test improve-report improve-verify
 .PHONY: extensions extensions-check extensions-final extensions-report
 .PHONY: compare-all compare-all-check compare-all-report
+.PHONY: sprint sprint-final sprint-check
+
+sprint:
+	$(PYTHON) sprint_benchmark.py --track strict
+	$(PYTHON) sprint_benchmark.py --track published
+	$(PYTHON) sprint_benchmark.py --track strict --summarize
+	$(PYTHON) sprint_tree.py --workers 2
+
+sprint-final:
+	$(PYTHON) sprint_legacy_fit.py
+	$(PYTHON) sprint_export.py mix_legacy01_0.2 11_file10_legacy20.csv
+	$(PYTHON) sprint_export.py mix_sharp_trend 12_file10_sharp_trend.csv
+	$(PYTHON) sprint_export.py mix_legacy01_0.3 13_file10_legacy30.csv
+	$(PYTHON) sprint_tree_export.py tree20 14_file10_recent_tree20.csv
+
+sprint-check:
+	$(PYTHON) -m unittest discover -p 'test_*.py'
+	$(PYTHON) sprint_report.py
+	$(PYTHON) sprint_tree_report.py
 
 compare-all:
 	$(PYTHON) all_submissions_benchmark.py --workers 2

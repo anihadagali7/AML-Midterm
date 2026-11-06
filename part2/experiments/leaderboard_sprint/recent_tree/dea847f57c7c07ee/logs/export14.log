@@ -1,0 +1,68 @@
+Final recent tree fitted 58.3
+{
+  "file": "14_file10_recent_tree20.csv",
+  "model": "tree20",
+  "recipe": {
+    "tree": 0.2,
+    "linear": 0.0
+  },
+  "tree": {
+    "iterations": 1000,
+    "depth": 6,
+    "learning_rate": 0.035,
+    "l2_leaf_reg": 6,
+    "loss_function": "Logloss",
+    "random_seed": 42,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "tau": 3.0,
+  "training_rows": 9050,
+  "sha256": "87f1140ad7531ce45ab6fdfff4076880ca75ad939478d86fde551972a325e930",
+  "kaggle_score": null,
+  "native_replay_max_error": 0.0,
+  "baseline_sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+  "original_bundle_sha256": "276a5b130b0b393fc0a3e432d9bf2125486a9149217dba8b13d63c750a558648",
+  "legacy_bundle_sha256": "64e92af91de47452510b008b73759afabe5970772fc2583792f70cadb34f3ead",
+  "native_model_path": "experiments/leaderboard_sprint/cache/dea847f57c7c07ee/tree20_final.joblib",
+  "native_model_sha256": "a0505a93256ea87a0a8699f6dd564f241a0b12a86c8a49c18b944a48a63ff1c2",
+  "source_sha256": {
+    "sprint_tree_export.py": "1932c3c8a9407ba87e881dd4075a7bfa7618c3ecf9177aec873d75244b5f842f",
+    "sprint_tree.py": "123edf072df10eac1a443042914eb5a8fbc8473299a6121b7f5a09d093bdf84d",
+    "sprint_export.py": "ac57ad77a6e1a3ebd5e711509414b678fb642bd310ae2b320dd158669469a0fa"
+  },
+  "benchmark_manifest_sha256": "e0672219e162d4c2b5f18d10180c63c7e195f153b080c26d009cb9b7e546403a",
+  "metrics": {
+    "strict": {
+      "completed_splits": 10.0,
+      "official": 0.5577297672724822,
+      "temporal": 0.5327582247010335,
+      "worst": 0.5847486999480024,
+      "cv": 0.5807285980952956,
+      "gap_mean": 0.5616227940200764,
+      "gap_worst": 0.6317218908290478,
+      "official_delta": -0.0001095454318388,
+      "temporal_delta": -0.0031320858906336,
+      "worst_delta": -0.0023526635880924,
+      "cv_delta": -0.0061628524597505,
+      "gap_mean_delta": -0.0015663281779498,
+      "gap_worst_delta": 0.0029059013732285
+    },
+    "published": {
+      "completed_splits": 10.0,
+      "official": 0.5588197490813195,
+      "temporal": 0.5317130739478347,
+      "worst": 0.5846841246973175,
+      "cv": 0.579540514822965,
+      "gap_mean": 0.5608412322826634,
+      "gap_worst": 0.6294067247575132,
+      "official_delta": -0.0003531049435072,
+      "temporal_delta": -0.0028339183136688,
+      "worst_delta": -0.0021442173495591,
+      "cv_delta": -0.0059123838488676,
+      "gap_mean_delta": -0.0014643590048454,
+      "gap_worst_delta": 0.0029781072226601
+    }
+  }
+}

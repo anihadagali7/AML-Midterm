@@ -1,0 +1,10 @@
+{
+  "candidate": "tree20",
+  "file": "14_file10_recent_tree20.csv",
+  "rationale": "Best standard chronological mean in this batch; latest forward window also improves under both policies. Longer-gap mean and grouped CV improve against file 10, but worst individual gap worsens.",
+  "input_sha256": {
+    "strict": "21eeb705940096a0bc88ad389fda07e79307b6b84bf271de9fad05f55d02a4e4",
+    "published": "d525adcf9b551c479cde98d5ebf3d111f7b59d91b1147ca0990474f6b1e1ad10"
+  },
+  "status": "Local candidate only; wait for returned Kaggle scores to choose the next upload."
+}

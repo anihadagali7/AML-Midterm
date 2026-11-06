@@ -6,6 +6,12 @@
 tied to the exact CSV hash in [the ledger](submissions/leaderboard_results.json).
 Use file 10 as the baseline for the next experiment.
 
+**Current iteration:** [files 11–14 and the fixed-benchmark comparison](experiments/leaderboard_sprint/RESULTS.md).
+Thirty-two blend/meta variants and four recent-tree blends were evaluated across
+the same 13 splits under both preprocessing policies. File 11 is the first upload
+recommendation; the other files are reserves pending its score. All four scores
+are unknown. Native replay checks pass and all 16 regression tests pass.
+
 **Direct comparison of every saved submission:** [common benchmark results](experiments/all_submissions/RESULTS.md)
 and [executed notebook](all_submissions.ipynb). All ten numbered recipes, both Ani
 winners, and the trend control use identical fitting/evaluation trials across the

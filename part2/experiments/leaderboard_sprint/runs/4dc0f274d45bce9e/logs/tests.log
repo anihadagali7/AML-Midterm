@@ -1,0 +1,23 @@
+test_cv_covers_each_trial_once_per_repeat (part2.test_local_benchmark.FrozenProtocolTests.test_cv_covers_each_trial_once_per_repeat) ... ok
+test_no_trial_or_test_set_leakage (part2.test_local_benchmark.FrozenProtocolTests.test_no_trial_or_test_set_leakage) ... ok
+test_protocol_reuse_is_identical (part2.test_local_benchmark.FrozenProtocolTests.test_protocol_reuse_is_identical) ... ok
+test_temporal_windows_are_forward_and_disjoint (part2.test_local_benchmark.FrozenProtocolTests.test_temporal_windows_are_forward_and_disjoint) ... ok
+test_equal_phase_loss_differs_from_row_weighted_loss (part2.test_local_benchmark.ScoringTests.test_equal_phase_loss_differs_from_row_weighted_loss) ... ok
+test_partial_comparison_cannot_be_marked_complete (part2.test_local_benchmark.ScoringTests.test_partial_comparison_cannot_be_marked_complete) ...     model  completed_splits  expected_splits  official_logloss  temporal_windows  temporal_mean_logloss  worst_temporal_logloss  cv_completed_repeats  cv_mean_logloss  cv_repeat_std  temporal_mean_delta_vs_ani  cv_mean_delta_vs_ani  complete_comparison
+ani_stack                 1               10               0.5                 0                    NaN                     NaN                     0              NaN            NaN                         NaN                   NaN                False
+ok
+test_trial_paired_bootstrap_known_improvement (part2.test_local_benchmark.ScoringTests.test_trial_paired_bootstrap_known_improvement) ... ok
+test_known_paired_effect (part2.test_improvements.ComparisonTests.test_known_paired_effect) ... ok
+test_misaligned_predictions_rejected (part2.test_improvements.ComparisonTests.test_misaligned_predictions_rejected) ... ok
+test_repeating_same_trials_does_not_narrow_interval (part2.test_improvements.ComparisonTests.test_repeating_same_trials_does_not_narrow_interval) ... ok
+test_selection_requires_beating_both_references (part2.test_improvements.ComparisonTests.test_selection_requires_beating_both_references) ... ok
+test_evaluation_labels_and_identifiers_cannot_change_predictions (part2.test_improvements.OutcomeBoundaryTests.test_evaluation_labels_and_identifiers_cannot_change_predictions) ... ok
+test_supervised_word_ratio_has_expected_direction_and_handles_unseen_text (part2.test_improvements.OutcomeBoundaryTests.test_supervised_word_ratio_has_expected_direction_and_handles_unseen_text) ... ok
+test_heldout_labels_and_identifiers_do_not_enter_neighbors (part2.test_extensions.NeighborTests.test_heldout_labels_and_identifiers_do_not_enter_neighbors) ... ok
+test_recency_moves_identical_neighbors_toward_newer_outcomes (part2.test_extensions.NeighborTests.test_recency_moves_identical_neighbors_toward_newer_outcomes) ... ok
+test_zero_similarity_uses_training_phase_prior (part2.test_extensions.NeighborTests.test_zero_similarity_uses_training_phase_prior) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.415s
+
+OK

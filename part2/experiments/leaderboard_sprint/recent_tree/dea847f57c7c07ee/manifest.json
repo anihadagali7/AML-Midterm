@@ -1,0 +1,49 @@
+{
+  "tree": {
+    "iterations": 1000,
+    "depth": 6,
+    "learning_rate": 0.035,
+    "l2_leaf_reg": 6,
+    "loss_function": "Logloss",
+    "random_seed": 42,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "tau": 3.0,
+  "recipes": {
+    "tree10": {
+      "tree": 0.1,
+      "linear": 0.0
+    },
+    "tree20": {
+      "tree": 0.2,
+      "linear": 0.0
+    },
+    "recent_legacy20": {
+      "tree": 0.1,
+      "linear": 0.1
+    },
+    "recent_legacy30": {
+      "tree": 0.15,
+      "linear": 0.15
+    }
+  },
+  "source_sha256": {
+    "sprint_tree.py": "123edf072df10eac1a443042914eb5a8fbc8473299a6121b7f5a09d093bdf84d",
+    "all_submission_models.py": "7d8a51f78d13c64a7cdaef02a4b97b5b408d4164a7c806aa96593c001c8d8832",
+    "boosted.py": "c2a3da5c682cb7f74fbb78649cd1f7a598b21848d667175aa24d3af039d1029f",
+    "experiments.py": "7346197ed8466c54bc4caad0ad31f4570e8838a9aa81663eab01903f901e4a70"
+  },
+  "policy_sha256": "60099b13de3c9c1c18049efea2284242e5de320e33af53d0b3d12ac40fed1e84",
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "gaps_sha256": "e82c9ea3b46efaed20164103cb2c99616acf500df03837b3cf6098daab7c9027",
+  "sprint_run": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  }
+}
