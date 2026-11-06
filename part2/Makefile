@@ -5,6 +5,17 @@ PYTHON ?= ../.venv/bin/python
 .PHONY: extensions extensions-check extensions-final extensions-report
 .PHONY: compare-all compare-all-check compare-all-report
 .PHONY: sprint sprint-final sprint-check
+.PHONY: sprint-refine sprint-refine-check
+
+sprint-refine:
+	$(PYTHON) sprint_refine.py benchmark
+	$(PYTHON) sprint_finish.py benchmark
+
+sprint-refine-check:
+	$(PYTHON) -m unittest discover -p 'test_*.py'
+	$(PYTHON) sprint_refine_report.py
+	$(PYTHON) sprint_finish_report.py
+	$(PYTHON) sprint_overview.py
 
 sprint:
 	$(PYTHON) sprint_benchmark.py --track strict

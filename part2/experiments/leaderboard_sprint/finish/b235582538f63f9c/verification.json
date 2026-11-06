@@ -1,0 +1,10 @@
+{
+  "recipes": 9,
+  "controls": 3,
+  "evaluations": 312,
+  "same_fixed_splits": true,
+  "source_and_component_hashes_verified": true,
+  "independent_blend_replay": true,
+  "selected_for_export": null,
+  "reason": "File 15 lost on Kaggle. A separate sharper-neighbor candidate was prepared, then held because evidence did not justify the final submission slot."
+}

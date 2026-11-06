@@ -18,29 +18,58 @@
     },
     {
       "file": "12_file10_sharp_trend.csv",
-      "status": "Prepared reserve; file 11 reached reported first place; no further upload requested",
+      "status": "Prepared reserve; testing combinations against file 11 before next selection",
       "kaggle_score": null,
       "sha256": "534966af71199aa287e83931d6935601bb6674dd6064686dc885025c7c1db1cf",
       "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/12_file10_sharp_trend.json"
     },
     {
       "file": "13_file10_legacy30.csv",
-      "status": "Prepared reserve; file 11 reached reported first place; no further upload requested",
-      "kaggle_score": null,
+      "status": "Submitted; improves file 11 by 0.00009",
+      "kaggle_score": 0.58465,
       "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
-      "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/13_file10_legacy30.json"
+      "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/13_file10_legacy30.json",
+      "reported_at_utc": "2026-11-06T23:40:09.338846+00:00"
     },
     {
       "file": "14_file10_recent_tree20.csv",
-      "status": "Prepared reserve; file 11 reached reported first place; no further upload requested",
+      "status": "Prepared reserve; testing combinations against file 11 before next selection",
       "kaggle_score": null,
       "sha256": "87f1140ad7531ce45ab6fdfff4076880ca75ad939478d86fde551972a325e930",
       "export_receipt": "experiments/leaderboard_sprint/recent_tree/dea847f57c7c07ee/exports/14_file10_recent_tree20.json"
+    },
+    {
+      "file": "15_file10_legacy20_tree10_trend10.csv",
+      "status": "Submitted; 0.00027 worse than file 13",
+      "kaggle_score": 0.58492,
+      "sha256": "7c86d5e89d1e9e81db9ab50200e5d147df9b9fd6af6ff23ed173b9663279c37b",
+      "export_receipt": "experiments/leaderboard_sprint/refine/2e5c792462013673/exports/15_file10_legacy20_tree10_trend10.json",
+      "reported_at_utc": "2026-11-06T23:44:47.296572+00:00"
+    },
+    {
+      "file": "16_file10_legacy30_sharp20.csv",
+      "status": "HOLD \u2014 unsubmitted reserve; recommendation withdrawn after reviewing final-slot value",
+      "kaggle_score": null,
+      "sha256": "ef1a79446608d40117a55e22e2e1ffbeb5b488f69875a8c0ecc17e33aca0ebb1",
+      "export_receipt": "experiments/leaderboard_sprint/refine/2e5c792462013673/exports/16_file10_legacy30_sharp20.json"
     }
   ],
-  "confirmed_additional_uploads": 1,
-  "count_note": "One completed upload reported: file 11 scored 0.58474 and reached first place.",
-  "remaining_from_original_budget": 3,
-  "objective_status": "User reported first place achieved",
-  "current_best": "11_file10_legacy20.csv"
+  "confirmed_additional_uploads": 3,
+  "count_note": "File 11: 0.58474; file 13: 0.58465; file 15: 0.58492. File 13 remains best.",
+  "remaining_from_original_budget": 1,
+  "objective_status": "Retain file 13 at 0.58465; hold final remaining submission because file 16 evidence is weak",
+  "current_best": "13_file10_legacy30.csv",
+  "active_window": {
+    "start_utc": "2026-11-06T23:36:49Z",
+    "end_utc": "2026-11-07T00:06:49Z",
+    "maximum_further_uploads": 3,
+    "baseline_file": "11_file10_legacy20.csv",
+    "baseline_score": 0.58474,
+    "confirmed_uploads": 2,
+    "remaining_uploads": 1,
+    "final_slot_recommendation": "Hold; do not submit file 16 on current evidence"
+  },
+  "user_reported_total_submissions": 9,
+  "user_reported_rank": 1,
+  "user_reported_at_utc": "2026-11-06T23:50:30.004149+00:00"
 }

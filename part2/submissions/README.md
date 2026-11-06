@@ -1,14 +1,16 @@
 # Part Two manual Kaggle submissions
 
-**Current best: file 11, Kaggle 0.58474, user-reported first place.** The improvement
-over file 10 is 0.00135 and over Ani's 0.58688 is 0.00214. It beats the previously
-reported leader's 0.58526 by 0.00052. Preserve this exact file as the scored reference.
+**Current best: file 13, Kaggle 0.58465, user-reported first place.** The improvement
+over file 10 is 0.00144 and over Ani's 0.58688 is 0.00223. It beats the previously
+reported leader's 0.58526 by 0.00061. Preserve this exact file as the scored reference.
 The [current ledger](leaderboard_results.json) records the score against its hash.
 
-**Winning submission:** [11_file10_legacy20.csv](11_file10_legacy20.csv) blends
-80% file 10 with 20% of the original ensemble, refitted on all 9,050 labeled rows.
-Files 12–14 are prepared, unscored reserves. One of four additional uploads was used.
-See the [common comparison and SCP command](../experiments/leaderboard_sprint/RESULTS.md)
+**Winning submission:** [13_file10_legacy30.csv](13_file10_legacy30.csv) blends
+70% file 10 with 30% of the original ensemble, refitted on all 9,050 labeled rows.
+File 15 scored 0.58492 and did not improve it. **Hold file 16 and the final slot:**
+its small local gains are insufficient evidence for another upload. Three of four
+additional uploads have reported results; the user reports nine total submissions.
+See the [common comparison and evidence](../experiments/leaderboard_sprint/RESULTS.md)
 and [four-submission queue](sprint_queue.json).
 
 The [complete common benchmark](../experiments/all_submissions/RESULTS.md) directly
@@ -33,6 +35,9 @@ The chronological uncertainty intervals remain unchanged by the Kaggle result.
 | 09: sharper recent kNN | 0.535213 | 0.589230 | 0.563657 | Unknown |
 | 10: recent-neighbor blend | 0.535890 | 0.586891 | 0.563189 | **0.58609** |
 | 11: 20% original-ensemble blend | 0.533926 | 0.581169 | 0.561563 | **0.58474** |
+| 13: 30% original-ensemble blend | 0.533405 | 0.578966 | 0.561247 | **0.58465** |
+| 15: recent tree and phase trend | 0.532700 | 0.578254 | 0.560879 | 0.58492 |
+| 16: 30% original ensemble + 20% sharp neighbors | 0.533037 | 0.579112 | 0.561154 | Unknown; hold |
 
 See [full findings](../experiments/ani_extensions/RESULTS.md) and the
 [recipes, checksums and native bundle manifest](ani_extensions_manifest.json).
@@ -62,7 +67,7 @@ Hold **05/06** after the Ani comparison. The new chronological benchmark favors 
 
 ## Optional Ani-anchored candidates
 
-07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. These are historical proposals; file 11 is now the confirmed best. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
+07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. These are historical proposals; file 13 is now the confirmed best. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
 
 | submission | mean_abs_change_from_ani | kaggle_score |
 | --- | --- | --- |

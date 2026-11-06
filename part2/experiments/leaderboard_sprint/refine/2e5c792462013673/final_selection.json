@@ -1,0 +1,15 @@
+{
+  "selected": "legacy0.3_sharp0.2",
+  "file": "16_file10_legacy30_sharp20.csv",
+  "reference": "file13",
+  "observed_kaggle": {
+    "file11": 0.58474,
+    "file13": 0.58465,
+    "file15": 0.58492
+  },
+  "rationale": "File 15 failed to transfer. Preserve the successful 30% original ensemble and test the independent sharper-neighbor direction. Both chronological means and latest forward period improve against file 13 under both policies; grouped CV, official and worst gap regress slightly. Interpolation of files 13/15 has a small local averaging gain, making it a less compelling final use after file 15 lost 0.00027. This is a judgment, not a predicted Kaggle score.",
+  "final_slot": true,
+  "score_known_at_selection": false,
+  "remaining_uploads_before_this": 1,
+  "other_batch": "experiments/leaderboard_sprint/finish/b235582538f63f9c"
+}

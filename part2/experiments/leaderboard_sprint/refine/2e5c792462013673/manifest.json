@@ -1,0 +1,123 @@
+{
+  "recipes": {
+    "legacy0.25": {
+      "legacy": 0.25
+    },
+    "legacy0.35": {
+      "legacy": 0.35
+    },
+    "legacy0.4": {
+      "legacy": 0.4
+    },
+    "legacy0.5": {
+      "legacy": 0.5
+    },
+    "legacy0.2_tree0.05": {
+      "legacy": 0.2,
+      "tree": 0.05
+    },
+    "legacy0.2_tree0.1": {
+      "legacy": 0.2,
+      "tree": 0.1
+    },
+    "legacy0.2_tree0.15": {
+      "legacy": 0.2,
+      "tree": 0.15
+    },
+    "legacy0.3_tree0.05": {
+      "legacy": 0.3,
+      "tree": 0.05
+    },
+    "legacy0.3_tree0.1": {
+      "legacy": 0.3,
+      "tree": 0.1
+    },
+    "legacy0.3_tree0.15": {
+      "legacy": 0.3,
+      "tree": 0.15
+    },
+    "legacy0.4_tree0.05": {
+      "legacy": 0.4,
+      "tree": 0.05
+    },
+    "legacy0.4_tree0.1": {
+      "legacy": 0.4,
+      "tree": 0.1
+    },
+    "legacy0.4_tree0.15": {
+      "legacy": 0.4,
+      "tree": 0.15
+    },
+    "legacy0.2_tree0.05_trend0.1": {
+      "legacy": 0.2,
+      "tree": 0.05,
+      "trend": 0.1
+    },
+    "legacy0.2_tree0.1_trend0.1": {
+      "legacy": 0.2,
+      "tree": 0.1,
+      "trend": 0.1
+    },
+    "legacy0.3_tree0.05_trend0.1": {
+      "legacy": 0.3,
+      "tree": 0.05,
+      "trend": 0.1
+    },
+    "legacy0.3_tree0.1_trend0.1": {
+      "legacy": 0.3,
+      "tree": 0.1,
+      "trend": 0.1
+    },
+    "legacy0.3_sharp0.1": {
+      "legacy": 0.3,
+      "sharp": 0.1
+    },
+    "legacy0.3_sharp0.2": {
+      "legacy": 0.3,
+      "sharp": 0.2
+    }
+  },
+  "controls": {
+    "file10": {},
+    "file11": {
+      "legacy": 0.2
+    },
+    "file13": {
+      "legacy": 0.3
+    },
+    "file14": {
+      "tree": 0.2
+    }
+  },
+  "baseline": {
+    "file": "11_file10_legacy20.csv",
+    "kaggle_score": 0.58474,
+    "sha256": "26ea655feba5094c2045657d328d8a16041f74eca5106f556f1971c7e4bab635"
+  },
+  "source_sha256": {
+    "sprint_refine.py": "71ec1fb209e40f553a16a394cebf5bc66a486a297b697e48b8a38a1f48ff0cbb",
+    "sprint_export.py": "ac57ad77a6e1a3ebd5e711509414b678fb642bd310ae2b320dd158669469a0fa",
+    "sprint_models.py": "3a5ff9cf01468bd5c46985fcb6fc1347be9ed9355edcccbceff790079077a0c7",
+    "sprint_tree.py": "123edf072df10eac1a443042914eb5a8fbc8473299a6121b7f5a09d093bdf84d",
+    "all_submission_models.py": "7d8a51f78d13c64a7cdaef02a4b97b5b408d4164a7c806aa96593c001c8d8832",
+    "benchmark_models.py": "719918c15adb87b3797a1b57a7ce15c0e61e49535988994198acb26df76c741a",
+    "experiments.py": "7346197ed8466c54bc4caad0ad31f4570e8838a9aa81663eab01903f901e4a70",
+    "boosted.py": "c2a3da5c682cb7f74fbb78649cd1f7a598b21848d667175aa24d3af039d1029f",
+    "ani_models.py": "13639f92744f3d4a1fc38113861bb15cc85d32e26964cf1e5f774a8974956c53",
+    "improvement_models.py": "79c482fa2a2fcb4327df03b44e484822f505f4500a76db31e95b919661790939",
+    "extension_neighbors.py": "0a4b3a8b3fb3019144470188fb7e6b5b4208f18063332abe64cd44fca6abcd38"
+  },
+  "policy_sha256": "340cdaa5d429203325b55de817085f3eda8c6bf57ca5f579458f8f18b32e939e",
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "gaps_sha256": "e82c9ea3b46efaed20164103cb2c99616acf500df03837b3cf6098daab7c9027",
+  "parents": {
+    "initial": {
+      "path": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e",
+      "manifest_sha256": "36ac333d4705f87d6931c64234da1619977c4412088b895ba1926974860f0f6b"
+    },
+    "tree": {
+      "path": "experiments/leaderboard_sprint/recent_tree/dea847f57c7c07ee",
+      "manifest_sha256": "e0672219e162d4c2b5f18d10180c63c7e195f153b080c26d009cb9b7e546403a"
+    }
+  }
+}
