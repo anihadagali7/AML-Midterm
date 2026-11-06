@@ -1,6 +1,8 @@
 # New Part Two candidates: recent, sharper neighbors
 
-**Try `10_ani_fast2_neighbors_half.csv` first.** It improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. `09_ani_replace_knn5.csv` has the strongest improvement on the original three forward windows, but a small grouped-CV regression. These are local results; **both new Kaggle scores are unknown**.
+**File 10 Kaggle result: 0.58609 (user-reported).** File 09's Kaggle score is unknown. The current ledger records results reported after the frozen export manifests.
+
+File 10 improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. Its reported Kaggle score of 0.58609 improves that reference by 0.00079. The user reported second place behind 0.58526, a remaining gap of 0.00083. Use file 10 as the next experiment's reference. File 09 has the strongest improvement on the original three forward windows, but a small grouped-CV regression and no reported Kaggle score.
 
 ## What the earlier search missed
 
@@ -70,7 +72,7 @@ File 10 wins all three additional windows in both tracks. File 09 improves their
 
 ## Uncertainty
 
-Paired trial bootstraps share weights across phase rows and average repeated-CV losses before resampling. The chronological confidence intervals versus Ani include zero. These gains are promising local point estimates, not proof of a Kaggle improvement. Selection across this and earlier research is adaptive, and the intervals do not correct for it.
+Paired trial bootstraps share weights across phase rows and average repeated-CV losses before resampling. The chronological confidence intervals versus Ani include zero. The local intervals alone do not establish a Kaggle improvement; the later reported score above is separate evidence. Selection across this and earlier research is adaptive, and the intervals do not correct for it.
 
 | model | kind | delta | lower | upper |
 | --- | --- | --- | --- | --- |
@@ -128,7 +130,7 @@ This round tested **40 extension recipes**, each on ten frozen splits under two 
 Final fits use all 9,050 labeled rows and the same feature-only transductive preprocessing as Ani. Each CSV has exactly 1,500 unique IDs in sample-submission order, finite probabilities, and columns `ID,label`. The original Ani files remain intact.
 
 - [09_ani_replace_knn5.csv](../../submissions/09_ani_replace_knn5.csv): Kaggle score unknown; SHA-256 `2aef6030c184ea3dbb0fa271519e2330d61bb9853bd7c63b2baab8f18f9ea75d`.
-- [10_ani_fast2_neighbors_half.csv](../../submissions/10_ani_fast2_neighbors_half.csv): Kaggle score unknown; SHA-256 `d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448`.
+- [10_ani_fast2_neighbors_half.csv](../../submissions/10_ani_fast2_neighbors_half.csv): Kaggle score 0.58609 (user-reported); SHA-256 `d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448`.
 
 ```sh
 # From repository root, with part2/requirements-benchmark.txt installed in .venv:

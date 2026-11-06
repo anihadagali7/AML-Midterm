@@ -20,8 +20,9 @@
     "06_lighter_tree_blend": "064f8ca0935d4a7c4721d39dcd66e0229e1267f5c6a63bc4888a530fd8e27588"
   },
   "reporting_source_sha256": {
-    "all_submissions_verify.py": "4839e3758ed14b9bc72b0895884e8bd9003ccb45a8f15fcb9bc6de0c3ff97b65",
-    "all_submissions_report.py": "60332f94b9cb23ee6c344d24ed59fd2d9bb70c1c528b0d5ab383e9f394c0699b"
+    "all_submissions_verify.py": "70b5d3298838a763e6d5e703429838a8f154d8e172737c685ef5f74c6f40fff3",
+    "all_submissions_report.py": "990833fb4b9580464f253298e9e59e0eda2197d6c03e72a89f0268332b55f76e"
   },
+  "current_leaderboard_sha256": "11013051532d3a114967243917e93edb3d7085bce99b7ff13b1a45d88597cd0c",
   "new_kaggle_submissions": 0
 }

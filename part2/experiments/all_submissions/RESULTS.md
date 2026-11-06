@@ -5,6 +5,8 @@ Ani's trend control, on the same ten original splits and three longer-gap splits
 Every table uses identical evaluation trials and equal-phase log loss. Lower is
 better. These are frozen recipes; this run did not tune or generate submissions.
 
+**Later Kaggle result:** `10_ani_fast2_neighbors_half.csv` scored **0.58609**, improving Ani's 0.58688 by **0.00079**. The user reported rank 2, **0.00083** behind the leader. This result was reported after the frozen comparison. Local predictions and selection evidence are unchanged. The current ledger supplies the Kaggle column; its original input snapshot is preserved with the run.
+
 ## Primary strict comparison
 
 Every model fits preprocessing on its fitting rows only. `official` is the
@@ -27,7 +29,7 @@ scores belong to the original file hashes, not these fold refits.
 | ani_stack | 0.555039 | 0.537446 | 0.588574 | 0.587411 | 0.564681 | 0.586880 |
 | ani_phase3_trend | 0.556030 | 0.537131 | 0.588951 | 0.586468 | 0.562422 | Unknown |
 | 09_ani_replace_knn5 | 0.560796 | 0.535213 | 0.586014 | 0.589230 | 0.563657 | Unknown |
-| 10_ani_fast2_neighbors_half | 0.557839 | 0.535890 | 0.587101 | 0.586891 | 0.563189 | Unknown |
+| 10_ani_fast2_neighbors_half | 0.557839 | 0.535890 | 0.587101 | 0.586891 | 0.563189 | 0.586090 |
 
 ## File 10 versus the actual non-Ani submissions
 
@@ -83,7 +85,7 @@ policies. Use the strict table for common-preprocessing comparisons.
 | ani_stack | 0.556108 | 0.535751 | 0.587659 | 0.585465 | 0.563803 | 0.586880 |
 | ani_phase3_trend | 0.557150 | 0.535460 | 0.587985 | 0.584607 | 0.561546 | Unknown |
 | 09_ani_replace_knn5 | 0.561697 | 0.533687 | 0.586055 | 0.587178 | 0.562923 | Unknown |
-| 10_ani_fast2_neighbors_half | 0.559173 | 0.534547 | 0.586828 | 0.585453 | 0.562306 | Unknown |
+| 10_ani_fast2_neighbors_half | 0.559173 | 0.534547 | 0.586828 | 0.585453 | 0.562306 | 0.586090 |
 
 ## Paired uncertainty for file 10
 
@@ -142,4 +144,5 @@ See [comparison policy](../../ALL_SUBMISSIONS_PROTOCOL.md),
 [strict machine-readable table](runs/8f68385e25e07615/comparison_strict.csv), and
 [source/input manifest](runs/8f68385e25e07615/manifest.json). Native caches are ignored
 by Git and can be rebuilt; per-row held-out predictions and fitting IDs are saved.
-No new Kaggle result is claimed or submitted by this run.
+This benchmark does not upload submissions. Later user-reported Kaggle results
+are joined by exact submission hashes from the current ledger.

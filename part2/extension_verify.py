@@ -53,9 +53,15 @@ def verify():
     assert digest(ROOT/manifest["bundle_path"])==manifest["bundle_sha256"]
     assert max(manifest["native_replay_errors"].values())<1e-12
     sample=pd.read_csv(ROOT/"part2_sample_submission.csv")
+    ledger=json.loads((ROOT/"submissions/leaderboard_results.json").read_text())
+    scores={}
     for item in manifest["submissions"]:
         path=ROOT/"submissions"/item["file"]
+        # Export manifests are frozen before any later leaderboard results.
         assert digest(path)==item["sha256"] and item["kaggle_score"] is None
+        record=ledger["submissions"].get(item["file"])
+        if record is not None: assert record["sha256"]==item["sha256"]
+        scores[item["file"]]=record["kaggle_score"] if record else None
         data=pd.read_csv(path)
         assert data.ID.equals(sample.ID) and data.ID.is_unique and len(data)==1500
         assert data.label.between(0,1,inclusive="neither").all()
@@ -64,7 +70,9 @@ def verify():
         source_and_input_hashes_match=True,grouped_inner_preprocessing_verified=True,
         independently_rescored=True,gapped_splits_per_track=3,exported_submissions=len(manifest["submissions"]),
         native_replay_max_error=max(manifest["native_replay_errors"].values()),
-        labels_and_identifiers_do_not_change_inference=True,kaggle_scores_unknown=True)
+        labels_and_identifiers_do_not_change_inference=True,
+        kaggle_scores_unknown=all(value is None for value in scores.values()),
+        reported_kaggle_scores=scores,leaderboard_sha256=digest(ROOT/"submissions/leaderboard_results.json"))
     (DECISION/"verification.json").write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))
 

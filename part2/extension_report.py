@@ -25,6 +25,15 @@ def build():
     decision=selection();names=REFERENCES+[x["model"] for x in decision["shortlist"]]
     manifest=json.loads((DECISION/"final_manifest.json").read_text())
     verification=json.loads((DECISION/"verification.json").read_text())
+    ledger=json.loads((ROOT/"submissions/leaderboard_results.json").read_text())
+    score_labels={}
+    for item in manifest["submissions"]:
+        record=ledger["submissions"].get(item["file"])
+        if record: assert record["sha256"]==item["sha256"]
+        score_labels[item["file"]]=f"{record['kaggle_score']:.5f} (user-reported)" if record else "unknown"
+    score_note=("**File 10 Kaggle result: "+score_labels["10_ani_fast2_neighbors_half.csv"]+
+        ".** File 09's Kaggle score is "+score_labels["09_ani_replace_knn5.csv"]+
+        ". The current ledger records results reported after the frozen export manifests.")
     primary="fast2_neighbors_half";sharp="replace_knn5"
     sources={t:pd.read_csv(DECISION/t/"summary.csv").set_index("model") for t in ["strict","published"]}
     gaps={t:pd.read_csv(DECISION/"gaps"/t/"summary.csv").set_index("model") for t in sources}
@@ -47,7 +56,8 @@ def build():
     axes[0].legend(fontsize=8)
     fig.savefig(figures/"chronological_differences.png",dpi=180);plt.close(fig)
     sections=["# New Part Two candidates: recent, sharper neighbors",
-        "**Try `10_ani_fast2_neighbors_half.csv` first.** It improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. `09_ani_replace_knn5.csv` has the strongest improvement on the original three forward windows, but a small grouped-CV regression. These are local results; **both new Kaggle scores are unknown**.",
+        score_note,
+        "File 10 improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. Its reported Kaggle score of 0.58609 improves that reference by 0.00079. The user reported second place behind 0.58526, a remaining gap of 0.00083. Use file 10 as the next experiment's reference. File 09 has the strongest improvement on the original three forward windows, but a small grouped-CV regression and no reported Kaggle score.",
         "## What the earlier search missed\n\nThe first round tested slower recency and many calibration changes while retaining Ani's nearest-neighbor estimator. That estimator ignores recency, uses linear text similarities, and shrinks toward a fixed 50% success rate. The previous promotion rule also demanded near-best random CV from the unweighted model, despite its weaker chronological and reported Kaggle results. This round preserves that history and uses a separately declared rule that prioritizes later-cohort prediction. No old result was relabeled as new evidence.",
         "## Changes that helped\n\n**File 09** retains Ani's seven other base estimators and replaces only the kNN input before refitting his logistic stack. For the 50 most similar trials in the same phase, it squares similarity relative to the closest match, weights recent trials more strongly (exponential tau=3), and shrinks toward a smoothed training-only success prior for that phase. All neighbor labels, priors, vocabularies and IDF values are rebuilt inside each grouped inner fold.\n\n**File 10** averages Ani's original stack with a tau=2 stack that also receives eight neighborhood estimates: several neighborhood sizes, recent weighting, sharper text similarity, and combined criteria/disease/drug/ICD similarity. The probability blend is fixed at 50/50. Its OOF meta-model is regularized with C=0.3.",
         "For file 09, neighbor weights are `(similarity / best_similarity)^2 × recency_weight`. Recency weights have mean one within the fitting phase. The phase prior is `(weighted_successes + 1) / (total_weight + 2)`, and the neighbor probability is `(weighted_neighbor_successes + 2 × prior) / (neighbor_weight + 2)`. With no overlapping text, prediction falls back to the fitted phase prior.",
@@ -60,7 +70,7 @@ def build():
         sections.append("### "+track.capitalize()+"\n\n"+table(gaps[track].loc[names,["temporal","worst"]].reset_index()))
     sections.append("File 10 wins all three additional windows in both tracks. File 09 improves their average but slightly worsens the first gap. Ani's unsubmitted Phase III trend control remains better on the *average of these longer-gap tests*; the new candidates are better on the original forward windows. This prevents claiming dominance over every alternative.")
     sections.append("![Window-by-window differences](decision/figures/chronological_differences.png)")
-    sections.append("## Uncertainty\n\nPaired trial bootstraps share weights across phase rows and average repeated-CV losses before resampling. The chronological confidence intervals versus Ani include zero. These gains are promising local point estimates, not proof of a Kaggle improvement. Selection across this and earlier research is adaptive, and the intervals do not correct for it.\n\n"+table(paired[(paired.track=="strict")&(paired.reference=="ani_stack")][["model","kind","delta","lower","upper"]]))
+    sections.append("## Uncertainty\n\nPaired trial bootstraps share weights across phase rows and average repeated-CV losses before resampling. The chronological confidence intervals versus Ani include zero. The local intervals alone do not establish a Kaggle improvement; the later reported score above is separate evidence. Selection across this and earlier research is adaptive, and the intervals do not correct for it.\n\n"+table(paired[(paired.track=="strict")&(paired.reference=="ani_stack")][["model","kind","delta","lower","upper"]]))
     sections.append("All paired comparisons, including against the earlier 0.58810 winner, are in [paired_comparisons.csv](decision/paired_comparisons.csv). Larger-gap intervals are stored separately under each track's `gaps` directory.")
     phases=pd.read_csv(DECISION/"phase_metrics.csv")
     sections.append("## Required per-phase and stopping-reason diagnostics\n\nSupplied-validation metrics for the recommended candidate and Ani's recency model, under strict preprocessing:\n\n"+
@@ -75,7 +85,7 @@ def build():
     total=len(META_RECIPES)+len(NN_RECIPES)
     sections.append(f"## Reproduction and complete record\n\nThis round tested **{total} extension recipes**, each on ten frozen splits under two preprocessing policies: **{verification['new_recipe_evaluations']} new recipe evaluations**, plus unchanged controls. All proposals, including failures, are in [all_comparisons.csv](decision/all_comparisons.csv). The shallow nonlinear stacks did not improve temporal loss; faster recency alone also produced mixed results. The neighbor changes supply the useful gain.\n\n[Selection and source manifests](decision/selection.json) preserve recipe definitions, hashes and source runs. [Verification](decision/verification.json) checks fitting boundaries, all saved scores, and unchanged controls. Native model replay has maximum probability difference {verification['native_replay_max_error']:.2g}; changing evaluation labels/IDs does not alter inference. All 16 unit checks passed.")
     sections.append("Final fits use all 9,050 labeled rows and the same feature-only transductive preprocessing as Ani. Each CSV has exactly 1,500 unique IDs in sample-submission order, finite probabilities, and columns `ID,label`. The original Ani files remain intact.\n\n"+
-        "\n".join(f"- [{r['file']}](../../submissions/{r['file']}): Kaggle score unknown; SHA-256 `{r['sha256']}`." for r in manifest["submissions"]))
+        "\n".join(f"- [{r['file']}](../../submissions/{r['file']}): Kaggle score {score_labels[r['file']]}; SHA-256 `{r['sha256']}`." for r in manifest["submissions"]))
     commands="""```sh
 # From repository root, with part2/requirements-benchmark.txt installed in .venv:
 .venv/bin/python part2/extension_meta.py --track strict
@@ -95,7 +105,7 @@ def build():
     (OUT/"RESULTS.md").write_text("\n\n".join(sections)+"\n")
     notebook=nbformat.v4.new_notebook()
     notebook.metadata.kernelspec=dict(name="part2",display_name="Python (Part Two)",language="python")
-    notebook.cells=[nbformat.v4.new_markdown_cell("# Extending Ani's outcome stack\n\nFile 10 is the balanced candidate; file 09 has the larger original chronological gain. Kaggle scores are unknown. The intervals include zero. Training code is embedded below; default execution reads the saved results."),
+    notebook.cells=[nbformat.v4.new_markdown_cell("# Extending Ani's outcome stack\n\n"+score_note+" Local chronological intervals include zero. Training code is embedded below; default execution reads the saved results."),
         nbformat.v4.new_code_cell("from pathlib import Path\nimport json\nimport pandas as pd\nfrom IPython.display import display, Image\nroot = Path.cwd()\nif (root / 'part2').exists(): root /= 'part2'\nout = root / 'experiments/ani_extensions'\ndecision = out / 'decision'\ndisplay(json.loads((decision / 'selection.json').read_text()))"),
         nbformat.v4.new_code_cell("for track in ['strict','published']:\n    print(track)\n    display(pd.read_csv(decision / track / 'summary.csv').round(6))\n    print('Larger time gaps')\n    display(pd.read_csv(decision / 'gaps' / track / 'summary.csv').round(6))\ndisplay(Image(filename=str(decision / 'figures/chronological_differences.png')))"),
         nbformat.v4.new_code_cell("pairs=pd.read_csv(decision / 'paired_comparisons.csv')\ndisplay(pairs[(pairs.track=='strict') & (pairs.reference=='ani_stack')].round(6))\ndisplay(pd.read_csv(decision / 'phase_metrics.csv').round(6))\ndisplay(pd.read_csv(decision / 'reason_errors.csv').round(4))\ndisplay(json.loads((decision / 'verification.json').read_text()))\ndisplay(json.loads((decision / 'final_manifest.json').read_text()))"),
