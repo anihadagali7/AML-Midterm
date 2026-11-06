@@ -1,0 +1,210 @@
+{
+  "interactions_criteria_C0.5_weight0.3": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 0.5,
+    "weight": 0.3
+  },
+  "interactions_criteria_C0.5_weight1": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 0.5,
+    "weight": 1.0
+  },
+  "balanced_criteria_C0.5": {
+    "family": "balanced",
+    "representation": "criteria",
+    "C": 0.5
+  },
+  "interactions_criteria_C2_weight0.3": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 2.0,
+    "weight": 0.3
+  },
+  "interactions_criteria_C2_weight1": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 2.0,
+    "weight": 1.0
+  },
+  "balanced_criteria_C2": {
+    "family": "balanced",
+    "representation": "criteria",
+    "C": 2.0
+  },
+  "interactions_criteria_C8_weight0.3": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 8.0,
+    "weight": 0.3
+  },
+  "interactions_criteria_C8_weight1": {
+    "family": "interactions",
+    "representation": "criteria",
+    "C": 8.0,
+    "weight": 1.0
+  },
+  "balanced_criteria_C8": {
+    "family": "balanced",
+    "representation": "criteria",
+    "C": 8.0
+  },
+  "interactions_clinical_C0.5_weight0.3": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 0.5,
+    "weight": 0.3
+  },
+  "interactions_clinical_C0.5_weight1": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 0.5,
+    "weight": 1.0
+  },
+  "balanced_clinical_C0.5": {
+    "family": "balanced",
+    "representation": "clinical",
+    "C": 0.5
+  },
+  "interactions_clinical_C2_weight0.3": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 2.0,
+    "weight": 0.3
+  },
+  "interactions_clinical_C2_weight1": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 2.0,
+    "weight": 1.0
+  },
+  "balanced_clinical_C2": {
+    "family": "balanced",
+    "representation": "clinical",
+    "C": 2.0
+  },
+  "interactions_clinical_C8_weight0.3": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 8.0,
+    "weight": 0.3
+  },
+  "interactions_clinical_C8_weight1": {
+    "family": "interactions",
+    "representation": "clinical",
+    "C": 8.0,
+    "weight": 1.0
+  },
+  "balanced_clinical_C8": {
+    "family": "balanced",
+    "representation": "clinical",
+    "C": 8.0
+  },
+  "molecular_C0.5_weight0.25": {
+    "family": "molecular",
+    "C": 0.5,
+    "weight": 0.25
+  },
+  "molecular_C2_weight0.25": {
+    "family": "molecular",
+    "C": 2.0,
+    "weight": 0.25
+  },
+  "molecular_C8_weight0.25": {
+    "family": "molecular",
+    "C": 8.0,
+    "weight": 0.25
+  },
+  "molecular_C0.5_weight1": {
+    "family": "molecular",
+    "C": 0.5,
+    "weight": 1.0
+  },
+  "molecular_C2_weight1": {
+    "family": "molecular",
+    "C": 2.0,
+    "weight": 1.0
+  },
+  "molecular_C8_weight1": {
+    "family": "molecular",
+    "C": 8.0,
+    "weight": 1.0
+  },
+  "text_binary_C0.5": {
+    "family": "text",
+    "representation": "binary",
+    "C": 0.5
+  },
+  "text_binary_C2": {
+    "family": "text",
+    "representation": "binary",
+    "C": 2.0
+  },
+  "text_binary_C8": {
+    "family": "text",
+    "representation": "binary",
+    "C": 8.0
+  },
+  "text_wordwide_C0.5": {
+    "family": "text",
+    "representation": "wordwide",
+    "C": 0.5
+  },
+  "text_wordwide_C2": {
+    "family": "text",
+    "representation": "wordwide",
+    "C": 2.0
+  },
+  "text_wordwide_C8": {
+    "family": "text",
+    "representation": "wordwide",
+    "C": 8.0
+  },
+  "text_charcriteria_C0.5": {
+    "family": "text",
+    "representation": "charcriteria",
+    "C": 0.5
+  },
+  "text_charcriteria_C2": {
+    "family": "text",
+    "representation": "charcriteria",
+    "C": 2.0
+  },
+  "text_charcriteria_C8": {
+    "family": "text",
+    "representation": "charcriteria",
+    "C": 8.0
+  },
+  "text_stopwords_C0.5": {
+    "family": "text",
+    "representation": "stopwords",
+    "C": 0.5
+  },
+  "text_stopwords_C2": {
+    "family": "text",
+    "representation": "stopwords",
+    "C": 2.0
+  },
+  "text_stopwords_C8": {
+    "family": "text",
+    "representation": "stopwords",
+    "C": 8.0
+  },
+  "nb_logratio_C0.5": {
+    "family": "nb_logratio",
+    "C": 0.5
+  },
+  "nb_logratio_C2": {
+    "family": "nb_logratio",
+    "C": 2.0
+  },
+  "nb_logratio_C8": {
+    "family": "nb_logratio",
+    "C": 8.0
+  },
+  "nb_logratio_C32": {
+    "family": "nb_logratio",
+    "C": 32.0
+  }
+}

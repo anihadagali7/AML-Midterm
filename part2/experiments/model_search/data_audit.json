@@ -1,0 +1,56 @@
+{
+  "datasets": {
+    "train": {
+      "rows": 8037,
+      "trials": 7535,
+      "min_year": 1993.0,
+      "max_year": 2013.0,
+      "sha256": "7dabba85cc71515741efdb3a75ff7f1e87deb93b8fac410033ed962a6a314719",
+      "phases": {
+        "II": 3950,
+        "III": 3075,
+        "I": 1012
+      },
+      "matched_drug_fraction": 0.457384596242379
+    },
+    "val": {
+      "rows": 1013,
+      "trials": 901,
+      "min_year": 1995.0,
+      "max_year": 2013.0,
+      "sha256": "a49da3fbb168a18b776346c84f3b2d0bd137f6282935a260f811e47329d80a1b",
+      "phases": {
+        "II": 501,
+        "III": 363,
+        "I": 149
+      },
+      "matched_drug_fraction": 0.4807502467917078
+    },
+    "test": {
+      "rows": 1500,
+      "trials": 1442,
+      "min_year": 2014.0,
+      "max_year": 2021.0,
+      "sha256": "39fef81bb60e084e75f4cc0947c31e8400dace18fe9b6a0ea0e266240b9f679f",
+      "phases": {
+        "III": 500,
+        "II": 500,
+        "I": 500
+      },
+      "matched_drug_fraction": 0.3933333333333333
+    }
+  },
+  "overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "excluded_predictors": [
+    "ID",
+    "trial_id",
+    "label",
+    "all Part 1 reason labels and embeddings"
+  ],
+  "evaluation": "Equal mean of per-phase log losses; official validation and train-only chronological holdout at 2008",
+  "sample_order_matches_test": true
+}

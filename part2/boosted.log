@@ -1,0 +1,32 @@
+temporal none catboost 4 0.5648713929152923
+temporal none catboost 6 0.5618156417954627
+temporal none catboost 8 0.5618156417954627
+temporal histgb_leaves7_none 0.58000242515276
+temporal histgb_leaves15_none 0.5712090904969459
+temporal histgb_leaves31_none 0.5643352736542384
+temporal extratrees_leaf5_none 0.5772313738599066
+temporal extratrees_leaf20_none 0.5855359699172292
+temporal year catboost 4 0.5618156417954627
+temporal year catboost 6 0.5618093975651604
+temporal year catboost 8 0.5618093975651604
+temporal histgb_leaves7_year 0.5773935496038664
+temporal histgb_leaves15_year 0.5696837215846072
+temporal histgb_leaves31_year 0.5654444003024234
+temporal extratrees_leaf5_year 0.5752526697339954
+temporal extratrees_leaf20_year 0.5829931423712251
+validation none catboost 4 0.5769952126704864
+validation none catboost 6 0.5753173877012073
+validation none catboost 8 0.5720074936742586
+validation histgb_leaves7_none 0.5909289782900204
+validation histgb_leaves15_none 0.5951346616810805
+validation histgb_leaves31_none 0.5925451112239187
+validation extratrees_leaf5_none 0.571376968225929
+validation extratrees_leaf20_none 0.5810241111920552
+validation year catboost 4 0.571376968225929
+validation year catboost 6 0.571376968225929
+validation year catboost 8 0.571376968225929
+validation histgb_leaves7_year 0.590848841763391
+validation histgb_leaves15_year 0.5914836258349251
+validation histgb_leaves31_year 0.5874505766599798
+validation extratrees_leaf5_year 0.5739330619839982
+validation extratrees_leaf20_year 0.5810818358537583

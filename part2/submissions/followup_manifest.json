@@ -1,0 +1,80 @@
+{
+  "motivation": "03 Kaggle 0.59562; 02 Kaggle 0.58993; reference 0.58688. Test less tree influence in later phases; no guarantee of improvement.",
+  "training": "Reuse the original models fitted on outcome_train.csv only; no refitting or new label inputs.",
+  "first_comparison": "05_text_later_phases.csv; reserve 06 until 05 is scored.",
+  "ensembles": {
+    "05_text_later_phases": {
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.0,
+        "III": 0.0
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.0,
+        "III": 0.0
+      },
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.25,
+        "III": 0.25
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.375,
+        "III": 0.375
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.375,
+        "III": 0.375
+      }
+    },
+    "06_lighter_tree_blend": {
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.0625,
+        "III": 0.0625
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.0625,
+        "III": 0.0625
+      },
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.21875,
+        "III": 0.21875
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.328125,
+        "III": 0.328125
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.328125,
+        "III": 0.328125
+      }
+    }
+  },
+  "files": [
+    {
+      "submission": "05_text_later_phases.csv",
+      "validation_logloss": 0.5586048085285665,
+      "temporal_logloss": 0.5643058891129528,
+      "mean_test_probability": 0.621629035417464,
+      "sha256": "3c8d498a6ed79e3e2267a18784cc9b424576da038b532963cf3459519049dde6",
+      "kaggle_score": null
+    },
+    {
+      "submission": "06_lighter_tree_blend.csv",
+      "validation_logloss": 0.5557183834950895,
+      "temporal_logloss": 0.5607051567443937,
+      "mean_test_probability": 0.620205369603887,
+      "sha256": "064f8ca0935d4a7c4721d39dcd66e0229e1267f5c6a63bc4888a530fd8e27588",
+      "kaggle_score": null
+    }
+  ],
+  "original_four_preserved": true
+}

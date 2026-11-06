@@ -1,0 +1,95 @@
+{
+  "training": "outcome_train.csv only; validation never fitted",
+  "selection": "Equal-weight average of official-validation and chronological-holdout phase-mean log loss",
+  "ensembles": {
+    "01_balanced_ensemble": {
+      "recency_clinical_C0.5_half3": 0.125,
+      "recency_criteria_C2_half6": 0.1875,
+      "catboost_d8_n1000_none": 0.25,
+      "catboost_d6_n1000_none": 0.25,
+      "text_wordwide_C2": 0.1875
+    },
+    "02_text_heavy": {
+      "recency_clinical_C0.5_half3": 0.1875,
+      "recency_criteria_C2_half6": 0.28125,
+      "catboost_d8_n1000_none": 0.125,
+      "catboost_d6_n1000_none": 0.125,
+      "text_wordwide_C2": 0.28125
+    },
+    "03_phase_specialized": {
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.125,
+        "III": 0.0625
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.1875,
+        "III": 0.09375
+      },
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.25,
+        "III": 0.375
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.25,
+        "III": 0.375
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.1875,
+        "III": 0.09375
+      }
+    },
+    "04_capped_year": {
+      "lr_criteria_yearcap_C2_phase0": 0.5,
+      "catboost_d6_n1000_none": 0.25,
+      "catboost_d8_n1000_none": 0.25
+    }
+  },
+  "files": [
+    {
+      "submission": "01_balanced_ensemble.csv",
+      "ensemble": "linear_mix_clinical0.25__catboost_deep__tree0.5",
+      "validation_logloss": 0.5541340867349391,
+      "temporal_logloss": 0.5525779882057041,
+      "joint_logloss": 0.5533560374703217,
+      "mean_test_probability": 0.6131467898128344,
+      "sha256": "2c0799f879775bf5eb19a4fb58814fdde75c4035ee0837a69b64eb09b6675a81",
+      "kaggle_score": null
+    },
+    {
+      "submission": "02_text_heavy.csv",
+      "ensemble": "linear_mix_clinical0.25__catboost_deep__tree0.25",
+      "validation_logloss": 0.5535917793359181,
+      "temporal_logloss": 0.5578293794657204,
+      "joint_logloss": 0.5557105794008192,
+      "mean_test_probability": 0.61878170379031,
+      "sha256": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
+      "kaggle_score": 0.58993
+    },
+    {
+      "submission": "03_phase_specialized.csv",
+      "ensemble": "linear_mix_clinical0.25__catboost_deep__phases0.25,0.5,0.75",
+      "validation_logloss": 0.5512553888071257,
+      "temporal_logloss": 0.553284568871512,
+      "joint_logloss": 0.5522699788393188,
+      "mean_test_probability": 0.6145957694837677,
+      "sha256": "52503212b3b46f347ad5c24c3a185a59843b865cf89d6369d0745c871342d892",
+      "kaggle_score": 0.59562
+    },
+    {
+      "submission": "04_capped_year.csv",
+      "ensemble": "linear_yearcap__catboost_deep__tree0.5",
+      "validation_logloss": 0.5539704664630553,
+      "temporal_logloss": 0.5538672503579166,
+      "joint_logloss": 0.5539188584104859,
+      "mean_test_probability": 0.6333931363916737,
+      "sha256": "423d53f115372ddf717b21d67e33799361892b636ddb23a80ab96c216e2206a4",
+      "kaggle_score": null
+    }
+  ],
+  "reported_reference_kaggle_score": 0.58688
+}

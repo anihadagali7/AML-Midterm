@@ -1,0 +1,10 @@
+{
+  "ranking": "Mean of equal-phase validation and temporal log loss",
+  "directions": {
+    "01_balanced_ensemble": "Best 50% text / 50% tree mixture without linear year effects",
+    "02_text_heavy": "Best 75% text / 25% tree mixture without linear year effects",
+    "03_phase_specialized": "Best mixture allowing different fixed weights in the three phases",
+    "04_capped_year": "Best mixture using a linear year effect capped at the latest training year"
+  },
+  "interpretation": "Distinct strong candidates for four manual submissions, rather than the four nearly identical minimum-loss rows."
+}

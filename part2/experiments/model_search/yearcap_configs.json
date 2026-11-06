@@ -1,0 +1,128 @@
+{
+  "lr_criteria_yearcap_C0.5_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_yearcap_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_yearcap_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_yearcap_C2_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_yearcap_C2_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_yearcap_C2_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_yearcap_C0.5_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_yearcap_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_yearcap_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_yearcap_C2_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_yearcap_C2_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_yearcap_C2_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_rich_yearcap_C0.5_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_rich_yearcap_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_rich_yearcap_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_rich_yearcap_C2_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_rich_yearcap_C2_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_rich_yearcap_C2_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year_cap",
+    "C": 2.0,
+    "phase_weight": 0.5
+  }
+}

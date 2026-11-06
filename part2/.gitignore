@@ -1,0 +1,8 @@
+__pycache__/
+experiments/.ipython/
+experiments/.jupyter_runtime/
+experiments/.matplotlib/
+
+# Regenerable fitted models and feature caches. Saved predictions, scores,
+# split definitions, provenance, figures and submissions remain versioned.
+*.joblib

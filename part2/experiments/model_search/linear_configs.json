@@ -1,0 +1,1402 @@
+{
+  "lr_criteria_none_C0.1_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_none_C0.1_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_none_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_none_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_none_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_none_C0.5_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_none_C0.5_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_none_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_none_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_none_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_none_C2_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_none_C2_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_none_C2_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_none_C2_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_none_C2_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_none_C8_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_none_C8_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_none_C8_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_none_C8_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_none_C8_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_year_C0.1_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_year_C0.1_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_year_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_year_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_year_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_year_C0.5_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_year_C0.5_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_year_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_year_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_year_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_year_C2_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_year_C2_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_year_C2_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_year_C2_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_year_C2_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_criteria_year_C8_phase0": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_criteria_year_C8_phase1": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_criteria_year_C8_phase0.25": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_criteria_year_C8_phase0.5": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_criteria_year_C8_phase0.75": {
+    "family": "lr",
+    "representation": "criteria",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_none_C0.1_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_none_C0.1_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_none_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_none_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_none_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_none_C0.5_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_none_C0.5_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_none_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_none_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_none_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_none_C2_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_none_C2_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_none_C2_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_none_C2_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_none_C2_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_none_C8_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_none_C8_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_none_C8_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_none_C8_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_none_C8_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_year_C0.1_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_year_C0.1_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_year_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_year_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_year_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_year_C0.5_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_year_C0.5_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_year_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_year_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_year_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_year_C2_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_year_C2_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_year_C2_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_year_C2_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_year_C2_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_clinical_year_C8_phase0": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_clinical_year_C8_phase1": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_clinical_year_C8_phase0.25": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_clinical_year_C8_phase0.5": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_clinical_year_C8_phase0.75": {
+    "family": "lr",
+    "representation": "clinical",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_none_C0.1_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_none_C0.1_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_none_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_none_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_none_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_none_C0.5_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_none_C0.5_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_none_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_none_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_none_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_none_C2_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_none_C2_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_none_C2_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_none_C2_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_none_C2_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_none_C8_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_none_C8_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_none_C8_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_none_C8_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_none_C8_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_year_C0.1_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_year_C0.1_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_year_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_year_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_year_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_year_C0.5_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_year_C0.5_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_year_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_year_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_year_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_year_C2_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_year_C2_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_year_C2_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_year_C2_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_year_C2_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_knowledge_year_C8_phase0": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_knowledge_year_C8_phase1": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_knowledge_year_C8_phase0.25": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_knowledge_year_C8_phase0.5": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_knowledge_year_C8_phase0.75": {
+    "family": "lr",
+    "representation": "knowledge",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_rich_none_C0.1_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_rich_none_C0.1_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_rich_none_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_rich_none_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_rich_none_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_rich_none_C0.5_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_rich_none_C0.5_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_rich_none_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_rich_none_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_rich_none_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_rich_none_C2_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_rich_none_C2_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_rich_none_C2_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_rich_none_C2_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_rich_none_C2_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_rich_none_C8_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_rich_none_C8_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_rich_none_C8_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_rich_none_C8_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_rich_none_C8_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_rich_year_C0.1_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_rich_year_C0.1_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_rich_year_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_rich_year_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_rich_year_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_rich_year_C0.5_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_rich_year_C0.5_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_rich_year_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_rich_year_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_rich_year_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_rich_year_C2_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_rich_year_C2_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_rich_year_C2_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_rich_year_C2_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_rich_year_C2_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_rich_year_C8_phase0": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_rich_year_C8_phase1": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_rich_year_C8_phase0.25": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_rich_year_C8_phase0.5": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_rich_year_C8_phase0.75": {
+    "family": "lr",
+    "representation": "rich",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_none_C0.1_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_none_C0.1_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_none_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_none_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_none_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_none_C0.5_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_none_C0.5_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_none_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_none_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_none_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_none_C2_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_none_C2_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_none_C2_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_none_C2_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_none_C2_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_none_C8_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_none_C8_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_none_C8_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_none_C8_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_none_C8_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "none",
+    "C": 8.0,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_year_C0.1_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_year_C0.1_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_year_C0.1_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_year_C0.1_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_year_C0.1_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.1,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_year_C0.5_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_year_C0.5_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_year_C0.5_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_year_C0.5_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_year_C0.5_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 0.5,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_year_C2_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_year_C2_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_year_C2_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_year_C2_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_year_C2_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 2.0,
+    "phase_weight": 0.75
+  },
+  "lr_metadata_year_C8_phase0": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.0
+  },
+  "lr_metadata_year_C8_phase1": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 1.0
+  },
+  "lr_metadata_year_C8_phase0.25": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.25
+  },
+  "lr_metadata_year_C8_phase0.5": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.5
+  },
+  "lr_metadata_year_C8_phase0.75": {
+    "family": "lr",
+    "representation": "metadata",
+    "year": "year",
+    "C": 8.0,
+    "phase_weight": 0.75
+  }
+}
