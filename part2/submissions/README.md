@@ -1,10 +1,22 @@
 # Part Two manual Kaggle submissions
 
-The [latest research comparison](../experiments/stack_improvements/RESULTS.md)
-benchmarks both Ani winners and all proposed variants on identical saved splits.
-Read its decision before choosing another upload; original numbered files below
-remain historical artifacts. Any new shortlisted files and their unknown Kaggle
-scores are recorded in [stack_improvements_manifest.json](stack_improvements_manifest.json).
+**Try [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv) first.**
+It beats Ani's recency model on all six chronological windows in both preprocessing
+tracks, with a small grouped-CV improvement. [09_ani_replace_knn5.csv](09_ani_replace_knn5.csv)
+has the larger gain on the original three windows, but a small CV regression.
+Both are ready for manual upload and **neither has a known Kaggle score**.
+The chronological uncertainty intervals include zero; local gains need Kaggle confirmation.
+
+| Candidate | Strict chronological mean | Strict grouped CV | Larger-gap mean | Kaggle |
+| --- | ---: | ---: | ---: | --- |
+| Ani recency reference | 0.537446 | 0.587411 | 0.564681 | 0.58688 |
+| 09: sharper recent kNN | 0.535213 | 0.589230 | 0.563657 | Unknown |
+| 10: recent-neighbor blend | 0.535890 | 0.586891 | 0.563189 | Unknown |
+
+See [full findings](../experiments/ani_extensions/RESULTS.md) and the
+[recipes, checksums and native bundle manifest](ani_extensions_manifest.json).
+The [previous research round](../experiments/stack_improvements/RESULTS.md) and its
+[empty promotion manifest](stack_improvements_manifest.json) remain historical records.
 
 Lower log loss is better. Best reported reference: **0.58688**. Our 03 scored **0.59562**, then 02 improved to **0.58993**. Initial 01/04 remain unscored. **Hold 05/06; use the new fixed benchmark for future comparisons.**
 

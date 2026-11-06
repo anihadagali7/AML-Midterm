@@ -1,5 +1,15 @@
 # Model caches and source-checkout reproduction
 
+For the new neighbor extensions, saved benchmark arrays and source audits are
+versioned in `experiments/ani_extensions`; native models under its `cache/` are
+regenerable and ignored. Rebuild the final bundle with
+`.venv/bin/python part2/extension_followthrough.py final`, then run
+`.venv/bin/python part2/extension_verify.py`. The final-fitting command rebuilds
+the old base bundle too if needed. Replay the recommended candidate using
+`.venv/bin/python part2/extension_predict.py --input part2/outcome_test.csv --output /tmp/replayed.csv`.
+Full comparison commands and source are in [ani_extensions.ipynb](ani_extensions.ipynb)
+and the [extension report](experiments/ani_extensions/RESULTS.md).
+
 The repository includes the complete experiment code, executed notebooks, supplied data, frozen benchmark splits, held-out predictions, score tables, uncertainty estimates, figures, source snapshots, and submission CSVs. Regenerable `.joblib` model/feature caches are excluded from Git. They remain intact in the original working directory.
 
 `experiments/model_cache_manifest.json` records the original local cache paths, sizes, and SHA-256 hashes. This distinguishes the cached models used for the recorded experiments from a later rebuild. Numerical differences across machines or library versions can affect those hashes; the pinned `requirements.txt`, source hashes, data hashes, and saved probabilities provide the comparison references.

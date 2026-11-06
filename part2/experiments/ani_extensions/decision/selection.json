@@ -1,0 +1,37 @@
+{
+  "shortlist": [
+    {
+      "model": "replace_knn5",
+      "batch": "neighbors",
+      "recipe": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 5
+      }
+    },
+    {
+      "model": "fast2_neighbors_half",
+      "batch": "neighbors",
+      "recipe": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast2_neighbors": 0.5
+        }
+      }
+    }
+  ],
+  "source_runs": {
+    "meta": "experiments/ani_extensions/meta/76d98f1d5e9d5ff1",
+    "neighbors": "experiments/ani_extensions/neighbors/a27759052dfa9571"
+  },
+  "input_hashes": {
+    "meta/strict": "6507d190a9eb2647d0c39bb02cb5cdabb0391572064a218c8f65d210f7a2f005",
+    "meta/published": "9e1cf364b19b9135444463625f9031ba7955db9e17110cd9fd73dff00b0117de",
+    "neighbors/strict": "ef32094823a1c4570770525fde51b7e3775a19d275ba9fc2e2d6b5010ea770f4",
+    "neighbors/published": "ea5bef97ffd980a355e0abb029c8ad945404ed9443154d0fc2a5b686d8fe57ca"
+  },
+  "policy_sha256": "beedd6d47c8586444eca564e17c9e1219aa1ff663482944220db04365a57a72b",
+  "status": "Frozen before candidate predictions on gapped windows and final fitting"
+}
