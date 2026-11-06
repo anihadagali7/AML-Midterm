@@ -1,5 +1,11 @@
 # Repeatable Part Two local benchmark
 
+The [new comparison](experiments/stack_improvements/RESULTS.md) adds Ani's earlier
+unweighted 0.58810 winner as a second reference and evaluates 27 recipes on these
+unchanged splits. Follow [IMPROVEMENT_PROTOCOL.md](IMPROVEMENT_PROTOCOL.md) for the
+current two-reference selection rule and adaptive-batch history. This document
+continues to describe the original saved protocol and historical six-model suite.
+
 The Git checkout includes all saved results but omits regenerable fitted-model caches. See [CACHE_REPRODUCTION.md](CACHE_REPRODUCTION.md) before running native-model verification or inference on a fresh checkout. Use `local_benchmark.py --suite full --force` to rebuild missing benchmark models; reading the executed notebook does not require them.
 
 Hold submissions 05 and 06 while reviewing Ani's model and the benchmark results. They remain diagnostic candidates; lower tree weight improved one leaderboard comparison but does not establish that removing trees will beat 0.58688.
@@ -47,10 +53,10 @@ Conservative follow-ups reuse saved predictions on every split: 75% Ani plus 25%
 From the repository root, using the existing virtual environment:
 
 ```sh
-.venv/bin/python AML-Midterm/part2/benchmark_protocol.py
-.venv/bin/python AML-Midterm/part2/local_benchmark.py --suite full
-.venv/bin/python AML-Midterm/part2/local_benchmark.py --summarize
-.venv/bin/python -m unittest discover -s AML-Midterm/part2 -p 'test_local_benchmark.py'
+.venv/bin/python part2/benchmark_protocol.py
+.venv/bin/python part2/local_benchmark.py --suite full
+.venv/bin/python part2/local_benchmark.py --summarize
+.venv/bin/python -m unittest discover -s part2 -p 'test_local_benchmark.py'
 ```
 
 For the official and chronological comparisons first, use `--suite chronological`. The full command resumes cached completed folds. `experiments/local_benchmark/current_run.json` points to the latest results. Add a candidate adapter alongside `benchmark_models.py` and register its recipe in the runner; run it on the same saved splits, not new favorable boundaries.
@@ -58,10 +64,10 @@ For the official and chronological comparisons first, use `--suite chronological
 Convenience commands from the repository root:
 
 ```sh
-make -C AML-Midterm/part2 benchmark-test
-make -C AML-Midterm/part2 benchmark
-make -C AML-Midterm/part2 benchmark-report
-make -C AML-Midterm/part2 benchmark-verify
+make -C part2 benchmark-test
+make -C part2 benchmark
+make -C part2 benchmark-report
+make -C part2 benchmark-verify
 ```
 
 `benchmark-report` reproduces the archived Ani recipe, scores its separate sensitivity track, generates the optional candidates and builds `local_benchmark.ipynb`. `benchmark-verify` checks native model replay and confirms a cached full rerun changes no fitted models and reproduces metrics/intervals. Results are in `experiments/local_benchmark/verification.json`.

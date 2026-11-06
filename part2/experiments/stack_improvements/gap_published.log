@@ -1,0 +1,19 @@
+published gap_2005_to_2008_2009 inner 1/5 2.3
+published gap_2005_to_2008_2009 inner 2/5 4.4
+published gap_2005_to_2008_2009 inner 3/5 6.8
+published gap_2005_to_2008_2009 inner 4/5 9.2
+published gap_2005_to_2008_2009 inner 5/5 11.8
+published gap_2007_to_2010_2011 inner 1/5 4.6
+published gap_2007_to_2010_2011 inner 2/5 9.5
+published gap_2007_to_2010_2011 inner 3/5 14.3
+published gap_2007_to_2010_2011 inner 4/5 18.8
+published gap_2007_to_2010_2011 inner 5/5 23.4
+published gap_2009_to_2012_2013 inner 1/5 7.1
+published gap_2009_to_2012_2013 inner 2/5 13.6
+published gap_2009_to_2012_2013 inner 3/5 21.0
+published gap_2009_to_2012_2013 inner 4/5 28.1
+published gap_2009_to_2012_2013 inner 5/5 35.3
+           completed_splits official  temporal     worst    cv
+model
+ani_first                 3     None  0.568040  0.633129  None
+ani_stack                 3     None  0.563803  0.628274  None

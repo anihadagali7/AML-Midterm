@@ -1,0 +1,17 @@
+{
+  "shortlist": [],
+  "strict_eligible": [],
+  "published_eligible": [],
+  "selection_track": "strict",
+  "protocol_document_sha256": "249ed6fdbab44ad5c75c48cda1d750da98a2375f8c924972279421cbb1ec328e",
+  "selection_code_sha256": "383e85858a3990d07af6f96c2c5922005b1fd33a66c4724198dfd27f1c973307",
+  "input_sha256": {
+    "strict": "00d101b710d6199d31bd52f9f36bf949cfe7d2ed1c555b6a4ea54ac8c2104513",
+    "published": "2c1498faacb8d9d56a918c0a184f9c7fb081568dc30ae82cb0f2027246a485fe"
+  },
+  "status": "Frozen across three declared batches before gapped tests and final fitting",
+  "known_kaggle_best": {
+    "model": "ani_stack",
+    "score": 0.58688
+  }
+}

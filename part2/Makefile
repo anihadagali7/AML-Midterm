@@ -1,6 +1,7 @@
-PYTHON ?= ../../.venv/bin/python
+PYTHON ?= ../.venv/bin/python
 
 .PHONY: benchmark benchmark-quick benchmark-test benchmark-report benchmark-verify
+.PHONY: improve improve-test improve-report improve-verify
 
 benchmark:
 	$(PYTHON) local_benchmark.py --suite full
@@ -21,3 +22,27 @@ benchmark-report:
 
 benchmark-verify:
 	$(PYTHON) verify_benchmark.py --verify-cache
+
+improve-test:
+	$(PYTHON) -m unittest discover -p 'test_*.py'
+
+improve:
+	$(PYTHON) improvement_benchmark.py --track strict
+	$(PYTHON) improvement_benchmark.py --track published
+	$(PYTHON) improvement_trends.py run
+	$(PYTHON) improvement_text.py run --track strict
+	$(PYTHON) improvement_text.py run --track published
+	$(PYTHON) improvement_text.py select
+	$(PYTHON) improvement_report.py compare
+	$(PYTHON) improvement_robustness.py --track strict
+	$(PYTHON) improvement_robustness.py --track published
+	$(PYTHON) improvement_benchmark.py --final
+	$(PYTHON) improvement_trends.py final
+	$(PYTHON) improvement_text.py final
+	$(PYTHON) improvement_report.py export
+
+improve-verify:
+	$(PYTHON) verify_improvements.py
+
+improve-report:
+	$(PYTHON) build_improvement_report.py

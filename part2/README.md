@@ -1,5 +1,13 @@
 # Part Two: clinical-trial outcome prediction
 
+**New comparison of both Ani winners:** [complete findings](experiments/stack_improvements/RESULTS.md),
+[executed notebook](stack_improvements.ipynb), and [testing/selection protocol](IMPROVEMENT_PROTOCOL.md).
+This evaluates 27 recipes on the same ten saved splits under strict and published
+preprocessing, with paired comparisons against both 0.58810 and 0.58688 references.
+It preserves all unsuccessful experiments and keeps unknown Kaggle scores explicit.
+Use `make -C part2 improve-test` and `make -C part2 improve-verify` from the repository
+root; create `.venv` with `part2/requirements-benchmark.txt` first.
+
 **Latest recommendation: hold 05/06.** Ani's published 0.58688 model has now been reproduced. Use the [repeatable local benchmark](LOCAL_TESTING.md), [executed benchmark notebook](local_benchmark.ipynb), and [complete results](experiments/local_benchmark/RESULTS.md) for new comparisons. The original selection below is historical. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
 
 Prepared four initial manual Kaggle submissions and two follow-ups. **Lower log loss is better.** The best reported reference score is **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**, still 0.00305 behind the reference. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).

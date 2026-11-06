@@ -13,9 +13,9 @@ Open `local_benchmark.ipynb`, `part2.ipynb`, or `experiments/local_benchmark/RES
 From the repository root, with the pinned packages installed in `.venv`:
 
 ```sh
-.venv/bin/python AML-Midterm/part2/local_benchmark.py --suite full --force
-make -C AML-Midterm/part2 benchmark-test
-make -C AML-Midterm/part2 benchmark-verify
+.venv/bin/python part2/local_benchmark.py --suite full --force
+make -C part2 benchmark-test
+make -C part2 benchmark-verify
 ```
 
 `--force` recomputes every split's predictions, fitting models when their cache files are missing. Without it, a checkout containing the complete saved scores may reuse those results without rebuilding native models. The existing protocol rejects changed data; code/package changes create a different result fingerprint.
@@ -23,8 +23,8 @@ make -C AML-Midterm/part2 benchmark-verify
 ## Rebuild Ani's exact reference and final candidates
 
 ```sh
-.venv/bin/python AML-Midterm/part2/reproduce_ani.py
-.venv/bin/python AML-Midterm/part2/benchmark_final.py
+.venv/bin/python part2/reproduce_ani.py
+.venv/bin/python part2/benchmark_final.py
 ```
 
 The archived Ani notebooks and CSVs are included under `experiments/ani_comparison/source`. Exact reproduction regenerates its original transductive feature cache and training/train+validation models. Final candidates preserve the archived winning prediction file as their anchor and rebuild the full-data linear component if necessary. Complete saved benchmark comparisons must exist before candidate generation.

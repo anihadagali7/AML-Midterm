@@ -1,0 +1,12 @@
+{
+  "tracks": 2,
+  "splits_per_track": 3,
+  "models": [
+    "ani_stack",
+    "ani_first"
+  ],
+  "protocol_sha256": "8314962e79100239dd8c6211a37cf7594b4ee3487f1e65e2dc31bf2bd5f0b549",
+  "selection_sha256": "5fd5f7fbf68a80a686bab824f1d43615f3abf18b12e6f43771546dc2463fb826",
+  "source_sha256": "b2261ae031933f7def8885272f8bcb214634d71dc29309790b4015cb0f5352f0",
+  "complete": true
+}

@@ -1,0 +1,89 @@
+published official 1 6.9
+published official 2 14.0
+published official 3 21.4
+published official 4 28.5
+published official 5 35.0
+published official complete 44.5
+published time_2007_to_2008_2009 1 4.7
+published time_2007_to_2008_2009 2 9.0
+published time_2007_to_2008_2009 3 14.2
+published time_2007_to_2008_2009 4 18.8
+published time_2007_to_2008_2009 5 23.7
+published time_2007_to_2008_2009 complete 31.3
+published time_2009_to_2010_2011 1 6.6
+published time_2009_to_2010_2011 2 12.9
+published time_2009_to_2010_2011 3 20.5
+published time_2009_to_2010_2011 4 27.4
+published time_2009_to_2010_2011 5 34.2
+published time_2009_to_2010_2011 complete 43.4
+published time_2011_to_2012_2013 1 8.3
+published time_2011_to_2012_2013 2 17.3
+published time_2011_to_2012_2013 3 26.2
+published time_2011_to_2012_2013 4 35.5
+published time_2011_to_2012_2013 5 44.6
+published time_2011_to_2012_2013 complete 55.7
+published group_repeat0_fold0 1 6.1
+published group_repeat0_fold0 2 11.6
+published group_repeat0_fold0 3 17.7
+published group_repeat0_fold0 4 23.4
+published group_repeat0_fold0 5 29.8
+published group_repeat0_fold0 complete 39.3
+published group_repeat0_fold1 1 5.8
+published group_repeat0_fold1 2 11.6
+published group_repeat0_fold1 3 17.4
+published group_repeat0_fold1 4 23.2
+published group_repeat0_fold1 5 29.3
+published group_repeat0_fold1 complete 39.0
+published group_repeat0_fold2 1 6.3
+published group_repeat0_fold2 2 12.3
+published group_repeat0_fold2 3 18.1
+published group_repeat0_fold2 4 24.4
+published group_repeat0_fold2 5 31.0
+published group_repeat0_fold2 complete 41.2
+published group_repeat1_fold0 1 6.4
+published group_repeat1_fold0 2 12.2
+published group_repeat1_fold0 3 18.2
+published group_repeat1_fold0 4 23.6
+published group_repeat1_fold0 5 29.2
+published group_repeat1_fold0 complete 38.4
+published group_repeat1_fold1 1 6.0
+published group_repeat1_fold1 2 12.0
+published group_repeat1_fold1 3 20.1
+published group_repeat1_fold1 4 26.6
+published group_repeat1_fold1 5 31.8
+published group_repeat1_fold1 complete 40.1
+published group_repeat1_fold2 1 5.6
+published group_repeat1_fold2 2 11.3
+published group_repeat1_fold2 3 17.2
+published group_repeat1_fold2 4 22.6
+published group_repeat1_fold2 5 28.0
+published group_repeat1_fold2 complete 37.6
+                         completed_splits  official  temporal     worst        cv
+model
+ani_phase3_trend                       10  0.557150  0.535460  0.587985  0.584607
+ani_stack                              10  0.556108  0.535751  0.587659  0.585465
+recent_without_nb                      10  0.557935  0.536107  0.588811  0.586417
+recent_shrunk_years                    10  0.558637  0.536149  0.590728  0.585748
+recent_equal_phase                     10  0.558669  0.536300  0.589217  0.585532
+tau6_phase3_year                       10  0.555440  0.536414  0.587081  0.579155
+recent_meta_tau6                       10  0.555431  0.536509  0.587303  0.583291
+recent_joint_stack                     10  0.556598  0.536538  0.585025  0.583028
+tau6_stack                             10  0.554641  0.536767  0.586562  0.579704
+multiscale_stack                       10  0.556203  0.537216  0.589455  0.581956
+recent_all_years                       10  0.559144  0.537237  0.593148  0.586138
+tau6_shrunk_years                      10  0.556181  0.537295  0.591272  0.579835
+recent_phase_shrink                    10  0.561675  0.537420  0.592604  0.585893
+blend_winners50                        10  0.555490  0.537443  0.587668  0.579385
+recent_phase_C1                        10  0.562028  0.537607  0.593289  0.586193
+tau6_phase_shrink                      10  0.558057  0.537829  0.590184  0.579724
+recent_ratio_stack                     10  0.558672  0.537858  0.588315  0.583846
+recent_text_trend                      10  0.559632  0.537911  0.586020  0.580831
+recent_text_stack                      10  0.558898  0.538159  0.585632  0.581636
+tau6_all_years                         10  0.556399  0.538219  0.594114  0.579995
+unweighted_phase3_year                 10  0.560105  0.539537  0.589095  0.577201
+multiscale_phase                       10  0.562152  0.539761  0.598959  0.584531
+ani_first                              10  0.558898  0.540625  0.588684  0.577507
+unweighted_text_trend                  10  0.562579  0.540902  0.585982  0.574617
+unweighted_text_stack                  10  0.561538  0.541942  0.585493  0.574890
+unweighted_shrunk_years                10  0.559781  0.542168  0.595492  0.577389
+unweighted_all_years                   10  0.559960  0.543363  0.598652  0.577434

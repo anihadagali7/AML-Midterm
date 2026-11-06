@@ -2,6 +2,12 @@
 
 ## Part 2 outcome prediction
 
+The latest [comparison of both Ani winners and 24 additional variants](part2/experiments/stack_improvements/RESULTS.md)
+uses the existing ten frozen splits, two explicitly separate preprocessing tracks,
+and an unchanged promotion rule. See the [executed notebook](part2/stack_improvements.ipynb)
+and [reproduction protocol](part2/IMPROVEMENT_PROTOCOL.md). Both original Kaggle
+scores (0.58810 and 0.58688) are tied to their exact archived CSV hashes.
+
 The [executed Part Two notebook](part2/part2.ipynb) contains the complete experiment source, per-phase metrics, and the required stopping-reason error analysis. The [Part Two report](part2/README.md) documents model comparisons and reproduction. Four checked CSVs for manual Kaggle upload are in [part2/submissions](part2/submissions/README.md), with exact recipes and local scores in its manifest and index.
 
 The best reported Part Two reference is Ani's **0.58688 log loss** (lower is better), now reproduced from `origin/ani` at `1b8bd11`. Our original 03 scored **0.59562**, and 02 improved to **0.58993**. **Hold 05/06.** Use the new [fixed ten-split local benchmark](part2/LOCAL_TESTING.md), [executed notebook](part2/local_benchmark.ipynb), and [paired results](part2/experiments/local_benchmark/RESULTS.md) for future comparisons. It includes grouped CV, chronological windows, strict fold-local preprocessing and a separate faithful Ani sensitivity track. Two optional Ani-anchored candidates are in the submission folder; neither has a known Kaggle score. Initial 01–06 use 8,037 supervised training rows; Ani's reference and the new final linear component use 9,050 train+validation rows after separate held-out evaluation. IDs and Part One reasons/embeddings remain excluded from outcome predictors. [Leaderboard ledger](part2/submissions/leaderboard_results.json).
