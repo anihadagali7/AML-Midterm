@@ -1,9 +1,18 @@
-# Part 1 submission archives and DBSCAN 235-label result
+# Part 1 Kaggle submissions
 
-Prediction CSVs are archived by submission status. Reported scores identify manual Kaggle submissions. The sample-submission template is an input in part1/data/. Experiment-local source CSVs are retained.
+## Latest reported result
+
+[Original 157-label DBSCAN — Kaggle **0.87500**](archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv)
+
+Michael submitted the exact original predictions, with no retraining or validation labels used for fitting. It scores **0.87500**, versus **0.86452** for the 235-label refit: a **0.01048** gain for the original fit on this Kaggle evaluation. Ani remains the highest reported score at **0.89423**.
+
+The ready folder is empty. All uploads are manual. No new submission is queued.
+
+## Submitted and prepared archives
 
 | Model | Verified labels | Status | Kaggle F1 | CSV |
 |---|---:|---|---:|---|
+| DBSCAN + logistic; original 157-label fit (no validation refit) | 157 | submitted manually; score reported | 0.87500 | [CSV](archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv) |
 | DBSCAN + logistic; final train+validation fit | 235 | submitted manually; score reported | 0.86452 | [CSV](archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv) |
 | Supervised logistic baseline | 157 | submitted | 0.87072 | [CSV](archive/submitted/logistic_baseline__kaggle_0.87072.csv) |
 | K-means k=2 + logistic | 157 | submitted | 0.87393 | [CSV](archive/submitted/kmeans_k2__kaggle_0.87393.csv) |
@@ -13,6 +22,12 @@ Prediction CSVs are archived by submission status. Reported scores identify manu
 | GMM tied k=10 + logistic; earlier 157-label fit | 157 | unsubmitted | — | [CSV](archive/unsubmitted/gmm_tied_k10_logistic__157labels.csv) |
 | K-means k=8 + logistic; earlier 157-label fit | 157 | unsubmitted | — | [CSV](archive/unsubmitted/kmeans_k8_logistic__157labels.csv) |
 
-The 235-label final fit scored **0.86452**, reported by Michael. Its historical selection-model validation F1 0.910256 belongs to the earlier 157-label model, not this final refit. No agent upload was performed. Tag: `part1-dbscan-refit235-kaggle-0.86452`.
+## Evaluation provenance
 
-index.csv and archive_manifest.json record paths, original locations, hashes, known scores, and uncertain Safety-boost variant assignment. Original prediction bytes are unchanged.
+The original DBSCAN validation F1 **0.910256** was measured on 78 trials with 157 known training labels. The 235-label refit used those former validation labels and has no independent local validation score. The Kaggle comparison directly compares these two fitted pipelines; it does not isolate which refit component caused the difference.
+
+[Original-fit result](../experiments/additional_methods/kaggle_result_original157.json) · [Refit result](../experiments/final_dbscan_trainval235/submission_manifest.json) · [Comparison manifest](next_submission.json)
+
+`index.csv` and `archive_manifest.json` record paths, status, reported scores, notes, and hashes. The duplicate unsubmitted 157-label archive and ready copy were consolidated into the scored archive without changing any bytes. The experiment-local original and fitted model are unchanged. Its preparation-time submission_manifest.json is retained as a historical snapshot; the later kaggle_result_original157.json records the actual score.
+
+The +0.05 Safety-boost score retains the earlier uncertainty about which boost variant was submitted. Ani’s CSV belongs to a separate branch. Existing Git tags remain unchanged; the historical current-best-kaggle tag still points to K-means rather than the newly reported DBSCAN result.

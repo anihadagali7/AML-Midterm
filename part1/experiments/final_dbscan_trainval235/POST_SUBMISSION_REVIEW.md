@@ -34,3 +34,7 @@ The original 157-label DBSCAN model has never been submitted, so **we cannot con
 Repeated three-fold CV did not demonstrate a DBSCAN advantage: it matched supervised predictions in all 15 folds, usually because its pseudo-labeling rule abstained with only 103–106 verified fitting trials. GMM was close but slightly lower on average. Normalization had better CV but worse supplied validation. The available evaluations do not establish a robust ranking for Kaggle.
 
 No new model tuning, prediction changes, automatic upload, commit, or tag was performed while recording this result. The original 157-label source model and its Kaggle CSV remain unchanged and unsubmitted; the existing best-submission tag remains unchanged.
+
+## Subsequent original-fit submission
+
+Michael subsequently reported **0.87500** for the original 157-label DBSCAN predictions. This is **0.01048** above the 235-label refit on the same Kaggle evaluation. The original CSV/model were unchanged. This comparison establishes the observed ranking of the two fitted pipelines, without isolating individual refit changes. Ani remains higher at 0.89423.

@@ -3,6 +3,17 @@
   "ready_file": null,
   "records": [
     {
+      "file": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
+      "original_file": "experiments/additional_methods/submissions/part1_dbscan_m5_q25_logistic_C1000_submission.csv",
+      "operation": "unchanged original fit; manual submission reported; duplicate presentation copy consolidated",
+      "sha256": "b4f8e154c6105698d6c7fac2a34d3c0e1ecd3dcd095bd2d8634ee6608d336dba",
+      "model": "DBSCAN + logistic; original 157-label fit (no validation refit)",
+      "verified_labels": 157,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.875,
+      "note": "157 verified training labels; no validation-label refit. Kaggle 0.87500 vs 235-label refit 0.86452."
+    },
+    {
       "file": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
       "original_file": "submissions/ready/part1_dbscan_logistic_trainval235.csv",
       "operation": "final refit; archived after reported manual submission",
@@ -33,7 +44,7 @@
       "model": "K-means k=2 + logistic",
       "status": "submitted",
       "kaggle_score": 0.87393,
-      "note": "Historical K-means submission; existing current-best-kaggle tag retained without being moved."
+      "note": "Historical K-means submission; existing current-best-kaggle tag unchanged. Original DBSCAN now scores 0.87500."
     },
     {
       "file": "submissions/archive/submitted/kmeans_k2_year__kaggle_0.85149.csv",
@@ -124,9 +135,24 @@
   },
   "experiment_local_submission_copies_retained": true,
   "upload_performed": false,
-  "latest_submitted_file": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
-  "latest_reported_kaggle_score": 0.86452,
+  "latest_submitted_file": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
+  "latest_reported_kaggle_score": 0.875,
   "post_submission_moves": {
-    "submissions/ready/part1_dbscan_logistic_trainval235.csv": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv"
-  }
+    "submissions/ready/part1_dbscan_logistic_trainval235.csv": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
+    "submissions/ready/part1_dbscan_logistic_train157_no_validation.csv": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
+    "submissions/archive/unsubmitted/dbscan_logistic__157labels.csv": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv"
+  },
+  "consolidated_duplicate_records": [
+    {
+      "file": "submissions/archive/unsubmitted/dbscan_logistic__157labels.csv",
+      "original_file": "experiments/additional_methods/submissions/part1_dbscan_m5_q25_logistic_C1000_submission.csv",
+      "operation": "copied; experiment original retained",
+      "sha256": "b4f8e154c6105698d6c7fac2a34d3c0e1ecd3dcd095bd2d8634ee6608d336dba",
+      "model": "DBSCAN + logistic; earlier 157-label fit",
+      "verified_labels": 157,
+      "status": "unsubmitted",
+      "kaggle_score": null,
+      "note": "Archived exact duplicate of the original 157-label fit selected for the next manual upload; see ready/. No validation-label refit."
+    }
+  ]
 }
