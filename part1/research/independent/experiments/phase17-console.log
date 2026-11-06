@@ -1,0 +1,344 @@
+RUN 1 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 0, 'pseudo_weight': 0.03}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:37] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:38] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:39] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:40] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:41] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:42] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:43] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:44] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:45] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:46] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "a45758d2de79df", "model": "tree_student", "score": 0.8853503184713376, "rule": "argmax", "default_score": 0.8832271762208067, "seconds": 10.01, "status": "ok", "error": null}
+RUN 2 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 0, 'pseudo_weight': 0.3}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:46] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:47] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:48] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:49] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:49] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:50] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:51] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:52] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:53] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:54] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:55] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:56] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:57] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:58] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:15:59] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:00] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "361a7d32b706a6", "model": "tree_student", "score": 0.8959660297239914, "rule": "t0.55", "default_score": 0.8938428874734606, "seconds": 14.269, "status": "ok", "error": null}
+RUN 3 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 25, 'pseudo_weight': 0.03}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:01] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:01] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:01] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:02] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:02] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:02] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "0b74c2541fecec", "model": "tree_student", "score": 0.9023354564755838, "rule": "t0.35", "default_score": 0.8895966029723993, "seconds": 1.583, "status": "ok", "error": null}
+RUN 4 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 25, 'pseudo_weight': 0.3}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:02] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:03] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:03] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:03] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:04] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:04] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:04] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:05] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "1a9c9d1790e696", "model": "tree_student", "score": 0.9140127388535032, "rule": "t0.5", "default_score": 0.9140127388535032, "seconds": 2.585, "status": "ok", "error": null}
+RUN 5 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 75, 'pseudo_weight': 0.03}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:05] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:06] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:06] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:07] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:07] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:08] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:08] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:09] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "2bedebfef9da99", "model": "tree_student", "score": 0.89171974522293, "rule": "t0.35", "default_score": 0.8832271762208067, "seconds": 4.078, "status": "ok", "error": null}
+RUN 6 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 75, 'pseudo_weight': 0.3}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:09] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:10] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:10] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:11] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:12] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:13] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:13] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:14] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:15] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:16:16] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "6d45db5d01e629", "model": "tree_student", "score": 0.9150743099787685, "rule": "t0.55", "default_score": 0.9065817409766453, "seconds": 7.316, "status": "ok", "error": null}
+RUN 7 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 0, 'pseudo_weight': 0.03}
+{"id": "7c072e9857ae35", "model": "tree_student", "score": 0.8959660297239916, "rule": "t0.35", "default_score": 0.8895966029723993, "seconds": 57.572, "status": "ok", "error": null}
+RUN 8 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 0, 'pseudo_weight': 0.3}
+{"id": "05defbcc147def", "model": "tree_student", "score": 0.9065817409766453, "rule": "t0.45", "default_score": 0.9044585987261147, "seconds": 54.337, "status": "ok", "error": null}
+RUN 9 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 25, 'pseudo_weight': 0.03}
+{"id": "7bb93ffee31c6d", "model": "tree_student", "score": 0.9129511677282378, "rule": "t0.45", "default_score": 0.9087048832271764, "seconds": 10.973, "status": "ok", "error": null}
+RUN 10 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 25, 'pseudo_weight': 0.3}
+{"id": "da5eac16cd6946", "model": "tree_student", "score": 0.9256900212314224, "rule": "t0.45", "default_score": 0.9193205944798301, "seconds": 10.938, "status": "ok", "error": null}
+RUN 11 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 75, 'pseudo_weight': 0.03}
+{"id": "b4a03443001354", "model": "tree_student", "score": 0.9235668789808917, "rule": "t0.55", "default_score": 0.9193205944798301, "seconds": 28.35, "status": "ok", "error": null}
+RUN 12 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 75, 'pseudo_weight': 0.3}
+{"id": "600531566996ad", "model": "tree_student", "score": 0.900212314225053, "rule": "t0.5", "default_score": 0.900212314225053, "seconds": 27.124, "status": "ok", "error": null}
+RUN 13 24 {'model': 'tree_student', 'student': 'extra', 'pca': 0, 'pseudo_weight': 0.03}
+{"id": "e07ee4f3c9a5b6", "model": "tree_student", "score": 0.89171974522293, "rule": "t0.35", "default_score": 0.8789808917197452, "seconds": 78.525, "status": "ok", "error": null}
+RUN 14 24 {'model': 'tree_student', 'student': 'extra', 'pca': 0, 'pseudo_weight': 0.3}
+{"id": "66eb4c000a8c4a", "model": "tree_student", "score": 0.8938428874734606, "rule": "t0.35", "default_score": 0.8832271762208069, "seconds": 72.695, "status": "ok", "error": null}
+RUN 15 24 {'model': 'tree_student', 'student': 'extra', 'pca': 25, 'pseudo_weight': 0.03}
+{"id": "bb3ecdca9c09c9", "model": "tree_student", "score": 0.9235668789808917, "rule": "t0.45", "default_score": 0.9150743099787685, "seconds": 14.652, "status": "ok", "error": null}
+RUN 16 24 {'model': 'tree_student', 'student': 'extra', 'pca': 25, 'pseudo_weight': 0.3}
+{"id": "d9942e75192160", "model": "tree_student", "score": 0.9150743099787685, "rule": "t0.5", "default_score": 0.9150743099787685, "seconds": 14.425, "status": "ok", "error": null}
+RUN 17 24 {'model': 'tree_student', 'student': 'extra', 'pca': 75, 'pseudo_weight': 0.03}
+{"id": "cd2d33040bec69", "model": "tree_student", "score": 0.8853503184713376, "rule": "t0.45", "default_score": 0.881104033970276, "seconds": 37.254, "status": "ok", "error": null}
+RUN 18 24 {'model': 'tree_student', 'student': 'extra', 'pca': 75, 'pseudo_weight': 0.3}
+{"id": "e7fcd869229510", "model": "tree_student", "score": 0.9065817409766455, "rule": "t0.5", "default_score": 0.9065817409766455, "seconds": 36.226, "status": "ok", "error": null}
+RUN 19 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 0, 'pseudo_weight': 0.1, 'hard': True}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:39] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:40] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:41] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:41] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:42] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:43] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:44] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:44] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:45] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:46] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:47] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "0b4d8e029f7ea1", "model": "tree_student", "score": 0.8980891719745223, "rule": "expected_f1", "default_score": 0.8789808917197452, "seconds": 7.883, "status": "ok", "error": null}
+RUN 20 24 {'model': 'tree_student', 'student': 'xgb', 'pca': 25, 'pseudo_weight': 0.1, 'hard': True}
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:47] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:48] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:48] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:48] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/Users/matthew/Desktop/AMLMidterm/.venv/lib/python3.12/site-packages/xgboost/training.py:200: UserWarning: [21:23:49] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:794: 
+Parameters: { "lambda_" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+{"id": "2f77e8f52cfb20", "model": "tree_student", "score": 0.9214437367303608, "rule": "t0.35", "default_score": 0.9023354564755838, "seconds": 1.608, "status": "ok", "error": null}
+RUN 21 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 0, 'pseudo_weight': 0.1, 'hard': True}
+{"id": "6e9ca397d4cc1b", "model": "tree_student", "score": 0.8968152866242038, "rule": "expected_f1", "default_score": 0.8726114649681529, "seconds": 54.525, "status": "ok", "error": null}
+RUN 22 24 {'model': 'tree_student', 'student': 'catboost', 'pca': 25, 'pseudo_weight': 0.1, 'hard': True}
+{"id": "b8a13bc569c1ca", "model": "tree_student", "score": 0.9320594479830148, "rule": "t0.5", "default_score": 0.9320594479830148, "seconds": 10.846, "status": "ok", "error": null}
+RUN 23 24 {'model': 'tree_student', 'student': 'extra', 'pca': 0, 'pseudo_weight': 0.1, 'hard': True}
+{"id": "dcaf803326e485", "model": "tree_student", "score": 0.8842887473460721, "rule": "t0.25", "default_score": 0.8768577494692146, "seconds": 33.18, "status": "ok", "error": null}
+RUN 24 24 {'model': 'tree_student', 'student': 'extra', 'pca': 25, 'pseudo_weight': 0.1, 'hard': True}
+{"id": "4b535c176a8005", "model": "tree_student", "score": 0.9023354564755838, "rule": "t0.45", "default_score": 0.9002123142250531, "seconds": 7.452, "status": "ok", "error": null}

@@ -1,0 +1,32 @@
+[
+  {
+    "config": {
+      "model": "lowdensity_v2",
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "id": "8d0b1da134a89a",
+    "rule": "t0.55",
+    "cv": 0.9235668789808917,
+    "cv_metrics": {
+      "sample_f1": 0.9235668789808917,
+      "macro_f1": 0.8788460671624971,
+      "f1_Safety": 0.9411764705882353,
+      "f1_Funding": 0.9411764705882353,
+      "f1_Efficacy": 0.9142857142857143,
+      "f1_Recruitment": 0.9753694581280788,
+      "f1_Other": 0.6222222222222222
+    },
+    "n_groups": 150,
+    "validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    }
+  }
+]

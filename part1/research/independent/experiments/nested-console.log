@@ -1,0 +1,60 @@
+OUTER 0
+INNER 0 0 0.8871391076115485 t0.35
+INNER 0 1 0.8779527559055118 expected_f1
+INNER 0 2 0.8923884514435695 expected_f1
+INNER 0 3 0.8976377952755905 t0.55
+INNER 0 4 0.8805774278215223 expected_f1
+INNER 0 5 0.889763779527559 t0.5
+INNER 0 6 0.8976377952755905 expected_f1
+OUTER RESULT {'sample_f1': 0.8722222222222221, 'macro_f1': 0.8112820512820514, 'f1_Safety': 0.8, 'f1_Funding': 0.6666666666666666, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.9230769230769231, 'f1_Other': 0.6666666666666666}
+OUTER 1
+INNER 1 0 0.9232804232804233 expected_f1
+INNER 1 1 0.919047619047619 t0.25
+INNER 1 2 0.9232804232804233 t0.55
+INNER 1 3 0.9153439153439153 t0.55
+INNER 1 4 0.9206349206349206 t0.25
+INNER 1 5 0.9216931216931217 expected_f1
+INNER 1 6 0.9312169312169312 t0.35
+OUTER RESULT {'sample_f1': 0.8387096774193549, 'macro_f1': 0.595137420718816, 'f1_Safety': 1.0, 'f1_Funding': 0.0, 'f1_Efficacy': 0.5, 'f1_Recruitment': 0.9302325581395349, 'f1_Other': 0.5454545454545454}
+OUTER 2
+INNER 2 0 0.8950131233595799 t0.45
+INNER 2 1 0.900262467191601 t0.35
+INNER 2 2 0.8784776902887139 expected_f1
+INNER 2 3 0.8858267716535433 expected_f1
+INNER 2 4 0.8963254593175852 expected_f1
+INNER 2 5 0.8976377952755906 t0.5
+INNER 2 6 0.9028871391076115 t0.35
+OUTER RESULT {'sample_f1': 0.9444444444444444, 'macro_f1': 0.9094076655052264, 'f1_Safety': 1.0, 'f1_Funding': 1.0, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.975609756097561, 'f1_Other': 0.5714285714285714}
+OUTER 3
+INNER 3 0 0.9086021505376345 t0.25
+INNER 3 1 0.9166666666666667 t0.25
+INNER 3 2 0.9059139784946237 expected_f1
+INNER 3 3 0.8975806451612902 expected_f1
+INNER 3 4 0.9193548387096773 t0.25
+INNER 3 5 0.906989247311828 expected_f1
+INNER 3 6 0.9112903225806451 expected_f1
+OUTER RESULT {'sample_f1': 0.9393939393939394, 'macro_f1': 0.9042128603104214, 'f1_Safety': 1.0, 'f1_Funding': 1.0, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.975609756097561, 'f1_Other': 0.5454545454545454}
+OUTER 4
+INNER 4 0 0.9005376344086021 t0.35
+INNER 4 1 0.9005376344086021 t0.5
+INNER 4 2 0.907258064516129 expected_f1
+INNER 4 3 0.8830645161290323 expected_f1
+INNER 4 4 0.8978494623655914 t0.35
+INNER 4 5 0.8938172043010754 expected_f1
+INNER 4 6 0.9018817204301075 expected_f1
+OUTER RESULT {'sample_f1': 0.8737373737373737, 'macro_f1': 0.7615873015873016, 'f1_Safety': 0.8, 'f1_Funding': 0.6666666666666666, 'f1_Efficacy': 0.8888888888888888, 'f1_Recruitment': 0.9523809523809523, 'f1_Other': 0.5}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'logistic', 'C': 0.1, 'scale': 'global'}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8571428571428571, 'macro_f1': 0.8212121212121213, 'f1_Safety': 0.9090909090909091, 'f1_Funding': 0.5454545454545454, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.8333333333333334, 'f1_Other': 0.8181818181818182}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'logistic', 'C': 0.3, 'scale': 'global'}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8888888888888887, 'macro_f1': 0.8855034820252211, 'f1_Safety': 0.9565217391304348, 'f1_Funding': 0.8, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.9090909090909091, 'f1_Other': 0.7619047619047619}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard'}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.7777777777777777, 'macro_f1': 0.6496470588235294, 'f1_Safety': 0.96, 'f1_Funding': 0.0, 'f1_Efficacy': 0.9, 'f1_Recruitment': 0.5882352941176471, 'f1_Other': 0.8}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8492063492063492, 'macro_f1': 0.7079710144927536, 'f1_Safety': 0.9565217391304348, 'f1_Funding': 0.0, 'f1_Efficacy': 0.9523809523809523, 'f1_Recruitment': 0.7142857142857143, 'f1_Other': 0.9166666666666666}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'pseudo', 'teacher': {'model': 'cluster', 'cluster': 'hdbscan', 'min_cluster': 5, 'pca': 25}, 'student': 'logistic', 'C': 0.3, 'gamma': 0.001, 'scale': 'global', 'pseudo_weight': 0.05, 'confidence': 0.95, 'labelwise': True, 'consensus': True}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8730158730158729, 'macro_f1': 0.8740259740259739, 'f1_Safety': 0.9090909090909091, 'f1_Funding': 0.8571428571428571, 'f1_Efficacy': 0.9523809523809523, 'f1_Recruitment': 0.8333333333333334, 'f1_Other': 0.8181818181818182}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'ensemble', 'members': [{'model': 'logistic', 'scale': 'global', 'C': 0.2}, {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}], 'weights': [0.25, 0.75]}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8253968253968254, 'macro_f1': 0.6985507246376812, 'f1_Safety': 0.9565217391304348, 'f1_Funding': 0.0, 'f1_Efficacy': 0.9523809523809523, 'f1_Recruitment': 0.7142857142857143, 'f1_Other': 0.8695652173913043}
+TEMPORAL {'cutoff': 2002, 'config': {'model': 'ensemble', 'members': [{'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}, {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['criteria'], 'feature_weight': 1.0}, {'model': 'pseudo', 'teacher': {'model': 'cluster', 'cluster': 'hdbscan', 'min_cluster': 5, 'pca': 25}, 'student': 'logistic', 'C': 0.3, 'gamma': 0.001, 'scale': 'global', 'pseudo_weight': 0.05, 'confidence': 0.95, 'labelwise': True, 'consensus': True}]}, 'n_train': 115, 'n_test': 42, 'train_positive': [4, 2, 6, 96, 14], 'test_positive': [12, 6, 11, 5, 11], 'sample_f1': 0.8571428571428571, 'macro_f1': 0.8007936507936508, 'f1_Safety': 0.9166666666666666, 'f1_Funding': 0.4444444444444444, 'f1_Efficacy': 0.9523809523809523, 'f1_Recruitment': 0.8333333333333334, 'f1_Other': 0.8571428571428571}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'logistic', 'C': 0.1, 'scale': 'global'}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8645833333333333, 'macro_f1': 0.8473015873015873, 'f1_Safety': 0.8888888888888888, 'f1_Funding': 0.8333333333333334, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.8, 'f1_Other': 0.7142857142857143}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'logistic', 'C': 0.3, 'scale': 'global'}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8333333333333333, 'macro_f1': 0.8147008547008546, 'f1_Safety': 0.8888888888888888, 'f1_Funding': 0.7692307692307693, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.8, 'f1_Other': 0.6153846153846154}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard'}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.78125, 'macro_f1': 0.7456140350877193, 'f1_Safety': 0.9473684210526315, 'f1_Funding': 0.6666666666666666, 'f1_Efficacy': 0.9473684210526315, 'f1_Recruitment': 0.6666666666666666, 'f1_Other': 0.5}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8333333333333333, 'macro_f1': 0.7995103142471564, 'f1_Safety': 0.9473684210526315, 'f1_Funding': 0.7692307692307693, 'f1_Efficacy': 0.9, 'f1_Recruitment': 0.6666666666666666, 'f1_Other': 0.7142857142857143}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'pseudo', 'teacher': {'model': 'cluster', 'cluster': 'hdbscan', 'min_cluster': 5, 'pca': 25}, 'student': 'logistic', 'C': 0.3, 'gamma': 0.001, 'scale': 'global', 'pseudo_weight': 0.05, 'confidence': 0.95, 'labelwise': True, 'consensus': True}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8645833333333333, 'macro_f1': 0.8473015873015873, 'f1_Safety': 0.8888888888888888, 'f1_Funding': 0.8333333333333334, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.8, 'f1_Other': 0.7142857142857143}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'ensemble', 'members': [{'model': 'logistic', 'scale': 'global', 'C': 0.2}, {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}], 'weights': [0.25, 0.75]}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8541666666666666, 'macro_f1': 0.8356506651243494, 'f1_Safety': 0.9473684210526315, 'f1_Funding': 0.7692307692307693, 'f1_Efficacy': 0.9473684210526315, 'f1_Recruitment': 0.8, 'f1_Other': 0.7142857142857143}
+TEMPORAL {'cutoff': 2005, 'config': {'model': 'ensemble', 'members': [{'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['drug_targets'], 'feature_weight': 1.0}, {'model': 'svc', 'C': 10, 'gamma': 0.001, 'scale': 'standard', 'features': ['criteria'], 'feature_weight': 1.0}, {'model': 'pseudo', 'teacher': {'model': 'cluster', 'cluster': 'hdbscan', 'min_cluster': 5, 'pca': 25}, 'student': 'logistic', 'C': 0.3, 'gamma': 0.001, 'scale': 'global', 'pseudo_weight': 0.05, 'confidence': 0.95, 'labelwise': True, 'consensus': True}]}, 'n_train': 125, 'n_test': 32, 'train_positive': [6, 3, 7, 99, 18], 'test_positive': [10, 5, 10, 2, 7], 'sample_f1': 0.8333333333333333, 'macro_f1': 0.8147008547008546, 'f1_Safety': 0.8888888888888888, 'f1_Funding': 0.7692307692307693, 'f1_Efficacy': 1.0, 'f1_Recruitment': 0.8, 'f1_Other': 0.6153846153846154}
+DONE

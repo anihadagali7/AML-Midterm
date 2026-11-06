@@ -1,0 +1,472 @@
+<!doctype html><meta charset="utf-8"><title>Ani improvement experiments</title><style>body{font:16px system-ui;max-width:1500px;margin:36px auto;padding:0 24px;color:#172331}table{border-collapse:collapse;width:100%;margin:24px 0}td,th{padding:9px;border-bottom:1px solid #d9e0e7;text-align:left}th{background:#eef3f8}p{max-width:1100px;line-height:1.55}</style><h1>Targeted Ani improvements</h1><p>Four directions: fixed score ensembles, pseudo-label trust and agreement, averaging fixed clustering seeds, and an Other specialist with nested threshold selection. Fifteen initial candidates include the unchanged Ani control. Recipes were frozen before scoring. Shared grouped folds exclude held-out embedding groups and matching masked duplicates. Test inputs never enter fitting.</p><h2>Eight-repeat confirmation and supplementary checks</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train_cv8</th>
+      <th>train_sd8</th>
+      <th>train_delta</th>
+      <th>train_wins</th>
+      <th>pooled_cv8</th>
+      <th>pooled_sd8</th>
+      <th>pooled_delta</th>
+      <th>pooled_wins</th>
+      <th>minimum_gain</th>
+      <th>cv_improvement</th>
+      <th>validation</th>
+      <th>chronological</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>0.92675</td>
+      <td>0.00541</td>
+      <td>0.00717</td>
+      <td>8</td>
+      <td>0.91640</td>
+      <td>0.00484</td>
+      <td>0.00656</td>
+      <td>7</td>
+      <td>0.00656</td>
+      <td>True</td>
+      <td>0.88889</td>
+      <td>0.88435</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>0.92569</td>
+      <td>0.00581</td>
+      <td>0.00610</td>
+      <td>6</td>
+      <td>0.91631</td>
+      <td>0.00553</td>
+      <td>0.00647</td>
+      <td>6</td>
+      <td>0.00610</td>
+      <td>True</td>
+      <td>0.85897</td>
+      <td>0.87755</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92569</td>
+      <td>0.00520</td>
+      <td>0.00610</td>
+      <td>7</td>
+      <td>0.91649</td>
+      <td>0.00769</td>
+      <td>0.00665</td>
+      <td>7</td>
+      <td>0.00610</td>
+      <td>True</td>
+      <td>0.91026</td>
+      <td>0.87755</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>0.91959</td>
+      <td>0.00805</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.90984</td>
+      <td>0.00763</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.00000</td>
+      <td>False</td>
+      <td>0.89103</td>
+      <td>0.86054</td>
+    </tr>
+  </tbody>
+</table><p>Both CV pools use eight repeats of five folds: 157 gold labels for training CV, 235 for pooled CV. Validation remains a separate 78-trial measurement of a 157-label fit. Chronology pools 98 distinct trials across three fixed later-year windows. Repeated CV shares data; these are development estimates, not independent tests. No Kaggle score is implied by a local improvement.</p><h2>All initial three-repeat results, including unsuccessful variants</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>family</th>
+      <th>train_mean</th>
+      <th>train_delta</th>
+      <th>train_wins</th>
+      <th>pooled_mean</th>
+      <th>pooled_delta</th>
+      <th>pooled_wins</th>
+      <th>minimum_gain</th>
+      <th>qualifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>ensemble</td>
+      <td>0.93135</td>
+      <td>0.00849</td>
+      <td>3</td>
+      <td>0.91206</td>
+      <td>0.00709</td>
+      <td>2</td>
+      <td>0.00709</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>ensemble</td>
+      <td>0.92994</td>
+      <td>0.00708</td>
+      <td>2</td>
+      <td>0.91182</td>
+      <td>0.00686</td>
+      <td>2</td>
+      <td>0.00686</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 10%</td>
+      <td>ensemble</td>
+      <td>0.92994</td>
+      <td>0.00708</td>
+      <td>3</td>
+      <td>0.90922</td>
+      <td>0.00426</td>
+      <td>2</td>
+      <td>0.00426</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>ensemble</td>
+      <td>0.92711</td>
+      <td>0.00425</td>
+      <td>2</td>
+      <td>0.90875</td>
+      <td>0.00378</td>
+      <td>2</td>
+      <td>0.00378</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + SVM 10%</td>
+      <td>ensemble</td>
+      <td>0.92498</td>
+      <td>0.00212</td>
+      <td>1</td>
+      <td>0.90827</td>
+      <td>0.00331</td>
+      <td>2</td>
+      <td>0.00212</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani agreement, pseudo weight 0.5</td>
+      <td>pseudo_agreement</td>
+      <td>0.92498</td>
+      <td>0.00212</td>
+      <td>2</td>
+      <td>0.90686</td>
+      <td>0.00189</td>
+      <td>2</td>
+      <td>0.00189</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani pseudo weight 0.5</td>
+      <td>pseudo_trust</td>
+      <td>0.92498</td>
+      <td>0.00212</td>
+      <td>2</td>
+      <td>0.90686</td>
+      <td>0.00189</td>
+      <td>2</td>
+      <td>0.00189</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + SVM 25%</td>
+      <td>ensemble</td>
+      <td>0.92640</td>
+      <td>0.00354</td>
+      <td>2</td>
+      <td>0.90686</td>
+      <td>0.00189</td>
+      <td>2</td>
+      <td>0.00189</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani inner-CV Other threshold</td>
+      <td>other</td>
+      <td>0.92498</td>
+      <td>0.00212</td>
+      <td>2</td>
+      <td>0.90638</td>
+      <td>0.00142</td>
+      <td>2</td>
+      <td>0.00142</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani three-GMM-seed average</td>
+      <td>seed_average</td>
+      <td>0.92569</td>
+      <td>0.00283</td>
+      <td>1</td>
+      <td>0.90638</td>
+      <td>0.00142</td>
+      <td>2</td>
+      <td>0.00142</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani Other specialist 50%</td>
+      <td>other</td>
+      <td>0.92357</td>
+      <td>0.00071</td>
+      <td>1</td>
+      <td>0.90804</td>
+      <td>0.00307</td>
+      <td>3</td>
+      <td>0.00071</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>control</td>
+      <td>0.92286</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.90496</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani agreement, pseudo weight 1.0</td>
+      <td>pseudo_agreement</td>
+      <td>0.92286</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.90496</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani Other specialist 25%</td>
+      <td>other</td>
+      <td>0.92144</td>
+      <td>-0.00142</td>
+      <td>1</td>
+      <td>0.90402</td>
+      <td>-0.00095</td>
+      <td>1</td>
+      <td>-0.00142</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani pseudo weight 0.25</td>
+      <td>pseudo_trust</td>
+      <td>0.91861</td>
+      <td>-0.00425</td>
+      <td>1</td>
+      <td>0.90615</td>
+      <td>0.00118</td>
+      <td>2</td>
+      <td>-0.00425</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><h2>Chronological per-reason results</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>reason</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>positives</th>
+      <th>predicted_positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Safety</td>
+      <td>0.93750</td>
+      <td>0.83333</td>
+      <td>0.88235</td>
+      <td>18</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Funding</td>
+      <td>0.70000</td>
+      <td>0.77778</td>
+      <td>0.73684</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Efficacy</td>
+      <td>0.83333</td>
+      <td>0.90909</td>
+      <td>0.86957</td>
+      <td>22</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Recruitment</td>
+      <td>0.90000</td>
+      <td>0.92308</td>
+      <td>0.91139</td>
+      <td>39</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Other</td>
+      <td>0.76471</td>
+      <td>0.65000</td>
+      <td>0.70270</td>
+      <td>20</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Safety</td>
+      <td>0.94444</td>
+      <td>0.94444</td>
+      <td>0.94444</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Funding</td>
+      <td>0.70000</td>
+      <td>0.77778</td>
+      <td>0.73684</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Efficacy</td>
+      <td>0.80769</td>
+      <td>0.95455</td>
+      <td>0.87500</td>
+      <td>22</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Recruitment</td>
+      <td>0.94872</td>
+      <td>0.94872</td>
+      <td>0.94872</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Other</td>
+      <td>0.73684</td>
+      <td>0.70000</td>
+      <td>0.71795</td>
+      <td>20</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>Safety</td>
+      <td>0.94444</td>
+      <td>0.94444</td>
+      <td>0.94444</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>Funding</td>
+      <td>0.70000</td>
+      <td>0.77778</td>
+      <td>0.73684</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>Efficacy</td>
+      <td>0.80769</td>
+      <td>0.95455</td>
+      <td>0.87500</td>
+      <td>22</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>Recruitment</td>
+      <td>1.00000</td>
+      <td>0.97436</td>
+      <td>0.98701</td>
+      <td>39</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 40%</td>
+      <td>Other</td>
+      <td>0.60870</td>
+      <td>0.70000</td>
+      <td>0.65116</td>
+      <td>20</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Safety</td>
+      <td>0.85000</td>
+      <td>0.94444</td>
+      <td>0.89474</td>
+      <td>18</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Funding</td>
+      <td>0.70000</td>
+      <td>0.77778</td>
+      <td>0.73684</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Efficacy</td>
+      <td>0.80769</td>
+      <td>0.95455</td>
+      <td>0.87500</td>
+      <td>22</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Recruitment</td>
+      <td>0.92683</td>
+      <td>0.97436</td>
+      <td>0.95000</td>
+      <td>39</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Other</td>
+      <td>0.76471</td>
+      <td>0.65000</td>
+      <td>0.70270</td>
+      <td>20</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table><p><a href="protocol.json">Frozen protocol</a> · <a href="registry.json">Recipes</a> · <a href="shortlist.json">CV shortlist</a> · <a href="confirmation.json">All eight repeat scores</a> · <a href="verification.json">Verification</a></p>

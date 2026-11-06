@@ -1,0 +1,27 @@
+{
+  "config": {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true,
+    "features": [
+      "fingerprint"
+    ],
+    "feature_weight": 0.5
+  },
+  "rule": "t0.35",
+  "score": 0.9320594479830149,
+  "n_groups": 150,
+  "mean_training_size": 155.95333333333335
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "model": "weighted_ssl",
+    "weighting": "year",
+    "slope": -1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "year",
+    "slope": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "year",
+    "slope": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "year",
+    "slope": 2
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "late",
+    "late_weight": 1.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "late",
+    "late_weight": 3
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "late",
+    "late_weight": 5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 0.01,
+    "power": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 0.01,
+    "power": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 0.1,
+    "power": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 0.1,
+    "power": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 1,
+    "power": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "domain",
+    "domain_C": 1,
+    "power": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.001,
+    "blend": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.001,
+    "blend": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.003,
+    "blend": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.003,
+    "blend": 1
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.01,
+    "blend": 0.5
+  },
+  {
+    "model": "weighted_ssl",
+    "weighting": "kmm",
+    "weight_gamma": 0.01,
+    "blend": 1
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "alternative_loss",
+    "config": {
+      "model": "loss_ssl",
+      "loss": "squared_error",
+      "kernel": "linear",
+      "C": 0.01
+    },
+    "rule": "t0.5",
+    "cv": 0.910828025477707,
+    "cv_mean": 0.9037508846426044,
+    "cv_macro": 0.8589071650287
+  },
+  {
+    "name": "alternative_loss",
+    "config": {
+      "model": "loss_ssl",
+      "loss": "squared_error",
+      "kernel": "rbf",
+      "C": 3
+    },
+    "rule": "t0.55",
+    "cv": 0.910828025477707,
+    "cv_mean": 0.9002123142250532,
+    "cv_macro": 0.8619142365752115
+  }
+]

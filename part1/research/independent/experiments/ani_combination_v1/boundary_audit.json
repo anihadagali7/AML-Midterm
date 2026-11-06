@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "candidate": "70/15/15 + pseudo weight 0.5",
+      "heldout_label_and_feature_invariance": true,
+      "masked_duplicate_rows_tested": 72,
+      "query_batch_invariance": true,
+      "nested_fitting_checks": [
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        }
+      ],
+      "max_difference": 0.0
+    },
+    {
+      "candidate": "70/15/15 + three-seed average",
+      "heldout_label_and_feature_invariance": true,
+      "masked_duplicate_rows_tested": 72,
+      "query_batch_invariance": true,
+      "nested_fitting_checks": [
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        },
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        },
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        }
+      ],
+      "max_difference": 0.0
+    },
+    {
+      "candidate": "70/15/15 + inner Other threshold",
+      "heldout_label_and_feature_invariance": true,
+      "masked_duplicate_rows_tested": 72,
+      "query_batch_invariance": true,
+      "nested_fitting_checks": [
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        },
+        {
+          "fitting_gold": 119,
+          "query_rows": 64,
+          "excluded_groups": 105
+        },
+        {
+          "fitting_gold": 123,
+          "query_rows": 60,
+          "excluded_groups": 104
+        },
+        {
+          "fitting_gold": 124,
+          "query_rows": 59,
+          "excluded_groups": 105
+        }
+      ],
+      "max_difference": 0.0
+    },
+    {
+      "candidate": "70/15/15 + Other specialist 50%",
+      "heldout_label_and_feature_invariance": true,
+      "masked_duplicate_rows_tested": 72,
+      "query_batch_invariance": true,
+      "nested_fitting_checks": [
+        {
+          "fitting_gold": 183,
+          "query_rows": 52,
+          "excluded_groups": 46
+        },
+        {
+          "fitting_gold": 119,
+          "query_rows": 64,
+          "excluded_groups": 105
+        },
+        {
+          "fitting_gold": 123,
+          "query_rows": 60,
+          "excluded_groups": 104
+        },
+        {
+          "fitting_gold": 124,
+          "query_rows": 59,
+          "excluded_groups": 105
+        }
+      ],
+      "max_difference": 0.0
+    }
+  ],
+  "script_sha256": "056cea1e48349625593336ab810015a46b7ac9192a2226ec3b1f54a1cf2eafd5"
+}

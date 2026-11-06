@@ -1,0 +1,1316 @@
+[
+  {
+    "model": "logistic",
+    "C": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "logistic",
+    "C": 0.1,
+    "scale": "standard"
+  },
+  {
+    "model": "logistic",
+    "C": 1,
+    "scale": "standard"
+  },
+  {
+    "model": "logistic",
+    "C": 10,
+    "scale": "standard"
+  },
+  {
+    "model": "logistic",
+    "C": 100,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.003,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.03,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.003,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.03,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.003,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.03,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.001,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.003,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.03,
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 1,
+    "weights": "uniform",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 1,
+    "weights": "distance",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 3,
+    "weights": "uniform",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 3,
+    "weights": "distance",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 5,
+    "weights": "uniform",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 5,
+    "weights": "distance",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 9,
+    "weights": "uniform",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 9,
+    "weights": "distance",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 15,
+    "weights": "uniform",
+    "scale": "standard"
+  },
+  {
+    "model": "knn",
+    "k": 15,
+    "weights": "distance",
+    "scale": "standard"
+  },
+  {
+    "model": "ridge",
+    "alpha": 1,
+    "scale": "standard"
+  },
+  {
+    "model": "ridge",
+    "alpha": 10,
+    "scale": "standard"
+  },
+  {
+    "model": "ridge",
+    "alpha": 100,
+    "scale": "standard"
+  },
+  {
+    "model": "ridge",
+    "alpha": 1000,
+    "scale": "standard"
+  },
+  {
+    "model": "linear_svc",
+    "C": 0.01,
+    "scale": "standard"
+  },
+  {
+    "model": "linear_svc",
+    "C": 0.1,
+    "scale": "standard"
+  },
+  {
+    "model": "linear_svc",
+    "C": 1,
+    "scale": "standard"
+  },
+  {
+    "model": "linear_svc",
+    "C": 10,
+    "scale": "standard"
+  },
+  {
+    "model": "logistic",
+    "C": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "logistic",
+    "C": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "logistic",
+    "C": 1,
+    "scale": "global"
+  },
+  {
+    "model": "logistic",
+    "C": 10,
+    "scale": "global"
+  },
+  {
+    "model": "logistic",
+    "C": 100,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.003,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "gamma": 0.03,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.003,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "gamma": 0.03,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.003,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.03,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.001,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.003,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "svc",
+    "C": 100,
+    "gamma": 0.03,
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 1,
+    "weights": "uniform",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 1,
+    "weights": "distance",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 3,
+    "weights": "uniform",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 3,
+    "weights": "distance",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 5,
+    "weights": "uniform",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 5,
+    "weights": "distance",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 9,
+    "weights": "uniform",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 9,
+    "weights": "distance",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 15,
+    "weights": "uniform",
+    "scale": "global"
+  },
+  {
+    "model": "knn",
+    "k": 15,
+    "weights": "distance",
+    "scale": "global"
+  },
+  {
+    "model": "ridge",
+    "alpha": 1,
+    "scale": "global"
+  },
+  {
+    "model": "ridge",
+    "alpha": 10,
+    "scale": "global"
+  },
+  {
+    "model": "ridge",
+    "alpha": 100,
+    "scale": "global"
+  },
+  {
+    "model": "ridge",
+    "alpha": 1000,
+    "scale": "global"
+  },
+  {
+    "model": "linear_svc",
+    "C": 0.01,
+    "scale": "global"
+  },
+  {
+    "model": "linear_svc",
+    "C": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "linear_svc",
+    "C": 1,
+    "scale": "global"
+  },
+  {
+    "model": "linear_svc",
+    "C": 10,
+    "scale": "global"
+  },
+  {
+    "model": "logistic",
+    "C": 0.1,
+    "balanced": "balanced"
+  },
+  {
+    "model": "logistic",
+    "C": 1,
+    "balanced": "balanced"
+  },
+  {
+    "model": "logistic",
+    "C": 10,
+    "balanced": "balanced"
+  },
+  {
+    "model": "svc",
+    "C": 0.1,
+    "balanced": "balanced"
+  },
+  {
+    "model": "svc",
+    "C": 1,
+    "balanced": "balanced"
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "balanced": "balanced"
+  },
+  {
+    "model": "svc",
+    "pca": 10,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 10,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 10,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 10,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 10,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 10,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 10,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 10,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 10,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 25,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 25,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 25,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 25,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 25,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 25,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 25,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 25,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 25,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 50,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 50,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 50,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 50,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 50,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 50,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 50,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 50,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 50,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 100,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 100,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 100,
+    "white": 0,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 100,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 100,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 100,
+    "white": 0.5,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "svc",
+    "pca": 100,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "pca": 100,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "knn",
+    "pca": 100,
+    "white": 1,
+    "C": 10,
+    "k": 3
+  },
+  {
+    "model": "logistic",
+    "scale": "standard",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "logistic",
+    "scale": "global",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "logistic",
+    "scale": "raw",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "svc",
+    "scale": "standard",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "svc",
+    "scale": "global",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "svc",
+    "scale": "raw",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "knn",
+    "scale": "standard",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "knn",
+    "scale": "global",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "knn",
+    "scale": "raw",
+    "norm": true,
+    "C": 10,
+    "k": 3,
+    "gamma": "scale"
+  },
+  {
+    "model": "lda"
+  },
+  {
+    "model": "qda"
+  },
+  {
+    "model": "gnb"
+  },
+  {
+    "model": "rf"
+  },
+  {
+    "model": "extra"
+  },
+  {
+    "model": "hist"
+  },
+  {
+    "model": "catboost"
+  },
+  {
+    "model": "xgb"
+  },
+  {
+    "model": "lightgbm"
+  },
+  {
+    "model": "chain"
+  },
+  {
+    "model": "powerset"
+  },
+  {
+    "model": "rf",
+    "pca": 15
+  },
+  {
+    "model": "rf",
+    "pca": 40
+  },
+  {
+    "model": "extra",
+    "pca": 15
+  },
+  {
+    "model": "extra",
+    "pca": 40
+  },
+  {
+    "model": "catboost",
+    "pca": 15
+  },
+  {
+    "model": "catboost",
+    "pca": 40
+  },
+  {
+    "model": "xgb",
+    "pca": 15
+  },
+  {
+    "model": "xgb",
+    "pca": 40
+  },
+  {
+    "model": "cluster",
+    "cluster": "kmeans",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "kmeans",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "kmeans",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "kmeans",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "bisect",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "bisect",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "bisect",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "bisect",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "agglomerative",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "agglomerative",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "agglomerative",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "agglomerative",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "spectral",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "spectral",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "spectral",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "spectral",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "birch",
+    "clusters": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "birch",
+    "clusters": 12,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "birch",
+    "clusters": 25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "birch",
+    "clusters": 50,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 5,
+    "pca": 15,
+    "cov": "full"
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 12,
+    "pca": 15,
+    "cov": "full"
+  },
+  {
+    "model": "cluster",
+    "cluster": "gmm",
+    "clusters": 25,
+    "pca": 15,
+    "cov": "full"
+  },
+  {
+    "model": "cluster",
+    "cluster": "hdbscan",
+    "min_cluster": 5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "hdbscan",
+    "min_cluster": 10,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "hdbscan",
+    "min_cluster": 20,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "dbscan",
+    "eps_q": 0.25,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "dbscan",
+    "eps_q": 0.5,
+    "pca": 25
+  },
+  {
+    "model": "cluster",
+    "cluster": "dbscan",
+    "eps_q": 0.75,
+    "pca": 25
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 5,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 5,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 10,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 10,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 20,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 20,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 40,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 40,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 0,
+    "k": 40,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 5,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 5,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 10,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 10,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 20,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 20,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 40,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 40,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 25,
+    "k": 40,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 5,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 5,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 10,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 10,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 20,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 20,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 40,
+    "alpha": 0.8
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 40,
+    "alpha": 0.95
+  },
+  {
+    "model": "graph",
+    "pca": 50,
+    "k": 40,
+    "alpha": 0.99
+  },
+  {
+    "model": "graph",
+    "k": 5,
+    "alpha": 0.95,
+    "hard": true
+  },
+  {
+    "model": "graph",
+    "k": 5,
+    "alpha": 0.995,
+    "hard": true
+  },
+  {
+    "model": "graph",
+    "k": 15,
+    "alpha": 0.95,
+    "hard": true
+  },
+  {
+    "model": "graph",
+    "k": 15,
+    "alpha": 0.995,
+    "hard": true
+  },
+  {
+    "model": "graph",
+    "k": 40,
+    "alpha": 0.95,
+    "hard": true
+  },
+  {
+    "model": "graph",
+    "k": 40,
+    "alpha": 0.995,
+    "hard": true
+  }
+]

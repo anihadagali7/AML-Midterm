@@ -1,0 +1,350 @@
+[
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "expected_f1",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 0.25,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 0.25,
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 0.5,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 0.5,
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 1,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "prior_weight": 1,
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "nonempty",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "exclusive_rare",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  },
+  {
+    "model": "structured_ssl",
+    "assignment": "patterns",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true
+  }
+]

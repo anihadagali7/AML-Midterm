@@ -1,0 +1,262 @@
+[
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "fingerprint"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.25",
+    "averaged_oof_score": 0.9299363057324841,
+    "mean_split_score": 0.9252653927813164
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "drug_targets"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9278131634819532,
+    "mean_split_score": 0.9227883934890304
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "pathway_levels"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.25",
+    "averaged_oof_score": 0.9278131634819534,
+    "mean_split_score": 0.9184713375796179
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "criteria"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9171974522292993
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "fingerprint"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9299363057324841,
+    "mean_split_score": 0.9161358811040339
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "criteria"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9278131634819534,
+    "mean_split_score": 0.9150743099787686
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "drugs"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.5",
+    "averaged_oof_score": 0.9299363057324841,
+    "mean_split_score": 0.9143665958952583
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "drug_targets"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9278131634819534,
+    "mean_split_score": 0.9142958244869073
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "drugs"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9278131634819534,
+    "mean_split_score": 0.9140127388535032
+  },
+  {
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "pathway_levels"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.25",
+    "averaged_oof_score": 0.9256900212314227,
+    "mean_split_score": 0.9139419674451522
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "raw_configurations": 66,
+  "co_training_configurations": 30,
+  "no_exchange_screen_controls": 6,
+  "metric_configurations": 36,
+  "decision_policies_per_configuration": 12,
+  "repeat_seeds": [
+    20261115,
+    20261116,
+    20261117
+  ],
+  "validation_candidates": 3,
+  "baseline_validation_f1": 0.9123931623931625,
+  "baseline_matched_cv": 0.9054493984430291,
+  "co_training_validation_f1": 0.9017094017094018,
+  "metric_validation_f1": 0.8589743589743589,
+  "no_exchange_validation_f1": 0.8867521367521368,
+  "best_retained": true,
+  "current_validation_f1": 0.9123931623931625,
+  "target_met": false,
+  "validation_fit": false,
+  "final_train_plus_validation_refit_performed": false
+}

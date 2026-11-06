@@ -1,0 +1,17 @@
+{
+  "update_guards": true,
+  "prediction_shape": [
+    30,
+    5
+  ],
+  "last_fold_updates": 15,
+  "score": {
+    "sample_f1": 0.9333333333333333,
+    "macro_f1": 0.8882051282051282,
+    "f1_Safety": 1.0,
+    "f1_Funding": 1.0,
+    "f1_Efficacy": 0.6666666666666666,
+    "f1_Recruitment": 0.9743589743589743,
+    "f1_Other": 0.8
+  }
+}

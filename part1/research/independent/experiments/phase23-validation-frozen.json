@@ -1,0 +1,86 @@
+{
+  "frozen_at": "2026-11-05T06:54:56.421582+00:00",
+  "candidates": [
+    {
+      "bucket": "all",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "all",
+        "meta_C": 0.3,
+        "inner_splits": 15
+      },
+      "ordinary": 0.9405520169851381,
+      "robust": 0.9445803782543104,
+      "weighted": [
+        0.9527531995580438,
+        0.9575285861060469,
+        0.9459231653440345
+      ],
+      "macro": 0.8906108952144758,
+      "ordinary_cv": 0.9108280254777069,
+      "robust_cv": 0.896356180105386,
+      "cv_std": 0.007944070884870362,
+      "robust_std": 0.009980983102126709,
+      "per_repeat": [
+        {
+          "ordinary": 0.9129511677282377,
+          "robust": 0.9058974900996111,
+          "weighted": [
+            0.9035462642234022,
+            0.9226441516442844,
+            0.9127755475233913
+          ],
+          "macro": 0.8662161794142078
+        },
+        {
+          "ordinary": 0.900212314225053,
+          "robust": 0.8825770519733307,
+          "weighted": [
+            0.8766986312227567,
+            0.8787193778621052,
+            0.9009725349295271
+          ],
+          "macro": 0.8531396089075571
+        },
+        {
+          "ordinary": 0.9193205944798301,
+          "robust": 0.9005939982432158,
+          "weighted": [
+            0.9159610727002245,
+            0.8943517994976777,
+            0.9200204245570469
+          ],
+          "macro": 0.8727416238393488
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.8943599834849606,
+      "name": "phase23_all"
+    }
+  ]
+}

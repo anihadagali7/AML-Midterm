@@ -1,0 +1,17 @@
+{
+  "models_verified": 20,
+  "identical_protocol_for_all": true,
+  "explicit_frozen_decoders_verified": true,
+  "pooled_sample_f1_verified": true,
+  "source_hashes_verified": true,
+  "complete_oof_coverage": true,
+  "saved_folds_valid": true,
+  "grouped_folds": 15,
+  "gold_rows": 235,
+  "gold_embedding_groups": 222,
+  "no_conflicting_gold_embedding_groups": true,
+  "all_configs_and_rules_unchanged": true,
+  "no_final_all_label_refit": true,
+  "current_submission_unchanged": true,
+  "submission_sha256": "f9a287fb1d28fd9a6bbc0c583ac84ec2061e72945e2fbeb5aced9ff5b15ff44a"
+}

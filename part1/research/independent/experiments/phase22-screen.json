@@ -1,0 +1,2083 @@
+[
+  {
+    "bucket": "control",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.89171974522293,
+    "robust": 0.8833787922527785,
+    "weighted": [
+      0.8805984745960614,
+      0.9016759579375067,
+      0.8972675423021493
+    ],
+    "macro": 0.8190971207833753
+  },
+  {
+    "bucket": "bootstrap",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8853503184713376,
+    "robust": 0.877853280144982,
+    "weighted": [
+      0.87535426736953,
+      0.8940247604438232,
+      0.8880116099346049
+    ],
+    "macro": 0.8175384095529287
+  },
+  {
+    "bucket": "bootstrap",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123,
+          240123,
+          250123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723991,
+    "robust": 0.8859524847457545,
+    "weighted": [
+      0.8847377786702063,
+      0.8974397891131135,
+      0.8920138052007843
+    ],
+    "macro": 0.8213661607491008
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "C": 0.3
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8747346072186837,
+    "robust": 0.8706159785464136,
+    "weighted": [
+      0.8692431023223236,
+      0.8856788894738481,
+      0.873597124241983
+    ],
+    "macro": 0.8096893218651326
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "C": 3
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9129511677282378,
+    "robust": 0.9153766365615423,
+    "weighted": [
+      0.9161851261726437,
+      0.9269506612698506,
+      0.9165218612307883
+    ],
+    "macro": 0.8358515522049357
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "gamma": 0.0005
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239916,
+    "robust": 0.8940385954103243,
+    "weighted": [
+      0.8933961173057685,
+      0.9104270567290775,
+      0.8965092953527969
+    ],
+    "macro": 0.8246232368440328
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "gamma": 0.002
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9039072340228531,
+    "weighted": [
+      0.9037234457884326,
+      0.9208629114821593,
+      0.9084072959777282
+    ],
+    "macro": 0.8263408855079335
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "logistic_C": 0.1
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.89171974522293,
+    "robust": 0.8838752771441973,
+    "weighted": [
+      0.8812604544512865,
+      0.9017508135908192,
+      0.8961669053977463
+    ],
+    "macro": 0.8246232368440328
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "logistic_C": 1
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239916,
+    "robust": 0.8874635459538538,
+    "weighted": [
+      0.8846293846971411,
+      0.9043486790559077,
+      0.8997113602576357
+    ],
+    "macro": 0.8224374697547923
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "ridge_alpha": 3
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9002123142250531,
+    "robust": 0.8995302854615652,
+    "weighted": [
+      0.8993029425404027,
+      0.9126432230956898,
+      0.9042555945679224
+    ],
+    "macro": 0.8256160655279864
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "ridge_alpha": 30
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723993,
+    "robust": 0.8869173473411239,
+    "weighted": [
+      0.8860242621306988,
+      0.9060737037796558,
+      0.8944960106599984
+    ],
+    "macro": 0.816993154144857
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 0.1,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8938428874734606,
+    "robust": 0.8910017859083347,
+    "weighted": [
+      0.8900547520532927,
+      0.9033565897685272,
+      0.8955394018265727
+    ],
+    "macro": 0.8223803595320623
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 0.3,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239914,
+    "robust": 0.8876041294070842,
+    "weighted": [
+      0.8848168293014486,
+      0.8990336995796906,
+      0.8978839473548681
+    ],
+    "macro": 0.8266282493753611
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "confidence": 0.6
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239914,
+    "robust": 0.8917562571471062,
+    "weighted": [
+      0.8903529996214778,
+      0.9100453576306011,
+      0.8990128952099181
+    ],
+    "macro": 0.8234536462007579
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "confidence": 0.75
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9065817409766453,
+    "robust": 0.903512903103964,
+    "weighted": [
+      0.9024899571464036,
+      0.9165400212933227,
+      0.9090778952952487
+    ],
+    "macro": 0.8324085183581751
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "scale": "global"
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8980891719745223,
+    "robust": 0.8990334403517761,
+    "weighted": [
+      0.9019165082950444,
+      0.9174226680363153,
+      0.8993481964775274
+    ],
+    "macro": 0.8287061714532831
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "scale": "raw"
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9055847165301285,
+    "weighted": [
+      0.9059600891314665,
+      0.9213194662339481,
+      0.9061984896208781
+    ],
+    "macro": 0.8318650791824016
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "pca": 50
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9062858312271296,
+    "weighted": [
+      0.9114828906728085,
+      0.9231120342059659,
+      0.9068949087274679
+    ],
+    "macro": 0.8350004119890775
+  },
+  {
+    "bucket": "parameters",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "pca": 100
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723991,
+    "robust": 0.8929292239103939,
+    "weighted": [
+      0.8981442525577572,
+      0.9117703823543493,
+      0.8940400975563921
+    ],
+    "macro": 0.8199675593504996
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "criteria"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239916,
+    "robust": 0.8970329230474066,
+    "weighted": [
+      0.8973885541552116,
+      0.9175346041773125,
+      0.90055409786996
+    ],
+    "macro": 0.8230933720097807
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "criteria"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.900212314225053,
+    "robust": 0.901090313357644,
+    "weighted": [
+      0.9013829797351744,
+      0.9129500665408536,
+      0.9022105800089839
+    ],
+    "macro": 0.8257652099757363
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "criteria_char"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8980891719745223,
+    "robust": 0.8890272462169169,
+    "weighted": [
+      0.886006604297715,
+      0.905647611788452,
+      0.9013052987247916
+    ],
+    "macro": 0.8235196294692863
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "criteria_char"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.900212314225053,
+    "robust": 0.9000994383103976,
+    "weighted": [
+      0.9000618130055126,
+      0.9183399016703832,
+      0.9048572180426215
+    ],
+    "macro": 0.8299895939131762
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "diseases_cleaned"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723993,
+    "robust": 0.8819353059363901,
+    "weighted": [
+      0.8793815402577204,
+      0.9003770252049623,
+      0.8943231835895313
+    ],
+    "macro": 0.8204957221819766
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "diseases_cleaned"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9087048832271761,
+    "robust": 0.9067178441428446,
+    "weighted": [
+      0.9060554977814008,
+      0.9254030562258907,
+      0.9099625714885786
+    ],
+    "macro": 0.8342937546018419
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drugs"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9002123142250531,
+    "robust": 0.8929388117771746,
+    "weighted": [
+      0.8905143109612152,
+      0.9091208115914904,
+      0.9015471070921033
+    ],
+    "macro": 0.825404865712953
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drugs"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.910828025477707,
+    "robust": 0.9121957353394584,
+    "weighted": [
+      0.9141360100731181,
+      0.9275191521626367,
+      0.912651638626709
+    ],
+    "macro": 0.8357955402557199
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "icdcodes"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723991,
+    "robust": 0.8799250859545196,
+    "weighted": [
+      0.8767012469485597,
+      0.8990866441883896,
+      0.8923591084972775
+    ],
+    "macro": 0.816993154144857
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "icdcodes"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9024316649827655,
+    "weighted": [
+      0.9017560204016491,
+      0.9171085121861087,
+      0.9053997804279149
+    ],
+    "macro": 0.8328122731203603
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_targets"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239916,
+    "robust": 0.8862134832942489,
+    "weighted": [
+      0.8829626344843345,
+      0.8986520004812142,
+      0.8993817820173199
+    ],
+    "macro": 0.8224374697547923
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_targets"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.900212314225053,
+    "robust": 0.8991695239723496,
+    "weighted": [
+      0.8988219272214486,
+      0.9145106467210202,
+      0.9015036236851787
+    ],
+    "macro": 0.8277271504742622
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_actions"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.89171974522293,
+    "robust": 0.8834769867081282,
+    "weighted": [
+      0.8807294005365278,
+      0.9016759579375065,
+      0.8963314059845788
+    ],
+    "macro": 0.8234536462007579
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_actions"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8938428874734607,
+    "robust": 0.8956420192685837,
+    "weighted": [
+      0.8962417298669579,
+      0.9162356714447681,
+      0.8968404373927701
+    ],
+    "macro": 0.820981758133461
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_pathways"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9065817409766455,
+    "robust": 0.8993913552697337,
+    "weighted": [
+      0.8969945600340965,
+      0.9108433427186292,
+      0.910622479248121
+    ],
+    "macro": 0.832859404026452
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drug_pathways"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.902335456475584,
+    "robust": 0.9003180875188586,
+    "weighted": [
+      0.8996456311999501,
+      0.913942155828234,
+      0.9062751025575101
+    ],
+    "macro": 0.8314048130910676
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "fingerprint"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.89171974522293,
+    "robust": 0.8918510692722803,
+    "weighted": [
+      0.8958629881138503,
+      0.907829191263989,
+      0.8918948439553971
+    ],
+    "macro": 0.8256143804131421
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "fingerprint"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.910828025477707,
+    "robust": 0.9080115076833687,
+    "weighted": [
+      0.9070726684185892,
+      0.9248345653331046,
+      0.9141350235140807
+    ],
+    "macro": 0.8383465606638831
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "descriptors"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8895966029723991,
+    "robust": 0.8840373017520319,
+    "weighted": [
+      0.8821842013452428,
+      0.9007587243034387,
+      0.8918376624340719
+    ],
+    "macro": 0.8185476702339247
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "descriptors"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8946921443736731,
+    "robust": 0.8957187089712574,
+    "weighted": [
+      0.8990396778405658,
+      0.9083110108284648,
+      0.8960608971704521
+    ],
+    "macro": 0.8218211369350696
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "year"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.8959660297239914,
+    "robust": 0.8977233631761147,
+    "weighted": [
+      0.8983091409934891,
+      0.9107876651814903,
+      0.8994819348658791
+    ],
+    "macro": 0.823384663692751
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "year"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.900212314225053,
+    "robust": 0.895144255582559,
+    "weighted": [
+      0.8934549027017277,
+      0.9126432230956898,
+      0.9032247661890351
+    ],
+    "macro": 0.8285794688875562
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "counts"
+        ],
+        "feature_weight": 0.15
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.89171974522293,
+    "robust": 0.8842729317756683,
+    "weighted": [
+      0.8817906606265812,
+      0.9016759579375065,
+      0.8963415523583449
+    ],
+    "macro": 0.8200348427819545
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "counts"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9026178484119618,
+    "weighted": [
+      0.902004264973911,
+      0.9151662329074659,
+      0.9079226838149876
+    ],
+    "macro": 0.824144807076561
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.25
+    },
+    "ordinary": 0.9193205944798301,
+    "robust": 0.9211555008562992,
+    "weighted": [
+      0.9225769961354249,
+      0.9279603721404805,
+      0.9217671363151221
+    ],
+    "macro": 0.8547297943567671
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.5
+    },
+    "ordinary": 0.8980891719745223,
+    "robust": 0.8807131867567825,
+    "weighted": [
+      0.8749211916842025,
+      0.9104228766747282,
+      0.9045046904547546
+    ],
+    "macro": 0.8298420412001224
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.75
+    },
+    "ordinary": 0.8938428874734607,
+    "robust": 0.8776298252133059,
+    "weighted": [
+      0.8722254711265877,
+      0.9078250112096398,
+      0.9011287376195257
+    ],
+    "macro": 0.82553434889243
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123,
+          240123,
+          250123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.25
+    },
+    "ordinary": 0.9256900212314224,
+    "robust": 0.9256678273456883,
+    "weighted": [
+      0.9269961278833143,
+      0.9337245939634438,
+      0.925660429383777
+    ],
+    "macro": 0.8687581699346406
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123,
+          240123,
+          250123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.5
+    },
+    "ordinary": 0.9044585987261147,
+    "robust": 0.9081517425623529,
+    "weighted": [
+      0.9181551807603682,
+      0.9300319452596837,
+      0.9093827905077657
+    ],
+    "macro": 0.840371264017158
+  },
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123,
+          240123,
+          250123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.75
+    },
+    "ordinary": 0.8980891719745223,
+    "robust": 0.9018053549129202,
+    "weighted": [
+      0.9072406602389377,
+      0.9204384684873574,
+      0.9030440825590529
+    ],
+    "macro": 0.8349335136353393
+  }
+]

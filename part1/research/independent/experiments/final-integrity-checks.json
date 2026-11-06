@@ -1,0 +1,9 @@
+{
+  "held_out_training_labels_do_not_change_predictions": true,
+  "query_labels_do_not_change_predictions": true,
+  "inductive_query_batch_invariance": true,
+  "max_label_mask_difference": 0.0,
+  "max_order_difference": 0.0,
+  "max_batch_difference": 6.38378239159465e-16,
+  "python_sources_compile": true
+}

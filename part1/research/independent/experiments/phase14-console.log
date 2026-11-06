@@ -1,0 +1,32 @@
+RUN 1 16 {'model': 'calibrated_ssl', 'calibration': 'independent', 'meta_C': 0.1}
+{"id": "5ff8eeb5a3bee6", "model": "calibrated_ssl", "score": 0.9065817409766455, "rule": "t0.25", "default_score": 0.8895966029723993, "seconds": 8.837, "status": "ok", "error": null}
+RUN 2 16 {'model': 'calibrated_ssl', 'calibration': 'independent', 'meta_C': 1}
+{"id": "a3247129865ee8", "model": "calibrated_ssl", "score": 0.9097664543524416, "rule": "expected_f1", "default_score": 0.9023354564755838, "seconds": 2.212, "status": "ok", "error": null}
+RUN 3 16 {'model': 'calibrated_ssl', 'calibration': 'independent', 'meta_C': 10}
+{"id": "554b8687c6691e", "model": "calibrated_ssl", "score": 0.9087048832271764, "rule": "expected_f1", "default_score": 0.8959660297239914, "seconds": 2.244, "status": "ok", "error": null}
+RUN 4 16 {'model': 'calibrated_ssl', 'calibration': 'joint', 'meta_C': 0.1}
+{"id": "ade458388912d7", "model": "calibrated_ssl", "score": 0.89171974522293, "rule": "t0.45", "default_score": 0.8895966029723993, "seconds": 2.192, "status": "ok", "error": null}
+RUN 5 16 {'model': 'calibrated_ssl', 'calibration': 'joint', 'meta_C': 1}
+{"id": "55e3cf1b807419", "model": "calibrated_ssl", "score": 0.9065817409766453, "rule": "t0.5", "default_score": 0.9065817409766453, "seconds": 2.25, "status": "ok", "error": null}
+RUN 6 16 {'model': 'calibrated_ssl', 'calibration': 'joint', 'meta_C': 10}
+{"id": "1434d35c532098", "model": "calibrated_ssl", "score": 0.9150743099787687, "rule": "argmax", "default_score": 0.9065817409766455, "seconds": 2.205, "status": "ok", "error": null}
+RUN 7 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'meta_C': 0.1}
+{"id": "a30392b8613816", "model": "calibrated_ssl", "score": 0.9087048832271764, "rule": "t0.5", "default_score": 0.9087048832271764, "seconds": 2.217, "status": "ok", "error": null}
+RUN 8 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'meta_C': 1}
+{"id": "a0a2e847c30393", "model": "calibrated_ssl", "score": 0.9214437367303611, "rule": "t0.35", "default_score": 0.9087048832271761, "seconds": 2.19, "status": "ok", "error": null}
+RUN 9 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'meta_C': 10}
+{"id": "0c9f574090949b", "model": "calibrated_ssl", "score": 0.9193205944798301, "rule": "t0.55", "default_score": 0.9171974522292994, "seconds": 2.274, "status": "ok", "error": null}
+RUN 10 16 {'model': 'calibrated_ssl', 'calibration': 'thresholds', 'macro_weight': 0}
+{"id": "289d54b44d9c39", "model": "calibrated_ssl", "score": 0.8938428874734606, "rule": "t0.5", "default_score": 0.8938428874734606, "seconds": 2.846, "status": "ok", "error": null}
+RUN 11 16 {'model': 'calibrated_ssl', 'calibration': 'thresholds', 'macro_weight': 0.25}
+{"id": "32510ca38eeb23", "model": "calibrated_ssl", "score": 0.9044585987261147, "rule": "t0.45", "default_score": 0.902335456475584, "seconds": 2.97, "status": "ok", "error": null}
+RUN 12 16 {'model': 'calibrated_ssl', 'calibration': 'thresholds', 'macro_weight': 0.5}
+{"id": "c34676e5b38371", "model": "calibrated_ssl", "score": 0.9044585987261147, "rule": "t0.45", "default_score": 0.902335456475584, "seconds": 2.914, "status": "ok", "error": null}
+RUN 13 16 {'model': 'calibrated_ssl', 'calibration': 'thresholds', 'macro_weight': 1}
+{"id": "eea2f4231cc828", "model": "calibrated_ssl", "score": 0.902335456475584, "rule": "t0.5", "default_score": 0.9023354564755838, "seconds": 3.095, "status": "ok", "error": null}
+RUN 14 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'gfm': True, 'meta_C': 0.1}
+{"id": "54cd04af7b7479", "model": "calibrated_ssl", "score": 0.8959660297239916, "rule": "t0.5", "default_score": 0.8959660297239916, "seconds": 2.091, "status": "ok", "error": null}
+RUN 15 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'gfm': True, 'meta_C': 1}
+{"id": "2ae14675d2c503", "model": "calibrated_ssl", "score": 0.9150743099787687, "rule": "t0.5", "default_score": 0.9150743099787687, "seconds": 2.23, "status": "ok", "error": null}
+RUN 16 16 {'model': 'calibrated_ssl', 'calibration': 'patterns', 'gfm': True, 'meta_C': 10}
+{"id": "dc646596d29d70", "model": "calibrated_ssl", "score": 0.9129511677282377, "rule": "t0.5", "default_score": 0.9129511677282377, "seconds": 2.16, "status": "ok", "error": null}

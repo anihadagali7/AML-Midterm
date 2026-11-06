@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-11-06T05:36:07.462759+00:00",
+  "comparison": [
+    {
+      "mode": "all_transductive",
+      "candidate": "Three-way: all components transductive",
+      "train_mean": 0.9264861995753715,
+      "train_sd": 0.006792188902372427,
+      "train_paired_delta": 0.0007961783439490305,
+      "train_wins": 4,
+      "pooled_mean": 0.9180851063829787,
+      "pooled_sd": 0.004744357503638173,
+      "pooled_paired_delta": 0.0015957446808511078,
+      "pooled_wins": 4,
+      "minimum_gain": 0.0007961783439490305,
+      "qualifies": false
+    },
+    {
+      "mode": "ani_transductive",
+      "candidate": "Three-way: Ani transductive",
+      "train_mean": 0.9270169851380042,
+      "train_sd": 0.005193839116449272,
+      "train_paired_delta": 0.0013269639065817268,
+      "train_wins": 2,
+      "pooled_mean": 0.9168439716312056,
+      "pooled_sd": 0.006536279642257765,
+      "pooled_paired_delta": 0.0003546099290780286,
+      "pooled_wins": 3,
+      "minimum_gain": 0.0003546099290780286,
+      "qualifies": false
+    },
+    {
+      "mode": "inductive",
+      "candidate": "Submitted three-way, inductive",
+      "train_mean": 0.9256900212314225,
+      "train_sd": 0.005200615165144745,
+      "train_paired_delta": 0.0,
+      "train_wins": 0,
+      "pooled_mean": 0.9164893617021276,
+      "pooled_sd": 0.007685715177905405,
+      "pooled_paired_delta": 0.0,
+      "pooled_wins": 0,
+      "minimum_gain": 0.0,
+      "qualifies": false
+    }
+  ],
+  "qualified": [],
+  "supplementary_modes": [
+    "all_transductive"
+  ],
+  "diagnostic_only": true
+}

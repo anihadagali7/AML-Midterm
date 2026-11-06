@@ -1,0 +1,44 @@
+[
+  {
+    "source_commit": "a5487215115e30afb68ab865bc5fd98be6b3e199",
+    "source_path": "midterm/part1_best_model.ipynb",
+    "file": "research/ani_snapshots/a548721/part1_best_model.ipynb",
+    "sha256": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7"
+  },
+  {
+    "source_commit": "a5487215115e30afb68ab865bc5fd98be6b3e199",
+    "source_path": "midterm/part1_best_submission.csv",
+    "file": "research/ani_snapshots/a548721/part1_best_submission.csv",
+    "sha256": "d28c381fe35bd7fe787328646cd1ed5d27a7ba8c6eba3353894ba761e1ad4f29"
+  },
+  {
+    "source_commit": "a5487215115e30afb68ab865bc5fd98be6b3e199",
+    "source_path": "midterm/part1_best_reason_labels.csv",
+    "file": "research/ani_snapshots/a548721/part1_best_reason_labels.csv",
+    "sha256": "cd219abbdcc2069f0b6afa26101262ac4d958e8a30b2c2d25ca1b74f3a63e53d"
+  },
+  {
+    "source_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+    "source_path": "midterm/part1_best_model.ipynb",
+    "file": "research/ani_snapshots/8a8c3fc/part1_best_model.ipynb",
+    "sha256": "339bca31284fd013fb795f659c4e2d96dcb40b5be6e4315db69e1dbc3f65d2b4"
+  },
+  {
+    "source_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+    "source_path": "midterm/part1_best_submission.csv",
+    "file": "research/ani_snapshots/8a8c3fc/part1_best_submission.csv",
+    "sha256": "e166c3442a670f7690e77f5e550d89d8e90af6d46eb14dc17a681d790d9d31eb"
+  },
+  {
+    "source_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+    "source_path": "midterm/part1_best_reason_labels.csv",
+    "file": "research/ani_snapshots/8a8c3fc/part1_best_reason_labels.csv",
+    "sha256": "1d2072e38f7fff54e82ee2674be8431742ec4cfcfcd34645cb55d01801255d63"
+  },
+  {
+    "source_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+    "source_path": "midterm/part1_first_submission.csv",
+    "file": "research/ani_snapshots/8a8c3fc/part1_first_submission.csv",
+    "sha256": "d28c381fe35bd7fe787328646cd1ed5d27a7ba8c6eba3353894ba761e1ad4f29"
+  }
+]

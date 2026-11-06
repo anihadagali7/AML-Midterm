@@ -1,0 +1,546 @@
+[
+  {
+    "use_tri": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9129511677282377,
+    "weighted_cv": {
+      "propensity_logistic": 0.9189263187372662,
+      "propensity_tree": 0.9102980750811627,
+      "kmm": 0.9102589189097197
+    },
+    "selection_score": 0.9067613048214822,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9087048832271764,
+    "weighted_cv": {
+      "propensity_logistic": 0.912027664666,
+      "propensity_tree": 0.9021087283740196,
+      "kmm": 0.9059963025086647
+    },
+    "selection_score": 0.8977075141542997,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9101203113941967,
+    "weighted_cv": {
+      "propensity_logistic": 0.9166482128093829,
+      "propensity_tree": 0.9071683790859675,
+      "kmm": 0.908314273006534
+    },
+    "selection_score": 0.9032858699960562,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9058740268931352,
+    "weighted_cv": {
+      "propensity_logistic": 0.9097495587381167,
+      "propensity_tree": 0.8989790323788246,
+      "kmm": 0.9040516566054789
+    },
+    "selection_score": 0.8941807082908039,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9129511677282377,
+    "weighted_cv": {
+      "propensity_logistic": 0.9189263187372662,
+      "propensity_tree": 0.9102980750811627,
+      "kmm": 0.9102589189097197
+    },
+    "selection_score": 0.9057613048214822,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9087048832271764,
+    "weighted_cv": {
+      "propensity_logistic": 0.912027664666,
+      "propensity_tree": 0.9021087283740196,
+      "kmm": 0.9059963025086647
+    },
+    "selection_score": 0.8967075141542997,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9101203113941967,
+    "weighted_cv": {
+      "propensity_logistic": 0.9166482128093829,
+      "propensity_tree": 0.9071683790859675,
+      "kmm": 0.908314273006534
+    },
+    "selection_score": 0.9022858699960562,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "ordinary_cv": 0.9058740268931352,
+    "weighted_cv": {
+      "propensity_logistic": 0.9097495587381167,
+      "propensity_tree": 0.8989790323788246,
+      "kmm": 0.9040516566054789
+    },
+    "selection_score": 0.8931807082908039,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9179051663128096,
+    "weighted_cv": {
+      "propensity_logistic": 0.916152879351387,
+      "propensity_tree": 0.9088771886326262,
+      "kmm": 0.9167896441747413
+    },
+    "selection_score": 0.9067697844689487,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9136588818117479,
+    "weighted_cv": {
+      "propensity_logistic": 0.9092542252801207,
+      "propensity_tree": 0.9006878419254831,
+      "kmm": 0.9125270277736863
+    },
+    "selection_score": 0.8975214149499573,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9150743099787686,
+    "weighted_cv": {
+      "propensity_logistic": 0.9138747734235037,
+      "propensity_tree": 0.905747492637431,
+      "kmm": 0.9148449982715556
+    },
+    "selection_score": 0.9029704813879964,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9108280254777069,
+    "weighted_cv": {
+      "propensity_logistic": 0.9069761193522373,
+      "propensity_tree": 0.897558145930288,
+      "kmm": 0.9105823818705007
+    },
+    "selection_score": 0.8936548611346897,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9186128803963198,
+    "weighted_cv": {
+      "propensity_logistic": 0.9167191870622561,
+      "propensity_tree": 0.9093101662101409,
+      "kmm": 0.9178033041980903
+    },
+    "selection_score": 0.9062809036436776,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9143665958952583,
+    "weighted_cv": {
+      "propensity_logistic": 0.9098205329909899,
+      "propensity_tree": 0.9011208195029979,
+      "kmm": 0.9135406877970352
+    },
+    "selection_score": 0.8970100934509414,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9157820240622788,
+    "weighted_cv": {
+      "propensity_logistic": 0.9144410811343727,
+      "propensity_tree": 0.9061804702149457,
+      "kmm": 0.9158586582949045
+    },
+    "selection_score": 0.9024626588450838,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "ordinary_cv": 0.9115357395612173,
+    "weighted_cv": {
+      "propensity_logistic": 0.9075424270631066,
+      "propensity_tree": 0.8979911235078027,
+      "kmm": 0.9115960418938496
+    },
+    "selection_score": 0.8931285088814827,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9125265392781315,
+    "weighted_cv": {
+      "propensity_logistic": 0.9219250858544199,
+      "propensity_tree": 0.9251788097070613,
+      "kmm": 0.9107807501843578
+    },
+    "selection_score": 0.9082100177706084,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9111111111111111,
+    "weighted_cv": {
+      "propensity_logistic": 0.9176736389395548,
+      "propensity_tree": 0.9206202661682085,
+      "kmm": 0.9093621436183245
+    },
+    "selection_score": 0.9055748531780047,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.90828025477707,
+    "weighted_cv": {
+      "propensity_logistic": 0.9187484064073317,
+      "propensity_tree": 0.9211831585568367,
+      "kmm": 0.9079868473809598
+    },
+    "selection_score": 0.9039554229140437,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9068648266100495,
+    "weighted_cv": {
+      "propensity_logistic": 0.9144969594924666,
+      "propensity_tree": 0.9166246150179839,
+      "kmm": 0.9065682408149266
+    },
+    "selection_score": 0.9012468739244879,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9111111111111111,
+    "weighted_cv": {
+      "propensity_logistic": 0.9182681054091564,
+      "propensity_tree": 0.9275658647990263,
+      "kmm": 0.909391238534219
+    },
+    "selection_score": 0.904544471881714,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9096956829440904,
+    "weighted_cv": {
+      "propensity_logistic": 0.9140166584942913,
+      "propensity_tree": 0.9230073212601736,
+      "kmm": 0.9079726319681857
+    },
+    "selection_score": 0.9016588006366093,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9068648266100494,
+    "weighted_cv": {
+      "propensity_logistic": 0.9150914259620682,
+      "propensity_tree": 0.9235702136488015,
+      "kmm": 0.906597335730821
+    },
+    "selection_score": 0.9003548849001072,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "ordinary_cv": 0.9054493984430289,
+    "weighted_cv": {
+      "propensity_logistic": 0.9108399790472032,
+      "propensity_tree": 0.9190116701099488,
+      "kmm": 0.9051787291647875
+    },
+    "selection_score": 0.8974175509078164,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9174805378627034,
+    "weighted_cv": {
+      "propensity_logistic": 0.9191867016663401,
+      "propensity_tree": 0.9237579232585249,
+      "kmm": 0.9175342953784725
+    },
+    "selection_score": 0.9132626613138692,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.916065109695683,
+    "weighted_cv": {
+      "propensity_logistic": 0.9149352547514749,
+      "propensity_tree": 0.9191993797196719,
+      "kmm": 0.9161156888124391
+    },
+    "selection_score": 0.9093617801998097,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.913234253361642,
+    "weighted_cv": {
+      "propensity_logistic": 0.9160100222192519,
+      "propensity_tree": 0.9197622721083002,
+      "kmm": 0.9147403925750744
+    },
+    "selection_score": 0.9088755761556285,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9118188251946213,
+    "weighted_cv": {
+      "propensity_logistic": 0.9117585753043868,
+      "propensity_tree": 0.9152037285694474,
+      "kmm": 0.9133217860090411
+    },
+    "selection_score": 0.9049009186089798,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9167728237791932,
+    "weighted_cv": {
+      "propensity_logistic": 0.9160960289319457,
+      "propensity_tree": 0.9265779559280046,
+      "kmm": 0.9171584437516827
+    },
+    "selection_score": 0.9081986381404518,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9153573956121727,
+    "weighted_cv": {
+      "propensity_logistic": 0.9118445820170807,
+      "propensity_tree": 0.9220194123891517,
+      "kmm": 0.9157398371856491
+    },
+    "selection_score": 0.9052723872834907,
+    "eligible": true
+  },
+  {
+    "use_tri": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9125265392781315,
+    "weighted_cv": {
+      "propensity_logistic": 0.9129193494848575,
+      "propensity_tree": 0.9225823047777798,
+      "kmm": 0.9143645409482847
+    },
+    "selection_score": 0.9041064027735736,
+    "eligible": false
+  },
+  {
+    "use_tri": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9111111111111111,
+    "weighted_cv": {
+      "propensity_logistic": 0.9086679025699924,
+      "propensity_tree": 0.9180237612389271,
+      "kmm": 0.9129459343822511
+    },
+    "selection_score": 0.9009436407103325,
+    "eligible": false
+  }
+]

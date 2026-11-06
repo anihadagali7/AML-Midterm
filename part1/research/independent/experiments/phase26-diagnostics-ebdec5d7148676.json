@@ -1,0 +1,13 @@
+{
+  "requested_subgroups": 2,
+  "fitted_subgroups": 2,
+  "gold_subgroup_sizes": [
+    7,
+    13
+  ],
+  "pseudo_rows": 930,
+  "pseudo_other_rows": 154,
+  "iterations": [
+    26
+  ]
+}

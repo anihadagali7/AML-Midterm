@@ -1,0 +1,9 @@
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:194: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = frame.set_index('ID').loc[expected.ID].reset_index().drop(columns=e.LABELS)
+{"name": "Ani training-only adaptation", "max_probability_difference": 1.099120794378905e-14, "identical_predictions": true, "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"}
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:194: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = frame.set_index('ID').loc[expected.ID].reset_index().drop(columns=e.LABELS)
+{"name": "DBSCAN + logistic C1000", "max_probability_difference": 1.4876988529977098e-14, "identical_predictions": true, "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"}
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:194: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = frame.set_index('ID').loc[expected.ID].reset_index().drop(columns=e.LABELS)
+{"name": "K-means k8 + logistic C1000", "max_probability_difference": 1.0769163338864018e-14, "identical_predictions": true, "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"}

@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-11-05T05:28:44.195533+00:00",
+  "candidate": {
+    "name": "cluster_gate",
+    "config": {
+      "model": "lowdensity_v2",
+      "cluster_gate": true,
+      "clusters": 10,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.55",
+    "cv": 0.9214437367303611,
+    "validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    }
+  },
+  "validation": {
+    "sample_f1": 0.9102564102564102,
+    "macro_f1": 0.78,
+    "f1_Safety": 0.9,
+    "f1_Funding": 0.6666666666666666,
+    "f1_Efficacy": 0.8,
+    "f1_Recruitment": 1.0,
+    "f1_Other": 0.5333333333333333
+  },
+  "target": 0.92735,
+  "target_met": false,
+  "kaggle_score": null,
+  "gold_rows": 157,
+  "predicted_missing_rows": 1014,
+  "test_rows": 312,
+  "submission_sha256": "c87c63dd5e623746f9349964bc1a6ead2102d639bf683e9cc5ddc5d9dcf3cf7f",
+  "raw_data_hashes_verified": true,
+  "gold_labels_preserved": true,
+  "source_sha256": {
+    "experiment.py": "bf4584f8af7ffbfa6945a447da2d3b528fb207a93be5ae61e312d7ef7ed074bd",
+    "phase3.py": "53cfbb46726de7009c7ca2e062d48426bb71b99e8f50b23a340a927ff1936467",
+    "phase4.py": "81f84b0b7d63f11dd1ed94228a71b821574b1e57c571941ce9bfc2b78daaeca4",
+    "phase5.py": "ae1a0164e36de0eb8ba979fb7493d7e53423a83d14ab68da7ada45fc1fcaf6e7",
+    "phase6.py": "37e3eba538946985edda221725b42c2940650d33548446ee46149b8ddf106533",
+    "phase7.py": "ff64ae8dc0f91bb9f0489630a96c85ca7dbbd87829001eb503d734cf09b2eb1d",
+    "phase8.py": "b358eb8324a2bc8f8c497d047aa8512ad712615cab3c52eec537d030acf1f09b",
+    "phase9.py": "5a9c52cd235125d32249faab0d7932786f4c0578efa42656f83b14299d1fab37",
+    "phase10.py": "699091e038b267283a079fcb70f4478fdab10d0b9835fd8e2ee765f5d7f78da4",
+    "phase11.py": "c7670388bb191c72a04cc548476a40223659c789f304bba3088d7d64210bee20",
+    "phase14.py": "74ed2f4aa227620334c505a1825c1e06b55285ff8fb4b129db313b907aa231e4",
+    "phase16.py": "9dcca68690fdcdad0fe04e5e96dfee268f3016886f9fbcbcbbd4f380716d98b7",
+    "phase17.py": "8f490c261b032a2869ee6e726e39f6e85cc54c2ef65bf3a02f6da75693f66841",
+    "phase18.py": "4c453eb76eb1a633c16ee53873d334d3d10c4c573f7d5e4863ac827694a7ce3c"
+  },
+  "score_interpretation": "Validation is repeatedly used for selection; CV values are development scores. Neither establishes a Kaggle leaderboard result. Margin-based scores are not calibrated probabilities."
+}

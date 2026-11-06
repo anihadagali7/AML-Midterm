@@ -1,0 +1,100 @@
+{
+  "frozen_at": "2026-11-05T06:18:19.751383+00:00",
+  "weighting_file": "phase21-weighting.json",
+  "candidates": [
+    {
+      "name": "tri_ordinary_cv",
+      "config": {
+        "model": "tri_training",
+        "committee": "kernels",
+        "pseudo_weight": 0.1,
+        "aggregation": "vote"
+      },
+      "objective": "ordinary",
+      "rule": "expected_f1",
+      "selection_score": 0.913560445882518,
+      "ordinary_cv": 0.913871196036801,
+      "weighted_cv": {
+        "uniform": 0.913871196036801,
+        "propensity_logistic": 0.9127567735078502,
+        "propensity_tree": 0.9281116521522974,
+        "kmm": 0.9156218040167694
+      },
+      "split_score_std": 0.0015537507714154383
+    },
+    {
+      "name": "tri_target_weighted_cv",
+      "config": {
+        "model": "tri_training",
+        "committee": "kernels",
+        "guard": "textbook",
+        "pseudo_weight": 0.1
+      },
+      "objective": "iw",
+      "rule": "t0.65",
+      "selection_score": 0.916721232418262,
+      "ordinary_cv": 0.9094125973106864,
+      "weighted_cv": {
+        "uniform": 0.9094125973106864,
+        "propensity_logistic": 0.9184164815192634,
+        "propensity_tree": 0.9232694690340039,
+        "kmm": 0.9074244040963807
+      },
+      "split_score_std": 0.008476245505006818
+    },
+    {
+      "name": "existing_target_weighted_cv + robust_weighting_cv",
+      "config": {
+        "model": "pseudo",
+        "teacher": {
+          "model": "cluster",
+          "cluster": "hdbscan",
+          "min_cluster": 5,
+          "pca": 25
+        },
+        "student": "logistic",
+        "C": 0.3,
+        "gamma": 0.001,
+        "scale": "global",
+        "pseudo_weight": 0.05,
+        "confidence": 0.95,
+        "labelwise": true,
+        "consensus": true,
+        "features": [
+          "drugs"
+        ],
+        "feature_weight": 0.15
+      },
+      "objective": "iw",
+      "rule": "t0.25",
+      "selection_score": 0.9248757845892304,
+      "ordinary_cv": 0.9213729653220097,
+      "weighted_cv": {
+        "uniform": 0.9213729653220097,
+        "propensity_logistic": 0.9276050911036937,
+        "propensity_tree": 0.9260641931351316,
+        "kmm": 0.9208080946565037
+      },
+      "split_score_std": 0.013646532572316872
+    },
+    {
+      "name": "matched_no_teaching_control",
+      "config": {
+        "model": "tri_training",
+        "committee": "kernels",
+        "no_teaching": true
+      },
+      "objective": "ordinary",
+      "rule": "t0.55",
+      "selection_score": 0.9022934099729966,
+      "ordinary_cv": 0.9044585987261146,
+      "weighted_cv": {
+        "uniform": 0.9044585987261146,
+        "propensity_logistic": 0.8811753142858781,
+        "propensity_tree": 0.9114682231860357,
+        "kmm": 0.9029729634367527
+      },
+      "split_score_std": 0.010825943765589773
+    }
+  ]
+}

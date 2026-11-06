@@ -1,0 +1,128 @@
+<!doctype html><meta charset="utf-8"><title>Ensemble combinations</title><style>body{font:16px system-ui;max-width:1600px;margin:36px auto;padding:0 24px;color:#172331}table{border-collapse:collapse;width:100%;margin:24px 0}td,th{padding:9px;border-bottom:1px solid #d9e0e7;text-align:left}th{background:#eef3f8}p{max-width:1100px;line-height:1.55}</style><h1>Averaging Ani models trained on grouped gold subsets</h1><p>Four subset-averaging additions, one at a time, tested against their exact unchanged parents. All settings were frozen before scoring. Every initial model used the same grouped five-fold x three-repeat protocols in train157 and pooled235. Candidates selected by the frozen paired-CV rule received five additional saved repeats. Validation and chronology were consulted only after the supplementary list was frozen.</p><h2>Eight-repeat results and supplementary checks</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train_mean</th>
+      <th>pooled_mean</th>
+      <th>validation</th>
+      <th>chronological</th>
+      <th>train_parent_delta</th>
+      <th>pooled_parent_delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>75/25 + half subset average</td>
+      <td>0.92887</td>
+      <td>0.91879</td>
+      <td>0.88034</td>
+      <td>0.87075</td>
+      <td>0.00212</td>
+      <td>0.00239</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>0.92675</td>
+      <td>0.91640</td>
+      <td>0.88889</td>
+      <td>0.88435</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92569</td>
+      <td>0.91649</td>
+      <td>0.91026</td>
+      <td>0.87755</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>0.91959</td>
+      <td>0.90984</td>
+      <td>0.89103</td>
+      <td>0.86054</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+    </tr>
+  </tbody>
+</table><p>Parent deltas compare each addition with the ensemble it modifies. The two frontier references are the previous training-CV leader (75/25) and pooled-CV leader (70/15/15). All CV estimates reuse development labels; they are not independent tests or new Kaggle scores. No Kaggle submission, final235 submission refit, or test-input fitting occurred.</p><p>Each new Ani component averages five fits trained on approximately 80% of the available gold labels, with either 0% or 50% weight retained for the full fitting-set Ani model. Tri-training and SVM partner recipes and ensemble weights stay fixed. The preceding eight single-change combinations failed to improve both eight-repeat CV pools; those results remain in <a href="../ani_combination_v1/report.html">the preceding report</a>.</p><h2>Complete initial screen</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>parent</th>
+      <th>train_mean</th>
+      <th>pooled_mean</th>
+      <th>train_parent_delta</th>
+      <th>pooled_parent_delta</th>
+      <th>qualifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>75/25 + full subset average</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93631</td>
+      <td>0.91206</td>
+      <td>0.00495</td>
+      <td>-0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + half subset average</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93347</td>
+      <td>0.91395</td>
+      <td>0.00212</td>
+      <td>0.00189</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93135</td>
+      <td>0.91206</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + half subset average</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.93064</td>
+      <td>0.91253</td>
+      <td>0.00354</td>
+      <td>0.00378</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + full subset average</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.93064</td>
+      <td>0.91726</td>
+      <td>0.00354</td>
+      <td>0.00851</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92711</td>
+      <td>0.90875</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>Ani frozen control</td>
+      <td>0.92286</td>
+      <td>0.90496</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><p><a href="protocol.json">Protocol</a> · <a href="registry.json">Recipes</a> · <a href="confirmation.json">All repeat comparisons</a> · <a href="verification.json">Verification</a> · <a href="boundary_audit.json">Fitting-boundary audit</a></p>

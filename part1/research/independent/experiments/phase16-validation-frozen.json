@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-11-05T05:19:33.361127+00:00",
+  "candidates": [
+    {
+      "name": "alternative_loss",
+      "config": {
+        "model": "loss_ssl",
+        "loss": "squared_error",
+        "kernel": "linear",
+        "C": 0.01
+      },
+      "rule": "t0.5",
+      "cv": 0.910828025477707,
+      "cv_mean": 0.9037508846426044,
+      "cv_macro": 0.8589071650287
+    }
+  ]
+}

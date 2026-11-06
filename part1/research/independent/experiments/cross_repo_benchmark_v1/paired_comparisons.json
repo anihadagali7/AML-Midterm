@@ -1,0 +1,782 @@
+[
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Classical tri-training",
+    "benchmark": "train",
+    "mean_difference": 0.007784854918612916,
+    "repeat_differences": [
+      0.021231422505308073,
+      -0.004246284501061459,
+      0.006369426751592133
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Classical tri-training",
+    "benchmark": "pooled",
+    "mean_difference": -0.0005673758865248901,
+    "repeat_differences": [
+      -0.01049645390070919,
+      0.007943262411347352,
+      0.0008510638297871687
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Current best hybrid",
+    "benchmark": "train",
+    "mean_difference": 0.00955414012738857,
+    "repeat_differences": [
+      0.02016985138004257,
+      0.0,
+      0.00849256900212314
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 1
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Current best hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.0065248226950353665,
+    "repeat_differences": [
+      0.0022695035460991164,
+      0.007943262411347463,
+      0.009361702127659521
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "train",
+    "mean_difference": -0.002830856334041084,
+    "repeat_differences": [
+      0.006369426751592355,
+      -0.006369426751592355,
+      -0.008492569002123251
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "pooled",
+    "mean_difference": -0.006146572104018995,
+    "repeat_differences": [
+      -0.01134751773049647,
+      -0.018439716312056875,
+      0.01134751773049636
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.02264685067232845,
+    "repeat_differences": [
+      0.04246284501061581,
+      0.007430997876857859,
+      0.018046709129511673
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.0033569739952717947,
+    "repeat_differences": [
+      -0.004964539007092372,
+      0.006524822695035515,
+      0.008510638297872242
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.021231422505307778,
+    "repeat_differences": [
+      0.031847133757961776,
+      0.01273885350318471,
+      0.019108280254776844
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Local SVM specialist hybrid",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.007612293144208045,
+    "repeat_differences": [
+      0.009219858156028438,
+      -0.009787234042553217,
+      0.023404255319148914
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.007784854918612916,
+    "repeat_differences": [
+      -0.021231422505308073,
+      0.004246284501061459,
+      -0.006369426751592133
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.0005673758865248901,
+    "repeat_differences": [
+      0.01049645390070919,
+      -0.007943262411347352,
+      -0.0008510638297871687
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Current best hybrid",
+    "benchmark": "train",
+    "mean_difference": 0.0017692852087756543,
+    "repeat_differences": [
+      -0.0010615711252655036,
+      0.004246284501061459,
+      0.002123142250531007
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Current best hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.007092198581560257,
+    "repeat_differences": [
+      0.012765957446808307,
+      1.1102230246251565e-16,
+      0.008510638297872353
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 1
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "train",
+    "mean_difference": -0.010615711252654,
+    "repeat_differences": [
+      -0.014861995753715718,
+      -0.002123142250530896,
+      -0.014861995753715385
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "pooled",
+    "mean_difference": -0.005579196217494105,
+    "repeat_differences": [
+      -0.0008510638297872797,
+      -0.026382978723404227,
+      0.01049645390070919
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.014861995753715532,
+    "repeat_differences": [
+      0.02123142250530774,
+      0.011677282377919318,
+      0.01167728237791954
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.003924349881796685,
+    "repeat_differences": [
+      0.005531914893616818,
+      -0.0014184397163118367,
+      0.007659574468085073
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.01344656758669486,
+    "repeat_differences": [
+      0.010615711252653703,
+      0.01698513800424617,
+      0.01273885350318471
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Classical tri-training",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.008179669030732936,
+    "repeat_differences": [
+      0.019716312056737628,
+      -0.01773049645390057,
+      0.022553191489361746
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.00955414012738857,
+    "repeat_differences": [
+      -0.02016985138004257,
+      0.0,
+      -0.00849256900212314
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 1
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "pooled",
+    "mean_difference": -0.0065248226950353665,
+    "repeat_differences": [
+      -0.0022695035460991164,
+      -0.007943262411347463,
+      -0.009361702127659521
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Classical tri-training",
+    "benchmark": "train",
+    "mean_difference": -0.0017692852087756543,
+    "repeat_differences": [
+      0.0010615711252655036,
+      -0.004246284501061459,
+      -0.002123142250531007
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Classical tri-training",
+    "benchmark": "pooled",
+    "mean_difference": -0.007092198581560257,
+    "repeat_differences": [
+      -0.012765957446808307,
+      -1.1102230246251565e-16,
+      -0.008510638297872353
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 1
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "train",
+    "mean_difference": -0.012384996461429654,
+    "repeat_differences": [
+      -0.013800424628450214,
+      -0.006369426751592355,
+      -0.016985138004246392
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "pooled",
+    "mean_difference": -0.012671394799054362,
+    "repeat_differences": [
+      -0.013617021276595587,
+      -0.026382978723404338,
+      0.001985815602836838
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.013092710544939878,
+    "repeat_differences": [
+      0.022292993630573243,
+      0.007430997876857859,
+      0.009554140127388533
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": -0.003167848699763572,
+    "repeat_differences": [
+      -0.007234042553191489,
+      -0.0014184397163119478,
+      -0.0008510638297872797
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.011677282377919207,
+    "repeat_differences": [
+      0.011677282377919207,
+      0.01273885350318471,
+      0.010615711252653703
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Current best hybrid",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.0010874704491726783,
+    "repeat_differences": [
+      0.006950354609929321,
+      -0.01773049645390068,
+      0.014042553191489393
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "train",
+    "mean_difference": 0.002830856334041084,
+    "repeat_differences": [
+      -0.006369426751592355,
+      0.006369426751592355,
+      0.008492569002123251
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.006146572104018995,
+    "repeat_differences": [
+      0.01134751773049647,
+      0.018439716312056875,
+      -0.01134751773049636
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Classical tri-training",
+    "benchmark": "train",
+    "mean_difference": 0.010615711252654,
+    "repeat_differences": [
+      0.014861995753715718,
+      0.002123142250530896,
+      0.014861995753715385
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Classical tri-training",
+    "benchmark": "pooled",
+    "mean_difference": 0.005579196217494105,
+    "repeat_differences": [
+      0.0008510638297872797,
+      0.026382978723404227,
+      -0.01049645390070919
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Current best hybrid",
+    "benchmark": "train",
+    "mean_difference": 0.012384996461429654,
+    "repeat_differences": [
+      0.013800424628450214,
+      0.006369426751592355,
+      0.016985138004246392
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "Current best hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.012671394799054362,
+    "repeat_differences": [
+      0.013617021276595587,
+      0.026382978723404338,
+      -0.001985815602836838
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.025477707006369532,
+    "repeat_differences": [
+      0.03609341825902346,
+      0.013800424628450214,
+      0.026539278131634925
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.00950354609929079,
+    "repeat_differences": [
+      0.006382978723404098,
+      0.02496453900709239,
+      -0.0028368794326241176
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.02406227883934886,
+    "repeat_differences": [
+      0.02547770700636942,
+      0.019108280254777066,
+      0.027600849256900095
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "Ani training-only adaptation",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.01375886524822704,
+    "repeat_differences": [
+      0.020567375886524908,
+      0.008652482269503659,
+      0.012056737588652555
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.02264685067232845,
+    "repeat_differences": [
+      -0.04246284501061581,
+      -0.007430997876857859,
+      -0.018046709129511673
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "pooled",
+    "mean_difference": -0.0033569739952717947,
+    "repeat_differences": [
+      0.004964539007092372,
+      -0.006524822695035515,
+      -0.008510638297872242
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Classical tri-training",
+    "benchmark": "train",
+    "mean_difference": -0.014861995753715532,
+    "repeat_differences": [
+      -0.02123142250530774,
+      -0.011677282377919318,
+      -0.01167728237791954
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Classical tri-training",
+    "benchmark": "pooled",
+    "mean_difference": -0.003924349881796685,
+    "repeat_differences": [
+      -0.005531914893616818,
+      0.0014184397163118367,
+      -0.007659574468085073
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Current best hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.013092710544939878,
+    "repeat_differences": [
+      -0.022292993630573243,
+      -0.007430997876857859,
+      -0.009554140127388533
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Current best hybrid",
+    "benchmark": "pooled",
+    "mean_difference": 0.003167848699763572,
+    "repeat_differences": [
+      0.007234042553191489,
+      0.0014184397163119478,
+      0.0008510638297872797
+    ],
+    "repeats_won": 3,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "train",
+    "mean_difference": -0.025477707006369532,
+    "repeat_differences": [
+      -0.03609341825902346,
+      -0.013800424628450214,
+      -0.026539278131634925
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "pooled",
+    "mean_difference": -0.00950354609929079,
+    "repeat_differences": [
+      -0.006382978723404098,
+      -0.02496453900709239,
+      0.0028368794326241176
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": -0.0014154281670206714,
+    "repeat_differences": [
+      -0.010615711252654036,
+      0.005307855626326852,
+      0.0010615711252651705
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "DBSCAN + logistic C1000",
+    "reference": "K-means k8 + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": 0.00425531914893625,
+    "repeat_differences": [
+      0.01418439716312081,
+      -0.01631205673758873,
+      0.014893617021276673
+    ],
+    "repeats_won": 2,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.021231422505307778,
+    "repeat_differences": [
+      -0.031847133757961776,
+      -0.01273885350318471,
+      -0.019108280254776844
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Local SVM specialist hybrid",
+    "benchmark": "pooled",
+    "mean_difference": -0.007612293144208045,
+    "repeat_differences": [
+      -0.009219858156028438,
+      0.009787234042553217,
+      -0.023404255319148914
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Classical tri-training",
+    "benchmark": "train",
+    "mean_difference": -0.01344656758669486,
+    "repeat_differences": [
+      -0.010615711252653703,
+      -0.01698513800424617,
+      -0.01273885350318471
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Classical tri-training",
+    "benchmark": "pooled",
+    "mean_difference": -0.008179669030732936,
+    "repeat_differences": [
+      -0.019716312056737628,
+      0.01773049645390057,
+      -0.022553191489361746
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Current best hybrid",
+    "benchmark": "train",
+    "mean_difference": -0.011677282377919207,
+    "repeat_differences": [
+      -0.011677282377919207,
+      -0.01273885350318471,
+      -0.010615711252653703
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Current best hybrid",
+    "benchmark": "pooled",
+    "mean_difference": -0.0010874704491726783,
+    "repeat_differences": [
+      -0.006950354609929321,
+      0.01773049645390068,
+      -0.014042553191489393
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "train",
+    "mean_difference": -0.02406227883934886,
+    "repeat_differences": [
+      -0.02547770700636942,
+      -0.019108280254777066,
+      -0.027600849256900095
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "Ani training-only adaptation",
+    "benchmark": "pooled",
+    "mean_difference": -0.01375886524822704,
+    "repeat_differences": [
+      -0.020567375886524908,
+      -0.008652482269503659,
+      -0.012056737588652555
+    ],
+    "repeats_won": 0,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "train",
+    "mean_difference": 0.0014154281670206714,
+    "repeat_differences": [
+      0.010615711252654036,
+      -0.005307855626326852,
+      -0.0010615711252651705
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  },
+  {
+    "candidate": "K-means k8 + logistic C1000",
+    "reference": "DBSCAN + logistic C1000",
+    "benchmark": "pooled",
+    "mean_difference": -0.00425531914893625,
+    "repeat_differences": [
+      -0.01418439716312081,
+      0.01631205673758873,
+      -0.014893617021276673
+    ],
+    "repeats_won": 1,
+    "repeats_tied": 0
+  }
+]

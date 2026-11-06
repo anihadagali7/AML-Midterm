@@ -1,0 +1,767 @@
+[
+  {
+    "name": "Current best hybrid",
+    "config": {
+      "model": "tri_labelwise",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_training",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rule": "t0.5",
+    "incumbent": true,
+    "recorded_validation": {
+      "sample_f1": 0.9123931623931625,
+      "macro_f1": 0.81044356609574,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    },
+    "validation_source": "experiments/current-best.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018297+00:00"
+  },
+  {
+    "name": "Previous cluster-guided SVM",
+    "config": {
+      "model": "lowdensity_v2",
+      "cluster_gate": true,
+      "clusters": 10,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase21-prior-incumbent.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018307+00:00"
+  },
+  {
+    "name": "Label-frequency correction",
+    "config": {
+      "model": "policy26",
+      "learner": {
+        "model": "label_shift26",
+        "method": "em",
+        "strength": 0.25,
+        "output": "calibrated",
+        "calibration_C": 0.3
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.6",
+      "scope": "efficacy_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.8717948717948718,
+      "macro_f1": 0.7537373737373738,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.6666666666666666,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.5454545454545454
+    },
+    "validation_source": "experiments/phase26-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018729+00:00"
+  },
+  {
+    "name": "Graph-regularized SVM",
+    "config": {
+      "model": "policy26",
+      "learner": {
+        "model": "lap_svm26",
+        "C": 3,
+        "gamma": 0.003,
+        "neighbors": 10,
+        "graph_weight": 0.1
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.7",
+      "scope": "efficacy_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.8803418803418804,
+      "macro_f1": 0.7651592851592852,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7692307692307693,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase26-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018733+00:00"
+  },
+  {
+    "name": "Other subgroups",
+    "config": {
+      "model": "policy26",
+      "learner": {
+        "model": "other_subclasses26",
+        "subgroups": 3,
+        "representation": "kernel",
+        "C": 3,
+        "mix": 1,
+        "pseudo_weight": 0.03
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.7",
+      "scope": "other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.8974358974358975,
+      "macro_f1": 0.7713131313131314,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase26-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018738+00:00"
+  },
+  {
+    "name": "Structured-label SVM",
+    "config": {
+      "model": "structured_ssl",
+      "assignment": "exclusive_rare",
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03,
+      "cluster_gate": true
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.7766283524904214,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8275862068965517,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase10-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.816644+00:00"
+  },
+  {
+    "name": "Unlabeled-subsample SVM ensemble",
+    "config": {
+      "model": "subspace_ssl",
+      "C": 1,
+      "gamma": 0.001,
+      "feature_fraction": 1.0,
+      "unlabeled_fraction": 0.8,
+      "members": 9
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.7777777777777777,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase11-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.816917+00:00"
+  },
+  {
+    "name": "Low-density SVM",
+    "config": {
+      "model": "lowdensity_v2",
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase12-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.817170+00:00"
+  },
+  {
+    "name": "Cluster SVM at threshold 0.60",
+    "config": {
+      "model": "lowdensity_v2",
+      "cluster_gate": true,
+      "clusters": 10,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.6",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9017094017094018,
+      "macro_f1": 0.7215873015873016,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.4,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase13-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.817416+00:00"
+  },
+  {
+    "name": "Year-weighted SVM",
+    "config": {
+      "model": "weighted_ssl",
+      "weighting": "year",
+      "slope": 1
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9059829059829059,
+      "macro_f1": 0.7655172413793103,
+      "f1_Safety": 0.8,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8275862068965517,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase18-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.818519+00:00"
+  },
+  {
+    "name": "Kernel-committee reason hybrid",
+    "config": {
+      "model": "tri_labelwise",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_training",
+        "committee": "kernels",
+        "pseudo_weight": 0.1,
+        "aggregation": "vote"
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "expected_f1",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9017094017094018,
+      "macro_f1": 0.7741747572815534,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.970873786407767,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase21b-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.819542+00:00"
+  },
+  {
+    "name": "Classical tri-training",
+    "config": {
+      "model": "tri_training",
+      "committee": "mixed",
+      "cluster_gate": false,
+      "pseudo_weight": 1.0,
+      "aggregation": "vote",
+      "stratified_bootstrap": false
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9038461538461541,
+      "macro_f1": 0.8053642010163748,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    },
+    "validation_source": "experiments/phase21c-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.819774+00:00"
+  },
+  {
+    "name": "Metadata co-training hybrid",
+    "config": {
+      "model": "policy24",
+      "learner": {
+        "model": "co_training",
+        "views": [
+          "drugs",
+          "drug_targets",
+          "drug_actions",
+          "diseases_cleaned"
+        ],
+        "agreement": false,
+        "pseudo_weight": 0.3,
+        "metadata_vote": 0.0
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.65",
+      "scope": "recruitment_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9017094017094018,
+      "macro_f1": 0.7713531353135313,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9900990099009901,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase24-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.820889+00:00"
+  },
+  {
+    "name": "Local SVM specialist hybrid",
+    "config": {
+      "model": "policy25",
+      "learner": {
+        "model": "local_ssl",
+        "regions": 3,
+        "C": 3,
+        "gamma": 0.001,
+        "local_mix": 0.25
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.65",
+      "scope": "recruitment_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9059829059829061,
+      "macro_f1": 0.7713531353135313,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9900990099009901,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase25-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.821436+00:00"
+  },
+  {
+    "name": "Other SVM override hybrid",
+    "config": {
+      "model": "policy25",
+      "learner": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.65",
+      "scope": "other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.7963131313131313,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.625
+    },
+    "validation_source": "experiments/phase25b-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.821756+00:00"
+  },
+  {
+    "name": "Uniform pseudo-weight hybrid",
+    "config": {
+      "model": "policy25",
+      "learner": {
+        "model": "reliable_ssl",
+        "teacher": "ssl",
+        "pseudo_weight": 0.3,
+        "reliability": "uniform",
+        "min_reliability": 0.5,
+        "inner_splits": 5
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.65",
+      "scope": "recruitment_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9038461538461539,
+      "macro_f1": 0.7855988455988456,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.5714285714285714
+    },
+    "validation_source": "experiments/phase25b-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.821798+00:00"
+  },
+  {
+    "name": "Earlier low-density SVM",
+    "config": {
+      "model": "lowdensity_svm",
+      "gamma": 0.001,
+      "C": 1,
+      "pseudo_weight": 0.03,
+      "balanced": "balanced"
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase45-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.822736+00:00"
+  },
+  {
+    "name": "PCA-125 low-density SVM",
+    "config": {
+      "model": "lowdensity_v2",
+      "pca": 125,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase6-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.823047+00:00"
+  },
+  {
+    "name": "Drug-target augmented SVM",
+    "config": {
+      "model": "lowdensity_v2",
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03,
+      "features": [
+        "drug_targets"
+      ],
+      "feature_weight": 0.1
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase6-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.823075+00:00"
+  },
+  {
+    "name": "Embedding-kernel SVM",
+    "config": {
+      "model": "kernel_lowdensity",
+      "C": 1,
+      "gamma": 0.001,
+      "scale": "standard",
+      "postnorm": false,
+      "remove_top": 0
+    },
+    "rule": "t0.55",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    "validation_source": "experiments/phase9-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.823761+00:00"
+  }
+]

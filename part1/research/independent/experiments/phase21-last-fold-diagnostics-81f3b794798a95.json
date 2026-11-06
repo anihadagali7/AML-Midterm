@@ -1,0 +1,155 @@
+[
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 0,
+    "error": 0.0,
+    "pseudo_count": 996,
+    "positive": 80,
+    "effective_weight": 97.26000000000002
+  },
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 1,
+    "error": 0.0,
+    "pseudo_count": 1000,
+    "positive": 77,
+    "effective_weight": 97.84
+  },
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 2,
+    "error": 0.0,
+    "pseudo_count": 995,
+    "positive": 79,
+    "effective_weight": 97.34
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 0,
+    "error": 0.024,
+    "pseudo_count": 20,
+    "positive": 0,
+    "effective_weight": 2.0000000000000004
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 1,
+    "error": 0.008130081300813009,
+    "pseudo_count": 61,
+    "positive": 1,
+    "effective_weight": 6.009999999999998
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 2,
+    "error": 0.008064516129032258,
+    "pseudo_count": 61,
+    "positive": 0,
+    "effective_weight": 6.099999999999998
+  },
+  {
+    "label": "Funding",
+    "round": 1,
+    "learner": 0,
+    "error": 0.007936507936507936,
+    "pseudo_count": 60,
+    "positive": 0,
+    "effective_weight": 5.999999999999998
+  },
+  {
+    "label": "Funding",
+    "round": 1,
+    "learner": 1,
+    "error": 0.007936507936507936,
+    "pseudo_count": 62,
+    "positive": 0,
+    "effective_weight": 6.1999999999999975
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 0,
+    "error": 0.0,
+    "pseudo_count": 952,
+    "positive": 53,
+    "effective_weight": 92.41000000000001
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 1,
+    "error": 0.0,
+    "pseudo_count": 954,
+    "positive": 54,
+    "effective_weight": 92.52000000000001
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 2,
+    "error": 0.007936507936507936,
+    "pseudo_count": 62,
+    "positive": 5,
+    "effective_weight": 6.109999999999998
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 0,
+    "error": 0.04065040650406504,
+    "pseudo_count": 12,
+    "positive": 9,
+    "effective_weight": 1.2000000000000002
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 1,
+    "error": 0.032520325203252036,
+    "pseudo_count": 15,
+    "positive": 10,
+    "effective_weight": 1.5000000000000004
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 2,
+    "error": 0.03225806451612903,
+    "pseudo_count": 15,
+    "positive": 9,
+    "effective_weight": 1.4100000000000004
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 0,
+    "error": 0.07207207207207207,
+    "pseudo_count": 6,
+    "positive": 1,
+    "effective_weight": 0.51
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 1,
+    "error": 0.035398230088495575,
+    "pseudo_count": 14,
+    "positive": 3,
+    "effective_weight": 1.3100000000000003
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 2,
+    "error": 0.02830188679245283,
+    "pseudo_count": 17,
+    "positive": 1,
+    "effective_weight": 1.7000000000000002
+  }
+]

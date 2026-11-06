@@ -1,0 +1,353 @@
+{
+  "new_recipes_tested": 12,
+  "cv_rule_qualifiers": [
+    "75/25 + half subset average"
+  ],
+  "new_candidates": [
+    {
+      "name": "75/25 + half subset average",
+      "parent": "Ani + tri 25%",
+      "kind": "half subset average",
+      "config": {
+        "model": "ani_bagged",
+        "weights": {
+          "ani": 0.75,
+          "tri": 0.25
+        },
+        "source_sha256": {
+          "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+          "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+          "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+          "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+        },
+        "bagging": {
+          "folds": 5,
+          "seed": 270118,
+          "full_weight": 0.5
+        }
+      },
+      "rule": "t0.5",
+      "study": "ani_bagging_v1",
+      "status": "Passed frozen paired-CV rule; no Kaggle result"
+    }
+  ],
+  "retained_previous_leaders": [
+    {
+      "name": "Ani + tri 25%",
+      "family": "ensemble",
+      "config": {
+        "model": "ani_improvement",
+        "mode": "blend",
+        "weights": {
+          "ani": 0.75,
+          "tri": 0.25
+        },
+        "source_sha256": {
+          "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+          "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+        }
+      },
+      "rule": "t0.5",
+      "incumbent": false
+    },
+    {
+      "name": "Ani + tri/SVM 15% each",
+      "family": "ensemble",
+      "config": {
+        "model": "ani_improvement",
+        "mode": "blend",
+        "weights": {
+          "ani": 0.7,
+          "tri": 0.15,
+          "svm": 0.15
+        },
+        "source_sha256": {
+          "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+          "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+        }
+      },
+      "rule": "t0.5",
+      "incumbent": false
+    }
+  ],
+  "supplementary_assessment": [
+    {
+      "candidate": "75/25 + half subset average",
+      "parent": "Ani + tri 25%",
+      "validation_delta": -0.008547008547008628,
+      "chronological_delta": -0.013605442176870652,
+      "interpretation": "CV-qualified challenger; retain prior leaders. Both supplementary scores decreased."
+    }
+  ],
+  "previous_leaders_replaced": false,
+  "final_comparison": [
+    {
+      "candidate": "75/25 + half subset average",
+      "parent": "Ani + tri 25%",
+      "kind": "half subset average",
+      "train_mean": 0.9288747346072187,
+      "train_sd": 0.006005153131095905,
+      "train_parent_delta": 0.0021231422505308267,
+      "train_parent_wins": 5,
+      "train_frontier_delta": 0.0021231422505308267,
+      "train_frontier_wins": 5,
+      "pooled_mean": 0.9187943262411347,
+      "pooled_sd": 0.005101948429056112,
+      "pooled_parent_delta": 0.0023936170212765645,
+      "pooled_parent_wins": 5,
+      "pooled_frontier_delta": 0.0023049645390070955,
+      "pooled_frontier_wins": 7,
+      "minimum_parent_gain": 0.0021231422505308267,
+      "minimum_frontier_gain": 0.0021231422505308267,
+      "qualifies": true,
+      "validation": 0.8803418803418802,
+      "chronological": 0.8707482993197279
+    },
+    {
+      "candidate": "Ani + tri 25%",
+      "parent": "Ani + tri 25%",
+      "kind": "control",
+      "train_mean": 0.9267515923566879,
+      "train_sd": 0.005412971882794895,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": 0.0,
+      "train_frontier_wins": 0,
+      "pooled_mean": 0.9164007092198582,
+      "pooled_sd": 0.00484191907958206,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": -8.865248226946898e-05,
+      "pooled_frontier_wins": 3,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -8.865248226946898e-05,
+      "qualifies": false,
+      "validation": 0.8888888888888888,
+      "chronological": 0.8843537414965985
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "parent": "Ani + tri/SVM 15% each",
+      "kind": "control",
+      "train_mean": 0.9256900212314225,
+      "train_sd": 0.005200615165144745,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": -0.0010615711252653787,
+      "train_frontier_wins": 2,
+      "pooled_mean": 0.9164893617021276,
+      "pooled_sd": 0.007685715177905405,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": 0.0,
+      "pooled_frontier_wins": 0,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -0.0010615711252653787,
+      "qualifies": false,
+      "validation": 0.9102564102564102,
+      "chronological": 0.8775510204081632
+    },
+    {
+      "candidate": "Ani frozen control",
+      "parent": "Ani frozen control",
+      "kind": "control",
+      "train_mean": 0.9195859872611466,
+      "train_sd": 0.008045385557974575,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": -0.0071656050955413025,
+      "train_frontier_wins": 0,
+      "pooled_mean": 0.9098404255319148,
+      "pooled_sd": 0.007633900200554031,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": -0.006648936170212741,
+      "pooled_frontier_wins": 1,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -0.0071656050955413025,
+      "qualifies": false,
+      "validation": 0.8910256410256411,
+      "chronological": 0.8605442176870749
+    }
+  ],
+  "provenance": [
+    {
+      "study": "ani_combination_v1",
+      "protocol_sha256": "93242f648b5ba06c0cebbf8f2ee8eebd398df6023bfbcbc6e49f6e06aace370f",
+      "registry_sha256": "3bc3a306d8648011873f5ea9746108e0333a88d94cf6ad3b4305f65c3b407786",
+      "verification_sha256": "1f88ccb7a87216bb2cb5d2f9a723bbd78558e2db250ffe11e895c0285654dcad",
+      "boundary_audit_sha256": "0c9dd04d380019f3df9f3c1e655f491ea682ef693758ee810b4c7cd322fe1565"
+    },
+    {
+      "study": "ani_bagging_v1",
+      "protocol_sha256": "cc4d4172512db52fdba0943d701ebb32213400eae531972777bbffc24a303d20",
+      "registry_sha256": "0b2216d4393427b5e97ac4fe79f63ac4340666429b81400f78187e07f79e2686",
+      "verification_sha256": "ee16795be63d53e87c17a3e7af542609181e6022d373bd60a061ae1cda7df618",
+      "boundary_audit_sha256": "b3939c062d0861a3ed7607fdb8e8d7d87a4276002bb86e0750fb5e6f7739d1b0"
+    }
+  ],
+  "submissions_created": 0,
+  "full235_submission_refits": 0,
+  "note": "Keep prior artifacts unchanged. Local CV improvements do not establish improved Kaggle performance. Eight-repeat CV reuses development labels and is not an independent test.",
+  "subsequent_submission_result": {
+    "recorded_at": "2026-11-06T05:11:09.720154+00:00",
+    "candidate": "Ani + tri/SVM 15% each",
+    "status": "Submitted manually; Kaggle score reported by user",
+    "kaggle_f1": 0.89401,
+    "score_provenance": "User report in this conversation; no live Kaggle lookup",
+    "submission_file": "predictions/part1_three_way_trainval235.csv",
+    "submission_sha256": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f",
+    "verified_training_labels": 235,
+    "original_masked_training_rows": 1014,
+    "final_train_plus_validation_refit": true,
+    "test_inputs_used_for_fit": false,
+    "recipe": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "decision_rule": "t0.5",
+    "reported_ani_reference_f1": 0.89423,
+    "difference_from_ani": -0.00022,
+    "reported_tri_training_reference_f1": 0.88012,
+    "difference_from_tri_training": 0.01389,
+    "development_evidence": {
+      "candidate": "Ani + tri/SVM 15% each",
+      "train_cv8": 0.9256900212314225,
+      "train_sd8": 0.005200615165144745,
+      "train_delta": 0.006104033970275924,
+      "train_wins": 7,
+      "pooled_cv8": 0.9164893617021276,
+      "pooled_sd8": 0.007685715177905405,
+      "pooled_delta": 0.006648936170212741,
+      "pooled_wins": 7,
+      "minimum_gain": 0.006104033970275924,
+      "cv_improvement": true,
+      "validation": 0.9102564102564102,
+      "chronological": 0.8775510204081632
+    },
+    "preparation_manifest": "manifest.json",
+    "remaining_submissions_from_user_stated_budget": 2,
+    "interpretation": "Numerically close to Ani, but does not beat its reported score. The local CV and validation advantage over the inductive Ani adaptation did not yield a higher Kaggle score than the original submitted Ani pipeline. The original Ani submission used transductive feature access, so this is not an isolated blend-component comparison. A single aggregate score does not establish equivalent predictions, explain individual errors, or isolate the effect of fitting all 235 labels."
+  },
+  "subsequent_submission_result_sha256": "937258a13bb97d2ee98d28ad5c38680d5b1f6f8c8ac437b2884cf726f6f63a72",
+  "scope": "The two development studies created no submissions. The subsequent three-way 235-label refit and reported Kaggle result are recorded separately.",
+  "subsequent_refit_diagnostic": {
+    "path": "experiments/refit_diagnostic_v1/summary.json",
+    "sha256": "962c48b65266af9e8e5b3ea84538df03af5a81bd2e7b2d1d67adeb87cf5a9118",
+    "comparison": [
+      {
+        "candidate": "Ani frozen control",
+        "scope": "all235",
+        "rows": 235,
+        "reduced_mean": 0.9027482269503546,
+        "expanded_mean": 0.9098404255319148,
+        "paired_delta": 0.007092198581560294,
+        "delta_sd": 0.00737042896837821,
+        "expanded_wins": 5,
+        "ties": 1
+      },
+      {
+        "candidate": "Ani frozen control",
+        "scope": "original_train157",
+        "rows": 157,
+        "reduced_mean": 0.917728237791932,
+        "expanded_mean": 0.9221072186836519,
+        "paired_delta": 0.004378980891719744,
+        "delta_sd": 0.008696423767415577,
+        "expanded_wins": 5,
+        "ties": 1
+      },
+      {
+        "candidate": "Ani frozen control",
+        "scope": "original_validation78",
+        "rows": 78,
+        "reduced_mean": 0.8725961538461539,
+        "expanded_mean": 0.8851495726495726,
+        "paired_delta": 0.012553418803418773,
+        "delta_sd": 0.014231374791407255,
+        "expanded_wins": 7,
+        "ties": 0
+      },
+      {
+        "candidate": "Ani + tri/SVM 15% each",
+        "scope": "all235",
+        "rows": 235,
+        "reduced_mean": 0.913031914893617,
+        "expanded_mean": 0.9164893617021276,
+        "paired_delta": 0.0034574468085105947,
+        "delta_sd": 0.008105280758756047,
+        "expanded_wins": 5,
+        "ties": 0
+      },
+      {
+        "candidate": "Ani + tri/SVM 15% each",
+        "scope": "original_train157",
+        "rows": 157,
+        "reduced_mean": 0.9304670912951167,
+        "expanded_mean": 0.9267515923566879,
+        "paired_delta": -0.003715498938428874,
+        "delta_sd": 0.011470373028117953,
+        "expanded_wins": 3,
+        "ties": 0
+      },
+      {
+        "candidate": "Ani + tri/SVM 15% each",
+        "scope": "original_validation78",
+        "rows": 78,
+        "reduced_mean": 0.8779380341880343,
+        "expanded_mean": 0.8958333333333333,
+        "paired_delta": 0.017895299145299068,
+        "delta_sd": 0.009611674260388088,
+        "expanded_wins": 7,
+        "ties": 1
+      }
+    ],
+    "test_sensitivity": {
+      "candidate": "Ani + tri/SVM 15% each",
+      "test_rows": 312,
+      "changed_label_sets": 29,
+      "changed_label_bits": 38,
+      "total_label_bits": 1560,
+      "mean_absolute_score_change": 0.026482357826266623,
+      "labels": {
+        "Safety": {
+          "original157_positives": 59,
+          "refit235_positives": 53,
+          "changed_bits": 8
+        },
+        "Funding": {
+          "original157_positives": 6,
+          "refit235_positives": 6,
+          "changed_bits": 0
+        },
+        "Efficacy": {
+          "original157_positives": 45,
+          "refit235_positives": 47,
+          "changed_bits": 6
+        },
+        "Recruitment": {
+          "original157_positives": 185,
+          "refit235_positives": 181,
+          "changed_bits": 10
+        },
+        "Other": {
+          "original157_positives": 44,
+          "refit235_positives": 54,
+          "changed_bits": 14
+        }
+      },
+      "accuracy_comparison": null,
+      "interpretation": "Prediction sensitivity only; test labels are unknown and neither direction is shown to be more accurate.",
+      "submission_created": false
+    }
+  }
+}

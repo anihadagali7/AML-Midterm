@@ -1,0 +1,28 @@
+{
+  "regions": [
+    {
+      "region": 0,
+      "masked_neighbors": 250,
+      "gold_weight_range": [
+        0.5899388871877215,
+        1.482996796100827
+      ]
+    },
+    {
+      "region": 1,
+      "masked_neighbors": 250,
+      "gold_weight_range": [
+        0.43008144230066647,
+        1.5550634532599215
+      ]
+    },
+    {
+      "region": 2,
+      "masked_neighbors": 250,
+      "gold_weight_range": [
+        0.7081702426377605,
+        1.3295150539709442
+      ]
+    }
+  ]
+}

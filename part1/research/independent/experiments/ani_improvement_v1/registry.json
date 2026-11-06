@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Ani frozen control",
+    "family": "control",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "variant",
+      "variant": {},
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": true
+  },
+  {
+    "name": "Ani + tri 10%",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.9,
+        "tri": 0.1
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani + tri 25%",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani + tri 40%",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.6,
+        "tri": 0.4
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani + SVM 10%",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.9,
+        "svm": 0.1
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani + SVM 25%",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.75,
+        "svm": 0.25
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani + tri/SVM 15% each",
+    "family": "ensemble",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "blend",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani pseudo weight 0.5",
+    "family": "pseudo_trust",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "variant",
+      "variant": {
+        "pseudo_weight": 0.5
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani pseudo weight 0.25",
+    "family": "pseudo_trust",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "variant",
+      "variant": {
+        "pseudo_weight": 0.25
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani agreement, pseudo weight 1.0",
+    "family": "pseudo_agreement",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "variant",
+      "variant": {
+        "pseudo_weight": 1.0,
+        "agreement": true
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani agreement, pseudo weight 0.5",
+    "family": "pseudo_agreement",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "variant",
+      "variant": {
+        "pseudo_weight": 0.5,
+        "agreement": true
+      },
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani three-GMM-seed average",
+    "family": "seed_average",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "seed_average",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani inner-CV Other threshold",
+    "family": "other",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "other",
+      "specialist_weight": 0.0,
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani Other specialist 25%",
+    "family": "other",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "other",
+      "specialist_weight": 0.25,
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  },
+  {
+    "name": "Ani Other specialist 50%",
+    "family": "other",
+    "config": {
+      "model": "ani_improvement",
+      "mode": "other",
+      "specialist_weight": 0.5,
+      "source_sha256": {
+        "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+        "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+      }
+    },
+    "rule": "t0.5",
+    "incumbent": false
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "candidate": "Ani frozen control",
+      "max_difference": 0.0
+    },
+    {
+      "candidate": "Ani + tri 25%",
+      "max_difference": 0.0
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "max_difference": 0.0
+    }
+  ]
+}

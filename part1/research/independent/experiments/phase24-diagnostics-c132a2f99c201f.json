@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Safety",
+    "scale": 1.7675749419409856,
+    "metric": "nca",
+    "iterations": 3
+  },
+  {
+    "label": "Funding",
+    "scale": 1.6135209238203054,
+    "metric": "nca",
+    "iterations": 4
+  },
+  {
+    "label": "Efficacy",
+    "scale": 2.0973061872936,
+    "metric": "nca",
+    "iterations": 4
+  },
+  {
+    "label": "Recruitment",
+    "scale": 1.8489599381869406,
+    "metric": "nca",
+    "iterations": 6
+  },
+  {
+    "label": "Other",
+    "scale": 1.5426976767259963,
+    "metric": "nca",
+    "iterations": 11
+  }
+]

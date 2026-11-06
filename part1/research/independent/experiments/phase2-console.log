@@ -1,0 +1,204 @@
+RUN 1/102 {'model': 'softmax', 'C': 0.003, 'scale': 'standard'}
+{"id": "4ede83d60847a5", "model": "softmax", "score": 0.8386411889596602, "rule": "t0.25", "default_score": 0.8131634819532908, "seconds": 0.091, "status": "ok", "error": null}
+RUN 2/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.003, 'scale': 'standard'}
+{"id": "9c15aa3cc1b40f", "model": "powerset", "score": 0.8248407643312102, "rule": "t0.25", "default_score": 0.8004246284501061, "seconds": 0.084, "status": "ok", "error": null}
+RUN 3/102 {'model': 'softmax', 'C': 0.01, 'scale': 'standard'}
+{"id": "1f4bf2467c1a1a", "model": "softmax", "score": 0.8938428874734606, "rule": "t0.25", "default_score": 0.8895966029723993, "seconds": 0.067, "status": "ok", "error": null}
+RUN 4/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.01, 'scale': 'standard'}
+{"id": "7440320e475968", "model": "powerset", "score": 0.8874734607218683, "rule": "t0.35", "default_score": 0.8832271762208069, "seconds": 0.095, "status": "ok", "error": null}
+RUN 5/102 {'model': 'softmax', 'C': 0.03, 'scale': 'standard'}
+{"id": "0f836bdbabaf6b", "model": "softmax", "score": 0.910828025477707, "rule": "t0.25", "default_score": 0.9087048832271764, "seconds": 0.067, "status": "ok", "error": null}
+RUN 6/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.03, 'scale': 'standard'}
+{"id": "43cf7138b88323", "model": "powerset", "score": 0.9087048832271764, "rule": "t0.25", "default_score": 0.8895966029723993, "seconds": 0.077, "status": "ok", "error": null}
+RUN 7/102 {'model': 'softmax', 'C': 0.1, 'scale': 'standard'}
+{"id": "cbd84278df8336", "model": "softmax", "score": 0.9171974522292994, "rule": "t0.25", "default_score": 0.9150743099787687, "seconds": 0.073, "status": "ok", "error": null}
+RUN 8/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.1, 'scale': 'standard'}
+{"id": "a4432558935660", "model": "powerset", "score": 0.9129511677282378, "rule": "t0.35", "default_score": 0.9087048832271764, "seconds": 0.077, "status": "ok", "error": null}
+RUN 9/102 {'model': 'softmax', 'C': 0.3, 'scale': 'standard'}
+{"id": "659fa4c2ff2c21", "model": "softmax", "score": 0.9214437367303611, "rule": "t0.5", "default_score": 0.9214437367303611, "seconds": 0.079, "status": "ok", "error": null}
+RUN 10/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.3, 'scale': 'standard'}
+{"id": "6c0e00a264a261", "model": "powerset", "score": 0.9150743099787685, "rule": "t0.35", "default_score": 0.910828025477707, "seconds": 0.079, "status": "ok", "error": null}
+RUN 11/102 {'model': 'softmax', 'C': 1, 'scale': 'standard'}
+{"id": "34d72e996d6479", "model": "softmax", "score": 0.9235668789808917, "rule": "t0.45", "default_score": 0.9214437367303611, "seconds": 0.084, "status": "ok", "error": null}
+RUN 12/102 {'model': 'powerset', 'kernel': 'linear', 'C': 1, 'scale': 'standard'}
+{"id": "d16e08bfbdb5c4", "model": "powerset", "score": 0.9150743099787687, "rule": "expected_f1", "default_score": 0.9087048832271761, "seconds": 0.074, "status": "ok", "error": null}
+RUN 13/102 {'model': 'softmax', 'C': 3, 'scale': 'standard'}
+{"id": "e9bb8e5e5c34fa", "model": "softmax", "score": 0.9214437367303611, "rule": "t0.5", "default_score": 0.9214437367303611, "seconds": 0.096, "status": "ok", "error": null}
+RUN 14/102 {'model': 'powerset', 'kernel': 'linear', 'C': 3, 'scale': 'standard'}
+{"id": "f711fdc68a70c1", "model": "powerset", "score": 0.9193205944798301, "rule": "t0.45", "default_score": 0.9150743099787685, "seconds": 0.091, "status": "ok", "error": null}
+RUN 15/102 {'model': 'softmax', 'C': 10, 'scale': 'standard'}
+{"id": "a8ed7e3afcc3af", "model": "softmax", "score": 0.9129511677282377, "rule": "expected_f1", "default_score": 0.9087048832271764, "seconds": 0.098, "status": "ok", "error": null}
+RUN 16/102 {'model': 'powerset', 'kernel': 'linear', 'C': 10, 'scale': 'standard'}
+{"id": "fc0a4f64cf8225", "model": "powerset", "score": 0.9127388535031847, "rule": "expected_f1", "default_score": 0.910828025477707, "seconds": 0.08, "status": "ok", "error": null}
+RUN 17/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.0003, 'scale': 'standard'}
+{"id": "a672127a70b26c", "model": "softsvc", "score": 0.89171974522293, "rule": "t0.35", "default_score": 0.8832271762208067, "seconds": 0.081, "status": "ok", "error": null}
+RUN 18/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.001, 'scale': 'standard'}
+{"id": "76baf8eba926e4", "model": "softsvc", "score": 0.9023354564755838, "rule": "t0.5", "default_score": 0.9023354564755838, "seconds": 0.072, "status": "ok", "error": null}
+RUN 19/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.003, 'scale': 'standard'}
+{"id": "e165b0a23b5961", "model": "softsvc", "score": 0.8980891719745223, "rule": "t0.35", "default_score": 0.8895966029723991, "seconds": 0.073, "status": "ok", "error": null}
+RUN 20/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.01, 'scale': 'standard'}
+{"id": "04e6259e23b98b", "model": "softsvc", "score": 0.8471337579617835, "rule": "t0.35", "default_score": 0.8450106157112526, "seconds": 0.079, "status": "ok", "error": null}
+RUN 21/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.0003, 'scale': 'standard'}
+{"id": "42866087d21ed6", "model": "softsvc", "score": 0.9044585987261147, "rule": "t0.35", "default_score": 0.9023354564755838, "seconds": 0.071, "status": "ok", "error": null}
+RUN 22/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.001, 'scale': 'standard'}
+{"id": "510f6862a33573", "model": "softsvc", "score": 0.9044585987261147, "rule": "t0.35", "default_score": 0.9023354564755838, "seconds": 0.071, "status": "ok", "error": null}
+RUN 23/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.003, 'scale': 'standard'}
+{"id": "2b067a20634753", "model": "softsvc", "score": 0.8959660297239916, "rule": "t0.5", "default_score": 0.8959660297239916, "seconds": 0.091, "status": "ok", "error": null}
+RUN 24/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.01, 'scale': 'standard'}
+{"id": "82bbafe172c745", "model": "softsvc", "score": 0.8471337579617835, "rule": "expected_f1", "default_score": 0.8450106157112526, "seconds": 0.08, "status": "ok", "error": null}
+RUN 25/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.0003, 'scale': 'standard'}
+{"id": "dd486ecf32ff81", "model": "softsvc", "score": 0.9065817409766453, "rule": "t0.35", "default_score": 0.8959660297239914, "seconds": 0.07, "status": "ok", "error": null}
+RUN 26/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.001, 'scale': 'standard'}
+{"id": "76d158e8982d53", "model": "softsvc", "score": 0.8959660297239914, "rule": "t0.5", "default_score": 0.8959660297239914, "seconds": 0.07, "status": "ok", "error": null}
+RUN 27/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.003, 'scale': 'standard'}
+{"id": "37c6a8c265e5dd", "model": "softsvc", "score": 0.8938428874734606, "rule": "expected_f1", "default_score": 0.8513800424628449, "seconds": 0.073, "status": "ok", "error": null}
+RUN 28/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.01, 'scale': 'standard'}
+{"id": "2e67df436cee26", "model": "softsvc", "score": 0.8492569002123141, "rule": "t0.25", "default_score": 0.8067940552016984, "seconds": 0.081, "status": "ok", "error": null}
+RUN 29/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.0003, 'scale': 'standard'}
+{"id": "c20505b1080c12", "model": "softsvc", "score": 0.902335456475584, "rule": "t0.5", "default_score": 0.902335456475584, "seconds": 0.069, "status": "ok", "error": null}
+RUN 30/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.001, 'scale': 'standard'}
+{"id": "fbae975692f1bd", "model": "softsvc", "score": 0.8980891719745223, "rule": "t0.25", "default_score": 0.8577494692144373, "seconds": 0.07, "status": "ok", "error": null}
+RUN 31/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.003, 'scale': 'standard'}
+{"id": "bb6454dda40f89", "model": "softsvc", "score": 0.8842887473460721, "rule": "expected_f1", "default_score": 0.8386411889596602, "seconds": 0.073, "status": "ok", "error": null}
+RUN 32/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.01, 'scale': 'standard'}
+{"id": "de07a4a396fefd", "model": "softsvc", "score": 0.8386411889596604, "rule": "t0.25", "default_score": 0.8067940552016984, "seconds": 0.1, "status": "ok", "error": null}
+RUN 33/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.0003, 'scale': 'standard'}
+{"id": "ac2d8a544b687b", "model": "softsvc", "score": 0.90552016985138, "rule": "t0.25", "default_score": 0.870488322717622, "seconds": 0.069, "status": "ok", "error": null}
+RUN 34/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.001, 'scale': 'standard'}
+{"id": "b9e5336cf723bd", "model": "softsvc", "score": 0.8949044585987261, "rule": "expected_f1", "default_score": 0.8450106157112526, "seconds": 0.07, "status": "ok", "error": null}
+RUN 35/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.003, 'scale': 'standard'}
+{"id": "e51ecd532e9d7c", "model": "softsvc", "score": 0.8800424628450108, "rule": "expected_f1", "default_score": 0.8386411889596602, "seconds": 0.073, "status": "ok", "error": null}
+RUN 36/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.01, 'scale': 'standard'}
+{"id": "8602d5fa28addf", "model": "softsvc", "score": 0.8386411889596604, "rule": "t0.25", "default_score": 0.8067940552016984, "seconds": 0.081, "status": "ok", "error": null}
+RUN 37/102 {'model': 'softmax', 'C': 0.003, 'scale': 'global'}
+{"id": "6834b6133d11cd", "model": "softmax", "score": 0.8450106157112526, "rule": "t0.5", "default_score": 0.8450106157112526, "seconds": 0.067, "status": "ok", "error": null}
+RUN 38/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.003, 'scale': 'global'}
+{"id": "b2bdc59e2f6b1d", "model": "powerset", "score": 0.8269639065817409, "rule": "t0.25", "default_score": 0.8004246284501061, "seconds": 0.078, "status": "ok", "error": null}
+RUN 39/102 {'model': 'softmax', 'C': 0.01, 'scale': 'global'}
+{"id": "9dceb8a15693dd", "model": "softmax", "score": 0.8980891719745223, "rule": "t0.25", "default_score": 0.8895966029723993, "seconds": 0.063, "status": "ok", "error": null}
+RUN 40/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.01, 'scale': 'global'}
+{"id": "3cbaa44e7a5542", "model": "powerset", "score": 0.8938428874734606, "rule": "t0.35", "default_score": 0.8895966029723993, "seconds": 0.072, "status": "ok", "error": null}
+RUN 41/102 {'model': 'softmax', 'C': 0.03, 'scale': 'global'}
+{"id": "e165eaab5eac77", "model": "softmax", "score": 0.9118895966029723, "rule": "t0.25", "default_score": 0.9087048832271764, "seconds": 0.066, "status": "ok", "error": null}
+RUN 42/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.03, 'scale': 'global'}
+{"id": "6b76ca11d8aa4f", "model": "powerset", "score": 0.9087048832271761, "rule": "t0.35", "default_score": 0.8959660297239916, "seconds": 0.091, "status": "ok", "error": null}
+RUN 43/102 {'model': 'softmax', 'C': 0.1, 'scale': 'global'}
+{"id": "466fabdd7d330a", "model": "softmax", "score": 0.9214437367303611, "rule": "t0.5", "default_score": 0.9214437367303611, "seconds": 0.07, "status": "ok", "error": null}
+RUN 44/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.1, 'scale': 'global'}
+{"id": "0816baf4e0fb9e", "model": "powerset", "score": 0.9193205944798302, "rule": "t0.35", "default_score": 0.9087048832271764, "seconds": 0.074, "status": "ok", "error": null}
+RUN 45/102 {'model': 'softmax', 'C': 0.3, 'scale': 'global'}
+{"id": "25fed373d4aafa", "model": "softmax", "score": 0.9256900212314224, "rule": "t0.45", "default_score": 0.9214437367303611, "seconds": 0.077, "status": "ok", "error": null}
+RUN 46/102 {'model': 'powerset', 'kernel': 'linear', 'C': 0.3, 'scale': 'global'}
+{"id": "b6e3365960105c", "model": "powerset", "score": 0.9171974522292994, "rule": "t0.45", "default_score": 0.910828025477707, "seconds": 0.074, "status": "ok", "error": null}
+RUN 47/102 {'model': 'softmax', 'C': 1, 'scale': 'global'}
+{"id": "39ca854e9b423a", "model": "softmax", "score": 0.9235668789808917, "rule": "t0.35", "default_score": 0.9214437367303611, "seconds": 0.086, "status": "ok", "error": null}
+RUN 48/102 {'model': 'powerset', 'kernel': 'linear', 'C': 1, 'scale': 'global'}
+{"id": "5e3235d2aa48d7", "model": "powerset", "score": 0.9235668789808917, "rule": "t0.45", "default_score": 0.9193205944798301, "seconds": 0.072, "status": "ok", "error": null}
+RUN 49/102 {'model': 'softmax', 'C': 3, 'scale': 'global'}
+{"id": "1d8190094583db", "model": "softmax", "score": 0.9214437367303611, "rule": "t0.35", "default_score": 0.9150743099787687, "seconds": 0.093, "status": "ok", "error": null}
+RUN 50/102 {'model': 'powerset', 'kernel': 'linear', 'C': 3, 'scale': 'global'}
+{"id": "86907c76271fb2", "model": "powerset", "score": 0.9129511677282378, "rule": "t0.35", "default_score": 0.910828025477707, "seconds": 0.07, "status": "ok", "error": null}
+RUN 51/102 {'model': 'softmax', 'C': 10, 'scale': 'global'}
+{"id": "8ab87e9db06689", "model": "softmax", "score": 0.9193205944798301, "rule": "t0.25", "default_score": 0.9087048832271764, "seconds": 0.094, "status": "ok", "error": null}
+RUN 52/102 {'model': 'powerset', 'kernel': 'linear', 'C': 10, 'scale': 'global'}
+{"id": "47910bd1e544bf", "model": "powerset", "score": 0.9150743099787687, "rule": "t0.35", "default_score": 0.910828025477707, "seconds": 0.082, "status": "ok", "error": null}
+RUN 53/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.0003, 'scale': 'global'}
+{"id": "e3f65484c475a3", "model": "softsvc", "score": 0.8853503184713376, "rule": "t0.35", "default_score": 0.8832271762208067, "seconds": 0.068, "status": "ok", "error": null}
+RUN 54/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.001, 'scale': 'global'}
+{"id": "c782570bf668f8", "model": "softsvc", "score": 0.900212314225053, "rule": "t0.35", "default_score": 0.8959660297239914, "seconds": 0.068, "status": "ok", "error": null}
+RUN 55/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.003, 'scale': 'global'}
+{"id": "28e87e5c346531", "model": "softsvc", "score": 0.9023354564755838, "rule": "t0.35", "default_score": 0.8959660297239914, "seconds": 0.07, "status": "ok", "error": null}
+RUN 56/102 {'model': 'softsvc', 'C': 0.3, 'gamma': 0.01, 'scale': 'global'}
+{"id": "f38e2fd54f5ac6", "model": "softsvc", "score": 0.8513800424628452, "rule": "t0.35", "default_score": 0.8450106157112526, "seconds": 0.076, "status": "ok", "error": null}
+RUN 57/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.0003, 'scale': 'global'}
+{"id": "ffdeb2756478d2", "model": "softsvc", "score": 0.9065817409766453, "rule": "t0.35", "default_score": 0.9023354564755838, "seconds": 0.068, "status": "ok", "error": null}
+RUN 58/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.001, 'scale': 'global'}
+{"id": "c96bcc185891d7", "model": "softsvc", "score": 0.9087048832271761, "rule": "t0.35", "default_score": 0.8959660297239914, "seconds": 0.069, "status": "ok", "error": null}
+RUN 59/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.003, 'scale': 'global'}
+{"id": "49e27fce256c94", "model": "softsvc", "score": 0.9087048832271764, "rule": "t0.5", "default_score": 0.9087048832271764, "seconds": 0.07, "status": "ok", "error": null}
+RUN 60/102 {'model': 'softsvc', 'C': 1, 'gamma': 0.01, 'scale': 'global'}
+{"id": "bb3d5678a17944", "model": "softsvc", "score": 0.8619957537154989, "rule": "expected_f1", "default_score": 0.8513800424628449, "seconds": 0.077, "status": "ok", "error": null}
+RUN 61/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.0003, 'scale': 'global'}
+{"id": "b4a2f6488da9a6", "model": "softsvc", "score": 0.9044585987261147, "rule": "t0.35", "default_score": 0.8959660297239914, "seconds": 0.086, "status": "ok", "error": null}
+RUN 62/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.001, 'scale': 'global'}
+{"id": "fdd7fd0fb1ed2d", "model": "softsvc", "score": 0.9150743099787687, "rule": "t0.5", "default_score": 0.9150743099787687, "seconds": 0.067, "status": "ok", "error": null}
+RUN 63/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.003, 'scale': 'global'}
+{"id": "9c50188db9cd75", "model": "softsvc", "score": 0.9044585987261147, "rule": "t0.25", "default_score": 0.8577494692144373, "seconds": 0.071, "status": "ok", "error": null}
+RUN 64/102 {'model': 'softsvc', 'C': 3, 'gamma': 0.01, 'scale': 'global'}
+{"id": "a5f7bc6bfc2ddc", "model": "softsvc", "score": 0.8577494692144373, "rule": "t0.25", "default_score": 0.8131634819532908, "seconds": 0.078, "status": "ok", "error": null}
+RUN 65/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.0003, 'scale': 'global'}
+{"id": "4dcc0c7c365ac3", "model": "softsvc", "score": 0.902335456475584, "rule": "t0.5", "default_score": 0.902335456475584, "seconds": 0.066, "status": "ok", "error": null}
+RUN 66/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.001, 'scale': 'global'}
+{"id": "d3350ad7831c6e", "model": "softsvc", "score": 0.8980891719745223, "rule": "t0.25", "default_score": 0.8768577494692144, "seconds": 0.067, "status": "ok", "error": null}
+RUN 67/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.003, 'scale': 'global'}
+{"id": "aaf37c19614918", "model": "softsvc", "score": 0.8821656050955414, "rule": "expected_f1", "default_score": 0.8450106157112526, "seconds": 0.07, "status": "ok", "error": null}
+RUN 68/102 {'model': 'softsvc', 'C': 10, 'gamma': 0.01, 'scale': 'global'}
+{"id": "de258267e8ed92", "model": "softsvc", "score": 0.8450106157112526, "rule": "t0.25", "default_score": 0.8131634819532908, "seconds": 0.078, "status": "ok", "error": null}
+RUN 69/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.0003, 'scale': 'global'}
+{"id": "305de72d690f64", "model": "softsvc", "score": 0.8991507430997876, "rule": "t0.25", "default_score": 0.870488322717622, "seconds": 0.066, "status": "ok", "error": null}
+RUN 70/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.001, 'scale': 'global'}
+{"id": "d32017507a3937", "model": "softsvc", "score": 0.8938428874734607, "rule": "expected_f1", "default_score": 0.8513800424628449, "seconds": 0.086, "status": "ok", "error": null}
+RUN 71/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.003, 'scale': 'global'}
+{"id": "c89c3269ba19a0", "model": "softsvc", "score": 0.8821656050955414, "rule": "expected_f1", "default_score": 0.8450106157112526, "seconds": 0.07, "status": "ok", "error": null}
+RUN 72/102 {'model': 'softsvc', 'C': 30, 'gamma': 0.01, 'scale': 'global'}
+{"id": "dc2fa0b85ad71d", "model": "softsvc", "score": 0.8450106157112526, "rule": "t0.25", "default_score": 0.8131634819532908, "seconds": 0.078, "status": "ok", "error": null}
+RUN 73/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 1, 'cov': 'shared', 'shrink': 0.8}
+{"id": "a36af52d78a0b2", "model": "semigmm", "score": 0.5997876857749469, "rule": "t0.25", "default_score": 0.5456475583864119, "seconds": 0.284, "status": "ok", "error": null}
+RUN 74/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 1, 'cov': 'class', 'shrink': 0.8}
+{"id": "8a32758eb33abb", "model": "semigmm", "score": 0.6044585987261147, "rule": "expected_f1", "default_score": 0.5456475583864119, "seconds": 0.249, "status": "ok", "error": null}
+RUN 75/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 5, 'cov': 'shared', 'shrink': 0.8}
+{"id": "c17e1c2debb675", "model": "semigmm", "score": 0.7239915074309978, "rule": "expected_f1", "default_score": 0.6985138004246284, "seconds": 0.231, "status": "ok", "error": null}
+RUN 76/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 5, 'cov': 'class', 'shrink': 0.8}
+{"id": "3571f135cebd12", "model": "semigmm", "score": 0.7346072186836519, "rule": "t0.35", "default_score": 0.7239915074309978, "seconds": 0.22, "status": "ok", "error": null}
+RUN 77/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 20, 'cov': 'shared', 'shrink': 0.8}
+{"id": "c945c56e41bd28", "model": "semigmm", "score": 0.8131634819532908, "rule": "t0.25", "default_score": 0.7685774946921444, "seconds": 0.156, "status": "ok", "error": null}
+RUN 78/102 {'model': 'semigmm', 'pca': 5, 'label_weight': 20, 'cov': 'class', 'shrink': 0.8}
+{"id": "db3b3cd3c81e4a", "model": "semigmm", "score": 0.8099787685774946, "rule": "t0.25", "default_score": 0.8004246284501062, "seconds": 0.174, "status": "ok", "error": null}
+RUN 79/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 1, 'cov': 'shared', 'shrink': 0.8}
+{"id": "053134ce9eee4f", "model": "semigmm", "score": 0.7346072186836516, "rule": "expected_f1", "default_score": 0.7239915074309978, "seconds": 0.274, "status": "ok", "error": null}
+RUN 80/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 1, 'cov': 'class', 'shrink': 0.8}
+{"id": "7c5af08d9f0dd9", "model": "semigmm", "score": 0.7452229299363057, "rule": "t0.25", "default_score": 0.7176220806794055, "seconds": 0.317, "status": "ok", "error": null}
+RUN 81/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 5, 'cov': 'shared', 'shrink': 0.8}
+{"id": "01363256f2c7c9", "model": "semigmm", "score": 0.7834394904458599, "rule": "expected_f1", "default_score": 0.7685774946921443, "seconds": 0.22, "status": "ok", "error": null}
+RUN 82/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 5, 'cov': 'class', 'shrink': 0.8}
+{"id": "2eea49dc90282d", "model": "semigmm", "score": 0.7929936305732485, "rule": "t0.25", "default_score": 0.7685774946921444, "seconds": 0.232, "status": "ok", "error": null}
+RUN 83/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 20, 'cov': 'shared', 'shrink': 0.8}
+{"id": "f31947ef044789", "model": "semigmm", "score": 0.8237791932059447, "rule": "expected_f1", "default_score": 0.8067940552016984, "seconds": 0.151, "status": "ok", "error": null}
+RUN 84/102 {'model': 'semigmm', 'pca': 10, 'label_weight': 20, 'cov': 'class', 'shrink': 0.8}
+{"id": "c724f9c2637e38", "model": "semigmm", "score": 0.8397027600849257, "rule": "expected_f1", "default_score": 0.8259023354564755, "seconds": 0.226, "status": "ok", "error": null}
+RUN 85/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 1, 'cov': 'shared', 'shrink': 0.8}
+{"id": "3c1b74406d287a", "model": "semigmm", "score": 0.8067940552016984, "rule": "t0.25", "default_score": 0.8004246284501061, "seconds": 0.247, "status": "ok", "error": null}
+RUN 86/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 1, 'cov': 'class', 'shrink': 0.8}
+{"id": "3d4bd700aa7036", "model": "semigmm", "score": 0.8237791932059448, "rule": "expected_f1", "default_score": 0.8152866242038216, "seconds": 0.444, "status": "ok", "error": null}
+RUN 87/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 5, 'cov': 'shared', 'shrink': 0.8}
+{"id": "1d9d9e7cb76f28", "model": "semigmm", "score": 0.8450106157112526, "rule": "t0.25", "default_score": 0.8322717622080679, "seconds": 0.229, "status": "ok", "error": null}
+RUN 88/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 5, 'cov': 'class', 'shrink': 0.8}
+{"id": "851da0a9ce9c8e", "model": "semigmm", "score": 0.8832271762208067, "rule": "t0.25", "default_score": 0.8641188959660296, "seconds": 0.434, "status": "ok", "error": null}
+RUN 89/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 20, 'cov': 'shared', 'shrink': 0.8}
+{"id": "40330e6b3942fa", "model": "semigmm", "score": 0.8683651804670913, "rule": "t0.25", "default_score": 0.8513800424628449, "seconds": 0.199, "status": "ok", "error": null}
+RUN 90/102 {'model': 'semigmm', 'pca': 25, 'label_weight': 20, 'cov': 'class', 'shrink': 0.8}
+{"id": "b1c4247499bfaf", "model": "semigmm", "score": 0.8980891719745223, "rule": "t0.25", "default_score": 0.8832271762208067, "seconds": 0.527, "status": "ok", "error": null}
+RUN 91/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 0.1, 'mu': 0.01}
+{"id": "a409a5029bb413", "model": "laprls", "score": 0.9150743099787685, "rule": "t0.5", "default_score": 0.9150743099787685, "seconds": 0.31, "status": "ok", "error": null}
+RUN 92/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 0.1, 'mu': 0.1}
+{"id": "6298a19ea01837", "model": "laprls", "score": 0.8832271762208067, "rule": "t0.35", "default_score": 0.8726114649681529, "seconds": 0.27, "status": "ok", "error": null}
+RUN 93/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 0.1, 'mu': 1}
+{"id": "2dfe9e8cc3ae50", "model": "laprls", "score": 0.7970276008492568, "rule": "expected_f1", "default_score": 0.7048832271762208, "seconds": 0.269, "status": "ok", "error": null}
+RUN 94/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 1, 'mu': 0.01}
+{"id": "0162d2e5d9df22", "model": "laprls", "score": 0.89171974522293, "rule": "t0.35", "default_score": 0.8768577494692146, "seconds": 0.308, "status": "ok", "error": null}
+RUN 95/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 1, 'mu': 0.1}
+{"id": "7cd9e358c244bf", "model": "laprls", "score": 0.870488322717622, "rule": "t0.35", "default_score": 0.8641188959660296, "seconds": 0.272, "status": "ok", "error": null}
+RUN 96/102 {'model': 'laprls', 'gamma': 0.001, 'alpha': 1, 'mu': 1}
+{"id": "ebd74efa0becbe", "model": "laprls", "score": 0.7636942675159236, "rule": "expected_f1", "default_score": 0.6539278131634819, "seconds": 0.271, "status": "ok", "error": null}
+RUN 97/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 0.1, 'mu': 0.01}
+{"id": "c5340a6ee98a23", "model": "laprls", "score": 0.8959660297239914, "rule": "t0.5", "default_score": 0.8959660297239914, "seconds": 0.275, "status": "ok", "error": null}
+RUN 98/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 0.1, 'mu': 0.1}
+{"id": "0b11a8154102a1", "model": "laprls", "score": 0.8683651804670912, "rule": "t0.35", "default_score": 0.861995753715499, "seconds": 0.29, "status": "ok", "error": null}
+RUN 99/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 0.1, 'mu': 1}
+{"id": "aab2f725168435", "model": "laprls", "score": 0.8055201698513801, "rule": "expected_f1", "default_score": 0.7112526539278131, "seconds": 0.272, "status": "ok", "error": null}
+RUN 100/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 1, 'mu': 0.01}
+{"id": "30e8c2ecb522b2", "model": "laprls", "score": 0.89171974522293, "rule": "t0.25", "default_score": 0.8726114649681529, "seconds": 0.271, "status": "ok", "error": null}
+RUN 101/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 1, 'mu': 0.1}
+{"id": "de7d39b8071b0e", "model": "laprls", "score": 0.8747346072186836, "rule": "t0.35", "default_score": 0.8577494692144373, "seconds": 0.271, "status": "ok", "error": null}
+RUN 102/102 {'model': 'laprls', 'gamma': 0.003, 'alpha': 1, 'mu': 1}
+{"id": "bf97999400a7c2", "model": "laprls", "score": 0.7666666666666666, "rule": "expected_f1", "default_score": 0.6985138004246284, "seconds": 0.271, "status": "ok", "error": null}

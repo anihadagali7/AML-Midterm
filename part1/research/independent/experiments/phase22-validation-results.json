@@ -1,0 +1,192 @@
+[
+  {
+    "bucket": "soft",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_seed_ensemble",
+        "member": {
+          "model": "tri_refined",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "seeds": [
+          210123,
+          220123,
+          230123,
+          240123,
+          250123
+        ]
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "combination": "soft",
+      "tri_weight": 0.25
+    },
+    "ordinary": 0.9256900212314224,
+    "robust": 0.9256678273456883,
+    "weighted": [
+      0.9269961278833143,
+      0.9337245939634438,
+      0.925660429383777
+    ],
+    "macro": 0.8687581699346406,
+    "ordinary_cv": 0.9207360226468507,
+    "robust_cv": 0.912557856216646,
+    "cv_std": 0.009857316544362381,
+    "robust_std": 0.01636900350689355,
+    "per_repeat": [
+      {
+        "ordinary": 0.9341825902335456,
+        "robust": 0.9344989031778818,
+        "weighted": [
+          0.9468327090883915,
+          0.9529111424404311,
+          0.9346043408259939
+        ],
+        "macro": 0.8955131143366438
+      },
+      {
+        "ordinary": 0.910828025477707,
+        "robust": 0.8951952080973281,
+        "weighted": [
+          0.8899842689705351,
+          0.8947292496636032,
+          0.9042898254442588
+        ],
+        "macro": 0.8503947033358799
+      },
+      {
+        "ordinary": 0.9171974522292994,
+        "robust": 0.9079794573747282,
+        "weighted": [
+          0.9181017559811531,
+          0.9049067924232044,
+          0.9172063961061834
+        ],
+        "macro": 0.8763843808033192
+      }
+    ],
+    "rule": "t0.5",
+    "selection_score": 0.9092840555152673,
+    "name": "phase22_soft",
+    "validation": {
+      "sample_f1": 0.8803418803418802,
+      "macro_f1": 0.7434697855750486,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7407407407407407,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.42105263157894735
+    }
+  },
+  {
+    "bucket": "features",
+    "config": {
+      "model": "hybrid22",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_refined",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false,
+        "features": [
+          "drugs"
+        ],
+        "feature_weight": 0.4
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "ordinary": 0.910828025477707,
+    "robust": 0.9121957353394584,
+    "weighted": [
+      0.9141360100731181,
+      0.9275191521626367,
+      0.912651638626709
+    ],
+    "macro": 0.8357955402557199,
+    "ordinary_cv": 0.902335456475584,
+    "robust_cv": 0.8906512200997841,
+    "cv_std": 0.006250361547295045,
+    "robust_std": 0.011518817499718843,
+    "per_repeat": [
+      {
+        "ordinary": 0.9087048832271764,
+        "robust": 0.9058380655286274,
+        "weighted": [
+          0.9055138698378729,
+          0.923432042317004,
+          0.9048824596291112
+        ],
+        "macro": 0.8641411507131588
+      },
+      {
+        "ordinary": 0.8938428874734607,
+        "robust": 0.8779544132798831,
+        "weighted": [
+          0.8726582552153572,
+          0.8880844102815462,
+          0.8909468487368284
+        ],
+        "macro": 0.8355121989212766
+      },
+      {
+        "ordinary": 0.9044585987261147,
+        "robust": 0.8881611814908419,
+        "weighted": [
+          0.8827287090790843,
+          0.8902265502699731,
+          0.9038301521355223
+        ],
+        "macro": 0.8412923644649017
+      }
+    ],
+    "rule": "t0.5",
+    "selection_score": 0.8883474565998404,
+    "name": "phase22_features",
+    "validation": {
+      "sample_f1": 0.8952991452991452,
+      "macro_f1": 0.7694117647058824,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9803921568627451,
+      "f1_Other": 0.5
+    }
+  }
+]

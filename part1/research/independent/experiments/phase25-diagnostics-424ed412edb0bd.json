@@ -1,0 +1,31 @@
+{
+  "reliability": "uniform",
+  "teacher": "ssl",
+  "labels": [
+    {
+      "label": "Safety",
+      "accepted": 1006,
+      "pseudo_mass": 29.53200000000001
+    },
+    {
+      "label": "Funding",
+      "accepted": 1006,
+      "pseudo_mass": 29.910000000000007
+    },
+    {
+      "label": "Efficacy",
+      "accepted": 1006,
+      "pseudo_mass": 27.85800000000001
+    },
+    {
+      "label": "Recruitment",
+      "accepted": 1006,
+      "pseudo_mass": 29.85600000000001
+    },
+    {
+      "label": "Other",
+      "accepted": 1006,
+      "pseudo_mass": 29.910000000000007
+    }
+  ]
+}

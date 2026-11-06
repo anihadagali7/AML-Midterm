@@ -1,0 +1,71 @@
+[
+  {
+    "name": "embedding_geometry",
+    "config": {
+      "model": "kernel_lowdensity",
+      "C": 1,
+      "gamma": 0.001,
+      "scale": "standard",
+      "postnorm": false,
+      "remove_top": 0
+    },
+    "rule": "t0.55",
+    "cv": 0.9193205944798301,
+    "cv_mean": 0.9164897381457889,
+    "cv_macro": 0.863805145191089,
+    "validation": {
+      "sample_f1": 0.9102564102564102,
+      "macro_f1": 0.78,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    }
+  },
+  {
+    "name": "non_rbf_kernel",
+    "config": {
+      "model": "kernel_lowdensity",
+      "kernel": "poly",
+      "C": 0.3,
+      "gamma": 0.01
+    },
+    "rule": "t0.55",
+    "cv": 0.910828025477707,
+    "cv_mean": 0.9065817409766455,
+    "cv_macro": 0.8616595229551341,
+    "validation": {
+      "sample_f1": 0.8846153846153846,
+      "macro_f1": 0.757904761904762,
+      "f1_Safety": 0.8571428571428571,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7142857142857143,
+      "f1_Recruitment": 0.98,
+      "f1_Other": 0.5714285714285714
+    }
+  },
+  {
+    "name": "whitening",
+    "config": {
+      "model": "kernel_lowdensity",
+      "C": 1,
+      "gamma": 0.001,
+      "pca": 150,
+      "white": 0.25
+    },
+    "rule": "t0.55",
+    "cv": 0.9150743099787685,
+    "cv_mean": 0.913658881811748,
+    "cv_macro": 0.8611448328774619,
+    "validation": {
+      "sample_f1": 0.8846153846153846,
+      "macro_f1": 0.7570947139962865,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7692307692307693,
+      "f1_Recruitment": 0.9900990099009901,
+      "f1_Other": 0.47058823529411764
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "classical_tri_majority",
+    "config": {
+      "model": "tri_training",
+      "committee": "mixed",
+      "cluster_gate": false,
+      "pseudo_weight": 1.0,
+      "aggregation": "vote",
+      "stratified_bootstrap": false
+    },
+    "rule": "t0.5",
+    "ordinary_cv": 0.9111111111111111,
+    "cv_std": 0.01471500797550406,
+    "validation": {
+      "sample_f1": 0.9038461538461541,
+      "macro_f1": 0.8053642010163748,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    }
+  }
+]

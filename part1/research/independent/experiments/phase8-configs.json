@@ -1,0 +1,400 @@
+[
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 0.3,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.003,
+    "pseudo_weight": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 0.5
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 0.5
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 1.0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "softmax",
+    "gate_power": 1.0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 0.5
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 0.5
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 1.0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "conditional_C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_mode": "sigmoid",
+    "gate_power": 1.0
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_weight": 0.01,
+    "gate_threshold": 0.7
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_weight": 0.01,
+    "gate_threshold": 0.7
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_weight": 0.1,
+    "gate_threshold": 0.7
+  },
+  {
+    "model": "hierarchical_svm",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "conditional_weight": 0.1,
+    "gate_threshold": 0.7
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "cluster_gate": true
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1,
+    "cluster_gate": true
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "cluster_gate": true
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1,
+    "cluster_gate": true
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "cluster_gate": true
+  },
+  {
+    "model": "multiclass_ssl",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.1,
+    "cluster_gate": true
+  }
+]

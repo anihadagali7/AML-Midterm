@@ -1,0 +1,31 @@
+[
+  {
+    "name": "structured_cluster",
+    "config": {
+      "model": "structured_ssl",
+      "assignment": "exclusive_rare",
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03,
+      "cluster_gate": true
+    },
+    "rule": "t0.55",
+    "cv": 0.9235668789808917,
+    "cv_mean": 0.9157820240622788,
+    "cv_macro": 0.8662984329921449
+  },
+  {
+    "name": "structured_joint",
+    "config": {
+      "model": "structured_ssl",
+      "assignment": "exclusive_rare",
+      "C": 3,
+      "gamma": 0.001,
+      "pseudo_weight": 0.01
+    },
+    "rule": "t0.5",
+    "cv": 0.9095541401273886,
+    "cv_mean": 0.908138711960368,
+    "cv_macro": 0.8727472360188276
+  }
+]

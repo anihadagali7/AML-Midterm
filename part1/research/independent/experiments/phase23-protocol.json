@@ -1,0 +1,602 @@
+{
+  "frozen_at": "2026-11-05T06:51:58.293824+00:00",
+  "candidates": [
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.3,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "pair",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "pair",
+        "meta_C": 0.1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "pair",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "pair",
+        "meta_C": 0.3,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "pair",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "pair",
+        "meta_C": 1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "all",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "all",
+        "meta_C": 0.1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "all",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "all",
+        "meta_C": 0.3,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "all",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "all",
+        "meta_C": 1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "patterns",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "patterns",
+        "meta_C": 0.1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "patterns",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "patterns",
+        "meta_C": 0.3,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "patterns",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "patterns",
+        "meta_C": 1,
+        "inner_splits": 15
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.1,
+        "inner_splits": 15,
+        "interactions": true
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.3,
+        "inner_splits": 15,
+        "interactions": true
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 1,
+        "inner_splits": 15,
+        "interactions": true
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.3,
+        "inner_splits": 15,
+        "strength": 0.5
+      }
+    },
+    {
+      "bucket": "other",
+      "config": {
+        "model": "joint_specialist",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "meta": "other",
+        "meta_C": 0.3,
+        "inner_splits": 15,
+        "strength": 0.75
+      }
+    }
+  ],
+  "outer_screen_seed": 20261110,
+  "repeat_seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "inner_folds": 15,
+  "selection": "Select strongest ordinary/robust CV candidates; at most three distinct configs receive repeats, at most two receive validation.",
+  "validation_fit": false,
+  "reason": "Other has the most errors on baseline training OOF predictions.",
+  "sources": [
+    "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html",
+    "https://proceedings.neurips.cc/paper/2011/hash/71ad16ad2c4d81f348082ff6c4b20768-Abstract.html"
+  ]
+}

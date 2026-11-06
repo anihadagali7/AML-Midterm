@@ -1,0 +1,192 @@
+RUN 1 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': False, 'remove_top': 0}
+{"id": "bcf600680e6ad5", "model": "kernel_lowdensity", "score": 0.9065817409766453, "rule": "t0.55", "default_score": 0.8959660297239914, "seconds": 1.84, "status": "ok", "error": null}
+RUN 2 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': False, 'remove_top': 1}
+{"id": "60281b7ae36cfe", "model": "kernel_lowdensity", "score": 0.8418259023354566, "rule": "t0.45", "default_score": 0.8407643312101911, "seconds": 2.169, "status": "ok", "error": null}
+RUN 3 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': False, 'remove_top': 3}
+{"id": "a58e3c04259d0f", "model": "kernel_lowdensity", "score": 0.6942675159235668, "rule": "t0.55", "default_score": 0.6921443736730362, "seconds": 2.369, "status": "ok", "error": null}
+RUN 4 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': False, 'remove_top': 5}
+{"id": "6e5d89cf255743", "model": "kernel_lowdensity", "score": 0.5479830148619957, "rule": "expected_f1", "default_score": 0.3895966029723991, "seconds": 2.423, "status": "ok", "error": null}
+RUN 5 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': True, 'remove_top': 0}
+{"id": "0e7caa73c30e5c", "model": "kernel_lowdensity", "score": 0.89171974522293, "rule": "t0.55", "default_score": 0.8853503184713376, "seconds": 1.983, "status": "ok", "error": null}
+RUN 6 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': True, 'remove_top': 1}
+{"id": "d0b422c7f820f1", "model": "kernel_lowdensity", "score": 0.8123142250530786, "rule": "expected_f1", "default_score": 0.7876857749469215, "seconds": 2.164, "status": "ok", "error": null}
+RUN 7 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': True, 'remove_top': 3}
+{"id": "53aaa2e138e55b", "model": "kernel_lowdensity", "score": 0.7664543524416135, "rule": "t0.35", "default_score": 0.7611464968152866, "seconds": 3.51, "status": "ok", "error": null}
+RUN 8 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'global', 'postnorm': True, 'remove_top': 5}
+{"id": "3e5a97387c1454", "model": "kernel_lowdensity", "score": 0.6411889596602972, "rule": "t0.5", "default_score": 0.6411889596602972, "seconds": 2.347, "status": "ok", "error": null}
+RUN 9 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': False, 'remove_top': 0}
+{"id": "af75cfb5f8b750", "model": "kernel_lowdensity", "score": 0.9065817409766453, "rule": "t0.55", "default_score": 0.8959660297239914, "seconds": 2.602, "status": "ok", "error": null}
+RUN 10 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': False, 'remove_top': 1}
+{"id": "e1351410709b4e", "model": "kernel_lowdensity", "score": 0.8418259023354566, "rule": "t0.45", "default_score": 0.8407643312101911, "seconds": 2.865, "status": "ok", "error": null}
+RUN 11 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': False, 'remove_top': 3}
+{"id": "bad40e7b5e0ae5", "model": "kernel_lowdensity", "score": 0.6942675159235668, "rule": "t0.55", "default_score": 0.6921443736730362, "seconds": 2.66, "status": "ok", "error": null}
+RUN 12 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': False, 'remove_top': 5}
+{"id": "0a52ff9ba64f41", "model": "kernel_lowdensity", "score": 0.5479830148619957, "rule": "expected_f1", "default_score": 0.3895966029723991, "seconds": 2.9, "status": "ok", "error": null}
+RUN 13 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': True, 'remove_top': 0}
+{"id": "d319e1a3bfc427", "model": "kernel_lowdensity", "score": 0.8895966029723991, "rule": "t0.5", "default_score": 0.8895966029723991, "seconds": 2.131, "status": "ok", "error": null}
+RUN 14 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': True, 'remove_top': 1}
+{"id": "b9ca8362f28036", "model": "kernel_lowdensity", "score": 0.8123142250530786, "rule": "expected_f1", "default_score": 0.7876857749469215, "seconds": 2.277, "status": "ok", "error": null}
+RUN 15 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': True, 'remove_top': 3}
+{"id": "00e56b0d7deaa8", "model": "kernel_lowdensity", "score": 0.7664543524416135, "rule": "t0.35", "default_score": 0.7611464968152866, "seconds": 2.959, "status": "ok", "error": null}
+RUN 16 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'raw', 'postnorm': True, 'remove_top': 5}
+{"id": "97a4230ce110a6", "model": "kernel_lowdensity", "score": 0.6411889596602972, "rule": "t0.5", "default_score": 0.6411889596602972, "seconds": 2.505, "status": "ok", "error": null}
+RUN 17 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': False, 'remove_top': 0}
+{"id": "cb2a3af8fb48f9", "model": "kernel_lowdensity", "score": 0.9214437367303608, "rule": "t0.55", "default_score": 0.9129511677282377, "seconds": 1.892, "status": "ok", "error": null}
+RUN 18 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': False, 'remove_top': 1}
+{"id": "cc42ff4272cdbd", "model": "kernel_lowdensity", "score": 0.8895966029723991, "rule": "argmax", "default_score": 0.8853503184713376, "seconds": 1.98, "status": "ok", "error": null}
+RUN 19 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': False, 'remove_top': 3}
+{"id": "782e14b188efd6", "model": "kernel_lowdensity", "score": 0.7006369426751592, "rule": "t0.55", "default_score": 0.6963906581740977, "seconds": 2.267, "status": "ok", "error": null}
+RUN 20 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': False, 'remove_top': 5}
+{"id": "dd339f633095d9", "model": "kernel_lowdensity", "score": 0.5834394904458599, "rule": "expected_f1", "default_score": 0.42887473460721864, "seconds": 2.368, "status": "ok", "error": null}
+RUN 21 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': True, 'remove_top': 0}
+{"id": "ca86073827733b", "model": "kernel_lowdensity", "score": 0.8895966029723993, "rule": "t0.55", "default_score": 0.8853503184713376, "seconds": 1.801, "status": "ok", "error": null}
+RUN 22 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': True, 'remove_top': 1}
+{"id": "428c376196a95e", "model": "kernel_lowdensity", "score": 0.8237791932059447, "rule": "t0.55", "default_score": 0.8174097664543524, "seconds": 2.069, "status": "ok", "error": null}
+RUN 23 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': True, 'remove_top': 3}
+{"id": "4f9d50276c5570", "model": "kernel_lowdensity", "score": 0.7813163481953291, "rule": "expected_f1", "default_score": 0.7632696390658174, "seconds": 2.111, "status": "ok", "error": null}
+RUN 24 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'scale': 'standard', 'postnorm': True, 'remove_top': 5}
+{"id": "24d61eff6fd4ee", "model": "kernel_lowdensity", "score": 0.6335456475583864, "rule": "expected_f1", "default_score": 0.6199575371549895, "seconds": 2.203, "status": "ok", "error": null}
+RUN 25 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 25, 'white': 0.25}
+{"id": "1a94eb22d58353", "model": "kernel_lowdensity", "score": 0.7303609341825902, "rule": "argmax", "default_score": 0.6354564755838641, "seconds": 2.465, "status": "ok", "error": null}
+RUN 26 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 25, 'white': 0.25}
+{"id": "28366f59c797cf", "model": "kernel_lowdensity", "score": 0.8407643312101911, "rule": "t0.5", "default_score": 0.8407643312101911, "seconds": 1.885, "status": "ok", "error": null}
+RUN 27 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 25, 'white': 0.25}
+{"id": "a06fecce191dbe", "model": "kernel_lowdensity", "score": 0.9044585987261147, "rule": "t0.55", "default_score": 0.8906581740976646, "seconds": 1.494, "status": "ok", "error": null}
+RUN 28 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 75, 'white': 0.25}
+{"id": "ed45ce18ffb0fc", "model": "kernel_lowdensity", "score": 0.7348195329087049, "rule": "t0.45", "default_score": 0.7333333333333333, "seconds": 2.627, "status": "ok", "error": null}
+RUN 29 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 75, 'white': 0.25}
+{"id": "0b814d9feb4b76", "model": "kernel_lowdensity", "score": 0.8959660297239914, "rule": "t0.55", "default_score": 0.8874734607218683, "seconds": 2.206, "status": "ok", "error": null}
+RUN 30 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 75, 'white': 0.25}
+{"id": "78b970750fc1fb", "model": "kernel_lowdensity", "score": 0.9118895966029723, "rule": "t0.5", "default_score": 0.9118895966029723, "seconds": 1.56, "status": "ok", "error": null}
+RUN 31 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 125, 'white': 0.25}
+{"id": "c42072e5506d12", "model": "kernel_lowdensity", "score": 0.7394904458598726, "rule": "t0.5", "default_score": 0.7394904458598726, "seconds": 2.601, "status": "ok", "error": null}
+RUN 32 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 125, 'white': 0.25}
+{"id": "4aa02824c6695a", "model": "kernel_lowdensity", "score": 0.910828025477707, "rule": "t0.55", "default_score": 0.9065817409766453, "seconds": 2.02, "status": "ok", "error": null}
+RUN 33 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 125, 'white': 0.25}
+{"id": "8edbc62fe4c943", "model": "kernel_lowdensity", "score": 0.90552016985138, "rule": "t0.5", "default_score": 0.90552016985138, "seconds": 1.557, "status": "ok", "error": null}
+RUN 34 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 150, 'white': 0.25}
+{"id": "830bc06caa28b6", "model": "kernel_lowdensity", "score": 0.7394904458598726, "rule": "t0.5", "default_score": 0.7394904458598726, "seconds": 2.745, "status": "ok", "error": null}
+RUN 35 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 150, 'white': 0.25}
+{"id": "0f32cca7477804", "model": "kernel_lowdensity", "score": 0.910828025477707, "rule": "t0.55", "default_score": 0.8980891719745223, "seconds": 2.003, "status": "ok", "error": null}
+RUN 36 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 150, 'white': 0.25}
+{"id": "3138ebd4e98675", "model": "kernel_lowdensity", "score": 0.900212314225053, "rule": "t0.55", "default_score": 0.8991507430997876, "seconds": 1.551, "status": "ok", "error": null}
+RUN 37 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 25, 'white': 0.5}
+{"id": "d7e258073afe14", "model": "kernel_lowdensity", "score": 0.5307855626326964, "rule": "argmax", "default_score": 0.35817409766454356, "seconds": 2.536, "status": "ok", "error": null}
+RUN 38 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 25, 'white': 0.5}
+{"id": "26c77784731286", "model": "kernel_lowdensity", "score": 0.8471337579617835, "rule": "t0.45", "default_score": 0.8386411889596602, "seconds": 2.168, "status": "ok", "error": null}
+RUN 39 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 25, 'white': 0.5}
+{"id": "52e2f0e2e76e86", "model": "kernel_lowdensity", "score": 0.8980891719745223, "rule": "t0.45", "default_score": 0.8906581740976646, "seconds": 1.755, "status": "ok", "error": null}
+RUN 40 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 75, 'white': 0.5}
+{"id": "b3ba59972cc38e", "model": "kernel_lowdensity", "score": 0.4755838641188959, "rule": "argmax", "default_score": 0.4205944798301486, "seconds": 2.741, "status": "ok", "error": null}
+RUN 41 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 75, 'white': 0.5}
+{"id": "df4ecc972e4fc5", "model": "kernel_lowdensity", "score": 0.9087048832271761, "rule": "t0.55", "default_score": 0.9076433121019108, "seconds": 2.273, "status": "ok", "error": null}
+RUN 42 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 75, 'white': 0.5}
+{"id": "a62937106f8c73", "model": "kernel_lowdensity", "score": 0.8957537154989383, "rule": "t0.45", "default_score": 0.8874734607218684, "seconds": 1.829, "status": "ok", "error": null}
+RUN 43 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 125, 'white': 0.5}
+{"id": "d3d5211a56439a", "model": "kernel_lowdensity", "score": 0.46921443736730356, "rule": "argmax", "default_score": 0.4346072186836517, "seconds": 2.776, "status": "ok", "error": null}
+RUN 44 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 125, 'white': 0.5}
+{"id": "6e6766d4edd8ac", "model": "kernel_lowdensity", "score": 0.8906581740976646, "rule": "t0.5", "default_score": 0.8906581740976646, "seconds": 2.225, "status": "ok", "error": null}
+RUN 45 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 125, 'white': 0.5}
+{"id": "d1cc4f5ad8f2d6", "model": "kernel_lowdensity", "score": 0.8861995753715498, "rule": "t0.45", "default_score": 0.8853503184713376, "seconds": 1.685, "status": "ok", "error": null}
+RUN 46 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 150, 'white': 0.5}
+{"id": "e5fb66afcf410e", "model": "kernel_lowdensity", "score": 0.4717622080679405, "rule": "expected_f1", "default_score": 0.43609341825902337, "seconds": 2.661, "status": "ok", "error": null}
+RUN 47 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 150, 'white': 0.5}
+{"id": "e0ba22416f830e", "model": "kernel_lowdensity", "score": 0.8842887473460721, "rule": "t0.5", "default_score": 0.8842887473460721, "seconds": 2.21, "status": "ok", "error": null}
+RUN 48 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 150, 'white': 0.5}
+{"id": "72909c8bfea597", "model": "kernel_lowdensity", "score": 0.8789808917197452, "rule": "t0.5", "default_score": 0.8789808917197452, "seconds": 1.795, "status": "ok", "error": null}
+RUN 49 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 25, 'white': 1.0}
+{"id": "55c62cdb5b03b7", "model": "kernel_lowdensity", "score": 0.4607218683651804, "rule": "argmax", "default_score": 0.2397937518956627, "seconds": 2.876, "status": "ok", "error": null}
+RUN 50 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 25, 'white': 1.0}
+{"id": "3ba2cd870fa8ec", "model": "kernel_lowdensity", "score": 0.30488322717622074, "rule": "t0.25", "default_score": 0.28641188959660296, "seconds": 2.638, "status": "ok", "error": null}
+RUN 51 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 25, 'white': 1.0}
+{"id": "15f5ee9186a046", "model": "kernel_lowdensity", "score": 0.8450106157112526, "rule": "argmax", "default_score": 0.8267515923566879, "seconds": 2.154, "status": "ok", "error": null}
+RUN 52 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 75, 'white': 1.0}
+{"id": "4aa222802a5b2d", "model": "kernel_lowdensity", "score": 0.38641188959660294, "rule": "argmax", "default_score": 0.29363057324840763, "seconds": 2.92, "status": "ok", "error": null}
+RUN 53 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 75, 'white': 1.0}
+{"id": "1fa2b82b4d3fc7", "model": "kernel_lowdensity", "score": 0.6061571125265393, "rule": "t0.25", "default_score": 0.5605095541401274, "seconds": 2.557, "status": "ok", "error": null}
+RUN 54 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 75, 'white': 1.0}
+{"id": "10c6ec9c37d33a", "model": "kernel_lowdensity", "score": 0.8639065817409766, "rule": "t0.45", "default_score": 0.8479830148619957, "seconds": 2.002, "status": "ok", "error": null}
+RUN 55 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 125, 'white': 1.0}
+{"id": "e5f53a02271934", "model": "kernel_lowdensity", "score": 0.39915074309978765, "rule": "argmax", "default_score": 0.3740976645435244, "seconds": 2.876, "status": "ok", "error": null}
+RUN 56 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 125, 'white': 1.0}
+{"id": "3a2e160bd2cb8c", "model": "kernel_lowdensity", "score": 0.7845010615711252, "rule": "t0.5", "default_score": 0.7845010615711252, "seconds": 2.588, "status": "ok", "error": null}
+RUN 57 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 125, 'white': 1.0}
+{"id": "fbeb2e2a3a2a5c", "model": "kernel_lowdensity", "score": 0.8203821656050955, "rule": "expected_f1", "default_score": 0.7855626326963905, "seconds": 2.264, "status": "ok", "error": null}
+RUN 58 96 {'model': 'kernel_lowdensity', 'C': 0.3, 'gamma': 0.001, 'pca': 150, 'white': 1.0}
+{"id": "892029584d9684", "model": "kernel_lowdensity", "score": 0.3087048832271762, "rule": "t0.55", "default_score": 0.30233545647558385, "seconds": 2.99, "status": "ok", "error": null}
+RUN 59 96 {'model': 'kernel_lowdensity', 'C': 1, 'gamma': 0.001, 'pca': 150, 'white': 1.0}
+{"id": "aaf6af51060945", "model": "kernel_lowdensity", "score": 0.7643312101910829, "rule": "t0.45", "default_score": 0.7537154989384289, "seconds": 2.516, "status": "ok", "error": null}
+RUN 60 96 {'model': 'kernel_lowdensity', 'C': 3, 'gamma': 0.001, 'pca': 150, 'white': 1.0}
+{"id": "3c0f0c9fc44aef", "model": "kernel_lowdensity", "score": 0.7885350318471337, "rule": "expected_f1", "default_score": 0.7791932059447982, "seconds": 2.021, "status": "ok", "error": null}
+RUN 61 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 0.3, 'gamma': 0.001}
+{"id": "3a48dc85e6470e", "model": "kernel_lowdensity", "score": 0.7176220806794055, "rule": "argmax", "default_score": 0.5834394904458599, "seconds": 2.947, "status": "ok", "error": null}
+RUN 62 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 0.3, 'gamma': 0.003}
+{"id": "617fa62e897ba8", "model": "kernel_lowdensity", "score": 0.821656050955414, "rule": "t0.55", "default_score": 0.8152866242038217, "seconds": 2.905, "status": "ok", "error": null}
+RUN 63 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 0.3, 'gamma': 0.01}
+{"id": "69ba94861d2d81", "model": "kernel_lowdensity", "score": 0.821656050955414, "rule": "t0.45", "default_score": 0.8174097664543524, "seconds": 2.683, "status": "ok", "error": null}
+RUN 64 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 1, 'gamma': 0.001}
+{"id": "e3409595c7a7a6", "model": "kernel_lowdensity", "score": 0.8322717622080681, "rule": "t0.55", "default_score": 0.8280254777070064, "seconds": 2.621, "status": "ok", "error": null}
+RUN 65 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 1, 'gamma': 0.003}
+{"id": "61cb2c9771dfb8", "model": "kernel_lowdensity", "score": 0.8874734607218684, "rule": "t0.5", "default_score": 0.8874734607218684, "seconds": 2.266, "status": "ok", "error": null}
+RUN 66 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 1, 'gamma': 0.01}
+{"id": "dbed78cf4ee2cf", "model": "kernel_lowdensity", "score": 0.8853503184713376, "rule": "t0.45", "default_score": 0.881104033970276, "seconds": 2.353, "status": "ok", "error": null}
+RUN 67 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 3, 'gamma': 0.001}
+{"id": "76e405d338180f", "model": "kernel_lowdensity", "score": 0.9023354564755838, "rule": "t0.5", "default_score": 0.9023354564755838, "seconds": 2.178, "status": "ok", "error": null}
+RUN 68 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 3, 'gamma': 0.003}
+{"id": "2fcb8cece74196", "model": "kernel_lowdensity", "score": 0.9129511677282378, "rule": "t0.45", "default_score": 0.9087048832271761, "seconds": 2.036, "status": "ok", "error": null}
+RUN 69 96 {'model': 'kernel_lowdensity', 'kernel': 'laplacian', 'C': 3, 'gamma': 0.01}
+{"id": "55336c748dde21", "model": "kernel_lowdensity", "score": 0.8683651804670912, "rule": "t0.35", "default_score": 0.8492569002123143, "seconds": 2.209, "status": "ok", "error": null}
+RUN 70 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 0.3, 'gamma': 0.001}
+{"id": "7051d6686050dd", "model": "kernel_lowdensity", "score": 0.8365180467091294, "rule": "t0.5", "default_score": 0.8365180467091294, "seconds": 2.192, "status": "ok", "error": null}
+RUN 71 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 0.3, 'gamma': 0.003}
+{"id": "2834d2fa78b5ee", "model": "kernel_lowdensity", "score": 0.9097664543524415, "rule": "t0.55", "default_score": 0.9033970276008492, "seconds": 1.708, "status": "ok", "error": null}
+RUN 72 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 0.3, 'gamma': 0.01}
+{"id": "927a3ccdf07f8e", "model": "kernel_lowdensity", "score": 0.9171974522292994, "rule": "t0.55", "default_score": 0.9129511677282377, "seconds": 1.415, "status": "ok", "error": null}
+RUN 73 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 1, 'gamma': 0.001}
+{"id": "ef3ab966d79d41", "model": "kernel_lowdensity", "score": 0.9129511677282378, "rule": "t0.55", "default_score": 0.9076433121019108, "seconds": 1.674, "status": "ok", "error": null}
+RUN 74 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 1, 'gamma': 0.003}
+{"id": "e94fc5884055df", "model": "kernel_lowdensity", "score": 0.9044585987261147, "rule": "t0.55", "default_score": 0.897876857749469, "seconds": 1.392, "status": "ok", "error": null}
+RUN 75 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 1, 'gamma': 0.01}
+{"id": "a1a103944882ab", "model": "kernel_lowdensity", "score": 0.8980891719745223, "rule": "argmax", "default_score": 0.8906581740976645, "seconds": 1.296, "status": "ok", "error": null}
+RUN 76 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 3, 'gamma': 0.001}
+{"id": "d05a661ea1a1b3", "model": "kernel_lowdensity", "score": 0.8970276008492569, "rule": "t0.55", "default_score": 0.8915074309978769, "seconds": 1.385, "status": "ok", "error": null}
+RUN 77 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 3, 'gamma': 0.003}
+{"id": "fdd32cb628cf7e", "model": "kernel_lowdensity", "score": 0.9150743099787687, "rule": "t0.55", "default_score": 0.9129511677282377, "seconds": 1.252, "status": "ok", "error": null}
+RUN 78 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'C': 3, 'gamma': 0.01}
+{"id": "e9ad24860fb581", "model": "kernel_lowdensity", "score": 0.9150743099787687, "rule": "argmax", "default_score": 0.9065817409766453, "seconds": 1.161, "status": "ok", "error": null}
+RUN 79 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 0.3, 'gamma': 0.001}
+{"id": "b068ff1ac4fc39", "model": "kernel_lowdensity", "score": 0.7940552016985137, "rule": "t0.5", "default_score": 0.7940552016985137, "seconds": 2.624, "status": "ok", "error": null}
+RUN 80 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 0.3, 'gamma': 0.003}
+{"id": "02b0046ab42358", "model": "kernel_lowdensity", "score": 0.8386411889596604, "rule": "t0.55", "default_score": 0.8365180467091294, "seconds": 2.359, "status": "ok", "error": null}
+RUN 81 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 0.3, 'gamma': 0.01}
+{"id": "b9f51713c4d0ed", "model": "kernel_lowdensity", "score": 0.8407643312101911, "rule": "t0.5", "default_score": 0.8407643312101911, "seconds": 2.479, "status": "ok", "error": null}
+RUN 82 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 1, 'gamma': 0.001}
+{"id": "9c6b9a9f0c7343", "model": "kernel_lowdensity", "score": 0.8895966029723991, "rule": "t0.55", "default_score": 0.8874734607218683, "seconds": 2.023, "status": "ok", "error": null}
+RUN 83 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 1, 'gamma': 0.003}
+{"id": "468a2fb8ca673d", "model": "kernel_lowdensity", "score": 0.9065817409766453, "rule": "t0.5", "default_score": 0.9065817409766453, "seconds": 1.998, "status": "ok", "error": null}
+RUN 84 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 1, 'gamma': 0.01}
+{"id": "39f092cea358a5", "model": "kernel_lowdensity", "score": 0.8895966029723993, "rule": "t0.5", "default_score": 0.8895966029723991, "seconds": 2.133, "status": "ok", "error": null}
+RUN 85 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 3, 'gamma': 0.001}
+{"id": "05a74dc5f78a3b", "model": "kernel_lowdensity", "score": 0.9044585987261147, "rule": "t0.55", "default_score": 0.9012738853503185, "seconds": 1.677, "status": "ok", "error": null}
+RUN 86 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 3, 'gamma': 0.003}
+{"id": "9ec29e5312cdea", "model": "kernel_lowdensity", "score": 0.9129511677282377, "rule": "t0.55", "default_score": 0.910828025477707, "seconds": 1.714, "status": "ok", "error": null}
+RUN 87 96 {'model': 'kernel_lowdensity', 'kernel': 'rq', 'C': 3, 'gamma': 0.01}
+{"id": "03d8205774c15b", "model": "kernel_lowdensity", "score": 0.9023354564755838, "rule": "t0.5", "default_score": 0.9023354564755838, "seconds": 1.876, "status": "ok", "error": null}
+RUN 88 96 {'model': 'kernel_lowdensity', 'kernel': 'linear', 'C': 0.3, 'gamma': 0.001}
+{"id": "0725408e15d628", "model": "kernel_lowdensity", "score": 0.9171974522292994, "rule": "t0.55", "default_score": 0.9097664543524415, "seconds": 1.791, "status": "ok", "error": null}
+RUN 89 96 {'model': 'kernel_lowdensity', 'kernel': 'linear', 'C': 1, 'gamma': 0.001}
+{"id": "7f81d083f59a4a", "model": "kernel_lowdensity", "score": 0.89447983014862, "rule": "expected_f1", "default_score": 0.8872611464968152, "seconds": 1.474, "status": "ok", "error": null}
+RUN 90 96 {'model': 'kernel_lowdensity', 'kernel': 'linear', 'C': 3, 'gamma': 0.001}
+{"id": "fba44f5a5b92a3", "model": "kernel_lowdensity", "score": 0.9031847133757961, "rule": "t0.55", "default_score": 0.9, "seconds": 1.145, "status": "ok", "error": null}
+RUN 91 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 3, 'C': 0.3, 'gamma': 0.003}
+{"id": "2bc1f26b8c3d0c", "model": "kernel_lowdensity", "score": 0.9087048832271764, "rule": "argmax", "default_score": 0.8970276008492568, "seconds": 1.611, "status": "ok", "error": null}
+RUN 92 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 3, 'C': 1, 'gamma': 0.003}
+{"id": "13f8089e8b461d", "model": "kernel_lowdensity", "score": 0.9171974522292994, "rule": "t0.55", "default_score": 0.9129511677282377, "seconds": 1.427, "status": "ok", "error": null}
+RUN 93 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 3, 'C': 3, 'gamma': 0.003}
+{"id": "9e70fc6e67071a", "model": "kernel_lowdensity", "score": 0.9097664543524416, "rule": "t0.55", "default_score": 0.9033970276008492, "seconds": 1.268, "status": "ok", "error": null}
+RUN 94 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 4, 'C': 0.3, 'gamma': 0.003}
+{"id": "fec0e8e04936d4", "model": "kernel_lowdensity", "score": 0.9129511677282377, "rule": "t0.55", "default_score": 0.9087048832271761, "seconds": 1.699, "status": "ok", "error": null}
+RUN 95 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 4, 'C': 1, 'gamma': 0.003}
+{"id": "389555f035c7db", "model": "kernel_lowdensity", "score": 0.910828025477707, "rule": "t0.55", "default_score": 0.900212314225053, "seconds": 1.491, "status": "ok", "error": null}
+RUN 96 96 {'model': 'kernel_lowdensity', 'kernel': 'poly', 'degree': 4, 'C': 3, 'gamma': 0.003}
+{"id": "d5e125badefc1b", "model": "kernel_lowdensity", "score": 0.9150743099787687, "rule": "argmax", "default_score": 0.8991507430997878, "seconds": 1.419, "status": "ok", "error": null}

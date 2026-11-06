@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-11-05T06:42:23.676130+00:00",
+  "candidate": {
+    "name": "classical_tri_reason_hybrid",
+    "config": {
+      "model": "tri_labelwise",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_training",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rule": "t0.5",
+    "use_tri": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "ordinary_cv": 0.9174805378627034,
+    "weighted_cv": {
+      "propensity_logistic": 0.9191867016663401,
+      "propensity_tree": 0.9237579232585249,
+      "kmm": 0.9175342953784725
+    },
+    "selection_score": 0.9132626613138692,
+    "eligible": true,
+    "validation": {
+      "sample_f1": 0.9123931623931625,
+      "macro_f1": 0.81044356609574,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    }
+  },
+  "validation": {
+    "sample_f1": 0.9123931623931625,
+    "macro_f1": 0.81044356609574,
+    "f1_Safety": 0.9,
+    "f1_Funding": 0.6666666666666666,
+    "f1_Efficacy": 0.8,
+    "f1_Recruitment": 0.98989898989899,
+    "f1_Other": 0.6956521739130435
+  },
+  "target": 0.92735,
+  "target_met": false,
+  "kaggle_score": null,
+  "gold_rows": 157,
+  "predicted_missing_rows": 1014,
+  "test_rows": 312,
+  "submission_sha256": "f9a287fb1d28fd9a6bbc0c583ac84ec2061e72945e2fbeb5aced9ff5b15ff44a",
+  "raw_data_hashes_verified": true,
+  "gold_labels_preserved": true,
+  "validation_labels_used_for_training": 0,
+  "final_train_plus_validation_refit_performed": false,
+  "source_sha256": {
+    "experiment.py": "bf4584f8af7ffbfa6945a447da2d3b528fb207a93be5ae61e312d7ef7ed074bd",
+    "phase3.py": "53cfbb46726de7009c7ca2e062d48426bb71b99e8f50b23a340a927ff1936467",
+    "phase4.py": "81f84b0b7d63f11dd1ed94228a71b821574b1e57c571941ce9bfc2b78daaeca4",
+    "phase5.py": "ae1a0164e36de0eb8ba979fb7493d7e53423a83d14ab68da7ada45fc1fcaf6e7",
+    "phase6.py": "37e3eba538946985edda221725b42c2940650d33548446ee46149b8ddf106533",
+    "phase7.py": "ff64ae8dc0f91bb9f0489630a96c85ca7dbbd87829001eb503d734cf09b2eb1d",
+    "phase8.py": "b358eb8324a2bc8f8c497d047aa8512ad712615cab3c52eec537d030acf1f09b",
+    "phase9.py": "5a9c52cd235125d32249faab0d7932786f4c0578efa42656f83b14299d1fab37",
+    "phase10.py": "699091e038b267283a079fcb70f4478fdab10d0b9835fd8e2ee765f5d7f78da4",
+    "phase11.py": "c7670388bb191c72a04cc548476a40223659c789f304bba3088d7d64210bee20",
+    "phase14.py": "74ed2f4aa227620334c505a1825c1e06b55285ff8fb4b129db313b907aa231e4",
+    "phase16.py": "9dcca68690fdcdad0fe04e5e96dfee268f3016886f9fbcbcbbd4f380716d98b7",
+    "phase17.py": "8f490c261b032a2869ee6e726e39f6e85cc54c2ef65bf3a02f6da75693f66841",
+    "phase18.py": "4c453eb76eb1a633c16ee53873d334d3d10c4c573f7d5e4863ac827694a7ce3c",
+    "phase20.py": "6b5642e9c333cf8e8bfde9d51665d33a70012ccf2d67409caae8ee6cc8a05692",
+    "phase21.py": "5d6b5d5c54f19943fba9a5533c48938b1b5afcafe7f0865659f4fc2498300dcc"
+  },
+  "score_interpretation": "Validation is repeatedly used for selection; CV values are development scores. Neither establishes a Kaggle leaderboard result. Final hybrid scores are binary decisions; component margin/vote scores are not calibrated probabilities."
+}

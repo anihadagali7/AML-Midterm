@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-11-05T06:46:39.617758+00:00",
+  "objective": "Test stability, auxiliary features and score combinations of the new tri-training hybrid.",
+  "baseline_validation_f1": 0.9123931623931625,
+  "fit_data": "157 gold and original masked training rows only; exclude masked duplicates of held-out embedding groups.",
+  "bootstrap_seeds": [
+    210123,
+    220123,
+    230123,
+    240123,
+    250123
+  ],
+  "seed_policy": "Use predetermined prefix ensembles of 3 or 5 seeds; never choose the best individual seed.",
+  "initial_cv_seed": 20261110,
+  "repeat_cv_seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "initial_method": "Fixed prior label mask and decoding. Refine tri-training component only. Separately test global soft blending.",
+  "selection": "Rank ordinary grouped CV and frozen robust training-only weighted CV; at most 4 distinct finalists, tested over three fresh repeats. Preserve baseline unless measured validation improves.",
+  "validation_batch_cap": 3,
+  "validation_policy": "Freeze candidate configs and decoders before loading validation labels; no validation fitting, row corrections or seed selection.",
+  "final_refit_with_validation": false,
+  "sources": [
+    {
+      "url": "https://statistics.berkeley.edu/tech-reports/421",
+      "use": "Motivation for aggregating unstable bootstrap predictors."
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper/2011/hash/71ad16ad2c4d81f348082ff6c4b20768-Abstract.html",
+      "use": "Future joint F1 decoder; old single-model GFM already tested, do not claim it is wholly new."
+    }
+  ]
+}

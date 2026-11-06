@@ -1,0 +1,304 @@
+{
+  "frozen_at": "2026-11-05T19:08:21.392672+00:00",
+  "candidates": [
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "label_tuned_ssl",
+          "selection": "binary",
+          "penalty": 0,
+          "inner_splits": 5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "other"
+      },
+      "ordinary": 0.9193205944798302,
+      "robust": 0.9140118917552017,
+      "weighted": [
+        0.9122423241803256,
+        0.9196421871619311,
+        0.9187242843837838
+      ]
+    },
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "label_tuned_ssl",
+          "selection": "binary",
+          "penalty": 0,
+          "inner_splits": 5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.55",
+        "scope": "rare"
+      },
+      "ordinary": 0.9171974522292994,
+      "robust": 0.9162820485017411,
+      "weighted": [
+        0.9159769139258884,
+        0.9289883816995941,
+        0.920587136610857
+      ]
+    },
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "reliable_ssl",
+          "teacher": "ssl",
+          "pseudo_weight": 0.3,
+          "reliability": "per_label",
+          "min_reliability": 0.5,
+          "inner_splits": 5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "recruitment_other"
+      },
+      "ordinary": 0.9278131634819534,
+      "robust": 0.9261431674360808,
+      "weighted": [
+        0.9255865020874567,
+        0.9406485250805288,
+        0.9302945623492407
+      ]
+    },
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "reliable_ssl",
+          "teacher": "ssl",
+          "pseudo_weight": 0.3,
+          "reliability": "pooled",
+          "min_reliability": 0.5,
+          "inner_splits": 5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "recruitment_other"
+      },
+      "ordinary": 0.9278131634819534,
+      "robust": 0.9303270662868135,
+      "weighted": [
+        0.9319891361761616,
+        0.941390832631418,
+        0.9311650338884335
+      ]
+    },
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "local_ssl",
+          "regions": 3,
+          "C": 3,
+          "gamma": 0.001,
+          "local_mix": 0.5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.55",
+        "scope": "all"
+      },
+      "ordinary": 0.9320594479830148,
+      "robust": 0.9226323827250258,
+      "weighted": [
+        0.9194900276390294,
+        0.9475953270119001,
+        0.9329780152871014
+      ]
+    },
+    {
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "local_ssl",
+          "regions": 3,
+          "C": 3,
+          "gamma": 0.001,
+          "local_mix": 0.25
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "recruitment_other"
+      },
+      "ordinary": 0.9278131634819532,
+      "robust": 0.9317623948623447,
+      "weighted": [
+        0.9384079613697426,
+        0.9484417955950837,
+        0.9330788053224752
+      ]
+    }
+  ],
+  "repeat_seeds": [
+    20261119,
+    20261120,
+    20261121
+  ]
+}

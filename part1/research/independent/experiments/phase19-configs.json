@@ -1,0 +1,38 @@
+[
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0,
+    "inner_splits": 15
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0.25,
+    "inner_splits": 15
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0.5,
+    "inner_splits": 15
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "independent",
+    "meta_C": 1,
+    "inner_splits": 15
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "joint",
+    "meta_C": 10,
+    "inner_splits": 15
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "meta_C": 1,
+    "inner_splits": 15
+  }
+]

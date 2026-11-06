@@ -1,0 +1,13 @@
+{
+  "raw_input_hashes_unchanged": true,
+  "notebooks_valid": true,
+  "notebooks_executed_without_errors": true,
+  "final_candidate_reproduced_exactly": true,
+  "candidate_sha256": "5c938b7a955e04db5e9f0558cbb0aca0b8201ae7b3283653c60400697048ae3d",
+  "ground_truth_preserved": true,
+  "external_validation_comparisons": 2,
+  "external_validation_candidate_count": 4,
+  "kaggle_score_verified": false,
+  "final_candidate_validation_f1": 0.8504273504273504,
+  "final_candidate_test_predictions_verified_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "frozen_at": "2026-11-05T06:29:03.676258+00:00",
+  "purpose": "Check whether conservative modifications suppressed classical tri-training: full-weight pseudo-labels, ordinary bootstrap, no cluster gate, and fixed majority decisions.",
+  "candidates": [
+    {
+      "name": "classical_tri_majority",
+      "config": {
+        "model": "tri_training",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "rule": "t0.5",
+      "ordinary_cv": 0.9111111111111111,
+      "cv_std": 0.01471500797550406
+    }
+  ]
+}

@@ -1,3 +1,13 @@
+# Consolidated submission status
+
+Highest reported score: **Ani original, 0.89423** (235 labels, transductive). Latest reported submission: **70/15/15 ensemble, 0.89401** (235 labels, inductive). Classical tri-training scored **0.88012**. The exact three CSVs were added to `archive/submitted`; originals, SHA-256 hashes, fitting counts, and score provenance are in [index.csv](index.csv) and `archive_manifest.json`. Integration performed no upload.
+
+The newer Ani `8a8c3fc` best CSV is separately preserved without an assigned score. The original .89423 CSV matches that commit’s `part1_first_submission.csv`. See [the current handoff](../RESEARCH_HANDOFF.md) and [testing policy](../TESTING_POLICY.md). No new file is being nominated in `ready/`; two submissions remained in the user’s last reported budget.
+
+The guide below is the **historical 7425345 checkpoint**; its “latest” statements and ready-state manifests predate the consolidated records above. Historical tags and model snapshots remain unchanged.
+
+---
+
 # Part 1 Kaggle submissions
 
 ## Latest reported result

@@ -1,0 +1,33 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Executed 03_current_report
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Executed 04_reproduce_current
+{
+  "archive": "/Users/matthew/Desktop/AMLMidterm/AMLMidterm_Part1.zip",
+  "bytes": 30814805,
+  "checks": {
+    "current_submission_rows": 312,
+    "gold_rows_preserved": 157,
+    "missing_rows_predicted": 1014,
+    "raw_hashes_verified": true,
+    "notebooks_executed": [
+      "03_current_report",
+      "04_reproduce_current"
+    ],
+    "exact_reproduction_sha256": "c87c63dd5e623746f9349964bc1a6ead2102d639bf683e9cc5ddc5d9dcf3cf7f",
+    "validation_sample_f1": 0.9102564102564102,
+    "validation_macro_f1": 0.78,
+    "validation_candidate_evaluations": 64,
+    "target_met": false,
+    "kaggle_score": null,
+    "integrity": {
+      "held_out_training_labels_do_not_change_predictions": true,
+      "query_labels_do_not_change_predictions": true,
+      "inductive_query_batch_invariance": true,
+      "max_label_mask_difference": 0.0,
+      "max_order_difference": 0.0,
+      "max_batch_difference": 6.38378239159465e-16,
+      "python_sources_compile": true
+    }
+  }
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "candidate": "Ani frozen control",
+    "sample_f1": 0.8605442176870749,
+    "macro_f1": 0.8205710743193853,
+    "f1_Safety": 0.8823529411764706,
+    "f1_Funding": 0.7368421052631579,
+    "f1_Efficacy": 0.8695652173913043,
+    "f1_Recruitment": 0.9113924050632911,
+    "f1_Other": 0.7027027027027027,
+    "rows": 98,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9375,
+        "recall": 0.8333333333333334,
+        "f1": 0.8823529411764706,
+        "positives": 18,
+        "predicted_positive": 16
+      },
+      "Funding": {
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Efficacy": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043,
+        "positives": 22,
+        "predicted_positive": 24
+      },
+      "Recruitment": {
+        "precision": 0.9,
+        "recall": 0.9230769230769231,
+        "f1": 0.9113924050632911,
+        "positives": 39,
+        "predicted_positive": 40
+      },
+      "Other": {
+        "precision": 0.7647058823529411,
+        "recall": 0.65,
+        "f1": 0.7027027027027027,
+        "positives": 20,
+        "predicted_positive": 17
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 25%",
+    "sample_f1": 0.8843537414965985,
+    "macro_f1": 0.8445906432748538,
+    "f1_Safety": 0.9444444444444444,
+    "f1_Funding": 0.7368421052631579,
+    "f1_Efficacy": 0.875,
+    "f1_Recruitment": 0.9487179487179487,
+    "f1_Other": 0.717948717948718,
+    "rows": 98,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9444444444444444,
+        "recall": 0.9444444444444444,
+        "f1": 0.9444444444444444,
+        "positives": 18,
+        "predicted_positive": 18
+      },
+      "Funding": {
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Efficacy": {
+        "precision": 0.8076923076923077,
+        "recall": 0.9545454545454546,
+        "f1": 0.875,
+        "positives": 22,
+        "predicted_positive": 26
+      },
+      "Recruitment": {
+        "precision": 0.9487179487179487,
+        "recall": 0.9487179487179487,
+        "f1": 0.9487179487179487,
+        "positives": 39,
+        "predicted_positive": 39
+      },
+      "Other": {
+        "precision": 0.7368421052631579,
+        "recall": 0.7,
+        "f1": 0.717948717948718,
+        "positives": 20,
+        "predicted_positive": 19
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 40%",
+    "sample_f1": 0.8775510204081632,
+    "macro_f1": 0.8388924654836527,
+    "f1_Safety": 0.9444444444444444,
+    "f1_Funding": 0.7368421052631579,
+    "f1_Efficacy": 0.875,
+    "f1_Recruitment": 0.987012987012987,
+    "f1_Other": 0.6511627906976745,
+    "rows": 98,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9444444444444444,
+        "recall": 0.9444444444444444,
+        "f1": 0.9444444444444444,
+        "positives": 18,
+        "predicted_positive": 18
+      },
+      "Funding": {
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Efficacy": {
+        "precision": 0.8076923076923077,
+        "recall": 0.9545454545454546,
+        "f1": 0.875,
+        "positives": 22,
+        "predicted_positive": 26
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 0.9743589743589743,
+        "f1": 0.987012987012987,
+        "positives": 39,
+        "predicted_positive": 38
+      },
+      "Other": {
+        "precision": 0.6086956521739131,
+        "recall": 0.7,
+        "f1": 0.6511627906976745,
+        "positives": 20,
+        "predicted_positive": 23
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "sample_f1": 0.8775510204081632,
+    "macro_f1": 0.8318563300142248,
+    "f1_Safety": 0.8947368421052632,
+    "f1_Funding": 0.7368421052631579,
+    "f1_Efficacy": 0.875,
+    "f1_Recruitment": 0.95,
+    "f1_Other": 0.7027027027027027,
+    "rows": 98,
+    "reasons": {
+      "Safety": {
+        "precision": 0.85,
+        "recall": 0.9444444444444444,
+        "f1": 0.8947368421052632,
+        "positives": 18,
+        "predicted_positive": 20
+      },
+      "Funding": {
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Efficacy": {
+        "precision": 0.8076923076923077,
+        "recall": 0.9545454545454546,
+        "f1": 0.875,
+        "positives": 22,
+        "predicted_positive": 26
+      },
+      "Recruitment": {
+        "precision": 0.926829268292683,
+        "recall": 0.9743589743589743,
+        "f1": 0.95,
+        "positives": 39,
+        "predicted_positive": 41
+      },
+      "Other": {
+        "precision": 0.7647058823529411,
+        "recall": 0.65,
+        "f1": 0.7027027027027027,
+        "positives": 20,
+        "predicted_positive": 17
+      }
+    }
+  }
+]

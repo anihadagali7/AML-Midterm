@@ -1,0 +1,25 @@
+[
+  {
+    "config": {
+      "model": "lowdensity_v2",
+      "cluster_gate": true,
+      "clusters": 10,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "rule": "t0.6",
+    "cv_mean": 0.9221514508138712,
+    "cv_macro": 0.8732665818386843,
+    "averaged_oof": 0.9235668789808917,
+    "validation": {
+      "sample_f1": 0.9017094017094018,
+      "macro_f1": 0.7215873015873016,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.4,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    }
+  }
+]

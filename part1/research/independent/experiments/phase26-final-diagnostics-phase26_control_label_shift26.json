@@ -1,0 +1,40 @@
+{
+  "labels": [
+    {
+      "label": "Safety",
+      "source_prevalence": 0.10191082802547771,
+      "estimated_masked_prevalence": 0.05533826005235169,
+      "applied_log_odds_shift": -0.0,
+      "em_iterations": 24
+    },
+    {
+      "label": "Funding",
+      "source_prevalence": 0.050955414012738856,
+      "estimated_masked_prevalence": 0.01,
+      "applied_log_odds_shift": -0.0,
+      "em_iterations": 4
+    },
+    {
+      "label": "Efficacy",
+      "source_prevalence": 0.10828025477707007,
+      "estimated_masked_prevalence": 0.08427272074538229,
+      "applied_log_odds_shift": -0.0,
+      "em_iterations": 26
+    },
+    {
+      "label": "Recruitment",
+      "source_prevalence": 0.643312101910828,
+      "estimated_masked_prevalence": 0.6774158955712384,
+      "applied_log_odds_shift": 0.0,
+      "em_iterations": 10
+    },
+    {
+      "label": "Other",
+      "source_prevalence": 0.1592356687898089,
+      "estimated_masked_prevalence": 0.14360198617054076,
+      "applied_log_odds_shift": -0.0,
+      "em_iterations": 48
+    }
+  ],
+  "assumption": "Stable feature distribution conditional on each binary reason; not guaranteed for these data."
+}

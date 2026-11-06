@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Semi-supervised learning (scikit-learn documentation)",
+    "url": "https://scikit-learn.org/stable/modules/semi_supervised.html",
+    "use": "Graph propagation/spreading and confidence-controlled pseudo-labeling; not an external source of trial records."
+  },
+  {
+    "title": "Nested versus non-nested cross-validation (scikit-learn)",
+    "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html",
+    "use": "Separate model-selection scores from estimates of generalization."
+  },
+  {
+    "title": "Clustering (scikit-learn documentation)",
+    "url": "https://scikit-learn.org/stable/modules/clustering.html",
+    "use": "Compare geometric assumptions and inductive extensions for multiple cluster families."
+  },
+  {
+    "title": "Zhu, Ghahramani, Lafferty (2003), Semi-Supervised Learning Using Gaussian Fields and Harmonic Functions",
+    "url": "https://www.cs.cornell.edu/courses/cs6241/2019sp/readings/ZGL-2003-SSL.pdf",
+    "use": "Harmonic graph inference with known-label boundary conditions."
+  },
+  {
+    "title": "Zhou et al. (2004), Learning with Local and Global Consistency",
+    "url": "https://www.cs.cornell.edu/courses/cs6241/2020sp/readings/Zhou-2004-global-local.pdf",
+    "use": "Normalized graph diffusion; custom multi-output implementation."
+  },
+  {
+    "title": "Waegeman et al. (2014), On the Bayes-Optimality of F-Measure Maximizers",
+    "url": "https://jmlr.org/papers/v15/waegeman14a.html",
+    "use": "Decision-theoretic motivation for sample-F1 decoder. Our simple enumeration uses independent marginal probabilities, not the full GFM joint-distribution algorithm."
+  },
+  {
+    "title": "Read et al. (2009), Classifier Chains for Multi-label Classification",
+    "url": "https://ml.cms.waikato.ac.nz/publications/2009/chains.pdf",
+    "use": "Evaluate label-dependence models with cross-fitted chain features."
+  },
+  {
+    "title": "RDKit Getting Started",
+    "url": "https://www.rdkit.org/docs/GettingStartedInPython.html",
+    "use": "Morgan fingerprints and numerical descriptors computed only from supplied SMILES."
+  },
+  {
+    "title": "Joachims (1999), Transductive Inference for Text Classification using Support Vector Machines",
+    "url": "https://www.cs.cornell.edu/people/tj/publications/joachims_99c.pdf",
+    "use": "Motivation for low-density semi-supervised margins. Our alternating pseudo-label procedure is a heuristic, not an implementation of the exact TSVM optimization algorithm."
+  },
+  {
+    "title": "Huang et al., Correcting Sample Selection Bias by Unlabeled Data",
+    "url": "https://papers.nips.cc/paper_files/paper/2006/hash/a2186aa7c086b46ad4e8bf81e2a3a19b-Abstract.html",
+    "use": "Kernel mean matching weights, estimated only against original masked training features."
+  },
+  {
+    "title": "On Mixup Regularization",
+    "url": "https://www.jmlr.org/papers/v23/20-1385.html",
+    "use": "Motivation for synthetic interpolation; evaluated with classical logistic/SVM learners only."
+  },
+  {
+    "title": "Nystroem kernel approximation, scikit-learn",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.kernel_approximation.Nystroem.html",
+    "use": "Classical finite kernel features for comparing squared hinge, logistic and squared losses."
+  },
+  {
+    "title": "Cortes, Mohri, Rostamizadeh: Algorithms for Learning Kernels Based on Centered Alignment",
+    "url": "https://www.jmlr.org/papers/v13/cortes12a.html",
+    "use": "Search-gap audit and classical methods; no additional trial data."
+  },
+  {
+    "title": "Zhou and Li: Tri-Training",
+    "url": "https://www.lamda.nju.edu.cn/publication/tkde05.pdf",
+    "use": "Search-gap audit and classical methods; no additional trial data."
+  },
+  {
+    "title": "SVC documentation",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+    "use": "Search-gap audit and classical methods; no additional trial data."
+  },
+  {
+    "title": "Sugiyama, Krauledat, M\u00fcller (2007): Covariate Shift Adaptation by Importance Weighted Cross Validation",
+    "url": "https://www.jmlr.org/papers/v8/sugiyama07a.html",
+    "use": "Motivation for target-aware model selection. Estimated, clipped weights and label-dependent sampling here do not establish an unbiased target-risk guarantee."
+  },
+  {
+    "title": "Breiman: Bagging Predictors",
+    "url": "https://statistics.berkeley.edu/tech-reports/421",
+    "use": "Motivation for averaging fixed bootstrap runs; no best-seed selection."
+  },
+  {
+    "title": "scikit-learn: StackingClassifier",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html",
+    "use": "Meta-learners must learn from out-of-fold component predictions; custom implementation uses embedding-grouped inner folds."
+  },
+  {
+    "title": "Dembczynski et al.: An Exact Algorithm for F-Measure Maximization",
+    "url": "https://proceedings.neurips.cc/paper/2011/hash/71ad16ad2c4d81f348082ff6c4b20768-Abstract.html",
+    "use": "Exact expected sample-F1 decoding under an estimated label-pattern distribution; estimated probabilities need not be correct."
+  },
+  {
+    "title": "Blum and Mitchell: Combining Labeled and Unlabeled Data with Co-Training",
+    "url": "https://www.cs.cmu.edu/~avrim/Papers/cotrain.pdf",
+    "use": "Motivation for separate embedding/metadata views exchanging pseudo-labels. Our quota, agreement, weighting and cluster safeguards are adaptations; the original assumptions are not established here."
+  },
+  {
+    "title": "scikit-learn: NeighborhoodComponentsAnalysis",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NeighborhoodComponentsAnalysis.html",
+    "use": "Gold-only per-reason linear metric learning, combined with original distances in an SVM kernel."
+  },
+  {
+    "title": "scikit-learn: Probability calibration",
+    "url": "https://scikit-learn.org/stable/modules/calibration.html",
+    "use": "OOF score calibration motivates reliability estimates for pseudo-label weighting. Our target distribution is shifted, so calibrated target-domain accuracy is not guaranteed."
+  },
+  {
+    "title": "Segata and Blanzieri: Fast and Scalable Local Kernel Machines",
+    "url": "https://jmlr.org/papers/v11/segata10a.html",
+    "use": "Motivation for local SVM specialists; our overlapping weighted experts and global blending are a separate implementation adapted to this small dataset."
+  },
+  {
+    "title": "Lipton et al. (2018): Detecting and Correcting for Label Shift with Black Box Predictors",
+    "url": "https://proceedings.mlr.press/v80/lipton18a.html",
+    "use": "Motivates estimating changed reason frequencies from unlabeled examples. Our binary soft-confusion estimator uses ridge shrinkage; the stable conditional-distribution assumption may fail here."
+  },
+  {
+    "title": "Belkin et al. (2006): Manifold Regularization",
+    "url": "https://www.jmlr.org/papers/v7/belkin06a.html",
+    "use": "Motivates Laplacian SVM penalties. Our experiment uses a finite 192-component Nystroem kernel approximation and fold-local graph fitting."
+  }
+]

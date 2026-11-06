@@ -1,0 +1,55 @@
+LEAVE-GROUP-OUT 4ab1d52594bc18 0 150
+LEAVE-GROUP-OUT c09fc5fc45a4f3 0 150
+LEAVE-GROUP-OUT 4ab1d52594bc18 30 150
+LEAVE-GROUP-OUT c09fc5fc45a4f3 30 150
+LEAVE-GROUP-OUT 4ab1d52594bc18 60 150
+LEAVE-GROUP-OUT c09fc5fc45a4f3 60 150
+LEAVE-GROUP-OUT 4ab1d52594bc18 90 150
+LEAVE-GROUP-OUT c09fc5fc45a4f3 90 150
+LEAVE-GROUP-OUT 4ab1d52594bc18 120 150
+LEAVE-GROUP-OUT c09fc5fc45a4f3 120 150
+DONE {"config": {"model": "lowdensity_v2", "C": 0.6, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "4ab1d52594bc18", "rule": "t0.5", "cv": 0.8471337579617835, "cv_metrics": {"sample_f1": 0.8471337579617835, "macro_f1": 0.6807326341389268, "f1_Safety": 0.7441860465116279, "f1_Funding": 0.8, "f1_Efficacy": 0.8888888888888888, "f1_Recruitment": 0.9705882352941176, "f1_Other": 0.0}, "n_groups": 150}
+LEAVE-GROUP-OUT 4341f5cd254768 0 150
+DONE {"config": {"model": "lowdensity_v2", "C": 0.4, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "c09fc5fc45a4f3", "rule": "t0.55", "cv": 0.8471337579617835, "cv_metrics": {"sample_f1": 0.8471337579617835, "macro_f1": 0.6819224626847131, "f1_Safety": 0.7272727272727273, "f1_Funding": 0.8421052631578947, "f1_Efficacy": 0.8648648648648649, "f1_Recruitment": 0.9753694581280788, "f1_Other": 0.0}, "n_groups": 150}
+LEAVE-GROUP-OUT 8d0b1da134a89a 0 150
+LEAVE-GROUP-OUT 4341f5cd254768 30 150
+LEAVE-GROUP-OUT 8d0b1da134a89a 30 150
+LEAVE-GROUP-OUT 4341f5cd254768 60 150
+LEAVE-GROUP-OUT 8d0b1da134a89a 60 150
+LEAVE-GROUP-OUT 4341f5cd254768 90 150
+LEAVE-GROUP-OUT 8d0b1da134a89a 90 150
+LEAVE-GROUP-OUT 4341f5cd254768 120 150
+LEAVE-GROUP-OUT 8d0b1da134a89a 120 150
+DONE {"config": {"model": "lowdensity_v2", "C": 0.8, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "4341f5cd254768", "rule": "t0.55", "cv": 0.900212314225053, "cv_metrics": {"sample_f1": 0.900212314225053, "macro_f1": 0.821907642669893, "f1_Safety": 0.8421052631578947, "f1_Funding": 0.8888888888888888, "f1_Efficacy": 0.8888888888888888, "f1_Recruitment": 0.9753694581280788, "f1_Other": 0.5142857142857142}, "n_groups": 150}
+LEAVE-GROUP-OUT 9a40d45b79cf90 0 150
+DONE {"config": {"model": "lowdensity_v2", "C": 1, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "8d0b1da134a89a", "rule": "t0.55", "cv": 0.9235668789808917, "cv_metrics": {"sample_f1": 0.9235668789808917, "macro_f1": 0.8788460671624971, "f1_Safety": 0.9411764705882353, "f1_Funding": 0.9411764705882353, "f1_Efficacy": 0.9142857142857143, "f1_Recruitment": 0.9753694581280788, "f1_Other": 0.6222222222222222}, "n_groups": 150}
+LEAVE-GROUP-OUT 3907d2a5c56340 0 150
+LEAVE-GROUP-OUT 9a40d45b79cf90 30 150
+LEAVE-GROUP-OUT 3907d2a5c56340 30 150
+LEAVE-GROUP-OUT 9a40d45b79cf90 60 150
+LEAVE-GROUP-OUT 3907d2a5c56340 60 150
+LEAVE-GROUP-OUT 9a40d45b79cf90 90 150
+LEAVE-GROUP-OUT 3907d2a5c56340 90 150
+LEAVE-GROUP-OUT 9a40d45b79cf90 120 150
+LEAVE-GROUP-OUT 3907d2a5c56340 120 150
+DONE {"config": {"model": "lowdensity_v2", "C": 1.5, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "9a40d45b79cf90", "rule": "t0.5", "cv": 0.9044585987261147, "cv_metrics": {"sample_f1": 0.9044585987261147, "macro_f1": 0.8562813147858014, "f1_Safety": 0.9411764705882353, "f1_Funding": 0.8888888888888888, "f1_Efficacy": 0.9142857142857143, "f1_Recruitment": 0.9607843137254902, "f1_Other": 0.576271186440678}, "n_groups": 150}
+LEAVE-GROUP-OUT 6e84e053f2422a 0 150
+DONE {"config": {"model": "lowdensity_v2", "C": 2, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "3907d2a5c56340", "rule": "t0.5", "cv": 0.9023354564755838, "cv_metrics": {"sample_f1": 0.9023354564755838, "macro_f1": 0.854360410830999, "f1_Safety": 0.9411764705882353, "f1_Funding": 0.8888888888888888, "f1_Efficacy": 0.9142857142857143, "f1_Recruitment": 0.9607843137254902, "f1_Other": 0.5666666666666667}, "n_groups": 150}
+LEAVE-GROUP-OUT 5d7f009a1cf210 0 150
+LEAVE-GROUP-OUT 5d7f009a1cf210 30 150
+LEAVE-GROUP-OUT 6e84e053f2422a 30 150
+LEAVE-GROUP-OUT 5d7f009a1cf210 60 150
+LEAVE-GROUP-OUT 6e84e053f2422a 60 150
+LEAVE-GROUP-OUT 5d7f009a1cf210 90 150
+LEAVE-GROUP-OUT 6e84e053f2422a 90 150
+LEAVE-GROUP-OUT 5d7f009a1cf210 120 150
+LEAVE-GROUP-OUT 6e84e053f2422a 120 150
+DONE {"config": {"model": "lowdensity_v2", "C": 1, "gamma": 0.002, "pseudo_weight": 0.03}, "id": "5d7f009a1cf210", "rule": "t0.55", "cv": 0.9044585987261147, "cv_metrics": {"sample_f1": 0.9044585987261147, "macro_f1": 0.8646075762428383, "f1_Safety": 0.9375, "f1_Funding": 0.9411764705882353, "f1_Efficacy": 0.8823529411764706, "f1_Recruitment": 0.9655172413793104, "f1_Other": 0.5964912280701754}, "n_groups": 150}
+LEAVE-GROUP-OUT 95080f750f4874 0 150
+DONE {"config": {"model": "lowdensity_v2", "C": 1, "gamma": 0.0006, "pseudo_weight": 0.03}, "id": "6e84e053f2422a", "rule": "expected_f1", "cv": 0.8585987261146497, "cv_metrics": {"sample_f1": 0.8585987261146497, "macro_f1": 0.6958240759041442, "f1_Safety": 0.5714285714285714, "f1_Funding": 0.6956521739130435, "f1_Efficacy": 0.6530612244897959, "f1_Recruitment": 0.9478672985781991, "f1_Other": 0.6111111111111112}, "n_groups": 150}
+LEAVE-GROUP-OUT 95080f750f4874 30 150
+LEAVE-GROUP-OUT 95080f750f4874 60 150
+LEAVE-GROUP-OUT 95080f750f4874 90 150
+LEAVE-GROUP-OUT 95080f750f4874 120 150
+DONE {"config": {"model": "lowdensity_v2", "C": 1, "gamma": 0.001, "pseudo_weight": 0.03, "cluster_gate": true, "clusters": 10}, "id": "95080f750f4874", "rule": "t0.55", "cv": 0.9235668789808917, "cv_metrics": {"sample_f1": 0.9235668789808917, "macro_f1": 0.8782111465275765, "f1_Safety": 0.9411764705882353, "f1_Funding": 0.9411764705882353, "f1_Efficacy": 0.9142857142857143, "f1_Recruitment": 0.9753694581280788, "f1_Other": 0.6190476190476191}, "n_groups": 150}
+VALIDATION {"config": {"model": "lowdensity_v2", "C": 1, "gamma": 0.001, "pseudo_weight": 0.03}, "id": "8d0b1da134a89a", "rule": "t0.55", "cv": 0.9235668789808917, "cv_metrics": {"sample_f1": 0.9235668789808917, "macro_f1": 0.8788460671624971, "f1_Safety": 0.9411764705882353, "f1_Funding": 0.9411764705882353, "f1_Efficacy": 0.9142857142857143, "f1_Recruitment": 0.9753694581280788, "f1_Other": 0.6222222222222222}, "n_groups": 150, "validation": {"sample_f1": 0.9102564102564102, "macro_f1": 0.78, "f1_Safety": 0.9, "f1_Funding": 0.6666666666666666, "f1_Efficacy": 0.8, "f1_Recruitment": 1.0, "f1_Other": 0.5333333333333333}}

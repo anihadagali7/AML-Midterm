@@ -1,0 +1,546 @@
+[
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.1,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "logistic",
+    "C": 0.3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 3,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.05,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.8,
+    "labelwise": true,
+    "consensus": true
+  },
+  {
+    "model": "pseudo",
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "student": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "global",
+    "pseudo_weight": 0.2,
+    "confidence": 0.95,
+    "labelwise": true,
+    "consensus": true
+  }
+]

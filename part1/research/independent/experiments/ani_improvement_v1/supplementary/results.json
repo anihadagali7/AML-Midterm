@@ -1,0 +1,818 @@
+[
+  {
+    "candidate": "Ani frozen control",
+    "window": 0,
+    "window_name": "original_validation",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window0_model0.csv",
+    "sample_f1": 0.8910256410256411,
+    "macro_f1": 0.7107377332544615,
+    "f1_Safety": 0.9473684210526315,
+    "f1_Funding": 0.4,
+    "f1_Efficacy": 0.7741935483870968,
+    "f1_Recruitment": 0.9615384615384616,
+    "f1_Other": 0.47058823529411764,
+    "rows": 78,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "positives": 4,
+        "predicted_positive": 1
+      },
+      "Efficacy": {
+        "precision": 0.7058823529411765,
+        "recall": 0.8571428571428571,
+        "f1": 0.7741935483870968,
+        "positives": 14,
+        "predicted_positive": 17
+      },
+      "Recruitment": {
+        "precision": 0.9259259259259259,
+        "recall": 1.0,
+        "f1": 0.9615384615384616,
+        "positives": 50,
+        "predicted_positive": 54
+      },
+      "Other": {
+        "precision": 0.5714285714285714,
+        "recall": 0.4,
+        "f1": 0.47058823529411764,
+        "positives": 10,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 25%",
+    "window": 0,
+    "window_name": "original_validation",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window0_model2.csv",
+    "sample_f1": 0.8888888888888888,
+    "macro_f1": 0.7508387096774193,
+    "f1_Safety": 0.8888888888888888,
+    "f1_Funding": 0.6666666666666666,
+    "f1_Efficacy": 0.7741935483870968,
+    "f1_Recruitment": 0.98,
+    "f1_Other": 0.4444444444444444,
+    "rows": 78,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "positives": 9,
+        "predicted_positive": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "positives": 4,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 0.7058823529411765,
+        "recall": 0.8571428571428571,
+        "f1": 0.7741935483870968,
+        "positives": 14,
+        "predicted_positive": 17
+      },
+      "Recruitment": {
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1": 0.98,
+        "positives": 50,
+        "predicted_positive": 50
+      },
+      "Other": {
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444444,
+        "positives": 10,
+        "predicted_positive": 8
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 40%",
+    "window": 0,
+    "window_name": "original_validation",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window0_model3.csv",
+    "sample_f1": 0.8589743589743589,
+    "macro_f1": 0.7198930659983291,
+    "f1_Safety": 0.8888888888888888,
+    "f1_Funding": 0.6666666666666666,
+    "f1_Efficacy": 0.6428571428571429,
+    "f1_Recruitment": 0.98,
+    "f1_Other": 0.42105263157894735,
+    "rows": 78,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "positives": 9,
+        "predicted_positive": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "positives": 4,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 0.6428571428571429,
+        "recall": 0.6428571428571429,
+        "f1": 0.6428571428571429,
+        "positives": 14,
+        "predicted_positive": 14
+      },
+      "Recruitment": {
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1": 0.98,
+        "positives": 50,
+        "predicted_positive": 50
+      },
+      "Other": {
+        "precision": 0.4444444444444444,
+        "recall": 0.4,
+        "f1": 0.42105263157894735,
+        "positives": 10,
+        "predicted_positive": 9
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "window": 0,
+    "window_name": "original_validation",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window0_model6.csv",
+    "sample_f1": 0.9102564102564102,
+    "macro_f1": 0.7808268195240576,
+    "f1_Safety": 0.9473684210526315,
+    "f1_Funding": 0.6666666666666666,
+    "f1_Efficacy": 0.8,
+    "f1_Recruitment": 0.9900990099009901,
+    "f1_Other": 0.5,
+    "rows": 78,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "positives": 9,
+        "predicted_positive": 10
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "positives": 4,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "positives": 14,
+        "predicted_positive": 16
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "positives": 50,
+        "predicted_positive": 51
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "positives": 10,
+        "predicted_positive": 6
+      }
+    }
+  },
+  {
+    "candidate": "Ani frozen control",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window1_model0.csv",
+    "sample_f1": 0.8376068376068375,
+    "macro_f1": 0.8012554112554113,
+    "f1_Safety": 0.8571428571428571,
+    "f1_Funding": 0.75,
+    "f1_Efficacy": 0.8181818181818182,
+    "f1_Recruitment": 0.9142857142857143,
+    "f1_Other": 0.6666666666666666,
+    "rows": 39,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "positives": 4,
+        "predicted_positive": 3
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "positives": 4,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.9,
+        "f1": 0.8181818181818182,
+        "positives": 10,
+        "predicted_positive": 12
+      },
+      "Recruitment": {
+        "precision": 0.8888888888888888,
+        "recall": 0.9411764705882353,
+        "f1": 0.9142857142857143,
+        "positives": 17,
+        "predicted_positive": 18
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "positives": 8,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 25%",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window1_model2.csv",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "f1_Safety": 0.8571428571428571,
+    "f1_Funding": 0.75,
+    "f1_Efficacy": 0.8695652173913043,
+    "f1_Recruitment": 0.9714285714285714,
+    "f1_Other": 0.6666666666666666,
+    "rows": 39,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "positives": 4,
+        "predicted_positive": 3
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "positives": 4,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "positives": 10,
+        "predicted_positive": 13
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "positives": 17,
+        "predicted_positive": 18
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "positives": 8,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 40%",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window1_model3.csv",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.8286749482401656,
+    "f1_Safety": 0.8571428571428571,
+    "f1_Funding": 0.75,
+    "f1_Efficacy": 0.8695652173913043,
+    "f1_Recruitment": 1.0,
+    "f1_Other": 0.6666666666666666,
+    "rows": 39,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "positives": 4,
+        "predicted_positive": 3
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "positives": 4,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "positives": 10,
+        "predicted_positive": 13
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 17,
+        "predicted_positive": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "positives": 8,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window1_model6.csv",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "f1_Safety": 0.8571428571428571,
+    "f1_Funding": 0.75,
+    "f1_Efficacy": 0.8695652173913043,
+    "f1_Recruitment": 0.9714285714285714,
+    "f1_Other": 0.6666666666666666,
+    "rows": 39,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "positives": 4,
+        "predicted_positive": 3
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "positives": 4,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "positives": 10,
+        "predicted_positive": 13
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "positives": 17,
+        "predicted_positive": 18
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "positives": 8,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani frozen control",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window2_model0.csv",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7192307692307692,
+    "f1_Safety": 0.9230769230769231,
+    "f1_Funding": 0.0,
+    "f1_Efficacy": 1.0,
+    "f1_Recruitment": 0.9230769230769231,
+    "f1_Other": 0.75,
+    "rows": 22,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.9230769230769231,
+        "positives": 7,
+        "predicted_positive": 6
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "positives": 0,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "positives": 6,
+        "predicted_positive": 7
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "positives": 5,
+        "predicted_positive": 3
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 25%",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window2_model2.csv",
+    "sample_f1": 0.9090909090909091,
+    "macro_f1": 0.75,
+    "f1_Safety": 1.0,
+    "f1_Funding": 0.0,
+    "f1_Efficacy": 1.0,
+    "f1_Recruitment": 1.0,
+    "f1_Other": 0.75,
+    "rows": 22,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 7,
+        "predicted_positive": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "positives": 0,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "positives": 5,
+        "predicted_positive": 3
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 40%",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window2_model3.csv",
+    "sample_f1": 0.8939393939393938,
+    "macro_f1": 0.7333333333333333,
+    "f1_Safety": 1.0,
+    "f1_Funding": 0.0,
+    "f1_Efficacy": 1.0,
+    "f1_Recruitment": 1.0,
+    "f1_Other": 0.6666666666666666,
+    "rows": 22,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 7,
+        "predicted_positive": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "positives": 0,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Other": {
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6666666666666666,
+        "positives": 5,
+        "predicted_positive": 4
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window2_model6.csv",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "f1_Safety": 0.9333333333333333,
+    "f1_Funding": 0.0,
+    "f1_Efficacy": 1.0,
+    "f1_Recruitment": 0.9230769230769231,
+    "f1_Other": 0.75,
+    "rows": 22,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "positives": 7,
+        "predicted_positive": 8
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "positives": 0,
+        "predicted_positive": 2
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "positives": 6,
+        "predicted_positive": 7
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "positives": 5,
+        "predicted_positive": 3
+      }
+    }
+  },
+  {
+    "candidate": "Ani frozen control",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window3_model0.csv",
+    "sample_f1": 0.8738738738738737,
+    "macro_f1": 0.8393753200204813,
+    "f1_Safety": 0.8571428571428571,
+    "f1_Funding": 0.8888888888888888,
+    "f1_Efficacy": 0.8333333333333334,
+    "f1_Recruitment": 0.9032258064516129,
+    "f1_Other": 0.7142857142857143,
+    "rows": 37,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "positives": 7,
+        "predicted_positive": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "positives": 5,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "positives": 6,
+        "predicted_positive": 6
+      },
+      "Recruitment": {
+        "precision": 0.9333333333333333,
+        "recall": 0.875,
+        "f1": 0.9032258064516129,
+        "positives": 16,
+        "predicted_positive": 15
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "positives": 7,
+        "predicted_positive": 7
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 25%",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window3_model2.csv",
+    "sample_f1": 0.882882882882883,
+    "macro_f1": 0.848935759580921,
+    "f1_Safety": 0.9333333333333333,
+    "f1_Funding": 0.8888888888888888,
+    "f1_Efficacy": 0.7692307692307693,
+    "f1_Recruitment": 0.9032258064516129,
+    "f1_Other": 0.75,
+    "rows": 37,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "positives": 7,
+        "predicted_positive": 8
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "positives": 5,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "positives": 6,
+        "predicted_positive": 7
+      },
+      "Recruitment": {
+        "precision": 0.9333333333333333,
+        "recall": 0.875,
+        "f1": 0.9032258064516129,
+        "positives": 16,
+        "predicted_positive": 15
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.8571428571428571,
+        "f1": 0.75,
+        "positives": 7,
+        "predicted_positive": 9
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri 40%",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window3_model3.csv",
+    "sample_f1": 0.8738738738738737,
+    "macro_f1": 0.8381547748610567,
+    "f1_Safety": 0.9333333333333333,
+    "f1_Funding": 0.8888888888888888,
+    "f1_Efficacy": 0.7692307692307693,
+    "f1_Recruitment": 0.967741935483871,
+    "f1_Other": 0.631578947368421,
+    "rows": 37,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "positives": 7,
+        "predicted_positive": 8
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "positives": 5,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "positives": 6,
+        "predicted_positive": 7
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 0.9375,
+        "f1": 0.967741935483871,
+        "positives": 16,
+        "predicted_positive": 15
+      },
+      "Other": {
+        "precision": 0.5,
+        "recall": 0.8571428571428571,
+        "f1": 0.631578947368421,
+        "positives": 7,
+        "predicted_positive": 12
+      }
+    }
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "prediction_file": "experiments/ani_improvement_v1/supplementary/window3_model6.csv",
+    "sample_f1": 0.882882882882883,
+    "macro_f1": 0.8369810744810744,
+    "f1_Safety": 0.875,
+    "f1_Funding": 0.8888888888888888,
+    "f1_Efficacy": 0.7692307692307693,
+    "f1_Recruitment": 0.9375,
+    "f1_Other": 0.7142857142857143,
+    "rows": 37,
+    "reasons": {
+      "Safety": {
+        "precision": 0.7777777777777778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "positives": 7,
+        "predicted_positive": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "positives": 5,
+        "predicted_positive": 4
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "positives": 6,
+        "predicted_positive": 7
+      },
+      "Recruitment": {
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1": 0.9375,
+        "positives": 16,
+        "predicted_positive": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "positives": 7,
+        "predicted_positive": 7
+      }
+    }
+  }
+]

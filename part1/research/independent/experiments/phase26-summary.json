@@ -1,0 +1,86 @@
+{
+  "raw_configurations": 84,
+  "family_counts": {
+    "label_shift26": 24,
+    "lap_svm26": 36,
+    "other_subclasses26": 24
+  },
+  "baseline_validation_f1": 0.9123931623931625,
+  "baseline_matched_cv": 0.9174805378627034,
+  "repeat_seeds": [
+    20261123,
+    20261124,
+    20261125
+  ],
+  "validation_comparisons": 6,
+  "results": [
+    {
+      "name": "phase26_label_shift26",
+      "matched_control": false,
+      "cv": 0.9306440198159943,
+      "cv_std": 0.003608647921863222,
+      "validation": 0.8717948717948718,
+      "macro": 0.7537373737373738
+    },
+    {
+      "name": "phase26_lap_svm26",
+      "matched_control": false,
+      "cv": 0.9221514508138712,
+      "cv_std": 0.003608647921863222,
+      "validation": 0.8803418803418804,
+      "macro": 0.7651592851592852
+    },
+    {
+      "name": "phase26_other_subclasses26",
+      "matched_control": false,
+      "cv": 0.9281670205237084,
+      "cv_std": 0.00563955323797212,
+      "validation": 0.8974358974358975,
+      "macro": 0.7713131313131314
+    },
+    {
+      "name": "phase26_control_label_shift26",
+      "matched_control": true,
+      "cv": 0.9313517338995045,
+      "cv_std": 0.0026480236282901306,
+      "validation": 0.8760683760683762,
+      "macro": 0.758932178932179
+    },
+    {
+      "name": "phase26_control_lap_svm26",
+      "matched_control": true,
+      "cv": 0.9221514508138711,
+      "cv_std": 0.005004294275913286,
+      "validation": 0.8589743589743589,
+      "macro": 0.7442020202020203
+    },
+    {
+      "name": "phase26_control_other_subclasses26",
+      "matched_control": true,
+      "cv": 0.927105449398443,
+      "cv_std": 0.005004294275913234,
+      "validation": 0.8974358974358975,
+      "macro": 0.7713131313131314
+    }
+  ],
+  "baseline_retained": true,
+  "current_validation_f1": 0.9123931623931625,
+  "reported_leader": "0.93xx; exact score unknown",
+  "kaggle_score": null,
+  "validation_fit": false,
+  "final_train_plus_validation_refit": false,
+  "matched_effects": {
+    "label_shift26": {
+      "cv_difference": -0.0007077140835102247,
+      "validation_difference": -0.004273504273504369
+    },
+    "lap_svm26": {
+      "cv_difference": 1.1102230246251565e-16,
+      "validation_difference": 0.021367521367521514
+    },
+    "other_subclasses26": {
+      "cv_difference": 0.0010615711252653925,
+      "validation_difference": 0.0
+    }
+  }
+}

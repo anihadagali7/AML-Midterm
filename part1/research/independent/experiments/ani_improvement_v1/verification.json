@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "stage": "train3",
+      "candidate": "Ani frozen control",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + tri 10%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + tri 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + tri 40%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + SVM 10%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + SVM 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani + tri/SVM 15% each",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani pseudo weight 0.5",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani pseudo weight 0.25",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani agreement, pseudo weight 1.0",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani agreement, pseudo weight 0.5",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani three-GMM-seed average",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani inner-CV Other threshold",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani Other specialist 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train3",
+      "candidate": "Ani Other specialist 50%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "train5",
+      "candidate": "Ani frozen control",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "train5",
+      "candidate": "Ani + tri 10%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "train5",
+      "candidate": "Ani + tri 25%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "train5",
+      "candidate": "Ani + tri 40%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "train5",
+      "candidate": "Ani + tri/SVM 15% each",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani frozen control",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + tri 10%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + tri 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + tri 40%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + SVM 10%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + SVM 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani + tri/SVM 15% each",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani pseudo weight 0.5",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani pseudo weight 0.25",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani agreement, pseudo weight 1.0",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani agreement, pseudo weight 0.5",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani three-GMM-seed average",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani inner-CV Other threshold",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani Other specialist 25%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled3",
+      "candidate": "Ani Other specialist 50%",
+      "repeats_rescored": 3
+    },
+    {
+      "stage": "pooled5",
+      "candidate": "Ani frozen control",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "pooled5",
+      "candidate": "Ani + tri 10%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "pooled5",
+      "candidate": "Ani + tri 25%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "pooled5",
+      "candidate": "Ani + tri 40%",
+      "repeats_rescored": 5
+    },
+    {
+      "stage": "pooled5",
+      "candidate": "Ani + tri/SVM 15% each",
+      "repeats_rescored": 5
+    }
+  ],
+  "baseline_predictions_identical_to_prior_benchmark": true,
+  "all_gold_labels_and_ids_verified": true,
+  "protected_sha256": {
+    "data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "experiments/current-best.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "predictions/current_best/validation_audit.csv": "b683abbf3c3d01392833ef9877766c8bcce9c7fe291409d07aa33d698108921a",
+    "predictions/current_best/part1_submission.csv": "f9a287fb1d28fd9a6bbc0c583ac84ec2061e72945e2fbeb5aced9ff5b15ff44a",
+    "predictions/current_best/validation_scores.csv": "dc475b272a99f24520bc47682273b485f4018f8e00f100baa06089b60d84ce83",
+    "predictions/current_best/part1_train_augmented.csv": "fa6c5894184d81c4b2b90467bd4c1ef504567daf9f8968def4e737baedcf1f46",
+    "predictions/current_best/manifest.json": "bd32730504c4a24d26fcc1a55e21aaaf7897f0789c670f3dab54726bc12ad4e3",
+    "predictions/current_best/test_scores.csv": "db64f853769ab10bb40c93f118fa099878a45032f8a119870d003139542269dd",
+    "predictions/current_best/unlabeled_scores.csv": "d0ed4baccbd40f4894b34d51cdd26540a24d55aed5b4e81f2e404303423a9bc6",
+    "experiments/benchmark_v1/protocol.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "experiments/benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/benchmark_v1/comparison.csv": "e0ff75e2fd069c9a5f520acc8e81027fe930445668890e29e808b26f6f0562d8",
+    "experiments/pooled_benchmark_v1/protocol.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "experiments/pooled_benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/pooled_benchmark_v1/comparison.csv": "25a2dbc6f8700855e34f1c978f3cd7e7c6e121f83695519d2f4019bd4dfea97f",
+    "predictions/part1_tri_training_trainval235.csv": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145",
+    "predictions/tri_training_trainval235/kaggle_result.json": "3de4f154ac478ff059fbf83225ac7b18f098feafbbb00e1eeab16b9d25ec7f1d"
+  },
+  "source_sha256": {
+    "ani_improvements.py": "3fb99f5366dd8eaf3bea41e014f7519b32b23830dc40e437dd625dc1e001eb5d",
+    "run_ani_improvements.py": "2af8c0d0002d131141c6be0241f6c75f7e9e23262a484f98033e6300eade4c5b"
+  }
+}

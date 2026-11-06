@@ -1,0 +1,75 @@
+{
+  "frozen_at": "2026-11-05T05:02:33.486819+00:00",
+  "candidates": [
+    {
+      "name": "inductive",
+      "config": {
+        "model": "lowdensity_v3",
+        "C": 2,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03,
+        "transductive": false,
+        "gradual": true,
+        "iterations": 15
+      },
+      "rule": "t0.55",
+      "cv": 0.910828025477707,
+      "cv_mean": 0.9111818825194623,
+      "cv_macro": 0.8679688120458913
+    },
+    {
+      "name": "inductive_cluster",
+      "config": {
+        "model": "lowdensity_v3",
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03,
+        "transductive": false,
+        "gradual": true,
+        "iterations": 15,
+        "cluster_gate": true,
+        "clusters": 10,
+        "gate_weight": 0.5
+      },
+      "rule": "t0.55",
+      "cv": 0.8925690021231422,
+      "cv_mean": 0.8895966029723992,
+      "cv_macro": 0.856243647886482
+    },
+    {
+      "name": "transductive",
+      "config": {
+        "model": "lowdensity_v3",
+        "C": 2,
+        "gamma": 0.001,
+        "pseudo_weight": 0.01,
+        "transductive": true,
+        "gradual": true,
+        "iterations": 15
+      },
+      "rule": "t0.55",
+      "cv": 0.9150743099787687,
+      "cv_mean": 0.9076433121019107,
+      "cv_macro": 0.8755220271805397
+    },
+    {
+      "name": "transductive_cluster",
+      "config": {
+        "model": "lowdensity_v3",
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03,
+        "transductive": true,
+        "gradual": true,
+        "iterations": 15,
+        "cluster_gate": true,
+        "clusters": 10,
+        "gate_weight": 0.5
+      },
+      "rule": "t0.55",
+      "cv": 0.8989384288747345,
+      "cv_mean": 0.8860580325548479,
+      "cv_macro": 0.8501149922171156
+    }
+  ]
+}

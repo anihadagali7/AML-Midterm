@@ -1,0 +1,265 @@
+{
+  "name": "75/25 + Other specialist 50%",
+  "status": "ok",
+  "key": "15f6f60cf1479f2da718",
+  "config": {
+    "model": "ani_combination",
+    "weights": {
+      "ani": 0.75,
+      "tri": 0.25
+    },
+    "other": {
+      "specialist_weight": 0.5
+    },
+    "source_sha256": {
+      "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+      "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+    }
+  },
+  "rule": "t0.5",
+  "protocol_sha256": "146b2710e778e481aec97626090799d1c8540f774c8475b1bdcdb627f49690df",
+  "source_sha256": {
+    "experiment.py": "bf4584f8af7ffbfa6945a447da2d3b528fb207a93be5ae61e312d7ef7ed074bd",
+    "benchmark_cv.py": "81516a4cb0a98e1073c64693a538bd36c5c61e0c7d213ea6eb5d542f425e0807",
+    "phase21.py": "5d6b5d5c54f19943fba9a5533c48938b1b5afcafe7f0865659f4fc2498300dcc",
+    "phase4.py": "81f84b0b7d63f11dd1ed94228a71b821574b1e57c571941ce9bfc2b78daaeca4",
+    "phase11.py": "c7670388bb191c72a04cc548476a40223659c789f304bba3088d7d64210bee20",
+    "phase25.py": "eb6d5eb104f530a676b4c14549b9075b7544898f4fb86885c0f473b92c311ffd",
+    "phase5.py": "ae1a0164e36de0eb8ba979fb7493d7e53423a83d14ab68da7ada45fc1fcaf6e7",
+    "phase10.py": "699091e038b267283a079fcb70f4478fdab10d0b9835fd8e2ee765f5d7f78da4",
+    "phase24.py": "3baa7d6205211d7989fb801fb6d96461dc8f1f8cf143e811db99f8ec6fcb4217",
+    "phase20.py": "6b5642e9c333cf8e8bfde9d51665d33a70012ccf2d67409caae8ee6cc8a05692",
+    "phase14.py": "74ed2f4aa227620334c505a1825c1e06b55285ff8fb4b129db313b907aa231e4",
+    "phase8.py": "b358eb8324a2bc8f8c497d047aa8512ad712615cab3c52eec537d030acf1f09b",
+    "phase9.py": "5a9c52cd235125d32249faab0d7932786f4c0578efa42656f83b14299d1fab37",
+    "phase18.py": "4c453eb76eb1a633c16ee53873d334d3d10c4c573f7d5e4863ac827694a7ce3c",
+    "phase6.py": "37e3eba538946985edda221725b42c2940650d33548446ee46149b8ddf106533",
+    "phase23.py": "634494f719756ed4273552a53dc93f95ec76f78048d72c5e34365cb5aec710d3",
+    "phase17.py": "8f490c261b032a2869ee6e726e39f6e85cc54c2ef65bf3a02f6da75693f66841",
+    "phase3.py": "53cfbb46726de7009c7ca2e062d48426bb71b99e8f50b23a340a927ff1936467",
+    "phase22.py": "ce837c5e83daca1a05fe6df25842e6b4336917a8e27514e029bfe9d0e5c6ab1b",
+    "phase16.py": "9dcca68690fdcdad0fe04e5e96dfee268f3016886f9fbcbcbbd4f380716d98b7",
+    "phase7.py": "ff64ae8dc0f91bb9f0489630a96c85ca7dbbd87829001eb503d734cf09b2eb1d",
+    "phase26.py": "82f76d2f4e6278d63bd13924d1147fa25c723881f794afd932165e2bf4050bc8",
+    "experiments/phase22-baseline.json": "bf987b6a247da5bda1588629fbaa0f8f39f728483df5e47a1cfbb33c13de92c0",
+    "experiments/phase24-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "experiments/phase25-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "experiments/phase26-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f"
+  },
+  "cv_mean": 0.9130023640661938,
+  "repeat_std": 0.005222392915927787,
+  "cv_macro": 0.8298227774182142,
+  "repeat_scores": [
+    {
+      "sample_f1": 0.9063829787234042,
+      "macro_f1": 0.8159594526753295,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.75,
+      "f1_Efficacy": 0.8387096774193549,
+      "f1_Recruitment": 0.9771986970684039,
+      "f1_Other": 0.625
+    },
+    {
+      "sample_f1": 0.9191489361702128,
+      "macro_f1": 0.8481632615750263,
+      "f1_Safety": 0.88,
+      "f1_Funding": 0.8181818181818182,
+      "f1_Efficacy": 0.8923076923076924,
+      "f1_Recruitment": 0.9738562091503268,
+      "f1_Other": 0.6764705882352942
+    },
+    {
+      "sample_f1": 0.9134751773049644,
+      "macro_f1": 0.8253456180042867,
+      "f1_Safety": 0.9411764705882353,
+      "f1_Funding": 0.75,
+      "f1_Efficacy": 0.8615384615384616,
+      "f1_Recruitment": 0.9802631578947368,
+      "f1_Other": 0.59375
+    }
+  ],
+  "fold_scores": [
+    {
+      "seed": 20261126,
+      "fold": 0,
+      "rows": 52,
+      "sample_f1": 0.9166666666666667,
+      "macro_f1": 0.8440293040293041,
+      "f1_Safety": 0.8333333333333334,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 1.0,
+      "f1_Recruitment": 0.9714285714285714,
+      "f1_Other": 0.6153846153846154
+    },
+    {
+      "seed": 20261126,
+      "fold": 1,
+      "rows": 42,
+      "sample_f1": 0.8015873015873015,
+      "macro_f1": 0.6593939393939394,
+      "f1_Safety": 1.0,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.36363636363636365,
+      "f1_Recruitment": 0.9333333333333333,
+      "f1_Other": 0.2
+    },
+    {
+      "seed": 20261126,
+      "fold": 2,
+      "rows": 45,
+      "sample_f1": 0.9259259259259258,
+      "macro_f1": 0.818997668997669,
+      "f1_Safety": 0.9090909090909091,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.75,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.7692307692307693
+    },
+    {
+      "seed": 20261126,
+      "fold": 3,
+      "rows": 50,
+      "sample_f1": 0.9599999999999999,
+      "macro_f1": 0.8714285714285713,
+      "f1_Safety": 0.8333333333333334,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 1.0,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.8571428571428571
+    },
+    {
+      "seed": 20261126,
+      "fold": 4,
+      "rows": 46,
+      "sample_f1": 0.9130434782608695,
+      "macro_f1": 0.8353403282216842,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.9333333333333333,
+      "f1_Recruitment": 0.9830508474576272,
+      "f1_Other": 0.5714285714285714
+    },
+    {
+      "seed": 20261127,
+      "fold": 0,
+      "rows": 46,
+      "sample_f1": 0.9202898550724636,
+      "macro_f1": 0.8262626262626263,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.9090909090909091,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.5333333333333333
+    },
+    {
+      "seed": 20261127,
+      "fold": 1,
+      "rows": 45,
+      "sample_f1": 0.9703703703703703,
+      "macro_f1": 0.9456975772765246,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 1.0,
+      "f1_Efficacy": 1.0,
+      "f1_Recruitment": 0.9824561403508771,
+      "f1_Other": 0.8571428571428571
+    },
+    {
+      "seed": 20261127,
+      "fold": 2,
+      "rows": 45,
+      "sample_f1": 0.9037037037037037,
+      "macro_f1": 0.7744990892531877,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.5,
+      "f1_Efficacy": 0.8333333333333334,
+      "f1_Recruitment": 0.9836065573770492,
+      "f1_Other": 0.6666666666666666
+    },
+    {
+      "seed": 20261127,
+      "fold": 3,
+      "rows": 47,
+      "sample_f1": 0.9432624113475178,
+      "macro_f1": 0.8800534759358289,
+      "f1_Safety": 0.9090909090909091,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.9411764705882353,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.75
+    },
+    {
+      "seed": 20261127,
+      "fold": 4,
+      "rows": 52,
+      "sample_f1": 0.8653846153846154,
+      "macro_f1": 0.8045454545454545,
+      "f1_Safety": 0.8333333333333334,
+      "f1_Funding": 1.0,
+      "f1_Efficacy": 0.7272727272727273,
+      "f1_Recruitment": 0.9166666666666666,
+      "f1_Other": 0.5454545454545454
+    },
+    {
+      "seed": 20261128,
+      "fold": 0,
+      "rows": 51,
+      "sample_f1": 0.9084967320261437,
+      "macro_f1": 0.8361803713527852,
+      "f1_Safety": 1.0,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9655172413793104,
+      "f1_Other": 0.6153846153846154
+    },
+    {
+      "seed": 20261128,
+      "fold": 1,
+      "rows": 47,
+      "sample_f1": 0.9290780141843971,
+      "macro_f1": 0.8741176470588234,
+      "f1_Safety": 1.0,
+      "f1_Funding": 1.0,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9705882352941176,
+      "f1_Other": 0.6
+    },
+    {
+      "seed": 20261128,
+      "fold": 2,
+      "rows": 50,
+      "sample_f1": 0.92,
+      "macro_f1": 0.8493772893772894,
+      "f1_Safety": 0.9230769230769231,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.8571428571428571,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.6666666666666666
+    },
+    {
+      "seed": 20261128,
+      "fold": 3,
+      "rows": 44,
+      "sample_f1": 0.9166666666666665,
+      "macro_f1": 0.8099435028248587,
+      "f1_Safety": 0.8,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 1.0,
+      "f1_Recruitment": 0.9830508474576272,
+      "f1_Other": 0.6
+    },
+    {
+      "seed": 20261128,
+      "fold": 4,
+      "rows": 43,
+      "sample_f1": 0.8914728682170542,
+      "macro_f1": 0.7707360436173996,
+      "f1_Safety": 1.0,
+      "f1_Funding": 0.5,
+      "f1_Efficacy": 0.9090909090909091,
+      "f1_Recruitment": 0.9830508474576272,
+      "f1_Other": 0.46153846153846156
+    }
+  ],
+  "seconds": 20.204,
+  "finished_at": "2026-11-06T04:37:00.597903+00:00"
+}

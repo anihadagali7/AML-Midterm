@@ -1,0 +1,614 @@
+[
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.25,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.25,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.25,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.25,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.5,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.5,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.5,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 0.5,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 1,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 1,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 1,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "em",
+    "strength": 1,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.25,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.25,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.25,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.25,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.5,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.5,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.5,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 0.5,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 1,
+    "output": "raw",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 1,
+    "output": "raw",
+    "calibration_C": 3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 1,
+    "output": "calibrated",
+    "calibration_C": 0.3
+  },
+  {
+    "model": "label_shift26",
+    "method": "bbse",
+    "strength": 1,
+    "output": "calibrated",
+    "calibration_C": 3
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 0.3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 1,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.001,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 10,
+    "graph_weight": 10
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 0.1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 1
+  },
+  {
+    "model": "lap_svm26",
+    "C": 3,
+    "gamma": 0.003,
+    "neighbors": 25,
+    "graph_weight": 10
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 0.3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 0.3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 1,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 1,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "linear",
+    "C": 3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 0.3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 0.3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 1,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 1,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 2,
+    "representation": "kernel",
+    "C": 3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 0.3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 0.3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 1,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 1,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "linear",
+    "C": 3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 0.3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 0.3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 1,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 1,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 3,
+    "mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "other_subclasses26",
+    "subgroups": 3,
+    "representation": "kernel",
+    "C": 3,
+    "mix": 1,
+    "pseudo_weight": 0.03
+  }
+]

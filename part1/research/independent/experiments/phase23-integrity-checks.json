@@ -1,0 +1,13 @@
+{
+  "nested_heldout_label_invariance": true,
+  "caches_cleared_before_perturbation": true,
+  "query_batch_invariance": true,
+  "binary_nonempty": true,
+  "max_difference": 0.0,
+  "heldout_rows": 31,
+  "validation_used_for_training": false,
+  "source_sha256": {
+    "phase22.py": "ce837c5e83daca1a05fe6df25842e6b4336917a8e27514e029bfe9d0e5c6ab1b",
+    "phase23.py": "634494f719756ed4273552a53dc93f95ec76f78048d72c5e34365cb5aec710d3"
+  }
+}

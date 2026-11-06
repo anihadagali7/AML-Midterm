@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "candidate": "Local SVM specialist hybrid",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    },
+    {
+      "candidate": "Classical tri-training",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    },
+    {
+      "candidate": "Current best hybrid",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    },
+    {
+      "candidate": "Ani training-only adaptation",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    },
+    {
+      "candidate": "DBSCAN + logistic C1000",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    },
+    {
+      "candidate": "K-means k8 + logistic C1000",
+      "heldout_labels_and_features_cannot_change_fit": true,
+      "matching_masked_duplicates_cannot_change_fit": true,
+      "query_batch_invariance": true,
+      "max_difference": 0.0,
+      "masked_duplicates_tested": 72
+    }
+  ]
+}

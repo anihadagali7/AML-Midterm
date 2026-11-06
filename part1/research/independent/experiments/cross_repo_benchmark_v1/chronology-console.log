@@ -1,0 +1,30 @@
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:276: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fit = full.set_index('ID').loc[split['training_ids']].reset_index()
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:277: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = full.set_index('ID').loc[split['heldout_ids']].reset_index()
+{"stage": "chronology", "candidate": "Local SVM specialist hybrid", "window": 0, "sample_f1": 0.8717948717948716}
+{"stage": "chronology", "candidate": "Classical tri-training", "window": 0, "sample_f1": 0.8632478632478632}
+{"stage": "chronology", "candidate": "Current best hybrid", "window": 0, "sample_f1": 0.8547008547008546}
+{"stage": "chronology", "candidate": "Ani training-only adaptation", "window": 0, "sample_f1": 0.8376068376068375}
+{"stage": "chronology", "candidate": "DBSCAN + logistic C1000", "window": 0, "sample_f1": 0.8119658119658119}
+{"stage": "chronology", "candidate": "K-means k8 + logistic C1000", "window": 0, "sample_f1": 0.8119658119658119}
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:276: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fit = full.set_index('ID').loc[split['training_ids']].reset_index()
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:277: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = full.set_index('ID').loc[split['heldout_ids']].reset_index()
+{"stage": "chronology", "candidate": "Local SVM specialist hybrid", "window": 1, "sample_f1": 0.8484848484848484}
+{"stage": "chronology", "candidate": "Classical tri-training", "window": 1, "sample_f1": 0.8939393939393938}
+{"stage": "chronology", "candidate": "Current best hybrid", "window": 1, "sample_f1": 0.8636363636363636}
+{"stage": "chronology", "candidate": "Ani training-only adaptation", "window": 1, "sample_f1": 0.8787878787878788}
+{"stage": "chronology", "candidate": "DBSCAN + logistic C1000", "window": 1, "sample_f1": 0.8787878787878788}
+{"stage": "chronology", "candidate": "K-means k8 + logistic C1000", "window": 1, "sample_f1": 0.8787878787878788}
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:276: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  fit = full.set_index('ID').loc[split['training_ids']].reset_index()
+/Users/matthew/Desktop/AMLMidterm/run_cross_repo_benchmark.py:277: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  query = full.set_index('ID').loc[split['heldout_ids']].reset_index()
+{"stage": "chronology", "candidate": "Local SVM specialist hybrid", "window": 2, "sample_f1": 0.8288288288288289}
+{"stage": "chronology", "candidate": "Classical tri-training", "window": 2, "sample_f1": 0.8873873873873872}
+{"stage": "chronology", "candidate": "Current best hybrid", "window": 2, "sample_f1": 0.8288288288288289}
+{"stage": "chronology", "candidate": "Ani training-only adaptation", "window": 2, "sample_f1": 0.8738738738738737}
+{"stage": "chronology", "candidate": "DBSCAN + logistic C1000", "window": 2, "sample_f1": 0.9144144144144143}
+{"stage": "chronology", "candidate": "K-means k8 + logistic C1000", "window": 2, "sample_f1": 0.9144144144144143}

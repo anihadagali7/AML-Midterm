@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-11-05T06:14:53.484617+00:00",
+  "source": "157 gold-status training rows",
+  "target": "all 1171 training rows; only features and gold/masked status",
+  "validation_used": false,
+  "test_used": false,
+  "reason_labels_used": false,
+  "clipping": [
+    0.2,
+    5
+  ],
+  "shrinkage_to_uniform": 0.5,
+  "diagnostics": {
+    "logistic": {
+      "domain_oof_auc": 0.910429151119989,
+      "domain_oof_logloss": 0.20861028534600662,
+      "gold_propensity_quantiles": [
+        0.002181542106195589,
+        0.07304652026330322,
+        0.554335018668209,
+        0.9496906432824895,
+        0.9967298040592578
+      ],
+      "raw_weight_quantiles": [
+        0.13451332643707914,
+        0.14117600688856077,
+        0.2418635608212171,
+        1.8422966989983045,
+        6.703672075149444
+      ],
+      "clipped_fraction": 0.4713375796178344
+    },
+    "tree": {
+      "domain_oof_auc": 0.9363622658576112,
+      "domain_oof_logloss": 0.13882877767551696,
+      "gold_propensity_quantiles": [
+        0.010437144918092204,
+        0.03218428811994841,
+        0.9369282822704824,
+        0.9406220332707274,
+        0.9416653453289763
+      ],
+      "raw_weight_quantiles": [
+        0.14237907571733943,
+        0.1425371155298339,
+        0.14309893728267575,
+        4.165804165166161,
+        6.703672075149444
+      ],
+      "clipped_fraction": 0.821656050955414
+    },
+    "kmm": {
+      "gamma": 0.003,
+      "ridge": 0.1,
+      "optimizer_success": true,
+      "iterations": 29,
+      "effective_sample_size": 141.04894831648474,
+      "minimum": 0.6,
+      "maximum": 2.14960316838555,
+      "mean": 0.9999999999999998
+    },
+    "uniform": {
+      "effective_sample_size": 157.0,
+      "minimum": 1.0,
+      "maximum": 1.0,
+      "mean": 1.0
+    },
+    "propensity_logistic": {
+      "effective_sample_size": 93.59677285109689,
+      "minimum": 0.6348421913182871,
+      "maximum": 3.8710547829571786,
+      "mean": 0.9999999999999998
+    },
+    "propensity_tree": {
+      "effective_sample_size": 92.24597477749832,
+      "minimum": 0.6117973170283592,
+      "maximum": 3.2949329257089786,
+      "mean": 1.0
+    }
+  },
+  "limitations": "Estimated covariate-shift weights are approximate. Label-dependent sampling and missing support can violate the necessary assumptions. These are development-risk weights, not guaranteed unbiased target risks."
+}

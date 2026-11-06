@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-11-05T19:04:25.405738+00:00",
+  "requested": [
+    "Per-reason SVM settings",
+    "Reliability-weighted pseudo-labels",
+    "Local SVM specialists"
+  ],
+  "baseline_validation_f1": 0.9123931623931625,
+  "reported_leader": "0.93xx, exact value not provided; Kaggle and local validation are separate evaluations",
+  "screen_seed": 20261118,
+  "repeat_seeds": [
+    20261119,
+    20261120,
+    20261121
+  ],
+  "inner_folds": 5,
+  "selection": "Training-only threshold/scope selection. Repeat the ordinary/robust CV winners per family, up to six policies. Freeze one validation finalist per requested family; up to two matched controls in a separate frozen follow-up.",
+  "validation_cap": 5,
+  "validation_fit": false,
+  "train_plus_validation_refit": false,
+  "data": "Original 157 gold /1014 masked training rows; 78 validation rows excluded. Identical embeddings grouped; matching masked duplicates excluded at both inner/outer folds.",
+  "restrictions": "No external trial data or labels, no ID features, no deep learning. Gold labels fixed.",
+  "metric": "sample-wise multilabel F1",
+  "limits": "Repeated adaptive model selection means these are development scores, not an unbiased full-search nested estimate. New per-label tuning and calibration are nested within the outer fits."
+}

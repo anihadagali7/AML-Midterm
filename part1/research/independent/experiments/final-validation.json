@@ -1,0 +1,72 @@
+{
+  "evaluated_at": "2026-11-05T04:22:42.778381+00:00",
+  "candidate": "balanced_ensemble",
+  "n_validation": 78,
+  "rule": "t0.35",
+  "config": {
+    "model": "ensemble",
+    "members": [
+      {
+        "model": "pseudo",
+        "teacher": {
+          "model": "cluster",
+          "cluster": "hdbscan",
+          "min_cluster": 5,
+          "pca": 25
+        },
+        "student": "logistic",
+        "C": 0.3,
+        "gamma": 0.001,
+        "scale": "global",
+        "pseudo_weight": 0.05,
+        "confidence": 0.95,
+        "labelwise": true,
+        "consensus": true,
+        "features": [
+          "fingerprint"
+        ],
+        "feature_weight": 0.5
+      },
+      {
+        "model": "svc",
+        "C": 10,
+        "gamma": 0.001,
+        "scale": "standard",
+        "features": [
+          "drugs",
+          "criteria"
+        ],
+        "feature_weight": 0.5
+      },
+      {
+        "model": "svc",
+        "C": 10,
+        "gamma": 0.001,
+        "scale": "standard",
+        "features": [
+          "drug_targets"
+        ],
+        "feature_weight": 1.0
+      }
+    ],
+    "weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  "sample_f1": 0.8504273504273504,
+  "macro_f1": 0.6884128525196486,
+  "f1_Safety": 0.875,
+  "f1_Funding": 0.4,
+  "f1_Efficacy": 0.72,
+  "f1_Recruitment": 0.970873786407767,
+  "f1_Other": 0.47619047619047616,
+  "training_gold_rows": 157,
+  "validation_used_for_fitting": false,
+  "settings_or_threshold_changed": false,
+  "same_test_probabilities_verified": true,
+  "engine_sha256": "bf4584f8af7ffbfa6945a447da2d3b528fb207a93be5ae61e312d7ef7ed074bd",
+  "submission_sha256": "5c938b7a955e04db5e9f0558cbb0aca0b8201ae7b3283653c60400697048ae3d",
+  "context": "User requested direct evaluation of the frozen full-fit candidate. This is a second validation evaluation occasion, with no retuning. Earlier bagged-model validation results remain separate."
+}

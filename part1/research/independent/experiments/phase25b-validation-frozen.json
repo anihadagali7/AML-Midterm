@@ -1,0 +1,160 @@
+{
+  "frozen_at": "2026-11-05T19:15:58.370537+00:00",
+  "candidates": [
+    {
+      "name": "phase25_control_label_tuned_ssl",
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "other"
+      },
+      "rule": "t0.5",
+      "ordinary_cv": 0.9186128803963198,
+      "robust_cv": 0.9082793269145394,
+      "cv_std": 0.001000858855182605,
+      "per_repeat": [
+        {
+          "ordinary": 0.9193205944798301,
+          "robust": 0.9058384507892153,
+          "weighted": [
+            0.9103106293692945,
+            0.9013444028923436,
+            0.9209532189940048
+          ]
+        },
+        {
+          "ordinary": 0.9171974522292994,
+          "robust": 0.9145536186440615,
+          "weighted": [
+            0.916735221750423,
+            0.9136723407823155,
+            0.9207372642972937
+          ]
+        },
+        {
+          "ordinary": 0.9193205944798301,
+          "robust": 0.9044459113103412,
+          "weighted": [
+            0.8994876835871783,
+            0.9181400629633576,
+            0.9204929654607712
+          ]
+        }
+      ]
+    },
+    {
+      "name": "phase25_control_reliable_ssl",
+      "config": {
+        "model": "policy25",
+        "learner": {
+          "model": "reliable_ssl",
+          "teacher": "ssl",
+          "pseudo_weight": 0.3,
+          "reliability": "uniform",
+          "min_reliability": 0.5,
+          "inner_splits": 5
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.65",
+        "scope": "recruitment_other"
+      },
+      "rule": "t0.5",
+      "ordinary_cv": 0.9164897381457889,
+      "robust_cv": 0.9088578186565885,
+      "cv_std": 0.004362642606488971,
+      "per_repeat": [
+        {
+          "ordinary": 0.9214437367303608,
+          "robust": 0.918536649119343,
+          "weighted": [
+            0.9175676199156704,
+            0.9186245330173759,
+            0.9200354983682144
+          ]
+        },
+        {
+          "ordinary": 0.910828025477707,
+          "robust": 0.9109352581874567,
+          "weighted": [
+            0.9109710024240398,
+            0.9154836245742379,
+            0.9136384373878461
+          ]
+        },
+        {
+          "ordinary": 0.9171974522292994,
+          "robust": 0.8971015486629659,
+          "weighted": [
+            0.8904029141408546,
+            0.9073900523600693,
+            0.9183747140144081
+          ]
+        }
+      ]
+    }
+  ],
+  "purpose": "Fixed matched controls; no control-specific threshold or scope tuning."
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "model": "label_tuned_ssl",
+    "selection": "sample",
+    "penalty": 0,
+    "inner_splits": 5
+  },
+  {
+    "model": "label_tuned_ssl",
+    "selection": "sample",
+    "penalty": 0.005,
+    "inner_splits": 5
+  },
+  {
+    "model": "label_tuned_ssl",
+    "selection": "sample",
+    "penalty": 0.02,
+    "inner_splits": 5
+  },
+  {
+    "model": "label_tuned_ssl",
+    "selection": "binary",
+    "penalty": 0,
+    "inner_splits": 5
+  },
+  {
+    "model": "label_tuned_ssl",
+    "selection": "binary",
+    "penalty": 0.005,
+    "inner_splits": 5
+  },
+  {
+    "model": "label_tuned_ssl",
+    "selection": "binary",
+    "penalty": 0.02,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.03,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.03,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.03,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.03,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.03,
+    "reliability": "uniform"
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.1,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.1,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.1,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.1,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.1,
+    "reliability": "uniform"
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.3,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.3,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.3,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.3,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "supervised",
+    "pseudo_weight": 0.3,
+    "reliability": "uniform"
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.03,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.03,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.03,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.03,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.03,
+    "reliability": "uniform"
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.1,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.1,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.1,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.1,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.1,
+    "reliability": "uniform"
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.3,
+    "reliability": "per_label",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.3,
+    "reliability": "per_label",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.3,
+    "reliability": "pooled",
+    "min_reliability": 0.5,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.3,
+    "reliability": "pooled",
+    "min_reliability": 0.8,
+    "inner_splits": 5
+  },
+  {
+    "model": "reliable_ssl",
+    "teacher": "ssl",
+    "pseudo_weight": 0.3,
+    "reliability": "uniform"
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 0.3,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 0.3,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 0.3,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 0.3,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 1,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 1,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 1,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 1,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 3,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 3,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 3,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 3,
+    "C": 3,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 0.3,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 0.3,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 0.3,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 0.3,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 1,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 1,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 1,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 1,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 3,
+    "gamma": 0.001,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 3,
+    "gamma": 0.001,
+    "local_mix": 0.5
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 3,
+    "gamma": 0.003,
+    "local_mix": 0.25
+  },
+  {
+    "model": "local_ssl",
+    "regions": 6,
+    "C": 3,
+    "gamma": 0.003,
+    "local_mix": 0.5
+  }
+]

@@ -100,6 +100,39 @@
       "status": "unsubmitted",
       "kaggle_score": null,
       "note": "Historical prepared file. A future final fit should use the same 235 labels as the current submission."
+    },
+    {
+      "file": "submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
+      "original_file": "research/ani_snapshots/a548721/part1_best_submission.csv",
+      "operation": "copied exact artifact during research integration; original retained",
+      "sha256": "d28c381fe35bd7fe787328646cd1ed5d27a7ba8c6eba3353894ba761e1ad4f29",
+      "model": "Ani original GMM-assisted self-training",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.89423,
+      "note": "235 gold labels; transductive. Score from user and branch history; source commit a548721. The changed 8a8c3fc best CSV has no established score here."
+    },
+    {
+      "file": "submissions/archive/submitted/tri_training_trainval235__kaggle_0.88012.csv",
+      "original_file": "research/independent/predictions/part1_tri_training_trainval235.csv",
+      "operation": "copied exact artifact during research integration; original retained",
+      "sha256": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145",
+      "model": "Classical tri-training",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.88012,
+      "note": "235 gold labels; inductive. User-reported manual submission; exact preparation and result manifests remain in research/independent/predictions/tri_training_trainval235/."
+    },
+    {
+      "file": "submissions/archive/submitted/three_way_trainval235__kaggle_0.89401.csv",
+      "original_file": "research/independent/predictions/part1_three_way_trainval235.csv",
+      "operation": "copied exact artifact during research integration; original retained",
+      "sha256": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f",
+      "model": "70% Ani / 15% tri-training / 15% SVM",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.89401,
+      "note": "235 gold labels; inductive. User-reported manual submission; exact preparation and result manifests remain in research/independent/predictions/three_way_trainval235/. Original validation belongs to the earlier 157-label fit."
     }
   ],
   "updated_reference_files": [
@@ -135,8 +168,8 @@
   },
   "experiment_local_submission_copies_retained": true,
   "upload_performed": false,
-  "latest_submitted_file": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
-  "latest_reported_kaggle_score": 0.875,
+  "latest_submitted_file": "submissions/archive/submitted/three_way_trainval235__kaggle_0.89401.csv",
+  "latest_reported_kaggle_score": 0.89401,
   "post_submission_moves": {
     "submissions/ready/part1_dbscan_logistic_trainval235.csv": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
     "submissions/ready/part1_dbscan_logistic_train157_no_validation.csv": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
@@ -154,5 +187,8 @@
       "kaggle_score": null,
       "note": "Archived exact duplicate of the original 157-label fit selected for the next manual upload; see ready/. No validation-label refit."
     }
-  ]
+  ],
+  "highest_reported_file": "submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
+  "highest_reported_kaggle_score": 0.89423,
+  "integration_uploaded": false
 }

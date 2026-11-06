@@ -1,0 +1,623 @@
+[
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.002,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.002,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.002,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.002,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.002,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.002,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0003,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 3,
+    "gamma": 0.002,
+    "pseudo_weight": 0.08
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 50,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 50,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 50,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 75,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 75,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 75,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 100,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 100,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 100,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 125,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 125,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "pca": 125,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.25,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.25,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.25,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.5,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.5,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.5,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.75,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.75,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 0.75,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 1.25,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 1.25,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "balance_power": 1.25,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 10,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 20,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 40,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 10,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 20,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 40,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 10,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 20,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "cluster_gate": true,
+    "clusters": 40,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "confidence_weight": true,
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "confidence_weight": true,
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "confidence_weight": true,
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-05T19:30:58.967013+00:00",
+  "raw_configurations": 84,
+  "screen_seed": 20261122,
+  "repeat_seeds": [
+    20261123,
+    20261124,
+    20261125
+  ],
+  "selection": "Up to two policies per family nominated by ordinary and robust CV; repeat selection uses mean sample-F1 minus .2 times split standard deviation.",
+  "validation_cap": 6,
+  "validation_fit": false,
+  "final_train_plus_validation_refit": false,
+  "controls": "For each training-selected finalist: zero prior adjustment, zero graph penalty, or one Other subgroup; preserve remaining settings and decoder.",
+  "graph_approximation": "192-component Nystroem RBF features with a fold-local self-tuning nearest-neighbor graph.",
+  "label_shift_assumption": "Binary label shift assumes conditional score distributions are stable; source calibration summaries are training estimates, not an independent guarantee.",
+  "reported_leader": "0.93xx; exact value unknown"
+}

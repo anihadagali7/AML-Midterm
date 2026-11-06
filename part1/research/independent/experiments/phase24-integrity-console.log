@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "model": "co_training",
+      "heldout_label_invariance": true,
+      "query_label_invariance": true,
+      "query_batch_invariance": true,
+      "return_unlabeled_query_invariance": true,
+      "masked_duplicates_excluded": true,
+      "max_label_difference": 0.0,
+      "max_batch_difference": 0.0
+    },
+    {
+      "model": "metric_ssl",
+      "heldout_label_invariance": true,
+      "query_label_invariance": true,
+      "query_batch_invariance": true,
+      "return_unlabeled_query_invariance": true,
+      "masked_duplicates_excluded": true,
+      "max_label_difference": 0.0,
+      "max_batch_difference": 5.551115123125783e-17
+    }
+  ],
+  "caches_cleared_for_label_perturbation": true,
+  "validation_fit": false,
+  "source_sha256": {
+    "phase24.py": "3baa7d6205211d7989fb801fb6d96461dc8f1f8cf143e811db99f8ec6fcb4217",
+    "phase24_run.py": "699daa7a06a383c55b8cb723f60aa0a300aa588b0492bf621bfdec649b9c0f78"
+  }
+}

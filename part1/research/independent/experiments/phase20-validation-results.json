@@ -1,0 +1,68 @@
+[
+  {
+    "name": "effective_class_balance",
+    "config": {
+      "model": "audited_ssl",
+      "balance": "effective",
+      "C": 3,
+      "pseudo_weight": 0.01
+    },
+    "rule": "t0.5",
+    "cv": 0.9095541401273886,
+    "cv_mean": 0.908067940552017,
+    "cv_macro": 0.8768422473215302,
+    "validation": {
+      "sample_f1": 0.876068376068376,
+      "macro_f1": 0.7720844036662832,
+      "f1_Safety": 0.9411764705882353,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7407407407407407,
+      "f1_Recruitment": 0.9900990099009901,
+      "f1_Other": 0.5217391304347826
+    }
+  },
+  {
+    "name": "repeated_vector_weighting",
+    "config": {
+      "model": "audited_ssl",
+      "balance": "raw",
+      "deduplicate": true
+    },
+    "rule": "t0.55",
+    "cv": 0.9214437367303611,
+    "cv_mean": 0.9101203113941967,
+    "cv_macro": 0.8532529607277838,
+    "validation": {
+      "sample_f1": 0.893162393162393,
+      "macro_f1": 0.7593650793650794,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 1.0,
+      "f1_Other": 0.4444444444444444
+    }
+  },
+  {
+    "name": "separate_feature_kernels",
+    "config": {
+      "model": "audited_ssl",
+      "aux_blocks": [
+        "drug_targets"
+      ],
+      "aux_weight": 0.1
+    },
+    "rule": "t0.5",
+    "cv": 0.9193205944798301,
+    "cv_mean": 0.9193205944798302,
+    "cv_macro": 0.8789809518288715,
+    "validation": {
+      "sample_f1": 0.876068376068376,
+      "macro_f1": 0.7464488017429194,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7407407407407407,
+      "f1_Recruitment": 0.9803921568627451,
+      "f1_Other": 0.4444444444444444
+    }
+  }
+]

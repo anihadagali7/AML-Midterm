@@ -1,0 +1,264 @@
+<!doctype html><meta charset="utf-8"><title>Continued Part 1 model search</title><style>body{font:16px system-ui;max-width:1700px;margin:36px auto;padding:0 24px;color:#172331}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{padding:9px;border-bottom:1px solid #d9e0e7;text-align:left}th{background:#eef3f8}p{max-width:1150px;line-height:1.55}.scroll{overflow-x:auto}</style><h1>Continued Part 1 model search</h1><p>Tested 12 additional recipes in two frozen studies. 1 passed the rule requiring higher eight-repeat mean F1 and wins on at least five of eight repeats in both CV pools versus the unchanged parent. The preceding eight single-change combinations produced no qualifying improvement; the second study tested averaging Ani fits over grouped gold subsets.</p><p><strong>75/25 + half subset average: CV-qualified challenger; retain prior leaders. Both supplementary scores decreased.</strong> Relative to its parent, validation changed by -0.00855 and chronological F1 by -0.01361. Higher CV alone does not establish an overall upgrade.</p><p>Primary: train157 grouped five-fold CV. Supplemental: pooled235 grouped five-fold CV. Both use the same eight saved repeats across candidates. F1 is sample-wise; each repeat is scored on its complete out-of-fold predictions. Original validation uses train157 only. Chronology pools 98 later trials across the same three frozen earlier-to-later windows. Unchanged supplementary control scores are reused with provenance.</p><h2>Qualified candidates and retained controls</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train_mean</th>
+      <th>pooled_mean</th>
+      <th>validation</th>
+      <th>chronological</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>75/25 + half subset average</td>
+      <td>0.92887</td>
+      <td>0.91879</td>
+      <td>0.88034</td>
+      <td>0.87075</td>
+    </tr>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>0.92675</td>
+      <td>0.91640</td>
+      <td>0.88889</td>
+      <td>0.88435</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92569</td>
+      <td>0.91649</td>
+      <td>0.91026</td>
+      <td>0.87755</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>0.91959</td>
+      <td>0.90984</td>
+      <td>0.89103</td>
+      <td>0.86054</td>
+    </tr>
+  </tbody>
+</table></div><p>Ani here is the inductive adaptation under the common fitting policy. Its local scores are not a reproduction of the original transductive Kaggle submission. The two development studies above created no submission or final train-plus-validation fit.</p><h2>Subsequent Kaggle evidence</h2><p>The frozen 70% Ani / 15% tri-training / 15% SVM ensemble was subsequently refitted on all 235 gold labels and submitted manually. The user reported <strong>0.89401</strong>, compared with Ani’s <strong>0.89423</strong> and standalone tri-training’s <strong>0.88012</strong>. The three-way score is 0.00022 below Ani and 0.01389 above standalone tri-training. Ani remains the highest reported submission.</p><p>The local CV advantage did not yield a higher Kaggle score than the original Ani submission. This is a comparison of complete pipelines: original Ani used transductive fitting, whereas our ensemble excluded test inputs from fitting. The aggregate score cannot identify which component helped or which examples failed. There are two submissions remaining from the user’s stated budget. The 75/25 and subset-averaging candidates remain unsubmitted.</p><p><a href="../../predictions/three_way_trainval235/kaggle_result.json">User-reported result and exact submission hash</a> · <a href="../../predictions/three_way_trainval235/manifest.json">Preparation manifest and training policy</a></p><h2>Subsequent check of adding validation labels</h2><p>On identical held-out groups, the frozen three-way recipe scored 0.91303 using only eligible original-training gold and 0.91649 when eligible validation-source gold was added. The expanded arm won 5 of eight repeats. Gains were concentrated in held-out validation-source rows; held-out original-training rows declined slightly. This does not show overall refit harm on these development data.</p><p>The actual157-label versus235-label fits changed 29 of312 test label sets. That measures prediction sensitivity, not which fit is more accurate. The matched CV diagnostic uses roughly125 versus188 fitting labels inside each fold, and cannot determine the unavailable Kaggle score of the157-label model. No new submission was exported. <a href="../refit_diagnostic_v1/report.html">Full paired diagnostic and verification</a>.</p><h2>All eight-repeat results</h2><p>Parent deltas and win counts compare each changed recipe with its own unmodified ensemble. Repeat SD is descriptive; the repeats share trials and are not independent datasets. A promising initial result that failed the longer check remains visible here.</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train_mean</th>
+      <th>train_sd</th>
+      <th>pooled_mean</th>
+      <th>pooled_sd</th>
+      <th>train_parent_delta</th>
+      <th>pooled_parent_delta</th>
+      <th>train_parent_wins</th>
+      <th>pooled_parent_wins</th>
+      <th>qualifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ani + tri 25%</td>
+      <td>0.92675</td>
+      <td>0.00541</td>
+      <td>0.91640</td>
+      <td>0.00484</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92569</td>
+      <td>0.00520</td>
+      <td>0.91649</td>
+      <td>0.00769</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + pseudo weight 0.5</td>
+      <td>0.92489</td>
+      <td>0.00600</td>
+      <td>0.91684</td>
+      <td>0.00567</td>
+      <td>-0.00080</td>
+      <td>0.00035</td>
+      <td>2</td>
+      <td>3</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Ani frozen control</td>
+      <td>0.91959</td>
+      <td>0.00805</td>
+      <td>0.90984</td>
+      <td>0.00763</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + half subset average</td>
+      <td>0.92887</td>
+      <td>0.00601</td>
+      <td>0.91879</td>
+      <td>0.00510</td>
+      <td>0.00212</td>
+      <td>0.00239</td>
+      <td>5</td>
+      <td>5</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + half subset average</td>
+      <td>0.92808</td>
+      <td>0.00556</td>
+      <td>0.91702</td>
+      <td>0.00516</td>
+      <td>0.00239</td>
+      <td>0.00053</td>
+      <td>4</td>
+      <td>3</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + full subset average</td>
+      <td>0.92702</td>
+      <td>0.00618</td>
+      <td>0.91809</td>
+      <td>0.00393</td>
+      <td>0.00133</td>
+      <td>0.00160</td>
+      <td>4</td>
+      <td>5</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table></div><h2>All 12 initial trials: three repeats only</h2><p>These values are a separate screening stage and must not be compared directly with the eight-repeat means above. All settings and advancement rules were frozen before each study.</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>parent</th>
+      <th>train_mean</th>
+      <th>pooled_mean</th>
+      <th>train_parent_delta</th>
+      <th>pooled_parent_delta</th>
+      <th>qualifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>75/25 + three-seed average</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93064</td>
+      <td>0.91158</td>
+      <td>-0.00071</td>
+      <td>-0.00047</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + inner Other threshold</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93064</td>
+      <td>0.91206</td>
+      <td>-0.00071</td>
+      <td>0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + pseudo weight 0.5</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92994</td>
+      <td>0.91158</td>
+      <td>0.00283</td>
+      <td>0.00284</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + inner Other threshold</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92852</td>
+      <td>0.91017</td>
+      <td>0.00142</td>
+      <td>0.00142</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + pseudo weight 0.5</td>
+      <td>Ani + tri 25%</td>
+      <td>0.92781</td>
+      <td>0.91111</td>
+      <td>-0.00354</td>
+      <td>-0.00095</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + three-seed average</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92711</td>
+      <td>0.91017</td>
+      <td>-0.00000</td>
+      <td>0.00142</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + Other specialist 50%</td>
+      <td>Ani + tri 25%</td>
+      <td>0.92427</td>
+      <td>0.91300</td>
+      <td>-0.00708</td>
+      <td>0.00095</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + Other specialist 50%</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.92357</td>
+      <td>0.90657</td>
+      <td>-0.00354</td>
+      <td>-0.00217</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + full subset average</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93631</td>
+      <td>0.91206</td>
+      <td>0.00495</td>
+      <td>-0.00000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75/25 + half subset average</td>
+      <td>Ani + tri 25%</td>
+      <td>0.93347</td>
+      <td>0.91395</td>
+      <td>0.00212</td>
+      <td>0.00189</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + half subset average</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.93064</td>
+      <td>0.91253</td>
+      <td>0.00354</td>
+      <td>0.00378</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>70/15/15 + full subset average</td>
+      <td>Ani + tri/SVM 15% each</td>
+      <td>0.93064</td>
+      <td>0.91726</td>
+      <td>0.00354</td>
+      <td>0.00851</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table></div><h2>Audit and reproducibility</h2><p>Both studies passed held-out-label/feature mutation and query-batch checks, including matching masked duplicates. The subset study also checks omitted gold-group exclusion for every member. Saved scores, decisions, IDs and truth were rescored; all unchanged control CV scores reproduce prior outputs exactly. Protected raw data and earlier submissions remain unchanged.</p><p>Repeated development on these folds can still favor the selected recipes. Validation and chronological checks are supplementary and were consulted only for a CV-qualified frozen shortlist. These are local improvements, not guarantees about later Kaggle trials.</p><p><a href="../ani_combination_v1/report.html">Eight single-change combinations</a> · <a href="../ani_bagging_v1/report.html">Four subset-averaging recipes</a> · <a href="summary.json">Recipes, results and provenance</a></p>

@@ -1,0 +1,16 @@
+{
+  "config": {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drug_targets"
+    ],
+    "feature_weight": 1.0
+  },
+  "rule": "expected_f1",
+  "score": 0.9244161358811039,
+  "n_groups": 150,
+  "mean_training_size": 155.95333333333335
+}

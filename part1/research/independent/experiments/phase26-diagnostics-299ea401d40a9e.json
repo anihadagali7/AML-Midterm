@@ -1,0 +1,40 @@
+{
+  "labels": [
+    {
+      "label": "Safety",
+      "source_prevalence": 0.10569105691056911,
+      "estimated_masked_prevalence": 0.08075735407892937,
+      "applied_log_odds_shift": -0.2965700815918084,
+      "conditional_score_separation": 0.8931446341800723
+    },
+    {
+      "label": "Funding",
+      "source_prevalence": 0.056910569105691054,
+      "estimated_masked_prevalence": 0.01,
+      "applied_log_odds_shift": -1.5,
+      "conditional_score_separation": 0.8025231411822829
+    },
+    {
+      "label": "Efficacy",
+      "source_prevalence": 0.08943089430894309,
+      "estimated_masked_prevalence": 0.12850290866146977,
+      "applied_log_odds_shift": 0.40634261065380795,
+      "conditional_score_separation": 0.648189364509121
+    },
+    {
+      "label": "Recruitment",
+      "source_prevalence": 0.6504065040650406,
+      "estimated_masked_prevalence": 0.6883885961396284,
+      "applied_log_odds_shift": 0.1717700683910186,
+      "conditional_score_separation": 0.8581348098915392
+    },
+    {
+      "label": "Other",
+      "source_prevalence": 0.16260162601626016,
+      "estimated_masked_prevalence": 0.12060391919554692,
+      "applied_log_odds_shift": -0.34772690415062524,
+      "conditional_score_separation": 0.2547737816918025
+    }
+  ],
+  "assumption": "Stable feature distribution conditional on each binary reason; not guaranteed for these data."
+}

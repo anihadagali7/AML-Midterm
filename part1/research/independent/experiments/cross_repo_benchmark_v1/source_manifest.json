@@ -1,0 +1,37 @@
+{
+  "commit": "74253451908166368ec6e83339b478db3cca95eb",
+  "files": {
+    "part1/paired_recipe_cv.ipynb": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__paired_recipe_cv.ipynb",
+      "sha256": "ab409670420c361da15c2a735919316997c4b07fcd5b51479eb6a3ea9a7e5eba"
+    },
+    "part1/leading_recipes_cv.ipynb": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__leading_recipes_cv.ipynb",
+      "sha256": "b7c10056e8f52f5f0cf753c86b619bdcdbc2e40dcc43787b8259426905fefb5f"
+    },
+    "part1/experiments/paired_recipe_cv/protocol.json": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__paired_recipe_cv__protocol.json",
+      "sha256": "3ad70d2bdb9d0d1859e7f8a15ed756e49f94540a9d53f2c16fb8f8b6e63b690f"
+    },
+    "part1/experiments/paired_recipe_cv/splits/repeat0.csv": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__paired_recipe_cv__splits__repeat0.csv",
+      "sha256": "1ff4ee50eb8157acbd6cae7f21c75913d4d3d85fb943dcdce0736542ffbb775f"
+    },
+    "part1/experiments/paired_recipe_cv/predictions/repeat0_fold0__ani_train_only.csv": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__paired_recipe_cv__predictions__repeat0_fold0__ani_train_only.csv",
+      "sha256": "b0ce047b77bc4b43e3adba2a6ddbd92b6ff6f4675422937ec029e651ae840c07"
+    },
+    "part1/experiments/paired_recipe_cv/predictions/repeat0_fold0__dbscan_train_only.csv": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__paired_recipe_cv__predictions__repeat0_fold0__dbscan_train_only.csv",
+      "sha256": "bed9a00ec1667025efcb1104abf0acc41e1526bf29ddc71b22f37a68008cc385"
+    },
+    "part1/experiments/leading_recipes_cv/predictions/repeat0_fold0__kmeans_k8.csv": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__leading_recipes_cv__predictions__repeat0_fold0__kmeans_k8.csv",
+      "sha256": "eb8eb44f38f9a7dcfe06a92054a4d17ccbeda51192f04f40d6ccd40a9bde86d4"
+    },
+    "part1/experiments/ani_ensemble/ani_source/part1_best_model.ipynb": {
+      "local": "experiments/cross_repo_benchmark_v1/sources/part1__experiments__ani_ensemble__ani_source__part1_best_model.ipynb",
+      "sha256": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7"
+    }
+  }
+}

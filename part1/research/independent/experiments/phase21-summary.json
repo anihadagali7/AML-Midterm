@@ -1,0 +1,26 @@
+{
+  "tri_configurations_screened": 44,
+  "initial_fresh_cv_configurations": 11,
+  "fresh_cv_seeds": [
+    20261107,
+    20261108,
+    20261109
+  ],
+  "validation_candidates": 8,
+  "best_tri_validation_f1": 0.9038461538461541,
+  "guarded_tri_validation_f1": 0.882051282051282,
+  "target_weighted_selection_validation_f1": 0.8696581196581196,
+  "initial_reason_hybrid_validation_f1": 0.9017094017094018,
+  "reason_hybrid_validation_f1": 0.9123931623931625,
+  "exact_control_validation_f1": 0.8547008547008546,
+  "incumbent_validation_f1": 0.9102564102564102,
+  "current_validation_f1": 0.9123931623931625,
+  "validation_improvement": 0.00213675213675224,
+  "current_validation_macro_f1": 0.81044356609574,
+  "selected_hybrid_ordinary_cv": 0.9174805378627034,
+  "selected_hybrid_leave_group_out_cv": 0.9286624203821657,
+  "incumbent_retained": false,
+  "target_met": false,
+  "validation_used_for_training": false,
+  "final_train_plus_validation_refit_performed": false
+}

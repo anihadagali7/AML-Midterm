@@ -1,0 +1,56 @@
+RUN 1/28 {'model': 'cluster_features', 'clusters': 10, 'C': 0.01, 'band': 0.5, 'original_weight': 0.3}
+{"id": "d3a65e53fee1b8", "model": "cluster_features", "score": 0.7685774946921443, "rule": "expected_f1", "default_score": 0.6539278131634819, "seconds": 0.176, "status": "ok", "error": null}
+RUN 2/28 {'model': 'cluster_features', 'clusters': 10, 'C': 0.01, 'band': 1.0, 'original_weight': 0.3}
+{"id": "f3be8eaa6f103b", "model": "cluster_features", "score": 0.7590233545647559, "rule": "expected_f1", "default_score": 0.6857749469214437, "seconds": 0.153, "status": "ok", "error": null}
+RUN 3/28 {'model': 'cluster_features', 'clusters': 10, 'C': 0.1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "c32371f78c35f2", "model": "cluster_features", "score": 0.8789808917197452, "rule": "t0.25", "default_score": 0.8768577494692146, "seconds": 0.155, "status": "ok", "error": null}
+RUN 4/28 {'model': 'cluster_features', 'clusters': 10, 'C': 0.1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "0c5ca065f85789", "model": "cluster_features", "score": 0.902335456475584, "rule": "t0.5", "default_score": 0.902335456475584, "seconds": 0.176, "status": "ok", "error": null}
+RUN 5/28 {'model': 'cluster_features', 'clusters': 10, 'C': 1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "c3f618291b4637", "model": "cluster_features", "score": 0.9129511677282378, "rule": "t0.25", "default_score": 0.9002123142250531, "seconds": 0.161, "status": "ok", "error": null}
+RUN 6/28 {'model': 'cluster_features', 'clusters': 10, 'C': 1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "5f8b626a741d8e", "model": "cluster_features", "score": 0.9256900212314224, "rule": "t0.35", "default_score": 0.9087048832271764, "seconds": 0.16, "status": "ok", "error": null}
+RUN 7/28 {'model': 'cluster_features', 'clusters': 10, 'C': 10, 'band': 0.5, 'original_weight': 0.3}
+{"id": "edc0e34fd1f018", "model": "cluster_features", "score": 0.9087048832271764, "rule": "t0.25", "default_score": 0.8853503184713376, "seconds": 0.161, "status": "ok", "error": null}
+RUN 8/28 {'model': 'cluster_features', 'clusters': 10, 'C': 10, 'band': 1.0, 'original_weight': 0.3}
+{"id": "762f2a92964c92", "model": "cluster_features", "score": 0.9235668789808917, "rule": "t0.55", "default_score": 0.9193205944798301, "seconds": 0.163, "status": "ok", "error": null}
+RUN 9/28 {'model': 'cluster_features', 'clusters': 30, 'C': 0.01, 'band': 0.5, 'original_weight': 0.3}
+{"id": "89100fa427f416", "model": "cluster_features", "score": 0.7371549893842887, "rule": "expected_f1", "default_score": 0.7048832271762208, "seconds": 0.204, "status": "ok", "error": null}
+RUN 10/28 {'model': 'cluster_features', 'clusters': 30, 'C': 0.01, 'band': 1.0, 'original_weight': 0.3}
+{"id": "433afa0ede51ce", "model": "cluster_features", "score": 0.813375796178344, "rule": "expected_f1", "default_score": 0.781316348195329, "seconds": 0.202, "status": "ok", "error": null}
+RUN 11/28 {'model': 'cluster_features', 'clusters': 30, 'C': 0.1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "37433d4e14d6fa", "model": "cluster_features", "score": 0.8673036093418258, "rule": "expected_f1", "default_score": 0.8556263269639065, "seconds": 0.203, "status": "ok", "error": null}
+RUN 12/28 {'model': 'cluster_features', 'clusters': 30, 'C': 0.1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "242375538c69c3", "model": "cluster_features", "score": 0.9002123142250531, "rule": "t0.5", "default_score": 0.9002123142250531, "seconds": 0.205, "status": "ok", "error": null}
+RUN 13/28 {'model': 'cluster_features', 'clusters': 30, 'C': 1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "573d02a3defe9f", "model": "cluster_features", "score": 0.8927813163481955, "rule": "expected_f1", "default_score": 0.8842887473460722, "seconds": 0.207, "status": "ok", "error": null}
+RUN 14/28 {'model': 'cluster_features', 'clusters': 30, 'C': 1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "353c8036de89be", "model": "cluster_features", "score": 0.9235668789808917, "rule": "expected_f1", "default_score": 0.8980891719745223, "seconds": 0.232, "status": "ok", "error": null}
+RUN 15/28 {'model': 'cluster_features', 'clusters': 30, 'C': 10, 'band': 0.5, 'original_weight': 0.3}
+{"id": "c9f2776b4c5594", "model": "cluster_features", "score": 0.9118895966029723, "rule": "t0.35", "default_score": 0.9012738853503185, "seconds": 0.209, "status": "ok", "error": null}
+RUN 16/28 {'model': 'cluster_features', 'clusters': 30, 'C': 10, 'band': 1.0, 'original_weight': 0.3}
+{"id": "dafaa72745929b", "model": "cluster_features", "score": 0.9256900212314224, "rule": "t0.25", "default_score": 0.9087048832271764, "seconds": 0.216, "status": "ok", "error": null}
+RUN 17/28 {'model': 'cluster_features', 'clusters': 80, 'C': 0.01, 'band': 0.5, 'original_weight': 0.3}
+{"id": "19920e66a98f68", "model": "cluster_features", "score": 0.6963906581740975, "rule": "expected_f1", "default_score": 0.6815286624203821, "seconds": 0.319, "status": "ok", "error": null}
+RUN 18/28 {'model': 'cluster_features', 'clusters': 80, 'C': 0.01, 'band': 1.0, 'original_weight': 0.3}
+{"id": "b378bfa428402f", "model": "cluster_features", "score": 0.8428874734607219, "rule": "t0.25", "default_score": 0.8131634819532908, "seconds": 0.324, "status": "ok", "error": null}
+RUN 19/28 {'model': 'cluster_features', 'clusters': 80, 'C': 0.1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "32eeafefe4cc54", "model": "cluster_features", "score": 0.8471337579617835, "rule": "t0.5", "default_score": 0.8471337579617835, "seconds": 0.32, "status": "ok", "error": null}
+RUN 20/28 {'model': 'cluster_features', 'clusters': 80, 'C': 0.1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "f2fafa5e45c895", "model": "cluster_features", "score": 0.9214437367303608, "rule": "t0.35", "default_score": 0.9129511677282378, "seconds": 0.365, "status": "ok", "error": null}
+RUN 21/28 {'model': 'cluster_features', 'clusters': 80, 'C': 1, 'band': 0.5, 'original_weight': 0.3}
+{"id": "9f77c80b61fd6e", "model": "cluster_features", "score": 0.8895966029723991, "rule": "expected_f1", "default_score": 0.8662420382165605, "seconds": 0.326, "status": "ok", "error": null}
+RUN 22/28 {'model': 'cluster_features', 'clusters': 80, 'C': 1, 'band': 1.0, 'original_weight': 0.3}
+{"id": "9cdb7da3b708ad", "model": "cluster_features", "score": 0.9214437367303611, "rule": "t0.25", "default_score": 0.9150743099787687, "seconds": 0.358, "status": "ok", "error": null}
+RUN 23/28 {'model': 'cluster_features', 'clusters': 80, 'C': 10, 'band': 0.5, 'original_weight': 0.3}
+{"id": "c6b7a4ea666998", "model": "cluster_features", "score": 0.881104033970276, "rule": "t0.25", "default_score": 0.8726114649681529, "seconds": 0.333, "status": "ok", "error": null}
+RUN 24/28 {'model': 'cluster_features', 'clusters': 80, 'C': 10, 'band': 1.0, 'original_weight': 0.3}
+{"id": "b8b56f47039887", "model": "cluster_features", "score": 0.9214437367303611, "rule": "t0.25", "default_score": 0.9150743099787687, "seconds": 0.34, "status": "ok", "error": null}
+RUN 25/28 {'model': 'cluster_features', 'clusters': 30, 'C': 0.1, 'band': 0.5, 'original_weight': 1.0, 'pca': 25}
+{"id": "1e91038f77cac7", "model": "cluster_features", "score": 0.9095541401273886, "rule": "t0.35", "default_score": 0.902335456475584, "seconds": 0.202, "status": "ok", "error": null}
+RUN 26/28 {'model': 'cluster_features', 'clusters': 30, 'C': 1, 'band': 0.5, 'original_weight': 1.0, 'pca': 25}
+{"id": "ea833fd33c5fde", "model": "cluster_features", "score": 0.9138004246284499, "rule": "t0.45", "default_score": 0.9053078556263269, "seconds": 0.209, "status": "ok", "error": null}
+RUN 27/28 {'model': 'cluster_features', 'clusters': 80, 'C': 0.1, 'band': 0.5, 'original_weight': 1.0, 'pca': 25}
+{"id": "5bee0f6484412d", "model": "cluster_features", "score": 0.9044585987261147, "rule": "t0.45", "default_score": 0.902335456475584, "seconds": 0.282, "status": "ok", "error": null}
+RUN 28/28 {'model': 'cluster_features', 'clusters': 80, 'C': 1, 'band': 0.5, 'original_weight': 1.0, 'pca': 25}
+{"id": "db947146e6f20e", "model": "cluster_features", "score": 0.8959660297239916, "rule": "t0.45", "default_score": 0.8938428874734607, "seconds": 0.292, "status": "ok", "error": null}

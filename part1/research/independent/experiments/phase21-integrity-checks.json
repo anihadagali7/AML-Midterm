@@ -1,0 +1,52 @@
+{
+  "selected_config": {
+    "model": "tri_labelwise",
+    "base": {
+      "model": "lowdensity_v2",
+      "cluster_gate": true,
+      "clusters": 10,
+      "C": 1,
+      "gamma": 0.001,
+      "pseudo_weight": 0.03
+    },
+    "tri": {
+      "model": "tri_training",
+      "committee": "mixed",
+      "cluster_gate": false,
+      "pseudo_weight": 1.0,
+      "aggregation": "vote",
+      "stratified_bootstrap": false
+    },
+    "base_rule": "t0.55",
+    "tri_rule": "t0.5",
+    "use_tri": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "heldout_rows": 31,
+  "selected_hybrid_holdout_label_invariance": true,
+  "selected_hybrid_query_batch_invariance": true,
+  "selected_hybrid_return_unlabeled_query_invariance": true,
+  "matching_masked_embedding_duplicates_excluded": true,
+  "all_predictions_binary_nonempty": true,
+  "positive_normalized_risk_weights": true,
+  "uniform_row_f1_matches_sklearn": true,
+  "max_label_perturbation": 0.0,
+  "max_batch_difference": 0.0,
+  "validation_labels_used_for_training": 0,
+  "refit_with_validation_performed": false,
+  "source_sha256": {
+    "phase21.py": "5d6b5d5c54f19943fba9a5533c48938b1b5afcafe7f0865659f4fc2498300dcc",
+    "phase21_weights.py": "940508833baf5cc09e4f283cf2122b388532243e13c21cca23f964a49c34a0e2",
+    "phase21_select.py": "8decb30fef9287df94df9998796c9ef87551be18299fc081a2cebee2015ba825",
+    "phase21_hybrid.py": "dce629518bbd924382ee4352b3e96acb2f995a1eb2ccf2e33b5909332fd44f3a",
+    "phase21_plain.py": "02a9b7ce12dca089aab044411dea072074d3c2b51fea6ff93b5a2d59cae40240",
+    "phase21_classical_hybrid.py": "2ea8864933dba4a762302a34159152c52ab0b73ffa66a49be11882b167fb57e4",
+    "phase21_integrity.py": "91cde0f955209c359ee4c79648a3e2c4bd131feb5eb3373639f5fd46d6529dfa"
+  },
+  "source_maintenance_note": "After promoting the winner, comparison scripts now explicitly read the saved prior incumbent so replay keeps the same baseline. Model fitting code and frozen candidates are unchanged."
+}

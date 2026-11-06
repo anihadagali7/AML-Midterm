@@ -1,0 +1,88 @@
+[
+  {
+    "config": {
+      "model": "logistic",
+      "scale": "global",
+      "C": 0.3
+    },
+    "rule": "t0.35",
+    "cv_score": 0.9299363057324841,
+    "model": "logistic"
+  },
+  {
+    "config": {
+      "model": "svc",
+      "scale": "global",
+      "C": 10,
+      "gamma": 0.0001
+    },
+    "rule": "expected_f1",
+    "cv_score": 0.9278131634819534,
+    "model": "svc"
+  },
+  {
+    "config": {
+      "model": "knn",
+      "pca": 25,
+      "white": 0,
+      "C": 10,
+      "k": 3
+    },
+    "rule": "expected_f1",
+    "cv_score": 0.8830148619957536,
+    "model": "knn"
+  },
+  {
+    "config": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    },
+    "rule": "expected_f1",
+    "cv_score": 0.8770700636942674,
+    "model": "cluster"
+  },
+  {
+    "config": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    },
+    "rule": "t0.35",
+    "cv_score": 0.8747346072186836,
+    "model": "graph"
+  },
+  {
+    "config": {
+      "model": "softmax",
+      "C": 0.3,
+      "scale": "global"
+    },
+    "rule": "t0.45",
+    "cv_score": 0.9256900212314224,
+    "model": "softmax"
+  },
+  {
+    "config": {
+      "model": "cluster_features",
+      "clusters": 10,
+      "C": 1,
+      "band": 1.0,
+      "original_weight": 0.3
+    },
+    "rule": "t0.35",
+    "cv_score": 0.9256900212314224,
+    "model": "cluster_features"
+  },
+  {
+    "config": {
+      "model": "catboost",
+      "pca": 15
+    },
+    "rule": "t0.5",
+    "cv_score": 0.89171974522293,
+    "model": "catboost"
+  }
+]

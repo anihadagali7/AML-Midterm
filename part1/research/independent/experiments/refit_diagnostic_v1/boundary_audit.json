@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "candidate": "Ani frozen control",
+      "all_validation_label_mutation_invariant": true,
+      "fit_ids_original_training_only": true
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "all_validation_label_mutation_invariant": true,
+      "fit_ids_original_training_only": true
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "frozen_at": "2026-11-05T19:32:44.089314+00:00",
+  "baseline_cv": [
+    {
+      "ordinary": 0.9150743099787687,
+      "robust": 0.9054277962292794,
+      "weighted": [
+        0.9022122916461164,
+        0.9186797701301816,
+        0.9125506137321721
+      ]
+    },
+    {
+      "ordinary": 0.9201698513800423,
+      "robust": 0.9114074055119712,
+      "weighted": [
+        0.908486590222614,
+        0.9341648071843944,
+        0.9186001666342064
+      ]
+    },
+    {
+      "ordinary": 0.9171974522292994,
+      "robust": 0.9193667225866393,
+      "weighted": [
+        0.9200898127057526,
+        0.9317007475522922,
+        0.920454783345
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "label_shift26",
+          "method": "em",
+          "strength": 0.25,
+          "output": "calibrated",
+          "calibration_C": 0.3
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.6",
+        "scope": "efficacy_other"
+      },
+      "ordinary": 0.910828025477707,
+      "robust": 0.9018414299865729,
+      "weighted": [
+        0.9003241196077716,
+        0.8988458981561949,
+        0.9062888435177254
+      ],
+      "ordinary_cv": 0.9306440198159943,
+      "robust_cv": 0.9285603592037212,
+      "cv_std": 0.003608647921863222,
+      "per_repeat": [
+        {
+          "ordinary": 0.9256900212314225,
+          "robust": 0.9250996581615538,
+          "weighted": [
+            0.9291378103111084,
+            0.9276259234055083,
+            0.9249028704715977
+          ]
+        },
+        {
+          "ordinary": 0.9320594479830149,
+          "robust": 0.9316920400704793,
+          "weighted": [
+            0.9332913499791953,
+            0.9326547503584761,
+            0.9315695707663008
+          ]
+        },
+        {
+          "ordinary": 0.9341825902335456,
+          "robust": 0.9288893793791303,
+          "weighted": [
+            0.9328965029217584,
+            0.927124975760992,
+            0.933717988823101
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9299222902316217,
+      "name": "phase26_label_shift26",
+      "matched_control": false
+    },
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "lap_svm26",
+          "C": 3,
+          "gamma": 0.003,
+          "neighbors": 10,
+          "graph_weight": 0.1
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.7",
+        "scope": "efficacy_other"
+      },
+      "ordinary": 0.9087048832271761,
+      "robust": 0.8930069401219249,
+      "weighted": [
+        0.8877742924201746,
+        0.916718755270085,
+        0.9073045843538594
+      ],
+      "ordinary_cv": 0.9221514508138712,
+      "robust_cv": 0.9097590117133952,
+      "cv_std": 0.003608647921863222,
+      "per_repeat": [
+        {
+          "ordinary": 0.9171974522292994,
+          "robust": 0.9060509249320439,
+          "weighted": [
+            0.9023354158329586,
+            0.9297318112754188,
+            0.9198900893051856
+          ]
+        },
+        {
+          "ordinary": 0.9235668789808917,
+          "robust": 0.9109657580574001,
+          "weighted": [
+            0.9067653844162362,
+            0.9348354938816992,
+            0.9221500090424536
+          ]
+        },
+        {
+          "ordinary": 0.9256900212314224,
+          "robust": 0.912260352150742,
+          "weighted": [
+            0.9077837957905152,
+            0.9350023978589085,
+            0.9285407181628612
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9214297212294985,
+      "name": "phase26_lap_svm26",
+      "matched_control": false
+    },
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "other_subclasses26",
+          "subgroups": 3,
+          "representation": "kernel",
+          "C": 3,
+          "mix": 1,
+          "pseudo_weight": 0.03
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.7",
+        "scope": "other"
+      },
+      "ordinary": 0.9171974522292994,
+      "robust": 0.9020115097902404,
+      "weighted": [
+        0.8969495289772207,
+        0.9177629415637789,
+        0.914897947033095
+      ],
+      "ordinary_cv": 0.9281670205237084,
+      "robust_cv": 0.9196332527475933,
+      "cv_std": 0.00563955323797212,
+      "per_repeat": [
+        {
+          "ordinary": 0.9278131634819534,
+          "robust": 0.9170426024207561,
+          "weighted": [
+            0.913452415400357,
+            0.9321700451001407,
+            0.9276414837686968
+          ]
+        },
+        {
+          "ordinary": 0.9214437367303608,
+          "robust": 0.9074348345312643,
+          "weighted": [
+            0.9027652004648987,
+            0.9279147382277739,
+            0.9199627526199732
+          ]
+        },
+        {
+          "ordinary": 0.9352441613588109,
+          "robust": 0.9344223212907599,
+          "weighted": [
+            0.9341483746014094,
+            0.9440473146471426,
+            0.9383531425093982
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9270391098761139,
+      "name": "phase26_other_subclasses26",
+      "matched_control": false
+    },
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "label_shift26",
+          "method": "em",
+          "strength": 0,
+          "output": "calibrated",
+          "calibration_C": 0.3
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.6",
+        "scope": "efficacy_other"
+      },
+      "name": "phase26_control_label_shift26",
+      "matched_control": true,
+      "ordinary_cv": 0.9313517338995045,
+      "robust_cv": 0.9290876766080717,
+      "cv_std": 0.0026480236282901306,
+      "per_repeat": [
+        {
+          "ordinary": 0.9278131634819532,
+          "robust": 0.9266816103746055,
+          "weighted": [
+            0.9304856705899158,
+            0.9289248561380525,
+            0.9263044260054896
+          ]
+        },
+        {
+          "ordinary": 0.9320594479830149,
+          "robust": 0.9316920400704793,
+          "weighted": [
+            0.9332913499791953,
+            0.9326547503584761,
+            0.9315695707663008
+          ]
+        },
+        {
+          "ordinary": 0.9341825902335456,
+          "robust": 0.9288893793791303,
+          "weighted": [
+            0.9328965029217584,
+            0.927124975760992,
+            0.933717988823101
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9308221291738465
+    },
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "lap_svm26",
+          "C": 3,
+          "gamma": 0.003,
+          "neighbors": 10,
+          "graph_weight": 0
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.7",
+        "scope": "efficacy_other"
+      },
+      "name": "phase26_control_lap_svm26",
+      "matched_control": true,
+      "ordinary_cv": 0.9221514508138711,
+      "robust_cv": 0.9095399777197025,
+      "cv_std": 0.005004294275913286,
+      "per_repeat": [
+        {
+          "ordinary": 0.9150743099787685,
+          "robust": 0.9038857881316136,
+          "weighted": [
+            0.9001562808492286,
+            0.9243460600711307,
+            0.9171542759472602
+          ]
+        },
+        {
+          "ordinary": 0.9256900212314224,
+          "robust": 0.9125074388291383,
+          "weighted": [
+            0.9081132446950437,
+            0.9361344266142435,
+            0.9245053391300293
+          ]
+        },
+        {
+          "ordinary": 0.9256900212314224,
+          "robust": 0.9122267061983558,
+          "weighted": [
+            0.9077389345206669,
+            0.9350023978589084,
+            0.9268945031496474
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9211505919586884
+    },
+    {
+      "config": {
+        "model": "policy26",
+        "learner": {
+          "model": "other_subclasses26",
+          "subgroups": 1,
+          "representation": "kernel",
+          "C": 3,
+          "mix": 1,
+          "pseudo_weight": 0.03
+        },
+        "baseline": {
+          "model": "tri_labelwise",
+          "base": {
+            "model": "lowdensity_v2",
+            "cluster_gate": true,
+            "clusters": 10,
+            "C": 1,
+            "gamma": 0.001,
+            "pseudo_weight": 0.03
+          },
+          "tri": {
+            "model": "tri_training",
+            "committee": "mixed",
+            "cluster_gate": false,
+            "pseudo_weight": 1.0,
+            "aggregation": "vote",
+            "stratified_bootstrap": false
+          },
+          "base_rule": "t0.55",
+          "tri_rule": "t0.5",
+          "use_tri": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "decision_rule": "t0.7",
+        "scope": "other"
+      },
+      "name": "phase26_control_other_subclasses26",
+      "matched_control": true,
+      "ordinary_cv": 0.927105449398443,
+      "robust_cv": 0.9155015625334953,
+      "cv_std": 0.005004294275913234,
+      "per_repeat": [
+        {
+          "ordinary": 0.9235668789808917,
+          "robust": 0.9088060361135234,
+          "weighted": [
+            0.903885755157734,
+            0.9280067865516708,
+            0.9229643478477947
+          ]
+        },
+        {
+          "ordinary": 0.9235668789808917,
+          "robust": 0.9090687267756533,
+          "weighted": [
+            0.9042360093739071,
+            0.9292136709603183,
+            0.9220289190006135
+          ]
+        },
+        {
+          "ordinary": 0.9341825902335456,
+          "robust": 0.9286299247113095,
+          "weighted": [
+            0.9267790362038975,
+            0.9418324551974891,
+            0.9380168829380929
+          ]
+        }
+      ],
+      "rule": "t0.5",
+      "selection_score": 0.9261045905432603
+    }
+  ]
+}

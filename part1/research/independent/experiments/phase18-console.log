@@ -1,0 +1,38 @@
+RUN 1 19 {'model': 'weighted_ssl', 'weighting': 'year', 'slope': -1}
+{"id": "925450b8b835d0", "model": "weighted_ssl", "score": 0.8811040339702759, "rule": "t0.55", "default_score": 0.8747346072186837, "seconds": 2.156, "status": "ok", "error": null}
+RUN 2 19 {'model': 'weighted_ssl', 'weighting': 'year', 'slope': 0.5}
+{"id": "2954d724d75e4e", "model": "weighted_ssl", "score": 0.9193205944798301, "rule": "t0.55", "default_score": 0.9150743099787685, "seconds": 2.091, "status": "ok", "error": null}
+RUN 3 19 {'model': 'weighted_ssl', 'weighting': 'year', 'slope': 1}
+{"id": "1200dcd385d72b", "model": "weighted_ssl", "score": 0.9235668789808917, "rule": "t0.55", "default_score": 0.9150743099787685, "seconds": 2.02, "status": "ok", "error": null}
+RUN 4 19 {'model': 'weighted_ssl', 'weighting': 'year', 'slope': 2}
+{"id": "2d26a69c908a2d", "model": "weighted_ssl", "score": 0.8747346072186837, "rule": "t0.45", "default_score": 0.8726114649681529, "seconds": 2.219, "status": "ok", "error": null}
+RUN 5 19 {'model': 'weighted_ssl', 'weighting': 'late', 'late_weight': 1.5}
+{"id": "fecaa6456dc946", "model": "weighted_ssl", "score": 0.9214437367303608, "rule": "t0.55", "default_score": 0.9150743099787685, "seconds": 2.081, "status": "ok", "error": null}
+RUN 6 19 {'model': 'weighted_ssl', 'weighting': 'late', 'late_weight': 3}
+{"id": "af736c0c540afc", "model": "weighted_ssl", "score": 0.9171974522292994, "rule": "t0.55", "default_score": 0.9129511677282378, "seconds": 2.066, "status": "ok", "error": null}
+RUN 7 19 {'model': 'weighted_ssl', 'weighting': 'late', 'late_weight': 5}
+{"id": "9401d5d9a15952", "model": "weighted_ssl", "score": 0.9044585987261147, "rule": "t0.45", "default_score": 0.902335456475584, "seconds": 2.123, "status": "ok", "error": null}
+RUN 8 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 0.01, 'power': 0.5}
+{"id": "007b8e7469d0a2", "model": "weighted_ssl", "score": 0.9171974522292994, "rule": "t0.55", "default_score": 0.910828025477707, "seconds": 2.109, "status": "ok", "error": null}
+RUN 9 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 0.01, 'power': 1}
+{"id": "5af8df8598056a", "model": "weighted_ssl", "score": 0.8927813163481955, "rule": "t0.55", "default_score": 0.8895966029723993, "seconds": 2.062, "status": "ok", "error": null}
+RUN 10 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 0.1, 'power': 0.5}
+{"id": "d3c79e18406a38", "model": "weighted_ssl", "score": 0.9087048832271764, "rule": "t0.55", "default_score": 0.9044585987261147, "seconds": 2.03, "status": "ok", "error": null}
+RUN 11 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 0.1, 'power': 1}
+{"id": "34eb9879f30ce1", "model": "weighted_ssl", "score": 0.8864118895966031, "rule": "t0.55", "default_score": 0.8800424628450108, "seconds": 2.083, "status": "ok", "error": null}
+RUN 12 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 1, 'power': 0.5}
+{"id": "8b4b754b7f62a9", "model": "weighted_ssl", "score": 0.9097664543524415, "rule": "t0.55", "default_score": 0.902335456475584, "seconds": 2.088, "status": "ok", "error": null}
+RUN 13 19 {'model': 'weighted_ssl', 'weighting': 'domain', 'domain_C': 1, 'power': 1}
+{"id": "f78c230f321fe0", "model": "weighted_ssl", "score": 0.8906581740976646, "rule": "t0.55", "default_score": 0.8800424628450108, "seconds": 2.081, "status": "ok", "error": null}
+RUN 14 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.001, 'blend': 0.5}
+{"id": "864a54a6e9b288", "model": "weighted_ssl", "score": 0.9129511677282377, "rule": "t0.55", "default_score": 0.9087048832271761, "seconds": 2.762, "status": "ok", "error": null}
+RUN 15 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.001, 'blend': 1}
+{"id": "1c305c0986bc7c", "model": "weighted_ssl", "score": 0.8821656050955414, "rule": "t0.5", "default_score": 0.8821656050955414, "seconds": 2.672, "status": "ok", "error": null}
+RUN 16 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.003, 'blend': 0.5}
+{"id": "99d14b2cae646d", "model": "weighted_ssl", "score": 0.9129511677282377, "rule": "t0.5", "default_score": 0.9129511677282377, "seconds": 2.293, "status": "ok", "error": null}
+RUN 17 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.003, 'blend': 1}
+{"id": "ae5ae9cac99996", "model": "weighted_ssl", "score": 0.89171974522293, "rule": "t0.55", "default_score": 0.8874734607218683, "seconds": 2.291, "status": "ok", "error": null}
+RUN 18 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.01, 'blend': 0.5}
+{"id": "cabe331e36ef50", "model": "weighted_ssl", "score": 0.9214437367303608, "rule": "t0.55", "default_score": 0.9150743099787685, "seconds": 2.134, "status": "ok", "error": null}
+RUN 19 19 {'model': 'weighted_ssl', 'weighting': 'kmm', 'weight_gamma': 0.01, 'blend': 1}
+{"id": "a421d6b8604a86", "model": "weighted_ssl", "score": 0.9044585987261147, "rule": "t0.55", "default_score": 0.9023354564755838, "seconds": 2.065, "status": "ok", "error": null}

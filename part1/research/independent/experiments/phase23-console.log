@@ -1,0 +1,48 @@
+SCREEN 1 17 other 0.1
+{"id": "fe82c43c578b0e", "model": "joint_specialist", "score": 0.8980891719745223, "rule": "t0.5", "default_score": 0.8980891719745223, "seconds": 43.577, "status": "ok", "error": null}
+SCREEN 2 17 other 0.3
+{"id": "86f5a3bd9cf95d", "model": "joint_specialist", "score": 0.900212314225053, "rule": "t0.5", "default_score": 0.900212314225053, "seconds": 0.069, "status": "ok", "error": null}
+SCREEN 3 17 other 1
+{"id": "8b4ca878e01101", "model": "joint_specialist", "score": 0.9087048832271761, "rule": "t0.5", "default_score": 0.9087048832271761, "seconds": 0.068, "status": "ok", "error": null}
+SCREEN 4 17 pair 0.1
+{"id": "61eb35661c184b", "model": "joint_specialist", "score": 0.9065817409766455, "rule": "t0.5", "default_score": 0.9065817409766455, "seconds": 0.071, "status": "ok", "error": null}
+SCREEN 5 17 pair 0.3
+{"id": "ab3f2245298b7a", "model": "joint_specialist", "score": 0.9087048832271761, "rule": "t0.5", "default_score": 0.9087048832271761, "seconds": 0.078, "status": "ok", "error": null}
+SCREEN 6 17 pair 1
+{"id": "369ed330d25f10", "model": "joint_specialist", "score": 0.910828025477707, "rule": "t0.5", "default_score": 0.910828025477707, "seconds": 0.074, "status": "ok", "error": null}
+SCREEN 7 17 all 0.1
+{"id": "bdeb1ee6108760", "model": "joint_specialist", "score": 0.9320594479830148, "rule": "t0.5", "default_score": 0.9320594479830148, "seconds": 0.102, "status": "ok", "error": null}
+SCREEN 8 17 all 0.3
+{"id": "942bb8227025ae", "model": "joint_specialist", "score": 0.9405520169851381, "rule": "t0.5", "default_score": 0.9405520169851381, "seconds": 0.085, "status": "ok", "error": null}
+SCREEN 9 17 all 1
+{"id": "52ffea0ea5fc82", "model": "joint_specialist", "score": 0.9363057324840764, "rule": "t0.5", "default_score": 0.9363057324840764, "seconds": 0.089, "status": "ok", "error": null}
+SCREEN 10 17 patterns 0.1
+{"id": "ef608b2b64194f", "model": "joint_specialist", "score": 0.9320594479830148, "rule": "t0.5", "default_score": 0.9320594479830148, "seconds": 0.078, "status": "ok", "error": null}
+SCREEN 11 17 patterns 0.3
+{"id": "9f1e3f76855f0d", "model": "joint_specialist", "score": 0.9363057324840764, "rule": "t0.5", "default_score": 0.9363057324840764, "seconds": 0.075, "status": "ok", "error": null}
+SCREEN 12 17 patterns 1
+{"id": "083cd0bb4375f0", "model": "joint_specialist", "score": 0.9352441613588109, "rule": "t0.5", "default_score": 0.9352441613588109, "seconds": 0.077, "status": "ok", "error": null}
+SCREEN 13 17 other 0.1
+{"id": "5bd5fb4b877d91", "model": "joint_specialist", "score": 0.8980891719745223, "rule": "t0.5", "default_score": 0.8980891719745223, "seconds": 0.07, "status": "ok", "error": null}
+SCREEN 14 17 other 0.3
+{"id": "4350688e696a93", "model": "joint_specialist", "score": 0.9044585987261147, "rule": "t0.5", "default_score": 0.9044585987261147, "seconds": 0.071, "status": "ok", "error": null}
+SCREEN 15 17 other 1
+{"id": "1c8b8ebfde5673", "model": "joint_specialist", "score": 0.9044585987261147, "rule": "t0.5", "default_score": 0.9044585987261147, "seconds": 0.072, "status": "ok", "error": null}
+SCREEN 16 17 other 0.3
+{"id": "2d05c916709a8c", "model": "joint_specialist", "score": 0.8980891719745223, "rule": "t0.5", "default_score": 0.8980891719745223, "seconds": 0.075, "status": "ok", "error": null}
+SCREEN 17 17 other 0.3
+{"id": "9ed6a29ba4865b", "model": "joint_specialist", "score": 0.900212314225053, "rule": "t0.5", "default_score": 0.900212314225053, "seconds": 0.07, "status": "ok", "error": null}
+REPEAT all 20261111
+{"id": "942bb8227025ae", "model": "joint_specialist", "score": 0.9150743099787687, "rule": "argmax", "default_score": 0.9129511677282377, "seconds": 45.465, "status": "ok", "error": null}
+REPEAT all 20261112
+{"id": "942bb8227025ae", "model": "joint_specialist", "score": 0.900212314225053, "rule": "t0.5", "default_score": 0.900212314225053, "seconds": 43.766, "status": "ok", "error": null}
+REPEAT all 20261113
+{"id": "942bb8227025ae", "model": "joint_specialist", "score": 0.9193205944798301, "rule": "t0.5", "default_score": 0.9193205944798301, "seconds": 43.683, "status": "ok", "error": null}
+REPEAT other 20261111
+{"id": "8b4ca878e01101", "model": "joint_specialist", "score": 0.9214437367303608, "rule": "t0.5", "default_score": 0.9214437367303608, "seconds": 0.113, "status": "ok", "error": null}
+REPEAT other 20261112
+{"id": "8b4ca878e01101", "model": "joint_specialist", "score": 0.8853503184713376, "rule": "t0.5", "default_score": 0.8853503184713376, "seconds": 0.068, "status": "ok", "error": null}
+REPEAT other 20261113
+{"id": "8b4ca878e01101", "model": "joint_specialist", "score": 0.9023354564755838, "rule": "t0.5", "default_score": 0.9023354564755838, "seconds": 0.069, "status": "ok", "error": null}
+VALIDATION {"bucket": "all", "config": {"model": "joint_specialist", "base": {"model": "lowdensity_v2", "cluster_gate": true, "clusters": 10, "C": 1, "gamma": 0.001, "pseudo_weight": 0.03}, "tri": {"model": "tri_training", "committee": "mixed", "cluster_gate": false, "pseudo_weight": 1.0, "aggregation": "vote", "stratified_bootstrap": false}, "base_rule": "t0.55", "tri_rule": "t0.5", "use_tri": [0, 0, 0, 1, 1], "meta": "all", "meta_C": 0.3, "inner_splits": 15}, "ordinary": 0.9405520169851381, "robust": 0.9445803782543104, "weighted": [0.9527531995580438, 0.9575285861060469, 0.9459231653440345], "macro": 0.8906108952144758, "ordinary_cv": 0.9108280254777069, "robust_cv": 0.896356180105386, "cv_std": 0.007944070884870362, "robust_std": 0.009980983102126709, "per_repeat": [{"ordinary": 0.9129511677282377, "robust": 0.9058974900996111, "weighted": [0.9035462642234022, 0.9226441516442844, 0.9127755475233913], "macro": 0.8662161794142078}, {"ordinary": 0.900212314225053, "robust": 0.8825770519733307, "weighted": [0.8766986312227567, 0.8787193778621052, 0.9009725349295271], "macro": 0.8531396089075571}, {"ordinary": 0.9193205944798301, "robust": 0.9005939982432158, "weighted": [0.9159610727002245, 0.8943517994976777, 0.9200204245570469], "macro": 0.8727416238393488}], "rule": "t0.5", "selection_score": 0.8943599834849606, "name": "phase23_all", "validation": {"sample_f1": 0.8717948717948718, "macro_f1": 0.6982222222222221, "f1_Safety": 0.8888888888888888, "f1_Funding": 0.4, "f1_Efficacy": 0.6666666666666666, "f1_Recruitment": 0.98, "f1_Other": 0.5555555555555556}}
+COMPLETE 1 validation candidates

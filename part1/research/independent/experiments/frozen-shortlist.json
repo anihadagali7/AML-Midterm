@@ -1,0 +1,196 @@
+{
+  "frozen_at": "2026-11-05T04:04:32.644979+00:00",
+  "members": [
+    {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true,
+      "features": [
+        "fingerprint"
+      ],
+      "feature_weight": 0.5
+    },
+    {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "criteria"
+      ],
+      "feature_weight": 0.5
+    },
+    {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drug_targets"
+      ],
+      "feature_weight": 1.0
+    },
+    {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true
+    }
+  ],
+  "shortlist": [
+    {
+      "name": "fingerprint_ssl",
+      "config": {
+        "model": "ensemble",
+        "members": [
+          {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true,
+            "features": [
+              "fingerprint"
+            ],
+            "feature_weight": 0.5
+          }
+        ],
+        "weights": [
+          1
+        ]
+      },
+      "rule": "t0.25",
+      "repeated_oof_f1": 0.9299363057324841,
+      "mean_split_f1": 0.9252653927813164,
+      "prediction_strategy": "Mean of 15 models: 5 grouped folds x seeds 20261104,20261105,20261106. No validation labels used in fits."
+    },
+    {
+      "name": "balanced_ensemble",
+      "config": {
+        "model": "ensemble",
+        "members": [
+          {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true,
+            "features": [
+              "fingerprint"
+            ],
+            "feature_weight": 0.5
+          },
+          {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drugs",
+              "criteria"
+            ],
+            "feature_weight": 0.5
+          },
+          {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          }
+        ],
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "rule": "t0.35",
+      "repeated_oof_f1": 0.9320594479830149,
+      "mean_split_f1": 0.9196036801132342,
+      "prediction_strategy": "Mean of 15 models: 5 grouped folds x seeds 20261104,20261105,20261106. No validation labels used in fits."
+    },
+    {
+      "name": "embedding_ssl",
+      "config": {
+        "model": "ensemble",
+        "members": [
+          {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          }
+        ],
+        "weights": [
+          1
+        ]
+      },
+      "rule": "t0.25",
+      "repeated_oof_f1": 0.9307855626326963,
+      "mean_split_f1": 0.9205944798301489,
+      "prediction_strategy": "Mean of 15 models: 5 grouped folds x seeds 20261104,20261105,20261106. No validation labels used in fits."
+    }
+  ],
+  "validation_selection": "Choose the highest sample-F1 among these three frozen models; if tied within 0.005, choose fingerprint_ssl, then embedding_ssl, then balanced_ensemble. No subsequent validation-error-driven tuning.",
+  "training_data": "Official training file only; validation remains held out even for final submission.",
+  "engine_sha256": "072572acc05e8c81ef609273c102e9e470c5fcd38eb69f57d2bbb8e3774f5735"
+}

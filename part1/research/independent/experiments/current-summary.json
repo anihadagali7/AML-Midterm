@@ -1,0 +1,68 @@
+{
+  "updated_at": "2026-11-06T01:41:21.206522+00:00",
+  "logged_cv_runs": 2293,
+  "successful_cv_runs": 2244,
+  "failed_attempts": 49,
+  "distinct_configs": 1840,
+  "validation_candidate_evaluations": 89,
+  "validation_batches": 31,
+  "best_validation_f1": 0.9123931623931625,
+  "validation_macro_f1": 0.81044356609574,
+  "descriptive_group_bootstrap_95": [
+    0.8568376068376068,
+    0.9568627450980391
+  ],
+  "validation_embedding_groups": 72,
+  "loo_current_selected": 0.9286624203821657,
+  "target": 0.92735,
+  "target_met": false,
+  "kaggle_score": null,
+  "limitation": "Repeated CV and validation selection cause optimism; bootstrap interval is descriptive and does not adjust for selection. Equivalent model variants and verification comparisons can recur in the validation ledger.",
+  "additional_fixed_policy_cv": {
+    "seeds": [
+      20261111,
+      20261112,
+      20261113
+    ],
+    "mean_sample_f1": 0.9037508846426042,
+    "split_std": 0.003608647921863258,
+    "interpretation": "New grouped split seeds applied to the previously selected fixed model; not a nested replay of full model search."
+  },
+  "reported_leader": "0.93xx; exact score not provided",
+  "above_reported_leader_lower_bound": false,
+  "common_cv_benchmark": {
+    "candidate": "Current best hybrid",
+    "incumbent": true,
+    "cv_mean": 0.910474168435952,
+    "repeat_std": 0.007371785794762749,
+    "cv_macro": 0.856146842297691,
+    "paired_cv_difference": 0.0,
+    "repeats_improved": 0,
+    "cv_shortlist": false,
+    "validation_f1": 0.9123931623931625,
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "validation_source": "experiments/current-best.json",
+    "result_key": "bb324724174a1c6ba267",
+    "protocol": "part1-common-cv-v1",
+    "seeds": [
+      20261126,
+      20261127,
+      20261128
+    ]
+  },
+  "supplementary_pooled_cv": {
+    "candidate": "Current best hybrid",
+    "incumbent": true,
+    "training_cv_mean": 0.910474168435952,
+    "training_cv_std": 0.007371785794762749,
+    "pooled_cv_mean": 0.8922931442080378,
+    "pooled_cv_std": 0.004680612263173281,
+    "original_validation_f1": 0.9123931623931625,
+    "pooled_paired_difference": 0.0,
+    "pooled_repeats_improved": 0,
+    "pooled_result_key": "0972f1795395f11e22cc",
+    "training_cv_mean_rank": 13,
+    "pooled_cv_mean_rank": 8,
+    "original_validation_f1_rank": 1
+  }
+}

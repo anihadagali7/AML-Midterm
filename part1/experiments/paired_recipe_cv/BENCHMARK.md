@@ -1,3 +1,5 @@
+> Historical protocol retained unchanged below. For new cross-branch comparisons use [the central testing policy](../../TESTING_POLICY.md), which uses grouped train157 and pooled235 folds. These older KFold scores retain their original meaning and are not interchangeable with the grouped results.
+
 # Fixed benchmark for subsequent Part 1 recipes
 
 **Active policy: training-only feature access**, chosen by the user after reviewing the four-variant experiment. Future fitting must exclude each fold's held-out inputs and all Kaggle test inputs. The all-embeddings results are retained as historical diagnostics; they are not the active selection reference. This changes the policy for future work, not the original predeclared experiment in protocol.json/PROTOCOL.md.

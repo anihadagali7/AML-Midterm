@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-11-05T05:04:45.622829+00:00",
+  "candidates": [
+    {
+      "name": "hierarchical_svm",
+      "config": {
+        "model": "hierarchical_svm",
+        "C": 3,
+        "gamma": 0.003,
+        "pseudo_weight": 0.03
+      },
+      "rule": "t0.35",
+      "cv": 0.9299363057324841,
+      "cv_mean": 0.9164897381457892,
+      "cv_macro": 0.8777208526182072
+    },
+    {
+      "name": "multiclass_ssl",
+      "config": {
+        "model": "multiclass_ssl",
+        "C": 3,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "rule": "t0.35",
+      "cv": 0.9129511677282377,
+      "cv_mean": 0.9037508846426044,
+      "cv_macro": 0.8625578760598782
+    }
+  ]
+}

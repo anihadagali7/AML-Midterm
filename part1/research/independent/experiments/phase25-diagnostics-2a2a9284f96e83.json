@@ -1,0 +1,31 @@
+{
+  "reliability": "per_label",
+  "teacher": "supervised",
+  "labels": [
+    {
+      "label": "Safety",
+      "accepted": 966,
+      "pseudo_mass": 24.482405950478523
+    },
+    {
+      "label": "Funding",
+      "accepted": 993,
+      "pseudo_mass": 26.98375251507392
+    },
+    {
+      "label": "Efficacy",
+      "accepted": 914,
+      "pseudo_mass": 22.418850984899336
+    },
+    {
+      "label": "Recruitment",
+      "accepted": 977,
+      "pseudo_mass": 20.021256751169467
+    },
+    {
+      "label": "Other",
+      "accepted": 764,
+      "pseudo_mass": 16.27710814203487
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-11-05T05:27:04.006923+00:00",
+  "candidates": [
+    {
+      "name": "size_matched_calibration",
+      "config": {
+        "model": "calibrated_ssl",
+        "calibration": "patterns",
+        "meta_C": 1,
+        "inner_splits": 15
+      },
+      "rule": "t0.35",
+      "cv": 0.9299363057324841,
+      "cv_mean": 0.9171974522292993,
+      "cv_macro": 0.8711813949797526
+    },
+    {
+      "name": "size_matched_thresholds",
+      "config": {
+        "model": "calibrated_ssl",
+        "calibration": "thresholds",
+        "macro_weight": 0,
+        "inner_splits": 15
+      },
+      "rule": "t0.55",
+      "cv": 0.9193205944798301,
+      "cv_mean": 0.913658881811748,
+      "cv_macro": 0.8460598175679013
+    }
+  ]
+}

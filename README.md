@@ -1,3 +1,13 @@
+# AML Midterm — integrated research
+
+Part 1 now includes the independent research alongside the logistic/semi-supervised branch. Start with the [current handoff](part1/RESEARCH_HANDOFF.md), [central testing policy](part1/TESTING_POLICY.md), and [submission ledger](part1/submissions/README.md). The policy uses the frozen grouped train157 and pooled235 CV checks, followed by original validation and supplementary chronology.
+
+Highest reported Kaggle remains Ani’s original **0.89423**; the submitted three-way ensemble scored **0.89401**. The newer Ani revision has a different CSV and no established score here. Exact artifacts and provenance are preserved.
+
+The material below is the **historical logistic-branch checkpoint at 7425345**. Its references to “active,” “latest,” or “current” describe that checkpoint; use the central handoff above for current status. Its older KFold benchmark remains valid under its own protocol.
+
+---
+
 # AML-Midterm
 
 ## Part 1 experiment checkpoint

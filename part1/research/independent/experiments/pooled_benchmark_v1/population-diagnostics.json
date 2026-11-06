@@ -1,0 +1,7 @@
+{
+  "current_pooled_oof_original_training_rows": 0.8968152866242037,
+  "current_pooled_oof_original_validation_rows": 0.8831908831908831,
+  "original_validation_rows_matching_masked_training_embeddings": 20,
+  "original_validation_rows_matching_gold_training_embeddings": 0,
+  "interpretation": "Subset OOF diagnostics, not separate holdout scores. Group CV excludes matching masked rows; the original training-only full fit legitimately used all provided training rows. This difference is not established as the cause of a score change."
+}

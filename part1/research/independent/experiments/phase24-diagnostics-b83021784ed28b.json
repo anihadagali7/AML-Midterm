@@ -1,0 +1,282 @@
+[
+  {
+    "label": "Safety",
+    "round": 0,
+    "embedding_received": 3,
+    "metadata_received": 3,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 1,
+    "embedding_received": 6,
+    "metadata_received": 6,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 2,
+    "embedding_received": 9,
+    "metadata_received": 9,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 3,
+    "embedding_received": 12,
+    "metadata_received": 12,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 4,
+    "embedding_received": 15,
+    "metadata_received": 15,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 5,
+    "embedding_received": 18,
+    "metadata_received": 18,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 6,
+    "embedding_received": 21,
+    "metadata_received": 21,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Safety",
+    "round": 7,
+    "embedding_received": 24,
+    "metadata_received": 24,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "embedding_received": 3,
+    "metadata_received": 3,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 1,
+    "embedding_received": 6,
+    "metadata_received": 6,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 2,
+    "embedding_received": 9,
+    "metadata_received": 9,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 3,
+    "embedding_received": 12,
+    "metadata_received": 12,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 4,
+    "embedding_received": 15,
+    "metadata_received": 15,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 5,
+    "embedding_received": 18,
+    "metadata_received": 18,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 6,
+    "embedding_received": 21,
+    "metadata_received": 21,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Funding",
+    "round": 7,
+    "embedding_received": 24,
+    "metadata_received": 24,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "embedding_received": 3,
+    "metadata_received": 3,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 1,
+    "embedding_received": 6,
+    "metadata_received": 6,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 2,
+    "embedding_received": 9,
+    "metadata_received": 9,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 3,
+    "embedding_received": 12,
+    "metadata_received": 12,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 4,
+    "embedding_received": 15,
+    "metadata_received": 15,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 5,
+    "embedding_received": 18,
+    "metadata_received": 18,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 6,
+    "embedding_received": 21,
+    "metadata_received": 21,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Efficacy",
+    "round": 7,
+    "embedding_received": 24,
+    "metadata_received": 24,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "embedding_received": 6,
+    "metadata_received": 6,
+    "metadata_to_embedding_positive": 3
+  },
+  {
+    "label": "Recruitment",
+    "round": 1,
+    "embedding_received": 12,
+    "metadata_received": 12,
+    "metadata_to_embedding_positive": 6
+  },
+  {
+    "label": "Recruitment",
+    "round": 2,
+    "embedding_received": 18,
+    "metadata_received": 18,
+    "metadata_to_embedding_positive": 9
+  },
+  {
+    "label": "Recruitment",
+    "round": 3,
+    "embedding_received": 24,
+    "metadata_received": 24,
+    "metadata_to_embedding_positive": 12
+  },
+  {
+    "label": "Recruitment",
+    "round": 4,
+    "embedding_received": 30,
+    "metadata_received": 30,
+    "metadata_to_embedding_positive": 15
+  },
+  {
+    "label": "Recruitment",
+    "round": 5,
+    "embedding_received": 36,
+    "metadata_received": 36,
+    "metadata_to_embedding_positive": 18
+  },
+  {
+    "label": "Recruitment",
+    "round": 6,
+    "embedding_received": 42,
+    "metadata_received": 42,
+    "metadata_to_embedding_positive": 21
+  },
+  {
+    "label": "Recruitment",
+    "round": 7,
+    "embedding_received": 48,
+    "metadata_received": 48,
+    "metadata_to_embedding_positive": 24
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "embedding_received": 3,
+    "metadata_received": 6,
+    "metadata_to_embedding_positive": 0
+  },
+  {
+    "label": "Other",
+    "round": 1,
+    "embedding_received": 9,
+    "metadata_received": 11,
+    "metadata_to_embedding_positive": 3
+  },
+  {
+    "label": "Other",
+    "round": 2,
+    "embedding_received": 14,
+    "metadata_received": 17,
+    "metadata_to_embedding_positive": 5
+  },
+  {
+    "label": "Other",
+    "round": 3,
+    "embedding_received": 20,
+    "metadata_received": 21,
+    "metadata_to_embedding_positive": 8
+  },
+  {
+    "label": "Other",
+    "round": 4,
+    "embedding_received": 24,
+    "metadata_received": 24,
+    "metadata_to_embedding_positive": 9
+  },
+  {
+    "label": "Other",
+    "round": 5,
+    "embedding_received": 27,
+    "metadata_received": 27,
+    "metadata_to_embedding_positive": 9
+  },
+  {
+    "label": "Other",
+    "round": 6,
+    "embedding_received": 30,
+    "metadata_received": 30,
+    "metadata_to_embedding_positive": 9
+  },
+  {
+    "label": "Other",
+    "round": 7,
+    "embedding_received": 33,
+    "metadata_received": 33,
+    "metadata_to_embedding_positive": 9
+  }
+]

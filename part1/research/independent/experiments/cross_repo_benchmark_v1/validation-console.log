@@ -1,0 +1,6 @@
+{"stage": "validation", "candidate": "Local SVM specialist hybrid", "sample_f1": 0.9059829059829061}
+{"stage": "validation", "candidate": "Classical tri-training", "sample_f1": 0.9038461538461541}
+{"stage": "validation", "candidate": "Current best hybrid", "sample_f1": 0.9123931623931625}
+{"stage": "validation", "candidate": "Ani training-only adaptation", "sample_f1": 0.8910256410256411}
+{"stage": "validation", "candidate": "DBSCAN + logistic C1000", "sample_f1": 0.9102564102564102}
+{"stage": "validation", "candidate": "K-means k8 + logistic C1000", "sample_f1": 0.9017094017094016}

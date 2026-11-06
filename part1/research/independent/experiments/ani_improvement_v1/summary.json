@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-11-06T03:40:29.981150+00:00",
+  "protocol_sha256": "e72506af9fa9b9f58a3602c746f9185e4b7c920a6cddc58d8a1a19a751d8bc70",
+  "comparison": [
+    {
+      "candidate": "Ani frozen control",
+      "train_cv8": 0.9195859872611466,
+      "train_sd8": 0.008045385557974575,
+      "train_delta": 0.0,
+      "train_wins": 0,
+      "pooled_cv8": 0.9098404255319148,
+      "pooled_sd8": 0.007633900200554031,
+      "pooled_delta": 0.0,
+      "pooled_wins": 0,
+      "minimum_gain": 0.0,
+      "cv_improvement": false,
+      "validation": 0.8910256410256411,
+      "chronological": 0.8605442176870749
+    },
+    {
+      "candidate": "Ani + tri 25%",
+      "train_cv8": 0.9267515923566879,
+      "train_sd8": 0.005412971882794895,
+      "train_delta": 0.0071656050955413025,
+      "train_wins": 8,
+      "pooled_cv8": 0.9164007092198582,
+      "pooled_sd8": 0.00484191907958206,
+      "pooled_delta": 0.006560283687943272,
+      "pooled_wins": 7,
+      "minimum_gain": 0.006560283687943272,
+      "cv_improvement": true,
+      "validation": 0.8888888888888888,
+      "chronological": 0.8843537414965985
+    },
+    {
+      "candidate": "Ani + tri 40%",
+      "train_cv8": 0.9256900212314225,
+      "train_sd8": 0.005814464517040004,
+      "train_delta": 0.006104033970275924,
+      "train_wins": 6,
+      "pooled_cv8": 0.9163120567375886,
+      "pooled_sd8": 0.005527821726283671,
+      "pooled_delta": 0.006471631205673761,
+      "pooled_wins": 6,
+      "minimum_gain": 0.006104033970275924,
+      "cv_improvement": true,
+      "validation": 0.8589743589743589,
+      "chronological": 0.8775510204081632
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "train_cv8": 0.9256900212314225,
+      "train_sd8": 0.005200615165144745,
+      "train_delta": 0.006104033970275924,
+      "train_wins": 7,
+      "pooled_cv8": 0.9164893617021276,
+      "pooled_sd8": 0.007685715177905405,
+      "pooled_delta": 0.006648936170212741,
+      "pooled_wins": 7,
+      "minimum_gain": 0.006104033970275924,
+      "cv_improvement": true,
+      "validation": 0.9102564102564102,
+      "chronological": 0.8775510204081632
+    }
+  ],
+  "submissions_created": false,
+  "full235_submission_refit": false,
+  "validation_tuning": false
+}

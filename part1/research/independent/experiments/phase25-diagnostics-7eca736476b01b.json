@@ -1,0 +1,31 @@
+{
+  "reliability": "pooled",
+  "teacher": "ssl",
+  "labels": [
+    {
+      "label": "Safety",
+      "accepted": 1006,
+      "pseudo_mass": 271.3046697603477
+    },
+    {
+      "label": "Funding",
+      "accepted": 1006,
+      "pseudo_mass": 286.11656553039273
+    },
+    {
+      "label": "Efficacy",
+      "accepted": 1006,
+      "pseudo_mass": 253.49274399369972
+    },
+    {
+      "label": "Recruitment",
+      "accepted": 1006,
+      "pseudo_mass": 224.67754955488937
+    },
+    {
+      "label": "Other",
+      "accepted": 996,
+      "pseudo_mass": 197.63602908645194
+    }
+  ]
+}

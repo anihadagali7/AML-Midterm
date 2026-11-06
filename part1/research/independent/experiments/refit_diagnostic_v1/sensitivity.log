@@ -1,0 +1,38 @@
+{
+  "candidate": "Ani + tri/SVM 15% each",
+  "test_rows": 312,
+  "changed_label_sets": 29,
+  "changed_label_bits": 38,
+  "total_label_bits": 1560,
+  "mean_absolute_score_change": 0.026482357826266623,
+  "labels": {
+    "Safety": {
+      "original157_positives": 59,
+      "refit235_positives": 53,
+      "changed_bits": 8
+    },
+    "Funding": {
+      "original157_positives": 6,
+      "refit235_positives": 6,
+      "changed_bits": 0
+    },
+    "Efficacy": {
+      "original157_positives": 45,
+      "refit235_positives": 47,
+      "changed_bits": 6
+    },
+    "Recruitment": {
+      "original157_positives": 185,
+      "refit235_positives": 181,
+      "changed_bits": 10
+    },
+    "Other": {
+      "original157_positives": 44,
+      "refit235_positives": 54,
+      "changed_bits": 14
+    }
+  },
+  "accuracy_comparison": null,
+  "interpretation": "Prediction sensitivity only; test labels are unknown and neither direction is shown to be more accurate.",
+  "submission_created": false
+}

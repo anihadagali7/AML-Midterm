@@ -1,0 +1,18 @@
+{"candidate": "Ani + tri 25%", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani + SVM 10%", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani pseudo weight 0.5", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani agreement, pseudo weight 0.5", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani three-GMM-seed average", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani Other specialist 25%", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+{"candidate": "Ani inner-CV Other threshold", "heldout_label_and_feature_invariance": true, "masked_duplicate_exclusion": true, "masked_duplicate_rows_tested": 72, "query_batch_invariance": true, "max_difference": 0.0}
+Traceback (most recent call last):
+  File "/Users/matthew/Desktop/AMLMidterm/audit_ani_improvements.py", line 44, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/matthew/Desktop/AMLMidterm/audit_ani_improvements.py", line 40, in main
+    task.r.save(task.OUT/'boundary_audit.json',dict(passed=True,checks=checks,script_sha256=task.b.file_hash(__file__)))
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/Desktop/AMLMidterm/benchmark_cv.py", line 17, in file_hash
+    def file_hash(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+                                           ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'read_bytes'

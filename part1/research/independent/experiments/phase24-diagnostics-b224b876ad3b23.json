@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Safety",
+    "scale": 19.690321402743493,
+    "metric": "fisher",
+    "subtypes": 2
+  },
+  {
+    "label": "Funding",
+    "scale": 35.42796811002027,
+    "metric": "fisher",
+    "subtypes": 2
+  },
+  {
+    "label": "Efficacy",
+    "scale": 16.91137038846443,
+    "metric": "fisher",
+    "subtypes": 2
+  },
+  {
+    "label": "Recruitment",
+    "scale": 7.040165371218551,
+    "metric": "fisher",
+    "subtypes": 2
+  },
+  {
+    "label": "Other",
+    "scale": 23.203912394362213,
+    "metric": "fisher",
+    "subtypes": 2
+  }
+]

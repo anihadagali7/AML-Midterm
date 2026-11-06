@@ -1,0 +1,69 @@
+{
+  "files": {
+    "part1_sample_submission.csv": {
+      "sha256": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+      "shape": [
+        312,
+        2
+      ]
+    },
+    "pathway_catalog.csv": {
+      "sha256": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+      "shape": [
+        2501,
+        5
+      ]
+    },
+    "part1_train.csv": {
+      "sha256": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+      "shape": [
+        1171,
+        166
+      ]
+    },
+    "part1_test.csv": {
+      "sha256": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+      "shape": [
+        312,
+        161
+      ]
+    },
+    "part1_val.csv": {
+      "sha256": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+      "shape": [
+        78,
+        166
+      ]
+    }
+  },
+  "labeled": 157,
+  "unlabeled": 1014,
+  "label_positive_counts": {
+    "Safety": 16,
+    "Funding": 8,
+    "Efficacy": 17,
+    "Recruitment": 101,
+    "Other": 25
+  },
+  "labeled_years": {
+    "1993": 1,
+    "1995": 2,
+    "1996": 7,
+    "1997": 6,
+    "1998": 11,
+    "1999": 15,
+    "2000": 15,
+    "2001": 28,
+    "2002": 30,
+    "2003": 3,
+    "2004": 2,
+    "2005": 5,
+    "2006": 9,
+    "2007": 10,
+    "2008": 4,
+    "2009": 6,
+    "2010": 3
+  },
+  "embedding_unique_train": 864,
+  "embedding_unique_labeled": 150
+}

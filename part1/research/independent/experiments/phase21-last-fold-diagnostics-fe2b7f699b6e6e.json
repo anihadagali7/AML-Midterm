@@ -1,0 +1,146 @@
+[
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 0,
+    "error": 0.0,
+    "pseudo_count": 988,
+    "positive": 72,
+    "effective_weight": 96.64
+  },
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 1,
+    "error": 0.0,
+    "pseudo_count": 980,
+    "positive": 72,
+    "effective_weight": 95.84
+  },
+  {
+    "label": "Safety",
+    "round": 0,
+    "learner": 2,
+    "error": 0.0,
+    "pseudo_count": 995,
+    "positive": 88,
+    "effective_weight": 97.07000000000002
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 0,
+    "error": 0.016,
+    "pseudo_count": 31,
+    "positive": 0,
+    "effective_weight": 3.100000000000001
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 1,
+    "error": 0.0,
+    "pseudo_count": 989,
+    "positive": 6,
+    "effective_weight": 98.36000000000001
+  },
+  {
+    "label": "Funding",
+    "round": 0,
+    "learner": 2,
+    "error": 0.008064516129032258,
+    "pseudo_count": 61,
+    "positive": 0,
+    "effective_weight": 6.099999999999998
+  },
+  {
+    "label": "Funding",
+    "round": 1,
+    "learner": 0,
+    "error": 0.007936507936507936,
+    "pseudo_count": 62,
+    "positive": 2,
+    "effective_weight": 6.019999999999998
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 0,
+    "error": 0.0,
+    "pseudo_count": 981,
+    "positive": 49,
+    "effective_weight": 95.49000000000001
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 1,
+    "error": 0.0,
+    "pseudo_count": 977,
+    "positive": 49,
+    "effective_weight": 95.09
+  },
+  {
+    "label": "Efficacy",
+    "round": 0,
+    "learner": 2,
+    "error": 0.008,
+    "pseudo_count": 62,
+    "positive": 6,
+    "effective_weight": 6.019999999999998
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 0,
+    "error": 0.016666666666666666,
+    "pseudo_count": 29,
+    "positive": 21,
+    "effective_weight": 2.900000000000001
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 1,
+    "error": 0.025423728813559324,
+    "pseudo_count": 19,
+    "positive": 13,
+    "effective_weight": 1.9000000000000004
+  },
+  {
+    "label": "Recruitment",
+    "round": 0,
+    "learner": 2,
+    "error": 0.04918032786885246,
+    "pseudo_count": 10,
+    "positive": 7,
+    "effective_weight": 1.0
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 0,
+    "error": 0.01904761904761905,
+    "pseudo_count": 26,
+    "positive": 1,
+    "effective_weight": 2.6000000000000005
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 1,
+    "error": 0.03508771929824561,
+    "pseudo_count": 14,
+    "positive": 3,
+    "effective_weight": 1.4000000000000004
+  },
+  {
+    "label": "Other",
+    "round": 0,
+    "learner": 2,
+    "error": 0.06422018348623854,
+    "pseudo_count": 7,
+    "positive": 1,
+    "effective_weight": 0.7
+  }
+]

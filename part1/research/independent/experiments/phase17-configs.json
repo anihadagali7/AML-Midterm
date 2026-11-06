@@ -1,0 +1,152 @@
+[
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 0,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 0,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 25,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 25,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 75,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 75,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 0,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 0,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 25,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 25,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 75,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 75,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 0,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 0,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 25,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 25,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 75,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 75,
+    "pseudo_weight": 0.3
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 0,
+    "pseudo_weight": 0.1,
+    "hard": true
+  },
+  {
+    "model": "tree_student",
+    "student": "xgb",
+    "pca": 25,
+    "pseudo_weight": 0.1,
+    "hard": true
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 0,
+    "pseudo_weight": 0.1,
+    "hard": true
+  },
+  {
+    "model": "tree_student",
+    "student": "catboost",
+    "pca": 25,
+    "pseudo_weight": 0.1,
+    "hard": true
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 0,
+    "pseudo_weight": 0.1,
+    "hard": true
+  },
+  {
+    "model": "tree_student",
+    "student": "extra",
+    "pca": 25,
+    "pseudo_weight": 0.1,
+    "hard": true
+  }
+]

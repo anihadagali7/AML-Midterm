@@ -1,0 +1,857 @@
+{
+  "sample_f1": 0.8938428874734606,
+  "macro_f1": 0.8237688956135558,
+  "per_label": {
+    "Safety": 0.9090909090909091,
+    "Funding": 0.7777777777777778,
+    "Efficacy": 0.9090909090909091,
+    "Recruitment": 0.9514563106796117,
+    "Other": 0.5714285714285714
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "selected": {
+        "config": {
+          "model": "svc",
+          "C": 10,
+          "gamma": 0.001,
+          "scale": "standard",
+          "features": [
+            "drug_targets"
+          ],
+          "feature_weight": 1.0
+        },
+        "rule": "t0.55",
+        "score": 0.8976377952755905
+      },
+      "inner": [
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.1,
+            "scale": "global"
+          },
+          "rule": "t0.35",
+          "score": 0.8871391076115485
+        },
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.3,
+            "scale": "global"
+          },
+          "rule": "expected_f1",
+          "score": 0.8779527559055118
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard"
+          },
+          "rule": "expected_f1",
+          "score": 0.8923884514435695
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          },
+          "rule": "t0.55",
+          "score": 0.8976377952755905
+        },
+        {
+          "config": {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          },
+          "rule": "expected_f1",
+          "score": 0.8805774278215223
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "logistic",
+                "scale": "global",
+                "C": 0.2
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              }
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ]
+          },
+          "rule": "t0.5",
+          "score": 0.889763779527559
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "criteria"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "pseudo",
+                "teacher": {
+                  "model": "cluster",
+                  "cluster": "hdbscan",
+                  "min_cluster": 5,
+                  "pca": 25
+                },
+                "student": "logistic",
+                "C": 0.3,
+                "gamma": 0.001,
+                "scale": "global",
+                "pseudo_weight": 0.05,
+                "confidence": 0.95,
+                "labelwise": true,
+                "consensus": true
+              }
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.8976377952755905
+        }
+      ],
+      "outer": {
+        "sample_f1": 0.8722222222222221,
+        "macro_f1": 0.8112820512820514,
+        "f1_Safety": 0.8,
+        "f1_Funding": 0.6666666666666666,
+        "f1_Efficacy": 1.0,
+        "f1_Recruitment": 0.9230769230769231,
+        "f1_Other": 0.6666666666666666
+      }
+    },
+    {
+      "fold": 1,
+      "selected": {
+        "config": {
+          "model": "ensemble",
+          "members": [
+            {
+              "model": "svc",
+              "C": 10,
+              "gamma": 0.001,
+              "scale": "standard",
+              "features": [
+                "drug_targets"
+              ],
+              "feature_weight": 1.0
+            },
+            {
+              "model": "svc",
+              "C": 10,
+              "gamma": 0.001,
+              "scale": "standard",
+              "features": [
+                "criteria"
+              ],
+              "feature_weight": 1.0
+            },
+            {
+              "model": "pseudo",
+              "teacher": {
+                "model": "cluster",
+                "cluster": "hdbscan",
+                "min_cluster": 5,
+                "pca": 25
+              },
+              "student": "logistic",
+              "C": 0.3,
+              "gamma": 0.001,
+              "scale": "global",
+              "pseudo_weight": 0.05,
+              "confidence": 0.95,
+              "labelwise": true,
+              "consensus": true
+            }
+          ]
+        },
+        "rule": "t0.35",
+        "score": 0.9312169312169312
+      },
+      "inner": [
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.1,
+            "scale": "global"
+          },
+          "rule": "expected_f1",
+          "score": 0.9232804232804233
+        },
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.3,
+            "scale": "global"
+          },
+          "rule": "t0.25",
+          "score": 0.919047619047619
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard"
+          },
+          "rule": "t0.55",
+          "score": 0.9232804232804233
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          },
+          "rule": "t0.55",
+          "score": 0.9153439153439153
+        },
+        {
+          "config": {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          },
+          "rule": "t0.25",
+          "score": 0.9206349206349206
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "logistic",
+                "scale": "global",
+                "C": 0.2
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              }
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.9216931216931217
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "criteria"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "pseudo",
+                "teacher": {
+                  "model": "cluster",
+                  "cluster": "hdbscan",
+                  "min_cluster": 5,
+                  "pca": 25
+                },
+                "student": "logistic",
+                "C": 0.3,
+                "gamma": 0.001,
+                "scale": "global",
+                "pseudo_weight": 0.05,
+                "confidence": 0.95,
+                "labelwise": true,
+                "consensus": true
+              }
+            ]
+          },
+          "rule": "t0.35",
+          "score": 0.9312169312169312
+        }
+      ],
+      "outer": {
+        "sample_f1": 0.8387096774193549,
+        "macro_f1": 0.595137420718816,
+        "f1_Safety": 1.0,
+        "f1_Funding": 0.0,
+        "f1_Efficacy": 0.5,
+        "f1_Recruitment": 0.9302325581395349,
+        "f1_Other": 0.5454545454545454
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "config": {
+          "model": "logistic",
+          "C": 0.3,
+          "scale": "global"
+        },
+        "rule": "t0.35",
+        "score": 0.900262467191601
+      },
+      "inner": [
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.1,
+            "scale": "global"
+          },
+          "rule": "t0.45",
+          "score": 0.8950131233595799
+        },
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.3,
+            "scale": "global"
+          },
+          "rule": "t0.35",
+          "score": 0.900262467191601
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard"
+          },
+          "rule": "expected_f1",
+          "score": 0.8784776902887139
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          },
+          "rule": "expected_f1",
+          "score": 0.8858267716535433
+        },
+        {
+          "config": {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          },
+          "rule": "expected_f1",
+          "score": 0.8963254593175852
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "logistic",
+                "scale": "global",
+                "C": 0.2
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              }
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ]
+          },
+          "rule": "t0.5",
+          "score": 0.8976377952755906
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "criteria"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "pseudo",
+                "teacher": {
+                  "model": "cluster",
+                  "cluster": "hdbscan",
+                  "min_cluster": 5,
+                  "pca": 25
+                },
+                "student": "logistic",
+                "C": 0.3,
+                "gamma": 0.001,
+                "scale": "global",
+                "pseudo_weight": 0.05,
+                "confidence": 0.95,
+                "labelwise": true,
+                "consensus": true
+              }
+            ]
+          },
+          "rule": "t0.35",
+          "score": 0.9028871391076115
+        }
+      ],
+      "outer": {
+        "sample_f1": 0.9444444444444444,
+        "macro_f1": 0.9094076655052264,
+        "f1_Safety": 1.0,
+        "f1_Funding": 1.0,
+        "f1_Efficacy": 1.0,
+        "f1_Recruitment": 0.975609756097561,
+        "f1_Other": 0.5714285714285714
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "config": {
+          "model": "logistic",
+          "C": 0.3,
+          "scale": "global"
+        },
+        "rule": "t0.25",
+        "score": 0.9166666666666667
+      },
+      "inner": [
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.1,
+            "scale": "global"
+          },
+          "rule": "t0.25",
+          "score": 0.9086021505376345
+        },
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.3,
+            "scale": "global"
+          },
+          "rule": "t0.25",
+          "score": 0.9166666666666667
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard"
+          },
+          "rule": "expected_f1",
+          "score": 0.9059139784946237
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          },
+          "rule": "expected_f1",
+          "score": 0.8975806451612902
+        },
+        {
+          "config": {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          },
+          "rule": "t0.25",
+          "score": 0.9193548387096773
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "logistic",
+                "scale": "global",
+                "C": 0.2
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              }
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.906989247311828
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "criteria"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "pseudo",
+                "teacher": {
+                  "model": "cluster",
+                  "cluster": "hdbscan",
+                  "min_cluster": 5,
+                  "pca": 25
+                },
+                "student": "logistic",
+                "C": 0.3,
+                "gamma": 0.001,
+                "scale": "global",
+                "pseudo_weight": 0.05,
+                "confidence": 0.95,
+                "labelwise": true,
+                "consensus": true
+              }
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.9112903225806451
+        }
+      ],
+      "outer": {
+        "sample_f1": 0.9393939393939394,
+        "macro_f1": 0.9042128603104214,
+        "f1_Safety": 1.0,
+        "f1_Funding": 1.0,
+        "f1_Efficacy": 1.0,
+        "f1_Recruitment": 0.975609756097561,
+        "f1_Other": 0.5454545454545454
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "config": {
+          "model": "svc",
+          "C": 10,
+          "gamma": 0.001,
+          "scale": "standard"
+        },
+        "rule": "expected_f1",
+        "score": 0.907258064516129
+      },
+      "inner": [
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.1,
+            "scale": "global"
+          },
+          "rule": "t0.35",
+          "score": 0.9005376344086021
+        },
+        {
+          "config": {
+            "model": "logistic",
+            "C": 0.3,
+            "scale": "global"
+          },
+          "rule": "t0.5",
+          "score": 0.9005376344086021
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard"
+          },
+          "rule": "expected_f1",
+          "score": 0.907258064516129
+        },
+        {
+          "config": {
+            "model": "svc",
+            "C": 10,
+            "gamma": 0.001,
+            "scale": "standard",
+            "features": [
+              "drug_targets"
+            ],
+            "feature_weight": 1.0
+          },
+          "rule": "expected_f1",
+          "score": 0.8830645161290323
+        },
+        {
+          "config": {
+            "model": "pseudo",
+            "teacher": {
+              "model": "cluster",
+              "cluster": "hdbscan",
+              "min_cluster": 5,
+              "pca": 25
+            },
+            "student": "logistic",
+            "C": 0.3,
+            "gamma": 0.001,
+            "scale": "global",
+            "pseudo_weight": 0.05,
+            "confidence": 0.95,
+            "labelwise": true,
+            "consensus": true
+          },
+          "rule": "t0.35",
+          "score": 0.8978494623655914
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "logistic",
+                "scale": "global",
+                "C": 0.2
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              }
+            ],
+            "weights": [
+              0.25,
+              0.75
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.8938172043010754
+        },
+        {
+          "config": {
+            "model": "ensemble",
+            "members": [
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "drug_targets"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "svc",
+                "C": 10,
+                "gamma": 0.001,
+                "scale": "standard",
+                "features": [
+                  "criteria"
+                ],
+                "feature_weight": 1.0
+              },
+              {
+                "model": "pseudo",
+                "teacher": {
+                  "model": "cluster",
+                  "cluster": "hdbscan",
+                  "min_cluster": 5,
+                  "pca": 25
+                },
+                "student": "logistic",
+                "C": 0.3,
+                "gamma": 0.001,
+                "scale": "global",
+                "pseudo_weight": 0.05,
+                "confidence": 0.95,
+                "labelwise": true,
+                "consensus": true
+              }
+            ]
+          },
+          "rule": "expected_f1",
+          "score": 0.9018817204301075
+        }
+      ],
+      "outer": {
+        "sample_f1": 0.8737373737373737,
+        "macro_f1": 0.7615873015873016,
+        "f1_Safety": 0.8,
+        "f1_Funding": 0.6666666666666666,
+        "f1_Efficacy": 0.8888888888888888,
+        "f1_Recruitment": 0.9523809523809523,
+        "f1_Other": 0.5
+      }
+    }
+  ],
+  "limitation": "Conditional shortlist audit. Candidate shortlist was informed by full-training exploratory CV; not an unbiased nested rerun of the complete adaptive search. External validation remains unopened."
+}

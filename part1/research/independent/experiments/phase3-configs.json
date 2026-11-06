@@ -1,0 +1,880 @@
+[
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 2,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 2,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 5,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 10,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 20,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 50,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 0,
+    "bandwidth": 50,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 2,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 2,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 5,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 10,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 20,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 50,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 25,
+    "bandwidth": 50,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 2,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 2,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 5,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 5,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 10,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 10,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 20,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 20,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 50,
+    "alpha": 0.2
+  },
+  {
+    "model": "dense_graph",
+    "pca": 75,
+    "bandwidth": 50,
+    "alpha": 0.8
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 5,
+    "alpha": 0.2,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 5,
+    "alpha": 0.8,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 5,
+    "alpha": 0.99,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 20,
+    "alpha": 0.2,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 20,
+    "alpha": 0.8,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 20,
+    "alpha": 0.99,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 50,
+    "alpha": 0.2,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 50,
+    "alpha": 0.8,
+    "message_mass": true
+  },
+  {
+    "model": "dense_graph",
+    "bandwidth": 50,
+    "alpha": 0.99,
+    "message_mass": true
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 0,
+    "bandwidth": 2
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 0,
+    "bandwidth": 5
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 0,
+    "bandwidth": 10
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 0,
+    "bandwidth": 20
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 0,
+    "bandwidth": 50
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 25,
+    "bandwidth": 2
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 25,
+    "bandwidth": 5
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 25,
+    "bandwidth": 10
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 25,
+    "bandwidth": 20
+  },
+  {
+    "model": "kernel_neighbors",
+    "pca": 25,
+    "bandwidth": 50
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.03,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.03,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.1,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.1,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.3,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 0.3,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 1,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 1,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 3,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 3,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 10,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "linear",
+    "C": 10,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.03,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.03,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.1,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.1,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.3,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 0.3,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 1,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 1,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 3,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 3,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 10,
+    "balanced": null,
+    "gamma": 0.001
+  },
+  {
+    "model": "margin_svm",
+    "kernel": "rbf",
+    "C": 10,
+    "balanced": "balanced",
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 2,
+    "C": 0.03,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 2,
+    "C": 0.1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 2,
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 2,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 4,
+    "C": 0.03,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 4,
+    "C": 0.1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 4,
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 4,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 8,
+    "C": 0.03,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 8,
+    "C": 0.1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 8,
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "logistic",
+    "late_weight": 8,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 2,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 2,
+    "C": 10,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 4,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 4,
+    "C": 10,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 8,
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "weighted_supervised",
+    "base": "svc",
+    "late_weight": 8,
+    "C": 10,
+    "gamma": 0.001
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -1,
+    "C": 0.03,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -1,
+    "C": 0.1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -1,
+    "C": 0.3,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -1,
+    "C": 1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -0.5,
+    "C": 0.03,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -0.5,
+    "C": 0.1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -0.5,
+    "C": 0.3,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": -0.5,
+    "C": 1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 0.5,
+    "C": 0.03,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 0.5,
+    "C": 0.1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 0.5,
+    "C": 0.3,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 0.5,
+    "C": 1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 1,
+    "C": 0.03,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 1,
+    "C": 0.1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 1,
+    "C": 0.3,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "spectral_logistic",
+    "power": 1,
+    "C": 1,
+    "cov_ridge": 0.1
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.8,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.9,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.9,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.95,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.8,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.9,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.9,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.95,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.8,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.9,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.9,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.95,
+    "cap_mass": false,
+    "pseudo_weight": 0.2
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.1,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 0.3,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.8,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "model": "iterative_ssl",
+    "C": 1,
+    "confidence": 0.95,
+    "cap_mass": true,
+    "pseudo_weight": 0.2,
+    "teacher": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  }
+]

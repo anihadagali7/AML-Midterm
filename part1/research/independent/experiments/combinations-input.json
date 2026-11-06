@@ -1,0 +1,230 @@
+[
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "descriptors"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "descriptors"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_level0"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_level0"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "criteria"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "criteria"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "pathway_levels",
+      "descriptors"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "pathway_levels",
+      "descriptors"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "descriptors"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "descriptors"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "criteria"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "criteria"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "descriptors",
+      "criteria"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "drugs",
+      "pathway_levels",
+      "descriptors",
+      "criteria"
+    ],
+    "feature_weight": 0.5
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "criteria",
+      "diseases_cleaned",
+      "drugs",
+      "icdcodes",
+      "matched_drugs",
+      "drug_targets",
+      "drug_actions",
+      "drug_pathways",
+      "fingerprint",
+      "descriptors",
+      "year",
+      "missingness",
+      "counts"
+    ],
+    "feature_weight": 0.15
+  },
+  {
+    "model": "svc",
+    "C": 10,
+    "gamma": 0.001,
+    "scale": "standard",
+    "features": [
+      "criteria",
+      "diseases_cleaned",
+      "drugs",
+      "icdcodes",
+      "matched_drugs",
+      "drug_targets",
+      "drug_actions",
+      "drug_pathways",
+      "fingerprint",
+      "descriptors",
+      "year",
+      "missingness",
+      "counts"
+    ],
+    "feature_weight": 0.5
+  }
+]

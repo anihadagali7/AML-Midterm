@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Ani training-only adaptation",
+      "max_probability_difference": 1.099120794378905e-14,
+      "identical_predictions": true,
+      "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"
+    },
+    {
+      "name": "DBSCAN + logistic C1000",
+      "max_probability_difference": 1.4876988529977098e-14,
+      "identical_predictions": true,
+      "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"
+    },
+    {
+      "name": "K-means k8 + logistic C1000",
+      "max_probability_difference": 1.0769163338864018e-14,
+      "identical_predictions": true,
+      "reference": "Original ungrouped first fold, training-only feature access, for adapter parity only"
+    }
+  ],
+  "finished_at": "2026-11-06T02:51:04.969737+00:00"
+}

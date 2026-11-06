@@ -1,0 +1,79 @@
+ID,true,predicted,sample_f1
+TR03011,Recruitment,Recruitment,1.0
+TR06614,Recruitment,Recruitment,1.0
+TR11226,Other,Efficacy,0.0
+TR01691,Efficacy,Efficacy,1.0
+TR07904,Efficacy,Efficacy,1.0
+TR05741,Recruitment,Recruitment,1.0
+TR04611,Recruitment,Recruitment,1.0
+TR10050,Other,Safety Efficacy,0.0
+TR08862,Safety,Safety,1.0
+TR07302,Funding Recruitment,Funding Recruitment,1.0
+TR05146,Recruitment,Recruitment,1.0
+TR06513,Recruitment,Recruitment,1.0
+TR02758,Recruitment,Recruitment,1.0
+TR08868,Other,Other,1.0
+TR01574,Recruitment,Recruitment,1.0
+TR06757,Recruitment,Recruitment,1.0
+TR11267,Recruitment,Recruitment,1.0
+TR04350,Efficacy,Efficacy,1.0
+TR05197,Recruitment,Recruitment,1.0
+TR09519,Recruitment Other,Recruitment,0.6666666666666666
+TR07141,Recruitment,Recruitment,1.0
+TR07107,Recruitment,Recruitment,1.0
+TR04055,Recruitment,Recruitment,1.0
+TR09824,Recruitment,Recruitment,1.0
+TR09218,Safety Efficacy,Safety Efficacy,1.0
+TR07770,Efficacy,Efficacy,1.0
+TR09219,Recruitment,Recruitment,1.0
+TR01253,Recruitment,Recruitment,1.0
+TR04114,Recruitment,Recruitment,1.0
+TR07492,Recruitment,Recruitment,1.0
+TR08642,Recruitment,Recruitment,1.0
+TR07471,Recruitment,Recruitment,1.0
+TR04012,Recruitment,Recruitment,1.0
+TR11469,Recruitment,Recruitment,1.0
+TR06424,Recruitment,Recruitment,1.0
+TR04125,Recruitment,Recruitment,1.0
+TR05236,Recruitment,Recruitment,1.0
+TR03682,Efficacy,Efficacy,1.0
+TR08905,Safety Efficacy,Safety,0.6666666666666666
+TR09449,Recruitment,Recruitment,1.0
+TR07268,Safety Efficacy,Safety,0.6666666666666666
+TR03536,Recruitment Other,Recruitment,0.6666666666666666
+TR09853,Recruitment,Recruitment,1.0
+TR03061,Funding,Funding,1.0
+TR08001,Safety Efficacy,Safety Efficacy,1.0
+TR10284,Efficacy,Safety Efficacy,0.6666666666666666
+TR07303,Other,Other,1.0
+TR00640,Funding,Efficacy,0.0
+TR06983,Recruitment,Recruitment,1.0
+TR00125,Recruitment Other,Recruitment,0.6666666666666666
+TR03088,Recruitment,Recruitment,1.0
+TR06178,Efficacy,Efficacy,1.0
+TR04002,Funding,Other,0.0
+TR03234,Recruitment,Recruitment,1.0
+TR04696,Recruitment,Recruitment,1.0
+TR10446,Recruitment,Recruitment,1.0
+TR09074,Recruitment,Recruitment,1.0
+TR08230,Recruitment,Recruitment,1.0
+TR03382,Recruitment,Recruitment,1.0
+TR03856,Safety,Safety,1.0
+TR04981,Recruitment,Recruitment,1.0
+TR08201,Efficacy,Efficacy,1.0
+TR01577,Safety,Safety,1.0
+TR02404,Efficacy,Efficacy,1.0
+TR11372,Recruitment,Recruitment,1.0
+TR11370,Recruitment,Recruitment,1.0
+TR07665,Other,Efficacy,0.0
+TR10775,Recruitment,Recruitment,1.0
+TR05696,Recruitment,Recruitment,1.0
+TR07476,Recruitment,Recruitment,1.0
+TR06608,Recruitment,Recruitment,1.0
+TR11010,Other,Other,1.0
+TR07902,Safety Efficacy,Safety Efficacy,1.0
+TR04216,Recruitment,Recruitment,1.0
+TR10091,Safety,Safety,1.0
+TR02087,Recruitment,Recruitment,1.0
+TR02583,Recruitment,Recruitment,1.0
+TR08431,Other,Other,1.0
