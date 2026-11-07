@@ -1,0 +1,165 @@
+{
+ "name": "cand1_selected_1se",
+ "csv": "/home/dleiferives/school/michael/aml-midterm/midterm/part1/submissions/cand1_selected_1se.csv",
+ "sha1": "30e5806548f756c91537b7d4024ae83446930722",
+ "created": "2026-11-06T17:15:40",
+ "config": {
+  "model": {
+   "features": {
+    "scale": true,
+    "pca": null,
+    "l2": false,
+    "blocks": {}
+   },
+   "synth": [],
+   "labeler": {
+    "type": "cs",
+    "graph": {
+     "space": {
+      "scale": true,
+      "pca": 64,
+      "l2": true
+     },
+     "k": 10,
+     "s": 1.0,
+     "sym": "max"
+    },
+    "lam": 0.05196473063140133,
+    "a1": 0.8,
+    "a2": 0.6382007398005838,
+    "hard": true,
+    "tau": 0.5
+   },
+   "clf": {
+    "type": "lda",
+    "class_weight": "balanced"
+   },
+   "temperature": true
+  },
+  "head": {
+   "prior": "none",
+   "decode": "expf1"
+  },
+  "transductive": true
+ },
+ "transductive_test_features_used": true,
+ "trained_on": "157 labeled train rows + 78 val rows (235); 1,014 unlabeled train rows as pool",
+ "n_seeds": 5,
+ "scores": {
+  "A": {
+   "sample_f1": 0.9085106382978724,
+   "sample_f1_se": 0.014882485296944348,
+   "macro_f1": 0.8357090416710674,
+   "f1_Safety": 0.9120337709551907,
+   "f1_Funding": 0.8085897435897437,
+   "f1_Efficacy": 0.886812342069695,
+   "f1_Recruitment": 0.9701485169574975,
+   "f1_Other": 0.6009608347832109,
+   "sample_f1_rep_sd": 0.005059322590787869,
+   "n": 235,
+   "R": 10,
+   "macro_f1_se": 0.02724242054045858,
+   "f1_Safety_se": 0.03438002904292668,
+   "f1_Funding_se": 0.08287795446164818,
+   "f1_Efficacy_se": 0.04121475039467733,
+   "f1_Recruitment_se": 0.009253800027668959,
+   "f1_Other_se": 0.058638510858223664
+  },
+  "B": {
+   "sample_f1": 0.8760374500415343,
+   "sample_f1_se": 0.028980805414195537,
+   "macro_f1": 0.8295775062905023,
+   "f1_Safety": 0.9311910989330344,
+   "f1_Funding": 0.7270955165692007,
+   "f1_Efficacy": 0.8983043100690159,
+   "f1_Recruitment": 0.9448319594166138,
+   "f1_Other": 0.6464646464646465,
+   "n": 97.66666666666667,
+   "macro_f1_se": 0.0381143779617976,
+   "f1_Safety_se": 0.04529010955611481,
+   "f1_Funding_se": 0.12914528827086535,
+   "f1_Efficacy_se": 0.04943590478137783,
+   "f1_Recruitment_se": 0.026049458835411335,
+   "f1_Other_se": 0.09090496613377873
+  },
+  "B2005": {
+   "sample_f1": 0.8894557823129251,
+   "sample_f1_se": 0.027451444716908694,
+   "macro_f1": 0.8529445922217007,
+   "f1_Safety": 0.9714285714285714,
+   "f1_Funding": 0.7777777777777778,
+   "f1_Efficacy": 0.9090909090909091,
+   "f1_Recruitment": 0.9397590361445783,
+   "f1_Other": 0.6666666666666666,
+   "n": 98,
+   "macro_f1_se": 0.03939645537080276,
+   "f1_Safety_se": 0.030801420939353577,
+   "f1_Funding_se": 0.12913261084231684,
+   "f1_Efficacy_se": 0.04348172993673415,
+   "f1_Recruitment_se": 0.027352929776033905,
+   "f1_Other_se": 0.09030730396365214,
+   "cut": 2005
+  },
+  "C": {
+   "sample_f1": 0.8824786324786325,
+   "sample_f1_se": 0.029970967803516525,
+   "macro_f1": 0.7688342938234429,
+   "f1_Safety": 0.9411764705882353,
+   "f1_Funding": 0.6666666666666666,
+   "f1_Efficacy": 0.72,
+   "f1_Recruitment": 0.970873786407767,
+   "f1_Other": 0.5454545454545454,
+   "n": 78,
+   "macro_f1_se": 0.0695658258426293,
+   "f1_Safety_se": 0.06888793200126334,
+   "f1_Funding_se": 0.2923475359227673,
+   "f1_Efficacy_se": 0.10324073746700521,
+   "f1_Recruitment_se": 0.01879358504696492,
+   "f1_Other_se": 0.13466010525430294
+  },
+  "J": 0.8922740441697034,
+  "J_se": 0.016289378833071185,
+  "protocol_note": "A: 5-fold x 10 repeats over 235 labeled rows (CV seed 1, not the search seed); B: mean of chrono cuts 2004/2005/2006; C: 157 labeled-train -> 78 val. Post-selection numbers are optimistic: see results/search/nested for the honest estimate.",
+  "description": "lda(bal) lab:cs(\u03bb=0.052) T expf1",
+  "why": "1-SE / simplest-within-noise choice among rule-compliant configs (MAIN)",
+  "complexity": 1.75,
+  "unsupervised_label_filling": true,
+  "selection_entry": "search#787"
+ },
+ "test_pred_label_rate": {
+  "Safety": 0.144,
+  "Funding": 0.026,
+  "Efficacy": 0.125,
+  "Recruitment": 0.577,
+  "Other": 0.272
+ },
+ "test_pred_cardinality": 1.1442307692307692,
+ "test_pred_combo_counts": {
+  "Other": 47,
+  "Recruitment": 141,
+  "Recruitment+Other": 34,
+  "Efficacy": 34,
+  "Efficacy+Other": 2,
+  "Efficacy+Recruitment": 1,
+  "Funding": 4,
+  "Funding+Recruitment": 4,
+  "Safety": 41,
+  "Safety+Other": 2,
+  "Safety+Efficacy": 2
+ },
+ "sld_test_prior_labels": null,
+ "train_prior_labels": {
+  "Safety": 0.25,
+  "Funding": 0.25,
+  "Efficacy": 0.25,
+  "Recruitment": 0.375,
+  "Other": 0.25
+ },
+ "temperature": [
+  3.044572141058856,
+  3.0381598174683653,
+  3.012996085311645,
+  3.086022662074134,
+  3.0237357606447346
+ ]
+}
