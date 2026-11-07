@@ -1,0 +1,34 @@
+strict official complete
+strict time_2007_to_2008_2009 complete
+strict time_2009_to_2010_2011 complete
+strict time_2011_to_2012_2013 complete
+strict group_repeat0_fold0 complete
+strict group_repeat0_fold1 complete
+strict group_repeat0_fold2 complete
+strict group_repeat1_fold0 complete
+strict group_repeat1_fold1 complete
+strict group_repeat1_fold2 complete
+                       completed_splits  official  temporal     worst        cv  temporal_delta  cv_delta  temporal_wins  eligible
+model
+meta_tau1_trend                      10  0.599594  0.535106  0.589217  0.634625       -0.002340  0.047214              1     False
+meta_tau1.5_trend                    10  0.565010  0.535807  0.589080  0.597785       -0.001639  0.010373              2     False
+meta_tau1                            10  0.564176  0.536013  0.589202  0.604082       -0.001433  0.016671              1     False
+meta_tau1.5                          10  0.558498  0.536426  0.589071  0.594855       -0.001020  0.007443              2     False
+meta_tau2_trend                      10  0.558538  0.536433  0.589040  0.590325       -0.001013  0.002914              2      True
+meta_tau2                            10  0.556270  0.536863  0.588889  0.590742       -0.000583  0.003330              2     False
+ani_phase3_trend                     10  0.556030  0.537131  0.588951  0.586468       -0.000315 -0.000943              1     False
+ani_stack                            10  0.555039  0.537446  0.588574  0.587411        0.000000  0.000000              0     False
+reduced_4                            10  0.554576  0.537617  0.588609  0.587111        0.000171 -0.000301              0     False
+nonnegative_trend                    10  0.556788  0.537853  0.590669  0.587078        0.000407 -0.000334              1     False
+nonnegative_stack                    10  0.555802  0.538218  0.590309  0.588133        0.000772  0.000722              1     False
+reduced_1_2                          10  0.555125  0.539028  0.591688  0.586839        0.001583 -0.000572              0     False
+reduced_1_2_4_6                      10  0.555919  0.539498  0.592741  0.587682        0.002052  0.000270              0     False
+nonlinear_3_year_half                10  0.555233  0.539783  0.591212  0.587525        0.002337  0.000113              0     False
+nonlinear_3_half                     10  0.555179  0.539943  0.591213  0.587676        0.002497  0.000265              0     False
+nonlinear_7_year_half                10  0.554595  0.540417  0.592029  0.587570        0.002971  0.000159              0     False
+nonlinear_7_half                     10  0.554093  0.540814  0.592273  0.588400        0.003368  0.000988              0     False
+ani_first                            10  0.557370  0.542145  0.590898  0.579653        0.004700 -0.007758              0     False
+nonlinear_3_year                     10  0.559345  0.544755  0.596392  0.591892        0.007309  0.004481              0     False
+nonlinear_3                          10  0.559210  0.545009  0.596437  0.592074        0.007563  0.004663              0     False
+nonlinear_7_year                     10  0.558707  0.547215  0.598808  0.593106        0.009769  0.005695              0     False
+nonlinear_7                          10  0.557814  0.547610  0.599419  0.594438        0.010164  0.007026              0     False

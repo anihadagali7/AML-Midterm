@@ -1,6 +1,15 @@
 # Part Two: clinical-trial outcome prediction
 
-**New comparison of both Ani winners:** [complete findings](experiments/stack_improvements/RESULTS.md),
+**Latest extension: try [submission 10](submissions/10_ani_fast2_neighbors_half.csv) first.**
+The recent-neighbor blend improves all six chronological windows in both
+preprocessing tracks and slightly improves grouped CV versus Ani's recency winner.
+[Submission 09](submissions/09_ani_replace_knn5.csv) has a larger original-window
+gain, with a small CV regression. **Their Kaggle scores are unknown.** See the
+[new findings](experiments/ani_extensions/RESULTS.md), [source-embedded notebook](ani_extensions.ipynb),
+and [separate extension protocol](EXTENSION_PROTOCOL.md). Native replay and all
+800 extension evaluations are checked; all 16 tests pass.
+
+**Previous comparison of both Ani winners:** [complete findings](experiments/stack_improvements/RESULTS.md),
 [executed notebook](stack_improvements.ipynb), and [testing/selection protocol](IMPROVEMENT_PROTOCOL.md).
 This evaluates 27 recipes on the same ten saved splits under strict and published
 preprocessing, with paired comparisons against both 0.58810 and 0.58688 references.
@@ -12,7 +21,7 @@ root; create `.venv` with `part2/requirements-benchmark.txt` first.
 
 Prepared four initial manual Kaggle submissions and two follow-ups. **Lower log loss is better.** The best reported reference score is **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**, still 0.00305 behind the reference. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).
 
-## Evaluation protocol
+## Historical evaluation protocol for submissions 01–06
 
 Train: 8,037 rows / 7,535 trials. Supplied validation: 1,013 rows / 901 trials. Test: 1,500 rows, exactly 500 per phase. No trial crosses these files. Combined-phase rows stay together.
 

@@ -3,3 +3,4 @@
 __pycache__/
 *.pyc
 part2/experiments/stack_improvements/cache/
+part2/experiments/ani_extensions/cache/

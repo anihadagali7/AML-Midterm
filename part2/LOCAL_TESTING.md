@@ -1,9 +1,14 @@
 # Repeatable Part Two local benchmark
 
-The [new comparison](experiments/stack_improvements/RESULTS.md) adds Ani's earlier
+The [latest neighbor extensions](experiments/ani_extensions/RESULTS.md) reuse all
+splits below and compare both Ani winners. Their separate, prospectively declared
+decision rule is in [EXTENSION_PROTOCOL.md](EXTENSION_PROTOCOL.md); it prioritizes
+later-cohort prediction and retains all CV and supplied-validation trade-offs.
+
+The [previous comparison](experiments/stack_improvements/RESULTS.md) adds Ani's earlier
 unweighted 0.58810 winner as a second reference and evaluates 27 recipes on these
 unchanged splits. Follow [IMPROVEMENT_PROTOCOL.md](IMPROVEMENT_PROTOCOL.md) for the
-current two-reference selection rule and adaptive-batch history. This document
+previous two-reference selection rule and adaptive-batch history. This document
 continues to describe the original saved protocol and historical six-model suite.
 
 The Git checkout includes all saved results but omits regenerable fitted-model caches. See [CACHE_REPRODUCTION.md](CACHE_REPRODUCTION.md) before running native-model verification or inference on a fresh checkout. Use `local_benchmark.py --suite full --force` to rebuild missing benchmark models; reading the executed notebook does not require them.
