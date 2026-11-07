@@ -1,0 +1,18 @@
+{
+  "names": [
+    "ani__context_ridge1",
+    "ensemble__context_ridge1",
+    "ani__context_ridge10",
+    "ensemble__context_ridge10",
+    "ani__drug_targets_ridge1",
+    "ensemble__drug_targets_ridge1",
+    "ani__drug_targets_ridge10",
+    "ensemble__drug_targets_ridge10",
+    "ani__criteria_text_ridge1",
+    "ensemble__criteria_text_ridge1",
+    "ani__criteria_text_ridge10",
+    "ensemble__criteria_text_ridge10"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "Every recipe, as declared before scoring"
+}

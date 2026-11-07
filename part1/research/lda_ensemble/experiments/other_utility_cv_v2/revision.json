@@ -1,0 +1,5 @@
+{
+  "parent": "other_utility_cv_v1",
+  "change": "Permit zero sample-F1 utility and assign zero weight; include a zero-utility synthetic check.",
+  "score_based_change": false
+}

@@ -1,0 +1,22 @@
+{
+  "names": [
+    "ani__augmented_binary10_all",
+    "ensemble__augmented_binary10_all",
+    "ani__augmented_binary10_other",
+    "ensemble__augmented_binary10_other",
+    "ani__gold_fractional10_all",
+    "ensemble__gold_fractional10_all",
+    "ani__gold_fractional10_other",
+    "ensemble__gold_fractional10_other",
+    "ani__gold_binary10_all",
+    "ensemble__gold_binary10_all",
+    "ani__gold_binary10_other",
+    "ensemble__gold_binary10_other",
+    "ani__gold_binary3_all",
+    "ensemble__gold_binary3_all",
+    "ani__gold_binary3_other",
+    "ensemble__gold_binary3_other"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All recipes, declared before scores; no screening-based pruning"
+}

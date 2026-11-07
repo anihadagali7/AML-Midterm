@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "stages_rescored": 92,
+  "repeats_rescored": 308,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "analytic_gradient_error": 3.69654677745503e-07,
+    "native_control_parity": true,
+    "corrective_checks": [
+      {
+        "view": "calibration",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      },
+      {
+        "view": "context",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      },
+      {
+        "view": "neighbors",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      },
+      {
+        "view": "drug_targets",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      },
+      {
+        "view": "diseases",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      },
+      {
+        "view": "criteria_text",
+        "query_batch_invariance": true,
+        "query_does_not_change_coefficients": true,
+        "inner_and_outer_id_separation": true,
+        "non_other_scores_unchanged": true
+      }
+    ]
+  }
+}

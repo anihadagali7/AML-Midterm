@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "native_parent_reproduced": true,
+  "checks": [
+    {
+      "recipe": "half_none",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "half_drug_targets",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "half_diseases",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "half_criteria_text",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "half_icd_full_category",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "full_none",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "full_drug_targets",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "full_diseases",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "full_criteria_text",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    },
+    {
+      "recipe": "full_icd_full_category",
+      "query_batch_invariance": true,
+      "corrective_head_ignores_generated_targets": true,
+      "verified_fitting_rows": 183
+    }
+  ]
+}

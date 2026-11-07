@@ -1,0 +1,142 @@
+[
+  {
+    "name": "ani__half_none",
+    "parent": "ani",
+    "block": "half_none",
+    "description": "half gold-only LR correction with none",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__half_none",
+    "parent": "ensemble",
+    "block": "half_none",
+    "description": "half gold-only LR correction with none",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__half_drug_targets",
+    "parent": "ani",
+    "block": "half_drug_targets",
+    "description": "half gold-only LR correction with drug_targets",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__half_drug_targets",
+    "parent": "ensemble",
+    "block": "half_drug_targets",
+    "description": "half gold-only LR correction with drug_targets",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__half_diseases",
+    "parent": "ani",
+    "block": "half_diseases",
+    "description": "half gold-only LR correction with diseases",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__half_diseases",
+    "parent": "ensemble",
+    "block": "half_diseases",
+    "description": "half gold-only LR correction with diseases",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__half_criteria_text",
+    "parent": "ani",
+    "block": "half_criteria_text",
+    "description": "half gold-only LR correction with criteria_text",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__half_criteria_text",
+    "parent": "ensemble",
+    "block": "half_criteria_text",
+    "description": "half gold-only LR correction with criteria_text",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__half_icd_full_category",
+    "parent": "ani",
+    "block": "half_icd_full_category",
+    "description": "half gold-only LR correction with icd_full_category",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__half_icd_full_category",
+    "parent": "ensemble",
+    "block": "half_icd_full_category",
+    "description": "half gold-only LR correction with icd_full_category",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__full_none",
+    "parent": "ani",
+    "block": "full_none",
+    "description": "full gold-only LR correction with none",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__full_none",
+    "parent": "ensemble",
+    "block": "full_none",
+    "description": "full gold-only LR correction with none",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__full_drug_targets",
+    "parent": "ani",
+    "block": "full_drug_targets",
+    "description": "full gold-only LR correction with drug_targets",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__full_drug_targets",
+    "parent": "ensemble",
+    "block": "full_drug_targets",
+    "description": "full gold-only LR correction with drug_targets",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__full_diseases",
+    "parent": "ani",
+    "block": "full_diseases",
+    "description": "full gold-only LR correction with diseases",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__full_diseases",
+    "parent": "ensemble",
+    "block": "full_diseases",
+    "description": "full gold-only LR correction with diseases",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__full_criteria_text",
+    "parent": "ani",
+    "block": "full_criteria_text",
+    "description": "full gold-only LR correction with criteria_text",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__full_criteria_text",
+    "parent": "ensemble",
+    "block": "full_criteria_text",
+    "description": "full gold-only LR correction with criteria_text",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ani__full_icd_full_category",
+    "parent": "ani",
+    "block": "full_icd_full_category",
+    "description": "full gold-only LR correction with icd_full_category",
+    "decoder": "threshold .5 plus nonempty fallback"
+  },
+  {
+    "name": "ensemble__full_icd_full_category",
+    "parent": "ensemble",
+    "block": "full_icd_full_category",
+    "description": "full gold-only LR correction with icd_full_category",
+    "decoder": "threshold .5 plus nonempty fallback"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "reason": "Solver robustness after numerical line-search failure. Same objective, features, recipes and original all8 selection rule; full rerun.",
+  "previous": "other_utility_cv_v2/failure.json"
+}

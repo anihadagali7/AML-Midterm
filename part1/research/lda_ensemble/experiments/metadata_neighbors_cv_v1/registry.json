@@ -1,0 +1,122 @@
+[
+  {
+    "name": "ani__augmented_none",
+    "parent": "ani",
+    "block": "augmented_none",
+    "description": "augmented nearest neighbors with none"
+  },
+  {
+    "name": "ensemble__augmented_none",
+    "parent": "ensemble",
+    "block": "augmented_none",
+    "description": "augmented nearest neighbors with none"
+  },
+  {
+    "name": "ani__augmented_criteria_words",
+    "parent": "ani",
+    "block": "augmented_criteria_words",
+    "description": "augmented nearest neighbors with criteria_words"
+  },
+  {
+    "name": "ensemble__augmented_criteria_words",
+    "parent": "ensemble",
+    "block": "augmented_criteria_words",
+    "description": "augmented nearest neighbors with criteria_words"
+  },
+  {
+    "name": "ani__augmented_drug_chars",
+    "parent": "ani",
+    "block": "augmented_drug_chars",
+    "description": "augmented nearest neighbors with drug_chars"
+  },
+  {
+    "name": "ensemble__augmented_drug_chars",
+    "parent": "ensemble",
+    "block": "augmented_drug_chars",
+    "description": "augmented nearest neighbors with drug_chars"
+  },
+  {
+    "name": "ani__augmented_morgan",
+    "parent": "ani",
+    "block": "augmented_morgan",
+    "description": "augmented nearest neighbors with morgan"
+  },
+  {
+    "name": "ensemble__augmented_morgan",
+    "parent": "ensemble",
+    "block": "augmented_morgan",
+    "description": "augmented nearest neighbors with morgan"
+  },
+  {
+    "name": "ani__augmented_drug_targets",
+    "parent": "ani",
+    "block": "augmented_drug_targets",
+    "description": "augmented nearest neighbors with drug_targets"
+  },
+  {
+    "name": "ensemble__augmented_drug_targets",
+    "parent": "ensemble",
+    "block": "augmented_drug_targets",
+    "description": "augmented nearest neighbors with drug_targets"
+  },
+  {
+    "name": "ani__goldbinary_none",
+    "parent": "ani",
+    "block": "goldbinary_none",
+    "description": "goldbinary nearest neighbors with none"
+  },
+  {
+    "name": "ensemble__goldbinary_none",
+    "parent": "ensemble",
+    "block": "goldbinary_none",
+    "description": "goldbinary nearest neighbors with none"
+  },
+  {
+    "name": "ani__goldbinary_criteria_words",
+    "parent": "ani",
+    "block": "goldbinary_criteria_words",
+    "description": "goldbinary nearest neighbors with criteria_words"
+  },
+  {
+    "name": "ensemble__goldbinary_criteria_words",
+    "parent": "ensemble",
+    "block": "goldbinary_criteria_words",
+    "description": "goldbinary nearest neighbors with criteria_words"
+  },
+  {
+    "name": "ani__goldbinary_drug_chars",
+    "parent": "ani",
+    "block": "goldbinary_drug_chars",
+    "description": "goldbinary nearest neighbors with drug_chars"
+  },
+  {
+    "name": "ensemble__goldbinary_drug_chars",
+    "parent": "ensemble",
+    "block": "goldbinary_drug_chars",
+    "description": "goldbinary nearest neighbors with drug_chars"
+  },
+  {
+    "name": "ani__goldbinary_morgan",
+    "parent": "ani",
+    "block": "goldbinary_morgan",
+    "description": "goldbinary nearest neighbors with morgan"
+  },
+  {
+    "name": "ensemble__goldbinary_morgan",
+    "parent": "ensemble",
+    "block": "goldbinary_morgan",
+    "description": "goldbinary nearest neighbors with morgan"
+  },
+  {
+    "name": "ani__goldbinary_drug_targets",
+    "parent": "ani",
+    "block": "goldbinary_drug_targets",
+    "description": "goldbinary nearest neighbors with drug_targets"
+  },
+  {
+    "name": "ensemble__goldbinary_drug_targets",
+    "parent": "ensemble",
+    "block": "goldbinary_drug_targets",
+    "description": "goldbinary nearest neighbors with drug_targets"
+  }
+]

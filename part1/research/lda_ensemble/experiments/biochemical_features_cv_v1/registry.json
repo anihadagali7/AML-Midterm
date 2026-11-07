@@ -1,0 +1,122 @@
+[
+  {
+    "name": "ani__augmented_none",
+    "parent": "ani",
+    "block": "augmented_none",
+    "description": "augmented final LR with fold-selected biochemical none"
+  },
+  {
+    "name": "ensemble__augmented_none",
+    "parent": "ensemble",
+    "block": "augmented_none",
+    "description": "augmented final LR with fold-selected biochemical none"
+  },
+  {
+    "name": "ani__augmented_actions",
+    "parent": "ani",
+    "block": "augmented_actions",
+    "description": "augmented final LR with fold-selected biochemical actions"
+  },
+  {
+    "name": "ensemble__augmented_actions",
+    "parent": "ensemble",
+    "block": "augmented_actions",
+    "description": "augmented final LR with fold-selected biochemical actions"
+  },
+  {
+    "name": "ani__augmented_pathway_all",
+    "parent": "ani",
+    "block": "augmented_pathway_all",
+    "description": "augmented final LR with fold-selected biochemical pathway_all"
+  },
+  {
+    "name": "ensemble__augmented_pathway_all",
+    "parent": "ensemble",
+    "block": "augmented_pathway_all",
+    "description": "augmented final LR with fold-selected biochemical pathway_all"
+  },
+  {
+    "name": "ani__augmented_pathway_specific",
+    "parent": "ani",
+    "block": "augmented_pathway_specific",
+    "description": "augmented final LR with fold-selected biochemical pathway_specific"
+  },
+  {
+    "name": "ensemble__augmented_pathway_specific",
+    "parent": "ensemble",
+    "block": "augmented_pathway_specific",
+    "description": "augmented final LR with fold-selected biochemical pathway_specific"
+  },
+  {
+    "name": "ani__augmented_morgan",
+    "parent": "ani",
+    "block": "augmented_morgan",
+    "description": "augmented final LR with fold-selected biochemical morgan"
+  },
+  {
+    "name": "ensemble__augmented_morgan",
+    "parent": "ensemble",
+    "block": "augmented_morgan",
+    "description": "augmented final LR with fold-selected biochemical morgan"
+  },
+  {
+    "name": "ani__goldhalf_none",
+    "parent": "ani",
+    "block": "goldhalf_none",
+    "description": "goldhalf final LR with fold-selected biochemical none"
+  },
+  {
+    "name": "ensemble__goldhalf_none",
+    "parent": "ensemble",
+    "block": "goldhalf_none",
+    "description": "goldhalf final LR with fold-selected biochemical none"
+  },
+  {
+    "name": "ani__goldhalf_actions",
+    "parent": "ani",
+    "block": "goldhalf_actions",
+    "description": "goldhalf final LR with fold-selected biochemical actions"
+  },
+  {
+    "name": "ensemble__goldhalf_actions",
+    "parent": "ensemble",
+    "block": "goldhalf_actions",
+    "description": "goldhalf final LR with fold-selected biochemical actions"
+  },
+  {
+    "name": "ani__goldhalf_pathway_all",
+    "parent": "ani",
+    "block": "goldhalf_pathway_all",
+    "description": "goldhalf final LR with fold-selected biochemical pathway_all"
+  },
+  {
+    "name": "ensemble__goldhalf_pathway_all",
+    "parent": "ensemble",
+    "block": "goldhalf_pathway_all",
+    "description": "goldhalf final LR with fold-selected biochemical pathway_all"
+  },
+  {
+    "name": "ani__goldhalf_pathway_specific",
+    "parent": "ani",
+    "block": "goldhalf_pathway_specific",
+    "description": "goldhalf final LR with fold-selected biochemical pathway_specific"
+  },
+  {
+    "name": "ensemble__goldhalf_pathway_specific",
+    "parent": "ensemble",
+    "block": "goldhalf_pathway_specific",
+    "description": "goldhalf final LR with fold-selected biochemical pathway_specific"
+  },
+  {
+    "name": "ani__goldhalf_morgan",
+    "parent": "ani",
+    "block": "goldhalf_morgan",
+    "description": "goldhalf final LR with fold-selected biochemical morgan"
+  },
+  {
+    "name": "ensemble__goldhalf_morgan",
+    "parent": "ensemble",
+    "block": "goldhalf_morgan",
+    "description": "goldhalf final LR with fold-selected biochemical morgan"
+  }
+]

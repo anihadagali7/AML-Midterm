@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__context_ridge1",
+    "parent": "ani",
+    "block": "context_ridge1",
+    "description": "Utility weighted Other: context, ridge 1"
+  },
+  {
+    "name": "ensemble__context_ridge1",
+    "parent": "ensemble",
+    "block": "context_ridge1",
+    "description": "Utility weighted Other: context, ridge 1"
+  },
+  {
+    "name": "ani__context_ridge10",
+    "parent": "ani",
+    "block": "context_ridge10",
+    "description": "Utility weighted Other: context, ridge 10"
+  },
+  {
+    "name": "ensemble__context_ridge10",
+    "parent": "ensemble",
+    "block": "context_ridge10",
+    "description": "Utility weighted Other: context, ridge 10"
+  },
+  {
+    "name": "ani__drug_targets_ridge1",
+    "parent": "ani",
+    "block": "drug_targets_ridge1",
+    "description": "Utility weighted Other: drug_targets, ridge 1"
+  },
+  {
+    "name": "ensemble__drug_targets_ridge1",
+    "parent": "ensemble",
+    "block": "drug_targets_ridge1",
+    "description": "Utility weighted Other: drug_targets, ridge 1"
+  },
+  {
+    "name": "ani__drug_targets_ridge10",
+    "parent": "ani",
+    "block": "drug_targets_ridge10",
+    "description": "Utility weighted Other: drug_targets, ridge 10"
+  },
+  {
+    "name": "ensemble__drug_targets_ridge10",
+    "parent": "ensemble",
+    "block": "drug_targets_ridge10",
+    "description": "Utility weighted Other: drug_targets, ridge 10"
+  },
+  {
+    "name": "ani__criteria_text_ridge1",
+    "parent": "ani",
+    "block": "criteria_text_ridge1",
+    "description": "Utility weighted Other: criteria_text, ridge 1"
+  },
+  {
+    "name": "ensemble__criteria_text_ridge1",
+    "parent": "ensemble",
+    "block": "criteria_text_ridge1",
+    "description": "Utility weighted Other: criteria_text, ridge 1"
+  },
+  {
+    "name": "ani__criteria_text_ridge10",
+    "parent": "ani",
+    "block": "criteria_text_ridge10",
+    "description": "Utility weighted Other: criteria_text, ridge 10"
+  },
+  {
+    "name": "ensemble__criteria_text_ridge10",
+    "parent": "ensemble",
+    "block": "criteria_text_ridge10",
+    "description": "Utility weighted Other: criteria_text, ridge 10"
+  }
+]

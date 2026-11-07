@@ -1,0 +1,7 @@
+{
+  "names": [
+    "ensemble__gold_targets_full"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic."
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "manually_rescored_repeats": 362,
+  "fold_arrays_checked": 1810,
+  "supplementary_scores_checked": 16,
+  "source_hashes_unchanged": true,
+  "row_coverage_and_alignment": true,
+  "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+}

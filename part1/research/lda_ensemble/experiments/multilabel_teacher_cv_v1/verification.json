@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "stages_rescored": 80,
+  "repeats_rescored": 320,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "native_augmentation_targets_and_rows_identical": true,
+    "native_generated_multilabel_rows": 0,
+    "query_invariance": true,
+    "scope_checks": true
+  }
+}

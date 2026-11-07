@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "stages_rescored": 86,
+  "repeats_rescored": 302,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "native_control_parity": true,
+    "augmented_no_feature_parity": true,
+    "query_batch_invariance": true,
+    "supervised_selection_gold_only": true,
+    "synthetic_chi2_ranking_verified": true,
+    "query_transform_does_not_change_fitted_vocabulary": true,
+    "molecule_and_catalog_checks": true
+  }
+}

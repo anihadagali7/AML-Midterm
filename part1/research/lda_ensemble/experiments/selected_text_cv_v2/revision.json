@@ -1,0 +1,4 @@
+{
+  "reason": "Raw-drug parser preflight fix; no recipe or selection change.",
+  "previous": "selected_text_cv_v1/failure.json"
+}

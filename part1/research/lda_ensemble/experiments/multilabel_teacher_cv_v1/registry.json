@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__gmm_binary_all",
+    "parent": "ani",
+    "block": "gmm_binary_all",
+    "description": "Independent teacher votes in gmm_binary; predict all"
+  },
+  {
+    "name": "ensemble__gmm_binary_all",
+    "parent": "ensemble",
+    "block": "gmm_binary_all",
+    "description": "Independent teacher votes in gmm_binary; predict all"
+  },
+  {
+    "name": "ani__gmm_binary_other",
+    "parent": "ani",
+    "block": "gmm_binary_other",
+    "description": "Independent teacher votes in gmm_binary; predict other"
+  },
+  {
+    "name": "ensemble__gmm_binary_other",
+    "parent": "ensemble",
+    "block": "gmm_binary_other",
+    "description": "Independent teacher votes in gmm_binary; predict other"
+  },
+  {
+    "name": "ani__neighbors_binary_all",
+    "parent": "ani",
+    "block": "neighbors_binary_all",
+    "description": "Independent teacher votes in neighbors_binary; predict all"
+  },
+  {
+    "name": "ensemble__neighbors_binary_all",
+    "parent": "ensemble",
+    "block": "neighbors_binary_all",
+    "description": "Independent teacher votes in neighbors_binary; predict all"
+  },
+  {
+    "name": "ani__neighbors_binary_other",
+    "parent": "ani",
+    "block": "neighbors_binary_other",
+    "description": "Independent teacher votes in neighbors_binary; predict other"
+  },
+  {
+    "name": "ensemble__neighbors_binary_other",
+    "parent": "ensemble",
+    "block": "neighbors_binary_other",
+    "description": "Independent teacher votes in neighbors_binary; predict other"
+  },
+  {
+    "name": "ani__both_binary_all",
+    "parent": "ani",
+    "block": "both_binary_all",
+    "description": "Independent teacher votes in both_binary; predict all"
+  },
+  {
+    "name": "ensemble__both_binary_all",
+    "parent": "ensemble",
+    "block": "both_binary_all",
+    "description": "Independent teacher votes in both_binary; predict all"
+  },
+  {
+    "name": "ani__both_binary_other",
+    "parent": "ani",
+    "block": "both_binary_other",
+    "description": "Independent teacher votes in both_binary; predict other"
+  },
+  {
+    "name": "ensemble__both_binary_other",
+    "parent": "ensemble",
+    "block": "both_binary_other",
+    "description": "Independent teacher votes in both_binary; predict other"
+  }
+]
