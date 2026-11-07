@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-11-07T01:51:50.341504+00:00",
+  "files_hashed": 7189,
+  "bytes_hashed": 496740501,
+  "protected_source_references_checked": 4515,
+  "completed_studies": 24,
+  "failed_or_partial_studies": 3,
+  "links_checked": 144,
+  "model_fitting_performed": false,
+  "new_predictions_created": false,
+  "source_artifacts_rewritten": false,
+  "metric_verification": "Existing passing independent prediction-rescore records are preserved and hashed; this documentation check does not rerun model scoring."
+}

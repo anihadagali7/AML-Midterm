@@ -1,0 +1,89 @@
+{
+  "branch": "codex/part1-research-integration",
+  "backfilled_records": true,
+  "commits": [
+    {
+      "commit": "ac2de3d68b30c1c85b35370ac19780c9252aa489",
+      "title": "Consolidate historical Part 1 recipes, summaries and reference evidence",
+      "changed_files": 3641
+    },
+    {
+      "commit": "bfcaf823ad4c7583e8b1c45ec3b14abecb3109b1",
+      "title": "Record Part 1 ani-original submission: Kaggle 0.89423",
+      "changed_files": 1,
+      "tag": "part1-ani-original-kaggle-0.89423",
+      "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
+      "submission_sha256": "d28c381fe35bd7fe787328646cd1ed5d27a7ba8c6eba3353894ba761e1ad4f29"
+    },
+    {
+      "commit": "152ab391bc0bb0577cf187c0f5d7a58e8ce1cad8",
+      "title": "Record Part 1 tri-training-trainval235 submission: Kaggle 0.88012",
+      "changed_files": 3,
+      "tag": "part1-tri-training-trainval235-kaggle-0.88012",
+      "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/tri_training_trainval235__kaggle_0.88012.csv",
+      "submission_sha256": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145"
+    },
+    {
+      "commit": "a1bfe7030bdef93b3c041a703edef75acfd21c02",
+      "title": "Record Part 1 three-way-trainval235 submission: Kaggle 0.89401",
+      "changed_files": 2,
+      "tag": "part1-three-way-trainval235-kaggle-0.89401",
+      "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/three_way_trainval235__kaggle_0.89401.csv",
+      "submission_sha256": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f"
+    },
+    {
+      "commit": "2f4b3cbc15aacb0f3b0deefe20ed2906657100fe",
+      "title": "Reassess supplied metadata and reason-label features with grouped CV",
+      "changed_files": 162
+    },
+    {
+      "commit": "b2054088b0cbf9262a4732275124da76e208768a",
+      "title": "Evaluate the Ani LDA revision, covariance heads and direct recipe comparisons",
+      "changed_files": 145
+    },
+    {
+      "commit": "415ec96e9e9386c7040d0c544c3c0bc3e5406176",
+      "title": "Test LDA neighbors, feature retries, reason heads and ensemble weights",
+      "changed_files": 104
+    },
+    {
+      "commit": "107e39dec432493c3b252a307401b4dc88b8f58e",
+      "title": "Record Part 1 lda-ensemble-trainval235 submission: Kaggle 0.89401",
+      "changed_files": 12,
+      "tag": "part1-lda-ensemble-trainval235-kaggle-0.89401",
+      "submission_file": "part1/research/lda_ensemble/experiments/final_lda_ensemble_trainval235_v1/part1_lda_ensemble_trainval235.csv",
+      "submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2"
+    },
+    {
+      "commit": "11ced2baad5611a8ea102c35c530690478dcf670",
+      "title": "Evaluate temporal features, recent-gold experts and nested cutoffs",
+      "changed_files": 56
+    },
+    {
+      "commit": "83fe00758a11e2e32100bb39d3539e93afeaaf6a",
+      "title": "Preserve the compact independent new-direction experiment record",
+      "changed_files": 151
+    },
+    {
+      "commit": "37fe02ef2dd5ee4efc484b50f64babe686c6a70c",
+      "title": "Preserve the anchored leader recipe, fixed settings and result summaries",
+      "changed_files": 31
+    },
+    {
+      "commit": "b7b04bb848bb80747c62f912b4f2f2a90c4047e4",
+      "title": "Record Part 1 anchored-trainval235 submission: Kaggle 0.89636",
+      "changed_files": 12,
+      "tag": "part1-anchored-trainval235-kaggle-0.89636",
+      "submission_file": "part1/submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv",
+      "submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb"
+    },
+    {
+      "commit": "32c6c35d369276c021e5f6fced037f11152c35c7",
+      "title": "Preserve the shared grouped comparison of Part 1 leaders",
+      "changed_files": 42
+    }
+  ],
+  "no_branch_merge": true,
+  "no_push": true,
+  "working_checkout_preserved": true
+}

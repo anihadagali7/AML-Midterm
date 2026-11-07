@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "study_imports_checked": 27,
+  "study_imports_passed": 27,
+  "replay_checks": [
+    {
+      "study": "feature_gap_cv_v1",
+      "candidate": "ani__eligibility_structure",
+      "repeat_scores_match": true,
+      "repeat_scores": [
+        0.9087048832271761,
+        0.9150743099787687,
+        0.9278131634819534
+      ]
+    },
+    {
+      "study": "feature_gap_cv_v1",
+      "candidate": "ensemble__eligibility_structure",
+      "repeat_scores_match": true,
+      "repeat_scores": [
+        0.9320594479830149,
+        0.9171974522292994,
+        0.9341825902335458
+      ]
+    },
+    {
+      "study": "ani_lda_revision_cv_v1",
+      "candidate": "ani__revision_full",
+      "repeat_scores_match": true,
+      "repeat_scores": [
+        0.9299363057324841,
+        0.9193205944798302,
+        0.9363057324840764
+      ]
+    },
+    {
+      "study": "ani_lda_revision_cv_v1",
+      "candidate": "ensemble__revision_full",
+      "repeat_scores_match": true,
+      "repeat_scores": [
+        0.9320594479830148,
+        0.9278131634819534,
+        0.9384288747346071
+      ]
+    },
+    {
+      "study": "other_transfer_cv_v1",
+      "candidate": "ensemble__gold_targets_half",
+      "repeat_scores_match": true,
+      "repeat_scores": [
+        0.9235668789808917,
+        0.9256900212314225,
+        0.9384288747346072
+      ]
+    }
+  ],
+  "lda_predictions_match": true,
+  "lda_scores_match_atol": 1e-10,
+  "negative_dependency_regeneration_passed": true,
+  "fresh_outer_folds": 60,
+  "note": "15 feature folds, 15 LDA folds, 15 drug-target folds and 15 gold-correction folds; Other transfer mixes their saved scores. Disposable outputs removed after verification."
+}

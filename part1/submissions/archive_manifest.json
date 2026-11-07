@@ -133,6 +133,28 @@
       "status": "submitted manually; score reported",
       "kaggle_score": 0.89401,
       "note": "235 gold labels; inductive. User-reported manual submission; exact preparation and result manifests remain in research/independent/predictions/three_way_trainval235/. Original validation belongs to the earlier 157-label fit."
+    },
+    {
+      "file": "submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv",
+      "original_file": "experiments/paired_improvement/candidate/part1_anchored_submission.csv",
+      "operation": "unchanged final 235-label candidate; archived after user-reported manual submission",
+      "sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+      "model": "Anchored logistic/LDA/neighbor classifier with GMM-assisted label generation",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.89636,
+      "note": "User reported 0.89636 after exact-file transfer. Inductive: test inputs excluded from fitting. Higher than recorded Ani 0.89423 and LDA ensemble 0.89401. Upload bytes and leaderboard partition not independently verified."
+    },
+    {
+      "file": "research/lda_ensemble/experiments/final_lda_ensemble_trainval235_v1/part1_lda_ensemble_trainval235.csv",
+      "original_file": "experiments/final_lda_ensemble_trainval235_v1/part1_lda_ensemble_trainval235.csv",
+      "operation": "consolidated exact submission; score reported by user",
+      "sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+      "model": "LDA-revision 70/15/15 ensemble",
+      "verified_labels": 235,
+      "status": "submitted manually; score reported",
+      "kaggle_score": 0.89401,
+      "note": "Separate submission from the previous 70/15/15 ensemble; 13 label sets changed, same reported score."
     }
   ],
   "updated_reference_files": [
@@ -190,5 +212,6 @@
   ],
   "highest_reported_file": "submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
   "highest_reported_kaggle_score": 0.89423,
-  "integration_uploaded": false
+  "integration_uploaded": false,
+  "result_checkpoints": "submissions/results/"
 }

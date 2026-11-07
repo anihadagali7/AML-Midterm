@@ -1,0 +1,36 @@
+{
+  "lda_reported_kaggle": 0.89401,
+  "lda_submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+  "lda_result_record": "experiments/final_lda_ensemble_trainval235_v1/kaggle_result.json",
+  "separate_anchored_result": {
+    "reported_at_utc": "2026-11-07T00:00:02Z",
+    "status": "Submitted manually; score reported by user",
+    "candidate": "Anchored reason classifier, final 235-label fit",
+    "reported_kaggle_score": 0.89636,
+    "score_provenance": "User reported 0.89636 immediately after receiving the exact candidate filename and scp command. Not independently queried from Kaggle.",
+    "submission_file": "part1/experiments/paired_improvement/candidate/part1_anchored_submission.csv",
+    "submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "verified_labels": 235,
+    "originally_unlabeled_rows": 1014,
+    "final_generated_rows_used": 757,
+    "test_rows": 312,
+    "fitting_access": "Inductive; test inputs only used for prediction",
+    "comparison": {
+      "original_ani_reported_kaggle": 0.89423,
+      "delta_original_ani": 0.00213,
+      "submitted_lda_ensemble_reported_kaggle": 0.89401,
+      "delta_submitted_lda_ensemble": 0.00235
+    },
+    "actual_uploaded_bytes_independently_verified": false,
+    "public_private_partition_not_verified": true,
+    "preparation_manifest_preserved": true,
+    "remaining_submission_budget": "Unknown; no further upload authorized or performed"
+  },
+  "anchored_record_path": "../../AML-Midterm/part1/experiments/paired_improvement/candidate/kaggle_result.json",
+  "anchored_record_sha256": "83bfb48a3ad8538f0fab70664c4163adbd2d6783ccd73c7d901d4e5883bb11ad",
+  "anchored_candidate_and_archive_bytes_match": true,
+  "attribution": "Anchored result is from the sibling project. It is not a score of any new LDA follow-up in this checkpoint.",
+  "leaderboard_independently_queried": false,
+  "historical_preparation_and_result_records_unchanged": true,
+  "quota_note": "User reported one daily slot remained, then submitted the different model; no remaining slot is assumed."
+}

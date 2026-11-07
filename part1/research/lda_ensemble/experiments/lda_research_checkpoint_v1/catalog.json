@@ -1,0 +1,3906 @@
+{
+  "created_at_utc": "2026-11-07T01:51:11.187047+00:00",
+  "studies": [
+    {
+      "study": "feature_gap_cv_v1",
+      "purpose": "Nine supplied-data feature additions and retries against original Ani and its ensemble.",
+      "status": "completed",
+      "registered_recipes": 18,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Original scaler/PCA/GMM, two embedding-only pseudo-label rounds, augmented targets, native class weighting, C=.3, kNN and decoder unchanged. Append one metadata block to final LR. No metadata enters pseudo-label generation or kNN.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 80,
+          "repeats_rescored": 284,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "source_sha256": "7a8ee75bcbd1b7cc5ccb97f20e5a09b28cb8868d92748eb1254abede914c97f0",
+            "max_control_difference": 1.1102230246251565e-16,
+            "parser_checks_passed": true,
+            "feature_boundary_checks": [
+              {
+                "block": "inclusion_text",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 2001
+              },
+              {
+                "block": "exclusion_text",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 2001
+              },
+              {
+                "block": "eligibility_structure",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 18
+              },
+              {
+                "block": "icd_full_category",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 855
+              },
+              {
+                "block": "criteria_text",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 2001
+              },
+              {
+                "block": "diseases",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 142
+              },
+              {
+                "block": "icd_category",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 257
+              },
+              {
+                "block": "drug_targets",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 228
+              },
+              {
+                "block": "matched_drugs",
+                "query_batch_invariance": true,
+                "fitting_transform_unchanged": true,
+                "query_only_token_excluded": true,
+                "dimensions": 70
+              }
+            ]
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 284,
+          "fold_arrays_checked": 1420,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/feature_gap_cv_v1/report.html",
+        "protocol.json": "experiments/feature_gap_cv_v1/protocol.json",
+        "registry.json": "experiments/feature_gap_cv_v1/registry.json",
+        "summary.json": "experiments/feature_gap_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/feature_gap_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/feature_gap_cv_v1/verification.json",
+        "independent_verification.json": "experiments/feature_gap_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__inclusion_text",
+          "parent": "ani",
+          "block": "inclusion_text",
+          "description": "new: inclusion section word/bigram TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__inclusion_text",
+          "parent": "ensemble",
+          "block": "inclusion_text",
+          "description": "new: inclusion section word/bigram TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__exclusion_text",
+          "parent": "ani",
+          "block": "exclusion_text",
+          "description": "new: exclusion section word/bigram TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__exclusion_text",
+          "parent": "ensemble",
+          "block": "exclusion_text",
+          "description": "new: exclusion section word/bigram TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__eligibility_structure",
+          "parent": "ani",
+          "block": "eligibility_structure",
+          "description": "new: section, bullet, restriction and formatting counts",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__eligibility_structure",
+          "parent": "ensemble",
+          "block": "eligibility_structure",
+          "description": "new: section, bullet, restriction and formatting counts",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__icd_full_category",
+          "parent": "ani",
+          "block": "icd_full_category",
+          "description": "new: full ICD codes plus three-character categories",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__icd_full_category",
+          "parent": "ensemble",
+          "block": "icd_full_category",
+          "description": "new: full ICD codes plus three-character categories",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__criteria_text",
+          "parent": "ani",
+          "block": "criteria_text",
+          "description": "retry: whole eligibility text TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__criteria_text",
+          "parent": "ensemble",
+          "block": "criteria_text",
+          "description": "retry: whole eligibility text TF-IDF",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__diseases",
+          "parent": "ani",
+          "block": "diseases",
+          "description": "retry: parsed disease-name indicators",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__diseases",
+          "parent": "ensemble",
+          "block": "diseases",
+          "description": "retry: parsed disease-name indicators",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__icd_category",
+          "parent": "ani",
+          "block": "icd_category",
+          "description": "retry/control: parsed three-character ICD categories",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__icd_category",
+          "parent": "ensemble",
+          "block": "icd_category",
+          "description": "retry/control: parsed three-character ICD categories",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__drug_targets",
+          "parent": "ani",
+          "block": "drug_targets",
+          "description": "retry: protein-target indicators and missingness",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__drug_targets",
+          "parent": "ensemble",
+          "block": "drug_targets",
+          "description": "retry: protein-target indicators and missingness",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ani__matched_drugs",
+          "parent": "ani",
+          "block": "matched_drugs",
+          "description": "retry: matched drug-name indicators and missingness",
+          "decoder": "threshold .5 then nonempty argmax"
+        },
+        {
+          "name": "ensemble__matched_drugs",
+          "parent": "ensemble",
+          "block": "matched_drugs",
+          "description": "retry: matched drug-name indicators and missingness",
+          "decoder": "threshold .5 then nonempty argmax"
+        }
+      ],
+      "protocol_sha256": "7a8ee75bcbd1b7cc5ccb97f20e5a09b28cb8868d92748eb1254abede914c97f0",
+      "protected_sources_checked": 158
+    },
+    {
+      "study": "gold_correction_cv_v1",
+      "purpose": "Gold-only embedding/metadata corrections with matched no-feature controls.",
+      "status": "completed",
+      "registered_recipes": 20,
+      "parent": "Original Ani and three-way parents; matched gold-only embedding heads quantify feature contribution.",
+      "recipe": "Native embeddings, pseudo-label generation and augmented kNN unchanged. Replace half or all of Ani's final LR contribution with a C=.3 multinomial head trained only on gold rows, preserving native class balancing. Compare embeddings alone with individual metadata blocks at fixed .3 RMS weight.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [
+        "ani__half_drug_targets"
+      ],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 86,
+          "repeats_rescored": 302,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_parent_reproduced": true,
+            "checks": [
+              {
+                "recipe": "half_none",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "half_drug_targets",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "half_diseases",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "half_criteria_text",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "half_icd_full_category",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "full_none",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "full_drug_targets",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "full_diseases",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "full_criteria_text",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              },
+              {
+                "recipe": "full_icd_full_category",
+                "query_batch_invariance": true,
+                "corrective_head_ignores_generated_targets": true,
+                "verified_fitting_rows": 183
+              }
+            ]
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 302,
+          "fold_arrays_checked": 1510,
+          "supplementary_scores_checked": 12,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/gold_correction_cv_v1/report.html",
+        "protocol.json": "experiments/gold_correction_cv_v1/protocol.json",
+        "registry.json": "experiments/gold_correction_cv_v1/registry.json",
+        "summary.json": "experiments/gold_correction_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/gold_correction_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/gold_correction_cv_v1/verification.json",
+        "independent_verification.json": "experiments/gold_correction_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__half_none",
+          "parent": "ani",
+          "block": "half_none",
+          "description": "half gold-only LR correction with none",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__half_none",
+          "parent": "ensemble",
+          "block": "half_none",
+          "description": "half gold-only LR correction with none",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__half_drug_targets",
+          "parent": "ani",
+          "block": "half_drug_targets",
+          "description": "half gold-only LR correction with drug_targets",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__half_drug_targets",
+          "parent": "ensemble",
+          "block": "half_drug_targets",
+          "description": "half gold-only LR correction with drug_targets",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__half_diseases",
+          "parent": "ani",
+          "block": "half_diseases",
+          "description": "half gold-only LR correction with diseases",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__half_diseases",
+          "parent": "ensemble",
+          "block": "half_diseases",
+          "description": "half gold-only LR correction with diseases",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__half_criteria_text",
+          "parent": "ani",
+          "block": "half_criteria_text",
+          "description": "half gold-only LR correction with criteria_text",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__half_criteria_text",
+          "parent": "ensemble",
+          "block": "half_criteria_text",
+          "description": "half gold-only LR correction with criteria_text",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__half_icd_full_category",
+          "parent": "ani",
+          "block": "half_icd_full_category",
+          "description": "half gold-only LR correction with icd_full_category",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__half_icd_full_category",
+          "parent": "ensemble",
+          "block": "half_icd_full_category",
+          "description": "half gold-only LR correction with icd_full_category",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__full_none",
+          "parent": "ani",
+          "block": "full_none",
+          "description": "full gold-only LR correction with none",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__full_none",
+          "parent": "ensemble",
+          "block": "full_none",
+          "description": "full gold-only LR correction with none",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__full_drug_targets",
+          "parent": "ani",
+          "block": "full_drug_targets",
+          "description": "full gold-only LR correction with drug_targets",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__full_drug_targets",
+          "parent": "ensemble",
+          "block": "full_drug_targets",
+          "description": "full gold-only LR correction with drug_targets",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__full_diseases",
+          "parent": "ani",
+          "block": "full_diseases",
+          "description": "full gold-only LR correction with diseases",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__full_diseases",
+          "parent": "ensemble",
+          "block": "full_diseases",
+          "description": "full gold-only LR correction with diseases",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__full_criteria_text",
+          "parent": "ani",
+          "block": "full_criteria_text",
+          "description": "full gold-only LR correction with criteria_text",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__full_criteria_text",
+          "parent": "ensemble",
+          "block": "full_criteria_text",
+          "description": "full gold-only LR correction with criteria_text",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ani__full_icd_full_category",
+          "parent": "ani",
+          "block": "full_icd_full_category",
+          "description": "full gold-only LR correction with icd_full_category",
+          "decoder": "threshold .5 plus nonempty fallback"
+        },
+        {
+          "name": "ensemble__full_icd_full_category",
+          "parent": "ensemble",
+          "block": "full_icd_full_category",
+          "description": "full gold-only LR correction with icd_full_category",
+          "decoder": "threshold .5 plus nonempty fallback"
+        }
+      ],
+      "protocol_sha256": "705229312dc5c716dba5efa529a1da27ed3c1d8d053c5100aa703621174dc86e",
+      "protected_sources_checked": 162
+    },
+    {
+      "study": "other_transfer_cv_v1",
+      "purpose": "Transfer gold-only metadata scores for Other.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Submitted three-way ensemble; all changes restricted to Other score",
+      "recipe": "Only replace Other decision score, half or full, with a frozen source: gold-half-corrected Ani with targets; same without metadata; pseudo-trained target addition; or native Ani. Other four score columns, cutoff and nonempty fallback unchanged.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 34,
+          "repeats_rescored": 130,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "source_alignment": true,
+            "non_other_score_columns_unchanged": true,
+            "label_free_elementwise_transfer": true,
+            "source_models_previously_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 130,
+          "fold_arrays_checked": 650,
+          "supplementary_scores_checked": 12,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/other_transfer_cv_v1/report.html",
+        "protocol.json": "experiments/other_transfer_cv_v1/protocol.json",
+        "registry.json": "experiments/other_transfer_cv_v1/registry.json",
+        "summary.json": "experiments/other_transfer_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/other_transfer_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/other_transfer_cv_v1/verification.json",
+        "independent_verification.json": "experiments/other_transfer_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ensemble__gold_targets_half",
+          "parent": "ensemble",
+          "block": "gold_targets_half",
+          "description": "Transfer half of gold_targets Other score only"
+        },
+        {
+          "name": "ensemble__gold_targets_full",
+          "parent": "ensemble",
+          "block": "gold_targets_full",
+          "description": "Transfer full of gold_targets Other score only"
+        },
+        {
+          "name": "ensemble__gold_embedding_half",
+          "parent": "ensemble",
+          "block": "gold_embedding_half",
+          "description": "Transfer half of gold_embedding Other score only"
+        },
+        {
+          "name": "ensemble__gold_embedding_full",
+          "parent": "ensemble",
+          "block": "gold_embedding_full",
+          "description": "Transfer full of gold_embedding Other score only"
+        },
+        {
+          "name": "ensemble__pseudo_targets_half",
+          "parent": "ensemble",
+          "block": "pseudo_targets_half",
+          "description": "Transfer half of pseudo_targets Other score only"
+        },
+        {
+          "name": "ensemble__pseudo_targets_full",
+          "parent": "ensemble",
+          "block": "pseudo_targets_full",
+          "description": "Transfer full of pseudo_targets Other score only"
+        },
+        {
+          "name": "ensemble__native_ani_half",
+          "parent": "ensemble",
+          "block": "native_ani_half",
+          "description": "Transfer half of native_ani Other score only"
+        },
+        {
+          "name": "ensemble__native_ani_full",
+          "parent": "ensemble",
+          "block": "native_ani_full",
+          "description": "Transfer full of native_ani Other score only"
+        }
+      ],
+      "protocol_sha256": "005a5f9d1d12ea609e3a38f488ea027ea2b5474e09f151f364164b6d711313ef",
+      "protected_sources_checked": 184
+    },
+    {
+      "study": "neighbor_labels_cv_v1",
+      "purpose": "Independent multilabel neighbor votes.",
+      "status": "completed",
+      "registered_recipes": 16,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Final LR, GMM, two pseudo-label rounds, scalers, ensemble weights and decoders unchanged. Replace only final kNN with augmented binary votes, gold-only fractional votes, gold-only binary votes at k10 or k3. Cosine similarity squared, native weight .3. Apply to all reason scores or Other only.",
+      "selection": {
+        "initial": "Focused comparison predeclared on all eight frozen repeats in BOTH pools. First three retained separately only for audit; no screening-based deletion.",
+        "shortlist": "All sixteen fixed recipes advance to five additional saved repeats regardless of initial score. This is the policy's predeclared all-eight-repeat option.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [
+        "ani__augmented_binary10_all"
+      ],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 104,
+          "repeats_rescored": 416,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "binary_label_votes_verified": true,
+            "query_batch_invariance": true,
+            "other_scope_boundary": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 416,
+          "fold_arrays_checked": 2080,
+          "supplementary_scores_checked": 12,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/neighbor_labels_cv_v1/report.html",
+        "protocol.json": "experiments/neighbor_labels_cv_v1/protocol.json",
+        "registry.json": "experiments/neighbor_labels_cv_v1/registry.json",
+        "summary.json": "experiments/neighbor_labels_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/neighbor_labels_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/neighbor_labels_cv_v1/verification.json",
+        "independent_verification.json": "experiments/neighbor_labels_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_binary10_all",
+          "parent": "ani",
+          "block": "augmented_binary10_all",
+          "description": "augmented_binary10, all score correction"
+        },
+        {
+          "name": "ensemble__augmented_binary10_all",
+          "parent": "ensemble",
+          "block": "augmented_binary10_all",
+          "description": "augmented_binary10, all score correction"
+        },
+        {
+          "name": "ani__augmented_binary10_other",
+          "parent": "ani",
+          "block": "augmented_binary10_other",
+          "description": "augmented_binary10, other score correction"
+        },
+        {
+          "name": "ensemble__augmented_binary10_other",
+          "parent": "ensemble",
+          "block": "augmented_binary10_other",
+          "description": "augmented_binary10, other score correction"
+        },
+        {
+          "name": "ani__gold_fractional10_all",
+          "parent": "ani",
+          "block": "gold_fractional10_all",
+          "description": "gold_fractional10, all score correction"
+        },
+        {
+          "name": "ensemble__gold_fractional10_all",
+          "parent": "ensemble",
+          "block": "gold_fractional10_all",
+          "description": "gold_fractional10, all score correction"
+        },
+        {
+          "name": "ani__gold_fractional10_other",
+          "parent": "ani",
+          "block": "gold_fractional10_other",
+          "description": "gold_fractional10, other score correction"
+        },
+        {
+          "name": "ensemble__gold_fractional10_other",
+          "parent": "ensemble",
+          "block": "gold_fractional10_other",
+          "description": "gold_fractional10, other score correction"
+        },
+        {
+          "name": "ani__gold_binary10_all",
+          "parent": "ani",
+          "block": "gold_binary10_all",
+          "description": "gold_binary10, all score correction"
+        },
+        {
+          "name": "ensemble__gold_binary10_all",
+          "parent": "ensemble",
+          "block": "gold_binary10_all",
+          "description": "gold_binary10, all score correction"
+        },
+        {
+          "name": "ani__gold_binary10_other",
+          "parent": "ani",
+          "block": "gold_binary10_other",
+          "description": "gold_binary10, other score correction"
+        },
+        {
+          "name": "ensemble__gold_binary10_other",
+          "parent": "ensemble",
+          "block": "gold_binary10_other",
+          "description": "gold_binary10, other score correction"
+        },
+        {
+          "name": "ani__gold_binary3_all",
+          "parent": "ani",
+          "block": "gold_binary3_all",
+          "description": "gold_binary3, all score correction"
+        },
+        {
+          "name": "ensemble__gold_binary3_all",
+          "parent": "ensemble",
+          "block": "gold_binary3_all",
+          "description": "gold_binary3, all score correction"
+        },
+        {
+          "name": "ani__gold_binary3_other",
+          "parent": "ani",
+          "block": "gold_binary3_other",
+          "description": "gold_binary3, other score correction"
+        },
+        {
+          "name": "ensemble__gold_binary3_other",
+          "parent": "ensemble",
+          "block": "gold_binary3_other",
+          "description": "gold_binary3, other score correction"
+        }
+      ],
+      "protocol_sha256": "1f67b12661993671f5b73c8d9d6222a096d3f342d172113892a705075491b311",
+      "protected_sources_checked": 161
+    },
+    {
+      "study": "other_residual_cv_v1",
+      "purpose": "Inner-cross-fitted residual corrections for Other.",
+      "status": "completed",
+      "registered_recipes": 24,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Only Other is corrected. Fit an offset binary logistic model on outer-training gold using grouped inner-OOF native Ani decision scores. Offset is logit(native centered Other score); learned correction starts at zero and is ridge-penalized including intercept. Penalties1/10 are frozen. No outer-score threshold selection.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 92,
+          "repeats_rescored": 308,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "analytic_gradient_error": 3.69654677745503e-07,
+            "native_control_parity": true,
+            "corrective_checks": [
+              {
+                "view": "calibration",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              },
+              {
+                "view": "context",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              },
+              {
+                "view": "neighbors",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              },
+              {
+                "view": "drug_targets",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              },
+              {
+                "view": "diseases",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              },
+              {
+                "view": "criteria_text",
+                "query_batch_invariance": true,
+                "query_does_not_change_coefficients": true,
+                "inner_and_outer_id_separation": true,
+                "non_other_scores_unchanged": true
+              }
+            ]
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 308,
+          "fold_arrays_checked": 1540,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/other_residual_cv_v1/report.html",
+        "protocol.json": "experiments/other_residual_cv_v1/protocol.json",
+        "registry.json": "experiments/other_residual_cv_v1/registry.json",
+        "summary.json": "experiments/other_residual_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/other_residual_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/other_residual_cv_v1/verification.json",
+        "independent_verification.json": "experiments/other_residual_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__calibration_ridge1",
+          "parent": "ani",
+          "block": "calibration_ridge1",
+          "description": "Other offset-logistic correction: calibration, penalty 1"
+        },
+        {
+          "name": "ensemble__calibration_ridge1",
+          "parent": "ensemble",
+          "block": "calibration_ridge1",
+          "description": "Other offset-logistic correction: calibration, penalty 1"
+        },
+        {
+          "name": "ani__calibration_ridge10",
+          "parent": "ani",
+          "block": "calibration_ridge10",
+          "description": "Other offset-logistic correction: calibration, penalty 10"
+        },
+        {
+          "name": "ensemble__calibration_ridge10",
+          "parent": "ensemble",
+          "block": "calibration_ridge10",
+          "description": "Other offset-logistic correction: calibration, penalty 10"
+        },
+        {
+          "name": "ani__context_ridge1",
+          "parent": "ani",
+          "block": "context_ridge1",
+          "description": "Other offset-logistic correction: context, penalty 1"
+        },
+        {
+          "name": "ensemble__context_ridge1",
+          "parent": "ensemble",
+          "block": "context_ridge1",
+          "description": "Other offset-logistic correction: context, penalty 1"
+        },
+        {
+          "name": "ani__context_ridge10",
+          "parent": "ani",
+          "block": "context_ridge10",
+          "description": "Other offset-logistic correction: context, penalty 10"
+        },
+        {
+          "name": "ensemble__context_ridge10",
+          "parent": "ensemble",
+          "block": "context_ridge10",
+          "description": "Other offset-logistic correction: context, penalty 10"
+        },
+        {
+          "name": "ani__neighbors_ridge1",
+          "parent": "ani",
+          "block": "neighbors_ridge1",
+          "description": "Other offset-logistic correction: neighbors, penalty 1"
+        },
+        {
+          "name": "ensemble__neighbors_ridge1",
+          "parent": "ensemble",
+          "block": "neighbors_ridge1",
+          "description": "Other offset-logistic correction: neighbors, penalty 1"
+        },
+        {
+          "name": "ani__neighbors_ridge10",
+          "parent": "ani",
+          "block": "neighbors_ridge10",
+          "description": "Other offset-logistic correction: neighbors, penalty 10"
+        },
+        {
+          "name": "ensemble__neighbors_ridge10",
+          "parent": "ensemble",
+          "block": "neighbors_ridge10",
+          "description": "Other offset-logistic correction: neighbors, penalty 10"
+        },
+        {
+          "name": "ani__drug_targets_ridge1",
+          "parent": "ani",
+          "block": "drug_targets_ridge1",
+          "description": "Other offset-logistic correction: drug_targets, penalty 1"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge1",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge1",
+          "description": "Other offset-logistic correction: drug_targets, penalty 1"
+        },
+        {
+          "name": "ani__drug_targets_ridge10",
+          "parent": "ani",
+          "block": "drug_targets_ridge10",
+          "description": "Other offset-logistic correction: drug_targets, penalty 10"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge10",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge10",
+          "description": "Other offset-logistic correction: drug_targets, penalty 10"
+        },
+        {
+          "name": "ani__diseases_ridge1",
+          "parent": "ani",
+          "block": "diseases_ridge1",
+          "description": "Other offset-logistic correction: diseases, penalty 1"
+        },
+        {
+          "name": "ensemble__diseases_ridge1",
+          "parent": "ensemble",
+          "block": "diseases_ridge1",
+          "description": "Other offset-logistic correction: diseases, penalty 1"
+        },
+        {
+          "name": "ani__diseases_ridge10",
+          "parent": "ani",
+          "block": "diseases_ridge10",
+          "description": "Other offset-logistic correction: diseases, penalty 10"
+        },
+        {
+          "name": "ensemble__diseases_ridge10",
+          "parent": "ensemble",
+          "block": "diseases_ridge10",
+          "description": "Other offset-logistic correction: diseases, penalty 10"
+        },
+        {
+          "name": "ani__criteria_text_ridge1",
+          "parent": "ani",
+          "block": "criteria_text_ridge1",
+          "description": "Other offset-logistic correction: criteria_text, penalty 1"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge1",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge1",
+          "description": "Other offset-logistic correction: criteria_text, penalty 1"
+        },
+        {
+          "name": "ani__criteria_text_ridge10",
+          "parent": "ani",
+          "block": "criteria_text_ridge10",
+          "description": "Other offset-logistic correction: criteria_text, penalty 10"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge10",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge10",
+          "description": "Other offset-logistic correction: criteria_text, penalty 10"
+        }
+      ],
+      "protocol_sha256": "b4a003f36db151be1c01b786c2ce0bfffbc340ddf47480f481d144eb2245f2bd",
+      "protected_sources_checked": 162
+    },
+    {
+      "study": "other_utility_cv_v1",
+      "purpose": "Failed preflight: zero sample-F1 utility was incorrectly forbidden; preserved.",
+      "status": "failed/partial; superseded",
+      "registered_recipes": 12,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Same offset-logistic correction and inner group boundaries as residual study. Weight each gold example by absolute sample-F1 change from adding Other to its inner-OOF prediction without Other; if removal empties the set, select highest-scored non-Other label. Normalize weights to mean1. Positive/negative sign agrees with the true Other label. Penalties1/10 and decoder remain fixed.",
+      "selection": {
+        "initial": "Focused all-eight-repeat comparison of six utility-weighted heads with both original parents. First three saved separately; no screening-based pruning.",
+        "shortlist": "All twelve fixed recipes advance to the five additional saved repeats, declared before scoring.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": {
+        "status": "failed preflight; no outer candidates scored",
+        "stage": "parity",
+        "reason": "Adding Other can have zero sample-F1 utility when both alternative label sets miss all true reasons. The v1 assertion incorrectly required nonzero utility.",
+        "resolution": "Preserved frozen v1. Version v2 permits zero utility and assigns those examples zero weight.",
+        "source_sha256": "96926c023ebf2bff06265f671fb95ab0f4ed2d24c39d62c413939854816feb33"
+      },
+      "verifications": {},
+      "artifacts": {
+        "protocol.json": "experiments/other_utility_cv_v1/protocol.json",
+        "registry.json": "experiments/other_utility_cv_v1/registry.json",
+        "failure.json": "experiments/other_utility_cv_v1/failure.json"
+      },
+      "registry": [
+        {
+          "name": "ani__context_ridge1",
+          "parent": "ani",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ensemble__context_ridge1",
+          "parent": "ensemble",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ani__context_ridge10",
+          "parent": "ani",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ensemble__context_ridge10",
+          "parent": "ensemble",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ani__drug_targets_ridge1",
+          "parent": "ani",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge1",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ani__drug_targets_ridge10",
+          "parent": "ani",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge10",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ani__criteria_text_ridge1",
+          "parent": "ani",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge1",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ani__criteria_text_ridge10",
+          "parent": "ani",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge10",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        }
+      ],
+      "protocol_sha256": "08dacc360b5ae44cbc8760ef8ca241edc5fda58fe6c821ef845b8071a95d83ef",
+      "protected_sources_checked": 165
+    },
+    {
+      "study": "other_utility_cv_v2",
+      "purpose": "Confirmation stopped on optimizer failure; superseded by a complete v3 rerun.",
+      "status": "failed/partial; superseded",
+      "registered_recipes": 12,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Same offset-logistic correction and inner group boundaries as residual study. Weight each gold example by absolute sample-F1 change from adding Other to its inner-OOF prediction without Other; if removal empties the set, select highest-scored non-Other label. Zero-utility rows receive zero weight; normalize nonzero total weights to mean1. Positive/negative sign agrees with the true Other label. Penalties1/10 and decoder remain fixed.",
+      "selection": {
+        "initial": "Focused all-eight-repeat comparison of six utility-weighted heads with both original parents. First three saved separately; no screening-based pruning.",
+        "shortlist": "All twelve fixed recipes advance to the five additional saved repeats, declared before scoring.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": {
+        "status": "stopped_in_confirmation",
+        "reason": "L-BFGS-B returned ABNORMAL during train5 seed20261130 fold2; assertion stopped all further scoring. No fold omitted.",
+        "source_sha256": "cdf0f888aabf9e0f164dbce65b39886873848287038472b5bb1441cc496275f9",
+        "resolution": "Rerun every fold in separately frozen v3 with longer line search and explicit gradient convergence checks. No recipe or selection change."
+      },
+      "verifications": {},
+      "artifacts": {
+        "protocol.json": "experiments/other_utility_cv_v2/protocol.json",
+        "registry.json": "experiments/other_utility_cv_v2/registry.json",
+        "failure.json": "experiments/other_utility_cv_v2/failure.json"
+      },
+      "registry": [
+        {
+          "name": "ani__context_ridge1",
+          "parent": "ani",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ensemble__context_ridge1",
+          "parent": "ensemble",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ani__context_ridge10",
+          "parent": "ani",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ensemble__context_ridge10",
+          "parent": "ensemble",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ani__drug_targets_ridge1",
+          "parent": "ani",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge1",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ani__drug_targets_ridge10",
+          "parent": "ani",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge10",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ani__criteria_text_ridge1",
+          "parent": "ani",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge1",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ani__criteria_text_ridge10",
+          "parent": "ani",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge10",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        }
+      ],
+      "protocol_sha256": "67f44ef01ce13e8b9d87b8b7cad6798eeb5ec425cdaf48f8959daf1576e12995",
+      "protected_sources_checked": 165
+    },
+    {
+      "study": "other_utility_cv_v3",
+      "purpose": "Sample-F1-weighted Other correction, with convergence checks.",
+      "status": "completed",
+      "registered_recipes": 12,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Same offset-logistic correction and inner group boundaries as residual study. Weight each gold example by absolute sample-F1 change from adding Other to its inner-OOF prediction without Other; if removal empties the set, select highest-scored non-Other label. Zero-utility rows receive zero weight; normalize nonzero total weights to mean1. Positive/negative sign agrees with the true Other label. Penalties1/10 and decoder remain fixed.",
+      "selection": {
+        "initial": "Focused all-eight-repeat comparison of six utility-weighted heads with both original parents. First three saved separately; no screening-based pruning.",
+        "shortlist": "All twelve fixed recipes advance to the five additional saved repeats, declared before scoring.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 80,
+          "repeats_rescored": 320,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "gradient_error": 4.350545111017857e-07,
+            "verified_utility_examples": true,
+            "query_invariance": true,
+            "native_control_parity": true,
+            "objective_restored_after_each_fit": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 320,
+          "fold_arrays_checked": 1600,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/other_utility_cv_v3/report.html",
+        "protocol.json": "experiments/other_utility_cv_v3/protocol.json",
+        "registry.json": "experiments/other_utility_cv_v3/registry.json",
+        "summary.json": "experiments/other_utility_cv_v3/summary.json",
+        "final_comparison.csv": "experiments/other_utility_cv_v3/final_comparison.csv",
+        "verification.json": "experiments/other_utility_cv_v3/verification.json",
+        "independent_verification.json": "experiments/other_utility_cv_v3/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__context_ridge1",
+          "parent": "ani",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ensemble__context_ridge1",
+          "parent": "ensemble",
+          "block": "context_ridge1",
+          "description": "Utility weighted Other: context, ridge 1"
+        },
+        {
+          "name": "ani__context_ridge10",
+          "parent": "ani",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ensemble__context_ridge10",
+          "parent": "ensemble",
+          "block": "context_ridge10",
+          "description": "Utility weighted Other: context, ridge 10"
+        },
+        {
+          "name": "ani__drug_targets_ridge1",
+          "parent": "ani",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge1",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge1",
+          "description": "Utility weighted Other: drug_targets, ridge 1"
+        },
+        {
+          "name": "ani__drug_targets_ridge10",
+          "parent": "ani",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ensemble__drug_targets_ridge10",
+          "parent": "ensemble",
+          "block": "drug_targets_ridge10",
+          "description": "Utility weighted Other: drug_targets, ridge 10"
+        },
+        {
+          "name": "ani__criteria_text_ridge1",
+          "parent": "ani",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge1",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge1",
+          "description": "Utility weighted Other: criteria_text, ridge 1"
+        },
+        {
+          "name": "ani__criteria_text_ridge10",
+          "parent": "ani",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        },
+        {
+          "name": "ensemble__criteria_text_ridge10",
+          "parent": "ensemble",
+          "block": "criteria_text_ridge10",
+          "description": "Utility weighted Other: criteria_text, ridge 10"
+        }
+      ],
+      "protocol_sha256": "9a4f7b7e28fafdd63a8a1bf1549a948069a9fa6efdc1d3e5e62e4bde921c0dd6",
+      "protected_sources_checked": 165
+    },
+    {
+      "study": "multilabel_teacher_cv_v1",
+      "purpose": "Multilabel pseudo-label teaching alternatives.",
+      "status": "completed",
+      "registered_recipes": 12,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Scaler, PCA30, diagonal GMM30, gold labels, two rounds, confidence.8, cutoff.3, final multinomial LR and fractional kNN unchanged. Only pseudo-label teaching uses binary rather than normalized multi-reason targets in the declared component. Apply retrained source to all reasons or Other only.",
+      "selection": {
+        "initial": "Focused all-eight-repeat comparison in both pools, declared before any candidate scores.",
+        "shortlist": "Every fixed recipe advances to the five additional saved repeats. No screening-based pruning.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 80,
+          "repeats_rescored": 320,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_augmentation_targets_and_rows_identical": true,
+            "native_generated_multilabel_rows": 0,
+            "query_invariance": true,
+            "scope_checks": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 320,
+          "fold_arrays_checked": 1600,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/multilabel_teacher_cv_v1/report.html",
+        "protocol.json": "experiments/multilabel_teacher_cv_v1/protocol.json",
+        "registry.json": "experiments/multilabel_teacher_cv_v1/registry.json",
+        "summary.json": "experiments/multilabel_teacher_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/multilabel_teacher_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/multilabel_teacher_cv_v1/verification.json",
+        "independent_verification.json": "experiments/multilabel_teacher_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__gmm_binary_all",
+          "parent": "ani",
+          "block": "gmm_binary_all",
+          "description": "Independent teacher votes in gmm_binary; predict all"
+        },
+        {
+          "name": "ensemble__gmm_binary_all",
+          "parent": "ensemble",
+          "block": "gmm_binary_all",
+          "description": "Independent teacher votes in gmm_binary; predict all"
+        },
+        {
+          "name": "ani__gmm_binary_other",
+          "parent": "ani",
+          "block": "gmm_binary_other",
+          "description": "Independent teacher votes in gmm_binary; predict other"
+        },
+        {
+          "name": "ensemble__gmm_binary_other",
+          "parent": "ensemble",
+          "block": "gmm_binary_other",
+          "description": "Independent teacher votes in gmm_binary; predict other"
+        },
+        {
+          "name": "ani__neighbors_binary_all",
+          "parent": "ani",
+          "block": "neighbors_binary_all",
+          "description": "Independent teacher votes in neighbors_binary; predict all"
+        },
+        {
+          "name": "ensemble__neighbors_binary_all",
+          "parent": "ensemble",
+          "block": "neighbors_binary_all",
+          "description": "Independent teacher votes in neighbors_binary; predict all"
+        },
+        {
+          "name": "ani__neighbors_binary_other",
+          "parent": "ani",
+          "block": "neighbors_binary_other",
+          "description": "Independent teacher votes in neighbors_binary; predict other"
+        },
+        {
+          "name": "ensemble__neighbors_binary_other",
+          "parent": "ensemble",
+          "block": "neighbors_binary_other",
+          "description": "Independent teacher votes in neighbors_binary; predict other"
+        },
+        {
+          "name": "ani__both_binary_all",
+          "parent": "ani",
+          "block": "both_binary_all",
+          "description": "Independent teacher votes in both_binary; predict all"
+        },
+        {
+          "name": "ensemble__both_binary_all",
+          "parent": "ensemble",
+          "block": "both_binary_all",
+          "description": "Independent teacher votes in both_binary; predict all"
+        },
+        {
+          "name": "ani__both_binary_other",
+          "parent": "ani",
+          "block": "both_binary_other",
+          "description": "Independent teacher votes in both_binary; predict other"
+        },
+        {
+          "name": "ensemble__both_binary_other",
+          "parent": "ensemble",
+          "block": "both_binary_other",
+          "description": "Independent teacher votes in both_binary; predict other"
+        }
+      ],
+      "protocol_sha256": "9b6c3448633dae628f16093b707001c3530abe89dbdb4605bb92442dee547390",
+      "protected_sources_checked": 161
+    },
+    {
+      "study": "selected_text_cv_v1",
+      "purpose": "Failed preflight: bracketed isotope drug names broke recursive parsing; preserved.",
+      "status": "failed/partial; superseded",
+      "registered_recipes": 20,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Freeze native pseudo-labels and kNN. Add one selected text block at .3 embedding RMS to final LR: augmented C.3 head or half gold-only C.3 head, with native class weights. Include matched no-feature controls. Original ensemble correction remains .7 times source change.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": {
+        "status": "preflight_failed_no_candidate_outer_scores",
+        "reason": "Generic recursive list parser mistook drug names starting with bracketed isotope notation for another list.",
+        "source_sha256": "89bf1fcc8a56f83ab18236e592a09dcacfbacedc4672acae10e07a7adb855658",
+        "resolution": "Parse only the outer raw-drug list in v2, preserving bracketed names as literal text. Same recipes."
+      },
+      "verifications": {},
+      "artifacts": {
+        "protocol.json": "experiments/selected_text_cv_v1/protocol.json",
+        "registry.json": "experiments/selected_text_cv_v1/registry.json",
+        "failure.json": "experiments/selected_text_cv_v1/failure.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_none",
+          "parent": "ani",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected none"
+        },
+        {
+          "name": "ensemble__augmented_none",
+          "parent": "ensemble",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected none"
+        },
+        {
+          "name": "ani__augmented_criteria_words",
+          "parent": "ani",
+          "block": "augmented_criteria_words",
+          "description": "augmented final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ensemble__augmented_criteria_words",
+          "parent": "ensemble",
+          "block": "augmented_criteria_words",
+          "description": "augmented final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ani__augmented_criteria_chars",
+          "parent": "ani",
+          "block": "augmented_criteria_chars",
+          "description": "augmented final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ensemble__augmented_criteria_chars",
+          "parent": "ensemble",
+          "block": "augmented_criteria_chars",
+          "description": "augmented final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ani__augmented_drug_chars",
+          "parent": "ani",
+          "block": "augmented_drug_chars",
+          "description": "augmented final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ensemble__augmented_drug_chars",
+          "parent": "ensemble",
+          "block": "augmented_drug_chars",
+          "description": "augmented final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ani__augmented_disease_words",
+          "parent": "ani",
+          "block": "augmented_disease_words",
+          "description": "augmented final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ensemble__augmented_disease_words",
+          "parent": "ensemble",
+          "block": "augmented_disease_words",
+          "description": "augmented final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ani__goldhalf_none",
+          "parent": "ani",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected none"
+        },
+        {
+          "name": "ensemble__goldhalf_none",
+          "parent": "ensemble",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected none"
+        },
+        {
+          "name": "ani__goldhalf_criteria_words",
+          "parent": "ani",
+          "block": "goldhalf_criteria_words",
+          "description": "goldhalf final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ensemble__goldhalf_criteria_words",
+          "parent": "ensemble",
+          "block": "goldhalf_criteria_words",
+          "description": "goldhalf final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ani__goldhalf_criteria_chars",
+          "parent": "ani",
+          "block": "goldhalf_criteria_chars",
+          "description": "goldhalf final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ensemble__goldhalf_criteria_chars",
+          "parent": "ensemble",
+          "block": "goldhalf_criteria_chars",
+          "description": "goldhalf final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ani__goldhalf_drug_chars",
+          "parent": "ani",
+          "block": "goldhalf_drug_chars",
+          "description": "goldhalf final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ensemble__goldhalf_drug_chars",
+          "parent": "ensemble",
+          "block": "goldhalf_drug_chars",
+          "description": "goldhalf final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ani__goldhalf_disease_words",
+          "parent": "ani",
+          "block": "goldhalf_disease_words",
+          "description": "goldhalf final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ensemble__goldhalf_disease_words",
+          "parent": "ensemble",
+          "block": "goldhalf_disease_words",
+          "description": "goldhalf final LR with fold-selected disease_words"
+        }
+      ],
+      "protocol_sha256": "c7b8344ced4dda9f057f581fdb3861823509063eecdfd295869b782ff2d22d03",
+      "protected_sources_checked": 161
+    },
+    {
+      "study": "selected_text_cv_v2",
+      "purpose": "Finer eligibility/drug text representations with corrected parsing.",
+      "status": "completed",
+      "registered_recipes": 20,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Freeze native pseudo-labels and kNN. Add one selected text block at .3 embedding RMS to final LR: augmented C.3 head or half gold-only C.3 head, with native class weights. Include matched no-feature controls. Original ensemble correction remains .7 times source change.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 86,
+          "repeats_rescored": 302,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "augmented_no_feature_parity": true,
+            "query_batch_invariance": true,
+            "supervised_selection_gold_only": true,
+            "synthetic_chi2_ranking_verified": true,
+            "query_transform_does_not_change_fitted_vocabulary": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 302,
+          "fold_arrays_checked": 1510,
+          "supplementary_scores_checked": 12,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/selected_text_cv_v2/report.html",
+        "protocol.json": "experiments/selected_text_cv_v2/protocol.json",
+        "registry.json": "experiments/selected_text_cv_v2/registry.json",
+        "summary.json": "experiments/selected_text_cv_v2/summary.json",
+        "final_comparison.csv": "experiments/selected_text_cv_v2/final_comparison.csv",
+        "verification.json": "experiments/selected_text_cv_v2/verification.json",
+        "independent_verification.json": "experiments/selected_text_cv_v2/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_none",
+          "parent": "ani",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected none"
+        },
+        {
+          "name": "ensemble__augmented_none",
+          "parent": "ensemble",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected none"
+        },
+        {
+          "name": "ani__augmented_criteria_words",
+          "parent": "ani",
+          "block": "augmented_criteria_words",
+          "description": "augmented final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ensemble__augmented_criteria_words",
+          "parent": "ensemble",
+          "block": "augmented_criteria_words",
+          "description": "augmented final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ani__augmented_criteria_chars",
+          "parent": "ani",
+          "block": "augmented_criteria_chars",
+          "description": "augmented final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ensemble__augmented_criteria_chars",
+          "parent": "ensemble",
+          "block": "augmented_criteria_chars",
+          "description": "augmented final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ani__augmented_drug_chars",
+          "parent": "ani",
+          "block": "augmented_drug_chars",
+          "description": "augmented final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ensemble__augmented_drug_chars",
+          "parent": "ensemble",
+          "block": "augmented_drug_chars",
+          "description": "augmented final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ani__augmented_disease_words",
+          "parent": "ani",
+          "block": "augmented_disease_words",
+          "description": "augmented final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ensemble__augmented_disease_words",
+          "parent": "ensemble",
+          "block": "augmented_disease_words",
+          "description": "augmented final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ani__goldhalf_none",
+          "parent": "ani",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected none"
+        },
+        {
+          "name": "ensemble__goldhalf_none",
+          "parent": "ensemble",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected none"
+        },
+        {
+          "name": "ani__goldhalf_criteria_words",
+          "parent": "ani",
+          "block": "goldhalf_criteria_words",
+          "description": "goldhalf final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ensemble__goldhalf_criteria_words",
+          "parent": "ensemble",
+          "block": "goldhalf_criteria_words",
+          "description": "goldhalf final LR with fold-selected criteria_words"
+        },
+        {
+          "name": "ani__goldhalf_criteria_chars",
+          "parent": "ani",
+          "block": "goldhalf_criteria_chars",
+          "description": "goldhalf final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ensemble__goldhalf_criteria_chars",
+          "parent": "ensemble",
+          "block": "goldhalf_criteria_chars",
+          "description": "goldhalf final LR with fold-selected criteria_chars"
+        },
+        {
+          "name": "ani__goldhalf_drug_chars",
+          "parent": "ani",
+          "block": "goldhalf_drug_chars",
+          "description": "goldhalf final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ensemble__goldhalf_drug_chars",
+          "parent": "ensemble",
+          "block": "goldhalf_drug_chars",
+          "description": "goldhalf final LR with fold-selected drug_chars"
+        },
+        {
+          "name": "ani__goldhalf_disease_words",
+          "parent": "ani",
+          "block": "goldhalf_disease_words",
+          "description": "goldhalf final LR with fold-selected disease_words"
+        },
+        {
+          "name": "ensemble__goldhalf_disease_words",
+          "parent": "ensemble",
+          "block": "goldhalf_disease_words",
+          "description": "goldhalf final LR with fold-selected disease_words"
+        }
+      ],
+      "protocol_sha256": "6f89f1183e67646a0647fd4d15cd6454ac47c066d86e9f0ad1b1d77f05390ae1",
+      "protected_sources_checked": 161
+    },
+    {
+      "study": "biochemical_features_cv_v1",
+      "purpose": "Protein targets and drug fingerprints from supplied Part 1 fields.",
+      "status": "completed",
+      "registered_recipes": 20,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Freeze native pseudo-labels and kNN. Add one selected text block at .3 embedding RMS to final LR: augmented C.3 head or half gold-only C.3 head, with native class weights. Include matched no-feature controls. Original ensemble correction remains .7 times source change.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 86,
+          "repeats_rescored": 302,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "augmented_no_feature_parity": true,
+            "query_batch_invariance": true,
+            "supervised_selection_gold_only": true,
+            "synthetic_chi2_ranking_verified": true,
+            "query_transform_does_not_change_fitted_vocabulary": true,
+            "molecule_and_catalog_checks": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 302,
+          "fold_arrays_checked": 1510,
+          "supplementary_scores_checked": 12,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/biochemical_features_cv_v1/report.html",
+        "protocol.json": "experiments/biochemical_features_cv_v1/protocol.json",
+        "registry.json": "experiments/biochemical_features_cv_v1/registry.json",
+        "summary.json": "experiments/biochemical_features_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/biochemical_features_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/biochemical_features_cv_v1/verification.json",
+        "independent_verification.json": "experiments/biochemical_features_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_none",
+          "parent": "ani",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected biochemical none"
+        },
+        {
+          "name": "ensemble__augmented_none",
+          "parent": "ensemble",
+          "block": "augmented_none",
+          "description": "augmented final LR with fold-selected biochemical none"
+        },
+        {
+          "name": "ani__augmented_actions",
+          "parent": "ani",
+          "block": "augmented_actions",
+          "description": "augmented final LR with fold-selected biochemical actions"
+        },
+        {
+          "name": "ensemble__augmented_actions",
+          "parent": "ensemble",
+          "block": "augmented_actions",
+          "description": "augmented final LR with fold-selected biochemical actions"
+        },
+        {
+          "name": "ani__augmented_pathway_all",
+          "parent": "ani",
+          "block": "augmented_pathway_all",
+          "description": "augmented final LR with fold-selected biochemical pathway_all"
+        },
+        {
+          "name": "ensemble__augmented_pathway_all",
+          "parent": "ensemble",
+          "block": "augmented_pathway_all",
+          "description": "augmented final LR with fold-selected biochemical pathway_all"
+        },
+        {
+          "name": "ani__augmented_pathway_specific",
+          "parent": "ani",
+          "block": "augmented_pathway_specific",
+          "description": "augmented final LR with fold-selected biochemical pathway_specific"
+        },
+        {
+          "name": "ensemble__augmented_pathway_specific",
+          "parent": "ensemble",
+          "block": "augmented_pathway_specific",
+          "description": "augmented final LR with fold-selected biochemical pathway_specific"
+        },
+        {
+          "name": "ani__augmented_morgan",
+          "parent": "ani",
+          "block": "augmented_morgan",
+          "description": "augmented final LR with fold-selected biochemical morgan"
+        },
+        {
+          "name": "ensemble__augmented_morgan",
+          "parent": "ensemble",
+          "block": "augmented_morgan",
+          "description": "augmented final LR with fold-selected biochemical morgan"
+        },
+        {
+          "name": "ani__goldhalf_none",
+          "parent": "ani",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected biochemical none"
+        },
+        {
+          "name": "ensemble__goldhalf_none",
+          "parent": "ensemble",
+          "block": "goldhalf_none",
+          "description": "goldhalf final LR with fold-selected biochemical none"
+        },
+        {
+          "name": "ani__goldhalf_actions",
+          "parent": "ani",
+          "block": "goldhalf_actions",
+          "description": "goldhalf final LR with fold-selected biochemical actions"
+        },
+        {
+          "name": "ensemble__goldhalf_actions",
+          "parent": "ensemble",
+          "block": "goldhalf_actions",
+          "description": "goldhalf final LR with fold-selected biochemical actions"
+        },
+        {
+          "name": "ani__goldhalf_pathway_all",
+          "parent": "ani",
+          "block": "goldhalf_pathway_all",
+          "description": "goldhalf final LR with fold-selected biochemical pathway_all"
+        },
+        {
+          "name": "ensemble__goldhalf_pathway_all",
+          "parent": "ensemble",
+          "block": "goldhalf_pathway_all",
+          "description": "goldhalf final LR with fold-selected biochemical pathway_all"
+        },
+        {
+          "name": "ani__goldhalf_pathway_specific",
+          "parent": "ani",
+          "block": "goldhalf_pathway_specific",
+          "description": "goldhalf final LR with fold-selected biochemical pathway_specific"
+        },
+        {
+          "name": "ensemble__goldhalf_pathway_specific",
+          "parent": "ensemble",
+          "block": "goldhalf_pathway_specific",
+          "description": "goldhalf final LR with fold-selected biochemical pathway_specific"
+        },
+        {
+          "name": "ani__goldhalf_morgan",
+          "parent": "ani",
+          "block": "goldhalf_morgan",
+          "description": "goldhalf final LR with fold-selected biochemical morgan"
+        },
+        {
+          "name": "ensemble__goldhalf_morgan",
+          "parent": "ensemble",
+          "block": "goldhalf_morgan",
+          "description": "goldhalf final LR with fold-selected biochemical morgan"
+        }
+      ],
+      "protocol_sha256": "93fc4b4feee46647f5de04faa01cbf6659173346672e89f66e881f861697e4a6",
+      "protected_sources_checked": 162
+    },
+    {
+      "study": "metadata_neighbors_cv_v1",
+      "purpose": "Metadata-assisted neighbor retrieval.",
+      "status": "completed",
+      "registered_recipes": 20,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Keep original LR, pseudo-label generation and decoder. Add one metadata block at .3 embedding RMS only to cosine neighbor retrieval; retain k10 and squared-positive-cosine weights. Compare augmented fractional targets and gold-only binary targets, each with no-feature matched control. Native final .7LR+.3kNN and original ensemble combination unchanged.",
+      "selection": {
+        "initial": "Three frozen repeats in BOTH pools, all candidates, grouped purge of masked duplicates.",
+        "shortlist": "Positive paired means and >=2/3 wins in both pools vs exact parent; at most four recipes ordered by minimum paired gain, then name. If none qualify, at most two diagnostics with minimum gain>=-.003 and positive gain in either pool; marked diagnostic.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 98,
+          "repeats_rescored": 362,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "no_feature_retrieval_parity": true,
+            "query_batch_invariance": true,
+            "retrieved_rows_fit_only": true,
+            "original_logistic_head_unchanged": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 362,
+          "fold_arrays_checked": 1810,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/metadata_neighbors_cv_v1/report.html",
+        "protocol.json": "experiments/metadata_neighbors_cv_v1/protocol.json",
+        "registry.json": "experiments/metadata_neighbors_cv_v1/registry.json",
+        "summary.json": "experiments/metadata_neighbors_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/metadata_neighbors_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/metadata_neighbors_cv_v1/verification.json",
+        "independent_verification.json": "experiments/metadata_neighbors_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_none",
+          "parent": "ani",
+          "block": "augmented_none",
+          "description": "augmented nearest neighbors with none"
+        },
+        {
+          "name": "ensemble__augmented_none",
+          "parent": "ensemble",
+          "block": "augmented_none",
+          "description": "augmented nearest neighbors with none"
+        },
+        {
+          "name": "ani__augmented_criteria_words",
+          "parent": "ani",
+          "block": "augmented_criteria_words",
+          "description": "augmented nearest neighbors with criteria_words"
+        },
+        {
+          "name": "ensemble__augmented_criteria_words",
+          "parent": "ensemble",
+          "block": "augmented_criteria_words",
+          "description": "augmented nearest neighbors with criteria_words"
+        },
+        {
+          "name": "ani__augmented_drug_chars",
+          "parent": "ani",
+          "block": "augmented_drug_chars",
+          "description": "augmented nearest neighbors with drug_chars"
+        },
+        {
+          "name": "ensemble__augmented_drug_chars",
+          "parent": "ensemble",
+          "block": "augmented_drug_chars",
+          "description": "augmented nearest neighbors with drug_chars"
+        },
+        {
+          "name": "ani__augmented_morgan",
+          "parent": "ani",
+          "block": "augmented_morgan",
+          "description": "augmented nearest neighbors with morgan"
+        },
+        {
+          "name": "ensemble__augmented_morgan",
+          "parent": "ensemble",
+          "block": "augmented_morgan",
+          "description": "augmented nearest neighbors with morgan"
+        },
+        {
+          "name": "ani__augmented_drug_targets",
+          "parent": "ani",
+          "block": "augmented_drug_targets",
+          "description": "augmented nearest neighbors with drug_targets"
+        },
+        {
+          "name": "ensemble__augmented_drug_targets",
+          "parent": "ensemble",
+          "block": "augmented_drug_targets",
+          "description": "augmented nearest neighbors with drug_targets"
+        },
+        {
+          "name": "ani__goldbinary_none",
+          "parent": "ani",
+          "block": "goldbinary_none",
+          "description": "goldbinary nearest neighbors with none"
+        },
+        {
+          "name": "ensemble__goldbinary_none",
+          "parent": "ensemble",
+          "block": "goldbinary_none",
+          "description": "goldbinary nearest neighbors with none"
+        },
+        {
+          "name": "ani__goldbinary_criteria_words",
+          "parent": "ani",
+          "block": "goldbinary_criteria_words",
+          "description": "goldbinary nearest neighbors with criteria_words"
+        },
+        {
+          "name": "ensemble__goldbinary_criteria_words",
+          "parent": "ensemble",
+          "block": "goldbinary_criteria_words",
+          "description": "goldbinary nearest neighbors with criteria_words"
+        },
+        {
+          "name": "ani__goldbinary_drug_chars",
+          "parent": "ani",
+          "block": "goldbinary_drug_chars",
+          "description": "goldbinary nearest neighbors with drug_chars"
+        },
+        {
+          "name": "ensemble__goldbinary_drug_chars",
+          "parent": "ensemble",
+          "block": "goldbinary_drug_chars",
+          "description": "goldbinary nearest neighbors with drug_chars"
+        },
+        {
+          "name": "ani__goldbinary_morgan",
+          "parent": "ani",
+          "block": "goldbinary_morgan",
+          "description": "goldbinary nearest neighbors with morgan"
+        },
+        {
+          "name": "ensemble__goldbinary_morgan",
+          "parent": "ensemble",
+          "block": "goldbinary_morgan",
+          "description": "goldbinary nearest neighbors with morgan"
+        },
+        {
+          "name": "ani__goldbinary_drug_targets",
+          "parent": "ani",
+          "block": "goldbinary_drug_targets",
+          "description": "goldbinary nearest neighbors with drug_targets"
+        },
+        {
+          "name": "ensemble__goldbinary_drug_targets",
+          "parent": "ensemble",
+          "block": "goldbinary_drug_targets",
+          "description": "goldbinary nearest neighbors with drug_targets"
+        }
+      ],
+      "protocol_sha256": "f933e43a42c78984f6ca80e171956c294867bc42461044c41e7980a4d2313c17",
+      "protected_sources_checked": 167
+    },
+    {
+      "study": "ani_lda_revision_cv_v1",
+      "purpose": "Later Ani LDA revision, regularization controls and teacher/final-head ablations.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Ani inductive and 70/15/15 ensemble. Modify only Ani's final multinomial LR.",
+      "recipe": "Latest Ani source: C.1 multinomial LR, .5 LR/.3 fractional cosine kNN/.2 shrinkage LDA, uniform LDA class priors and duplicated multi-reason labels. Same mixture in two pseudo-label rounds with .2 GMM contribution, confidence.8 and threshold.3. Fit every transform inductively on allowed rows. Controls isolate C.1 without LDA, LDA with original C.3, and LDA only in final prediction with original C.3 and pseudo-labels.",
+      "selection": {
+        "initial": "Focused eight-repeat comparison of all four fixed recipes in both parent pipelines; all advance regardless of first-three results.",
+        "shortlist": "All eight parent-specific candidates, declared before scoring.",
+        "confirmation": "Five additional frozen repeats for shortlisted recipes. Combine all eight; require positive paired mean and >=5/8 wins in BOTH pools vs exact parent. Compare to both named references as well.",
+        "supplementary": "After eight-repeat results, freeze at most three confirmed recipes ordered by minimum gain. If none confirm, evaluate at most two shortlisted diagnostic recipes, explicitly labeled. Original validation and three frozen chronological windows; no subsequent tuning."
+      },
+      "confirmed_vs_own_parent": [
+        "ani__lda_final_only",
+        "ani__revision_full",
+        "ensemble__revision_full",
+        "ani__lda_both_c03",
+        "ensemble__lda_both_c03",
+        "ani__regularization_only"
+      ],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 56,
+          "repeats_rescored": 224,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_reproduced": true,
+            "original_notebook_functions_reproduced_on_same_allowed_inputs": true,
+            "query_batch_invariance": true,
+            "native_augmentation_rows_and_labels_identical": true,
+            "notebook_data_loading_cells_executed": false
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 224,
+          "fold_arrays_checked": 1120,
+          "supplementary_scores_checked": 20,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/ani_lda_revision_cv_v1/report.html",
+        "protocol.json": "experiments/ani_lda_revision_cv_v1/protocol.json",
+        "registry.json": "experiments/ani_lda_revision_cv_v1/registry.json",
+        "summary.json": "experiments/ani_lda_revision_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/ani_lda_revision_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/ani_lda_revision_cv_v1/verification.json",
+        "independent_verification.json": "experiments/ani_lda_revision_cv_v1/independent_verification.json",
+        "per_label_metrics.csv": "experiments/ani_lda_revision_cv_v1/per_label_metrics.csv"
+      },
+      "registry": [
+        {
+          "name": "ani__revision_full",
+          "parent": "ani",
+          "block": "revision_full",
+          "description": "{'C': 0.1, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+        },
+        {
+          "name": "ensemble__revision_full",
+          "parent": "ensemble",
+          "block": "revision_full",
+          "description": "{'C': 0.1, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+        },
+        {
+          "name": "ani__regularization_only",
+          "parent": "ani",
+          "block": "regularization_only",
+          "description": "{'C': 0.1, 'teacher_lda': 0.0, 'final_lda': 0.0}"
+        },
+        {
+          "name": "ensemble__regularization_only",
+          "parent": "ensemble",
+          "block": "regularization_only",
+          "description": "{'C': 0.1, 'teacher_lda': 0.0, 'final_lda': 0.0}"
+        },
+        {
+          "name": "ani__lda_both_c03",
+          "parent": "ani",
+          "block": "lda_both_c03",
+          "description": "{'C': 0.3, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+        },
+        {
+          "name": "ensemble__lda_both_c03",
+          "parent": "ensemble",
+          "block": "lda_both_c03",
+          "description": "{'C': 0.3, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+        },
+        {
+          "name": "ani__lda_final_only",
+          "parent": "ani",
+          "block": "lda_final_only",
+          "description": "{'C': 0.3, 'teacher_lda': 0.0, 'final_lda': 0.2}"
+        },
+        {
+          "name": "ensemble__lda_final_only",
+          "parent": "ensemble",
+          "block": "lda_final_only",
+          "description": "{'C': 0.3, 'teacher_lda': 0.0, 'final_lda': 0.2}"
+        }
+      ],
+      "protocol_sha256": "c51db994b7832b641f23e59486cd3987dc9e97e8f3e222ae6bb30be93f16cb34",
+      "protected_sources_checked": 161
+    },
+    {
+      "study": "lda_covariance_cv_v1",
+      "purpose": "Gold-only and class-specific covariance heads against the LDA revision.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Latest C.1/.5LR/.3kNN/.2LDA pseudo-label teacher, LR and neighbors unchanged. Replace final .2 LDA head with gold-only LDA, half gold/augmented LDA, or regularized class-specific Gaussian head fitted on gold or augmented targets. RDA uses fitting PCA30, per-class LedoitWolf covariance, half class-specific plus half mean covariance, uniform priors, trace-scaled1e-6 ridge. Gold multi-reason examples belong to each positive class; gold labels unchanged.",
+      "selection": {
+        "initial": "All eight candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All eight candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "covariance_normalization_checked": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/lda_covariance_cv_v1/report.html",
+        "protocol.json": "experiments/lda_covariance_cv_v1/protocol.json",
+        "registry.json": "experiments/lda_covariance_cv_v1/registry.json",
+        "summary.json": "experiments/lda_covariance_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/lda_covariance_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/lda_covariance_cv_v1/verification.json",
+        "independent_verification.json": "experiments/lda_covariance_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__gold_lda",
+          "parent": "ani",
+          "block": "gold_lda",
+          "description": "Replace final LDA with a gold-only LDA"
+        },
+        {
+          "name": "ensemble__gold_lda",
+          "parent": "ensemble",
+          "block": "gold_lda",
+          "description": "Replace final LDA with a gold-only LDA"
+        },
+        {
+          "name": "ani__half_gold_lda",
+          "parent": "ani",
+          "block": "half_gold_lda",
+          "description": "Average final gold-only and augmented LDA"
+        },
+        {
+          "name": "ensemble__half_gold_lda",
+          "parent": "ensemble",
+          "block": "half_gold_lda",
+          "description": "Average final gold-only and augmented LDA"
+        },
+        {
+          "name": "ani__gold_rda",
+          "parent": "ani",
+          "block": "gold_rda",
+          "description": "Gold-only regularized class-specific covariance in PCA30"
+        },
+        {
+          "name": "ensemble__gold_rda",
+          "parent": "ensemble",
+          "block": "gold_rda",
+          "description": "Gold-only regularized class-specific covariance in PCA30"
+        },
+        {
+          "name": "ani__augmented_rda",
+          "parent": "ani",
+          "block": "augmented_rda",
+          "description": "Augmented regularized class-specific covariance in PCA30"
+        },
+        {
+          "name": "ensemble__augmented_rda",
+          "parent": "ensemble",
+          "block": "augmented_rda",
+          "description": "Augmented regularized class-specific covariance in PCA30"
+        }
+      ],
+      "protocol_sha256": "41da7edcd8ca79b189c3ce7a0927ab869582e24c0e9ac495960f37ea1a7fa991",
+      "protected_sources_checked": 165
+    },
+    {
+      "study": "joint_utility_cv_v1",
+      "purpose": "Direct sample-F1 utility and independent-label regression heads.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Fit a gold-only centered RBF kernel ridge model (gamma.001, alpha.1 or1) to conditional sample-F1 utility of all31 nonempty label sets. Select maximum predicted utility. Matched label-regression control uses the same fitted kernel and ridge but thresholds five regressed binary labels at.5 plus nonempty fallback. Blend the resulting hard expert vote at.25 into the latest Ani LDA source (.75 retained). Native ensemble partners unchanged; no outer labels select weights or regularization.",
+      "selection": {
+        "initial": "All eight candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All eight candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "exact_sample_f1_counterexample_verified": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/joint_utility_cv_v1/report.html",
+        "protocol.json": "experiments/joint_utility_cv_v1/protocol.json",
+        "registry.json": "experiments/joint_utility_cv_v1/registry.json",
+        "summary.json": "experiments/joint_utility_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/joint_utility_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/joint_utility_cv_v1/verification.json",
+        "independent_verification.json": "experiments/joint_utility_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__f1_alpha0.1",
+          "parent": "ani",
+          "block": "f1_alpha0.1",
+          "description": "f1 kernel expert, alpha0.1"
+        },
+        {
+          "name": "ensemble__f1_alpha0.1",
+          "parent": "ensemble",
+          "block": "f1_alpha0.1",
+          "description": "f1 kernel expert, alpha0.1"
+        },
+        {
+          "name": "ani__f1_alpha1.0",
+          "parent": "ani",
+          "block": "f1_alpha1.0",
+          "description": "f1 kernel expert, alpha1.0"
+        },
+        {
+          "name": "ensemble__f1_alpha1.0",
+          "parent": "ensemble",
+          "block": "f1_alpha1.0",
+          "description": "f1 kernel expert, alpha1.0"
+        },
+        {
+          "name": "ani__labels_alpha0.1",
+          "parent": "ani",
+          "block": "labels_alpha0.1",
+          "description": "labels kernel expert, alpha0.1"
+        },
+        {
+          "name": "ensemble__labels_alpha0.1",
+          "parent": "ensemble",
+          "block": "labels_alpha0.1",
+          "description": "labels kernel expert, alpha0.1"
+        },
+        {
+          "name": "ani__labels_alpha1.0",
+          "parent": "ani",
+          "block": "labels_alpha1.0",
+          "description": "labels kernel expert, alpha1.0"
+        },
+        {
+          "name": "ensemble__labels_alpha1.0",
+          "parent": "ensemble",
+          "block": "labels_alpha1.0",
+          "description": "labels kernel expert, alpha1.0"
+        }
+      ],
+      "protocol_sha256": "ecdeaf15c0e7db7a6e3bc3a6e1521c13b7dd6ccd33b5fd883227d4b561514801",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "conditional_other_cv_v1",
+      "purpose": "Binary and conditional Other heads against the LDA revision.",
+      "status": "completed",
+      "registered_recipes": 12,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Freeze latest LDA source and ensemble. Global binary shrinkage LDA predicts Other from gold only, with empirical or uniform priors; average its probability halfway into source Other decision score. Conditional LDA and C.1 LR fit only gold Recruitment rows; compare empirical and balanced priors. On source-predicted Recruitment only, raise Other to conditional score if larger; empirical models use cutoff.5, balanced models use conservative cutoff.8. First four source scores stay identical. Zero/one-class training fallback is the constant observed label (zero for empty); no pseudo-labels train a head.",
+      "selection": {
+        "initial": "All twelve candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All twelve candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 92,
+          "repeats_rescored": 368,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "conditional_gold_training_verified": true,
+            "query_gate_uses_predictions_only": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 368,
+          "fold_arrays_checked": 1840,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/conditional_other_cv_v1/report.html",
+        "protocol.json": "experiments/conditional_other_cv_v1/protocol.json",
+        "registry.json": "experiments/conditional_other_cv_v1/registry.json",
+        "summary.json": "experiments/conditional_other_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/conditional_other_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/conditional_other_cv_v1/verification.json",
+        "independent_verification.json": "experiments/conditional_other_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__global_lda_empirical",
+          "parent": "ani",
+          "block": "global_lda_empirical",
+          "description": "('global', 'lda', 'empirical')"
+        },
+        {
+          "name": "ensemble__global_lda_empirical",
+          "parent": "ensemble",
+          "block": "global_lda_empirical",
+          "description": "('global', 'lda', 'empirical')"
+        },
+        {
+          "name": "ani__global_lda_balanced",
+          "parent": "ani",
+          "block": "global_lda_balanced",
+          "description": "('global', 'lda', 'balanced')"
+        },
+        {
+          "name": "ensemble__global_lda_balanced",
+          "parent": "ensemble",
+          "block": "global_lda_balanced",
+          "description": "('global', 'lda', 'balanced')"
+        },
+        {
+          "name": "ani__conditional_lda_empirical",
+          "parent": "ani",
+          "block": "conditional_lda_empirical",
+          "description": "('conditional', 'lda', 'empirical')"
+        },
+        {
+          "name": "ensemble__conditional_lda_empirical",
+          "parent": "ensemble",
+          "block": "conditional_lda_empirical",
+          "description": "('conditional', 'lda', 'empirical')"
+        },
+        {
+          "name": "ani__conditional_lda_balanced",
+          "parent": "ani",
+          "block": "conditional_lda_balanced",
+          "description": "('conditional', 'lda', 'balanced')"
+        },
+        {
+          "name": "ensemble__conditional_lda_balanced",
+          "parent": "ensemble",
+          "block": "conditional_lda_balanced",
+          "description": "('conditional', 'lda', 'balanced')"
+        },
+        {
+          "name": "ani__conditional_lr_empirical",
+          "parent": "ani",
+          "block": "conditional_lr_empirical",
+          "description": "('conditional', 'lr', 'empirical')"
+        },
+        {
+          "name": "ensemble__conditional_lr_empirical",
+          "parent": "ensemble",
+          "block": "conditional_lr_empirical",
+          "description": "('conditional', 'lr', 'empirical')"
+        },
+        {
+          "name": "ani__conditional_lr_balanced",
+          "parent": "ani",
+          "block": "conditional_lr_balanced",
+          "description": "('conditional', 'lr', 'balanced')"
+        },
+        {
+          "name": "ensemble__conditional_lr_balanced",
+          "parent": "ensemble",
+          "block": "conditional_lr_balanced",
+          "description": "('conditional', 'lr', 'balanced')"
+        }
+      ],
+      "protocol_sha256": "1696edab98ce5b1237f464f7a6c125db960a4cd836e330f2efb6a2bdd89e35fd",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "lda_neighbor_geometry_cv_v1",
+      "purpose": "Alternative neighbor geometry against the LDA revision.",
+      "status": "completed",
+      "registered_recipes": 16,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Keep latest LDA architecture, coefficients, C.1, k10, squared-positive-cosine weights, GMM/PCA30 teacher, confidence.8 and cutoff.3. Modify only neighbor coordinates: fitting PCA30, full150 partial whitening (divide by eigenvariance^.25), or omit top1/top3 PCs. All transforms fit outer fitting inputs only. Apply during final neighbor prediction alone or during both pseudo-label teaching and final prediction. LR/LDA always use original standardized embeddings; GMM always uses original PCA30.",
+      "selection": {
+        "initial": "All sixteen candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All sixteen candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 116,
+          "repeats_rescored": 464,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "identity_geometry_matches_revision": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 464,
+          "fold_arrays_checked": 2320,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/lda_neighbor_geometry_cv_v1/report.html",
+        "protocol.json": "experiments/lda_neighbor_geometry_cv_v1/protocol.json",
+        "registry.json": "experiments/lda_neighbor_geometry_cv_v1/registry.json",
+        "summary.json": "experiments/lda_neighbor_geometry_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/lda_neighbor_geometry_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/lda_neighbor_geometry_cv_v1/verification.json",
+        "independent_verification.json": "experiments/lda_neighbor_geometry_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__pca30_final",
+          "parent": "ani",
+          "block": "pca30_final",
+          "description": "pca30 neighbor geometry during final"
+        },
+        {
+          "name": "ensemble__pca30_final",
+          "parent": "ensemble",
+          "block": "pca30_final",
+          "description": "pca30 neighbor geometry during final"
+        },
+        {
+          "name": "ani__pca30_joint",
+          "parent": "ani",
+          "block": "pca30_joint",
+          "description": "pca30 neighbor geometry during joint"
+        },
+        {
+          "name": "ensemble__pca30_joint",
+          "parent": "ensemble",
+          "block": "pca30_joint",
+          "description": "pca30 neighbor geometry during joint"
+        },
+        {
+          "name": "ani__partial_white_final",
+          "parent": "ani",
+          "block": "partial_white_final",
+          "description": "partial_white neighbor geometry during final"
+        },
+        {
+          "name": "ensemble__partial_white_final",
+          "parent": "ensemble",
+          "block": "partial_white_final",
+          "description": "partial_white neighbor geometry during final"
+        },
+        {
+          "name": "ani__partial_white_joint",
+          "parent": "ani",
+          "block": "partial_white_joint",
+          "description": "partial_white neighbor geometry during joint"
+        },
+        {
+          "name": "ensemble__partial_white_joint",
+          "parent": "ensemble",
+          "block": "partial_white_joint",
+          "description": "partial_white neighbor geometry during joint"
+        },
+        {
+          "name": "ani__remove1_final",
+          "parent": "ani",
+          "block": "remove1_final",
+          "description": "remove1 neighbor geometry during final"
+        },
+        {
+          "name": "ensemble__remove1_final",
+          "parent": "ensemble",
+          "block": "remove1_final",
+          "description": "remove1 neighbor geometry during final"
+        },
+        {
+          "name": "ani__remove1_joint",
+          "parent": "ani",
+          "block": "remove1_joint",
+          "description": "remove1 neighbor geometry during joint"
+        },
+        {
+          "name": "ensemble__remove1_joint",
+          "parent": "ensemble",
+          "block": "remove1_joint",
+          "description": "remove1 neighbor geometry during joint"
+        },
+        {
+          "name": "ani__remove3_final",
+          "parent": "ani",
+          "block": "remove3_final",
+          "description": "remove3 neighbor geometry during final"
+        },
+        {
+          "name": "ensemble__remove3_final",
+          "parent": "ensemble",
+          "block": "remove3_final",
+          "description": "remove3 neighbor geometry during final"
+        },
+        {
+          "name": "ani__remove3_joint",
+          "parent": "ani",
+          "block": "remove3_joint",
+          "description": "remove3 neighbor geometry during joint"
+        },
+        {
+          "name": "ensemble__remove3_joint",
+          "parent": "ensemble",
+          "block": "remove3_joint",
+          "description": "remove3 neighbor geometry during joint"
+        }
+      ],
+      "protocol_sha256": "b4491a80ef8ad6fce55c3bf5c9673285de3188b98f235a8aa7aaaab2293646ad",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "lda_subset_cv_v1",
+      "purpose": "Grouped gold-subset averaging against the LDA revision.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Within each outer training partition, create five grouped80%-gold subsets using seed270118 and multilabel-stratified embedding groups. Remove excluded gold groups from masked inputs too. Refit the complete native scaler/GMM/pseudo-label/LDA source per subset. Average raw source probabilities before .3 centering, using either pure subset mean or half subset/half full-source mean. Apply to all reasons or Other only. Original ensemble partners and decoder fixed. No outer query participates in any member fit.",
+      "selection": {
+        "initial": "All eight candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All eight candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "subset_group_purges_verified": true,
+            "each_gold_group_excluded_once": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/lda_subset_cv_v1/report.html",
+        "protocol.json": "experiments/lda_subset_cv_v1/protocol.json",
+        "registry.json": "experiments/lda_subset_cv_v1/registry.json",
+        "summary.json": "experiments/lda_subset_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/lda_subset_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/lda_subset_cv_v1/verification.json",
+        "independent_verification.json": "experiments/lda_subset_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__half_all",
+          "parent": "ani",
+          "block": "half_all",
+          "description": "half subset average for all"
+        },
+        {
+          "name": "ensemble__half_all",
+          "parent": "ensemble",
+          "block": "half_all",
+          "description": "half subset average for all"
+        },
+        {
+          "name": "ani__half_other",
+          "parent": "ani",
+          "block": "half_other",
+          "description": "half subset average for other"
+        },
+        {
+          "name": "ensemble__half_other",
+          "parent": "ensemble",
+          "block": "half_other",
+          "description": "half subset average for other"
+        },
+        {
+          "name": "ani__pure_all",
+          "parent": "ani",
+          "block": "pure_all",
+          "description": "pure subset average for all"
+        },
+        {
+          "name": "ensemble__pure_all",
+          "parent": "ensemble",
+          "block": "pure_all",
+          "description": "pure subset average for all"
+        },
+        {
+          "name": "ani__pure_other",
+          "parent": "ani",
+          "block": "pure_other",
+          "description": "pure subset average for other"
+        },
+        {
+          "name": "ensemble__pure_other",
+          "parent": "ensemble",
+          "block": "pure_other",
+          "description": "pure subset average for other"
+        }
+      ],
+      "protocol_sha256": "e4a1b81227b535b43f449c9959362790a7613b71ced23b9ba652544c87b4538e",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "recruitment_novelty_cv_v1",
+      "purpose": "Reference-distance features for remaining reason confusion.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Freeze LDA source/ensemble. Fit Other specialists only on gold Recruitment rows using seven features: nearest/mean3/mean10 cosine similarities to gold Recruitment-without-Other references; maximum cosine to Other-without-Recruitment references; similarity margin; nearest-minus-mean10; standardized-embedding norm. Training reference distances exclude the entire example embedding group. Query distances use all permitted fitting references. Standardize seven features on specialist training rows only. Compare C1 LR and shrinkage LDA, empirical versus balanced priors. On source-predicted Recruitment only, raise Other using fixed cutoff.5 (empirical) or.8 (balanced). First four source scores stay fixed. No pseudo-labels train references or specialist.",
+      "selection": {
+        "initial": "All eight candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All eight candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "conditional_gold_training_verified": true,
+            "query_gate_uses_predictions_only": true,
+            "synthetic_group_exclusion_check": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/recruitment_novelty_cv_v1/report.html",
+        "protocol.json": "experiments/recruitment_novelty_cv_v1/protocol.json",
+        "registry.json": "experiments/recruitment_novelty_cv_v1/registry.json",
+        "summary.json": "experiments/recruitment_novelty_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/recruitment_novelty_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/recruitment_novelty_cv_v1/verification.json",
+        "independent_verification.json": "experiments/recruitment_novelty_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__lr_empirical",
+          "parent": "ani",
+          "block": "lr_empirical",
+          "description": "('lr', 'empirical')"
+        },
+        {
+          "name": "ensemble__lr_empirical",
+          "parent": "ensemble",
+          "block": "lr_empirical",
+          "description": "('lr', 'empirical')"
+        },
+        {
+          "name": "ani__lr_balanced",
+          "parent": "ani",
+          "block": "lr_balanced",
+          "description": "('lr', 'balanced')"
+        },
+        {
+          "name": "ensemble__lr_balanced",
+          "parent": "ensemble",
+          "block": "lr_balanced",
+          "description": "('lr', 'balanced')"
+        },
+        {
+          "name": "ani__lda_empirical",
+          "parent": "ani",
+          "block": "lda_empirical",
+          "description": "('lda', 'empirical')"
+        },
+        {
+          "name": "ensemble__lda_empirical",
+          "parent": "ensemble",
+          "block": "lda_empirical",
+          "description": "('lda', 'empirical')"
+        },
+        {
+          "name": "ani__lda_balanced",
+          "parent": "ani",
+          "block": "lda_balanced",
+          "description": "('lda', 'balanced')"
+        },
+        {
+          "name": "ensemble__lda_balanced",
+          "parent": "ensemble",
+          "block": "lda_balanced",
+          "description": "('lda', 'balanced')"
+        }
+      ],
+      "protocol_sha256": "d0771a90ee8aec9527581a42e18616ef8b689f54c867fc058ad062a14af79523",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "lda_ensemble_mix_cv_v1",
+      "purpose": "Five fixed mixtures of LDA, tri-training and SVM partners.",
+      "status": "completed",
+      "registered_recipes": 5,
+      "parent": "Latest LDA 70/15/15 ensemble",
+      "recipe": "Five fixed convex mixes of latest inductive Ani LDA, frozen classical tri-training, and SVM scores. Default .5 cutoff and nonempty fallback. No fitting or threshold search. Historical 75/25 and 60/40 tri mixes are retried with new source, plus removing either partner and equal .25 partner votes.",
+      "selection": {
+        "initial": "All five recipes receive all eight saved repeats in both pools; no pruning.",
+        "shortlist": "All five recipes, predeclared.",
+        "confirmation": "Positive paired means and at least 5/8 wins in BOTH pools against latest LDA ensemble.",
+        "supplementary": "At most three confirmed recipes or two diagnostic exceptions, selected after all eight comparisons. Reuse identical source fits and inputs for validation and chronology."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 32,
+          "repeats_rescored": 128,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "exact_source_alignment": true,
+            "both_ensemble_controls_reconstructed": true,
+            "svm_binary_votes_verified": true,
+            "label_free_elementwise_mix": true,
+            "query_batch_invariance": true,
+            "source_models_previously_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 128,
+          "fold_arrays_checked": 640,
+          "supplementary_scores_checked": 20,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/lda_ensemble_mix_cv_v1/report.html",
+        "protocol.json": "experiments/lda_ensemble_mix_cv_v1/protocol.json",
+        "registry.json": "experiments/lda_ensemble_mix_cv_v1/registry.json",
+        "summary.json": "experiments/lda_ensemble_mix_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/lda_ensemble_mix_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/lda_ensemble_mix_cv_v1/verification.json",
+        "independent_verification.json": "experiments/lda_ensemble_mix_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ensemble__tri25",
+          "parent": "ensemble",
+          "block": "tri25",
+          "description": "LDA Ani / tri / SVM weights (0.75, 0.25, 0.0)"
+        },
+        {
+          "name": "ensemble__tri40",
+          "parent": "ensemble",
+          "block": "tri40",
+          "description": "LDA Ani / tri / SVM weights (0.6, 0.4, 0.0)"
+        },
+        {
+          "name": "ensemble__tri15",
+          "parent": "ensemble",
+          "block": "tri15",
+          "description": "LDA Ani / tri / SVM weights (0.85, 0.15, 0.0)"
+        },
+        {
+          "name": "ensemble__svm15",
+          "parent": "ensemble",
+          "block": "svm15",
+          "description": "LDA Ani / tri / SVM weights (0.85, 0.0, 0.15)"
+        },
+        {
+          "name": "ensemble__partners25",
+          "parent": "ensemble",
+          "block": "partners25",
+          "description": "LDA Ani / tri / SVM weights (0.5, 0.25, 0.25)"
+        }
+      ],
+      "protocol_sha256": "7235ab9bddd09f1ad8ae727f369606b478209bafc64e7bbe2b232580bf3fc357",
+      "protected_sources_checked": 189
+    },
+    {
+      "study": "joint_lda_reason_cv_v1",
+      "purpose": "Joint reason-set LDA and expected sample-F1 decoding.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Treat each observed gold label set as a distinct multiclass outcome. Fit shrinkage LDA using either gold-only rows or latest revision's augmented targets, with empirical or uniform pattern priors. Decode the joint pattern distribution by exact expected sample-F1 over 31 nonempty sets. On source-predicted Recruitment, add Other with hard score1 only when the joint decoder includes Other. Preserve first four scores and existing Other decisions. Source pseudo-label teaching, ensemble partners and default final decoder unchanged.",
+      "selection": {
+        "initial": "All eight candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All eight candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "joint_pattern_training_boundaries_verified": true,
+            "query_gate_uses_predictions_only": true,
+            "exact_utility_decoder_check": true,
+            "head_training_boundaries_verified": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/joint_lda_reason_cv_v1/report.html",
+        "protocol.json": "experiments/joint_lda_reason_cv_v1/protocol.json",
+        "registry.json": "experiments/joint_lda_reason_cv_v1/registry.json",
+        "summary.json": "experiments/joint_lda_reason_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/joint_lda_reason_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/joint_lda_reason_cv_v1/verification.json",
+        "independent_verification.json": "experiments/joint_lda_reason_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__gold_empirical",
+          "parent": "ani",
+          "block": "gold_empirical",
+          "description": "('gold', 'empirical')"
+        },
+        {
+          "name": "ensemble__gold_empirical",
+          "parent": "ensemble",
+          "block": "gold_empirical",
+          "description": "('gold', 'empirical')"
+        },
+        {
+          "name": "ani__gold_uniform",
+          "parent": "ani",
+          "block": "gold_uniform",
+          "description": "('gold', 'uniform')"
+        },
+        {
+          "name": "ensemble__gold_uniform",
+          "parent": "ensemble",
+          "block": "gold_uniform",
+          "description": "('gold', 'uniform')"
+        },
+        {
+          "name": "ani__augmented_empirical",
+          "parent": "ani",
+          "block": "augmented_empirical",
+          "description": "('augmented', 'empirical')"
+        },
+        {
+          "name": "ensemble__augmented_empirical",
+          "parent": "ensemble",
+          "block": "augmented_empirical",
+          "description": "('augmented', 'empirical')"
+        },
+        {
+          "name": "ani__augmented_uniform",
+          "parent": "ani",
+          "block": "augmented_uniform",
+          "description": "('augmented', 'uniform')"
+        },
+        {
+          "name": "ensemble__augmented_uniform",
+          "parent": "ensemble",
+          "block": "augmented_uniform",
+          "description": "('augmented', 'uniform')"
+        }
+      ],
+      "protocol_sha256": "fdd01bf32d7e6d82ac69b89740643479e604a396927f87c03b423d730b385c58",
+      "protected_sources_checked": 166
+    },
+    {
+      "study": "lda_feature_retry_cv_v1",
+      "purpose": "Protein-target and fingerprint retries on the stronger LDA source.",
+      "status": "completed",
+      "registered_recipes": 12,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Freeze latest revision LDA, neighbors and pseudo-labels. Retest protein-target indicators and Morgan fingerprints in the final C.1 logistic head. Compare augmented fitting against half-replacement by gold-only fitting; include no-feature controls for both. The original source logistic weight is .5 and ensemble source weight is .7. Metadata RMS weight.3, same previous parsers and fingerprint settings. Fingerprint columns use union of top60 positive chi-square values per label on fitting gold only; normalization and missingness match the preceding biochemical study.",
+      "selection": {
+        "initial": "All twelve candidates run all eight repeats, predeclared. Matched revision_full controls always run in both pools.",
+        "shortlist": "All twelve candidates; no pruning after initial scores.",
+        "confirmation": "Positive paired means and >=5/8 wins in BOTH pools against corresponding latest revision control, not merely the older original parent.",
+        "supplementary": "At most three confirmed candidates, or at most two diagnostics if none confirm, selected after all-eight-repeat comparison against latest revision."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 92,
+          "repeats_rescored": 368,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "augmented_no_feature_control_matches_revision": true,
+            "fitting_boundaries_verified": true,
+            "feature_selection_fitting_gold_only": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 368,
+          "fold_arrays_checked": 1840,
+          "supplementary_scores_checked": 16,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/lda_feature_retry_cv_v1/report.html",
+        "protocol.json": "experiments/lda_feature_retry_cv_v1/protocol.json",
+        "registry.json": "experiments/lda_feature_retry_cv_v1/registry.json",
+        "summary.json": "experiments/lda_feature_retry_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/lda_feature_retry_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/lda_feature_retry_cv_v1/verification.json",
+        "independent_verification.json": "experiments/lda_feature_retry_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__augmented_none",
+          "parent": "ani",
+          "block": "augmented_none",
+          "description": "('augmented', 'none')"
+        },
+        {
+          "name": "ensemble__augmented_none",
+          "parent": "ensemble",
+          "block": "augmented_none",
+          "description": "('augmented', 'none')"
+        },
+        {
+          "name": "ani__augmented_drug_targets",
+          "parent": "ani",
+          "block": "augmented_drug_targets",
+          "description": "('augmented', 'drug_targets')"
+        },
+        {
+          "name": "ensemble__augmented_drug_targets",
+          "parent": "ensemble",
+          "block": "augmented_drug_targets",
+          "description": "('augmented', 'drug_targets')"
+        },
+        {
+          "name": "ani__augmented_morgan",
+          "parent": "ani",
+          "block": "augmented_morgan",
+          "description": "('augmented', 'morgan')"
+        },
+        {
+          "name": "ensemble__augmented_morgan",
+          "parent": "ensemble",
+          "block": "augmented_morgan",
+          "description": "('augmented', 'morgan')"
+        },
+        {
+          "name": "ani__goldhalf_none",
+          "parent": "ani",
+          "block": "goldhalf_none",
+          "description": "('goldhalf', 'none')"
+        },
+        {
+          "name": "ensemble__goldhalf_none",
+          "parent": "ensemble",
+          "block": "goldhalf_none",
+          "description": "('goldhalf', 'none')"
+        },
+        {
+          "name": "ani__goldhalf_drug_targets",
+          "parent": "ani",
+          "block": "goldhalf_drug_targets",
+          "description": "('goldhalf', 'drug_targets')"
+        },
+        {
+          "name": "ensemble__goldhalf_drug_targets",
+          "parent": "ensemble",
+          "block": "goldhalf_drug_targets",
+          "description": "('goldhalf', 'drug_targets')"
+        },
+        {
+          "name": "ani__goldhalf_morgan",
+          "parent": "ani",
+          "block": "goldhalf_morgan",
+          "description": "('goldhalf', 'morgan')"
+        },
+        {
+          "name": "ensemble__goldhalf_morgan",
+          "parent": "ensemble",
+          "block": "goldhalf_morgan",
+          "description": "('goldhalf', 'morgan')"
+        }
+      ],
+      "protocol_sha256": "18f0e252409a4106c9ea29d3402a071b33660df4a668cbacf61a52feb100ea8b",
+      "protected_sources_checked": 167
+    },
+    {
+      "study": "ani_direct_comparison_v1",
+      "purpose": "Fresh original-Ani versus LDA comparison under matched inductive and target-input access.",
+      "status": "completed",
+      "registered_recipes": 6,
+      "parent": "Current LDA ensemble versus the original Ani recipe associated with reported .89423 Kaggle score, using identical tests.",
+      "recipe": null,
+      "selection": {
+        "confirmation": "Positive mean paired delta and >=5/8 wins in BOTH pools against the stated comparator. Repeated-fold wins are descriptive, not independent significance tests."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "grouped_folds_verified": 80,
+          "supplementary_windows_verified": 4,
+          "source_function_parity_checks": 336,
+          "fresh_inductive_controls_verified": true,
+          "all_six_recipes_evaluated_everywhere": true,
+          "identical_permitted_gold_and_original_masked_inputs": true,
+          "target_labels_erased": true,
+          "input_access_regimes_separate": true,
+          "original_gold_unchanged": true,
+          "actual_test_inputs_loaded": false,
+          "submissions_created": false,
+          "source_hashes_unchanged": true,
+          "independent_rescore": {
+            "passed": true,
+            "manually_rescored_repeats": 96,
+            "fold_arrays_checked": 480,
+            "supplementary_scores_checked": 24,
+            "source_hashes_unchanged": true,
+            "row_coverage_and_alignment": true,
+            "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 96,
+          "fold_arrays_checked": 480,
+          "supplementary_scores_checked": 24,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/ani_direct_comparison_v1/report.html",
+        "protocol.json": "experiments/ani_direct_comparison_v1/protocol.json",
+        "registry.json": "experiments/ani_direct_comparison_v1/registry.json",
+        "summary.json": "experiments/ani_direct_comparison_v1/summary.json",
+        "comparison.csv": "experiments/ani_direct_comparison_v1/comparison.csv",
+        "verification.json": "experiments/ani_direct_comparison_v1/verification.json",
+        "independent_verification.json": "experiments/ani_direct_comparison_v1/independent_verification.json",
+        "per_label_metrics.csv": "experiments/ani_direct_comparison_v1/per_label_metrics.csv"
+      },
+      "registry": [
+        {
+          "name": "ani__inductive",
+          "recipe": "ani",
+          "access": "inductive",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        },
+        {
+          "name": "lda_source__inductive",
+          "recipe": "lda_source",
+          "access": "inductive",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        },
+        {
+          "name": "lda_ensemble__inductive",
+          "recipe": "lda_ensemble",
+          "access": "inductive",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        },
+        {
+          "name": "ani__target_inputs",
+          "recipe": "ani",
+          "access": "target_inputs",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        },
+        {
+          "name": "lda_source__target_inputs",
+          "recipe": "lda_source",
+          "access": "target_inputs",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        },
+        {
+          "name": "lda_ensemble__target_inputs",
+          "recipe": "lda_ensemble",
+          "access": "target_inputs",
+          "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+        }
+      ],
+      "protocol_sha256": "37bf0c320d5f04c9548eafbd3c816c27388f3a565f704299152b0af6566d8ff6",
+      "protected_sources_checked": 182
+    },
+    {
+      "study": "temporal_lda_cv_v1",
+      "purpose": "Year drift, recency-weighted LR and time-aware neighbors.",
+      "status": "completed",
+      "registered_recipes": 12,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Six fixed temporal variants: remove half of linear embedding drift using all allowed inputs, or within-reason drift using gold only; five/ten-year recency half-life in final C.1 LR while preserving every class weight mass; five-year temporal weighting of cosine neighbors at final prediction only or also during the two pseudo-label rounds. The LDA/neighbor/logistic source weights and original ensemble partners stay fixed. All transforms and teachers are refitted within the outer fitting partition.",
+      "selection": {
+        "initial": "All twelve parent-specific candidates run all eight repeats, predeclared; matched revision_full controls run every stage.",
+        "shortlist": "All candidates; no pruning.",
+        "confirmation": "Report ordinary CV confirmation separately: positive paired means and >=5/8 wins in both pools against latest LDA parent.",
+        "supplementary": "After all-eight CV, evaluate ALL SIX ensemble candidates plus current LDA control on validation and all three fixed chronological windows. This is a predeclared temporal diagnostic exception to the normal shortlist; source-only candidates do not receive supplementary fits.",
+        "temporal_eligibility": "Ensemble only: chronological gain >=.005; strictly improve at least two of three windows; validation delta >=-.005; train and pooled CV deltas each >=-.003. This permits an explicit temporal tradeoff and does not relabel it as a CV win. No new settings chosen from these windows."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 92,
+          "repeats_rescored": 368,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "temporal_fit_boundaries_verified": true,
+            "class_weight_masses_preserved": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 368,
+          "fold_arrays_checked": 1840,
+          "supplementary_scores_checked": 36,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/temporal_lda_cv_v1/report.html",
+        "protocol.json": "experiments/temporal_lda_cv_v1/protocol.json",
+        "registry.json": "experiments/temporal_lda_cv_v1/registry.json",
+        "summary.json": "experiments/temporal_lda_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/temporal_lda_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/temporal_lda_cv_v1/verification.json",
+        "independent_verification.json": "experiments/temporal_lda_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__global_trend_half",
+          "parent": "ani",
+          "block": "global_trend_half",
+          "description": "Remove half of training-input linear embedding drift with year; rebuild source"
+        },
+        {
+          "name": "ensemble__global_trend_half",
+          "parent": "ensemble",
+          "block": "global_trend_half",
+          "description": "Remove half of training-input linear embedding drift with year; rebuild source"
+        },
+        {
+          "name": "ani__within_reason_half",
+          "parent": "ani",
+          "block": "within_reason_half",
+          "description": "Remove half of gold within-reason linear drift; rebuild source"
+        },
+        {
+          "name": "ensemble__within_reason_half",
+          "parent": "ensemble",
+          "block": "within_reason_half",
+          "description": "Remove half of gold within-reason linear drift; rebuild source"
+        },
+        {
+          "name": "ani__recent_lr_5",
+          "parent": "ani",
+          "block": "recent_lr_5",
+          "description": "Final source LR with five-year recency half-life and preserved class mass"
+        },
+        {
+          "name": "ensemble__recent_lr_5",
+          "parent": "ensemble",
+          "block": "recent_lr_5",
+          "description": "Final source LR with five-year recency half-life and preserved class mass"
+        },
+        {
+          "name": "ani__recent_lr_10",
+          "parent": "ani",
+          "block": "recent_lr_10",
+          "description": "Final source LR with ten-year recency half-life and preserved class mass"
+        },
+        {
+          "name": "ensemble__recent_lr_10",
+          "parent": "ensemble",
+          "block": "recent_lr_10",
+          "description": "Final source LR with ten-year recency half-life and preserved class mass"
+        },
+        {
+          "name": "ani__time_knn_final",
+          "parent": "ani",
+          "block": "time_knn_final",
+          "description": "Time-distance weighted cosine neighbors at final prediction only"
+        },
+        {
+          "name": "ensemble__time_knn_final",
+          "parent": "ensemble",
+          "block": "time_knn_final",
+          "description": "Time-distance weighted cosine neighbors at final prediction only"
+        },
+        {
+          "name": "ani__time_knn_joint",
+          "parent": "ani",
+          "block": "time_knn_joint",
+          "description": "Same time-aware neighbors in teaching and final prediction"
+        },
+        {
+          "name": "ensemble__time_knn_joint",
+          "parent": "ensemble",
+          "block": "time_knn_joint",
+          "description": "Same time-aware neighbors in teaching and final prediction"
+        }
+      ],
+      "protocol_sha256": "223d62c86f87dfc8af93e3368f1082bc7b1825395393544612013917bf0b850e",
+      "protected_sources_checked": 167
+    },
+    {
+      "study": "recent_era_lda_cv_v1",
+      "purpose": "Recent-gold experts and fixed blends with the full-data source.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Four frozen recent-gold expert blends: five-year width with half probability blend for all queries; five-year half blend only for late queries; five-year quarter blend only late; eight-year half blend only late. Recent means fitting-gold maximum year minus width; extend cutoff to ensure min(3, available positives) per label. Close selected gold over embedding groups, omit excluded gold entirely and purge its groups from original masked rows. Refit scaler, PCA/GMM and complete LDA pseudo-label pipeline on selected gold plus remaining allowed masked inputs. Blend raw source probabilities before centering. Late query gate is year >= fitting-gold maximum minus one; no query-batch fitting. Ensemble partners stay fixed.",
+      "selection": {
+        "initial": "All eight parent-specific candidates run all eight repeats, predeclared; matched revision_full controls run every stage.",
+        "shortlist": "All candidates; no pruning.",
+        "confirmation": "Report ordinary CV confirmation separately: positive paired means and >=5/8 wins in both pools against latest LDA parent.",
+        "supplementary": "After all-eight CV, evaluate ALL FOUR ensemble candidates plus current LDA control on validation and all three fixed chronological windows. This is a predeclared temporal diagnostic exception to the normal shortlist; source-only candidates do not receive supplementary fits.",
+        "temporal_eligibility": "Ensemble only: chronological gain >=.005; strictly improve at least two of three windows; validation delta >=-.005; train and pooled CV deltas each >=-.003. This permits an explicit temporal tradeoff and does not relabel it as a CV win. No new settings chosen from these windows."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "expert_fit_boundaries_verified": true,
+            "excluded_gold_never_pseudo_labeled": true,
+            "expert_group_closure": true,
+            "minimum_reason_support": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 28,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/recent_era_lda_cv_v1/report.html",
+        "protocol.json": "experiments/recent_era_lda_cv_v1/protocol.json",
+        "registry.json": "experiments/recent_era_lda_cv_v1/registry.json",
+        "summary.json": "experiments/recent_era_lda_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/recent_era_lda_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/recent_era_lda_cv_v1/verification.json",
+        "independent_verification.json": "experiments/recent_era_lda_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__recent5_half_all",
+          "parent": "ani",
+          "block": "recent5_half_all",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": false,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ensemble__recent5_half_all",
+          "parent": "ensemble",
+          "block": "recent5_half_all",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": false,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ani__recent5_half_late",
+          "parent": "ani",
+          "block": "recent5_half_late",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ensemble__recent5_half_late",
+          "parent": "ensemble",
+          "block": "recent5_half_late",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ani__recent5_quarter_late",
+          "parent": "ani",
+          "block": "recent5_quarter_late",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.25,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ensemble__recent5_quarter_late",
+          "parent": "ensemble",
+          "block": "recent5_quarter_late",
+          "description": {
+            "year_width": 5,
+            "raw_probability_weight": 0.25,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ani__recent8_half_late",
+          "parent": "ani",
+          "block": "recent8_half_late",
+          "description": {
+            "year_width": 8,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        },
+        {
+          "name": "ensemble__recent8_half_late",
+          "parent": "ensemble",
+          "block": "recent8_half_late",
+          "description": {
+            "year_width": 8,
+            "raw_probability_weight": 0.5,
+            "late_query_gate": true,
+            "minimum_positive_support": 3
+          }
+        }
+      ],
+      "protocol_sha256": "6ea4b4289fd898f8f85efc2bd34867e93302d084411ae89b736cce859d66be43",
+      "protected_sources_checked": 167
+    },
+    {
+      "study": "nested_decision_lda_cv_v1",
+      "purpose": "Inner-only cutoff learning, with equal or recent-weighted objectives.",
+      "status": "completed",
+      "registered_recipes": 8,
+      "parent": "Latest inductive Ani LDA revision and its ensemble. Original Ani/ensemble retained as additional references.",
+      "recipe": "Keep all three submitted model components unchanged; learn the source centering cutoff from three-fold grouped inner OOF predictions (seed 20261106), refitting the full inductive LDA pseudo-label pipeline and both ensemble partners in each inner fit with inner held-group masked purges. Four recipes: shared cutoff or five label cutoffs, each with equal or five-year-half-life gold recency weighting (floor .1). Maximize inner ensemble sample-F1 minus .01 times squared cutoff displacement/.1 per free parameter. Fixed candidate grid .3,.25,.35,.2,.4; shared one pass, label-specific two ordered coordinate passes. Change only on strict objective improvement, preserving incumbent on ties. Gold targets and all final model fits unchanged. No actual test inputs.",
+      "selection": {
+        "initial": "All eight parent-specific candidates run all eight repeats, predeclared; matched revision_full controls run every stage.",
+        "shortlist": "All candidates; no pruning.",
+        "confirmation": "Report ordinary CV confirmation separately: positive paired means and >=5/8 wins in both pools against latest LDA parent.",
+        "supplementary": "After all-eight CV, evaluate ALL FOUR ensemble candidates plus current LDA control on validation and all three fixed chronological windows. This is a predeclared temporal diagnostic exception to the normal shortlist; source-only candidates do not receive supplementary fits.",
+        "temporal_eligibility": "Ensemble only: chronological gain >=.005; strictly improve at least two of three windows; validation delta >=-.005; train and pooled CV deltas each >=-.003. This permits an explicit temporal tradeoff and does not relabel it as a CV win. No new settings chosen from these windows."
+      },
+      "confirmed_vs_own_parent": [],
+      "failure": null,
+      "verifications": {
+        "verification.json": {
+          "passed": true,
+          "stages_rescored": 68,
+          "repeats_rescored": 272,
+          "folds_verified": 80,
+          "protected_sources_unchanged": true,
+          "native_control_parity_all_folds": true,
+          "part1_only": true,
+          "test_inputs_loaded": false,
+          "submissions_created": false,
+          "parser_and_boundary_checks": {
+            "passed": true,
+            "native_control_parity": true,
+            "latest_revision_control_parity": true,
+            "query_batch_invariance": true,
+            "inner_only_cutoff_learning": true,
+            "inner_group_separation": true,
+            "complete_inner_oof_coverage": true,
+            "native_cutoff_transform_parity": true
+          }
+        },
+        "independent_verification.json": {
+          "passed": true,
+          "manually_rescored_repeats": 272,
+          "fold_arrays_checked": 1360,
+          "supplementary_scores_checked": 28,
+          "source_hashes_unchanged": true,
+          "row_coverage_and_alignment": true,
+          "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+        }
+      },
+      "artifacts": {
+        "report.html": "experiments/nested_decision_lda_cv_v1/report.html",
+        "protocol.json": "experiments/nested_decision_lda_cv_v1/protocol.json",
+        "registry.json": "experiments/nested_decision_lda_cv_v1/registry.json",
+        "summary.json": "experiments/nested_decision_lda_cv_v1/summary.json",
+        "final_comparison.csv": "experiments/nested_decision_lda_cv_v1/final_comparison.csv",
+        "verification.json": "experiments/nested_decision_lda_cv_v1/verification.json",
+        "independent_verification.json": "experiments/nested_decision_lda_cv_v1/independent_verification.json"
+      },
+      "registry": [
+        {
+          "name": "ani__global",
+          "parent": "ani",
+          "block": "global",
+          "description": {
+            "per_label": false,
+            "recent": false
+          }
+        },
+        {
+          "name": "ensemble__global",
+          "parent": "ensemble",
+          "block": "global",
+          "description": {
+            "per_label": false,
+            "recent": false
+          }
+        },
+        {
+          "name": "ani__per_label",
+          "parent": "ani",
+          "block": "per_label",
+          "description": {
+            "per_label": true,
+            "recent": false
+          }
+        },
+        {
+          "name": "ensemble__per_label",
+          "parent": "ensemble",
+          "block": "per_label",
+          "description": {
+            "per_label": true,
+            "recent": false
+          }
+        },
+        {
+          "name": "ani__global_recent",
+          "parent": "ani",
+          "block": "global_recent",
+          "description": {
+            "per_label": false,
+            "recent": true
+          }
+        },
+        {
+          "name": "ensemble__global_recent",
+          "parent": "ensemble",
+          "block": "global_recent",
+          "description": {
+            "per_label": false,
+            "recent": true
+          }
+        },
+        {
+          "name": "ani__per_label_recent",
+          "parent": "ani",
+          "block": "per_label_recent",
+          "description": {
+            "per_label": true,
+            "recent": true
+          }
+        },
+        {
+          "name": "ensemble__per_label_recent",
+          "parent": "ensemble",
+          "block": "per_label_recent",
+          "description": {
+            "per_label": true,
+            "recent": true
+          }
+        }
+      ],
+      "protocol_sha256": "1e9f5226dde50f6cb66d56663501e13b6e9a3b9b67ed34a624498516ec1046e8",
+      "protected_sources_checked": 187
+    }
+  ],
+  "completed_studies": 24,
+  "failed_or_partial_studies": 3,
+  "support_directories": [
+    "feature_reassessment_v1",
+    "feature_followup_review_v1",
+    "lda_revision_review_v1",
+    "lda_followup_review_v1",
+    "temporal_generalization_review_v1",
+    "final_lda_ensemble_trainval235_v1"
+  ],
+  "submission_context": {
+    "lda_reported_kaggle": 0.89401,
+    "lda_submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+    "lda_result_record": "experiments/final_lda_ensemble_trainval235_v1/kaggle_result.json",
+    "separate_anchored_result": {
+      "reported_at_utc": "2026-11-07T00:00:02Z",
+      "status": "Submitted manually; score reported by user",
+      "candidate": "Anchored reason classifier, final 235-label fit",
+      "reported_kaggle_score": 0.89636,
+      "score_provenance": "User reported 0.89636 immediately after receiving the exact candidate filename and scp command. Not independently queried from Kaggle.",
+      "submission_file": "part1/experiments/paired_improvement/candidate/part1_anchored_submission.csv",
+      "submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+      "verified_labels": 235,
+      "originally_unlabeled_rows": 1014,
+      "final_generated_rows_used": 757,
+      "test_rows": 312,
+      "fitting_access": "Inductive; test inputs only used for prediction",
+      "comparison": {
+        "original_ani_reported_kaggle": 0.89423,
+        "delta_original_ani": 0.00213,
+        "submitted_lda_ensemble_reported_kaggle": 0.89401,
+        "delta_submitted_lda_ensemble": 0.00235
+      },
+      "actual_uploaded_bytes_independently_verified": false,
+      "public_private_partition_not_verified": true,
+      "preparation_manifest_preserved": true,
+      "remaining_submission_budget": "Unknown; no further upload authorized or performed"
+    },
+    "anchored_record_path": "../../AML-Midterm/part1/experiments/paired_improvement/candidate/kaggle_result.json",
+    "anchored_record_sha256": "83bfb48a3ad8538f0fab70664c4163adbd2d6783ccd73c7d901d4e5883bb11ad",
+    "anchored_candidate_and_archive_bytes_match": true,
+    "attribution": "Anchored result is from the sibling project. It is not a score of any new LDA follow-up in this checkpoint.",
+    "leaderboard_independently_queried": false,
+    "historical_preparation_and_result_records_unchanged": true,
+    "quota_note": "User reported one daily slot remained, then submitted the different model; no remaining slot is assumed."
+  },
+  "fitting_performed": false,
+  "submissions_created": false,
+  "scope": "This integration branch's 27 versioned studies and six supporting reviews/export directories. Earlier imported research remains indexed by research/independent/README.md and its immutable import manifest.",
+  "interpretation": "Registries include controls and related variants. Confirmation is relative to the study's declared parent. Incomplete runs are not completed negative experiments. These results do not establish whether the same changes help the newer anchored classifier.",
+  "retention_note": "Code, settings, failures and summaries retained. Detailed predictions only for leaders/references. Verification entries are historical, before cleanup."
+}

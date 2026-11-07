@@ -1,3 +1,19 @@
+# Part 1 submitted-result checkpoints
+
+Every record below identifies an earlier manually submitted CSV, exact hash, frozen recipe and reported score. These are backfilled Git checkpoints, not new uploads.
+
+| Recipe | Reported Kaggle F1 | Annotated tag |
+|---|---:|---|
+| [ani-original](results/ani-original.json) | 0.89423 | `part1-ani-original-kaggle-0.89423` |
+| [tri-training-trainval235](results/tri-training-trainval235.json) | 0.88012 | `part1-tri-training-trainval235-kaggle-0.88012` |
+| [three-way-trainval235](results/three-way-trainval235.json) | 0.89401 | `part1-three-way-trainval235-kaggle-0.89401` |
+| [lda-ensemble-trainval235](results/lda-ensemble-trainval235.json) | 0.89401 | `part1-lda-ensemble-trainval235-kaggle-0.89401` |
+| [anchored-trainval235](results/anchored-trainval235.json) | 0.89636 | `part1-anchored-trainval235-kaggle-0.89636` |
+
+The anchored leader was developed by a separate agent. Scores are user/branch reports, not independent Kaggle queries. All tags are immutable; a tied score on another model gets a different recipe name. See [commit index](../research/consolidation_v1/commit_index.json).
+
+## Earlier ledger (historical checkpoint)
+
 # Consolidated submission status
 
 Highest reported score: **Ani original, 0.89423** (235 labels, transductive). Latest reported submission: **70/15/15 ensemble, 0.89401** (235 labels, inductive). Classical tri-training scored **0.88012**. The exact three CSVs were added to `archive/submitted`; originals, SHA-256 hashes, fitting counts, and score provenance are in [index.csv](index.csv) and `archive_manifest.json`. Integration performed no upload.

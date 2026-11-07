@@ -1,0 +1,141 @@
+{
+  "source": "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1",
+  "destination": "/Users/matthew/Desktop/michael/AML-Midterm/part1/research/lda_ensemble",
+  "source_branch": "codex/part1-research-integration",
+  "destination_branch": "codex/part2-improvements",
+  "preexisting_main_files": [
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/anchored_solution.py",
+      "type": "file",
+      "bytes": 4157,
+      "sha256": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/chronology.json",
+      "type": "file",
+      "bytes": 46924,
+      "sha256": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/compare_current_leaders.py",
+      "type": "file",
+      "bytes": 14741,
+      "sha256": "bf0c325f4731e418f8901c20712b66443bd451f6081ecaf58565faafb2d8119f"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/current_ani_lda_pooled.npz",
+      "type": "file",
+      "bytes": 70942,
+      "sha256": "e96189306939f872dfb77209ae511ac65569ddb6a0dbdd8f90d7a5c288e55562"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/current_ani_lda_train.npz",
+      "type": "file",
+      "bytes": 48068,
+      "sha256": "8e766b72dae1e31cc3ac7a595a7926b76f7500232d0829886fbf9d87d4c160c7"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/kernel15_blend_pooled.npz",
+      "type": "file",
+      "bytes": 70977,
+      "sha256": "774a8ba0c18378aec772ca2d5ec80c29c98ff34510e5e76226cb887bec294c46"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/kernel15_blend_train.npz",
+      "type": "file",
+      "bytes": 48080,
+      "sha256": "48976191ac4e52aa30d7087a1a972a5c73ba6c5824fc991cfa9fafef32b6415b"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/lda_ensemble_pooled.npz",
+      "type": "file",
+      "bytes": 70809,
+      "sha256": "5d940fac979c680c8ad50af85b376ad0230a16db42e9b0370419072ad5474799"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/lda_ensemble_train.npz",
+      "type": "file",
+      "bytes": 47967,
+      "sha256": "966fbc07d365614b663bfd8560fde203fbb1e4bffc9d998f42d58dbbd5a24f55"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/original_ani_pooled.npz",
+      "type": "file",
+      "bytes": 71404,
+      "sha256": "0fd4f61138284eb5dcc2e7af0a55be1b0a26844df7c08fbdcbf097a29632c2ff"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/original_ani_train.npz",
+      "type": "file",
+      "bytes": 48326,
+      "sha256": "26f98820f97c777392eff170f25e848b09e8ee223653d03cc5bd861397e6d020"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/paired_models.py",
+      "type": "file",
+      "bytes": 6655,
+      "sha256": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/pooled3.json",
+      "type": "file",
+      "bytes": 68447,
+      "sha256": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/pooled5.json",
+      "type": "file",
+      "bytes": 105988,
+      "sha256": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/previous_ensemble_pooled.npz",
+      "type": "file",
+      "bytes": 70896,
+      "sha256": "3e334b55b946ede74dc2b4aeaa289d0667ed9cad47b70852faca8882f98bf8a3"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/previous_ensemble_train.npz",
+      "type": "file",
+      "bytes": 47966,
+      "sha256": "6160d0c9dbfb643ee12ada35e34f315f2e509307962858d1f47a64331bf969c4"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/recent_cutoff_ensemble_pooled.npz",
+      "type": "file",
+      "bytes": 70817,
+      "sha256": "965a975b9f69e1ed163a967f444390043e66308ac26433d6905a30fec32757a0"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/recent_cutoff_ensemble_train.npz",
+      "type": "file",
+      "bytes": 47952,
+      "sha256": "15120d4112a0cb1c78963724df62a2e20118b11fc399f616cde1e33fccc21af2"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/train3.json",
+      "type": "file",
+      "bytes": 45269,
+      "sha256": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/train5.json",
+      "type": "file",
+      "bytes": 72038,
+      "sha256": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/xrfm20_blend_pooled.npz",
+      "type": "file",
+      "bytes": 70964,
+      "sha256": "8f4d6ab9e3de41af9671840573c97c9692df75cecca87bd16f30df63b18a1198"
+    },
+    {
+      "path": "experiments/current_leaders_grouped_v1/snapshots/xrfm20_blend_train.npz",
+      "type": "file",
+      "bytes": 48040,
+      "sha256": "30a275158600bdfd6659f619801eedac595fdd8359f89af9eae333c2d2552cc4"
+    }
+  ],
+  "note": "Only shared-comparison snapshot hashes retained from the former full copy manifest. See retention.json for current files and migration_record.json for original copy checks."
+}
