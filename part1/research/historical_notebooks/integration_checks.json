@@ -99,6 +99,30 @@
       }
     }
   ],
-  "actual_merge_performed": false,
-  "phase": "Prepared and verified notebook/archive; integration tree checks follow."
+  "actual_merge_performed": true,
+  "phase": "Merge conflicts resolved; combined tree verified before committing and advancing local main.",
+  "integration": {
+    "main_parent": "b1cfb38e9d83562e8ada41e59176e9fb046788da",
+    "prepared_part1_commit": "978160f777891f0ff144a646f2a349a20f5c4336",
+    "part2_tree_preserved": "38fcccf0884042444de3ce19e422f535f7983876",
+    "prepared_part1_tree_preserved": "3029a0fba3f3bcd2c3a21e05face7ff1dbe86775",
+    "conflicts_resolved": [
+      ".gitignore",
+      "README.md",
+      "part1/part1.ipynb"
+    ],
+    "legacy_main_exports_preserved_in_archive": true,
+    "part2_checks": {
+      "command": "make -C part2 check",
+      "unit_tests_passed": 19,
+      "submission_tag_checks_passed": 6
+    },
+    "merged_entry_links_checked": 96,
+    "part1_tree_comparison_note": "Part 1 matched the prepared commit exactly before adding this integration record.",
+    "pushed": false,
+    "whitespace_check": {
+      "command": "git -c core.whitespace=cr-at-eol,-blank-at-eof diff --cached --check main",
+      "note": "Preserves CRLF CSV artifacts and unchanged historical source files with blank lines at EOF."
+    }
+  }
 }

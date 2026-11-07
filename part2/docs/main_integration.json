@@ -1,0 +1,75 @@
+{
+  "base_main": "55cf05c0f1a73b1ad76c87be4a275946f8faee4c",
+  "source_head": "9da0e1ea6f8aed90996c779415a43edad50957c9",
+  "source_branch": "codex/part2-improvements",
+  "integration_branch": "codex/part2-main-integration",
+  "strategy": "Replay each original commit scoped to part2/ and .gitignore; preserve current main Part One tree and original immutable score tags.",
+  "original_part2_tree": "a5d27ec514b5e0525370708e7c03a1eedfb46811",
+  "replayed_part2_tree": "a5d27ec514b5e0525370708e7c03a1eedfb46811",
+  "commits": [
+    {
+      "original": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+      "integrated": "87d212341446f8aa0596db0da4ff4bb05cd7c642"
+    },
+    {
+      "original": "6f23dd56bc9c9a4687617443f5796e7140a6a125",
+      "integrated": "e5369dc9dc6f17ee521aa3b45a2f070ab2346d02"
+    },
+    {
+      "original": "135765cb6ff2c72bfa1daf73870abfaad122defc",
+      "integrated": "6931bf12c950e7d340b7ea03f3a3931f5a52a263"
+    },
+    {
+      "original": "3a880e998877ff6b83e241baa3bbdbf340aef469",
+      "integrated": "a9b2c818ae23017a9bc6fa187a4a49338ff61b8f"
+    },
+    {
+      "original": "8d63e1046c24acb0c5a90eb6664131e54a11ce40",
+      "integrated": "d5d634fab31ea3eafd3a5d8c30c03675ed3cd47b"
+    },
+    {
+      "original": "269630e1a0ade0d8d0e836f118a2a93f9908d3f2",
+      "integrated": "658d7b7f97e6b9022ea1db6b1f19d8150fc21f3c"
+    },
+    {
+      "original": "b6f29a251a588215f5829c72321b9b85c3d6a143",
+      "integrated": "76223f628b88d703df6e03bc44d4b7d20ae0c973"
+    },
+    {
+      "original": "a250cb95e46e6de85df3a0881da20feee9ca11f0",
+      "integrated": "e7c5076a17f0db7bfc282e4bbe036c2e745ef0f4"
+    },
+    {
+      "original": "a29bf1e8a01e74d49ecac0eec97eb601b8c8f08e",
+      "integrated": "0a6eecedcd3593e1cdbf05da158c833cead3659d"
+    },
+    {
+      "original": "0346bbec86e523e56b4c7ad24b9def40f0168bc7",
+      "integrated": "7a847984b3d74ee5a175b06ad62b1087c0410902"
+    },
+    {
+      "original": "a5d300428e07f61039c5b4d6c98358ec89b8097e",
+      "integrated": "2240fbdc362e441dac7079bcb80b3852dbc01bea"
+    },
+    {
+      "original": "6fa16c391c8acbf8ef3997d08986d99532881eb4",
+      "integrated": "dd3b2f1eda2f08d6a1323705efedd38b0ff63442"
+    },
+    {
+      "original": "341fd106301adea28ce673aae5a983580df3cd93",
+      "integrated": "699b5adb4d0b0ebd255dca86d58fcb71f0ca2a50"
+    },
+    {
+      "original": "9c009aa84fbf8dcaa564ea93a08539f860feba5b",
+      "integrated": "d81d80ed7898a4fc577e8bcec83c0848216274e9"
+    },
+    {
+      "original": "22e03c49d8af0cb854dcda559c6d41f3342f05d5",
+      "integrated": "0135c6469a0b15d553a3215cc4546e9538270594"
+    },
+    {
+      "original": "9da0e1ea6f8aed90996c779415a43edad50957c9",
+      "integrated": "71d64e1386aebb95a9c6bd9ff8e1e3bc114c1fcf"
+    }
+  ]
+}

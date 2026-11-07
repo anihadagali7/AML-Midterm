@@ -1,0 +1,150 @@
+{
+  "batch": "meta",
+  "recipes": {
+    "meta_tau1": {
+      "kind": "lr",
+      "tau": 1.0,
+      "trend": false,
+      "C": 1.0
+    },
+    "meta_tau1_trend": {
+      "kind": "lr",
+      "tau": 1.0,
+      "trend": true,
+      "C": 1.0
+    },
+    "meta_tau1.5": {
+      "kind": "lr",
+      "tau": 1.5,
+      "trend": false,
+      "C": 1.0
+    },
+    "meta_tau1.5_trend": {
+      "kind": "lr",
+      "tau": 1.5,
+      "trend": true,
+      "C": 1.0
+    },
+    "meta_tau2": {
+      "kind": "lr",
+      "tau": 2.0,
+      "trend": false,
+      "C": 1.0
+    },
+    "meta_tau2_trend": {
+      "kind": "lr",
+      "tau": 2.0,
+      "trend": true,
+      "C": 1.0
+    },
+    "reduced_1_2_4_6": {
+      "kind": "lr",
+      "tau": 3.0,
+      "trend": false,
+      "C": 1.0,
+      "drop": [
+        1,
+        2,
+        4,
+        6
+      ]
+    },
+    "reduced_4": {
+      "kind": "lr",
+      "tau": 3.0,
+      "trend": false,
+      "C": 1.0,
+      "drop": [
+        4
+      ]
+    },
+    "reduced_1_2": {
+      "kind": "lr",
+      "tau": 3.0,
+      "trend": false,
+      "C": 1.0,
+      "drop": [
+        1,
+        2
+      ]
+    },
+    "nonnegative_stack": {
+      "kind": "nonnegative",
+      "tau": 3.0,
+      "trend": false,
+      "C": 1.0
+    },
+    "nonnegative_trend": {
+      "kind": "nonnegative",
+      "tau": 3.0,
+      "trend": true,
+      "C": 1.0
+    },
+    "nonlinear_3": {
+      "kind": "hgb",
+      "tau": 3.0,
+      "trend": false,
+      "leaves": 3,
+      "year": false
+    },
+    "nonlinear_3_half": {
+      "blend": {
+        "ani_stack": 0.5,
+        "nonlinear_3": 0.5
+      }
+    },
+    "nonlinear_3_year": {
+      "kind": "hgb",
+      "tau": 3.0,
+      "trend": false,
+      "leaves": 3,
+      "year": true
+    },
+    "nonlinear_3_year_half": {
+      "blend": {
+        "ani_stack": 0.5,
+        "nonlinear_3_year": 0.5
+      }
+    },
+    "nonlinear_7": {
+      "kind": "hgb",
+      "tau": 3.0,
+      "trend": false,
+      "leaves": 7,
+      "year": false
+    },
+    "nonlinear_7_half": {
+      "blend": {
+        "ani_stack": 0.5,
+        "nonlinear_7": 0.5
+      }
+    },
+    "nonlinear_7_year": {
+      "kind": "hgb",
+      "tau": 3.0,
+      "trend": false,
+      "leaves": 7,
+      "year": true
+    },
+    "nonlinear_7_year_half": {
+      "blend": {
+        "ani_stack": 0.5,
+        "nonlinear_7_year": 0.5
+      }
+    }
+  },
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "design_sha256": "beedd6d47c8586444eca564e17c9e1219aa1ff663482944220db04365a57a72b",
+  "source_sha256": {
+    "extension_meta.py": "975585971a711aa2bc08d93c097cba2453c490bef8ca6593cdba3acf8b2009b5",
+    "extension_common.py": "762962c7790e2a22462015417c78b1416fcc2c677f3f91d675b76f2c0d9794b2"
+  },
+  "previous_run_sha256": "b2d4e77574e060962abd307112fc4108eb772f19df1330d70bb20d4098b78291",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0"
+  }
+}

@@ -1,0 +1,22 @@
+strict gap_2005_to_2008_2009 inner 1 4.4
+strict gap_2005_to_2008_2009 inner 2 7.0
+strict gap_2005_to_2008_2009 inner 3 9.7
+strict gap_2005_to_2008_2009 inner 4 12.7
+strict gap_2005_to_2008_2009 inner 5 15.5
+strict gap_2007_to_2010_2011 inner 1 10.3
+strict gap_2007_to_2010_2011 inner 2 16.5
+strict gap_2007_to_2010_2011 inner 3 22.5
+strict gap_2007_to_2010_2011 inner 4 28.3
+strict gap_2007_to_2010_2011 inner 5 34.3
+strict gap_2009_to_2012_2013 inner 1 11.9
+strict gap_2009_to_2012_2013 inner 2 19.7
+strict gap_2009_to_2012_2013 inner 3 27.6
+strict gap_2009_to_2012_2013 inner 4 34.2
+strict gap_2009_to_2012_2013 inner 5 40.8
+                      completed_splits official  temporal     worst    cv
+model
+ani_first                            3     None  0.568041  0.633776  None
+ani_phase3_trend                     3     None  0.562422  0.627050  None
+ani_stack                            3     None  0.564681  0.630298  None
+fast2_neighbors_half                 3     None  0.563189  0.628816  None
+replace_knn5                         3     None  0.563657  0.630312  None

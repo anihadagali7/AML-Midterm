@@ -1,0 +1,11 @@
+{
+  "row_order_invariance": true,
+  "IDs_outcome_labels_and_reason_columns_ignored": true,
+  "four_CSVs_valid": true,
+  "byte_identical_CLI_replay": true,
+  "unique_submissions": true,
+  "notebook_executed_code_cells": 18,
+  "notebook_errors": 0,
+  "components_reproduced": 6,
+  "max_component_probability_difference": 0.0
+}

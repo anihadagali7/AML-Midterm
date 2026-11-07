@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "source_commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347",
+  "preprocessing": "Faithful Ani: vocabulary and IDF include all available train/validation/test covariates; internal OOF uses that shared vocabulary.",
+  "labels": "Evaluation labels excluded from every fit. This is a transductive sensitivity track, not strict prospective validation."
+}

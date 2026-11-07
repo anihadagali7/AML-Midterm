@@ -1,0 +1,17 @@
+Compared strict file 10 against all 12 alternatives
+Compared published file 10 against all 12 alternatives
+                             official  temporal     worst        cv  gap_mean   kaggle
+model
+01_balanced_ensemble         0.554134  0.537734  0.586815  0.574210  0.567924      NaN
+02_text_heavy                0.553592  0.540324  0.588906  0.578048  0.568506  0.58993
+03_phase_specialized         0.551255  0.537613  0.586144  0.574253  0.568270  0.59562
+04_capped_year               0.553970  0.538620  0.588823  0.574856  0.565622      NaN
+05_text_later_phases         0.558605  0.545290  0.594677  0.584955  0.572981      NaN
+06_lighter_tree_blend        0.555718  0.542462  0.591366  0.581058  0.570345      NaN
+07_ani_mild_phase3_trend     0.555034  0.537306  0.588557  0.586776  0.563816      NaN
+08_ani_linear25              0.553327  0.538022  0.588732  0.585189  0.565438      NaN
+ani_first                    0.557370  0.542145  0.590898  0.579653  0.568041  0.58810
+ani_stack                    0.555039  0.537446  0.588574  0.587411  0.564681  0.58688
+ani_phase3_trend             0.556030  0.537131  0.588951  0.586468  0.562422      NaN
+09_ani_replace_knn5          0.560796  0.535213  0.586014  0.589230  0.563657      NaN
+10_ani_fast2_neighbors_half  0.557839  0.535890  0.587101  0.586891  0.563189      NaN

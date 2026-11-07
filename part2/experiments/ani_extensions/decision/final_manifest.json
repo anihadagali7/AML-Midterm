@@ -1,0 +1,60 @@
+{
+  "submissions": [
+    {
+      "file": "09_ani_replace_knn5.csv",
+      "model": "replace_knn5",
+      "sha256": "2aef6030c184ea3dbb0fa271519e2330d61bb9853bd7c63b2baab8f18f9ea75d",
+      "kaggle_score": null,
+      "training_rows": 9050,
+      "recipe": {
+        "model": "replace_knn5",
+        "batch": "neighbors",
+        "recipe": {
+          "bank": "recent",
+          "tau": 3.0,
+          "trend": false,
+          "C": 1.0,
+          "replace": 5
+        }
+      },
+      "gapped_deltas": {
+        "strict": -0.0010234036473946162,
+        "published": -0.0008798786272197212
+      },
+      "status": "Corroborated locally; Kaggle untested"
+    },
+    {
+      "file": "10_ani_fast2_neighbors_half.csv",
+      "model": "fast2_neighbors_half",
+      "sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+      "kaggle_score": null,
+      "training_rows": 9050,
+      "recipe": {
+        "model": "fast2_neighbors_half",
+        "batch": "neighbors",
+        "recipe": {
+          "blend": {
+            "ani_stack": 0.5,
+            "fast2_neighbors": 0.5
+          }
+        }
+      },
+      "gapped_deltas": {
+        "strict": -0.001491671723966026,
+        "published": -0.001497586645009874
+      },
+      "status": "Corroborated locally; Kaggle untested"
+    }
+  ],
+  "selection_sha256": "3fdf4385519ddeb001814ef17067b581b4d5a1635d6733732ba571e8e71840fd",
+  "bundle_path": "experiments/ani_extensions/cache/decision/final/submission_bundle.joblib",
+  "bundle_sha256": "276a5b130b0b393fc0a3e432d9bf2125486a9149217dba8b13d63c750a558648",
+  "native_replay_errors": {
+    "ani_stack": 0.0,
+    "ani_first": 0.0,
+    "ani_phase3_trend": 0.0,
+    "replace_knn5": 0.0,
+    "fast2_neighbors_half": 0.0
+  },
+  "preprocessing": "Published covariate-only transduction; supervised train+validation refit"
+}

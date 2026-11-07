@@ -1,0 +1,19 @@
+{
+  "checked_index_tree": "8f7ed6fb838ae5ed93a1d7c088ddae4b7bd9c4df",
+  "model_caches_included": false,
+  "unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "notebooks": {
+    "part2.ipynb": {
+      "executed_code_cells": 20,
+      "errors": 0
+    },
+    "local_benchmark.ipynb": {
+      "executed_code_cells": 20,
+      "errors": 0
+    }
+  },
+  "default_notebooks_fit_no_models": true
+}

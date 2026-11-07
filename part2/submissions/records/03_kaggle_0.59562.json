@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "record_kind": "retrospective_submission_record",
+  "submission_id": "03",
+  "artifact": "part2/submissions/03_phase_specialized.csv",
+  "sha256": "52503212b3b46f347ad5c24c3a185a59843b865cf89d6369d0745c871342d892",
+  "metric": "log_loss",
+  "lower_is_better": true,
+  "kaggle_score": 0.59562,
+  "score_source": "User-reported Kaggle result",
+  "score_reported_at_utc": null,
+  "training_rows": 8037,
+  "recipe": {
+    "recency_clinical_C0.5_half3": {
+      "I": 0.1875,
+      "II": 0.125,
+      "III": 0.0625
+    },
+    "recency_criteria_C2_half6": {
+      "I": 0.28125,
+      "II": 0.1875,
+      "III": 0.09375
+    },
+    "catboost_d8_n1000_none": {
+      "I": 0.125,
+      "II": 0.25,
+      "III": 0.375
+    },
+    "catboost_d6_n1000_none": {
+      "I": 0.125,
+      "II": 0.25,
+      "III": 0.375
+    },
+    "text_wordwide_C2": {
+      "I": 0.28125,
+      "II": 0.1875,
+      "III": 0.09375
+    }
+  },
+  "artifact_first_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "trial_phase_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "original_score_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "evidence_manifest": "part2/submissions/manifest.json",
+  "evidence_manifest_sha256": "9ab53b9088db2b462206115a660d52271db8191c01f3e42f21f031523e23d2b0",
+  "score_tag": "part2-submission-03-kaggle-0.59562",
+  "record_created_at_utc": "2026-11-07T17:00:05.762149+00:00",
+  "provenance_note": "Retrospective record of an already-submitted, unchanged CSV. Original export and experiment commits remain intact; tag creation is not the historical submission date."
+}

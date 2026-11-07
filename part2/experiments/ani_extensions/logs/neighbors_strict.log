@@ -1,0 +1,86 @@
+strict official inner 1 15.6
+strict official inner 2 25.9
+strict official inner 3 36.5
+strict official inner 4 46.9
+strict official inner 5 57.4
+strict official complete 65.5
+strict time_2007_to_2008_2009 inner 1 9.1
+strict time_2007_to_2008_2009 inner 2 15.1
+strict time_2007_to_2008_2009 inner 3 21.1
+strict time_2007_to_2008_2009 inner 4 26.9
+strict time_2007_to_2008_2009 inner 5 32.8
+strict time_2007_to_2008_2009 complete 38.2
+strict time_2009_to_2010_2011 inner 1 11.4
+strict time_2009_to_2010_2011 inner 2 19.4
+strict time_2009_to_2010_2011 inner 3 27.6
+strict time_2009_to_2010_2011 inner 4 35.4
+strict time_2009_to_2010_2011 inner 5 44.1
+strict time_2009_to_2010_2011 complete 52.6
+strict time_2011_to_2012_2013 inner 1 16.9
+strict time_2011_to_2012_2013 inner 2 28.5
+strict time_2011_to_2012_2013 inner 3 40.8
+strict time_2011_to_2012_2013 inner 4 55.0
+strict time_2011_to_2012_2013 inner 5 68.9
+strict time_2011_to_2012_2013 complete 77.9
+strict group_repeat0_fold0 inner 1 11.4
+strict group_repeat0_fold0 inner 2 18.9
+strict group_repeat0_fold0 inner 3 25.8
+strict group_repeat0_fold0 inner 4 33.0
+strict group_repeat0_fold0 inner 5 40.3
+strict group_repeat0_fold0 complete 48.0
+strict group_repeat0_fold1 inner 1 10.2
+strict group_repeat0_fold1 inner 2 17.7
+strict group_repeat0_fold1 inner 3 25.0
+strict group_repeat0_fold1 inner 4 33.4
+strict group_repeat0_fold1 inner 5 42.1
+strict group_repeat0_fold1 complete 51.6
+strict group_repeat0_fold2 inner 1 12.2
+strict group_repeat0_fold2 inner 2 20.5
+strict group_repeat0_fold2 inner 3 29.6
+strict group_repeat0_fold2 inner 4 37.7
+strict group_repeat0_fold2 inner 5 44.6
+strict group_repeat0_fold2 complete 52.4
+strict group_repeat1_fold0 inner 1 11.2
+strict group_repeat1_fold0 inner 2 18.4
+strict group_repeat1_fold0 inner 3 25.6
+strict group_repeat1_fold0 inner 4 33.2
+strict group_repeat1_fold0 inner 5 41.4
+strict group_repeat1_fold0 complete 50.6
+strict group_repeat1_fold1 inner 1 12.2
+strict group_repeat1_fold1 inner 2 19.3
+strict group_repeat1_fold1 inner 3 26.4
+strict group_repeat1_fold1 inner 4 33.7
+strict group_repeat1_fold1 inner 5 40.6
+strict group_repeat1_fold1 complete 48.5
+strict group_repeat1_fold2 inner 1 9.2
+strict group_repeat1_fold2 inner 2 15.3
+strict group_repeat1_fold2 inner 3 21.3
+strict group_repeat1_fold2 inner 4 27.6
+strict group_repeat1_fold2 inner 5 33.5
+strict group_repeat1_fold2 complete 41.0
+                            completed_splits  official  temporal     worst        cv  temporal_delta  cv_delta  temporal_wins  eligible
+model
+replace_knn5                              10  0.560796  0.535213  0.586014  0.589230   -2.232954e-03  0.001819              3      True
+fast2_neighbors_half                      10  0.557839  0.535890  0.587101  0.586891   -1.555614e-03 -0.000520              3      True
+recent_neighbors_half                     10  0.555717  0.536027  0.586689  0.584080   -1.418667e-03 -0.003331              2      True
+fast2_neighbors_trend                     10  0.565617  0.536369  0.587893  0.588674   -1.076938e-03  0.001263              2      True
+recent_neighbors_trend                    10  0.559830  0.536453  0.587136  0.582132   -9.925507e-04 -0.005279              2     False
+fast15_trend_half                         10  0.560672  0.536766  0.589514  0.591552   -6.803251e-04  0.004141              1     False
+fast15_trend                              10  0.573918  0.536797  0.590939  0.604114   -6.490446e-04  0.016702              1     False
+fast2_trend                               10  0.562468  0.536826  0.589846  0.593827   -6.196752e-04  0.006416              1     False
+replace_knn3                              10  0.558342  0.536866  0.588047  0.592120   -5.797640e-04  0.004709              2     False
+replace_knn6                              10  0.557138  0.536951  0.584521  0.593540   -4.948403e-04  0.006129              1     False
+fast2_trend_half                          10  0.557466  0.536985  0.589055  0.589043   -4.610386e-04  0.001632              1     False
+recent_neighbors                          10  0.559414  0.537036  0.587037  0.583108   -4.098806e-04 -0.004303              2     False
+fast2_neighbors                           10  0.564626  0.537082  0.587980  0.589543   -3.635280e-04  0.002132              2     False
+replace_knn4                              10  0.559011  0.537107  0.587815  0.593648   -3.391939e-04  0.006236              2     False
+ani_phase3_trend                          10  0.556030  0.537131  0.588951  0.586468   -3.152439e-04 -0.000943              1     False
+fast15_half                               10  0.559798  0.537151  0.589517  0.593060   -2.946490e-04  0.005649              1     False
+fast2_half                                10  0.557154  0.537286  0.589076  0.590484   -1.598073e-04  0.003073              1     False
+fast2                                     10  0.560012  0.537330  0.589699  0.594412   -1.157184e-04  0.007000              1     False
+ani_stack                                 10  0.555039  0.537446  0.588574  0.587411    0.000000e+00  0.000000              0     False
+replace_knn1                              10  0.555181  0.537446  0.588693  0.587785    3.713424e-07  0.000373              1     False
+fast15                                    10  0.567032  0.537500  0.590833  0.601602    5.363777e-05  0.014190              1     False
+unweighted_neighbors_trend                10  0.561774  0.538835  0.588439  0.575457    1.389006e-03 -0.011954              2     False
+unweighted_neighbors                      10  0.560416  0.540552  0.588561  0.575828    3.105655e-03 -0.011583              2     False
+ani_first                                 10  0.557370  0.542145  0.590898  0.579653    4.699570e-03 -0.007758              0     False

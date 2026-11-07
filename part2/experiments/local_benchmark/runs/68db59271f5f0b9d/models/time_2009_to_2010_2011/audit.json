@@ -1,0 +1,47 @@
+{
+  "split": "time_2009_to_2010_2011",
+  "fit_rows": 6760,
+  "eval_rows": 1805,
+  "trial_overlap": 0,
+  "fit_ID_sha256": "ddfd591cd81843c8ae44cc8433d728c2e34ddb5b86517671a0500917b609e49e",
+  "eval_ID_sha256": "2acea6d66cc03af28f0a30453372e26d9e86215e5e39da0a2e775dc6644fff45",
+  "preprocessing_population": "training rows only, both outer and stacking-inner folds",
+  "inner_folds": [
+    {
+      "fold": 0,
+      "fit_rows": 5408,
+      "heldout_rows": 1352,
+      "trial_overlap": 0,
+      "preprocessing": "inner training rows only"
+    },
+    {
+      "fold": 1,
+      "fit_rows": 5408,
+      "heldout_rows": 1352,
+      "trial_overlap": 0,
+      "preprocessing": "inner training rows only"
+    },
+    {
+      "fold": 2,
+      "fit_rows": 5408,
+      "heldout_rows": 1352,
+      "trial_overlap": 0,
+      "preprocessing": "inner training rows only"
+    },
+    {
+      "fold": 3,
+      "fit_rows": 5408,
+      "heldout_rows": 1352,
+      "trial_overlap": 0,
+      "preprocessing": "inner training rows only"
+    },
+    {
+      "fold": 4,
+      "fit_rows": 5408,
+      "heldout_rows": 1352,
+      "trial_overlap": 0,
+      "preprocessing": "inner training rows only"
+    }
+  ],
+  "seconds": 55.29537892341614
+}

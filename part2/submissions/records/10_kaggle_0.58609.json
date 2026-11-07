@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "record_kind": "retrospective_submission_record",
+  "submission_id": "10",
+  "artifact": "part2/submissions/10_ani_fast2_neighbors_half.csv",
+  "sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+  "metric": "log_loss",
+  "lower_is_better": true,
+  "kaggle_score": 0.58609,
+  "score_source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+  "score_reported_at_utc": "2026-11-06T19:15:50.519955+00:00",
+  "training_rows": 9050,
+  "recipe": {
+    "model": "fast2_neighbors_half",
+    "batch": "neighbors",
+    "recipe": {
+      "blend": {
+        "ani_stack": 0.5,
+        "fast2_neighbors": 0.5
+      }
+    }
+  },
+  "artifact_first_commit": "135765cb6ff2c72bfa1daf73870abfaad122defc",
+  "trial_phase_commit": "135765cb6ff2c72bfa1daf73870abfaad122defc",
+  "original_score_commit": "8d63e1046c24acb0c5a90eb6664131e54a11ce40",
+  "evidence_manifest": "part2/submissions/ani_extensions_manifest.json",
+  "evidence_manifest_sha256": "b097163c6745920fdf846df47cc8a20e76398d4c5279ab14e13d3d9327fb519c",
+  "score_tag": "part2-submission-10-kaggle-0.58609",
+  "record_created_at_utc": "2026-11-07T17:00:05.930524+00:00",
+  "provenance_note": "Retrospective record of an already-submitted, unchanged CSV. Original export and experiment commits remain intact; tag creation is not the historical submission date."
+}

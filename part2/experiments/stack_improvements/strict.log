@@ -1,0 +1,203 @@
+strict time_2007_to_2008_2009 fitting
+strict time_2007_to_2008_2009 inner 1/5 10.4 s
+strict time_2007_to_2008_2009 inner 2/5 17.3 s
+strict time_2007_to_2008_2009 inner 3/5 24.6 s
+strict time_2007_to_2008_2009 inner 4/5 32.4 s
+strict time_2007_to_2008_2009 inner 5/5 39.9 s
+strict time_2007_to_2008_2009 complete 46.4 s
+              model  phase_mean_logloss
+          ani_stack            0.588574
+          ani_first            0.590898
+         tau6_stack            0.588163
+   recent_meta_tau6            0.588232
+ recent_equal_phase            0.590549
+recent_phase_shrink            0.593207
+    recent_phase_C1            0.593794
+  tau6_phase_shrink            0.591410
+  recent_without_nb            0.590159
+   multiscale_stack            0.591179
+   multiscale_phase            0.598120
+   ani_phase3_trend            0.588951
+    blend_winners50            0.589188
+strict time_2009_to_2010_2011 fitting
+strict time_2009_to_2010_2011 inner 1/5 14.1 s
+strict time_2009_to_2010_2011 inner 2/5 24.9 s
+strict time_2009_to_2010_2011 inner 3/5 36.0 s
+strict time_2009_to_2010_2011 inner 4/5 47.4 s
+strict time_2009_to_2010_2011 inner 5/5 57.3 s
+strict time_2009_to_2010_2011 complete 66.6 s
+              model  phase_mean_logloss
+          ani_stack            0.565013
+          ani_first            0.566719
+         tau6_stack            0.565895
+   recent_meta_tau6            0.565216
+ recent_equal_phase            0.565097
+recent_phase_shrink            0.566395
+    recent_phase_C1            0.566391
+  tau6_phase_shrink            0.566771
+  recent_without_nb            0.564851
+   multiscale_stack            0.565513
+   multiscale_phase            0.566679
+   ani_phase3_trend            0.565256
+    blend_winners50            0.565097
+strict time_2011_to_2012_2013 fitting
+strict time_2011_to_2012_2013 inner 1/5 19.5 s
+strict time_2011_to_2012_2013 inner 2/5 33.2 s
+strict time_2011_to_2012_2013 inner 3/5 46.0 s
+strict time_2011_to_2012_2013 inner 4/5 57.6 s
+strict time_2011_to_2012_2013 inner 5/5 70.4 s
+strict time_2011_to_2012_2013 complete 79.1 s
+              model  phase_mean_logloss
+          ani_stack            0.458751
+          ani_first            0.468819
+         tau6_stack            0.463167
+   recent_meta_tau6            0.461176
+ recent_equal_phase            0.458986
+recent_phase_shrink            0.456252
+    recent_phase_C1            0.456167
+  tau6_phase_shrink            0.461055
+  recent_without_nb            0.458620
+   multiscale_stack            0.459709
+   multiscale_phase            0.456821
+   ani_phase3_trend            0.457185
+    blend_winners50            0.462911
+strict group_repeat0_fold0 fitting
+strict group_repeat0_fold0 inner 1/5 12.4 s
+strict group_repeat0_fold0 inner 2/5 22.1 s
+strict group_repeat0_fold0 inner 3/5 30.3 s
+strict group_repeat0_fold0 inner 4/5 37.7 s
+strict group_repeat0_fold0 inner 5/5 45.7 s
+strict group_repeat0_fold0 complete 53.6 s
+              model  phase_mean_logloss
+          ani_stack            0.582643
+          ani_first            0.576609
+         tau6_stack            0.578324
+   recent_meta_tau6            0.580472
+ recent_equal_phase            0.582118
+recent_phase_shrink            0.583132
+    recent_phase_C1            0.583404
+  tau6_phase_shrink            0.578877
+  recent_without_nb            0.584053
+   multiscale_stack            0.580247
+   multiscale_phase            0.583279
+   ani_phase3_trend            0.581327
+    blend_winners50            0.577587
+strict group_repeat0_fold1 fitting
+strict group_repeat0_fold1 inner 1/5 11.0 s
+strict group_repeat0_fold1 inner 2/5 18.5 s
+strict group_repeat0_fold1 inner 3/5 25.9 s
+strict group_repeat0_fold1 inner 4/5 33.3 s
+strict group_repeat0_fold1 inner 5/5 40.8 s
+strict group_repeat0_fold1 complete 49.9 s
+              model  phase_mean_logloss
+          ani_stack            0.585568
+          ani_first            0.579033
+         tau6_stack            0.580203
+   recent_meta_tau6            0.582923
+ recent_equal_phase            0.585143
+recent_phase_shrink            0.585482
+    recent_phase_C1            0.585456
+  tau6_phase_shrink            0.579749
+  recent_without_nb            0.587387
+   multiscale_stack            0.582964
+   multiscale_phase            0.584759
+   ani_phase3_trend            0.584918
+    blend_winners50            0.580506
+strict group_repeat0_fold2 fitting
+strict group_repeat0_fold2 inner 1/5 13.0 s
+strict group_repeat0_fold2 inner 2/5 21.2 s
+strict group_repeat0_fold2 inner 3/5 28.5 s
+strict group_repeat0_fold2 inner 4/5 35.8 s
+strict group_repeat0_fold2 inner 5/5 43.4 s
+strict group_repeat0_fold2 complete 50.9 s
+              model  phase_mean_logloss
+          ani_stack            0.592269
+          ani_first            0.584256
+         tau6_stack            0.586864
+   recent_meta_tau6            0.590757
+ recent_equal_phase            0.592818
+recent_phase_shrink            0.592380
+    recent_phase_C1            0.592678
+  tau6_phase_shrink            0.585154
+  recent_without_nb            0.593491
+   multiscale_stack            0.588592
+   multiscale_phase            0.590480
+   ani_phase3_trend            0.591595
+    blend_winners50            0.586260
+strict group_repeat1_fold0 fitting
+strict group_repeat1_fold0 inner 1/5 11.6 s
+strict group_repeat1_fold0 inner 2/5 19.4 s
+strict group_repeat1_fold0 inner 3/5 26.7 s
+strict group_repeat1_fold0 inner 4/5 34.5 s
+strict group_repeat1_fold0 inner 5/5 42.1 s
+strict group_repeat1_fold0 complete 50.1 s
+              model  phase_mean_logloss
+          ani_stack            0.591321
+          ani_first            0.582135
+         tau6_stack            0.585068
+   recent_meta_tau6            0.587923
+ recent_equal_phase            0.591616
+recent_phase_shrink            0.591602
+    recent_phase_C1            0.591990
+  tau6_phase_shrink            0.584112
+  recent_without_nb            0.594046
+   multiscale_stack            0.589547
+   multiscale_phase            0.594689
+   ani_phase3_trend            0.589867
+    blend_winners50            0.584448
+strict group_repeat1_fold1 fitting
+strict group_repeat1_fold1 inner 1/5 10.5 s
+strict group_repeat1_fold1 inner 2/5 16.8 s
+strict group_repeat1_fold1 inner 3/5 23.2 s
+strict group_repeat1_fold1 inner 4/5 29.8 s
+strict group_repeat1_fold1 inner 5/5 36.1 s
+strict group_repeat1_fold1 complete 42.9 s
+              model  phase_mean_logloss
+          ani_stack            0.578354
+          ani_first            0.569588
+         tau6_stack            0.572457
+   recent_meta_tau6            0.576584
+ recent_equal_phase            0.578285
+recent_phase_shrink            0.582406
+    recent_phase_C1            0.582740
+  tau6_phase_shrink            0.575322
+  recent_without_nb            0.580046
+   multiscale_stack            0.572634
+   multiscale_phase            0.575904
+   ani_phase3_trend            0.577582
+    blend_winners50            0.572427
+strict group_repeat1_fold2 fitting
+strict group_repeat1_fold2 inner 1/5 9.3 s
+strict group_repeat1_fold2 inner 2/5 15.9 s
+strict group_repeat1_fold2 inner 3/5 22.3 s
+strict group_repeat1_fold2 inner 4/5 28.7 s
+strict group_repeat1_fold2 inner 5/5 34.9 s
+strict group_repeat1_fold2 complete 41.7 s
+              model  phase_mean_logloss
+          ani_stack            0.594329
+          ani_first            0.586312
+         tau6_stack            0.588680
+   recent_meta_tau6            0.592513
+ recent_equal_phase            0.595172
+recent_phase_shrink            0.595703
+    recent_phase_C1            0.596197
+  tau6_phase_shrink            0.590095
+  recent_without_nb            0.594297
+   multiscale_stack            0.590180
+   multiscale_phase            0.592663
+   ani_phase3_trend            0.593534
+    blend_winners50            0.588018
+              model  completed_splits  expected_splits  official_logloss  temporal_windows  temporal_mean_logloss  worst_temporal_logloss  cv_completed_repeats  cv_mean_logloss  cv_repeat_std  temporal_delta  temporal_delta_lower  temporal_delta_upper  group_cv_delta  group_cv_delta_lower  group_cv_delta_upper  temporal_mean_delta_vs_ani  cv_mean_delta_vs_ani  complete_comparison
+   ani_phase3_trend                10               10          0.556030                 3               0.537131                0.588951                     2         0.586468       0.000528       -0.000315             -0.001114              0.000523       -0.000943             -0.002160              0.000378                   -0.000315             -0.000943                 True
+          ani_stack                10               10          0.555039                 3               0.537446                0.588574                     2         0.587411       0.000591             NaN                   NaN                   NaN             NaN                   NaN                   NaN                    0.000000              0.000000                 True
+  recent_without_nb                10               10          0.556399                 3               0.537877                0.590159                     2         0.588884       0.000581        0.000431             -0.001510              0.002190        0.001473              0.000542              0.002470                    0.000431              0.001473                 True
+   recent_meta_tau6                10               10          0.555014                 3               0.538208                0.588232                     2         0.585192       0.000481        0.000762             -0.000139              0.001583       -0.002219             -0.003113             -0.001365                    0.000762             -0.002219                 True
+ recent_equal_phase                10               10          0.556744                 3               0.538210                0.590549                     2         0.587523       0.000836        0.000765             -0.000525              0.002035        0.000111             -0.000626              0.000883                    0.000765              0.000111                 True
+recent_phase_shrink                10               10          0.559652                 3               0.538618                0.593207                     2         0.588448       0.001457        0.001172             -0.002314              0.004393        0.001037             -0.001129              0.003299                    0.001172              0.001037                 True
+    recent_phase_C1                10               10          0.559767                 3               0.538784                0.593794                     2         0.588742       0.001569        0.001338             -0.002410              0.004826        0.001330             -0.001010              0.003773                    0.001338              0.001330                 True
+   multiscale_stack                10               10          0.555404                 3               0.538800                0.591179                     2         0.584025       0.000099        0.001355             -0.001117              0.003885       -0.003386             -0.005273             -0.001450                    0.001355             -0.003386                 True
+    blend_winners50                10               10          0.554350                 3               0.539065                0.589188                     2         0.581539       0.000094        0.001619             -0.000237              0.003261       -0.005873             -0.007319             -0.004299                    0.001619             -0.005873                 True
+         tau6_stack                10               10          0.553028                 3               0.539075                0.588163                     2         0.581930       0.000140        0.001629             -0.000004              0.003231       -0.005481             -0.006883             -0.003936                    0.001629             -0.005481                 True
+  tau6_phase_shrink                10               10          0.555845                 3               0.539746                0.591410                     2         0.582216       0.000961        0.002300             -0.001421              0.005585       -0.005195             -0.007501             -0.002713                    0.002300             -0.005195                 True
+   multiscale_phase                10               10          0.559957                 3               0.540540                0.598120                     2         0.586962       0.000796        0.003094             -0.001205              0.007192       -0.000449             -0.003610              0.002971                    0.003094             -0.000449                 True
+          ani_first                10               10          0.557370                 3               0.542145                0.590898                     2         0.579653       0.000307        0.004700              0.001123              0.007909       -0.007758             -0.010542             -0.004653                    0.004700             -0.007758                 True

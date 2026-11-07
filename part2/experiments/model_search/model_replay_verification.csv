@@ -1,0 +1,13 @@
+component,split,max_probability_difference
+catboost_d6_n1000_none,validation,0.0
+catboost_d6_n1000_none,test,0.0
+catboost_d8_n1000_none,validation,0.0
+catboost_d8_n1000_none,test,0.0
+lr_criteria_yearcap_C2_phase0,validation,0.0
+lr_criteria_yearcap_C2_phase0,test,0.0
+recency_clinical_C0.5_half3,validation,0.0
+recency_clinical_C0.5_half3,test,0.0
+recency_criteria_C2_half6,validation,0.0
+recency_criteria_C2_half6,test,0.0
+text_wordwide_C2,validation,0.0
+text_wordwide_C2,test,0.0

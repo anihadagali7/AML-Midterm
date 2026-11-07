@@ -1,0 +1,37 @@
+                                                            name  validation_phase_mean_logloss  temporal_phase_mean_logloss  joint_logloss
+     linear_mix_clinical0.25__catboost_deep__phases0.25,0.5,0.75                       0.551255                     0.553285       0.552270
+                 linear_text__catboost_deep__phases0.25,0.5,0.75                       0.550228                     0.554415       0.552321
+    linear_mix_clinical0.25__catboost_deep__phases0.25,0.25,0.75                       0.551195                     0.554769       0.552982
+      linear_mix_clinical0.5__catboost_deep__phases0.25,0.5,0.75                       0.553111                     0.552993       0.553052
+                 linear_mix_clinical0.25__catboost_deep__tree0.5                       0.554134                     0.552578       0.553356
+                             linear_text__catboost_deep__tree0.5                       0.553275                     0.553551       0.553413
+                linear_text__catboost_deep__phases0.25,0.25,0.75                       0.550612                     0.556227       0.553419
+     linear_mix_clinical0.5__catboost_deep__phases0.25,0.25,0.75                       0.552905                     0.554402       0.553653
+                         linear_wordwide__catboost_deep__tree0.5                       0.554035                     0.553605       0.553820
+                          linear_yearcap__catboost_deep__tree0.5                       0.553970                     0.553867       0.553919
+                         linear_baseline__catboost_deep__tree0.5                       0.553837                     0.554069       0.553953
+                  linear_mix_clinical0.5__catboost_deep__tree0.5                       0.555765                     0.552212       0.553989
+        linear_mix_clinical0.25__catboost_phasebalanced__tree0.5                       0.556193                     0.553463       0.554828
+                    linear_text__catboost_phasebalanced__tree0.5                       0.555374                     0.554446       0.554910
+             linear_text__catboost_standard__phases0.25,0.5,0.75                       0.551472                     0.558406       0.554939
+ linear_mix_clinical0.25__catboost_standard__phases0.25,0.5,0.75                       0.552637                     0.557279       0.554958
+            linear_mix_clinical0.25__catboost_recentmix__tree0.5                       0.556271                     0.553789       0.555030
+                        linear_text__catboost_recentmix__tree0.5                       0.555455                     0.554654       0.555054
+               linear_mix_clinical0.25__catboost_bagged__tree0.5                       0.555513                     0.554818       0.555166
+                           linear_text__catboost_bagged__tree0.5                       0.554610                     0.555759       0.555184
+                linear_wordwide__catboost_phasebalanced__tree0.5                       0.556078                     0.554342       0.555210
+                    linear_wordwide__catboost_recentmix__tree0.5                       0.556131                     0.554635       0.555383
+linear_mix_clinical0.25__catboost_standard__phases0.25,0.25,0.75                       0.552695                     0.558228       0.555461
+         linear_mix_clinical0.5__catboost_phasebalanced__tree0.5                       0.557810                     0.553115       0.555462
+                linear_baseline__catboost_phasebalanced__tree0.5                       0.556028                     0.554937       0.555482
+                linear_mix_clinical0.25__catboost_seeds__tree0.5                       0.556274                     0.554705       0.555489
+                     linear_yearcap__catboost_recentmix__tree0.5                       0.556177                     0.554921       0.555549
+                            linear_text__catboost_seeds__tree0.5                       0.555500                     0.555620       0.555560
+                    linear_baseline__catboost_recentmix__tree0.5                       0.555997                     0.555147       0.555572
+                 linear_yearcap__catboost_phasebalanced__tree0.5                       0.556195                     0.554952       0.555573
+Selected: {
+  "01_balanced_ensemble": "linear_mix_clinical0.25__catboost_deep__tree0.5",
+  "02_text_heavy": "linear_mix_clinical0.25__catboost_deep__tree0.25",
+  "03_phase_specialized": "linear_mix_clinical0.25__catboost_deep__phases0.25,0.5,0.75",
+  "04_capped_year": "linear_yearcap__catboost_deep__tree0.5"
+}

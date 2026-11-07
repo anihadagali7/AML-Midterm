@@ -1,0 +1,15 @@
+{
+  "commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347",
+  "files": {
+    "midterm/part2_best_model.ipynb": "c9b011786e0da58b6773d45e10b4cba1ecb705714f4f74782a33105ab6d2f807",
+    "midterm/part2_first_submission_model.ipynb": "3fa80ff7451f64262234b28afb88a8dfcd1ae7cf5a56e794b4a0e98d7e1ca56c",
+    "midterm/part2_best_submission.csv": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2",
+    "midterm/part2_first_submission.csv": "63a5ed6154c6c96cb838c27fa7feb2656a24960362a1c69be05cd6c3d7c789e5",
+    "midterm/part2_alt_phase3_trend_submission.csv": "79bc34c128e6be1e34feb8ac4e0694ac899b0c4f52b8886d15becbc7a094248e"
+  },
+  "data_hash_matches": {
+    "outcome_train.csv": true,
+    "outcome_val.csv": true,
+    "outcome_test.csv": true
+  }
+}
