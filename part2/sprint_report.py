@@ -62,7 +62,7 @@ def run():
     result=ledger["submissions"].get("11_file10_legacy20.csv")
     score_note=(f"File 11 scored **{result['kaggle_score']:.5f}**, with user-reported rank {result['reported_rank']}. "
         "Its exact hash is recorded in the current ledger; the export receipt retains its pre-submission state. "
-        "One of four additional uploads has been reported. Files 12–14 remain unscored reserves."
+        "The live queue and ledger track subsequent uploads, including file 13's later score."
         if result else "No new file has a known score until the user returns a Kaggle result.")
     sections=["# Iteration after file 10 scored 0.58609",
         "File 10 is this round's frozen baseline; these are adaptive local experiments. "+score_note,

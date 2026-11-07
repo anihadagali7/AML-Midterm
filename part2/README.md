@@ -1,16 +1,17 @@
 # Part Two: clinical-trial outcome prediction
 
-**Current best: [submission 11](submissions/11_file10_legacy20.csv), Kaggle
-0.58474, user-reported first place.** This improves file 10 by 0.00135 and Ani's
-0.58688 by 0.00214, beating the previously reported leader's 0.58526 by 0.00052. The result is
+**Current best: [submission 13](submissions/13_file10_legacy30.csv), Kaggle
+0.58465, user-reported first place.** This improves file 10 by 0.00144 and Ani's
+0.58688 by 0.00223, beating the previously reported leader's 0.58526 by 0.00061. The result is
 tied to the exact CSV hash in [the ledger](submissions/leaderboard_results.json).
-Use file 11 as the scored reference for any further experiment.
+Use file 13 as the scored reference for any further experiment.
 
-**Current iteration:** [files 11–14 and the fixed-benchmark comparison](experiments/leaderboard_sprint/RESULTS.md).
-Thirty-two blend/meta variants and four recent-tree blends were evaluated across
-the same 13 splits under both preprocessing policies. The first upload, file 11,
-reached first place. Files 12–14 remain unscored reserves; one of four additional
-submissions has been used. Native replay checks pass and all 16 regression tests pass.
+**Current iteration:** [files 11–16 and the fixed-benchmark comparison](experiments/leaderboard_sprint/RESULTS.md).
+The first upload, file 11, reached first place at 0.58474; file 13 improved to
+0.58465; file 15 worsened to 0.58492. The additional 28 refinements use the same
+13 splits and both preprocessing policies. **Hold the final slot:** file 16's
+small local gains do not justify another upload on current evidence. It remains
+an unsubmitted reserve. Native replay checks pass and all 16 regression tests pass.
 
 **Earlier comparison of files 01–10:** [common benchmark results](experiments/all_submissions/RESULTS.md)
 and [executed notebook](all_submissions.ipynb). All ten numbered recipes, both Ani
@@ -38,7 +39,7 @@ It preserves all unsuccessful experiments and keeps unknown Kaggle scores explic
 Use `make -C part2 improve-test` and `make -C part2 improve-verify` from the repository
 root; create `.venv` with `part2/requirements-benchmark.txt` first.
 
-**Historical recommendation: hold 05/06.** Ani's published 0.58688 model was reproduced. The [original benchmark](experiments/local_benchmark/RESULTS.md) and selection below are historical; the current best is file 11 at 0.58474. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
+**Historical recommendation: hold 05/06.** Ani's published 0.58688 model was reproduced. The [original benchmark](experiments/local_benchmark/RESULTS.md) and selection below are historical; the current best is file 13 at 0.58465. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
 
 The initial four manual submissions and two follow-ups are preserved below. **Lower log loss is better.** Their reference was **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**. File 10 later reached **0.58609**. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).
 

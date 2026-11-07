@@ -34,9 +34,12 @@ def report():
     for filename, entry in ledger["submissions"].items():
         assert digest(ROOT / "submissions" / filename) == entry["sha256"]
     best = ledger.get("current_best")
+    rank_note = (f"The user reported rank {best['reported_rank']}. "
+                 if best and best.get("reported_rank") is not None
+                 else "Leaderboard rank was not refreshed for this score. ")
     score_update = (f"**Later Kaggle result:** `{best['submission']}` scored **{best['kaggle_score']:.5f}**, "
         f"improving Ani's 0.58688 by **{best['improvement_over_ani']:.5f}**. "
-        f"The user reported rank {best['reported_rank']}. "
+        + rank_note +
         "This result was reported after the frozen comparison. Local predictions and selection evidence are unchanged. "
         "The current ledger supplies the Kaggle column; its original input snapshot is preserved with the run."
         if best else "Kaggle results are recorded separately from local validation.")

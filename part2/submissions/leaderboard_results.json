@@ -53,18 +53,33 @@
       "reported_at_utc": "2026-11-06T23:32:29Z",
       "reported_rank": 1,
       "previous_reported_leader_score": 0.58526
+    },
+    "13_file10_legacy30.csv": {
+      "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+      "kaggle_score": 0.58465,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T23:40:09.338846+00:00",
+      "improvement_over_previous_best": 9e-05
+    },
+    "15_file10_legacy20_tree10_trend10.csv": {
+      "sha256": "7c86d5e89d1e9e81db9ab50200e5d147df9b9fd6af6ff23ed173b9663279c37b",
+      "kaggle_score": 0.58492,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T23:44:47.296572+00:00",
+      "delta_vs_file13": 0.00027
     }
   },
   "current_best": {
-    "submission": "11_file10_legacy20.csv",
-    "sha256": "26ea655feba5094c2045657d328d8a16041f74eca5106f556f1971c7e4bab635",
-    "kaggle_score": 0.58474,
-    "improvement_over_ani": 0.00214,
-    "improvement_over_file10": 0.00135,
-    "gap_to_reported_leader": 0.0,
-    "margin_over_previous_reported_leader": 0.00052,
+    "submission": "13_file10_legacy30.csv",
+    "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+    "kaggle_score": 0.58465,
+    "improvement_over_ani": 0.00223,
+    "improvement_over_file10": 0.00144,
+    "improvement_over_file11": 9e-05,
+    "margin_over_previous_reported_leader": 0.00061,
+    "reported_at_utc": "2026-11-06T23:40:09.338846+00:00",
+    "source": "User-reported score and subsequent confirmation of first place",
     "reported_rank": 1,
-    "reported_at_utc": "2026-11-06T23:32:29Z",
-    "source": "User-reported score and first-place leaderboard position"
+    "rank_reported_at_utc": "2026-11-06T23:50:30.004149+00:00"
   }
 }
