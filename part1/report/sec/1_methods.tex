@@ -1,0 +1,141 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{What we are predicting}
+
+The data come from ClinicalTrials.gov through the HINT benchmark, with further
+processing by the course staff~\cite{fu2022hint,clinicaltrials}. There are 1,561
+trials that stopped early. The training file has 1,171 of them. Only 157 have
+visible reason labels: the earliest 10\% by start year, plus 40 extra trials
+chosen so the rare reasons are not missing. The other 1,014 training trials have
+every reason marked $-100$. That value means ``unknown,'' not ``this was not a
+reason.'' The validation file has 78 fully labeled trials. The test file has 312
+later trials, from 2010 to 2016, with no labels.
+
+A trial can stop for more than one reason. The five labels are Safety, Funding,
+Efficacy, Recruitment, and Other. Among the 235 trials with real labels,
+Recruitment appears on 64\%, Other on 15\%, Efficacy on 13\%, Safety on 11\%, and
+Funding on 5\%. The labeled trials are mostly early, and the test trials are the
+latest, so these rates will not match the test set. Recruitment is more common
+early, and Safety is more common later.
+
+The score we care about is sample-wise F1: F1 computed for each trial, then
+averaged over trials. We also report F1 for each reason and the macro average,
+which is the plain average of those five F1 scores. One validation trial moves
+sample-wise F1 by about 1.3 points, so a small gap on 78 trials is weak evidence.
+Every comparison below was therefore checked a second way, with the same saved
+grouped cross-validation: eight repeats of five folds on the 157 training labels,
+and the same plan on all 235 labeled trials. We also scored three time-ordered
+windows, 98 held-out trials in total. Where a single validation number and the
+repeated checks disagree, we follow the repeated checks.
+
+\subsection{Which inputs we kept}
+
+Each trial has a 150-number embedding of its stopping-reason text. The original
+text is not in the files. The embedding was reduced and randomly rotated, so a
+single coordinate has no meaning, and the values are small. We standardize them
+with a scaler fit only on the rows the current split is allowed to learn from.
+Trial IDs are used to line up rows. They are never used as inputs.
+
+We tried the other fields and then left them out. Start year, eligibility text,
+disease names, drug pathways, and Morgan fingerprints of the drug
+structure~\cite{rogers2010extended,rdkit,milacic2024reactome} did not raise the
+validation score. The reason is simple. The embedding is already a summary of the
+text the labels were written from. The other fields describe the trial, not why
+it stopped. A trial can run out of money in any disease. Adding them also means
+adding many new inputs to a model that starts with only 157 real labels. About
+44\% of trials have no matched drug, so a fingerprint block is all zeros for
+those rows. Year is a special trap: it fits the early labeled trials and then
+has to predict later ones. Section~\ref{sec:results} gives the numbers.
+
+\subsection{How missing labels are created}
+
+The assignment asks for at least one unsupervised method to fill in missing
+labels. We tried three. $k$-means and DBSCAN were useful checks. A careful
+DBSCAN labeling, followed by logistic regression, reached about 0.910 sample-wise
+F1 on the 78 validation trials in an early comparison. We did not submit it.
+That number came from a different training setup, and it did not win the later
+grouped checks against the model below. On its own, clustering mostly separates
+Recruitment from everything else, because Recruitment dominates the data.
+
+What we kept is a Gaussian mixture~\cite{dempster1977em,pedregosa2011scikit}.
+After standardization we keep 30 principal components, about 77\% of the
+variance, and fit 30 diagonal-covariance components. The components are started
+from $k$-means++ assignments. We run three restarts from
+\texttt{random\_state}${}=0$ and keep the restart with the best log-likelihood.
+Expectation--maximization stops when the average log-likelihood improves by less
+than $10^{-3}$, or after 100 iterations. The kept run converged in 29
+iterations. The mixture is fit only on rows the current split may see. Test rows
+are not included.
+
+Each component is turned into a reason profile by averaging the real labels of
+the trials assigned to it, weighted by how strongly the mixture assigns each
+trial. A trial with two reasons contributes half a count to each, so every trial
+has the same total weight. We add one pseudo-count of the overall reason rates.
+That stops a component with few labeled trials from collapsing to a single
+reason. The mixture's guess for a new trial is the average of these profiles,
+weighted by the trial's component memberships.
+
+We do not trust that guess as a label. In the teaching step it has only a 5\%
+vote. The classifier blend below has the other 95\%.
+
+\subsection{The classifier}
+
+The submitted classifier is one logistic regression over the five reasons
+($C = 0.1$, at most 3,000 iterations, tolerance $10^{-4}$), not five separate
+classifiers. A trial with two reasons is entered once for each reason, and one
+unit of weight is split evenly between those copies. The class weights are
+computed from the real labels only, then frozen. Rare reasons are upweighted so
+Recruitment does not drown them out. A label the model made up later cannot
+change those weights. A made-up row also counts as only a quarter of a real row.
+
+We average this logistic model with two others, using fixed weights. Cosine
+nearest neighbors get 30\%. Shrinkage linear discriminant analysis gets 20\%.
+Logistic regression gets the remaining 50\%. The neighbor model looks at the 10
+closest trials and weights them by the square of the cosine similarity, so a
+close match counts for much more than a distant one. A neighbor that has two
+reasons votes for both. The discriminant analysis uses automatic shrinkage and
+equal class priors, so it is not pulled toward Recruitment just because that
+reason is common. All three models see the full 150 standardized embeddings.
+Only the mixture uses the 30 principal components.
+
+This blend is the later version of our first strong model, with three changes
+that the grouped checks supported. We froze the class weights on the real
+labels, we let neighbors vote for every reason they carry, and we cut the
+mixture's teaching vote from 20\% to 5\%.
+
+\subsection{Teaching the model, then deciding}
+
+We add unlabeled trials in two rounds~\cite{yarowsky1995unsupervised,triguero2015selflabeled}.
+Each round scores every still-unlabeled trial with the 95/5 blend above. If its
+highest reason scores at least 0.8, we treat the decision rule below as that
+trial's label, add the row at quarter weight, and refit. Each round starts again
+from the real labels plus the rows accepted in that round. It does not keep
+stacking old guesses. In the final fit, on all 235 real labels, the first round
+accepts 685 unlabeled trials and the second accepts 757. Their total weight is
+about 103 and then 120, against 235 for the real labels, so the guesses cannot
+outvote the data.
+
+The course also asks for a reason label on every originally masked training row.
+After the final fit we predict all 1,014 of those rows. That file is not the
+same thing as the 757 rows used during training. The 157 original training
+labels are copied through unchanged.
+
+Every trial in this corpus stopped for a recorded reason, so a prediction of
+``no reason'' is always wrong. We always keep the highest-scoring reason, and we
+add any other reason scoring at least 0.3. These scores are for making that
+choice. They are not calibrated probabilities.
+
+\subsection{What the final fit is allowed to see}
+
+Model choice used the 78 validation trials, with the model trained on the 157
+labeled training trials. The submitted fit is different. It retrains the same
+fixed recipe on all 235 real labels, and it may use the 1,014 masked training
+rows for the mixture and for generated labels. The 312 test rows are used only
+to make the final predictions. Because the validation labels are inside that
+final fit, the 0.891 validation score is not an independent score of the
+submitted file.
+
+Our first submitted model, at a reported Kaggle score of 0.89423, had built its
+scaler and clusters with the test rows included. We stopped doing that. The
+later models, including the one below, never see a test row until prediction.

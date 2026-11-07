@@ -1,0 +1,116 @@
+\section{Results}
+\label{sec:results}
+
+Table~\ref{tab:p2scores} is the decision path. Lower log loss is better. The
+local numbers are the equal average of the three phase losses on the shared
+checks. File~13 is the submitted model. It is the best reported Kaggle score.
+File~15 won the local time-ordered average and lost on Kaggle.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccc@{}}
+\toprule
+Model & Time & Grouped & Kaggle \\
+\midrule
+Phase-specific ensemble & --- & --- & 0.59562 \\
+Text-heavy ensemble & --- & --- & 0.58993 \\
+Stack, no recency weights & 0.5421 & 0.5797 & 0.58810 \\
+Recency stack & 0.5374 & 0.5874 & 0.58688 \\
+File 10, recent neighbors & 0.5359 & 0.5869 & 0.58609 \\
+File 11, 20\% early ensemble & 0.5339 & 0.5812 & 0.58474 \\
+\textbf{File 13, 30\% early ensemble} & 0.5334 & 0.5790 & \textbf{0.58465} \\
+File 15, tree and trend added & \textbf{0.5327} & \textbf{0.5783} & 0.58492 \\
+\bottomrule
+\end{tabular*}
+\caption{Later models on the shared checks. Time is the average of the
+original forward windows. Grouped is repeated trial-grouped cross-validation.
+The first two Kaggle scores are early submissions that used a different local
+protocol, so those two local cells are left blank. Kaggle scores are the
+reported public scores.}
+\label{tab:p2scores}
+\end{table}
+
+Table~\ref{tab:p2phase} is the supplied validation split, under preprocessing
+fit only on the training rows of that split. The baseline is the criteria
+logistic model. The recency stack is the 0.58688 reference. File~10 is the
+neighbor blend before the older ensemble is added. File~10 does not win this
+table. Its gain showed up on the later-year windows and on Kaggle, which is
+why we did not select on validation F1.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llccc}
+\toprule
+Phase & Metric & Baseline & Recency & File 10 \\
+\midrule
+\multirow{4}{*}{I}
+ & F1       & 0.765 & \textbf{0.793} & 0.762 \\
+ & ROC-AUC  & 0.783 & \textbf{0.794} & 0.787 \\
+ & PR-AUC   & \textbf{0.835} & 0.830 & 0.824 \\
+ & log loss & 0.556 & 0.556 & 0.560 \\
+\midrule
+\multirow{4}{*}{II}
+ & F1       & \textbf{0.657} & 0.647 & 0.638 \\
+ & ROC-AUC  & 0.740 & 0.753 & \textbf{0.754} \\
+ & PR-AUC   & 0.717 & \textbf{0.732} & 0.730 \\
+ & log loss & 0.600 & 0.593 & 0.593 \\
+\midrule
+\multirow{4}{*}{III}
+ & F1       & 0.833 & 0.825 & \textbf{0.829} \\
+ & ROC-AUC  & 0.774 & \textbf{0.790} & 0.786 \\
+ & PR-AUC   & 0.862 & \textbf{0.882} & 0.877 \\
+ & log loss & 0.529 & \textbf{0.516} & 0.521 \\
+\bottomrule
+\end{tabular}
+\caption{Validation metrics by phase. F1 uses a cutoff of 0.5. ROC-AUC,
+PR-AUC, and log loss use the predicted probability that the trial succeeds.
+Phase sizes are 149, 501, and 363 rows. Best value per row in bold. Phase~I
+log loss ties at three decimals; the recency stack is slightly lower.}
+\label{tab:p2phase}
+\end{table}
+
+Table~\ref{tab:p2err} is the reason check on the failed validation trials.
+The baseline is the criteria logistic model. The ensemble is the early
+text-and-tree model that later became the 30\% share of file~13. Most reason
+tags are Part~1 predictions, not confirmed labels. The groups large enough
+to read are Phase~II Recruitment and the three no-reason groups. Phase~III
+failures are called successful far more often than Phase~II failures. Adding
+clinical context lowers some of those rates and raises others. The later
+neighbor model did not fix the hardest cell: all 9 Phase~III efficacy-tagged
+failures were still called successful.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llccc@{}}
+\toprule
+Phase & Reason & $n$ & Base & Ens. \\
+\midrule
+I & Safety & 9 & .56 & .44 \\
+I & Funding & 4 & .50 & .50 \\
+I & Efficacy & 2 & .50 & .50 \\
+I & Recruitment & 22 & .36 & .27 \\
+I & Other & 5 & .80 & .80 \\
+I & No reason & 28 & .43 & .39 \\
+II & Safety & 15 & .40 & .40 \\
+II & Funding & 4 & .00 & .25 \\
+II & Efficacy & 10 & .30 & .30 \\
+II & Recruitment & 87 & .20 & .16 \\
+II & Other & 18 & .33 & .28 \\
+II & No reason & 144 & .35 & .34 \\
+III & Safety & 6 & .50 & .67 \\
+III & Funding & 0 & --- & --- \\
+III & Efficacy & 9 & .89 & .67 \\
+III & Recruitment & 21 & .52 & .57 \\
+III & Other & 8 & .63 & .75 \\
+III & No reason & 82 & .56 & .55 \\
+\bottomrule
+\end{tabular*}
+\caption{Share of failed validation trials predicted successful, by phase and
+stopping reason. ``No reason'' means the trial never appears in Part~1.
+A trial with several reasons is listed in each. Funding has no Phase~III
+failures.}
+\label{tab:p2err}
+\end{table}

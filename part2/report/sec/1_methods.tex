@@ -1,0 +1,138 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{What we are predicting}
+
+Each row is one trial in one phase. A trial that spans two phases appears
+twice, with the same success label, and those two rows always stay on the
+same side of a split. Success means the trial met its primary endpoint.
+The training file has 8,037 rows from trials that started through 2013. The
+validation file has 1,013 rows from the same years, split by trial so a trial
+is never in both. The test file has 1,500 rows, 500 in each phase, from 2013
+to 2022. None of those trials appear in the other files.
+
+Kaggle scores the average of the three phase log losses. Because each phase
+has the same number of test rows, that is the same as the overall log loss.
+We therefore select models by the equal average of the Phase~I, II, and III
+log losses, not by a single F1 number. F1 at a cutoff of 0.5, ROC-AUC, and
+precision-recall AUC are reported as diagnostics. Trial IDs are used only to
+keep rows together and to match Part~1. They are not inputs. Part~1 reason
+labels and reason embeddings are never given to the outcome model.
+
+\subsection{The first models}
+
+The baseline is a logistic regression on eligibility-criteria text. We turn
+the criteria into word and bigram counts, keep at most 35,000 terms that
+appear in at least three trials, and use sublinear term frequency. Three
+phase indicators let one model share text evidence across phases. The
+regularization is $C = 2$. A separate classifier for each phase was also
+tried. Phase~I has many fewer rows, so a phase-only fit overfits it.
+
+Around that baseline we compared disease and drug text, ICD codes, drug
+targets, actions, and pathways~\cite{milacic2024reactome}, Morgan
+fingerprints~\cite{rogers2010extended,rdkit}, naive Bayes, nearest neighbors,
+and tree ensembles. Trees can represent interactions that a linear text model
+misses. Fingerprints did not reliably help, and a matched drug is less common
+in the test file (39\%) than in training (46\%), so a model that leans on drug
+structure is exposed to a coverage shift. Naive Bayes could rank trials, but
+its probabilities were far too sharp for a log-loss contest.
+
+Our first submitted ensembles mixed logistic text models with CatBoost trees.
+The version with the best local score put more weight on phase-specific
+pieces and scored 0.59562 on Kaggle. Reducing the tree share in Phases~II
+and~III improved that to 0.58993. The local winner was not the leaderboard
+winner. That was the first sign that a score on the random validation split
+was a weak guide to a later test cohort.
+
+\subsection{The stack, and why recent trials count more}
+
+The stronger reference is a stack of eight models~\cite{wolpert1992stacked,pedregosa2011scikit}.
+Separate logistic regressions read eligibility text, disease text, drug names,
+codes, drug annotations, and simple trial metadata. A naive Bayes model and a
+nearest-neighbor model also read the eligibility text. A second logistic
+regression learns how much to trust each of the eight. So that this combiner
+does not see predictions that were fit on the answer, each base model is
+scored on held-out folds: five folds, with every row of a trial kept together.
+The neighbor model uses the 50 closest trials.
+
+Trials get more successful over time, and every test trial starts later than
+the training trials. We therefore give recent trials more weight. The weight
+decays exponentially with a three-year time constant, so a trial loses about
+half its weight every two years. The same weights go on the base models and
+on the combiner. The decay was chosen on time-ordered holdouts, not on the
+leaderboard. This recency-weighted stack, refit on all 9,050 labeled rows,
+is the reported 0.58688 submission. An otherwise identical stack without the
+recency weights scored 0.58810. Our first submissions had been fit on the
+8,037 training rows only, so part of the earlier gap was the extra labeled
+data, not only the architecture.
+
+\subsection{Neighbors that notice time}
+
+The neighbor piece inside that stack ignored recency. It used raw text
+similarity and pulled every estimate toward a 50\% success rate. We tested
+sharper similarity, neighborhoods of several sizes, similarity that also uses
+disease, drug, and ICD text, and a prior estimated from the training rows of
+the same phase.
+
+Two versions mattered. One replaces only the neighbor input and then refits
+the stack. The submitted neighbor version does not replace the original
+stack. It averages that stack, at 50\%, with a second stack whose recency
+decay is faster (a two-year time constant) and which also receives eight
+neighborhood estimates. The average is fixed. It is not fit on the validation
+labels. This is file~10. It improved every time-ordered window we had
+declared in advance. Its random validation log loss got slightly worse.
+Kaggle moved from 0.58688 to 0.58609.
+
+\subsection{Why the submission mixes in the older ensemble}
+
+File~10 was better on later years and worse on the random grouped checks.
+Our older text-and-tree ensemble had the opposite pattern, so the two errors
+were not the same. The older ensemble is half a mixture of three logistic
+models, a quarter a depth-6 CatBoost model, and a quarter a depth-8 CatBoost
+model. We blended probabilities rather than merging the features.
+
+We tried 20\% of the older ensemble first, because a 30\% blend had a worse
+worst-period score in the local checks. That 20\% blend, file~11, scored
+0.58474. Raising the older share to 30\%, file~13, scored 0.58465. The second
+gain was only 0.00009, so we did not keep adding more of the older model.
+A later blend that also mixed in a recent tree and a phase trend looked
+better on the historical windows and scored 0.58492, which is worse. With
+one upload left and first place already reported, we did not submit the last
+prepared file. Its local gains were small and its grouped score was slightly
+worse.
+
+The submitted probability is
+\[
+0.70\,P_{10} + 0.30\,P_{\text{early}},
+\quad
+P_{10} = 0.50\,P_{\text{recency}} + 0.50\,P_{\text{fast neighbors}}.
+\]
+After the recipe was fixed, every supervised piece was refit on all 9,050
+labeled rows. Test outcome labels are never used. In the stack inherited from
+the 0.58688 model, the word lists and IDF weights are fit on training,
+validation, and unlabeled test text. That changes the features, not the
+success labels. The older ensemble fits its own word lists only on the rows
+it is allowed to learn from.
+
+\subsection{How a candidate was allowed to advance}
+
+Every later comparison uses the same saved trials. The supplied validation
+split fits on 8,037 rows and scores 1,013. Three time-ordered windows train
+through 2007, 2009, or 2011 and score the following years. A grouped
+cross-validation pools the 9,050 labeled rows and holds out trials, twice,
+with three folds. Three longer gaps were scored only after a recipe was
+frozen. Word lists are rebuilt inside each fit, including the inner stacking
+folds. We required a gain on the time-ordered average, and we recorded the
+worst window and the grouped score even when they went the wrong way. A
+higher F1 at 0.5 was not enough.
+
+\subsection{The reason-error check}
+
+After the outcome model is fit, we look up each failed validation trial in
+Part~1. If Part~1 has a real reason label, we use it. Otherwise we use a
+frozen Part~1 prediction. Trials that ran to completion are absent from
+Part~1 and form their own ``no recorded stopping reason'' group. A trial with
+several reasons is counted under each. Phases are separate, so a two-phase
+trial is not counted twice inside one phase. The error rate is the share of
+these failed trials given a success probability of at least 0.5. This table
+is a diagnosis. It is not a feature and it is not the selection score.

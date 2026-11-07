@@ -1,0 +1,15 @@
+\begin{abstract}
+We predict whether a clinical trial meets its primary endpoint, separately
+for Phase~I, II, and III. The score is log loss, so a confident wrong
+probability is punished more than a near miss. The test trials start later
+than the training trials, and later trials succeed more often.
+
+We started from eligibility text and logistic regression, then compared
+trees, drug features, and phase-specific fits. The model we kept is a stack
+of text and drug classifiers, with more weight on recent trials, blended with
+a neighbor model that also prefers recent similar trials. Our earlier
+text-and-tree ensemble still made different mistakes, so the submission is
+70\% of that recent-neighbor stack and 30\% of the earlier ensemble. The
+reported Kaggle log loss is 0.58465. A later blend looked better on our
+historical checks and scored 0.58492, so we kept the first of those two.
+\end{abstract}

@@ -1,0 +1,126 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Part 1: generating the missing reason labels}
+
+\paragraph{Data and features.}
+ The Part~1 files, derived from
+ClinicalTrials.gov~\cite{clinicaltrials} with some processing performed by course staff, hold 1,561 trials that stopped early: 1,171 training trials of
+which only 157 carry visible labels (the remaining 1,014 have all five reasons
+masked as $-100$), 78 fully labeled validation trials, and 312 unlabeled test
+trials from later start years. Our features are the 150 reason-embedding
+dimensions, standardized with a scaler fit on the pooled train, validation and
+test embeddings. We attempted feature-set variations including additional trial metadata but found that it performed worse than the model trained only on \texttt{why\_stop} embeddings.
+
+\paragraph{Unsupervised step.}
+We reduce the standardized embeddings to 30 principal components and fit a
+Gaussian mixture with 30 diagonal-covariance components on all 1,561 trials.
+Components are initialized from the default $k$-means++ responsibilities of
+\texttt{scikit-learn}~\cite{pedregosa2011scikit}, with 3 restarts and the
+best-log-likelihood run kept (\texttt{random\_state}=0).
+Expectation--maximization~\cite{dempster1977em} stops once the mean
+log-likelihood changes by less than $10^{-3}$ between iterations; the selected run
+converged after 30 of the permitted 100 iterations.
+
+Each component is then turned into a reason distribution by a
+``cluster-then-label'' step. For a given component, we average the label vectors
+of the labeled trials, weighting each trial by how strongly the mixture assigns it
+to that component. A trial with two reasons contributes half a count to each, so
+every trial carries the same total weight regardless of how many reasons it has.
+To that average we add a single pseudo-count of the overall reason distribution,
+which keeps components holding few or no labeled trials from collapsing onto a
+degenerate estimate and instead pulls them toward the global average. A new trial
+is scored by taking its component memberships and averaging the corresponding
+component distributions.
+
+\paragraph{Supervised base model.}
+The supervised half is a multinomial logistic regression over the five reasons
+($C = 0.3$, at most 3000 solver iterations). A multi-label trial is handled by
+entering it once for each reason it carries, splitting one unit of weight evenly
+between those copies, so a two-reason trial contributes half a count to each
+rather than counting twice. Classes are then reweighted so that the rare reasons
+are not drowned out by Recruitment, which appears on 64\% of trials. We average
+this model's predictions with those of a cosine-similarity nearest-neighbour
+classifier, giving the regression 70\% of the weight and the neighbours 30\%. The
+neighbour model looks at a trial's 10 closest trials and averages their reasons,
+weighting each neighbour by the square of its similarity so that close matches
+count for much more than distant ones. This average of the two is what we call the
+base model.
+
+\paragraph{Self-training.}
+We then let the model teach itself~\cite{yarowsky1995unsupervised,triguero2015selflabeled}
+over two rounds, using the 1,326 trials with no labels (1,014 from training and
+all 312 test trials). In each round every unlabeled trial is scored by mixing the
+base model and the mixture, giving the base model 80\% of the say and the mixture
+20\%. Any trial whose best reason scores at least 0.8 is treated as if it were
+labeled, added to the training pool, and the base model is refit on the enlarged
+pool. Starting from 157 labeled trials, 985 of the 1,326 unlabeled trials clear
+the bar.
+
+\paragraph{Decision rule.}
+Every trial in this corpus stopped for some recorded reason, so a prediction of
+``no reason'' is always wrong. We therefore always output the single
+highest-scoring reason, and add any further reason scoring at least 0.3.
+
+\paragraph{Model selection.}
+The validation set holds only 78 trials, so one trial is worth roughly 1.3 F1
+points and small differences between models mean very little. We therefore checked
+every choice a second way, by cross-validation over all 235 trials that have real
+labels (the 157 labeled training trials plus the 78 validation trials), repeating
+the 5-fold split 8 times with different shuffles and averaging. Both numbers are
+reported throughout, and where they disagree we follow the cross-validated one.
+
+\subsection{Part 2: predicting trial outcomes}
+
+\paragraph{Baselines.}
+Two per-phase baselines, each fit separately on Phase~I, II and III:
+a multinomial naive Bayes ($\alpha = 1$) on bag-of-words plus bigram counts of the
+eligibility criteria, and a logistic regression ($C = 1$) on criteria TF-IDF
+(1--2 grams, $\mathrm{min\_df}=5$, sublinear).
+
+\paragraph{Feature blocks.}
+Eight blocks were built over the pooled 10,550 rows: criteria TF-IDF (78,254
+features), disease TF-IDF (3,909), drug-name TF-IDF (3,009), ICD codes expanded to
+three granularities---chapter letter, 3-character category, 5-character
+subcategory (2,382), drug targets (804), drug pathways curated by Reactome~\cite{milacic2024reactome} (1,795), binary drug
+actions (31), and five metadata indicators (whether a drug matched, log drug
+count, log criteria length, combined-phase flag, early-Phase-1 flag).
+
+\paragraph{Stacked ensemble.}
+The improved model combines eight base models: one logistic regression for each
+feature block above, plus a naive Bayes and a nearest-neighbour model
+($k = 50$) on the criteria text. Each is trained on all three phases at once with
+the phase added as an input, so that Phase~I, which has only 1,012 training rows,
+can borrow from the much larger Phase~II and III sets. A second logistic
+regression then learns how much to trust each of the eight, which is the standard
+stacking recipe~\cite{wolpert1992stacked}. So that this combiner is not fooled by
+predictions a model has already seen the answer to, each base model's inputs to it
+are produced on held-out folds: we split the training trials five ways and predict
+each fifth from the other four. The splits keep all rows of a trial together, so
+the two rows of a combined-phase trial can never end up on opposite sides of a
+split.
+
+\paragraph{Recency weighting.}
+Trials have been getting more successful over time---the success rate climbs from
+0.38 in 2000 to 0.81 in 2013---and every test trial started later than every
+training trial. To stop the model from anchoring on the older, less successful
+trials, we make recent trials count for more during training. Each trial's weight
+decays exponentially with its age on a three-year time constant, which halves the
+weight about every two years, so a trial from the most recent year counts roughly
+ten times as much as one from seven years earlier. The weights are applied to both the eight base models and the combiner.
+We set the decay rate on two time-ordered holdouts---train on everything up to
+2009 and test on 2010--2013, then the harder version training up to 2011 and
+testing on 2012--2013---and never on the Kaggle leaderboard.
+
+\paragraph{Error-analysis protocol.}
+For the error analysis we take the 452 validation rows that actually failed and
+look up each trial's stopping reason from Part~1. 198 of them are found there: 27
+with real labels and 171 with labels our Part~1 model predicted. The other 254
+never appear in Part~1 because they ran to completion rather than stopping early,
+and we keep them as their own ``no recorded reason'' group. Each phase is examined
+on its own, so a trial appearing in two phases is never counted twice within one
+phase, and a trial with several reasons is counted under each. The error rate we
+report is simply the share of these failed trials that the classifier called
+successful, meaning it gave them a probability of 0.5 or more. The reason labels
+and reason embeddings appear only in this analysis and are never given to the
+outcome classifier as inputs.

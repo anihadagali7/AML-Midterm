@@ -1,0 +1,65 @@
+% CVPR 2026 Paper Template; see https://github.com/cvpr-org/author-kit
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE
+% Camera-ready style with page numbers. NOTE: do not switch to [review]:
+% review mode anonymizes the author block, and the assignment requires the
+% team members' names on the cover page.
+\usepackage[pagenumbers]{cvpr}
+
+% Import additional packages in the preamble file, before hyperref
+\input{preamble}
+
+% Figures live alongside this file; the parent fallback also finds the copies the
+% notebooks write into midterm/ if the local ones are ever removed.
+\graphicspath{{./}{../}}
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+%%%%%%%%% PAPER ID
+\def\paperID{*****}
+\def\confName{CVPR}
+\def\confYear{2026}
+
+%%%%%%%%% TITLE
+\title{Semi-Supervised Stopping-Reason Labeling and Phase-Aware Outcome\\
+Prediction for Clinical Trials\\
+\vspace{0.35em}
+\large CS5785 / ORIE5750 / ECE5414 --- Midterm Project}
+
+%%%%%%%%% AUTHORS
+\author{Anirudha Hadagali\\
+Cornell University
+\and
+Michael Mazzola\\
+Cornell University
+\and
+Tarun Mandalapu\\
+Cornell University
+}
+
+\begin{document}
+\maketitle
+
+\input{sec/0_abstract}
+
+\noindent\textbf{Team responsibilities.}
+All three authors collaborated on Part~1, Part~2 and this report.
+\textbf{Michael Mazzola} led the optimization of the Part~1 reason-labeling
+solution. \textbf{Tarun Mandalapu} built the initial Part~2 outcome classifier,
+which \textbf{Anirudha Hadagali} then optimized into the final stacked ensemble.
+Tarun Mandalapu wrote the report.
+
+\input{sec/1_methods}
+\input{sec/2_results}
+\input{sec/3_discussion}
+
+{
+    \small
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{main}
+}
+
+\end{document}
