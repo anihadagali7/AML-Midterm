@@ -5,6 +5,12 @@
 leader is 0.00083. Use this exact file as the next experiment's reference.
 The [current ledger](leaderboard_results.json) records the score against its hash.
 
+**New candidates:** [11_file10_legacy20.csv](11_file10_legacy20.csv) is the first
+upload recommendation. Files 12–14 are prepared reserves; choose the next upload
+after receiving file 11's score. All four Kaggle scores are currently unknown.
+See the [common comparison and SCP command](../experiments/leaderboard_sprint/RESULTS.md)
+and [four-submission queue](sprint_queue.json).
+
 The [complete common benchmark](../experiments/all_submissions/RESULTS.md) directly
 compares all ten files and both Ani winners on the same fixed splits. Use its
 tables for cross-recipe comparisons; the historical 01–06 temporal scores below
@@ -55,7 +61,7 @@ Hold **05/06** after the Ani comparison. The new chronological benchmark favors 
 
 ## Optional Ani-anchored candidates
 
-07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. Prefer 07 if spending another exploratory submission; retain Ani as the confirmed best. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
+07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. These are historical proposals; file 10 is now the confirmed best and the current sprint above determines subsequent upload choices. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
 
 | submission | mean_abs_change_from_ani | kaggle_score |
 | --- | --- | --- |

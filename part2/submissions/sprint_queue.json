@@ -1,0 +1,41 @@
+{
+  "window_start_utc": "2026-11-06T22:49:35Z",
+  "window_end_utc": "2026-11-07T00:19:35Z",
+  "maximum_additional_submissions": 4,
+  "baseline": {
+    "file": "10_ani_fast2_neighbors_half.csv",
+    "score": 0.58609
+  },
+  "queue": [
+    {
+      "file": "11_file10_legacy20.csv",
+      "status": "Requested first upload; score pending",
+      "kaggle_score": null,
+      "sha256": "26ea655feba5094c2045657d328d8a16041f74eca5106f556f1971c7e4bab635",
+      "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/11_file10_legacy20.json"
+    },
+    {
+      "file": "12_file10_sharp_trend.csv",
+      "status": "Prepared independent reserve; wait for file 11 score",
+      "kaggle_score": null,
+      "sha256": "534966af71199aa287e83931d6935601bb6674dd6064686dc885025c7c1db1cf",
+      "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/12_file10_sharp_trend.json"
+    },
+    {
+      "file": "13_file10_legacy30.csv",
+      "status": "Prepared stronger mixture; wait for file 11 score",
+      "kaggle_score": null,
+      "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+      "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/13_file10_legacy30.json"
+    },
+    {
+      "file": "14_file10_recent_tree20.csv",
+      "status": "Prepared recent-tree alternative; select next upload after file 11 result",
+      "kaggle_score": null,
+      "sha256": "87f1140ad7531ce45ab6fdfff4076880ca75ad939478d86fde551972a325e930",
+      "export_receipt": "experiments/leaderboard_sprint/recent_tree/dea847f57c7c07ee/exports/14_file10_recent_tree20.json"
+    }
+  ],
+  "confirmed_additional_uploads": 0,
+  "count_note": "No new Kaggle scores or completed uploads have yet been reported by the user."
+}

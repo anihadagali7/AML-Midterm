@@ -1,0 +1,31 @@
+time_2007_to_2008_2009 complete 59.9
+official complete 75.1
+time_2009_to_2010_2011 complete 61.6
+time_2011_to_2012_2013 complete 70.7
+group_repeat0_fold0 complete 66.6
+group_repeat0_fold1 complete 63.8
+group_repeat0_fold2 complete 65.0
+group_repeat1_fold0 complete 65.5
+group_repeat1_fold1 complete 66.0
+group_repeat1_fold2 complete 66.0
+gap_2005_to_2008_2009 complete 41.0
+gap_2007_to_2010_2011 complete 51.2
+gap_2009_to_2012_2013 complete 48.7
+strict                  official  temporal  gap_mean        cv
+model
+file10           0.557839  0.535890  0.563189  0.586891
+file11           0.554437  0.533926  0.561563  0.581169
+recent_legacy20  0.555906  0.534089  0.562311  0.582082
+recent_legacy30  0.555456  0.533613  0.562330  0.580325
+recent_tree      0.595390  0.549593  0.593329  0.598888
+tree10           0.557358  0.533970  0.561989  0.583275
+tree20           0.557730  0.532758  0.561623  0.580729
+published                  official  temporal  gap_mean        cv
+model
+file10           0.559173  0.534547  0.562306  0.585453
+file11           0.555292  0.532817  0.560799  0.579885
+recent_legacy20  0.556819  0.532986  0.561559  0.580789
+recent_legacy30  0.556193  0.532636  0.561650  0.579141
+recent_tree      0.595390  0.549593  0.593329  0.598888
+tree10           0.558565  0.532775  0.561153  0.581953
+tree20           0.558820  0.531713  0.560841  0.579541
