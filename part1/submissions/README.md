@@ -35,6 +35,8 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
+The fixed **75% anchored / 25% LDA ensemble** blend is [ready for manual upload](ready/part1_anchored75_lda25_trainval235.csv). Both components use their verified full-235 fits; preparation added no new fitting. It changes five of 312 label sets from anchored. [Recipe, verification and preparation status](../research/anchored_lda_blend_submission_v1/README.md). SHA-256: `6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b`. No score is recorded, and the current leader remains anchored 0.89636.
+
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 
 Uploads remain manual. An archived CSV or preparation manifest does not queue an upload. Earlier statements about remaining daily slots are historical and do not establish a current budget.

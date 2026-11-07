@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-07T23:04:06.424929+00:00",
+  "status": "Ready for manual upload; score unknown",
+  "recipe": "anchored75-lda25-trainval235",
+  "submission_file": "part1/submissions/ready/part1_anchored75_lda25_trainval235.csv",
+  "submission_sha256": "6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b",
+  "frozen_recipe_sha256": "84d75d9f41c25aaf61c84114565f7255ee3d49a9c2ab6c891750c9e16108b9e1",
+  "both_components_verified_labels": 235,
+  "original_masked_training_rows": 1014,
+  "rows": 312,
+  "new_model_fits": 0,
+  "anchored_saved_model_predictions_recomputed": true,
+  "lda_saved_full235_scores_reused": true,
+  "test_inputs_used_for_fit": false,
+  "test_labels_used": false,
+  "uploaded": false,
+  "kaggle_score": null,
+  "changed_labelsets_vs_anchored": 5,
+  "changed_labelsets_vs_lda": 10,
+  "minimum_score_distance_from_cutoff": 0.00040716441362315114,
+  "predicted_label_counts": {
+    "Safety": 52,
+    "Funding": 7,
+    "Efficacy": 47,
+    "Recruitment": 182,
+    "Other": 57
+  },
+  "artifacts": {
+    "prediction_scores.npz": "0e4b059936fa4906907787628b6fbc6cac29cf4f2bdd46fec5b6cbf8c760ae47",
+    "changes_vs_anchored.csv": "3ecf4cbf7d27a052d371291916773347cc456c656989e00dff458c35806503a1"
+  },
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1"
+  }
+}

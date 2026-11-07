@@ -145,3 +145,12 @@ python part1/research/anchored_neighbor_blend_v1/evidence.py retain \
 Do not rerun `register` or overwrite this frozen study. Keep the complete
 experiment history: local comparisons have not always predicted Kaggle
 ordering, as documented in the [prior study](../anchored_transductive_v1/README.md#cv-and-kaggle-ordering).
+
+## Subsequent submission preparation
+
+After reviewing these results and the strict promotion-rule distinction, the
+user authorized a manual trial of the fixed 75/25 blend. The
+[prepared full-235 submission](../anchored_lda_blend_submission_v1/README.md)
+combines the two existing final fits, with no new fitting or tuning. It changes
+five of 312 test label sets. No Kaggle score is recorded; the study's original
+evaluation and advancement outcome remain unchanged.
