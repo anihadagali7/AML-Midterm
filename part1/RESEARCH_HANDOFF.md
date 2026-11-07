@@ -10,6 +10,8 @@ On the common grouped benchmark, anchored beats current Ani LDA in both CV pools
 
 ## Next experiment
 
+The user reported **0.89935** for the fixed anchored80/Cand2 20 blend (result commit `cde3d50`, score tag `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`). A [two-batch nine-setting follow-up](experiments/blend_refinement_v2/README.md) selected an 80/20 log-odds combination: .935775 Train157 / .922429 Pooled235 / .891026 validation / .887755 chronology. It changes five predictions from the scored parent. Both means improve slightly, but Train157 wins only 3/8 repeats, so it remains exploratory. Its CSV is prepared with no reported score; all failed nearby settings are retained.
+
 The frozen testing policy and completed studies use anchored 0.89636 as their declared parent. Preserve those controls and rules, and include the submitted 0.89850 blend as a matched reference in future predeclared comparisons. Start with a small, explicit hypothesis and the saved grouped splits. Complete both pools and the supplementary checks before claiming a full comparison. A negative finding against an older parent does not establish that the same change fails against the new blend.
 
 The [LDA study catalog](research/lda_ensemble/experiments/lda_research_checkpoint_v1/index.html) retains feature tests, failed versions, and selection rules. Its [temporal and decision follow-ups](research/lda_ensemble/experiments/temporal_generalization_review_v1/report.html) tested fourteen fixed variants without a confirmed ensemble upgrade. [New directions](research/new_directions/index.html) retains 136 settings across fourteen studies; none was promoted or submitted. Consult the relevant family before repeating an idea.
