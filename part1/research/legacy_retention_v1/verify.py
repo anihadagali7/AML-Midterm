@@ -23,12 +23,17 @@ def verify():
         assert counts[study["study"]] == (study["kept_files"], study["kept_bytes"]), study
     for name, digest in record["source_files"].items():
         assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest, name
+    for name, expected in record.get("additional_retained_files", {}).items():
+        content = (ROOT / name).read_bytes()
+        assert len(content) == expected["bytes"], name
+        assert hashlib.sha256(content).hexdigest() == expected["sha256"], name
     checks = json.loads((HERE / record["pre_cleanup_rescore"]).read_text())
     assert checks["passed"] and not checks["mismatches"]
     return {
         "passed": True,
         "retained_files_checked": len(record["retained_files"]),
         "recipe_sources_checked": len(record["source_files"]),
+        "additional_records_checked": len(record.get("additional_retained_files", {})),
         "studies_checked": len(record["studies"]),
         "retained_bytes": sum(size for _, size in counts.values()),
         "pre_cleanup_checks": checks["totals"],

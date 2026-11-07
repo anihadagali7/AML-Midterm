@@ -224,7 +224,7 @@
       "before_files": 754,
       "before_bytes": 134107713,
       "kept_files": 228,
-      "kept_bytes": 7692283,
+      "kept_bytes": 7694752,
       "removed_files": 526,
       "removed_bytes": 126415430
     },
@@ -1801,8 +1801,8 @@
       "bytes": 1730
     },
     "part1/experiments/paired_recipe_cv/BENCHMARK.md": {
-      "sha256": "cfb9f9182cfd576c83fc82f6b6e2407ff1188d2a065a69c57a8f54b5153930a8",
-      "bytes": 5725
+      "sha256": "0d63d9dd397d0191c8d23ed54ae94d57a50bbb42f735b0dba575d7712d0de0b9",
+      "bytes": 8194
     },
     "part1/experiments/paired_recipe_cv/PROTOCOL.md": {
       "sha256": "19930be95b64a3c664fe12886e6fd408d7864faf04a59039b68e8d6dafc354fd",
@@ -3053,5 +3053,12 @@
     "part1/self_training.ipynb": "46f2ebaf13270aaff7b03bb63cf085fdf5e58dc5b7a8cf9b88e900bd6c8e5dd1",
     "part1/simple_benchmark.py": "25d9609e2c3587f8e4bcb6f15812e4a04edd6bb3c3a970e4c23f7936e50e676d",
     "part1/simple_models.py": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32"
-  }
+  },
+  "additional_retained_files": {
+    "part1/current_ani_pool_comparison.ipynb": {
+      "sha256": "c433b6d82cbcd5ad83d7b13888b3f56836322794770b2bee32dfa8a4500e6532",
+      "bytes": 35963
+    }
+  },
+  "documentation_reconciliation": "Preserved the shared checkout historical benchmark follow-up notes under the existing historical-policy banner. Its linked audit notebook was also retained; no model or prediction bytes changed."
 }
