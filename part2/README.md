@@ -3,6 +3,8 @@
 **Git organization:** [trial-phase commits and separately tagged submission records](submissions/HISTORY.md).
 Every confirmed numbered submission has its own record commit and annotated score
 tag; the original experiment history remains intact.
+The [main-integration mapping](MAIN_INTEGRATION.md) records the scoped replay that
+keeps Part One work separate while preserving the original score tags.
 
 **Current best: [submission 13](submissions/13_file10_legacy30.csv), Kaggle
 0.58465, user-reported first place.** This improves file 10 by 0.00144 and Ani's

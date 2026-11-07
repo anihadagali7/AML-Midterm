@@ -4,6 +4,10 @@ The work is split across trial-phase commits. Each of our six confirmed submitte
 CSVs now also has a dedicated submission-record commit and an annotated Git tag
 containing its reported Kaggle score. Lower log loss is better.
 
+For the Part Two-only replay onto `main`, see the [integration mapping](../MAIN_INTEGRATION.md).
+The original annotated score tags retain their targets; the mapping identifies
+the corresponding commits in the main-integration history.
+
 ## Original trial history
 
 | Commit | Phase | Evidence |
