@@ -1,5 +1,11 @@
 # Part Two: clinical-trial outcome prediction
 
+**Current best: [submission 10](submissions/10_ani_fast2_neighbors_half.csv), Kaggle
+0.58609.** The user reported second place behind 0.58526. This improves Ani's
+0.58688 by 0.00079 and leaves a 0.00083 gap to the reported leader. The result is
+tied to the exact CSV hash in [the ledger](submissions/leaderboard_results.json).
+Use file 10 as the baseline for the next experiment.
+
 **Direct comparison of every saved submission:** [common benchmark results](experiments/all_submissions/RESULTS.md)
 and [executed notebook](all_submissions.ipynb). All ten numbered recipes, both Ani
 winners, and the trend control use identical fitting/evaluation trials across the
@@ -7,13 +13,13 @@ ten original splits and three longer-gap checks. Files 02/03 include their full
 CatBoost ensembles. See [the comparison policy](ALL_SUBMISSIONS_PROTOCOL.md).
 File 10 beats file 02 in all six chronological windows, but has worse grouped CV
 and supplied-validation loss. The chronological uncertainty intervals include
-zero; these comparisons do not establish a new Kaggle winner.
+zero; the later Kaggle result above is separate evidence of an improvement.
 
-**Latest extension: try [submission 10](submissions/10_ani_fast2_neighbors_half.csv) first.**
+**Latest extension: submission 10 is the best scored model.**
 The recent-neighbor blend improves all six chronological windows in both
 preprocessing tracks and slightly improves grouped CV versus Ani's recency winner.
 [Submission 09](submissions/09_ani_replace_knn5.csv) has a larger original-window
-gain, with a small CV regression. **Their Kaggle scores are unknown.** See the
+gain, with a small CV regression. **File 09's Kaggle score is unknown.** See the
 [new findings](experiments/ani_extensions/RESULTS.md), [source-embedded notebook](ani_extensions.ipynb),
 and [separate extension protocol](EXTENSION_PROTOCOL.md). Native replay and all
 800 extension evaluations are checked; all 16 tests pass.
@@ -26,9 +32,9 @@ It preserves all unsuccessful experiments and keeps unknown Kaggle scores explic
 Use `make -C part2 improve-test` and `make -C part2 improve-verify` from the repository
 root; create `.venv` with `part2/requirements-benchmark.txt` first.
 
-**Latest recommendation: hold 05/06.** Ani's published 0.58688 model has now been reproduced. Use the [repeatable local benchmark](LOCAL_TESTING.md), [executed benchmark notebook](local_benchmark.ipynb), and [complete results](experiments/local_benchmark/RESULTS.md) for new comparisons. The original selection below is historical. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
+**Historical recommendation: hold 05/06.** Ani's published 0.58688 model was reproduced. The [original benchmark](experiments/local_benchmark/RESULTS.md) and selection below are historical; the current best is file 10 at 0.58609. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
 
-Prepared four initial manual Kaggle submissions and two follow-ups. **Lower log loss is better.** The best reported reference score is **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**, still 0.00305 behind the reference. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).
+The initial four manual submissions and two follow-ups are preserved below. **Lower log loss is better.** Their reference was **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**. File 10 later reached **0.58609**. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).
 
 ## Historical evaluation protocol for submissions 01–06
 

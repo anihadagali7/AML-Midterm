@@ -1,5 +1,10 @@
 # Part Two manual Kaggle submissions
 
+**Current best: file 10, Kaggle 0.58609.** The user reported second place behind
+0.58526. The improvement over Ani's 0.58688 is 0.00079; the gap to the reported
+leader is 0.00083. Use this exact file as the next experiment's reference.
+The [current ledger](leaderboard_results.json) records the score against its hash.
+
 The [complete common benchmark](../experiments/all_submissions/RESULTS.md) directly
 compares all ten files and both Ani winners on the same fixed splits. Use its
 tables for cross-recipe comparisons; the historical 01–06 temporal scores below
@@ -7,27 +12,30 @@ used a different holdout and should not be compared with the newer scores.
 On the common strict benchmark, file 10 improves file 02's chronological mean
 from 0.540324 to 0.535890 and longer-gap mean from 0.568506 to 0.563189, while
 grouped CV worsens from 0.578048 to 0.586891. The chronological intervals include
-zero; file 10 remains an exploratory submission.
+zero; the later Kaggle score provides separate evidence of an improvement.
 
-**Try [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv) first.**
+**Best scored file: [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv).**
 It beats Ani's recency model on all six chronological windows in both preprocessing
 tracks, with a small grouped-CV improvement. [09_ani_replace_knn5.csv](09_ani_replace_knn5.csv)
 has the larger gain on the original three windows, but a small CV regression.
-Both are ready for manual upload and **neither has a known Kaggle score**.
-The chronological uncertainty intervals include zero; local gains need Kaggle confirmation.
+File 10 scored **0.58609**; file 09 remains unscored.
+The chronological uncertainty intervals remain unchanged by the Kaggle result.
 
 | Candidate | Strict chronological mean | Strict grouped CV | Larger-gap mean | Kaggle |
 | --- | ---: | ---: | ---: | --- |
 | Ani recency reference | 0.537446 | 0.587411 | 0.564681 | 0.58688 |
 | 09: sharper recent kNN | 0.535213 | 0.589230 | 0.563657 | Unknown |
-| 10: recent-neighbor blend | 0.535890 | 0.586891 | 0.563189 | Unknown |
+| 10: recent-neighbor blend | 0.535890 | 0.586891 | 0.563189 | **0.58609** |
 
 See [full findings](../experiments/ani_extensions/RESULTS.md) and the
 [recipes, checksums and native bundle manifest](ani_extensions_manifest.json).
+The export manifest is frozen at its pre-Kaggle state; the current ledger records
+later scores. The all-submission benchmark retains its original ledger snapshot
+so local fitting and selection evidence remain reproducible.
 The [previous research round](../experiments/stack_improvements/RESULTS.md) and its
 [empty promotion manifest](stack_improvements_manifest.json) remain historical records.
 
-Lower log loss is better. Best reported reference: **0.58688**. Our 03 scored **0.59562**, then 02 improved to **0.58993**. Initial 01/04 remain unscored. **Hold 05/06; use the new fixed benchmark for future comparisons.**
+Historical results below used Ani's **0.58688** reference. Our 03 scored **0.59562**, then 02 improved to **0.58993**. File 10 is now the best scored model at **0.58609**. Initial 01/04 remain unscored. **Hold 05/06; use the fixed benchmark for future comparisons.**
 
 | submission | validation_logloss | temporal_logloss | kaggle_score |
 | --- | --- | --- | --- |

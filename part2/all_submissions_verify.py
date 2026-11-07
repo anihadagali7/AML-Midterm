@@ -21,10 +21,24 @@ def verify():
     assert digest(ROOT / "ALL_SUBMISSIONS_PROTOCOL.md") == manifest["policy_sha256"]
     for category in ["source_sha256", "input_sha256"]:
         for name, expected in manifest[category].items():
-            assert digest(ROOT / name) == expected, name
+            path = ROOT / name
+            if name == "submissions/leaderboard_results.json" and digest(path) != expected:
+                # Later leaderboard results do not change the frozen benchmark inputs.
+                snapshot = out / "input_snapshots" / name
+                assert digest(snapshot) == expected, name
+                before, after = json.loads(snapshot.read_text()), json.loads(path.read_text())
+                for key, value in before.items():
+                    if key == "submissions":
+                        assert all(after[key][file] == record for file, record in value.items())
+                    else:
+                        assert after[key] == value
+            else:
+                assert digest(path) == expected, name
     ledger = json.loads((ROOT / "submissions/leaderboard_results.json").read_text())
     for entry in ledger["ani_winners"].values():
         assert digest(ROOT / "submissions" / entry["submission"]) == entry["submission_sha256"]
+    for filename, entry in ledger["submissions"].items():
+        assert digest(ROOT / "submissions" / filename) == entry["sha256"]
     count = 0; reused = 0; native = 0
     for is_gap, spec in [(False, protocol), (True, gaps)]:
         parent = out / "gaps" if is_gap else out
@@ -96,6 +110,7 @@ def verify():
         deserialized_original_csv_byte_replay=byte_replay,
         reporting_source_sha256={name: digest(ROOT / name) for name in
             ["all_submissions_verify.py", "all_submissions_report.py"]},
+        current_leaderboard_sha256=digest(ROOT / "submissions/leaderboard_results.json"),
         new_kaggle_submissions=0)
     (out / "verification.json").write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result, indent=2))

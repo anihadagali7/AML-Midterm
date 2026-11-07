@@ -4,7 +4,7 @@
   "prior_reported_best": 0.59528,
   "ani_winners": {
     "ani_first": {
-      "kaggle_score": 0.58810,
+      "kaggle_score": 0.5881,
       "source": "Score reported in Ani commit message; not a fresh Kaggle API query.",
       "source_commit": "628088a3be8050b0a20d8719991ec8f517ad8649",
       "submission": "../experiments/ani_comparison/source/part2_first_submission.csv",
@@ -37,6 +37,23 @@
       "sha256": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
       "kaggle_score": 0.58993,
       "source": "User-reported Kaggle result"
+    },
+    "10_ani_fast2_neighbors_half.csv": {
+      "sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+      "kaggle_score": 0.58609,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T19:15:50.519955+00:00",
+      "reported_rank": 2,
+      "reported_leader_score": 0.58526
     }
+  },
+  "current_best": {
+    "submission": "10_ani_fast2_neighbors_half.csv",
+    "sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+    "kaggle_score": 0.58609,
+    "improvement_over_ani": 0.00079,
+    "gap_to_reported_leader": 0.00083,
+    "reported_rank": 2,
+    "source": "User-reported score and leaderboard position"
   }
 }
