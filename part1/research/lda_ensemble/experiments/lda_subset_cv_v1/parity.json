@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "latest_revision_control_parity": true,
+  "query_batch_invariance": true,
+  "subset_group_purges_verified": true,
+  "each_gold_group_excluded_once": true,
+  "head_training_boundaries_verified": true
+}

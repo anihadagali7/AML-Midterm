@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ani__gold_empirical",
+    "parent": "ani",
+    "block": "gold_empirical",
+    "description": "('gold', 'empirical')"
+  },
+  {
+    "name": "ensemble__gold_empirical",
+    "parent": "ensemble",
+    "block": "gold_empirical",
+    "description": "('gold', 'empirical')"
+  },
+  {
+    "name": "ani__gold_uniform",
+    "parent": "ani",
+    "block": "gold_uniform",
+    "description": "('gold', 'uniform')"
+  },
+  {
+    "name": "ensemble__gold_uniform",
+    "parent": "ensemble",
+    "block": "gold_uniform",
+    "description": "('gold', 'uniform')"
+  },
+  {
+    "name": "ani__augmented_empirical",
+    "parent": "ani",
+    "block": "augmented_empirical",
+    "description": "('augmented', 'empirical')"
+  },
+  {
+    "name": "ensemble__augmented_empirical",
+    "parent": "ensemble",
+    "block": "augmented_empirical",
+    "description": "('augmented', 'empirical')"
+  },
+  {
+    "name": "ani__augmented_uniform",
+    "parent": "ani",
+    "block": "augmented_uniform",
+    "description": "('augmented', 'uniform')"
+  },
+  {
+    "name": "ensemble__augmented_uniform",
+    "parent": "ensemble",
+    "block": "augmented_uniform",
+    "description": "('augmented', 'uniform')"
+  }
+]

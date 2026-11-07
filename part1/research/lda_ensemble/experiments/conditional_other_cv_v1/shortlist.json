@@ -1,0 +1,18 @@
+{
+  "names": [
+    "ani__global_lda_empirical",
+    "ensemble__global_lda_empirical",
+    "ani__global_lda_balanced",
+    "ensemble__global_lda_balanced",
+    "ani__conditional_lda_empirical",
+    "ensemble__conditional_lda_empirical",
+    "ani__conditional_lda_balanced",
+    "ensemble__conditional_lda_balanced",
+    "ani__conditional_lr_empirical",
+    "ensemble__conditional_lr_empirical",
+    "ani__conditional_lr_balanced",
+    "ensemble__conditional_lr_balanced"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

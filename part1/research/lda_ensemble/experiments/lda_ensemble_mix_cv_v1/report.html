@@ -1,0 +1,162 @@
+<p><strong>Retention update:</strong> This is a historical report. Code, settings and summary results are retained. Failed-run detail outputs were discarded; detailed evidence is kept for leaders and matched references. Historical audit counts describe the original checks.</p><!doctype html><meta charset="utf-8"><title>LDA ensemble mixes</title><style>body{font:16px system-ui;max-width:1400px;margin:40px auto;padding:0 20px;line-height:1.5}table{border-collapse:collapse;font-size:14px}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}th{background:#eee}</style><h1>Retesting ensemble partners after the LDA revision</h1><p>Five fixed ensemble mixes using exact source predictions from the same grouped folds. Confirmation is against the latest LDA 70/15/15 ensemble; the original-parent columns are historical references. Latest paired differences and wins are in final_comparison.csv. All source files are hash-guarded; the component decomposition reconstructs both controls. No new fitting or outer-label-dependent mixing.</p><h2>Eight-repeat confirmation</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train F1</th>
+      <th>train delta</th>
+      <th>train wins</th>
+      <th>pooled F1</th>
+      <th>pooled delta</th>
+      <th>pooled wins</th>
+      <th>qualifies</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ensemble__tri25</td>
+      <td>0.933121</td>
+      <td>0.007431</td>
+      <td>7</td>
+      <td>0.919947</td>
+      <td>0.003457</td>
+      <td>5</td>
+      <td>False</td>
+      <td>0.876068</td>
+      <td>0.884354</td>
+    </tr>
+    <tr>
+      <td>ensemble__tri40</td>
+      <td>0.930998</td>
+      <td>0.005308</td>
+      <td>5</td>
+      <td>0.918174</td>
+      <td>0.001684</td>
+      <td>5</td>
+      <td>False</td>
+      <td>0.867521</td>
+      <td>0.880952</td>
+    </tr>
+    <tr>
+      <td>ensemble__tri15</td>
+      <td>0.931794</td>
+      <td>0.006104</td>
+      <td>6</td>
+      <td>0.918174</td>
+      <td>0.001684</td>
+      <td>4</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>ensemble__svm15</td>
+      <td>0.927017</td>
+      <td>0.001327</td>
+      <td>3</td>
+      <td>0.918262</td>
+      <td>0.001773</td>
+      <td>6</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>ensemble__partners25</td>
+      <td>0.924894</td>
+      <td>-0.000796</td>
+      <td>3</td>
+      <td>0.915780</td>
+      <td>-0.000709</td>
+      <td>4</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><p>Advancement requires positive paired means and at least five of eight repeat wins in both pools. Supplementary results marked diagnostic in summary.json do not establish a confirmed improvement. Chronology pools 98 predictions; validation uses the original 157-label fit.</p><h2>Complete three-repeat screen</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train F1</th>
+      <th>train delta</th>
+      <th>train wins</th>
+      <th>pooled F1</th>
+      <th>pooled delta</th>
+      <th>pooled wins</th>
+      <th>qualifies</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ensemble__tri40</td>
+      <td>0.932059</td>
+      <td>0.004954</td>
+      <td>2</td>
+      <td>0.914184</td>
+      <td>0.005437</td>
+      <td>3</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__tri25</td>
+      <td>0.930644</td>
+      <td>0.003539</td>
+      <td>2</td>
+      <td>0.917021</td>
+      <td>0.008274</td>
+      <td>3</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__tri15</td>
+      <td>0.933475</td>
+      <td>0.006369</td>
+      <td>2</td>
+      <td>0.913239</td>
+      <td>0.004492</td>
+      <td>2</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__partners25</td>
+      <td>0.928521</td>
+      <td>0.001415</td>
+      <td>2</td>
+      <td>0.912057</td>
+      <td>0.003310</td>
+      <td>3</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__svm15</td>
+      <td>0.928521</td>
+      <td>0.001415</td>
+      <td>1</td>
+      <td>0.911348</td>
+      <td>0.002600</td>
+      <td>3</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table><h2>No metadata-only fits</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table><p>All labels and folds are reused development data. Negative results apply to these encodings and the fixed feature weight; they do not rule out every use of a raw field. No Kaggle improvement or final model promotion is claimed.</p><p><a href="protocol.json">Protocol</a> · <a href="verification.json">Verification</a> · <a href="summary.json">Per-trial corrections and regressions (summary retained)</a> · <a href="summary.json">Per-label results (summary retained)</a> · <a href="summary.json">Full results</a></p>

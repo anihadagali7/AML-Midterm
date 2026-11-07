@@ -1,0 +1,22 @@
+{
+  "names": [
+    "ani__pca30_final",
+    "ensemble__pca30_final",
+    "ani__pca30_joint",
+    "ensemble__pca30_joint",
+    "ani__partial_white_final",
+    "ensemble__partial_white_final",
+    "ani__partial_white_joint",
+    "ensemble__partial_white_joint",
+    "ani__remove1_final",
+    "ensemble__remove1_final",
+    "ani__remove1_joint",
+    "ensemble__remove1_joint",
+    "ani__remove3_final",
+    "ensemble__remove3_final",
+    "ani__remove3_joint",
+    "ensemble__remove3_joint"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

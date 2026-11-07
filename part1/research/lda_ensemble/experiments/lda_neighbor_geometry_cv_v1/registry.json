@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ani__pca30_final",
+    "parent": "ani",
+    "block": "pca30_final",
+    "description": "pca30 neighbor geometry during final"
+  },
+  {
+    "name": "ensemble__pca30_final",
+    "parent": "ensemble",
+    "block": "pca30_final",
+    "description": "pca30 neighbor geometry during final"
+  },
+  {
+    "name": "ani__pca30_joint",
+    "parent": "ani",
+    "block": "pca30_joint",
+    "description": "pca30 neighbor geometry during joint"
+  },
+  {
+    "name": "ensemble__pca30_joint",
+    "parent": "ensemble",
+    "block": "pca30_joint",
+    "description": "pca30 neighbor geometry during joint"
+  },
+  {
+    "name": "ani__partial_white_final",
+    "parent": "ani",
+    "block": "partial_white_final",
+    "description": "partial_white neighbor geometry during final"
+  },
+  {
+    "name": "ensemble__partial_white_final",
+    "parent": "ensemble",
+    "block": "partial_white_final",
+    "description": "partial_white neighbor geometry during final"
+  },
+  {
+    "name": "ani__partial_white_joint",
+    "parent": "ani",
+    "block": "partial_white_joint",
+    "description": "partial_white neighbor geometry during joint"
+  },
+  {
+    "name": "ensemble__partial_white_joint",
+    "parent": "ensemble",
+    "block": "partial_white_joint",
+    "description": "partial_white neighbor geometry during joint"
+  },
+  {
+    "name": "ani__remove1_final",
+    "parent": "ani",
+    "block": "remove1_final",
+    "description": "remove1 neighbor geometry during final"
+  },
+  {
+    "name": "ensemble__remove1_final",
+    "parent": "ensemble",
+    "block": "remove1_final",
+    "description": "remove1 neighbor geometry during final"
+  },
+  {
+    "name": "ani__remove1_joint",
+    "parent": "ani",
+    "block": "remove1_joint",
+    "description": "remove1 neighbor geometry during joint"
+  },
+  {
+    "name": "ensemble__remove1_joint",
+    "parent": "ensemble",
+    "block": "remove1_joint",
+    "description": "remove1 neighbor geometry during joint"
+  },
+  {
+    "name": "ani__remove3_final",
+    "parent": "ani",
+    "block": "remove3_final",
+    "description": "remove3 neighbor geometry during final"
+  },
+  {
+    "name": "ensemble__remove3_final",
+    "parent": "ensemble",
+    "block": "remove3_final",
+    "description": "remove3 neighbor geometry during final"
+  },
+  {
+    "name": "ani__remove3_joint",
+    "parent": "ani",
+    "block": "remove3_joint",
+    "description": "remove3 neighbor geometry during joint"
+  },
+  {
+    "name": "ensemble__remove3_joint",
+    "parent": "ensemble",
+    "block": "remove3_joint",
+    "description": "remove3 neighbor geometry during joint"
+  }
+]

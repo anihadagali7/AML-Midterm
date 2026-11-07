@@ -1,0 +1,218 @@
+{
+  "studies": [
+    {
+      "study": "conditional_other_cv_v1",
+      "question": "Binary and Recruitment-conditional Other heads",
+      "recipes": 12,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "lda_neighbor_geometry_cv_v1",
+      "question": "PCA, partial whitening and common-component removal",
+      "recipes": 16,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "lda_subset_cv_v1",
+      "question": "Fully refitted grouped subset averages",
+      "recipes": 8,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "recruitment_novelty_cv_v1",
+      "question": "Gold-reference distance features for Recruitment+Other",
+      "recipes": 8,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "lda_ensemble_mix_cv_v1",
+      "question": "Five fixed ensemble partner mixes",
+      "recipes": 5,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "joint_lda_reason_cv_v1",
+      "question": "Joint-label-set shrinkage LDA",
+      "recipes": 8,
+      "confirmed_against_latest_parent": 0
+    },
+    {
+      "study": "lda_feature_retry_cv_v1",
+      "question": "Protein-target and molecular-fingerprint retries",
+      "recipes": 12,
+      "confirmed_against_latest_parent": 0
+    }
+  ],
+  "recipes": 69,
+  "confirmed": [],
+  "comparator": "Matching latest LDA source or 70/15/15 ensemble",
+  "verification_totals": {
+    "repeat_records": 2144,
+    "fold_arrays": 10720,
+    "supplementary_records": 116
+  },
+  "labelset_diagnostic": [
+    {
+      "actual_labels": "Other",
+      "trials": 26,
+      "mean_sample_f1": 0.6810897435897435,
+      "exact_set_accuracy": 0.6201923076923077,
+      "other_prediction_rate": 0.7115384615384616,
+      "mean_other_decision_score": 0.6716947174600612,
+      "contribution_to_total_f1_loss": 0.035283687943262414
+    },
+    {
+      "actual_labels": "Recruitment + Other",
+      "trials": 9,
+      "mean_sample_f1": 0.6712962962962963,
+      "exact_set_accuracy": 0.041666666666666664,
+      "other_prediction_rate": 0.041666666666666664,
+      "mean_other_decision_score": 0.13503728073070398,
+      "contribution_to_total_f1_loss": 0.012588652482269506
+    },
+    {
+      "actual_labels": "Funding",
+      "trials": 7,
+      "mean_sample_f1": 0.6666666666666666,
+      "exact_set_accuracy": 0.5714285714285714,
+      "other_prediction_rate": 0.4107142857142857,
+      "mean_other_decision_score": 0.4347373066473922,
+      "contribution_to_total_f1_loss": 0.009929078014184398
+    },
+    {
+      "actual_labels": "Efficacy",
+      "trials": 26,
+      "mean_sample_f1": 0.9262820512820512,
+      "exact_set_accuracy": 0.8942307692307693,
+      "other_prediction_rate": 0.038461538461538464,
+      "mean_other_decision_score": 0.08924864218298084,
+      "contribution_to_total_f1_loss": 0.008156028368794326
+    },
+    {
+      "actual_labels": "Safety",
+      "trials": 20,
+      "mean_sample_f1": 0.9416666666666667,
+      "exact_set_accuracy": 0.8875,
+      "other_prediction_rate": 0.06875,
+      "mean_other_decision_score": 0.11470600238801168,
+      "contribution_to_total_f1_loss": 0.004964539007092199
+    },
+    {
+      "actual_labels": "Recruitment",
+      "trials": 137,
+      "mean_sample_f1": 0.9936131386861314,
+      "exact_set_accuracy": 0.9863138686131386,
+      "other_prediction_rate": 0.006386861313868613,
+      "mean_other_decision_score": 0.03272521231491466,
+      "contribution_to_total_f1_loss": 0.003723404255319149
+    },
+    {
+      "actual_labels": "Safety + Efficacy",
+      "trials": 5,
+      "mean_sample_f1": 0.825,
+      "exact_set_accuracy": 0.475,
+      "other_prediction_rate": 0.0,
+      "mean_other_decision_score": 0.04709305649446653,
+      "contribution_to_total_f1_loss": 0.003723404255319149
+    },
+    {
+      "actual_labels": "Funding + Recruitment",
+      "trials": 5,
+      "mean_sample_f1": 1.0,
+      "exact_set_accuracy": 1.0,
+      "other_prediction_rate": 0.0,
+      "mean_other_decision_score": 0.03304855861753009,
+      "contribution_to_total_f1_loss": 0.0
+    }
+  ],
+  "comparison": [
+    {
+      "model": "Current LDA 70/15/15 ensemble",
+      "train": 0.9317940552016986,
+      "pooled": 0.9216312056737589,
+      "validation": 0.9059829059829061,
+      "chronology": 0.8775510204081632
+    },
+    {
+      "model": "lda_ensemble_mix_cv_v1 / ensemble__tri25",
+      "train": 0.9331210191082803,
+      "pooled": 0.9199468085106383,
+      "validation": 0.876068376068376,
+      "chronology": 0.8843537414965985
+    },
+    {
+      "model": "lda_subset_cv_v1 / ensemble__half_all",
+      "train": 0.9315286624203822,
+      "pooled": 0.9214539007092198,
+      "validation": 0.9102564102564102,
+      "chronology": 0.8775510204081632
+    },
+    {
+      "model": "recruitment_novelty_cv_v1 / ensemble__lr_empirical",
+      "train": 0.9312632696390659,
+      "pooled": 0.9212765957446808,
+      "validation": 0.9059829059829061,
+      "chronology": 0.8775510204081632
+    }
+  ],
+  "source_sha256": {
+    "conditional_other_cv_v1/protocol.json": "1696edab98ce5b1237f464f7a6c125db960a4cd836e330f2efb6a2bdd89e35fd",
+    "conditional_other_cv_v1/registry.json": "e3a7643aeb3f0c00612adf2ab7ec181e8508e7852e49875ffe954edd24596799",
+    "conditional_other_cv_v1/confirmation.json": "c73755c52ef87534c6d034b5ea0a53f5ac36c6525282429e3fc75719ab6fd72e",
+    "conditional_other_cv_v1/summary.json": "8830cdc2512edeedf7c75f21dc782a6117b5a533f96ff18a766ab0f834b29519",
+    "conditional_other_cv_v1/verification.json": "42f90bc135422ea0a92721741ba8cd8f26417771e65b97981ab7ba88181b3063",
+    "conditional_other_cv_v1/independent_verification.json": "d3f4c1255251599cdbf23599355d14c5d521766b9303e5781a6286e884a19e2c",
+    "conditional_other_cv_v1/report.html": "7caf6e9d689e5e413d46565e180048f1a5d049bdb75b497bf56bb8dc53eb4bed",
+    "lda_neighbor_geometry_cv_v1/protocol.json": "b4491a80ef8ad6fce55c3bf5c9673285de3188b98f235a8aa7aaaab2293646ad",
+    "lda_neighbor_geometry_cv_v1/registry.json": "94414f8146fe77c571fbfee0a667c930946f3be79a0dbee80987f40f664af004",
+    "lda_neighbor_geometry_cv_v1/confirmation.json": "8767decfe60c71fe454d6fa64452f4b99a4cacc630d67a4e541abf7013254cd7",
+    "lda_neighbor_geometry_cv_v1/summary.json": "f1544cb0bbf2cf8c449fab09ee4cace418d371b70263b80e2872dfa8637bb5e1",
+    "lda_neighbor_geometry_cv_v1/verification.json": "5318505d826d23137a32fd62ef6a6fd59738f7c5ba218526c01e24c6aff72534",
+    "lda_neighbor_geometry_cv_v1/independent_verification.json": "f14f14f8c23ddacf8b3b7982b91598a3b16dbcdcef54156b519496d6ccebd28e",
+    "lda_neighbor_geometry_cv_v1/report.html": "049d41a7fff77077c89e5ba8a73ef3cbfd8389c1885704ec0cd2e3efde288d2f",
+    "lda_subset_cv_v1/protocol.json": "e4a1b81227b535b43f449c9959362790a7613b71ced23b9ba652544c87b4538e",
+    "lda_subset_cv_v1/registry.json": "a6f24ee47eacd86e59645287deddff461258627b59f293f92696ada944da4207",
+    "lda_subset_cv_v1/confirmation.json": "a52f6770429562b9c5b1090aadf066e8b5354279571a310ad92fc7f6da133503",
+    "lda_subset_cv_v1/summary.json": "47348f004414d0fe83babe44f5a2fcd96e5484da59eec622a2a2158df481e18a",
+    "lda_subset_cv_v1/verification.json": "d4dc5ccbbeccb8e693b13de38250924253a625579bbe4ce17045223ec9dc3f61",
+    "lda_subset_cv_v1/independent_verification.json": "3ec82bdde22840775c5bcc0bf526d3e6eb15d2f74651ff858afbee10483f6ac0",
+    "lda_subset_cv_v1/report.html": "d56400591045f0870ae19936946a9bbe6118ad1bde9c55855444ab8867caefbc",
+    "recruitment_novelty_cv_v1/protocol.json": "d0771a90ee8aec9527581a42e18616ef8b689f54c867fc058ad062a14af79523",
+    "recruitment_novelty_cv_v1/registry.json": "758ac0491c0ac1afcbeb3ebc2115d8af077beb763651a60a1969ae5f38bbfeb2",
+    "recruitment_novelty_cv_v1/confirmation.json": "12ea060419e8624cb2e4b4f18d13ca3a41240238ed75e4a3f5c544b36a185ec4",
+    "recruitment_novelty_cv_v1/summary.json": "455e961d88d1c61f9b36d213f7edf8d4322c5c6a0a592288084e7e0fcf6c7527",
+    "recruitment_novelty_cv_v1/verification.json": "e39e2d8c3d4301151f2150627747ed390315968a7ddda09b5467b0ed544591c2",
+    "recruitment_novelty_cv_v1/independent_verification.json": "3ec82bdde22840775c5bcc0bf526d3e6eb15d2f74651ff858afbee10483f6ac0",
+    "recruitment_novelty_cv_v1/report.html": "71d71196c00d8d09a644ecdaf3b8dd19d66efc4afefc22b16c6453f5f6a9503d",
+    "lda_ensemble_mix_cv_v1/protocol.json": "7235ab9bddd09f1ad8ae727f369606b478209bafc64e7bbe2b232580bf3fc357",
+    "lda_ensemble_mix_cv_v1/registry.json": "3488386ef024713ccd292aa032b075c0a1fdfe2b06eb3b6690a39588ef924be5",
+    "lda_ensemble_mix_cv_v1/confirmation.json": "5500a5a4b9530f83160581de96beb8755198fc170f2adfbd11e9c319db101d1d",
+    "lda_ensemble_mix_cv_v1/summary.json": "86d4b399582f5083183c1ffb1354164a4ba732df96e150f9e41509a6756f4f3d",
+    "lda_ensemble_mix_cv_v1/verification.json": "257854f840cf430b76e84b2a18a3b7843f5ec386f8bebd947b51a05c7692aafd",
+    "lda_ensemble_mix_cv_v1/independent_verification.json": "a8e03398b3542a5f087414f1216bd1065eb43af9faf21227fcc016c084240601",
+    "lda_ensemble_mix_cv_v1/report.html": "b4467e69471ef151d22e221aa384b19370ab71d38ed7b186d8652faabd10bf18",
+    "joint_lda_reason_cv_v1/protocol.json": "fdd01bf32d7e6d82ac69b89740643479e604a396927f87c03b423d730b385c58",
+    "joint_lda_reason_cv_v1/registry.json": "51539465a410f13938e76a40c872dea25ec827a6549f691eab245e9d65f01c64",
+    "joint_lda_reason_cv_v1/confirmation.json": "3f44d5f691afa87ffc9b72d7c3c23f383bb902dd92c0a79654190f11e45b34c7",
+    "joint_lda_reason_cv_v1/summary.json": "c857f62f06d60ebb43ff6448b329dd2ea71e2ecd970ba1ac97e45bce2a366620",
+    "joint_lda_reason_cv_v1/verification.json": "d97a7c8e157581492cc323a91983c2eec51c377154c94696a3dfa70c324ea99a",
+    "joint_lda_reason_cv_v1/independent_verification.json": "3ec82bdde22840775c5bcc0bf526d3e6eb15d2f74651ff858afbee10483f6ac0",
+    "joint_lda_reason_cv_v1/report.html": "e05cb311d92afc365edbb0e8ef3e4446961a866e370907b6d804066774762b79",
+    "lda_feature_retry_cv_v1/protocol.json": "18f0e252409a4106c9ea29d3402a071b33660df4a668cbacf61a52feb100ea8b",
+    "lda_feature_retry_cv_v1/registry.json": "bc11edc6101f4365fb16963f3e1d7c212a15e98f4968ca04c9265126215d4937",
+    "lda_feature_retry_cv_v1/confirmation.json": "df19c09831e8528004301a11512acd09ef91b7d8d94046072e59e319552029c6",
+    "lda_feature_retry_cv_v1/summary.json": "cc76e193fa52dd2c573c130fc609cd7157f67c1886307baa93291324625a6667",
+    "lda_feature_retry_cv_v1/verification.json": "4720a27f42ef7d0081ea887a73f0bd77749b4b5a09c6435100c1f1556b462010",
+    "lda_feature_retry_cv_v1/independent_verification.json": "d3f4c1255251599cdbf23599355d14c5d521766b9303e5781a6286e884a19e2c",
+    "lda_feature_retry_cv_v1/report.html": "6ac4d999da0b263a2db05ee95eb9ed39b4e97f06326f6984fce85a613c1338e1",
+    "ani_lda_revision_cv_v1/pooled3/ensemble__revision_full.npz": "9103ed86ae148cd6299cee2f03be1fd1d227e6d2ae04097cc588db051c4afdd6",
+    "ani_lda_revision_cv_v1/pooled5/ensemble__revision_full.npz": "7ddd76214064dff3f3202cd8be141bfb403f78a829b33f7bbf1e4eb692d004b9"
+  },
+  "builder_sha256": "f0f0839917bf96b0a37465b764b7a9bc01a03621b4b0fc93b08442c8942801dd",
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "full235_refit": false,
+  "submissions_created": false,
+  "model_promoted": false,
+  "interpretation": "Development-CV comparisons using reused folds and labels; descriptive error cohorts and selected examples are not independent evidence."
+}

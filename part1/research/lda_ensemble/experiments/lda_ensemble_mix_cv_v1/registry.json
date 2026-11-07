@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ensemble__tri25",
+    "parent": "ensemble",
+    "block": "tri25",
+    "description": "LDA Ani / tri / SVM weights (0.75, 0.25, 0.0)"
+  },
+  {
+    "name": "ensemble__tri40",
+    "parent": "ensemble",
+    "block": "tri40",
+    "description": "LDA Ani / tri / SVM weights (0.6, 0.4, 0.0)"
+  },
+  {
+    "name": "ensemble__tri15",
+    "parent": "ensemble",
+    "block": "tri15",
+    "description": "LDA Ani / tri / SVM weights (0.85, 0.15, 0.0)"
+  },
+  {
+    "name": "ensemble__svm15",
+    "parent": "ensemble",
+    "block": "svm15",
+    "description": "LDA Ani / tri / SVM weights (0.85, 0.0, 0.15)"
+  },
+  {
+    "name": "ensemble__partners25",
+    "parent": "ensemble",
+    "block": "partners25",
+    "description": "LDA Ani / tri / SVM weights (0.5, 0.25, 0.25)"
+  }
+]

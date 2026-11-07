@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__augmented_none",
+    "parent": "ani",
+    "block": "augmented_none",
+    "description": "('augmented', 'none')"
+  },
+  {
+    "name": "ensemble__augmented_none",
+    "parent": "ensemble",
+    "block": "augmented_none",
+    "description": "('augmented', 'none')"
+  },
+  {
+    "name": "ani__augmented_drug_targets",
+    "parent": "ani",
+    "block": "augmented_drug_targets",
+    "description": "('augmented', 'drug_targets')"
+  },
+  {
+    "name": "ensemble__augmented_drug_targets",
+    "parent": "ensemble",
+    "block": "augmented_drug_targets",
+    "description": "('augmented', 'drug_targets')"
+  },
+  {
+    "name": "ani__augmented_morgan",
+    "parent": "ani",
+    "block": "augmented_morgan",
+    "description": "('augmented', 'morgan')"
+  },
+  {
+    "name": "ensemble__augmented_morgan",
+    "parent": "ensemble",
+    "block": "augmented_morgan",
+    "description": "('augmented', 'morgan')"
+  },
+  {
+    "name": "ani__goldhalf_none",
+    "parent": "ani",
+    "block": "goldhalf_none",
+    "description": "('goldhalf', 'none')"
+  },
+  {
+    "name": "ensemble__goldhalf_none",
+    "parent": "ensemble",
+    "block": "goldhalf_none",
+    "description": "('goldhalf', 'none')"
+  },
+  {
+    "name": "ani__goldhalf_drug_targets",
+    "parent": "ani",
+    "block": "goldhalf_drug_targets",
+    "description": "('goldhalf', 'drug_targets')"
+  },
+  {
+    "name": "ensemble__goldhalf_drug_targets",
+    "parent": "ensemble",
+    "block": "goldhalf_drug_targets",
+    "description": "('goldhalf', 'drug_targets')"
+  },
+  {
+    "name": "ani__goldhalf_morgan",
+    "parent": "ani",
+    "block": "goldhalf_morgan",
+    "description": "('goldhalf', 'morgan')"
+  },
+  {
+    "name": "ensemble__goldhalf_morgan",
+    "parent": "ensemble",
+    "block": "goldhalf_morgan",
+    "description": "('goldhalf', 'morgan')"
+  }
+]
