@@ -1,5 +1,10 @@
 # Part Two: clinical-trial outcome prediction
 
+**Model development:** [why we chose these models and how tuning led to file 13](MODEL_DEVELOPMENT.md).
+Read this consolidated guide for the hypotheses, unsuccessful trials, benchmark
+decisions, Kaggle feedback, final recipe, and data-use methodology, with links to
+the detailed evidence for each phase.
+
 **Git organization:** [trial-phase commits and separately tagged submission records](submissions/HISTORY.md).
 Every confirmed numbered submission has its own record commit and annotated score
 tag; the original experiment history remains intact.
