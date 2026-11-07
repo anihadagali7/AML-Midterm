@@ -1,0 +1,32 @@
+{
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "source_sha256": {
+    "ani_models.py": "13639f92744f3d4a1fc38113861bb15cc85d32e26964cf1e5f774a8974956c53",
+    "benchmark_models.py": "719918c15adb87b3797a1b57a7ce15c0e61e49535988994198acb26df76c741a",
+    "benchmark_protocol.py": "e5eb9190d2681607fc2d5cd305f68c6c63158ab1dd248b49d9ecee8772102ebe",
+    "experiments.py": "7346197ed8466c54bc4caad0ad31f4570e8838a9aa81663eab01903f901e4a70",
+    "local_benchmark.py": "67ab861407c66f3572d8916ed933f04ce37a55c462ce00ebfecdf02a5bb4deae"
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0"
+  },
+  "models": [
+    "ani_stack",
+    "ani_meta_C0.3",
+    "ani_phase3_trend",
+    "our_linear",
+    "blend_ani75_linear25",
+    "blend_ani50_linear50"
+  ],
+  "baseline": "ani_stack",
+  "ani_stack": {
+    "tau": 3,
+    "meta_C": 1,
+    "inner_preprocessing": "inner-fold training only"
+  },
+  "model_selection": "Equal-phase log loss; prioritize mean and worst chronological windows, corroborate with repeated group CV; inspect paired uncertainty, not just validation F1."
+}

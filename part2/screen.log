@@ -1,0 +1,106 @@
+temporal criteria none 0.1 best 0.6135396240055222
+temporal criteria none 0.5 best 0.5847328249901224
+temporal criteria none 2.0 best 0.5745916274879307
+temporal criteria none 8.0 best 0.5745916274879307
+temporal criteria year 0.1 best 0.5745916274879307
+temporal criteria year 0.5 best 0.5745916274879307
+temporal criteria year 2.0 best 0.5745916274879307
+temporal criteria year 8.0 best 0.5745916274879307
+temporal clinical none 0.1 best 0.5745916274879307
+temporal clinical none 0.5 best 0.5695369085757928
+temporal clinical none 2.0 best 0.5695369085757928
+temporal clinical none 8.0 best 0.5695369085757928
+temporal clinical year 0.1 best 0.5695369085757928
+temporal clinical year 0.5 best 0.5695369085757928
+temporal clinical year 2.0 best 0.5695369085757928
+temporal clinical year 8.0 best 0.5695369085757928
+temporal knowledge none 0.1 best 0.5695369085757928
+temporal knowledge none 0.5 best 0.5695369085757928
+temporal knowledge none 2.0 best 0.5695369085757928
+temporal knowledge none 8.0 best 0.5695369085757928
+temporal knowledge year 0.1 best 0.5695369085757928
+temporal knowledge year 0.5 best 0.5695369085757928
+temporal knowledge year 2.0 best 0.5695369085757928
+temporal knowledge year 8.0 best 0.5695369085757928
+temporal rich none 0.1 best 0.5695369085757928
+temporal rich none 0.5 best 0.5695369085757928
+temporal rich none 2.0 best 0.5695369085757928
+temporal rich none 8.0 best 0.5695369085757928
+temporal rich year 0.1 best 0.5695369085757928
+temporal rich year 0.5 best 0.5695369085757928
+temporal rich year 2.0 best 0.5695369085757928
+temporal rich year 8.0 best 0.5695369085757928
+temporal metadata none 0.1 best 0.5695369085757928
+temporal metadata none 0.5 best 0.5695369085757928
+temporal metadata none 2.0 best 0.5695369085757928
+temporal metadata none 8.0 best 0.5695369085757928
+temporal metadata year 0.1 best 0.5695369085757928
+temporal metadata year 0.5 best 0.5695369085757928
+temporal metadata year 2.0 best 0.5695369085757928
+temporal metadata year 8.0 best 0.5695369085757928
+                            name  logloss  I_logloss     I_f1  I_roc_auc  I_pr_auc  II_logloss    II_f1  II_roc_auc  II_pr_auc  III_logloss   III_f1  III_roc_auc  III_pr_auc  phase_mean_logloss  seconds
+    lr_clinical_none_C0.5_phase0 0.567306   0.611937 0.772643   0.699205  0.746902    0.612743 0.694800    0.719722   0.758367     0.483931 0.874200     0.756313    0.893788            0.569537 0.281261
+   lr_clinical_none_C2_phase0.25 0.565401   0.623997 0.777982   0.675051  0.731243    0.615288 0.700590    0.715644   0.761826     0.469361 0.876356     0.752490    0.888335            0.569549 0.000000
+ lr_clinical_none_C0.5_phase0.25 0.568656   0.616173 0.765343   0.691550  0.743194    0.611566 0.703952    0.724719   0.761176     0.487400 0.877493     0.752688    0.893312            0.571713 0.000000
+        lr_rich_none_C0.5_phase0 0.569372   0.618914 0.772894   0.699746  0.742970    0.618279 0.711665    0.715794   0.747766     0.478924 0.875358     0.755078    0.892945            0.572039 0.737950
+    lr_clinical_none_C2_phase0.5 0.566351   0.630788 0.774775   0.658661  0.712801    0.611752 0.705015    0.718919   0.762993     0.473738 0.876633     0.746022    0.886394            0.572093 0.000000
+      lr_clinical_none_C2_phase0 0.569435   0.625405 0.773234   0.683084  0.740781    0.624029 0.697398    0.709044   0.753627     0.468156 0.874096     0.754872    0.887357            0.572530 0.386322
+     lr_rich_none_C0.5_phase0.25 0.569200   0.621035 0.778378   0.692389  0.731736    0.615471 0.715222    0.720929   0.752707     0.481299 0.875629     0.751397    0.892611            0.572602 0.000000
+       lr_rich_none_C2_phase0.25 0.569248   0.630702 0.777982   0.688251  0.725277    0.623958 0.711538    0.714853   0.754456     0.465240 0.877551     0.750455    0.889369            0.573300 0.000000
+   lr_criteria_none_C2_phase0.25 0.570411   0.619770 0.787770   0.677486  0.724016    0.606930 0.715318    0.725742   0.765065     0.497076 0.866714     0.727787    0.873891            0.574592 0.000000
+      lr_criteria_none_C2_phase0 0.570614   0.621069 0.778182   0.678459  0.723682    0.607572 0.708273    0.722446   0.761365     0.496161 0.863023     0.726663    0.876170            0.574934 0.213282
+lr_knowledge_none_C0.5_phase0.25 0.571914   0.625331 0.780399   0.690036  0.725626    0.621815 0.711567    0.712148   0.743751     0.478283 0.874277     0.749592    0.891916            0.575143 0.000000
+   lr_knowledge_none_C0.5_phase0 0.573484   0.623572 0.774312   0.699367  0.743727    0.626786 0.702583    0.706143   0.737287     0.476739 0.875629     0.751461    0.891561            0.575699 0.622186
+validation criteria none 0.1 best 0.6109046695231684
+validation criteria none 0.5 best 0.5788756894338364
+validation criteria none 2.0 best 0.5617477820466331
+validation criteria none 8.0 best 0.5617477820466331
+validation criteria year 0.1 best 0.5617477820466331
+validation criteria year 0.5 best 0.5617477820466331
+validation criteria year 2.0 best 0.5617477820466331
+validation criteria year 8.0 best 0.5617477820466331
+validation clinical none 0.1 best 0.5617477820466331
+validation clinical none 0.5 best 0.5617477820466331
+validation clinical none 2.0 best 0.5617477820466331
+validation clinical none 8.0 best 0.5617477820466331
+validation clinical year 0.1 best 0.5617477820466331
+validation clinical year 0.5 best 0.5617477820466331
+validation clinical year 2.0 best 0.5617477820466331
+validation clinical year 8.0 best 0.5617477820466331
+validation knowledge none 0.1 best 0.5617477820466331
+validation knowledge none 0.5 best 0.5617477820466331
+validation knowledge none 2.0 best 0.5617477820466331
+validation knowledge none 8.0 best 0.5617477820466331
+validation knowledge year 0.1 best 0.5617477820466331
+validation knowledge year 0.5 best 0.5617477820466331
+validation knowledge year 2.0 best 0.5617477820466331
+validation knowledge year 8.0 best 0.5617477820466331
+validation rich none 0.1 best 0.5617477820466331
+validation rich none 0.5 best 0.5617477820466331
+validation rich none 2.0 best 0.5617477820466331
+validation rich none 8.0 best 0.5617477820466331
+validation rich year 0.1 best 0.5617477820466331
+validation rich year 0.5 best 0.5617477820466331
+validation rich year 2.0 best 0.5617477820466331
+validation rich year 8.0 best 0.5617477820466331
+validation metadata none 0.1 best 0.5617477820466331
+validation metadata none 0.5 best 0.5617477820466331
+validation metadata none 2.0 best 0.5617477820466331
+validation metadata none 8.0 best 0.5617477820466331
+validation metadata year 0.1 best 0.5617477820466331
+validation metadata year 0.5 best 0.5617477820466331
+validation metadata year 2.0 best 0.5617477820466331
+validation metadata year 8.0 best 0.5617477820466331
+                         name  logloss  I_logloss     I_f1  I_roc_auc  I_pr_auc  II_logloss    II_f1  II_roc_auc  II_pr_auc  III_logloss   III_f1  III_roc_auc  III_pr_auc  phase_mean_logloss  seconds
+   lr_criteria_none_C2_phase0 0.568089   0.556186 0.765027   0.783456  0.834897    0.599672 0.656716    0.740086   0.717348     0.529385 0.833021     0.774187    0.862434            0.561748 0.419247
+lr_criteria_none_C2_phase0.25 0.568395   0.558648 0.774194   0.795037  0.842054    0.599146 0.642241    0.739703   0.717201     0.529954 0.837736     0.774864    0.863048            0.562583 0.000000
+   lr_criteria_year_C2_phase0 0.569262   0.556118 0.765027   0.780331  0.840672    0.600316 0.656716    0.739303   0.717069     0.531798 0.829545     0.772053    0.862359            0.562744 0.526735
+lr_criteria_year_C2_phase0.25 0.569760   0.558452 0.767568   0.788787  0.846023    0.599673 0.648188    0.738871   0.716512     0.533115 0.827977     0.770901    0.863083            0.563747 0.000000
+ lr_criteria_none_C2_phase0.5 0.570593   0.564277 0.784946   0.797978  0.836302    0.600262 0.634989    0.736169   0.715011     0.532236 0.830827     0.772595    0.863929            0.565592 0.000000
+ lr_criteria_year_C2_phase0.5 0.572154   0.563830 0.778378   0.794118  0.844550    0.600678 0.630435    0.735417   0.714371     0.536201 0.822857     0.768733    0.864002            0.566903 0.000000
+     lr_rich_none_C0.5_phase0 0.572613   0.577042 0.754286   0.756618  0.797378    0.603277 0.639309    0.729709   0.712858     0.528474 0.818011     0.785129    0.877926            0.569598 1.154222
+  lr_rich_none_C0.5_phase0.25 0.572786   0.576477 0.738636   0.762316  0.810599    0.603401 0.643777    0.729757   0.712904     0.529018 0.818182     0.784011    0.878134            0.569632 0.000000
+    lr_rich_none_C2_phase0.25 0.573183   0.576901 0.730337   0.760294  0.802567    0.606687 0.655532    0.738327   0.713276     0.525416 0.819048     0.779472    0.866013            0.569668 0.000000
+ lr_criteria_none_C8_phase0.5 0.582414   0.547042 0.773481   0.793382  0.827821    0.623891 0.643629    0.726799   0.698425     0.539687 0.830116     0.764465    0.853022            0.570207 0.000000
+    lr_rich_year_C2_phase0.25 0.574424   0.576400 0.744444   0.760478  0.806104    0.607631 0.655532    0.738439   0.713076     0.527783 0.821293     0.778963    0.866258            0.570605 0.000000
+lr_criteria_none_C2_phase0.75 0.574604   0.572848 0.789474   0.798162  0.834194    0.602917 0.631808    0.730732   0.710080     0.536247 0.818011     0.767988    0.862407            0.570671 0.000000

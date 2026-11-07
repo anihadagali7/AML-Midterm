@@ -1,0 +1,146 @@
+{
+  "recency_criteria_C0.5_half3": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 0.5,
+    "half_life": 3.0
+  },
+  "recency_criteria_C2_half3": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 2.0,
+    "half_life": 3.0
+  },
+  "recency_criteria_C0.5_half6": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 0.5,
+    "half_life": 6.0
+  },
+  "recency_criteria_C2_half6": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 2.0,
+    "half_life": 6.0
+  },
+  "recency_criteria_C0.5_half12": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 0.5,
+    "half_life": 12.0
+  },
+  "recency_criteria_C2_half12": {
+    "family": "recency",
+    "representation": "criteria",
+    "C": 2.0,
+    "half_life": 12.0
+  },
+  "recency_clinical_C0.5_half3": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 0.5,
+    "half_life": 3.0
+  },
+  "recency_clinical_C2_half3": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 2.0,
+    "half_life": 3.0
+  },
+  "recency_clinical_C0.5_half6": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 0.5,
+    "half_life": 6.0
+  },
+  "recency_clinical_C2_half6": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 2.0,
+    "half_life": 6.0
+  },
+  "recency_clinical_C0.5_half12": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 0.5,
+    "half_life": 12.0
+  },
+  "recency_clinical_C2_half12": {
+    "family": "recency",
+    "representation": "clinical",
+    "C": 2.0,
+    "half_life": 12.0
+  },
+  "lightgbm_leaves7_n400_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 7,
+    "iterations": 400
+  },
+  "lightgbm_leaves7_n1000_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 7,
+    "iterations": 1000
+  },
+  "lightgbm_leaves15_n400_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 15,
+    "iterations": 400
+  },
+  "lightgbm_leaves15_n1000_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 15,
+    "iterations": 1000
+  },
+  "lightgbm_leaves31_n400_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 31,
+    "iterations": 400
+  },
+  "lightgbm_leaves31_n1000_none": {
+    "family": "lightgbm",
+    "year": "none",
+    "leaves": 31,
+    "iterations": 1000
+  },
+  "lightgbm_leaves7_n400_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 7,
+    "iterations": 400
+  },
+  "lightgbm_leaves7_n1000_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 7,
+    "iterations": 1000
+  },
+  "lightgbm_leaves15_n400_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 15,
+    "iterations": 400
+  },
+  "lightgbm_leaves15_n1000_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 15,
+    "iterations": 1000
+  },
+  "lightgbm_leaves31_n400_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 31,
+    "iterations": 400
+  },
+  "lightgbm_leaves31_n1000_year": {
+    "family": "lightgbm",
+    "year": "year",
+    "leaves": 31,
+    "iterations": 1000
+  }
+}

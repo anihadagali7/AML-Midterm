@@ -1,0 +1,28 @@
+[
+  {
+    "model": "ani_exact_train",
+    "training_rows": 8037,
+    "seconds": 13.667456150054932,
+    "logloss": 0.5609244575307817,
+    "I_logloss": 0.5570275857313304,
+    "I_f1": 0.7928994082840237,
+    "I_roc_auc": 0.7933823529411765,
+    "I_pr_auc": 0.8275427827104882,
+    "II_logloss": 0.5928925410401212,
+    "II_f1": 0.6481481481481481,
+    "II_roc_auc": 0.7537735849056604,
+    "II_pr_auc": 0.7347844037468041,
+    "III_logloss": 0.5184027607262065,
+    "III_f1": 0.8241965973534972,
+    "III_roc_auc": 0.7873644986449864,
+    "III_pr_auc": 0.881090017024998,
+    "phase_mean_logloss": 0.5561076291658861
+  },
+  {
+    "model": "ani_exact_trainval",
+    "training_rows": 9050,
+    "seconds": 16.174940824508667,
+    "max_submission_probability_difference": 3.542518944854578e-09,
+    "mean_submission_probability_difference": 4.5645332469312906e-10
+  }
+]
