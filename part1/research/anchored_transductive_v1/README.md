@@ -1,6 +1,6 @@
 # Anchored model: target-input access
 
-Neither of the two fixed transductive changes established an improvement over the **anchored 0.89636** parent. Keep the submitted inductive model. This is a completed negative study, with no new submission or final test-set fit.
+Neither of the two fixed transductive changes met the local advancement criteria against the **anchored 0.89636** parent. The evidence is insufficient to replace the submitted inductive model. Their Kaggle performance remains unknown: this study made no new submission or final test-set fit.
 
 | Fixed recipe | Train157 CV | Pooled235 CV | Validation78 | Chronology98 |
 |---|---:|---:|---:|---:|
@@ -34,6 +34,24 @@ The fixed advancement rule required positive mean differences and at least five 
 Geometry-only changes just 6 of 1,256 Train157 repeat-level label sets and 19 of 1,880 Pooled235 label sets. Its small CV gains do not survive the supplementary checks. Full target self-training accepts 1,025 of 1,256 Train157 target appearances and 1,521 of 1,880 Pooled235 appearances, but does not consistently improve accuracy. These are repeated appearances, not independent trials or significance tests.
 
 The parent reproduced **all 84 saved prediction sets**, with exact score agreement on all 80 CV fits. The geometry implementation with an empty target batch matches the parent within 2.96e-13. An additional independent TP/FP/FN calculation checked all 1,386 reported metric values before prediction caches were removed. No model settings were changed after observing results. The development folds have been reused before; no untouched holdout or new Kaggle improvement is claimed.
+
+## CV and Kaggle ordering
+
+Better CV has not always translated into better reported Kaggle performance. The [existing matched comparison](../../experiments/current_leaders_grouped_v1/comparison.csv) contains these three inductive recipes, whose submitted fits all used 235 verified labels:
+
+| Recipe and scored checkpoint | Train157 CV | Pooled235 CV | Reported Kaggle F1 |
+|---|---:|---:|---:|
+| [Earlier 70/15/15 ensemble](../../submissions/results/three-way-trainval235.json) | 0.925690 | 0.916489 | 0.89401 |
+| [LDA 70/15/15 ensemble](../../submissions/results/lda-ensemble-trainval235.json) | 0.931794 | 0.921631 | 0.89401 |
+| [Anchored](../../submissions/results/anchored-trainval235.json) | 0.932059 | 0.921365 | 0.89636 |
+
+The LDA revision improved Train157 CV by 0.006104 and Pooled235 CV by 0.005142, but its reported Kaggle score tied the earlier ensemble. Anchored was effectively tied with LDA on CV: Train157 +0.000265 and Pooled235 -0.000266. Nevertheless, anchored improved Kaggle by 0.00235. Its original-validation F1 was also lower, 0.891026 versus 0.905983; its chronology F1 was higher, 0.884354 versus 0.877551.
+
+These are concrete exceptions to a universal ordering. This small set of submitted comparisons cannot establish how reliably CV will rank future candidates. The limited labelled pool, repeated development on the same folds, and later-year Kaggle population are plausible reasons for imperfect agreement. Original Ani's reported 0.89423 is excluded from this clean comparison because its submission was transductive while its row in the common local comparison is an inductive adaptation.
+
+For this study, the conclusion is **insufficient local evidence to promote either transductive variant**. We have not shown that either variant would score worse on Kaggle, and a leaderboard improvement remains possible. The small geometry-only CV gains and supplementary regressions inform the decision; they do not measure its unobserved Kaggle result. The predeclared advancement rule, scores and current leader are unchanged. Any later exploratory final fit or submission should be recorded separately with its exact recipe, input access and artifact.
+
+This interpretation reuses the existing comparison and scored checkpoints. No new fits, score records, prediction copies or evidence archives were created for it.
 
 ## Records and reproduction
 

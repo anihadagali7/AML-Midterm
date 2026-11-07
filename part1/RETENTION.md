@@ -31,6 +31,7 @@ Run historical replays in disposable output directories. Extract useful summarie
 |---|---|
 | Older main Part 1 experiments | [31-study catalog and cleanup verification](research/legacy_retention_v1/README.md) |
 | Earlier simple/trusted iterations | [Compact records and comparison correction](research/early_iterations/README.md) |
+| Anchored transductive ablations | [Fixed recipes, complete compact results and interpretation](research/anchored_transductive_v1/README.md); unsuccessful prediction caches removed after rescoring |
 | LDA and feature research | [Existing retention and replay guide](research/lda_ensemble/EVIDENCE.html) |
 | New Directions | [Existing compact archive](research/new_directions/index.html); unchanged by this cleanup |
 | Current leaders | [Comparison](experiments/current_leaders_grouped_v1/comparison.csv) and [verification commands](README.md#testing-and-verification) |

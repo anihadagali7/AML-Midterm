@@ -14,7 +14,9 @@ Use anchored as the declared parent when trying to improve the submitted model. 
 
 The [LDA study catalog](research/lda_ensemble/experiments/lda_research_checkpoint_v1/index.html) retains feature tests, failed versions, and selection rules. Its [temporal and decision follow-ups](research/lda_ensemble/experiments/temporal_generalization_review_v1/report.html) tested fourteen fixed variants without a confirmed ensemble upgrade. [New directions](research/new_directions/index.html) retains 136 settings across fourteen studies; none was promoted or submitted. Consult the relevant family before repeating an idea.
 
-The [anchored transductive study](research/anchored_transductive_v1/README.md) completed all 84 standard cases for the unchanged parent and two target-input ablations. Geometry-only access slightly improved both CV means but failed the repeat-win rule and regressed on validation/chronology. Adding target-generated labels also failed. Keep the inductive leader; the compact records include every repeat and supplementary result.
+The [anchored transductive study](research/anchored_transductive_v1/README.md) completed all 84 standard cases for the unchanged parent and two target-input ablations. Geometry-only access slightly improved both CV means but failed the repeat-win rule and regressed on validation/chronology. Adding target-generated labels also failed the local advancement rule. Keep the inductive leader; the compact records include every repeat and supplementary result.
+
+[CV and Kaggle have not always ranked our models alike](research/anchored_transductive_v1/README.md#cv-and-kaggle-ordering): LDA improved both CV means over the earlier ensemble but tied its Kaggle score; anchored was essentially tied with LDA on CV and improved Kaggle. Treat the transductive conclusion as insufficient local evidence to promote, not proof of a worse Kaggle result. Neither transductive variant has been submitted. The frozen evaluation and advancement rules remain unchanged.
 
 ## Repository and evidence
 
