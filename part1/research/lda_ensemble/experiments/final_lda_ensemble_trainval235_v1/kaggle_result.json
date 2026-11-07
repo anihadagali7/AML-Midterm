@@ -1,0 +1,155 @@
+{
+  "reported_at": "2026-11-06T23:08:09.572396+00:00",
+  "status": "Submitted manually; score reported by user",
+  "candidate": "lda_ensemble__inductive",
+  "reported_kaggle_score": 0.89401,
+  "score_provenance": "User reported 0.89401 after receiving this exact filename and transfer command; not independently queried from Kaggle.",
+  "submission_file": "part1/experiments/final_lda_ensemble_trainval235_v1/part1_lda_ensemble_trainval235.csv",
+  "submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+  "previous_submission_file": "part1/research/independent/predictions/part1_three_way_trainval235.csv",
+  "previous_submission_sha256": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f",
+  "previous_reported_kaggle_score": 0.89401,
+  "displayed_score_delta": 0.0,
+  "changed_test_label_sets": 13,
+  "unchanged_test_label_sets": 299,
+  "actual_uploaded_bytes_independently_verified": false,
+  "public_private_partition_not_verified": true,
+  "matched_local_comparison": [
+    {
+      "model": "Original 70/15/15 ensemble",
+      "train": 0.9256900212314225,
+      "pooled": 0.9164893617021276,
+      "validation": 0.9102564102564102,
+      "chronology": 0.8775510204081632
+    },
+    {
+      "model": "LDA-revision 70/15/15 ensemble",
+      "train": 0.9317940552016986,
+      "pooled": 0.9216312056737589,
+      "validation": 0.9059829059829061,
+      "chronology": 0.8775510204081632
+    }
+  ],
+  "local_effect_size": {
+    "train": {
+      "per_repeat": [
+        {
+          "changed": 2,
+          "improved": 2,
+          "worsened": 0,
+          "net_sample_F1_sum": 1.3333333333333335
+        },
+        {
+          "changed": 2,
+          "improved": 2,
+          "worsened": 0,
+          "net_sample_F1_sum": 1.0
+        },
+        {
+          "changed": 1,
+          "improved": 1,
+          "worsened": 0,
+          "net_sample_F1_sum": 0.33333333333333337
+        },
+        {
+          "changed": 6,
+          "improved": 3,
+          "worsened": 2,
+          "net_sample_F1_sum": 0.33333333333333337
+        },
+        {
+          "changed": 3,
+          "improved": 2,
+          "worsened": 1,
+          "net_sample_F1_sum": 0.6666666666666666
+        },
+        {
+          "changed": 2,
+          "improved": 1,
+          "worsened": 1,
+          "net_sample_F1_sum": 0.0
+        },
+        {
+          "changed": 4,
+          "improved": 4,
+          "worsened": 0,
+          "net_sample_F1_sum": 2.3333333333333335
+        },
+        {
+          "changed": 3,
+          "improved": 3,
+          "worsened": 0,
+          "net_sample_F1_sum": 1.6666666666666665
+        }
+      ],
+      "means": {
+        "changed": 2.875,
+        "improved": 2.25,
+        "worsened": 0.5,
+        "net_sample_F1_sum": 0.9583333333333334
+      }
+    },
+    "pooled": {
+      "per_repeat": [
+        {
+          "changed": 4,
+          "improved": 4,
+          "worsened": 0,
+          "net_sample_F1_sum": 2.6666666666666665
+        },
+        {
+          "changed": 7,
+          "improved": 4,
+          "worsened": 2,
+          "net_sample_F1_sum": 0.6666666666666667
+        },
+        {
+          "changed": 5,
+          "improved": 4,
+          "worsened": 1,
+          "net_sample_F1_sum": 1.3333333333333333
+        },
+        {
+          "changed": 7,
+          "improved": 7,
+          "worsened": 0,
+          "net_sample_F1_sum": 2.666666666666667
+        },
+        {
+          "changed": 6,
+          "improved": 3,
+          "worsened": 2,
+          "net_sample_F1_sum": 0.33333333333333337
+        },
+        {
+          "changed": 2,
+          "improved": 1,
+          "worsened": 0,
+          "net_sample_F1_sum": 0.33333333333333337
+        },
+        {
+          "changed": 6,
+          "improved": 5,
+          "worsened": 1,
+          "net_sample_F1_sum": 2.0000000000000004
+        },
+        {
+          "changed": 10,
+          "improved": 5,
+          "worsened": 4,
+          "net_sample_F1_sum": -0.33333333333333326
+        }
+      ],
+      "means": {
+        "changed": 5.875,
+        "improved": 4.125,
+        "worsened": 1.25,
+        "net_sample_F1_sum": 1.2083333333333335
+      }
+    }
+  },
+  "interpretation": "The reported displayed leaderboard score ties the previous ensemble. CV improved, original validation regressed slightly and chronology tied. Different predictions can receive identical aggregate sample-F1; which changes helped cannot be determined without test labels. No test labels were inferred.",
+  "remaining_submissions_inferred": 1,
+  "remaining_budget_basis": "User reported two remaining, then reported one new upload.",
+  "preparation_manifest_preserved": true
+}

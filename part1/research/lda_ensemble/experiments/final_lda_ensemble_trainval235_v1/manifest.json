@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-11-06T23:02:01.178737+00:00",
+  "status": "Ready for manual Kaggle upload; not submitted",
+  "candidate": "lda_ensemble__inductive",
+  "submission_file": "experiments/final_lda_ensemble_trainval235_v1/part1_lda_ensemble_trainval235.csv",
+  "submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+  "frozen_recipe_sha256": "ad0c07b065ba74f8414219efad41a53508289c9679c7fc6e08c274871af1476c",
+  "supervised_gold_rows": 235,
+  "masked_training_rows": 1014,
+  "submission_rows": 312,
+  "final_train_plus_validation_refit": true,
+  "test_inputs_used_for_fit": false,
+  "independent_validation_of_refit": null,
+  "historical_development_evidence": {
+    "candidate": "lda_ensemble__inductive",
+    "recipe": "Current LDA 70/15/15 ensemble",
+    "access": "inductive",
+    "train_mean": 0.9317940552016986,
+    "train_sd": 0.005759695969801151,
+    "train_repeat_scores": [
+      0.9320594479830148,
+      0.9278131634819534,
+      0.9384288747346071,
+      0.9299363057324841,
+      0.9341825902335458,
+      0.9193205944798301,
+      0.9363057324840764,
+      0.9363057324840764
+    ],
+    "pooled_mean": 0.9216312056737589,
+    "pooled_sd": 0.006718899050176055,
+    "pooled_repeat_scores": [
+      0.9134751773049645,
+      0.9191489361702128,
+      0.9134751773049645,
+      0.9304964539007092,
+      0.9304964539007092,
+      0.9219858156028369,
+      0.9276595744680851,
+      0.9163120567375885
+    ],
+    "validation": 0.9059829059829061,
+    "chronological": 0.8775510204081632
+  },
+  "checks": {
+    "notebook_function_parity": true,
+    "previous_submitted_ensemble_reproduced": true,
+    "small_query_batch_predictions_identical": true,
+    "gold_labels_and_prior_submissions_unchanged": true,
+    "sample_id_order_correct": true,
+    "csv_columns_correct": true,
+    "labels_valid_nonempty": true
+  },
+  "changed_test_label_sets_vs_previous_ensemble": 13,
+  "test_predicted_label_counts": {
+    "Safety": 52,
+    "Funding": 7,
+    "Efficacy": 46,
+    "Recruitment": 181,
+    "Other": 56
+  },
+  "original_gold_label_counts": {
+    "Safety": 25,
+    "Funding": 12,
+    "Efficacy": 31,
+    "Recruitment": 151,
+    "Other": 35
+  },
+  "known_remaining_submissions_before_manual_upload": 2,
+  "uploaded": false,
+  "kaggle_score": null
+}
