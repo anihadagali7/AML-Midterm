@@ -1,0 +1,15 @@
+{
+  "recipe": "ani-original",
+  "reported_kaggle_score": 0.89423,
+  "tag": "part1-ani-original-kaggle-0.89423",
+  "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
+  "submission_sha256": "d28c381fe35bd7fe787328646cd1ed5d27a7ba8c6eba3353894ba761e1ad4f29",
+  "frozen_recipe_file": "part1/research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb",
+  "frozen_recipe_sha256": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7",
+  "verified_training_labels": 235,
+  "fitting_access": "transductive input preprocessing",
+  "score_provenance": "Reported reference score documented in the original Ani branch and research handoff; not newly queried from Kaggle.",
+  "record_type": "Backfilled commit checkpoint for an earlier manually submitted result; no new upload or refit.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "original_source_commit": "a548721"
+}
