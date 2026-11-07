@@ -1,5 +1,7 @@
 # Cand2 result: matched J audit and a fixed blend
 
+**Update: the user reported Kaggle 0.89935 for the exact 80/20 blend, improving the prior best 0.89636 by 0.00299.** [Exact result](../../submissions/results/anchored80-cand2-inductive20-trainval235.json). Preparation-time records below predate that manual submission.
+
 **The new result weakens the case for J as the primary ranking rule. A small Cand2 blend is a more promising next experiment than replacing anchored.** Cand2's user-reported Kaggle score is .89102 versus anchored's .89636. We freshly evaluated the exact submitted strict-inductive five-seed recipe on J's original assignments, resolving the mismatch with Dylan's earlier transductive J score.
 
 The user asked what the new outcome implies for J and future directions. This study was frozen after that Kaggle outcome was known. It did not change J's weights, assignments or model settings. Work starts from current main `31f3fa9` in a separate worktree and branch `codex/part1-cand2-followup`. The new main changes were reports; the canonical model, policy and data were unchanged.
@@ -52,7 +54,7 @@ This is evidence of some useful complementarity on known labels; the 49 standalo
 
 ## Prepared exploratory CSV
 
-[anchored80_cand2_inductive20.csv](../../submissions/candidates/anchored80_cand2_inductive20.csv) changes **14/312** test label sets from anchored. It is prepared, **not uploaded**, with no Kaggle outcome. The final fit uses 235 verified labels and 1,014 masked training rows; actual test inputs are prediction-only.
+[anchored80_cand2_inductive20.csv](../../submissions/candidates/anchored80_cand2_inductive20.csv) changes **14/312** test label sets from anchored. The user subsequently reported **0.89935** for this exact file. The final fit uses 235 verified labels and 1,014 masked training rows; actual test inputs are prediction-only.
 
 SHA-256: `c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257`.
 

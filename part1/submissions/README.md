@@ -1,6 +1,8 @@
 # Part 1 submission records
 
-The highest recorded, user-reported Kaggle score is **anchored: 0.89636**. Its exact [scored CSV](archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv) was fitted on **235 verified labels** with **757 accepted generated rows** from the **1,014 originally masked training rows**. Kaggle test inputs were used only for prediction. The SHA-256 is `1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb`.
+The highest recorded, user-reported Kaggle score is **anchored80/Cand2 20: 0.89935** ([exact result](results/anchored80-cand2-inductive20-trainval235.json)). The earlier **anchored 0.89636** artifact is described below. Its exact [scored CSV](archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv) was fitted on **235 verified labels** with **757 accepted generated rows** from the **1,014 originally masked training rows**. Kaggle test inputs were used only for prediction. The SHA-256 is `1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb`.
+
+The [80/20 blend CSV](candidates/anchored80_cand2_inductive20.csv) has SHA-256 `c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257` and score tag `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`.
 
 ## Scored checkpoints
 
