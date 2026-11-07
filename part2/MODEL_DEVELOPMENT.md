@@ -52,7 +52,7 @@ us which phase or mechanism caused the improvement. Once Ani's source became
 available, we paused the proposed tree-removal follow-ups and made a direct
 comparison with his stronger model.
 
-Evidence: [initial methods and diagnostics](README.md#methods-and-comparisons),
+Evidence: [initial methods and diagnostics](docs/EXPERIMENT_OVERVIEW.md#methods-and-comparisons),
 [original ensemble recipes](submissions/manifest.json), and
 [submission review with superseding decisions](experiments/model_search/POST_SUBMISSION_REVIEW.md).
 
@@ -72,7 +72,7 @@ file 02 in all six chronological windows, while file 02 retained better supplied
 validation and grouped-CV scores. This showed why a single local ranking was
 insufficient for a test set drawn from later years.
 
-Evidence: [benchmark methodology](LOCAL_TESTING.md),
+Evidence: [benchmark methodology](docs/LOCAL_TESTING.md),
 [Ani source provenance](experiments/ani_comparison/provenance.json), and
 [all-submission comparison](experiments/all_submissions/RESULTS.md).
 
@@ -89,9 +89,9 @@ but its chronological mean was 0.542480 versus 0.537446 for Ani's recency model.
 No proposal passed that round's declared selection rule, so we retained Ani.
 The failed recipes remain part of the record.
 
-Evidence: [hypotheses and original selection rule](IMPROVEMENT_PROTOCOL.md),
+Evidence: [hypotheses and original selection rule](docs/IMPROVEMENT_PROTOCOL.md),
 [complete findings](experiments/stack_improvements/RESULTS.md), and
-[executed notebook](stack_improvements.ipynb).
+[executed notebook](notebooks/stack_improvements.ipynb).
 
 ## 4. Address recency and the neighbor component: file 10
 
@@ -115,9 +115,9 @@ and all three longer-gap windows against Ani's recency model under both
 preprocessing policies. Grouped CV improved slightly against that model;
 supplied-validation loss worsened. Kaggle then improved to **0.58609**.
 
-Evidence: [extension hypotheses and revised rule](EXTENSION_PROTOCOL.md),
+Evidence: [extension hypotheses and revised rule](docs/EXTENSION_PROTOCOL.md),
 [mechanisms, comparisons, and trade-offs](experiments/ani_extensions/RESULTS.md),
-and [executed notebook](ani_extensions.ipynb).
+and [executed notebook](notebooks/ani_extensions.ipynb).
 
 ## 5. Test complementary predictions: files 11 and 13
 
@@ -198,8 +198,8 @@ tags and otherwise using frozen Part 1 predictions. Thus Part 1 can inform
 modeling hypotheses without supplying the labels used to score Part 2.
 
 Details: [saved split definitions](experiments/local_benchmark/protocol.json),
-[preprocessing policies](ALL_SUBMISSIONS_PROTOCOL.md), and
-[stopping-reason analysis](README.md#stopping-reason-error-analysis).
+[preprocessing policies](docs/ALL_SUBMISSIONS_PROTOCOL.md), and
+[stopping-reason analysis](docs/EXPERIMENT_OVERVIEW.md#stopping-reason-error-analysis).
 
 ## Interpreting and reproducing the evidence
 
@@ -216,11 +216,11 @@ evidence used to choose the submission; they are not untouched estimates for
 the full research process. Final train + validation refits are kept separate
 from the held-out benchmark scores.
 
-For the full record, start with the [benchmark instructions](LOCAL_TESTING.md),
-[all-submission notebook](all_submissions.ipynb), and
+For the full record, start with the [benchmark instructions](docs/LOCAL_TESTING.md),
+[all-submission notebook](notebooks/all_submissions.ipynb), and
 [sprint reproduction commands](experiments/leaderboard_sprint/RESULTS.md#verification-and-reproduction).
-The [cache guide](CACHE_REPRODUCTION.md) explains which fitted artifacts must be
+The [cache guide](docs/CACHE_REPRODUCTION.md) explains which fitted artifacts must be
 rebuilt in a fresh checkout. The [trial commits and scored tags](submissions/HISTORY.md)
-and [main-integration mapping](MAIN_INTEGRATION.md) connect this narrative to
+and [main-integration mapping](docs/MAIN_INTEGRATION.md) connect this narrative to
 the preserved Git history. Score tags exist only for confirmed submissions;
 failed experiments and unsubmitted reserves remain available in their phase records.

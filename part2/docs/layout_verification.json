@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "a73d8aeaa3a81957c046938ff2efaecbea1c4ba3",
+  "legacy_paths_moved": 98,
+  "preserved_moved_source_data_protocol_and_log_files": 89,
+  "original_notebook_bodies_preserved": 5,
+  "original_result_artifacts_preserved": 5818,
+  "tests_passed": 19,
+  "scored_submission_tags_verified": 6,
+  "notebooks_executed": [
+    {
+      "notebook": "all_submissions.ipynb",
+      "cells": 11,
+      "elapsed_seconds": 1.38,
+      "passed": true
+    },
+    {
+      "notebook": "ani_extensions.ipynb",
+      "cells": 26,
+      "elapsed_seconds": 0.85,
+      "passed": true
+    },
+    {
+      "notebook": "local_benchmark.ipynb",
+      "cells": 30,
+      "elapsed_seconds": 2.25,
+      "passed": true
+    },
+    {
+      "notebook": "part2.ipynb",
+      "cells": 31,
+      "elapsed_seconds": 2.01,
+      "passed": true
+    },
+    {
+      "notebook": "stack_improvements.ipynb",
+      "cells": 9,
+      "elapsed_seconds": 0.73,
+      "passed": true
+    }
+  ],
+  "winner_native_replay": {
+    "artifact": "13_file10_legacy30.csv",
+    "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+    "max_probability_difference": 1.1102230246251565e-16,
+    "evaluation_ids_and_labels_replaced": true,
+    "passed": true
+  },
+  "all_submission_verification": {
+    "models": 13,
+    "original_splits": 10,
+    "larger_gap_splits": 3,
+    "preprocessing_tracks": 2,
+    "independently_rescored_model_split_results": 338,
+    "source_and_input_hashes_match": true,
+    "same_trial_ids_and_labels_for_every_model": true,
+    "legacy_training_boundaries_verified": true,
+    "unchanged_control_prediction_files": 130,
+    "native_cache_hashes_verified": 0,
+    "original_component_and_submission_replay_max_error": 4.999423097729049e-11,
+    "label_and_identifier_inference_max_error": 0.0,
+    "deserialized_original_csv_byte_replay": {},
+    "reporting_source_sha256": {
+      "all_submissions_verify.py": "70b5d3298838a763e6d5e703429838a8f154d8e172737c685ef5f74c6f40fff3",
+      "all_submissions_report.py": "471bf520f9a60b6838223c01ee7e6ab26a74b284c0b223703350231bb04630b4"
+    },
+    "current_leaderboard_sha256": "31a89f88c3a78becf883a4a9fad01e34e1659fd3d3033b6875133282968c2d7f",
+    "new_kaggle_submissions": 0
+  },
+  "new_model_training": false,
+  "new_kaggle_uploads": 0,
+  "relative_links_and_anchors_verified": 272
+}

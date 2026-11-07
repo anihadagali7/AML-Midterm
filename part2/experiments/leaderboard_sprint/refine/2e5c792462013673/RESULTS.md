@@ -58,9 +58,9 @@ The prepared **file 16** keeps the successful 30% legacy weight and replaces 20%
 ## Reproduce
 
 ```sh
-.venv/bin/python part2/sprint_refine.py benchmark
-.venv/bin/python part2/sprint_refine.py export --model legacy0.2_tree0.1_trend0.1 --filename 15_file10_legacy20_tree10_trend10.csv
-.venv/bin/python part2/sprint_refine_report.py
+.venv/bin/python part2/run.py sprint_refine.py benchmark
+.venv/bin/python part2/run.py sprint_refine.py export --model legacy0.2_tree0.1_trend0.1 --filename 15_file10_legacy20_tree10_trend10.csv
+.venv/bin/python part2/run.py sprint_refine_report.py
 ```
 
 Existing native component caches are required for export; the earlier benchmark workflows reproduce them. All supervised final components use 9,050 labeled rows. No new Kaggle upload is performed by these commands.

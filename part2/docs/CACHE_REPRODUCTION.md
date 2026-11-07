@@ -1,7 +1,7 @@
 # Model caches and source-checkout reproduction
 
 For the full 01–10 comparison, install `requirements-all-submissions.txt`, then
-run `.venv/bin/python part2/all_submissions_benchmark.py --workers 2`,
+run `.venv/bin/python part2/run.py all_submissions_benchmark.py --workers 2`,
 `all_submissions_verify.py`, and `all_submissions_report.py`. Legacy fold models
 live under the ignored `experiments/all_submissions/cache/`. The runner refits
 them when missing and reuses verified Ani/extension predictions on the same
@@ -11,12 +11,12 @@ submission files; those historical CSVs are never overwritten.
 For the new neighbor extensions, saved benchmark arrays and source audits are
 versioned in `experiments/ani_extensions`; native models under its `cache/` are
 regenerable and ignored. Rebuild the final bundle with
-`.venv/bin/python part2/extension_followthrough.py final`, then run
-`.venv/bin/python part2/extension_verify.py`. The final-fitting command rebuilds
+`.venv/bin/python part2/run.py extension_followthrough.py final`, then run
+`.venv/bin/python part2/run.py extension_verify.py`. The final-fitting command rebuilds
 the old base bundle too if needed. Replay the recommended candidate using
-`.venv/bin/python part2/extension_predict.py --input part2/outcome_test.csv --output /tmp/replayed.csv`.
-Full comparison commands and source are in [ani_extensions.ipynb](ani_extensions.ipynb)
-and the [extension report](experiments/ani_extensions/RESULTS.md).
+`.venv/bin/python part2/run.py extension_predict.py --input part2/data/outcome_test.csv --output /tmp/replayed.csv`.
+Full comparison commands and source are in [ani_extensions.ipynb](../notebooks/ani_extensions.ipynb)
+and the [extension report](../experiments/ani_extensions/RESULTS.md).
 
 The repository includes the complete experiment code, executed notebooks, supplied data, frozen benchmark splits, held-out predictions, score tables, uncertainty estimates, figures, source snapshots, and submission CSVs. Regenerable `.joblib` model/feature caches are excluded from Git. They remain intact in the original working directory.
 
@@ -31,7 +31,7 @@ Open `local_benchmark.ipynb`, `part2.ipynb`, or `experiments/local_benchmark/RES
 From the repository root, with the pinned packages installed in `.venv`:
 
 ```sh
-.venv/bin/python part2/local_benchmark.py --suite full --force
+.venv/bin/python part2/run.py local_benchmark.py --suite full --force
 make -C part2 benchmark-test
 make -C part2 benchmark-verify
 ```
@@ -41,8 +41,8 @@ make -C part2 benchmark-verify
 ## Rebuild Ani's exact reference and final candidates
 
 ```sh
-.venv/bin/python part2/reproduce_ani.py
-.venv/bin/python part2/benchmark_final.py
+.venv/bin/python part2/run.py reproduce_ani.py
+.venv/bin/python part2/run.py benchmark_final.py
 ```
 
 The archived Ani notebooks and CSVs are included under `experiments/ani_comparison/source`. Exact reproduction regenerates its original transductive feature cache and training/train+validation models. Final candidates preserve the archived winning prediction file as their anchor and rebuild the full-data linear component if necessary. Complete saved benchmark comparisons must exist before candidate generation.

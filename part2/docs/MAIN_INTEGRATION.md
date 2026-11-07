@@ -38,7 +38,7 @@ The annotated score tags retain their original targets. They identify exact
 submitted CSVs and original submission records, not new Kaggle uploads. Their
 original commits remain reachable through the published tags; the table above
 maps them to the equivalent record commits in the main-integration history.
-See [submission history](submissions/HISTORY.md) and the machine-readable
+See [submission history](../submissions/HISTORY.md) and the machine-readable
 [mapping](main_integration.json).
 
 The winner remains file 13 at **0.58465**. File 16 is held and unsubmitted.
@@ -50,4 +50,4 @@ All 16 regression tests pass. All six annotated score tags and original CSV
 hashes verify. The common benchmark independently rescored 338 model/split
 results. File 13 reproduces from native models with maximum probability error
 1.11e-16, including after evaluation labels and identifiers are replaced. The
-Part One tree hash matches the main baseline. See [verification](experiments/main_integration/verification.json).
+Part One tree hash matches the main baseline. See [verification](../experiments/main_integration/verification.json).

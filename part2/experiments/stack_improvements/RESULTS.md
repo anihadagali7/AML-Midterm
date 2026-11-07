@@ -86,4 +86,4 @@ After freezing selection, fit through 2005/2007/2009 and evaluate 2008–2009/20
 
 All source/data hashes and fitting boundaries were checked. Maximum probability difference from the archived ten-split Ani predictions is 0. Maximum differences from original Kaggle CSV probabilities: ani_stack 3.5e-09, ani_first 2.4e-07. The final native model replay also verifies that changing IDs or evaluation labels cannot change predictions. All 13 protocol/scoring/model checks passed.
 
-Reproduce with [IMPROVEMENT_PROTOCOL.md](../../IMPROVEMENT_PROTOCOL.md), pinned [requirements-benchmark.txt](../../requirements-benchmark.txt), and the [executed notebook](../../stack_improvements.ipynb). The original data, submissions, branch history, and ten split definitions are preserved.
+Reproduce with [IMPROVEMENT_PROTOCOL.md](../../docs/IMPROVEMENT_PROTOCOL.md), pinned [requirements-benchmark.txt](../../requirements/requirements-benchmark.txt), and the [executed notebook](../../notebooks/stack_improvements.ipynb). The original data, submissions, branch history, and ten split definitions are preserved.

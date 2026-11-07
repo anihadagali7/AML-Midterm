@@ -14,7 +14,7 @@ history, reproduction commands and exact submission hashes.
 - [Trial results and submission decisions](part2/experiments/leaderboard_sprint/RESULTS.md)
 - [Trial-phase commits and tagged submissions](part2/submissions/HISTORY.md)
 - [Score ledger](part2/submissions/leaderboard_results.json)
-- [Main-branch integration record](part2/MAIN_INTEGRATION.md)
+- [Main-branch integration record](part2/docs/MAIN_INTEGRATION.md)
 
 File 15 scored 0.58492 and did not improve the winner. File 16 remains unsubmitted;
 the final available submission slot was held because the evidence was weak.

@@ -54,10 +54,10 @@ The historical evaluation labels have been reused. Intervals are descriptive and
 ## Reproduce
 
 ```sh
-.venv/bin/python part2/sprint_benchmark.py --track strict
-.venv/bin/python part2/sprint_benchmark.py --track published
-.venv/bin/python part2/sprint_benchmark.py --track strict --summarize
-.venv/bin/python part2/sprint_report.py
+.venv/bin/python part2/run.py sprint_benchmark.py --track strict
+.venv/bin/python part2/run.py sprint_benchmark.py --track published
+.venv/bin/python part2/run.py sprint_benchmark.py --track strict --summarize
+.venv/bin/python part2/run.py sprint_report.py
 ```
 
 Native caches are ignored by Git. Export receipts record exact CSV hashes, recipes, training populations and native replay errors. Original submissions remain unchanged.

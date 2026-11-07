@@ -52,6 +52,6 @@ These are exploratory fixed blends, evaluated on every saved split. The mild tre
 
 ## Repeatability and future candidates
 
-See [LOCAL_TESTING.md](../../LOCAL_TESTING.md) for protocol, commands and limitations. `protocol.json` contains immutable IDs, grouping, seeds, periods and data hashes. Each run records implementation hashes and package versions. Models and exact held-out predictions are cached. `fold_scores.csv`, `summary.csv`, per-fold `audit.json`, and prediction files make independent rescoring possible. Incomplete runs cannot be presented as completed comparisons.
+See [LOCAL_TESTING.md](../../docs/LOCAL_TESTING.md) for protocol, commands and limitations. `protocol.json` contains immutable IDs, grouping, seeds, periods and data hashes. Each run records implementation hashes and package versions. Models and exact held-out predictions are cached. `fold_scores.csv`, `summary.csv`, per-fold `audit.json`, and prediction files make independent rescoring possible. Incomplete runs cannot be presented as completed comparisons.
 
 Use this suite for the next candidate batch. Do not choose one favorable validation F1 or change boundaries to make a model win. Freeze the recipe before generating a final CSV; refit final components consistently on train plus validation, while keeping held-out benchmark metrics separate. Kaggle results remain the only direct evidence of performance on its newer cohort.

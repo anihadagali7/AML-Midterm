@@ -1,18 +1,18 @@
 # Repeatable Part Two local benchmark
 
-The [all-submission comparison](experiments/all_submissions/RESULTS.md) evaluates
+The [all-submission comparison](../experiments/all_submissions/RESULTS.md) evaluates
 the exact recipes for files 01–10, both Ani winners, and the trend control on all
 ten splits below plus the three saved gap checks. It replaces linear-component
 proxies with the full original ensembles. Run `make -C part2 compare-all`, then
 `compare-all-check` and `compare-all-report`, after installing
 `requirements-all-submissions.txt`. [Policy](ALL_SUBMISSIONS_PROTOCOL.md).
 
-The [latest neighbor extensions](experiments/ani_extensions/RESULTS.md) reuse all
+The [latest neighbor extensions](../experiments/ani_extensions/RESULTS.md) reuse all
 splits below and compare both Ani winners. Their separate, prospectively declared
 decision rule is in [EXTENSION_PROTOCOL.md](EXTENSION_PROTOCOL.md); it prioritizes
 later-cohort prediction and retains all CV and supplied-validation trade-offs.
 
-The [previous comparison](experiments/stack_improvements/RESULTS.md) adds Ani's earlier
+The [previous comparison](../experiments/stack_improvements/RESULTS.md) adds Ani's earlier
 unweighted 0.58810 winner as a second reference and evaluates 27 recipes on these
 unchanged splits. Follow [IMPROVEMENT_PROTOCOL.md](IMPROVEMENT_PROTOCOL.md) for the
 previous two-reference selection rule and adaptive-batch history. This document
@@ -65,10 +65,10 @@ Conservative follow-ups reuse saved predictions on every split: 75% Ani plus 25%
 From the repository root, using the existing virtual environment:
 
 ```sh
-.venv/bin/python part2/benchmark_protocol.py
-.venv/bin/python part2/local_benchmark.py --suite full
-.venv/bin/python part2/local_benchmark.py --summarize
-.venv/bin/python -m unittest discover -s part2 -p 'test_local_benchmark.py'
+.venv/bin/python part2/run.py benchmark_protocol.py
+.venv/bin/python part2/run.py local_benchmark.py --suite full
+.venv/bin/python part2/run.py local_benchmark.py --summarize
+.venv/bin/python part2/run.py test test_local_benchmark.py
 ```
 
 For the official and chronological comparisons first, use `--suite chronological`. The full command resumes cached completed folds. `experiments/local_benchmark/current_run.json` points to the latest results. Add a candidate adapter alongside `benchmark_models.py` and register its recipe in the runner; run it on the same saved splits, not new favorable boundaries.
