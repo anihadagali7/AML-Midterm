@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "record_kind": "retrospective_submission_record",
+  "submission_id": "02",
+  "artifact": "part2/submissions/02_text_heavy.csv",
+  "sha256": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
+  "metric": "log_loss",
+  "lower_is_better": true,
+  "kaggle_score": 0.58993,
+  "score_source": "User-reported Kaggle result",
+  "score_reported_at_utc": null,
+  "training_rows": 8037,
+  "recipe": {
+    "recency_clinical_C0.5_half3": 0.1875,
+    "recency_criteria_C2_half6": 0.28125,
+    "catboost_d8_n1000_none": 0.125,
+    "catboost_d6_n1000_none": 0.125,
+    "text_wordwide_C2": 0.28125
+  },
+  "artifact_first_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "trial_phase_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "original_score_commit": "c12df86faec4a2c57502fe3782f4ecc6120a2cf8",
+  "evidence_manifest": "part2/submissions/manifest.json",
+  "evidence_manifest_sha256": "9ab53b9088db2b462206115a660d52271db8191c01f3e42f21f031523e23d2b0",
+  "score_tag": "part2-submission-02-kaggle-0.58993",
+  "record_created_at_utc": "2026-11-07T17:00:05.845473+00:00",
+  "provenance_note": "Retrospective record of an already-submitted, unchanged CSV. Original export and experiment commits remain intact; tag creation is not the historical submission date."
+}

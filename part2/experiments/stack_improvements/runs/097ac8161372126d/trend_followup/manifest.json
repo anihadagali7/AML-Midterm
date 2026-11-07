@@ -1,0 +1,54 @@
+{
+  "recipes": {
+    "unweighted_phase3_year": {
+      "bank": "unweighted",
+      "tau": null,
+      "phases": "III",
+      "scale": 1.0
+    },
+    "unweighted_all_years": {
+      "bank": "unweighted",
+      "tau": null,
+      "phases": "all",
+      "scale": 1.0
+    },
+    "unweighted_shrunk_years": {
+      "bank": "unweighted",
+      "tau": null,
+      "phases": "all",
+      "scale": 0.25
+    },
+    "tau6_phase3_year": {
+      "bank": "moderate",
+      "tau": 6.0,
+      "phases": "III",
+      "scale": 1.0
+    },
+    "tau6_all_years": {
+      "bank": "moderate",
+      "tau": 6.0,
+      "phases": "all",
+      "scale": 1.0
+    },
+    "tau6_shrunk_years": {
+      "bank": "moderate",
+      "tau": 6.0,
+      "phases": "all",
+      "scale": 0.25
+    },
+    "recent_all_years": {
+      "bank": "recent",
+      "tau": 3.0,
+      "phases": "all",
+      "scale": 1.0
+    },
+    "recent_shrunk_years": {
+      "bank": "recent",
+      "tau": 3.0,
+      "phases": "all",
+      "scale": 0.25
+    }
+  },
+  "source_sha256": "0cfba4370fea616849d9f1945ccd2caa54a16b01cf3ca88862a9c8608d78a603",
+  "context": "Adaptive batch fixed after first-batch chronological results and early CV folds; same selection rule, no new boundaries."
+}

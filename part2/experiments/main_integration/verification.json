@@ -1,0 +1,21 @@
+{
+  "unit_tests_passed": 16,
+  "score_tags_verified": 6,
+  "common_benchmark_model_split_results": 338,
+  "winner_native_replay": {
+    "file": "13_file10_legacy30.csv",
+    "kaggle_score": 0.58465,
+    "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+    "native_replay_max_error": 1.1102230246251565e-16,
+    "rows": 1500,
+    "label_and_identifier_invariance": true
+  },
+  "main_base_part1_tree": "03430b854b2e5d6fc070f71359e7720318b1389b",
+  "integration_part1_tree": "03430b854b2e5d6fc070f71359e7720318b1389b",
+  "part2_replayed_byte_identically_before_documentation": true,
+  "source_head": "9da0e1ea6f8aed90996c779415a43edad50957c9",
+  "integration_conflicts_resolved": [
+    "part2/part2.ipynb: preserve original research version"
+  ],
+  "verification_caches": "Temporarily linked existing native caches, removed links after verification; no caches are committed."
+}

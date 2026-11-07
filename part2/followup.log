@@ -1,0 +1,3 @@
+               submission  validation_logloss  temporal_logloss  mean_test_probability                                                           sha256 kaggle_score
+ 05_text_later_phases.csv            0.558605          0.564306               0.621629 3c8d498a6ed79e3e2267a18784cc9b424576da038b532963cf3459519049dde6         None
+06_lighter_tree_blend.csv            0.555718          0.560705               0.620205 064f8ca0935d4a7c4721d39dcd66e0229e1267f5c6a63bc4888a530fd8e27588         None

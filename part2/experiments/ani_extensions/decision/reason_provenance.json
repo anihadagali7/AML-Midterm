@@ -1,0 +1,5 @@
+{
+  "source": "experiments/model_search/reason_labels_for_analysis.csv",
+  "sha256": "67641f7841504730ac071f0ffbf58fbe1184b122fefdaaf3cdb97a1c217d7ebe",
+  "use": "Joined after predicting; no reason or embedding input was fitted"
+}

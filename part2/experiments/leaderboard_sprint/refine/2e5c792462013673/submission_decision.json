@@ -1,0 +1,10 @@
+{
+  "status": "Hold final slot; file 16 remains unsubmitted",
+  "reviewed_at_utc": "2026-11-06T23:50:30.004149+00:00",
+  "supersedes_upload_recommendation": "final_selection.json",
+  "best_file": "13_file10_legacy30.csv",
+  "best_score": 0.58465,
+  "reason": "The user confirmed first place with nine total submissions. Reconsideration of final-slot value: file 16 has small chronological gains, slightly worse grouped CV and uncertainty intervals spanning zero; file 15 already failed to transfer. One aggregate score would leave no slot for follow-up. The earlier exploratory upload recommendation is withdrawn.",
+  "remaining_uploads": 1,
+  "actual_score_for_file16": null
+}

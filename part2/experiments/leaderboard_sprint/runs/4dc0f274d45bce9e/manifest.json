@@ -1,0 +1,224 @@
+{
+  "recipes": {
+    "fast_weight0.25": {
+      "blend": {
+        "ani_stack": 0.75,
+        "fast2_neighbors": 0.25
+      }
+    },
+    "fast_weight0.35": {
+      "blend": {
+        "ani_stack": 0.65,
+        "fast2_neighbors": 0.35
+      }
+    },
+    "fast_weight0.65": {
+      "blend": {
+        "ani_stack": 0.35,
+        "fast2_neighbors": 0.65
+      }
+    },
+    "fast_weight0.75": {
+      "blend": {
+        "ani_stack": 0.25,
+        "fast2_neighbors": 0.75
+      }
+    },
+    "fast_weight1": {
+      "blend": {
+        "ani_stack": 0.0,
+        "fast2_neighbors": 1.0
+      }
+    },
+    "mix_sharp_0.25": {
+      "blend": {
+        "file10": 0.75,
+        "sharp": 0.25
+      }
+    },
+    "mix_sharp_0.5": {
+      "blend": {
+        "file10": 0.5,
+        "sharp": 0.5
+      }
+    },
+    "mix_sharp_0.75": {
+      "blend": {
+        "file10": 0.25,
+        "sharp": 0.75
+      }
+    },
+    "mix_trend_0.1": {
+      "blend": {
+        "file10": 0.9,
+        "trend": 0.1
+      }
+    },
+    "mix_trend_0.25": {
+      "blend": {
+        "file10": 0.75,
+        "trend": 0.25
+      }
+    },
+    "mix_trend_0.5": {
+      "blend": {
+        "file10": 0.5,
+        "trend": 0.5
+      }
+    },
+    "mix_recent_half_0.25": {
+      "blend": {
+        "file10": 0.75,
+        "recent_half": 0.25
+      }
+    },
+    "mix_recent_half_0.5": {
+      "blend": {
+        "file10": 0.5,
+        "recent_half": 0.5
+      }
+    },
+    "mix_recent_half_0.75": {
+      "blend": {
+        "file10": 0.25,
+        "recent_half": 0.75
+      }
+    },
+    "mix_unweighted_nn_0.1": {
+      "blend": {
+        "file10": 0.9,
+        "unweighted_nn": 0.1
+      }
+    },
+    "mix_unweighted_nn_0.25": {
+      "blend": {
+        "file10": 0.75,
+        "unweighted_nn": 0.25
+      }
+    },
+    "mix_legacy01_0.1": {
+      "blend": {
+        "file10": 0.9,
+        "legacy01": 0.1
+      }
+    },
+    "mix_legacy01_0.2": {
+      "blend": {
+        "file10": 0.8,
+        "legacy01": 0.2
+      }
+    },
+    "mix_legacy01_0.3": {
+      "blend": {
+        "file10": 0.7,
+        "legacy01": 0.3
+      }
+    },
+    "mix_legacy03_0.1": {
+      "blend": {
+        "file10": 0.9,
+        "legacy03": 0.1
+      }
+    },
+    "mix_legacy03_0.2": {
+      "blend": {
+        "file10": 0.8,
+        "legacy03": 0.2
+      }
+    },
+    "mix_sharp_trend": {
+      "blend": {
+        "file10": 0.5,
+        "sharp": 0.25,
+        "trend": 0.25
+      }
+    },
+    "meta_C0.1_tau2": {
+      "meta": true,
+      "C": 0.1,
+      "tau": 2.0,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_C0.6_tau2": {
+      "meta": true,
+      "C": 0.6,
+      "tau": 2.0,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_C1_tau2": {
+      "meta": true,
+      "C": 1.0,
+      "tau": 2.0,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_C0.3_tau1.5": {
+      "meta": true,
+      "C": 0.3,
+      "tau": 1.5,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_C0.3_tau2.5": {
+      "meta": true,
+      "C": 0.3,
+      "tau": 2.5,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_C0.3_tau3": {
+      "meta": true,
+      "C": 0.3,
+      "tau": 3.0,
+      "drop_knn": false,
+      "interactions": false
+    },
+    "meta_drop_knn_C0.1": {
+      "meta": true,
+      "C": 0.1,
+      "tau": 2.0,
+      "drop_knn": true,
+      "interactions": false
+    },
+    "meta_drop_knn_C0.3": {
+      "meta": true,
+      "C": 0.3,
+      "tau": 2.0,
+      "drop_knn": true,
+      "interactions": false
+    },
+    "meta_phase_C0.05": {
+      "meta": true,
+      "C": 0.05,
+      "tau": 2.0,
+      "drop_knn": false,
+      "interactions": true
+    },
+    "meta_phase_C0.15": {
+      "meta": true,
+      "C": 0.15,
+      "tau": 2.0,
+      "drop_knn": false,
+      "interactions": true
+    }
+  },
+  "baseline": "10_ani_fast2_neighbors_half.csv",
+  "baseline_score": 0.58609,
+  "baseline_sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+  "policy_sha256": "09766cd3897fbaf02541b20d273e7a1efe01d1dc0b1f523e06350fb677d907f3",
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "gaps_sha256": "e82c9ea3b46efaed20164103cb2c99616acf500df03837b3cf6098daab7c9027",
+  "source_sha256": {
+    "sprint_models.py": "3a5ff9cf01468bd5c46985fcb6fc1347be9ed9355edcccbceff790079077a0c7",
+    "sprint_benchmark.py": "123448b2a5533adaa040346a81c5ceff7f1a8ec99c16fdc0cacf79c577324bab"
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0"
+  }
+}

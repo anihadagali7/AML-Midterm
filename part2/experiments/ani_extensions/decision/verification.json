@@ -1,0 +1,20 @@
+{
+  "extension_recipes": 40,
+  "new_recipe_evaluations": 800,
+  "original_splits_per_track": 10,
+  "preprocessing_tracks": 2,
+  "controls_reproduce": true,
+  "source_and_input_hashes_match": true,
+  "grouped_inner_preprocessing_verified": true,
+  "independently_rescored": true,
+  "gapped_splits_per_track": 3,
+  "exported_submissions": 2,
+  "native_replay_max_error": 0.0,
+  "labels_and_identifiers_do_not_change_inference": true,
+  "kaggle_scores_unknown": false,
+  "reported_kaggle_scores": {
+    "09_ani_replace_knn5.csv": null,
+    "10_ani_fast2_neighbors_half.csv": 0.58609
+  },
+  "leaderboard_sha256": "11013051532d3a114967243917e93edb3d7085bce99b7ff13b1a45d88597cd0c"
+}

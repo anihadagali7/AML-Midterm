@@ -1,0 +1,212 @@
+{
+  "batch": "neighbors",
+  "recipes": {
+    "models": {
+      "fast15": {
+        "bank": "fast15",
+        "tau": 1.5,
+        "trend": false,
+        "C": 1.0
+      },
+      "fast15_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast15": 0.5
+        }
+      },
+      "fast15_trend": {
+        "bank": "fast15",
+        "tau": 1.5,
+        "trend": true,
+        "C": 1.0
+      },
+      "fast15_trend_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast15_trend": 0.5
+        }
+      },
+      "fast2": {
+        "bank": "fast2",
+        "tau": 2.0,
+        "trend": false,
+        "C": 1.0
+      },
+      "fast2_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast2": 0.5
+        }
+      },
+      "fast2_trend": {
+        "bank": "fast2",
+        "tau": 2.0,
+        "trend": true,
+        "C": 1.0
+      },
+      "fast2_trend_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast2_trend": 0.5
+        }
+      },
+      "replace_knn1": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 1
+      },
+      "replace_knn3": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 3
+      },
+      "replace_knn4": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 4
+      },
+      "replace_knn5": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 5
+      },
+      "replace_knn6": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 1.0,
+        "replace": 6
+      },
+      "recent_neighbors": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": false,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "recent_neighbors_trend": {
+        "bank": "recent",
+        "tau": 3.0,
+        "trend": true,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "recent_neighbors_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "recent_neighbors": 0.5
+        }
+      },
+      "unweighted_neighbors": {
+        "bank": "unweighted",
+        "tau": null,
+        "trend": false,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "unweighted_neighbors_trend": {
+        "bank": "unweighted",
+        "tau": null,
+        "trend": true,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "fast2_neighbors": {
+        "bank": "fast2",
+        "tau": 2.0,
+        "trend": false,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "fast2_neighbors_trend": {
+        "bank": "fast2",
+        "tau": 2.0,
+        "trend": true,
+        "C": 0.3,
+        "neighbors": true
+      },
+      "fast2_neighbors_half": {
+        "blend": {
+          "ani_stack": 0.5,
+          "fast2_neighbors": 0.5
+        }
+      }
+    },
+    "neighbors": [
+      {
+        "view": "criteria",
+        "k": 10,
+        "tau": null,
+        "power": 1
+      },
+      {
+        "view": "criteria",
+        "k": 50,
+        "tau": null,
+        "power": 1
+      },
+      {
+        "view": "criteria",
+        "k": 200,
+        "tau": null,
+        "power": 1
+      },
+      {
+        "view": "criteria",
+        "k": 50,
+        "tau": 3.0,
+        "power": 1
+      },
+      {
+        "view": "criteria",
+        "k": 50,
+        "tau": 2.0,
+        "power": 1
+      },
+      {
+        "view": "criteria",
+        "k": 50,
+        "tau": 3.0,
+        "power": 2
+      },
+      {
+        "view": "context",
+        "k": 50,
+        "tau": 3.0,
+        "power": 1
+      },
+      {
+        "view": "context",
+        "k": 200,
+        "tau": 3.0,
+        "power": 1
+      }
+    ],
+    "fast": {
+      "fast15": 1.5,
+      "fast2": 2.0
+    }
+  },
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "design_sha256": "beedd6d47c8586444eca564e17c9e1219aa1ff663482944220db04365a57a72b",
+  "source_sha256": {
+    "extension_neighbors.py": "0a4b3a8b3fb3019144470188fb7e6b5b4208f18063332abe64cd44fca6abcd38",
+    "extension_common.py": "762962c7790e2a22462015417c78b1416fcc2c677f3f91d675b76f2c0d9794b2"
+  },
+  "previous_run_sha256": "b2d4e77574e060962abd307112fc4108eb772f19df1330d70bb20d4098b78291",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0"
+  }
+}

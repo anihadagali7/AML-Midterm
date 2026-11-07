@@ -1,0 +1,8 @@
+../.venv/bin/python -m unittest discover -p 'test_*.py'
+...........    model  completed_splits  expected_splits  official_logloss  temporal_windows  temporal_mean_logloss  worst_temporal_logloss  cv_completed_repeats  cv_mean_logloss  cv_repeat_std  temporal_mean_delta_vs_ani  cv_mean_delta_vs_ani  complete_comparison
+ani_stack                 1               10               0.5                 0                    NaN                     NaN                     0              NaN            NaN                         NaN                   NaN                False
+..
+----------------------------------------------------------------------
+Ran 13 tests in 1.488s
+
+OK
