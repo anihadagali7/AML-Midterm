@@ -1,0 +1,9 @@
+{
+  "replicates": 5000,
+  "seed": 20261107,
+  "groups": 222,
+  "rows": 235,
+  "unit": "Embedding group, shared multiplicities across models, repeats and overlapping cuts",
+  "estimates": "Per-row average across repeated fits; B is equal mean of cut-specific weighted means",
+  "limitations": "Conditional on fitted predictions. Not a test of Kaggle gaps; excludes retraining, search and unseen-distribution uncertainty. No bootstrap draws retained."
+}

@@ -1,0 +1,81 @@
+{
+  "dylan_A_folds": 50,
+  "A_folds_with_gold_group_overlap": 50,
+  "A_folds_with_masked_group_overlap": 50,
+  "B_query_occurrences": 293,
+  "B_unique_queries": 109,
+  "B_cuts": [
+    {
+      "case": "dylan_B2004",
+      "track": "dylan",
+      "kind": "B",
+      "cut": 2004,
+      "gold": 126,
+      "masked": 1014,
+      "query": 109,
+      "gold_group_overlap": 0,
+      "masked_group_overlap": 16,
+      "masked_at_or_after_query_start": 954
+    },
+    {
+      "case": "strict_B2004",
+      "track": "strict_B",
+      "kind": "B",
+      "cut": 2004,
+      "gold": 126,
+      "masked": 54,
+      "query": 109,
+      "gold_group_overlap": 0,
+      "masked_group_overlap": 0,
+      "masked_at_or_after_query_start": 0
+    },
+    {
+      "case": "dylan_B2005",
+      "track": "dylan",
+      "kind": "B",
+      "cut": 2005,
+      "gold": 137,
+      "masked": 1014,
+      "query": 98,
+      "gold_group_overlap": 1,
+      "masked_group_overlap": 15,
+      "masked_at_or_after_query_start": 843
+    },
+    {
+      "case": "strict_B2005",
+      "track": "strict_B",
+      "kind": "B",
+      "cut": 2005,
+      "gold": 136,
+      "masked": 140,
+      "query": 98,
+      "gold_group_overlap": 0,
+      "masked_group_overlap": 0,
+      "masked_at_or_after_query_start": 0
+    },
+    {
+      "case": "dylan_B2006",
+      "track": "dylan",
+      "kind": "B",
+      "cut": 2006,
+      "gold": 149,
+      "masked": 1014,
+      "query": 86,
+      "gold_group_overlap": 1,
+      "masked_group_overlap": 12,
+      "masked_at_or_after_query_start": 712
+    },
+    {
+      "case": "strict_B2006",
+      "track": "strict_B",
+      "kind": "B",
+      "cut": 2006,
+      "gold": 148,
+      "masked": 248,
+      "query": 86,
+      "gold_group_overlap": 0,
+      "masked_group_overlap": 0,
+      "masked_at_or_after_query_start": 0
+    }
+  ]
+}
