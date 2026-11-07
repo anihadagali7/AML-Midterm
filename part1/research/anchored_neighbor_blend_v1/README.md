@@ -3,10 +3,12 @@
 The fixed **75% anchored / 25% LDA ensemble** blend improved Pooled235 CV by
 **0.002039**, winning all eight paired repeats. It tied the parent's mean
 Train157 CV, original validation sample F1, and every chronological window.
-It remains a useful candidate, but **does not pass the registered advancement
-rule in both pools**. Neither neighbor modification improved both CV pools.
-The submitted anchored **0.89636** model remains the leader. These candidates
-have no Kaggle scores; no final235 submission fit or upload was performed.
+It **does not pass the registered advancement rule in both pools**. Neither
+neighbor modification improved both CV pools. After the user authorized a
+manual trial of the fixed blend, they reported **Kaggle 0.89850**, improving the
+parent's 0.89636 by **0.00214**. The blend is now the highest recorded submitted
+score; the original CV-rule outcome remains unchanged. See the
+[exact-file result](../../submissions/results/anchored75-lda25-trainval235.json).
 
 ## Fixed recipes and comparison
 
@@ -72,10 +74,11 @@ mean all validation predictions or metrics are unchanged.
 Across the eight Pooled235 repeats, the blend changes 27 row-evaluations
 covering 17 distinct IDs: 17 improve in sample F1, seven worsen, and three tie.
 Train157 has five improving and five worsening row-evaluations. This is a small
-but consistent pooled-CV signal, with no demonstrated improvement on later
-data. Favor this direction over the two tested neighbor changes, while keeping
-its unconfirmed status and added complexity explicit. Do not reinterpret the
-rule after seeing these results or claim a Kaggle gain.
+but consistent pooled-CV signal, with no improvement on the local later-year
+checks. It favored further consideration over the two tested neighbor changes,
+with its added complexity explicit. The subsequent Kaggle result is recorded
+separately below; it does not change the original rule or justify inferring
+Kaggle gains from CV alone.
 
 ## Testing and provenance
 
@@ -152,5 +155,8 @@ After reviewing these results and the strict promotion-rule distinction, the
 user authorized a manual trial of the fixed 75/25 blend. The
 [prepared full-235 submission](../anchored_lda_blend_submission_v1/README.md)
 combines the two existing final fits, with no new fitting or tuning. It changes
-five of 312 test label sets. No Kaggle score is recorded; the study's original
-evaluation and advancement outcome remain unchanged.
+five of 312 test label sets. The user subsequently reported **0.89850**, a
+**0.00214** improvement. The result is associated with that exact CSV and remains
+user-reported; the study's original evaluation and advancement outcome remain
+unchanged. The improvement supports this fixed blend, not a guarantee that
+other blend weights or CV gains will improve Kaggle.
