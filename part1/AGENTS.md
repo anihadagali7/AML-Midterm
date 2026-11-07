@@ -1,6 +1,7 @@
 # Part 1 experiment and submission workflow
 
-Use the existing `codex/part1-research-integration` branch for this research.
+Start new research on a task branch based on current `main`. The consolidated
+Part 1 model, testing procedure and historical records live in this project.
 Do not merge branches unless Michael asks. Keep unrelated work out of commits.
 The workspace GitHub account and commit identity rules still apply.
 

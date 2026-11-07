@@ -1,0 +1,104 @@
+{
+  "research_before": "c0d443b",
+  "main_before": "b1cfb38",
+  "historical_notebooks_and_exports_byte_identical": true,
+  "archive_files_checked": 4,
+  "notebook_code_cells_executed": 8,
+  "notebook_sha256": "f661ed6f67fa4dec07ff43747f2cf5483392d69af2ad726045de6dbedffbb0e5",
+  "notebook_execution": {
+    "fresh_final_fits": 1,
+    "verified_labels": 235,
+    "original_masked_rows": 1014,
+    "generated_rows_in_final_fit": 757,
+    "test_predictions": 312,
+    "submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "exact_scored_csv": true,
+    "generated_label_export_matches": true,
+    "frozen_files_unchanged": true,
+    "saved_comparison_verified": true,
+    "full_cv_refitted_here": false
+  },
+  "part1_documentation_links_checked": 255,
+  "retained_evidence_checks": [
+    {
+      "command": "python part1/research/legacy_retention_v1/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "retained_files_checked": 672,
+        "recipe_sources_checked": 39,
+        "additional_records_checked": 1,
+        "studies_checked": 31,
+        "retained_bytes": 40274159,
+        "pre_cleanup_checks": {
+          "prediction_files_rescored": 1270,
+          "heldout_predictions_checked": 81740,
+          "summary_rows_checked": 1226,
+          "per_trial_tables_checked": 917,
+          "reference_or_alias_without_same_named_summary": 44
+        },
+        "pre_cleanup_checks_repeated": false,
+        "note": "Discarded predictions were rescored before cleanup; this run checks retained hashes and coverage. Use current_leaders_local.py verify to rescore current leaders.",
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/early_iterations/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "files_checked": 207,
+        "bytes_checked": 10396758,
+        "working_files_accounted_for": 275,
+        "pre_import_repeat_scores_checked": 2246,
+        "pre_import_scoring_repeated": false,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "retained_files_verified": 784,
+        "retained_bytes": 13783443,
+        "shared_data_files_verified": 5,
+        "study_settings_preserved": 27,
+        "omitted_output_hashes_not_rechecked": 20,
+        "main_entry_links_checked": 55,
+        "archive_required": false,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify_leaders.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "arrays": 93,
+        "repeat_scores": 192,
+        "supplementary_scores": 44,
+        "final_submissions": 1,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/new_directions/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "attempts": 136,
+        "studies": 14,
+        "saved_repeat_scores": 926,
+        "supplementary_fits": 40,
+        "frozen_files_checked": 137,
+        "local_links_checked": 174,
+        "data_hashes_checked": true,
+        "model_fitting": false,
+        "note": "Checks retained summaries and reproduction inputs. Original predictions were rescored during migration and are intentionally not retained."
+      }
+    }
+  ],
+  "actual_merge_performed": false,
+  "phase": "Prepared and verified notebook/archive; integration tree checks follow."
+}

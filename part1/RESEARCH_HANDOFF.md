@@ -16,7 +16,7 @@ The [LDA study catalog](research/lda_ensemble/experiments/lda_research_checkpoin
 
 ## Repository and evidence
 
-The research is consolidated under Part 1 on `codex/part1-research-integration`. Keep current model files in their existing locations; their paths are part of frozen provenance. Archived absolute paths describe removed workspaces. Use [current_leaders_local.py](current_leaders_local.py) and the replay wrappers linked from the research index to run in the current checkout.
+The research is consolidated under Part 1. Use current `main` as the starting point for new work. The [canonical notebook](part1.ipynb) runs the anchored final fit; the [two former entry notebooks](research/historical_notebooks/README.md) remain archived byte for byte. Keep current model files in their existing locations; their paths are part of frozen provenance. Archived absolute paths describe removed workspaces. Use [current_leaders_local.py](current_leaders_local.py) and the replay wrappers linked from the research index to run in the current checkout.
 
 [Verification commands](README.md#testing-and-verification) check retained hashes, predictions, and scores without fitting. Source, fixed settings, summaries, and failures remain for unsuccessful studies; detailed leader/reference predictions remain available. Some historical fold caches were discarded, so their old file hashes cannot be checked again. The [retention policy](RETENTION.md) and wrapper outputs identify this boundary.
 

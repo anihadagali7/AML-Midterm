@@ -1,6 +1,6 @@
 # Part 1
 
-Start here for the current model and testing procedure. The **anchored reason classifier** has the highest recorded, user-reported Kaggle score: **0.89636**. Its submitted fit used all **235 verified labels** and the **1,014 originally masked training rows**; Kaggle test inputs were used only for prediction.
+Start here for the current model and testing procedure. The [executed Part 1 notebook](part1.ipynb) explains the recipe, performs one final235 refit, and reproduces the exact scored CSV. It verifies saved comparison results; fresh 80-fold CV is a separate replay. The **anchored reason classifier** has the highest recorded, user-reported Kaggle score: **0.89636**. Its submitted fit used all **235 verified labels** and the **1,014 originally masked training rows**; Kaggle test inputs were used only for prediction.
 
 The model blends logistic regression, cosine nearest neighbors, and shrinkage LDA over the supplied reason embeddings. Clustering supports missing-label generation. See the [implementation](anchored_solution.py), [frozen recipe](experiments/paired_improvement/candidate/manifest.json), and [scored result with exact CSV hash](submissions/results/anchored-trainval235.json). The preparation manifest predates submission; the result record carries the later score.
 
@@ -72,6 +72,7 @@ The [earlier-iteration archive](research/early_iterations/README.md) also preser
 | [Testing policy](TESTING_POLICY.md) | Current evaluation contract and saved protocol paths |
 | [Research handoff](RESEARCH_HANDOFF.md) | Short current status and guidance for the next experiment |
 | [Research index](RESEARCH_INDEX.html) | Experiment families, negative findings, and replay guides |
+| [Historical entry notebooks](research/historical_notebooks/README.md) | Both former `part1.ipynb` versions and older main exports |
 | [Submission guide](submissions/README.md) | Scored CSVs, immutable tags, and score provenance |
 | [Workflow](AGENTS.md) | Branch, commit, and retention conventions |
 

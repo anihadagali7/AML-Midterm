@@ -3046,13 +3046,13 @@
     "part1/paired_models.py": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
     "part1/paired_recipe_cv.ipynb": "ab409670420c361da15c2a735919316997c4b07fcd5b51479eb6a3ea9a7e5eba",
     "part1/paired_search.py": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
-    "part1/part1.ipynb": "5a40e82cf5838a5b8057b14126b86d168d174d397da9a4c36981ea0ee525c685",
     "part1/per_reason_regularization.ipynb": "f82522d10707238e212a5f1e7172ea55d4d08766ff5972acb356a16d53e600cc",
     "part1/rare_label_weights.ipynb": "7513e72fb5be617398c92087f953da1cc41da1d79179493dcd3c07f3124d0c04",
     "part1/remaining_classifier_features.ipynb": "e45ebbf00d47d5c498c744503dce03b16a8fcc2a855f317f6bbd9ddea7174b43",
     "part1/self_training.ipynb": "46f2ebaf13270aaff7b03bb63cf085fdf5e58dc5b7a8cf9b88e900bd6c8e5dd1",
     "part1/simple_benchmark.py": "25d9609e2c3587f8e4bcb6f15812e4a04edd6bb3c3a970e4c23f7936e50e676d",
-    "part1/simple_models.py": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32"
+    "part1/simple_models.py": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32",
+    "part1/research/historical_notebooks/research_baselines_c0d443b.ipynb": "5a40e82cf5838a5b8057b14126b86d168d174d397da9a4c36981ea0ee525c685"
   },
   "additional_retained_files": {
     "part1/current_ani_pool_comparison.ipynb": {
@@ -3060,5 +3060,8 @@
       "bytes": 35963
     }
   },
-  "documentation_reconciliation": "Preserved the shared checkout historical benchmark follow-up notes under the existing historical-policy banner. Its linked audit notebook was also retained; no model or prediction bytes changed."
+  "documentation_reconciliation": "Preserved the shared checkout historical benchmark follow-up notes under the existing historical-policy banner. Its linked audit notebook was also retained; no model or prediction bytes changed.",
+  "source_relocations": {
+    "part1/part1.ipynb": "part1/research/historical_notebooks/research_baselines_c0d443b.ipynb"
+  }
 }
