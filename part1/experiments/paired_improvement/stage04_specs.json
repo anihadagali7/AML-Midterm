@@ -1,0 +1,70 @@
+[
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_control"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.3,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_lda0.3"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_k5",
+    "k": 5
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_k20",
+    "k": 20
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_gmm0.05"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.15,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "support_gmm0.15"
+  }
+]

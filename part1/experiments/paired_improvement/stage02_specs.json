@@ -1,0 +1,102 @@
+[
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_control"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_gmm0.1"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.5,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_pseudo0.5"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.1,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_pseudo0.1"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": false,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_fractional_neighbors"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.1,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_w0.1"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.3,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_w0.3"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_conf0.9",
+    "confidence": 0.9
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.0,
+    "rounds": 3,
+    "lda_source": "augmented",
+    "name": "lda_rounds3"
+  }
+]

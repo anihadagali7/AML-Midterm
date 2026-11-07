@@ -1,0 +1,61 @@
+[
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "structure_control"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "base_pca30",
+    "base_components": 30
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "base_pca60",
+    "base_components": 60
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_pca30",
+    "lda_components": 30
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.1,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "lda_pca60",
+    "lda_components": 60
+  }
+]
