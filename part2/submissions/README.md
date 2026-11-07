@@ -1,5 +1,9 @@
 # Part Two manual Kaggle submissions
 
+See [commit and score-tag history](HISTORY.md) for the trial phases and the separate
+record commit for each confirmed submission. Run `python part2/verify_submission_tags.py`
+from the repository root to check every tag against its exact CSV and original evidence.
+
 **Current best: file 13, Kaggle 0.58465, user-reported first place.** The improvement
 over file 10 is 0.00144 and over Ani's 0.58688 is 0.00223. It beats the previously
 reported leader's 0.58526 by 0.00061. Preserve this exact file as the scored reference.

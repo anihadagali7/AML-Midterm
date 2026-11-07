@@ -1,5 +1,9 @@
 # Part Two: clinical-trial outcome prediction
 
+**Git organization:** [trial-phase commits and separately tagged submission records](submissions/HISTORY.md).
+Every confirmed numbered submission has its own record commit and annotated score
+tag; the original experiment history remains intact.
+
 **Current best: [submission 13](submissions/13_file10_legacy30.csv), Kaggle
 0.58465, user-reported first place.** This improves file 10 by 0.00144 and Ani's
 0.58688 by 0.00223, beating the previously reported leader's 0.58526 by 0.00061. The result is
