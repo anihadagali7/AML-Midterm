@@ -1,0 +1,44 @@
+{
+  "frozen_at": 1793955286.116309,
+  "source_sha256": "eb4ef2811ad1a6dcee2098458185438fd1ff06be13c99d2688271be332f68741",
+  "evidence_before_plan": {
+    "v5_screen": "799a41ea96cefb528def5f7b3c691f9a29dd2dce0544e1407029d435e30697f5",
+    "v5_confirmation": "0167fb4fd06b0356ce05f79af5a1cb5c86916321a8c21d2bf62643430bd4de4d",
+    "v6_screen": "3caf5bd9beee653e1dcd282bf0056b5ea1751744fa66bb55a0f05f48caff0f6a"
+  },
+  "rationale": "v5 all15 gains both means but wins only 4/8 in each pool. v6 three-cluster teacher gains both screening means over its exact GMM parent but not the stronger ensemble. Quantify these limited signals without changing recipes or calling them confirmed.",
+  "extra_cv": [
+    {
+      "study": "v6",
+      "recipe": "single_gmm"
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3"
+    }
+  ],
+  "supplementary": [
+    {
+      "study": "v5",
+      "recipe": "rfm_complement_all15"
+    },
+    {
+      "study": "v6",
+      "recipe": "single_gmm"
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3"
+    },
+    {
+      "study": "v5",
+      "recipe": "submitted_reference"
+    }
+  ],
+  "gates_unchanged": true,
+  "promotion": false,
+  "validation_role": "Repeatedly consulted diagnostic, not fresh heldout proof.",
+  "unused_test_inputs": true,
+  "external_data": false,
+  "deep_learning": false
+}

@@ -1,0 +1,1522 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Part 1 new directions: completed experiments</title>
+<style>body{font:16px/1.5 system-ui;max-width:1150px;margin:32px auto;padding:0 20px;color:#182738}table{border-collapse:collapse;width:100%;margin:12px 0}td,th{border:1px solid #ccd5df;padding:7px;text-align:left}th{background:#eef3f8}details{margin:12px 0;padding:12px;border:1px solid #ccd5df;border-radius:6px}summary{cursor:pointer;font-weight:650}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}input{font:inherit;padding:10px;width:90%}a{color:#145c9e}</style>
+<h1>Part 1 new directions: completed experiments</h1>
+<p><strong>No model from this work was promoted or submitted.</strong> All 136 scored settings across 14 studies are summarized here, including controls, diagnostic extensions and failed directions. They produced 926 complete out-of-fold repeats (4,630 outer folds) and 40 supplementary fits.</p>
+<p>The summaries were checked against the saved predictions before removing bulky audit records. Code, settings, seeds, exact splits and environment versions remain available. These are sequential studies using reused development labels; negative results apply to the tested settings and comparators, not every possible use of a method. Early studies use weaker parents than the later C.1/LDA ensemble. This work did not test the newer anchored model.</p>
+<p><a href="README.md">Scope and reproduction</a> · <a href="attempts.csv">All attempts and per-repeat scores</a> · <a href="supplementary.csv">Validation and chronological scores</a> · <a href="RESEARCH.md">Research rationale and sources</a> · <a href="failures.json">Failures and limitations</a> · <a href="migration_check.json">Summary verification</a> · <a href="../../../README.md">Project README</a></p>
+<h2>Study overview</h2><table><tr><th>Study</th><th>Direction</th><th>Settings</th><th>Comparator</th></tr>
+<tr><td><a href="reproduction/registry_v1.json">v1</a></td><td>Poisson graphs, compositional EM, and Fisher residuals</td><td>12</td><td>Ani inductive</td></tr>
+<tr><td><a href="reproduction/studies/v2/registry.json">v2</a></td><td>Duplicate-aware graphs and recursive feature machines</td><td>10</td><td>Ani inductive</td></tr>
+<tr><td><a href="reproduction/studies/v3/registry.json">v3</a></td><td>Joint kernels, averaging, nested selection, and new-model blends</td><td>6</td><td>Ani inductive</td></tr>
+<tr><td><a href="reproduction/studies/v4/registry.json">v4</a></td><td>Source-prior correction</td><td>2</td><td>Ani inductive</td></tr>
+<tr><td><a href="reproduction/studies/v5/registry.json">v5</a></td><td>Entropy minimization, class mixtures, and selective kernel blends</td><td>15</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v6/registry.json">v6</a></td><td>Averaging multiple clustering types</td><td>16</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v7/registry.json">v7</a></td><td>Bayesian kNN label-distribution propagation</td><td>10</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v8/registry.json">v8</a></td><td>xRFM kernels, inner selection, and soft-label augmentation</td><td>12</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v9/registry.json">v9</a></td><td>Dirichlet probability-space inference</td><td>8</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v10/registry.json">v10</a></td><td>Fixed one-update xRFM follow-up</td><td>8</td><td>Submitted 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v11/registry.json">v11</a></td><td>Reason-specific learned distances</td><td>8</td><td>Current C.1/LDA 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v12/registry.json">v12</a></td><td>Classical VAST adaptation</td><td>8</td><td>Current C.1/LDA 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v13/registry.json">v13</a></td><td>Jacobian-transformed forests and boosting</td><td>13</td><td>Current C.1/LDA 70/15/15 ensemble</td></tr>
+<tr><td><a href="reproduction/studies/v14/registry.json">v14</a></td><td>Pairwise reason classifiers and probability coupling</td><td>8</td><td>Current C.1/LDA 70/15/15 ensemble</td></tr>
+</table><h2>Attempt details</h2><label for="search">Filter by method, settings, or outcome</label><br><input id="search" type="search"><p id="count">136 attempts</p>
+<details class="attempt" id="v1:poisson_k10_t1"><summary>v1:poisson_k10_t1 — poisson</summary><p>Sources/sinks may avoid oversmoothing ordinary label propagation; normalized embedding graph, independent prediction extension.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.491861</td><td>0.011145</td><td>-0.430998</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.410875</td><td>0.018830</td><td>-0.494090</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson&quot;,
+  &quot;name&quot;: &quot;poisson_k10_t1&quot;,
+  &quot;neighbors&quot;: 10,
+  &quot;temperature&quot;: 1.0
+}</pre></details>
+<details class="attempt" id="v1:poisson_k10_t2"><summary>v1:poisson_k10_t2 — poisson</summary><p>Sources/sinks may avoid oversmoothing ordinary label propagation; normalized embedding graph, independent prediction extension.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.491861</td><td>0.011145</td><td>-0.430998</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.410875</td><td>0.018830</td><td>-0.494090</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson&quot;,
+  &quot;name&quot;: &quot;poisson_k10_t2&quot;,
+  &quot;neighbors&quot;: 10,
+  &quot;temperature&quot;: 2.0
+}</pre></details>
+<details class="attempt" id="v1:poisson_k30_t1"><summary>v1:poisson_k30_t1 — poisson</summary><p>Sources/sinks may avoid oversmoothing ordinary label propagation; normalized embedding graph, independent prediction extension.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.501062</td><td>0.018264</td><td>-0.421798</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.405674</td><td>0.002006</td><td>-0.499291</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson&quot;,
+  &quot;name&quot;: &quot;poisson_k30_t1&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;temperature&quot;: 1.0
+}</pre></details>
+<details class="attempt" id="v1:poisson_k30_t2"><summary>v1:poisson_k30_t2 — poisson</summary><p>Sources/sinks may avoid oversmoothing ordinary label propagation; normalized embedding graph, independent prediction extension.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.501062</td><td>0.018264</td><td>-0.421798</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.405674</td><td>0.002006</td><td>-0.499291</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson&quot;,
+  &quot;name&quot;: &quot;poisson_k30_t2&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;temperature&quot;: 2.0
+}</pre></details>
+<details class="attempt" id="v1:compositional_d30_u0"><summary>v1:compositional_d30_u0 — compositional</summary><p>Share semantic prototype estimates across all 31 reason combinations, infer missing patterns with anchored EM and decode joint expected F1.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.891720</td><td>0.005684</td><td>-0.031139</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.881324</td><td>0.007446</td><td>-0.023641</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;dimensions&quot;: 30,
+  &quot;family&quot;: &quot;compositional&quot;,
+  &quot;name&quot;: &quot;compositional_d30_u0&quot;,
+  &quot;unlabeled_mass&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v1:compositional_d30_u0.5"><summary>v1:compositional_d30_u0.5 — compositional</summary><p>Share semantic prototype estimates across all 31 reason combinations, infer missing patterns with anchored EM and decode joint expected F1.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.889950</td><td>0.003908</td><td>-0.032909</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.876974</td><td>0.002908</td><td>-0.027991</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;dimensions&quot;: 30,
+  &quot;family&quot;: &quot;compositional&quot;,
+  &quot;name&quot;: &quot;compositional_d30_u0.5&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v1:compositional_d80_u0"><summary>v1:compositional_d80_u0 — compositional</summary><p>Share semantic prototype estimates across all 31 reason combinations, infer missing patterns with anchored EM and decode joint expected F1.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.853574</td><td>0.017023</td><td>-0.069285</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.869740</td><td>0.004925</td><td>-0.035225</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;dimensions&quot;: 80,
+  &quot;family&quot;: &quot;compositional&quot;,
+  &quot;name&quot;: &quot;compositional_d80_u0&quot;,
+  &quot;unlabeled_mass&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v1:compositional_d80_u0.5"><summary>v1:compositional_d80_u0.5 — compositional</summary><p>Share semantic prototype estimates across all 31 reason combinations, infer missing patterns with anchored EM and decode joint expected F1.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.855414</td><td>0.001999</td><td>-0.067445</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.866525</td><td>0.005965</td><td>-0.038440</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;dimensions&quot;: 80,
+  &quot;family&quot;: &quot;compositional&quot;,
+  &quot;name&quot;: &quot;compositional_d80_u0.5&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v1:fisher_k8_w0.5_s0"><summary>v1:fisher_k8_w0.5_s0 — fisher</summary><p>Mixture residual directions may preserve distinctions erased by plain cluster probabilities. Signed-root and L2 normalization.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.904459</td><td>0.005201</td><td>-0.018401</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.889362</td><td>0.006018</td><td>-0.015603</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;clusters&quot;: 8,
+  &quot;family&quot;: &quot;fisher&quot;,
+  &quot;name&quot;: &quot;fisher_k8_w0.5_s0&quot;,
+  &quot;residual_weight&quot;: 0.5,
+  &quot;second_order&quot;: false
+}</pre></details>
+<details class="attempt" id="v1:fisher_k8_w1_s1"><summary>v1:fisher_k8_w1_s1 — fisher</summary><p>Mixture residual directions may preserve distinctions erased by plain cluster probabilities. Signed-root and L2 normalization.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.894904</td><td>0.006544</td><td>-0.027955</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.895508</td><td>0.003491</td><td>-0.009456</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;clusters&quot;: 8,
+  &quot;family&quot;: &quot;fisher&quot;,
+  &quot;name&quot;: &quot;fisher_k8_w1_s1&quot;,
+  &quot;residual_weight&quot;: 1.0,
+  &quot;second_order&quot;: true
+}</pre></details>
+<details class="attempt" id="v1:fisher_k24_w0.5_s0"><summary>v1:fisher_k24_w0.5_s0 — fisher</summary><p>Mixture residual directions may preserve distinctions erased by plain cluster probabilities. Signed-root and L2 normalization.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.910828</td><td>0.007556</td><td>-0.012031</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.901182</td><td>0.006981</td><td>-0.003783</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;clusters&quot;: 24,
+  &quot;family&quot;: &quot;fisher&quot;,
+  &quot;name&quot;: &quot;fisher_k24_w0.5_s0&quot;,
+  &quot;residual_weight&quot;: 0.5,
+  &quot;second_order&quot;: false
+}</pre></details>
+<details class="attempt" id="v1:fisher_k24_w1_s1"><summary>v1:fisher_k24_w1_s1 — fisher</summary><p>Mixture residual directions may preserve distinctions erased by plain cluster probabilities. Signed-root and L2 normalization.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat rule failed: train mean did not improve; train wins 3/8, needs 5; pooled mean did not improve; pooled wins 2/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.903751</td><td>0.011542</td><td>-0.019108</td><td>0/3</td></tr>
+<tr><td>train / 8</td><td>0.913747</td><td>0.010665</td><td>-0.005839</td><td>3/8</td></tr>
+<tr><td>pooled / 3</td><td>0.906856</td><td>0.005713</td><td>0.001891</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.904965</td><td>0.004797</td><td>-0.004876</td><td>2/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.841880; chronology: 0.853741.</p><p><a href="reproduction/registry_v1.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;clusters&quot;: 24,
+  &quot;family&quot;: &quot;fisher&quot;,
+  &quot;name&quot;: &quot;fisher_k24_w1_s1&quot;,
+  &quot;residual_weight&quot;: 1.0,
+  &quot;second_order&quot;: true
+}</pre></details>
+<details class="attempt" id="v2:quotient_poisson_k10_t0.5"><summary>v2:quotient_poisson_k10_t0.5 — poisson_unique</summary><p>Unsupervised graph diagnostic found 4 disconnected components caused by repeat embeddings; quotient graph has 1. Coalesce duplicates before Poisson solve.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.561571</td><td>0.015113</td><td>-0.361288</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.659338</td><td>0.019112</td><td>-0.245626</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson_unique&quot;,
+  &quot;name&quot;: &quot;quotient_poisson_k10_t0.5&quot;,
+  &quot;neighbors&quot;: 10,
+  &quot;temperature&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v2:quotient_poisson_k10_t1"><summary>v2:quotient_poisson_k10_t1 — poisson_unique</summary><p>Unsupervised graph diagnostic found 4 disconnected components caused by repeat embeddings; quotient graph has 1. Coalesce duplicates before Poisson solve.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.564402</td><td>0.017515</td><td>-0.358457</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.649882</td><td>0.025170</td><td>-0.255083</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson_unique&quot;,
+  &quot;name&quot;: &quot;quotient_poisson_k10_t1&quot;,
+  &quot;neighbors&quot;: 10,
+  &quot;temperature&quot;: 1.0
+}</pre></details>
+<details class="attempt" id="v2:quotient_poisson_k30_t0.5"><summary>v2:quotient_poisson_k30_t0.5 — poisson_unique</summary><p>Unsupervised graph diagnostic found 4 disconnected components caused by repeat embeddings; quotient graph has 1. Coalesce duplicates before Poisson solve.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.698514</td><td>0.006005</td><td>-0.224345</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.704492</td><td>0.008769</td><td>-0.200473</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson_unique&quot;,
+  &quot;name&quot;: &quot;quotient_poisson_k30_t0.5&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;temperature&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v2:quotient_poisson_k30_t1"><summary>v2:quotient_poisson_k30_t1 — poisson_unique</summary><p>Unsupervised graph diagnostic found 4 disconnected components caused by repeat embeddings; quotient graph has 1. Coalesce duplicates before Poisson solve.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.704176</td><td>0.012299</td><td>-0.218684</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.697400</td><td>0.003538</td><td>-0.207565</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;poisson_unique&quot;,
+  &quot;name&quot;: &quot;quotient_poisson_k30_t1&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;temperature&quot;: 1.0
+}</pre></details>
+<details class="attempt" id="v2:rfm_i0_r0.01_p0.5_aug0"><summary>v2:rfm_i0_r0.01_p0.5_aug0 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat rule failed: train mean did not improve; train wins 0/8, needs 5; pooled mean did not improve; pooled wins 0/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.895258</td><td>0.002648</td><td>-0.027601</td><td>0/3</td></tr>
+<tr><td>train / 8</td><td>0.896497</td><td>0.005592</td><td>-0.023089</td><td>0/8</td></tr>
+<tr><td>pooled / 3</td><td>0.898345</td><td>0.004822</td><td>-0.006619</td><td>0/3</td></tr>
+<tr><td>pooled / 8</td><td>0.899645</td><td>0.004744</td><td>-0.010195</td><td>0/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.846154; chronology: 0.785714.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: false,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i0_r0.01_p0.5_aug0&quot;,
+  &quot;power&quot;: 0.5,
+  &quot;ridge&quot;: 0.01,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 0
+}</pre></details>
+<details class="attempt" id="v2:rfm_i2_r0.01_p0.5_aug0"><summary>v2:rfm_i2_r0.01_p0.5_aug0 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat rule failed: pooled wins 4/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.916490</td><td>0.004003</td><td>-0.006369</td><td>1/3</td></tr>
+<tr><td>train / 8</td><td>0.921178</td><td>0.005857</td><td>0.001592</td><td>5/8</td></tr>
+<tr><td>pooled / 3</td><td>0.909693</td><td>0.001769</td><td>0.004728</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.912411</td><td>0.002724</td><td>0.002571</td><td>4/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.848291; chronology: 0.843537.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: false,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i2_r0.01_p0.5_aug0&quot;,
+  &quot;power&quot;: 0.5,
+  &quot;ridge&quot;: 0.01,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 2
+}</pre></details>
+<details class="attempt" id="v2:rfm_i4_r0.01_p0.5_aug0"><summary>v2:rfm_i4_r0.01_p0.5_aug0 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.912951</td><td>0.004587</td><td>-0.009908</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908511</td><td>0.001737</td><td>0.003546</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: false,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i4_r0.01_p0.5_aug0&quot;,
+  &quot;power&quot;: 0.5,
+  &quot;ridge&quot;: 0.01,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 4
+}</pre></details>
+<details class="attempt" id="v2:rfm_i2_r0.1_p0.5_aug0"><summary>v2:rfm_i2_r0.1_p0.5_aug0 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.912951</td><td>0.007556</td><td>-0.009908</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.907801</td><td>0.004012</td><td>0.002837</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: false,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i2_r0.1_p0.5_aug0&quot;,
+  &quot;power&quot;: 0.5,
+  &quot;ridge&quot;: 0.1,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 2
+}</pre></details>
+<details class="attempt" id="v2:rfm_i2_r0.01_p1_aug0"><summary>v2:rfm_i2_r0.01_p1_aug0 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.911536</td><td>0.003609</td><td>-0.011323</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.906383</td><td>0.004372</td><td>0.001418</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: false,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i2_r0.01_p1_aug0&quot;,
+  &quot;power&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 2
+}</pre></details>
+<details class="attempt" id="v2:rfm_i2_r0.01_p0.5_aug1"><summary>v2:rfm_i2_r0.01_p0.5_aug1 — rfm</summary><p>Learn a full regularized Mahalanobis metric through kernel gradient outer products, using only allowed fitting rows; classical kernel ridge regression, no neural network. Include zero-iteration control and explicit K-means augmentation variant.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.916490</td><td>0.005004</td><td>-0.006369</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.907801</td><td>0.003064</td><td>0.002837</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v2/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;augment&quot;: true,
+  &quot;bandwidth&quot;: 1.0,
+  &quot;family&quot;: &quot;rfm&quot;,
+  &quot;name&quot;: &quot;rfm_i2_r0.01_p0.5_aug1&quot;,
+  &quot;power&quot;: 0.5,
+  &quot;ridge&quot;: 0.01,
+  &quot;shrink&quot;: 0.25,
+  &quot;steps&quot;: 2
+}</pre></details>
+<details class="attempt" id="v3:rfm_joint"><summary>v3:rfm_joint — rfm_structured</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.910120</td><td>0.004774</td><td>-0.012739</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.903073</td><td>0.000669</td><td>-0.001891</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_structured&quot;,
+  &quot;joint&quot;: true,
+  &quot;name&quot;: &quot;rfm_joint&quot;
+}</pre></details>
+<details class="attempt" id="v3:rfm_unique_gradient"><summary>v3:rfm_unique_gradient — rfm_structured</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.917905</td><td>0.002002</td><td>-0.004954</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910165</td><td>0.001769</td><td>0.005201</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_structured&quot;,
+  &quot;name&quot;: &quot;rfm_unique_gradient&quot;,
+  &quot;unique_gradient&quot;: true
+}</pre></details>
+<details class="attempt" id="v3:rfm_group_bag"><summary>v3:rfm_group_bag — rfm_bag</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.911536</td><td>0.007006</td><td>-0.011323</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.906383</td><td>0.003064</td><td>0.001418</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_bag&quot;,
+  &quot;name&quot;: &quot;rfm_group_bag&quot;
+}</pre></details>
+<details class="attempt" id="v3:rfm_nested"><summary>v3:rfm_nested — rfm_nested</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.917197</td><td>0.009173</td><td>-0.005662</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912530</td><td>0.006379</td><td>0.007565</td><td>3/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_nested&quot;,
+  &quot;name&quot;: &quot;rfm_nested&quot;
+}</pre></details>
+<details class="attempt" id="v3:new_blend_50"><summary>v3:new_blend_50 — rfm_fisher</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.915074</td><td>0.006005</td><td>-0.007785</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913002</td><td>0.005349</td><td>0.008038</td><td>3/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_fisher&quot;,
+  &quot;name&quot;: &quot;new_blend_50&quot;,
+  &quot;rfm_weight&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v3:new_blend_75"><summary>v3:new_blend_75 — rfm_fisher</summary><p>{&quot;joint&quot;: &quot;Train kernel on label-set posteriors, decode expected sample F1.&quot;, &quot;unique_gradient&quot;: &quot;Prevent repeated embeddings from dominating learned geometry.&quot;, &quot;bagging&quot;: &quot;Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.&quot;, &quot;nested&quot;: &quot;Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.&quot;, &quot;blend&quot;: &quot;Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75.&quot;}</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat numerical rule passed against this historical comparator; supplementary regressions and stronger references prevent promotion.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.006250</td><td>-0.001415</td><td>1/3</td></tr>
+<tr><td>train / 8</td><td>0.925159</td><td>0.007637</td><td>0.005573</td><td>5/8</td></tr>
+<tr><td>pooled / 3</td><td>0.913948</td><td>0.002915</td><td>0.008983</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.914362</td><td>0.003245</td><td>0.004521</td><td>5/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.850427; chronology: 0.836735.</p><p><a href="reproduction/studies/v3/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;rfm_fisher&quot;,
+  &quot;name&quot;: &quot;new_blend_75&quot;,
+  &quot;rfm_weight&quot;: 0.75
+}</pre></details>
+<details class="attempt" id="v4:new_blend_prior_p0.25"><summary>v4:new_blend_prior_p0.25 — prior_corrected_blend</summary><p>Kernel regression estimates source-prevalence-weighted probabilities. v3 failed Funding recall in supplied validation. Two fixed tempering strengths reduce source-prior influence; priors learned exclusively on each fold gold. This is development informed by reused supplementary data.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.915782</td><td>0.006563</td><td>-0.007077</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904965</td><td>0.005524</td><td>0.000000</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v4/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;prior_corrected_blend&quot;,
+  &quot;name&quot;: &quot;new_blend_prior_p0.25&quot;,
+  &quot;power&quot;: 0.25
+}</pre></details>
+<details class="attempt" id="v4:new_blend_prior_p0.5"><summary>v4:new_blend_prior_p0.5 — prior_corrected_blend</summary><p>Kernel regression estimates source-prevalence-weighted probabilities. v3 failed Funding recall in supplied validation. Two fixed tempering strengths reduce source-prior influence; priors learned exclusively on each fold gold. This is development informed by reused supplementary data.</p><p><strong>Comparator:</strong> Ani inductive</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.900212</td><td>0.003003</td><td>-0.022647</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.885343</td><td>0.008478</td><td>-0.019622</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v4/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;prior_corrected_blend&quot;,
+  &quot;name&quot;: &quot;new_blend_prior_p0.5&quot;,
+  &quot;power&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v5:entropy_linear_0"><summary>v5:entropy_linear_0 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.903043</td><td>0.009857</td><td>-0.024062</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.893617</td><td>0.002088</td><td>-0.015130</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_linear_0&quot;,
+  &quot;representation&quot;: &quot;linear&quot;,
+  &quot;strength&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v5:entropy_linear_0.1"><summary>v5:entropy_linear_0.1 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.910828</td><td>0.004587</td><td>-0.016277</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.893617</td><td>0.004633</td><td>-0.015130</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_linear_0.1&quot;,
+  &quot;representation&quot;: &quot;linear&quot;,
+  &quot;strength&quot;: 0.1
+}</pre></details>
+<details class="attempt" id="v5:entropy_linear_0.5"><summary>v5:entropy_linear_0.5 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.914367</td><td>0.011145</td><td>-0.012739</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.901418</td><td>0.004948</td><td>-0.007329</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_linear_0.5&quot;,
+  &quot;representation&quot;: &quot;linear&quot;,
+  &quot;strength&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v5:entropy_kernel_0"><summary>v5:entropy_kernel_0 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.898089</td><td>0.013539</td><td>-0.029016</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.871868</td><td>0.003538</td><td>-0.036879</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_kernel_0&quot;,
+  &quot;representation&quot;: &quot;kernel&quot;,
+  &quot;strength&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v5:entropy_kernel_0.1"><summary>v5:entropy_kernel_0.1 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.895966</td><td>0.014190</td><td>-0.031139</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.873050</td><td>0.007021</td><td>-0.035697</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_kernel_0.1&quot;,
+  &quot;representation&quot;: &quot;kernel&quot;,
+  &quot;strength&quot;: 0.1
+}</pre></details>
+<details class="attempt" id="v5:entropy_kernel_0.5"><summary>v5:entropy_kernel_0.5 — entropy</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.898089</td><td>0.003003</td><td>-0.029016</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.878723</td><td>0.002654</td><td>-0.030024</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;entropy&quot;,
+  &quot;name&quot;: &quot;entropy_kernel_0.5&quot;,
+  &quot;representation&quot;: &quot;kernel&quot;,
+  &quot;strength&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v5:mixture_k1_u0.5"><summary>v5:mixture_k1_u0.5 — multimixture</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.887473</td><td>0.004587</td><td>-0.039632</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.872340</td><td>0.007595</td><td>-0.036407</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;components&quot;: 1,
+  &quot;family&quot;: &quot;multimixture&quot;,
+  &quot;name&quot;: &quot;mixture_k1_u0.5&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v5:mixture_k3_u0"><summary>v5:mixture_k3_u0 — multimixture</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.869073</td><td>0.007817</td><td>-0.058033</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.851773</td><td>0.008210</td><td>-0.056974</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;components&quot;: 3,
+  &quot;family&quot;: &quot;multimixture&quot;,
+  &quot;name&quot;: &quot;mixture_k3_u0&quot;,
+  &quot;unlabeled_mass&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v5:mixture_k3_u0.5"><summary>v5:mixture_k3_u0.5 — multimixture</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.874027</td><td>0.008419</td><td>-0.053079</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.836170</td><td>0.006577</td><td>-0.072577</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;components&quot;: 3,
+  &quot;family&quot;: &quot;multimixture&quot;,
+  &quot;name&quot;: &quot;mixture_k3_u0.5&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v5:mixture_k3_u2"><summary>v5:mixture_k3_u2 — multimixture</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.859873</td><td>0.008797</td><td>-0.067233</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.831678</td><td>0.004346</td><td>-0.077069</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;components&quot;: 3,
+  &quot;family&quot;: &quot;multimixture&quot;,
+  &quot;name&quot;: &quot;mixture_k3_u2&quot;,
+  &quot;unlabeled_mass&quot;: 2.0
+}</pre></details>
+<details class="attempt" id="v5:rfm_complement_all15"><summary>v5:rfm_complement_all15 — complement</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Eight-repeat rule failed: train wins 4/8, needs 5; pooled wins 4/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927813</td><td>0.004587</td><td>0.000708</td><td>2/3</td></tr>
+<tr><td>train / 8</td><td>0.926752</td><td>0.004865</td><td>0.001062</td><td>4/8</td></tr>
+<tr><td>pooled / 3</td><td>0.911111</td><td>0.005222</td><td>0.002364</td><td>3/3</td></tr>
+<tr><td>pooled / 8</td><td>0.917730</td><td>0.006803</td><td>0.001241</td><td>4/8</td></tr>
+</table><p>Eight-repeat role: Confirmation after passing screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.905983; chronology: 0.884354.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;complement&quot;,
+  &quot;name&quot;: &quot;rfm_complement_all15&quot;,
+  &quot;weights&quot;: [
+    0.15,
+    0.15,
+    0.15,
+    0.15,
+    0.15
+  ]
+}</pre></details>
+<details class="attempt" id="v5:rfm_complement_all30"><summary>v5:rfm_complement_all30 — complement</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927813</td><td>0.005201</td><td>0.000708</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912530</td><td>0.004681</td><td>0.003783</td><td>3/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;complement&quot;,
+  &quot;name&quot;: &quot;rfm_complement_all30&quot;,
+  &quot;weights&quot;: [
+    0.3,
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ]
+}</pre></details>
+<details class="attempt" id="v5:rfm_complement_safety50"><summary>v5:rfm_complement_safety50 — complement</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.925690</td><td>0.004587</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908747</td><td>0.006379</td><td>0.000000</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;complement&quot;,
+  &quot;name&quot;: &quot;rfm_complement_safety50&quot;,
+  &quot;weights&quot;: [
+    0.5,
+    0,
+    0,
+    0,
+    0
+  ]
+}</pre></details>
+<details class="attempt" id="v5:rfm_complement_safety_funding50"><summary>v5:rfm_complement_safety_funding50 — complement</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.926398</td><td>0.005573</td><td>-0.000708</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.004385</td><td>0.002837</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;complement&quot;,
+  &quot;name&quot;: &quot;rfm_complement_safety_funding50&quot;,
+  &quot;weights&quot;: [
+    0.5,
+    0.5,
+    0,
+    0,
+    0
+  ]
+}</pre></details>
+<details class="attempt" id="v5:rfm_complement_first3_50"><summary>v5:rfm_complement_first3_50 — complement</summary><p>Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.925690</td><td>0.006005</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913948</td><td>0.004067</td><td>0.005201</td><td>3/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v5/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;complement&quot;,
+  &quot;name&quot;: &quot;rfm_complement_first3_50&quot;,
+  &quot;weights&quot;: [
+    0.5,
+    0.5,
+    0.5,
+    0,
+    0
+  ]
+}</pre></details>
+<details class="attempt" id="v6:selftrain_no_clusters"><summary>v6:selftrain_no_clusters — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920028</td><td>0.008896</td><td>-0.007077</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.905674</td><td>0.004054</td><td>-0.003073</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [],
+  &quot;name&quot;: &quot;selftrain_no_clusters&quot;,
+  &quot;weight&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v6:single_gmm"><summary>v6:single_gmm — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat rule failed: train mean did not improve; train wins 0/8, needs 5; pooled mean did not improve; pooled wins 1/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.922859</td><td>0.009548</td><td>-0.004246</td><td>0/3</td></tr>
+<tr><td>train / 8</td><td>0.919586</td><td>0.008045</td><td>-0.006104</td><td>0/8</td></tr>
+<tr><td>pooled / 3</td><td>0.904965</td><td>0.009193</td><td>-0.003783</td><td>1/3</td></tr>
+<tr><td>pooled / 8</td><td>0.909840</td><td>0.007634</td><td>-0.006649</td><td>1/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.891026; chronology: 0.860544.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;
+  ],
+  &quot;name&quot;: &quot;single_gmm&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:single_kmeans"><summary>v6:single_kmeans — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920736</td><td>0.007006</td><td>-0.006369</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.903073</td><td>0.002915</td><td>-0.005674</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;kmeans&quot;
+  ],
+  &quot;name&quot;: &quot;single_kmeans&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:single_ward"><summary>v6:single_ward — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920382</td><td>0.005684</td><td>-0.006723</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904965</td><td>0.005307</td><td>-0.003783</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;ward&quot;
+  ],
+  &quot;name&quot;: &quot;single_ward&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:single_density"><summary>v6:single_density — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.009173</td><td>-0.005662</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.906147</td><td>0.001672</td><td>-0.002600</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;single_density&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:teacher_mean3"><summary>v6:teacher_mean3 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed; additional repeats were explicitly diagnostic. Eight-repeat rule failed: train mean did not improve; train wins 0/8, needs 5; pooled mean did not improve; pooled wins 1/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.924275</td><td>0.004363</td><td>-0.002831</td><td>0/3</td></tr>
+<tr><td>train / 8</td><td>0.921178</td><td>0.005248</td><td>-0.004512</td><td>0/8</td></tr>
+<tr><td>pooled / 3</td><td>0.906147</td><td>0.002611</td><td>-0.002600</td><td>1/3</td></tr>
+<tr><td>pooled / 8</td><td>0.910727</td><td>0.004247</td><td>-0.005762</td><td>1/8</td></tr>
+</table><p>Eight-repeat role: Diagnostic after failed screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.891026; chronology: 0.843537.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;
+  ],
+  &quot;name&quot;: &quot;teacher_mean3&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:teacher_mean4"><summary>v6:teacher_mean4 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.924275</td><td>0.003609</td><td>-0.002831</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.905674</td><td>0.002088</td><td>-0.003073</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;teacher_mean4&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:teacher_mean4_w50"><summary>v6:teacher_mean4_w50 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.007944</td><td>-0.005662</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.900946</td><td>0.002857</td><td>-0.007801</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;teacher_mean4_w50&quot;,
+  &quot;weight&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v6:teacher_agreement4"><summary>v6:teacher_agreement4 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.922151</td><td>0.007006</td><td>-0.004954</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.902600</td><td>0.001861</td><td>-0.006147</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;agreement&quot;: true,
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;teacher_agreement4&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:coassociation"><summary>v6:coassociation — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.004587</td><td>-0.005662</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904965</td><td>0.004176</td><td>-0.003783</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;coassoc&quot;
+  ],
+  &quot;name&quot;: &quot;coassociation&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:coassociation_w50"><summary>v6:coassociation_w50 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920736</td><td>0.007217</td><td>-0.006369</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.901655</td><td>0.002915</td><td>-0.007092</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;coassoc&quot;
+  ],
+  &quot;name&quot;: &quot;coassociation_w50&quot;,
+  &quot;weight&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v6:prediction_mean3"><summary>v6:prediction_mean3 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.922859</td><td>0.006088</td><td>-0.004246</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.903073</td><td>0.002411</td><td>-0.005674</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;
+  ],
+  &quot;name&quot;: &quot;prediction_mean3&quot;,
+  &quot;output_average&quot;: true,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:prediction_mean4"><summary>v6:prediction_mean4 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.007556</td><td>-0.005662</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904255</td><td>0.002654</td><td>-0.004492</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;prediction_mean4&quot;,
+  &quot;output_average&quot;: true,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:hybrid_teacher4"><summary>v6:hybrid_teacher4 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train wins 1/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927813</td><td>0.004587</td><td>0.000708</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.907801</td><td>0.005791</td><td>-0.000946</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;hybrid_teacher4&quot;,
+  &quot;replace_weight&quot;: 0.2,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:hybrid_coassociation"><summary>v6:hybrid_coassociation — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.925690</td><td>0.004587</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.906856</td><td>0.004681</td><td>-0.001891</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;coassoc&quot;
+  ],
+  &quot;name&quot;: &quot;hybrid_coassociation&quot;,
+  &quot;replace_weight&quot;: 0.2,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v6:hybrid_prediction4"><summary>v6:hybrid_prediction4 — cluster_ensemble</summary><p>Average label-aligned cluster teacher probabilities or final classifier probabilities across GMM, spherical-view k-means, Ward, and density clusters. Also label-free co-association consensus and an agreement-only teacher. Keep self-training, classifier, acceptance, and decoder fixed.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.925690</td><td>0.004587</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.907801</td><td>0.005791</td><td>-0.000946</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v6/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;cluster_ensemble&quot;,
+  &quot;members&quot;: [
+    &quot;gmm&quot;,
+    &quot;kmeans&quot;,
+    &quot;ward&quot;,
+    &quot;density&quot;
+  ],
+  &quot;name&quot;: &quot;hybrid_prediction4&quot;,
+  &quot;output_average&quot;: true,
+  &quot;replace_weight&quot;: 0.2,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v7:ldp_k10"><summary>v7:ldp_k10 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.874735</td><td>0.010826</td><td>-0.052371</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.883924</td><td>0.002411</td><td>-0.024823</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_k10&quot;,
+  &quot;neighbors&quot;: 10
+}</pre></details>
+<details class="attempt" id="v7:ldp_k30"><summary>v7:ldp_k30 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.865534</td><td>0.014744</td><td>-0.061571</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.867139</td><td>0.000334</td><td>-0.041608</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_k30&quot;,
+  &quot;neighbors&quot;: 30
+}</pre></details>
+<details class="attempt" id="v7:ldp_k60"><summary>v7:ldp_k60 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.838641</td><td>0.006934</td><td>-0.088464</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.852719</td><td>0.000334</td><td>-0.056028</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_k60&quot;,
+  &quot;neighbors&quot;: 60
+}</pre></details>
+<details class="attempt" id="v7:ldp_binary_k10"><summary>v7:ldp_binary_k10 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.860580</td><td>0.009548</td><td>-0.066525</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.872813</td><td>0.004385</td><td>-0.035934</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_binary_k10&quot;,
+  &quot;neighbors&quot;: 10
+}</pre></details>
+<details class="attempt" id="v7:ldp_binary_k30"><summary>v7:ldp_binary_k30 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.845011</td><td>0.013760</td><td>-0.082095</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.854374</td><td>0.009433</td><td>-0.054374</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_binary_k30&quot;,
+  &quot;neighbors&quot;: 30
+}</pre></details>
+<details class="attempt" id="v7:ldp_student_gold_control"><summary>v7:ldp_student_gold_control — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.908705</td><td>0.007944</td><td>-0.018401</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.901891</td><td>0.005381</td><td>-0.006856</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_student_gold_control&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;pseudo_mass&quot;: 0.0,
+  &quot;student&quot;: true
+}</pre></details>
+<details class="attempt" id="v7:ldp_student_k10"><summary>v7:ldp_student_k10 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.908705</td><td>0.009652</td><td>-0.018401</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.895035</td><td>0.010097</td><td>-0.013712</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_student_k10&quot;,
+  &quot;neighbors&quot;: 10,
+  &quot;pseudo_mass&quot;: 0.5,
+  &quot;student&quot;: true
+}</pre></details>
+<details class="attempt" id="v7:ldp_student_k30"><summary>v7:ldp_student_k30 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.895258</td><td>0.005296</td><td>-0.031847</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.891253</td><td>0.004645</td><td>-0.017494</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;ldp_student_k30&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;pseudo_mass&quot;: 0.5,
+  &quot;student&quot;: true
+}</pre></details>
+<details class="attempt" id="v7:hybrid_ldp_k30"><summary>v7:hybrid_ldp_k30 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.928521</td><td>0.005573</td><td>0.001415</td><td>2/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908274</td><td>0.005473</td><td>-0.000473</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;hybrid_ldp_k30&quot;,
+  &quot;neighbors&quot;: 30
+}</pre></details>
+<details class="attempt" id="v7:hybrid_ldp_student_k30"><summary>v7:hybrid_ldp_student_k30 — ldp</summary><p>Multilabel normalized or independent binary evidence; duplicate-node pooling; fixed nonempty decoder; nearest-gold fallback for zero known mass; optional uncertainty-weighted linear student. Query rows never enter graph.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927105</td><td>0.004003</td><td>0.000000</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.909220</td><td>0.007595</td><td>0.000473</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v7/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;ldp&quot;,
+  &quot;name&quot;: &quot;hybrid_ldp_student_k30&quot;,
+  &quot;neighbors&quot;: 30,
+  &quot;pseudo_mass&quot;: 0.5,
+  &quot;student&quot;: true
+}</pre></details>
+<details class="attempt" id="v8:leaf_l2"><summary>v8:leaf_l2 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.904459</td><td>0.009173</td><td>-0.022647</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.894326</td><td>0.001532</td><td>-0.014421</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_l2&quot;,
+  &quot;p&quot;: 2.0,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_l2_q08"><summary>v8:leaf_l2_q08 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.899858</td><td>0.010046</td><td>-0.027247</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.891489</td><td>0.003224</td><td>-0.017258</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_l2_q08&quot;,
+  &quot;p&quot;: 2.0,
+  &quot;q&quot;: 0.8,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_pca_l1"><summary>v8:leaf_pca_l1 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.866596</td><td>0.009665</td><td>-0.060510</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.891678</td><td>0.003681</td><td>-0.017069</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_pca_l1&quot;,
+  &quot;p&quot;: 1.0,
+  &quot;pca&quot;: true,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_pca_l1_q08"><summary>v8:leaf_pca_l1_q08 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.859165</td><td>0.010341</td><td>-0.067941</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.886288</td><td>0.004716</td><td>-0.022459</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_pca_l1_q08&quot;,
+  &quot;p&quot;: 1.0,
+  &quot;pca&quot;: true,
+  &quot;q&quot;: 0.8,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_binary_l2"><summary>v8:leaf_binary_l2 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.907997</td><td>0.010592</td><td>-0.019108</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.888416</td><td>0.003723</td><td>-0.020331</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_binary_l2&quot;,
+  &quot;p&quot;: 2.0,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_pca_l1_r01"><summary>v8:leaf_pca_l1_r01 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.866596</td><td>0.010121</td><td>-0.060510</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.892671</td><td>0.002915</td><td>-0.016076</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_pca_l1_r01&quot;,
+  &quot;p&quot;: 1.0,
+  &quot;pca&quot;: true,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.1,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_pca_diag_l1"><summary>v8:leaf_pca_diag_l1 — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.869781</td><td>0.003609</td><td>-0.057325</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.897163</td><td>0.009638</td><td>-0.011584</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;diagonal&quot;: true,
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_pca_diag_l1&quot;,
+  &quot;p&quot;: 1.0,
+  &quot;pca&quot;: true,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 3
+}</pre></details>
+<details class="attempt" id="v8:leaf_kernel_control"><summary>v8:leaf_kernel_control — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.897381</td><td>0.006088</td><td>-0.029724</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904019</td><td>0.000669</td><td>-0.004728</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_kernel_control&quot;,
+  &quot;p&quot;: 2.0,
+  &quot;q&quot;: 1.0,
+  &quot;ridge&quot;: 0.01,
+  &quot;steps&quot;: 0
+}</pre></details>
+<details class="attempt" id="v8:leaf_nested"><summary>v8:leaf_nested — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.921444</td><td>0.004587</td><td>-0.005662</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.894799</td><td>0.007862</td><td>-0.013948</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_nested&quot;,
+  &quot;nested&quot;: true
+}</pre></details>
+<details class="attempt" id="v8:leaf_nested_ldp"><summary>v8:leaf_nested_ldp — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920736</td><td>0.009857</td><td>-0.006369</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.893381</td><td>0.007355</td><td>-0.015366</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;leaf_nested_ldp&quot;,
+  &quot;nested&quot;: true,
+  &quot;pseudo_mass&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v8:hybrid_leaf_nested"><summary>v8:hybrid_leaf_nested — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Eight-repeat rule failed: pooled wins 4/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.932059</td><td>0.005201</td><td>0.004954</td><td>3/3</td></tr>
+<tr><td>train / 8</td><td>0.928609</td><td>0.005194</td><td>0.002919</td><td>5/8</td></tr>
+<tr><td>pooled / 3</td><td>0.909693</td><td>0.005943</td><td>0.000946</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.917199</td><td>0.007896</td><td>0.000709</td><td>4/8</td></tr>
+</table><p>Eight-repeat role: Confirmation after passing screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.901709; chronology: 0.884354.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_nested&quot;,
+  &quot;nested&quot;: true
+}</pre></details>
+<details class="attempt" id="v8:hybrid_leaf_nested_ldp"><summary>v8:hybrid_leaf_nested_ldp — xrfm_leaf</summary><p>NumPy CPU implementation; fixed three iterations or inner grouped selection across 7 kernels and 0..4 iterations; normalized multilabel .3 / binary .5 fixed decoders. Unsupervised PCA only fitting inputs. LDP augmentation keeps selected metric fixed and adds soft pseudo-labels with .3x total gold mass.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.932767</td><td>0.004363</td><td>0.005662</td><td>3/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908274</td><td>0.006786</td><td>-0.000473</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v8/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_leaf&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_nested_ldp&quot;,
+  &quot;nested&quot;: true,
+  &quot;pseudo_mass&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v9:simplex_prototype_control"><summary>v9:simplex_prototype_control — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.776716</td><td>0.012630</td><td>-0.150389</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.743735</td><td>0.007332</td><td>-0.165012</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;control&quot;: true,
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;simplex_prototype_control&quot;,
+  &quot;representation&quot;: &quot;prototypes&quot;
+}</pre></details>
+<details class="attempt" id="v9:dirichlet_prototypes_u0"><summary>v9:dirichlet_prototypes_u0 — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.745931</td><td>0.007865</td><td>-0.181175</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.717494</td><td>0.004716</td><td>-0.191253</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;dirichlet_prototypes_u0&quot;,
+  &quot;representation&quot;: &quot;prototypes&quot;,
+  &quot;unlabeled_mass&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v9:dirichlet_prototypes_u0.5"><summary>v9:dirichlet_prototypes_u0.5 — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.723284</td><td>0.004448</td><td>-0.203822</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.685816</td><td>0.008107</td><td>-0.222931</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;dirichlet_prototypes_u0.5&quot;,
+  &quot;representation&quot;: &quot;prototypes&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v9:dirichlet_anchors_u0"><summary>v9:dirichlet_anchors_u0 — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.716561</td><td>0.010651</td><td>-0.210545</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.695508</td><td>0.014236</td><td>-0.213239</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;dirichlet_anchors_u0&quot;,
+  &quot;representation&quot;: &quot;anchors&quot;,
+  &quot;unlabeled_mass&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v9:dirichlet_anchors_u0.5"><summary>v9:dirichlet_anchors_u0.5 — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.680467</td><td>0.003125</td><td>-0.246638</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.621040</td><td>0.015346</td><td>-0.287707</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;dirichlet_anchors_u0.5&quot;,
+  &quot;representation&quot;: &quot;anchors&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v9:dirichlet_anchors_prior"><summary>v9:dirichlet_anchors_prior — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.761146</td><td>0.012227</td><td>-0.165959</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.716076</td><td>0.012151</td><td>-0.192671</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;dirichlet_anchors_prior&quot;,
+  &quot;prior_power&quot;: 1.0,
+  &quot;representation&quot;: &quot;anchors&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v9:hybrid_dirichlet_prototypes"><summary>v9:hybrid_dirichlet_prototypes — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.923567</td><td>0.006005</td><td>-0.003539</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.909693</td><td>0.005349</td><td>0.000946</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;hybrid_dirichlet_prototypes&quot;,
+  &quot;representation&quot;: &quot;prototypes&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v9:hybrid_dirichlet_anchors"><summary>v9:hybrid_dirichlet_anchors — dirichlet</summary><p>No CLIP/neural features. Supplied embeddings become probability coordinates via gold prototypes or unsupervised 16 anchors. Inductive query boundary; only masked fitting rows get EM assignments. Fixed gold multilabel mass, 2-observation shrinkage, 20 EM / up to 300 MM updates. Uniform or learned priors; no MDL class-discovery penalty.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.923567</td><td>0.007556</td><td>-0.003539</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.907329</td><td>0.006379</td><td>-0.001418</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v9/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;dirichlet&quot;,
+  &quot;name&quot;: &quot;hybrid_dirichlet_anchors&quot;,
+  &quot;representation&quot;: &quot;anchors&quot;,
+  &quot;unlabeled_mass&quot;: 0.5
+}</pre></details>
+<details class="attempt" id="v10:leaf_one_raw"><summary>v10:leaf_one_raw — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.917905</td><td>0.005296</td><td>-0.009200</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.903783</td><td>0.006405</td><td>-0.004965</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;leaf_one_raw&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: false
+}</pre></details>
+<details class="attempt" id="v10:hybrid_leaf_one_raw"><summary>v10:hybrid_leaf_one_raw — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Eight-repeat rule failed: pooled wins 4/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.931352</td><td>0.005296</td><td>0.004246</td><td>3/3</td></tr>
+<tr><td>train / 8</td><td>0.928609</td><td>0.005611</td><td>0.002919</td><td>6/8</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.004385</td><td>0.002837</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.917730</td><td>0.006223</td><td>0.001241</td><td>4/8</td></tr>
+</table><p>Eight-repeat role: Confirmation after passing screen. Supplementary role: Explicit diagnostic; not a confirmed finalist.</p><p>Validation: 0.901709; chronology: 0.884354.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_one_raw&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: false
+}</pre></details>
+<details class="attempt" id="v10:leaf_one_unit"><summary>v10:leaf_one_unit — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920736</td><td>0.001001</td><td>-0.006369</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.905437</td><td>0.005504</td><td>-0.003310</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;leaf_one_unit&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v10:hybrid_leaf_one_unit"><summary>v10:hybrid_leaf_one_unit — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927813</td><td>0.007556</td><td>0.000708</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.004385</td><td>0.002837</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_one_unit&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v10:leaf_one_unit_q08"><summary>v10:leaf_one_unit_q08 — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.917905</td><td>0.003609</td><td>-0.009200</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.904965</td><td>0.005703</td><td>-0.003783</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;leaf_one_unit_q08&quot;,
+  &quot;q&quot;: 0.8,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v10:hybrid_leaf_one_unit_q08"><summary>v10:hybrid_leaf_one_unit_q08 — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Eight-repeat rule failed: pooled wins 4/8, needs 5.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.929229</td><td>0.006563</td><td>0.002123</td><td>2/3</td></tr>
+<tr><td>train / 8</td><td>0.927548</td><td>0.005857</td><td>0.001858</td><td>5/8</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.004385</td><td>0.002837</td><td>2/3</td></tr>
+<tr><td>pooled / 8</td><td>0.917376</td><td>0.006132</td><td>0.000887</td><td>4/8</td></tr>
+</table><p>Eight-repeat role: Confirmation after passing screen. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: false,
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_one_unit_q08&quot;,
+  &quot;q&quot;: 0.8,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v10:leaf_one_unit_binary"><summary>v10:leaf_one_unit_binary — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.917905</td><td>0.004363</td><td>-0.009200</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.893144</td><td>0.004067</td><td>-0.015603</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;leaf_one_unit_binary&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v10:hybrid_leaf_one_unit_binary"><summary>v10:hybrid_leaf_one_unit_binary — xrfm_one</summary><p>V8 inner folds usually select one AGOP update; a fixed simpler learner may reduce selection variance. Unit normalization respects semantic embedding geometry; raw one-update arm is matched control. Same xRFM algorithm, not another new method family.</p><p><strong>Comparator:</strong> Submitted 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.925690</td><td>0.006250</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910165</td><td>0.005349</td><td>0.001418</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v10/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;blend&quot;: 0.2,
+  &quot;family&quot;: &quot;xrfm_one&quot;,
+  &quot;name&quot;: &quot;hybrid_leaf_one_unit_binary&quot;,
+  &quot;q&quot;: 1.0,
+  &quot;unit&quot;: true
+}</pre></details>
+<details class="attempt" id="v11:current_lda_control"><summary>v11:current_lda_control — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Existing reference reproduced; not a candidate improvement.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.932767</td><td>0.004363</td><td>0.000000</td><td>0/3</td></tr>
+<tr><td>train / 8</td><td>0.931794</td><td>0.005760</td><td>0.000000</td><td>0/8</td></tr>
+<tr><td>pooled / 3</td><td>0.915366</td><td>0.002675</td><td>0.000000</td><td>0/3</td></tr>
+<tr><td>pooled / 8</td><td>0.921631</td><td>0.006719</td><td>0.000000</td><td>0/8</td></tr>
+</table><p>Eight-repeat role: Matched reference reproduction. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;control&quot;,
+  &quot;name&quot;: &quot;current_lda_control&quot;
+}</pre></details>
+<details class="attempt" id="v11:shared_norm_w25"><summary>v11:shared_norm_w25 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.934183</td><td>0.004587</td><td>0.001415</td><td>2/3</td></tr>
+<tr><td>pooled / 3</td><td>0.914657</td><td>0.005564</td><td>-0.000709</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;shared&quot;,
+  &quot;name&quot;: &quot;shared_norm_w25&quot;,
+  &quot;weights&quot;: [
+    0.25,
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ]
+}</pre></details>
+<details class="attempt" id="v11:shared_norm_w50"><summary>v11:shared_norm_w50 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.931352</td><td>0.005573</td><td>-0.001415</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912293</td><td>0.008478</td><td>-0.003073</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;shared&quot;,
+  &quot;name&quot;: &quot;shared_norm_w50&quot;,
+  &quot;weights&quot;: [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ]
+}</pre></details>
+<details class="attempt" id="v11:shared_binary_w35"><summary>v11:shared_binary_w35 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.931352</td><td>0.005296</td><td>-0.001415</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913002</td><td>0.006586</td><td>-0.002364</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;binary&quot;: true,
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;shared&quot;,
+  &quot;name&quot;: &quot;shared_binary_w35&quot;,
+  &quot;weights&quot;: [
+    0.35,
+    0.35,
+    0.35,
+    0.35,
+    0.35
+  ]
+}</pre></details>
+<details class="attempt" id="v11:separate_w35"><summary>v11:separate_w35 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.929936</td><td>0.004587</td><td>-0.002831</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912530</td><td>0.001769</td><td>-0.002837</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;balance&quot;: false,
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;separate&quot;,
+  &quot;name&quot;: &quot;separate_w35&quot;,
+  &quot;steps&quot;: 1,
+  &quot;weights&quot;: [
+    0.35,
+    0.35,
+    0.35,
+    0.35,
+    0.35
+  ]
+}</pre></details>
+<details class="attempt" id="v11:separate_balanced_w35"><summary>v11:separate_balanced_w35 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.929936</td><td>0.004587</td><td>-0.002831</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913002</td><td>0.001337</td><td>-0.002364</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;balance&quot;: true,
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;separate&quot;,
+  &quot;name&quot;: &quot;separate_balanced_w35&quot;,
+  &quot;steps&quot;: 1,
+  &quot;weights&quot;: [
+    0.35,
+    0.35,
+    0.35,
+    0.35,
+    0.35
+  ]
+}</pre></details>
+<details class="attempt" id="v11:separate_balanced_other60"><summary>v11:separate_balanced_other60 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train wins 1/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.934183</td><td>0.001734</td><td>0.001415</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911111</td><td>0.003723</td><td>-0.004255</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;balance&quot;: true,
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;separate&quot;,
+  &quot;name&quot;: &quot;separate_balanced_other60&quot;,
+  &quot;steps&quot;: 1,
+  &quot;weights&quot;: [
+    0,
+    0,
+    0,
+    0,
+    0.6
+  ]
+}</pre></details>
+<details class="attempt" id="v11:separate_balanced_two_w35"><summary>v11:separate_balanced_two_w35 — reason_metric</summary><p>Previous kernel blend changes few predictions. Each reason gets a distinct AGOP metric, optionally class-balanced gradient averaging; .1 identity shrinkage prevents rank collapse. Shared kernel transfer to new stronger parent is a matched control, not a new method.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927105</td><td>0.008551</td><td>-0.005662</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910638</td><td>0.006949</td><td>-0.004728</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v11/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;balance&quot;: true,
+  &quot;family&quot;: &quot;reason_metric&quot;,
+  &quot;kind&quot;: &quot;separate&quot;,
+  &quot;name&quot;: &quot;separate_balanced_two_w35&quot;,
+  &quot;steps&quot;: 2,
+  &quot;weights&quot;: [
+    0.35,
+    0.35,
+    0.35,
+    0.35,
+    0.35
+  ]
+}</pre></details>
+<details class="attempt" id="v12:gold"><summary>v12:gold — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.918613</td><td>0.005296</td><td>-0.014154</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.898109</td><td>0.003189</td><td>-0.017258</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;direction&quot;: &quot;forward&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;gold&quot;,
+  &quot;propagate&quot;: false,
+  &quot;strength&quot;: 0.0
+}</pre></details>
+<details class="attempt" id="v12:seeds_fwd"><summary>v12:seeds_fwd — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.895966</td><td>0.014811</td><td>-0.036801</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.881087</td><td>0.003856</td><td>-0.034279</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;direction&quot;: &quot;forward&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;seeds_fwd&quot;,
+  &quot;propagate&quot;: false,
+  &quot;strength&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v12:prop_fwd"><summary>v12:prop_fwd — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.898443</td><td>0.012866</td><td>-0.034324</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.880615</td><td>0.002737</td><td>-0.034752</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;direction&quot;: &quot;forward&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;prop_fwd&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v12:prop_reverse"><summary>v12:prop_reverse — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.912243</td><td>0.012176</td><td>-0.020524</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.886288</td><td>0.006192</td><td>-0.029078</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;direction&quot;: &quot;reverse&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;prop_reverse&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v12:prop_reverse64"><summary>v12:prop_reverse64 — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.822364</td><td>0.011542</td><td>-0.110403</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.822931</td><td>0.008135</td><td>-0.092435</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;direction&quot;: &quot;reverse&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;prop_reverse64&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 64.0
+}</pre></details>
+<details class="attempt" id="v12:hybrid_prop_fwd"><summary>v12:hybrid_prop_fwd — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.927813</td><td>0.006250</td><td>-0.004954</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912530</td><td>0.004067</td><td>-0.002837</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.25,
+  &quot;direction&quot;: &quot;forward&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;hybrid_prop_fwd&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v12:hybrid_prop_reverse"><summary>v12:hybrid_prop_reverse — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.930644</td><td>0.004003</td><td>-0.002123</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913948</td><td>0.004681</td><td>-0.001418</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.25,
+  &quot;direction&quot;: &quot;reverse&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;hybrid_prop_reverse&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 0.3
+}</pre></details>
+<details class="attempt" id="v12:hybrid_prop_reverse64"><summary>v12:hybrid_prop_reverse64 — vast_linear</summary><p>Only classical graph mechanism. Supplied vectors standardized and unit-normalized; identical vectors collapse to nodes, fractional gold-label seeds. Minimal connected union-kNN, log degree correction, symmetric prior 1/5, receiver .75, synchronous accumulated-evidence updates until frozen set stops growing. Gold roles frozen per paper; true classifier labels unchanged. Adaptive gate paper constants. Replace neural student by regularized linear softmax; compare explicit reverse KL with ordinary soft-target cross entropy; .3 mass and paper 64. No external encoder.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.922859</td><td>0.006088</td><td>-0.009908</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910638</td><td>0.003474</td><td>-0.004728</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v12/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.25,
+  &quot;direction&quot;: &quot;reverse&quot;,
+  &quot;family&quot;: &quot;vast_linear&quot;,
+  &quot;name&quot;: &quot;hybrid_prop_reverse64&quot;,
+  &quot;propagate&quot;: true,
+  &quot;strength&quot;: 64.0
+}</pre></details>
+<details class="attempt" id="v13:forest_raw"><summary>v13:forest_raw — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.855626</td><td>0.010826</td><td>-0.077141</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.860047</td><td>0.003343</td><td>-0.055319</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;raw&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;forest_raw&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:forest_pca"><summary>v13:forest_pca — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.834395</td><td>0.013088</td><td>-0.098372</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.856738</td><td>0.005048</td><td>-0.058629</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;pca&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;forest_pca&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:forest_jacobian"><summary>v13:forest_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.885350</td><td>0.009173</td><td>-0.047417</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.883688</td><td>0.004176</td><td>-0.031678</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;forest_jacobian&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:forest_axes"><summary>v13:forest_axes — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.877565</td><td>0.011542</td><td>-0.055202</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.874704</td><td>0.005829</td><td>-0.040662</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;eigen&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;forest_axes&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:pseudo_forest_jacobian"><summary>v13:pseudo_forest_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.895258</td><td>0.011800</td><td>-0.037509</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.885579</td><td>0.003723</td><td>-0.029787</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;pseudo_forest_jacobian&quot;,
+  &quot;pseudo&quot;: true
+}</pre></details>
+<details class="attempt" id="v13:boost_raw"><summary>v13:boost_raw — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.859873</td><td>0.006770</td><td>-0.072895</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.842080</td><td>0.010699</td><td>-0.073286</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;raw&quot;,
+  &quot;learner&quot;: &quot;boost&quot;,
+  &quot;name&quot;: &quot;boost_raw&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:boost_jacobian"><summary>v13:boost_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.870134</td><td>0.013493</td><td>-0.062633</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.884634</td><td>0.002411</td><td>-0.030733</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;boost&quot;,
+  &quot;name&quot;: &quot;boost_jacobian&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:boost_axes"><summary>v13:boost_axes — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.860156</td><td>0.007406</td><td>-0.072611</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.873853</td><td>0.004681</td><td>-0.041513</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.0,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;eigen&quot;,
+  &quot;learner&quot;: &quot;boost&quot;,
+  &quot;name&quot;: &quot;boost_axes&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:hybrid_forest_jacobian"><summary>v13:hybrid_forest_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.922151</td><td>0.010449</td><td>-0.010616</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.909220</td><td>0.007233</td><td>-0.006147</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.35,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;hybrid_forest_jacobian&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:hybrid_forest_axes"><summary>v13:hybrid_forest_axes — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.920028</td><td>0.011542</td><td>-0.012739</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910638</td><td>0.006949</td><td>-0.004728</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.35,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;eigen&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;hybrid_forest_axes&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:hybrid_pseudo_forest_jacobian"><summary>v13:hybrid_pseudo_forest_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.924982</td><td>0.012299</td><td>-0.007785</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908747</td><td>0.007076</td><td>-0.006619</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.35,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;forest&quot;,
+  &quot;name&quot;: &quot;hybrid_pseudo_forest_jacobian&quot;,
+  &quot;pseudo&quot;: true
+}</pre></details>
+<details class="attempt" id="v13:hybrid_boost_jacobian"><summary>v13:hybrid_boost_jacobian — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.915782</td><td>0.007217</td><td>-0.016985</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.902600</td><td>0.002915</td><td>-0.012766</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.35,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;jacobian&quot;,
+  &quot;learner&quot;: &quot;boost&quot;,
+  &quot;name&quot;: &quot;hybrid_boost_jacobian&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v13:hybrid_boost_axes"><summary>v13:hybrid_boost_axes — jacobian_tree</summary><p>Original coordinates are randomly rotated. Use one kernel-Jacobian preconditioner to expose useful combinations to nonlinear tree classifiers; distinguish this from using a learned kernel as the classifier.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.916490</td><td>0.010592</td><td>-0.016277</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.906856</td><td>0.009644</td><td>-0.008511</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v13/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;blend&quot;: 0.35,
+  &quot;family&quot;: &quot;jacobian_tree&quot;,
+  &quot;geometry&quot;: &quot;eigen&quot;,
+  &quot;learner&quot;: &quot;boost&quot;,
+  &quot;name&quot;: &quot;hybrid_boost_axes&quot;,
+  &quot;pseudo&quot;: false
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_gold_final"><summary>v14:pair_lda_gold_final — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.930644</td><td>0.003609</td><td>-0.002123</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.910165</td><td>0.004067</td><td>-0.005201</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_gold_final&quot;,
+  &quot;population&quot;: &quot;gold&quot;,
+  &quot;scope&quot;: &quot;final&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_gold_both"><summary>v14:pair_lda_gold_both — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.929229</td><td>0.005573</td><td>-0.003539</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.004681</td><td>-0.003783</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_gold_both&quot;,
+  &quot;population&quot;: &quot;gold&quot;,
+  &quot;scope&quot;: &quot;both&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_augmented_final"><summary>v14:pair_lda_augmented_final — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.935598</td><td>0.006088</td><td>0.002831</td><td>2/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911584</td><td>0.003723</td><td>-0.003783</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_augmented_final&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;final&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_augmented_both"><summary>v14:pair_lda_augmented_both — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.934183</td><td>0.007944</td><td>0.001415</td><td>2/3</td></tr>
+<tr><td>pooled / 3</td><td>0.911111</td><td>0.003538</td><td>-0.004255</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_augmented_both&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;both&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lr_augmented_final"><summary>v14:pair_lr_augmented_final — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 0/3, needs 2; pooled mean did not improve; pooled wins 0/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.929229</td><td>0.007006</td><td>-0.003539</td><td>0/3</td></tr>
+<tr><td>pooled / 3</td><td>0.908747</td><td>0.004067</td><td>-0.006619</td><td>0/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lr&quot;,
+  &quot;name&quot;: &quot;pair_lr_augmented_final&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;final&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lr_augmented_both"><summary>v14:pair_lr_augmented_both — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.928521</td><td>0.002002</td><td>-0.004246</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.913948</td><td>0.005829</td><td>-0.001418</td><td>2/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lr&quot;,
+  &quot;name&quot;: &quot;pair_lr_augmented_both&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;both&quot;,
+  &quot;weight&quot;: 0.2
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_augmented_final_w40"><summary>v14:pair_lda_augmented_final_w40 — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train wins 1/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.934183</td><td>0.009173</td><td>0.001415</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.909693</td><td>0.009289</td><td>-0.005674</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_augmented_final_w40&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;final&quot;,
+  &quot;weight&quot;: 0.4
+}</pre></details>
+<details class="attempt" id="v14:pair_lda_augmented_both_w40"><summary>v14:pair_lda_augmented_both_w40 — pairwise_lda</summary><p>LDA was the strongest observed improvement. Pair-specific covariance may resolve heterogeneity hidden by its single shared covariance. Use ten pairwise heads and probability coupling, keeping all ensemble partners fixed. This is a focused classical adaptation, not a claim of a newly published algorithm.</p><p><strong>Comparator:</strong> Current C.1/LDA 70/15/15 ensemble</p><p><strong>Outcome:</strong> Initial screen failed: train mean did not improve; train wins 1/3, needs 2; pooled mean did not improve; pooled wins 1/3, needs 2.</p><table><tr><th>Pool / repeats</th><th>Mean sample F1</th><th>SD</th><th>Delta</th><th>Paired wins</th></tr>
+<tr><td>train / 3</td><td>0.931352</td><td>0.005296</td><td>-0.001415</td><td>1/3</td></tr>
+<tr><td>pooled / 3</td><td>0.912530</td><td>0.009850</td><td>-0.002837</td><td>1/3</td></tr>
+</table><p>Eight-repeat role: Not evaluated. Supplementary role: Not evaluated.</p><p>Validation: —; chronology: —.</p><p><a href="reproduction/studies/v14/registry.json">Frozen registry and selection rule</a></p><pre>{
+  &quot;family&quot;: &quot;pairwise_lda&quot;,
+  &quot;head&quot;: &quot;lda&quot;,
+  &quot;name&quot;: &quot;pair_lda_augmented_both_w40&quot;,
+  &quot;population&quot;: &quot;augmented&quot;,
+  &quot;scope&quot;: &quot;both&quot;,
+  &quot;weight&quot;: 0.4
+}</pre></details>
+<script>const input=document.querySelector('#search'), rows=[...document.querySelectorAll('.attempt')];input.addEventListener('input',()=>{const term=input.value.toLowerCase();let count=0;for(const r of rows){r.hidden=!r.textContent.toLowerCase().includes(term);if(!r.hidden)count++}document.querySelector('#count').textContent=count+' attempts'});</script></html>

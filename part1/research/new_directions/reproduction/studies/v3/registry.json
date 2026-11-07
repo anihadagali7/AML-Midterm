@@ -1,0 +1,66 @@
+{
+  "version": "new-directions-v3",
+  "frozen_at": 1793947760.051472,
+  "recipes": [
+    {
+      "name": "rfm_joint",
+      "family": "rfm_structured",
+      "joint": true
+    },
+    {
+      "name": "rfm_unique_gradient",
+      "family": "rfm_structured",
+      "unique_gradient": true
+    },
+    {
+      "name": "rfm_group_bag",
+      "family": "rfm_bag"
+    },
+    {
+      "name": "rfm_nested",
+      "family": "rfm_nested"
+    },
+    {
+      "name": "new_blend_50",
+      "family": "rfm_fisher",
+      "rfm_weight": 0.5
+    },
+    {
+      "name": "new_blend_75",
+      "family": "rfm_fisher",
+      "rfm_weight": 0.75
+    }
+  ],
+  "sources": {
+    "models.py": "38f2e27d6feca7cff373a8130480ffa52ff9364d3fa4f1645aa9e5f2fd83cf5c",
+    "study.py": "b97d648453a67c40e8326a05f827fce2c8e16efeff53e918d06ba3b2e6827eb0",
+    "models_v2.py": "b80ff878de48f26da233ee1d98dee5962142c8a0599b1edc0f58d0a864fa0ebe",
+    "models_v3.py": "df84192c6e969a4dc9304f21f1f26ec34a734eb886d4b083601ad245e68a2b11",
+    "study_v3.py": "650c0d05275fb4d0498894f6760360a35feb23b7c0abf0ea5ce0dc5a620bbe97"
+  },
+  "raw_data": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "protocols": {
+    "chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+    "train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29"
+  },
+  "selection": "Same Ani dual-pool screen (positive means, >=2/3 wins); 8-repeat confirmation >=5/8. Also compare changes to exact RFM parent. No old model included in new blends. Validation and chronology after shortlist only.",
+  "hypotheses": {
+    "joint": "Train kernel on label-set posteriors, decode expected sample F1.",
+    "unique_gradient": "Prevent repeated embeddings from dominating learned geometry.",
+    "bagging": "Average full fit with five 80% grouped-gold fits to reduce metric estimation variance.",
+    "nested": "Select bandwidth, ridge and cutoff inside each training fold using 3-fold grouped CV with masked-group purges.",
+    "blend": "Combine complementary new learned-kernel and Fisher-residual representations; predeclared weights .5 and .75."
+  },
+  "feature_access": "inductive",
+  "external_data": false,
+  "deep_learning": false
+}

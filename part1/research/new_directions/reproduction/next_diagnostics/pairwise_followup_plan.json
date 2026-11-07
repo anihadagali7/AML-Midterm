@@ -1,0 +1,10 @@
+{
+  "frozen_at": 1794007455.988726,
+  "source_sha256": "4dad3a091b2533fc92298b4da3dc43ce3ce9e8bbf9065ab5ceea28b2d60547ae",
+  "study": "v14",
+  "supplementary_runner_sha256": "e0338e64ebc9b6f8a3cb4efecd19f4760ae43eda7f8658dbd54daf17e68ceddb",
+  "selection": "Positive paired means and >=2/3 wins in both pools advances to eight. Positive means and >=5/8 wins in both pools then receives supplementary checks. No exceptions.",
+  "preceding_checkpoint_sha256": "a1b889e21a7897b108ee03468d7702e296293991d340635ea5958743b4a44f1c",
+  "no_test_predictions": true,
+  "no_promotion": true
+}

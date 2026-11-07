@@ -1,0 +1,2 @@
+recipe,family,train_mean,train_sd,train_delta,train_wins,train_macro,pooled_mean,pooled_sd,pooled_delta,pooled_wins,pooled_macro,qualifies
+new_blend_75,rfm_fisher,0.9251592356687899,0.007636674400179513,0.005573248407643283,5,0.8884299028532266,0.9143617021276595,0.0032452136910856677,0.004521276595744708,5,0.846196007636677,True

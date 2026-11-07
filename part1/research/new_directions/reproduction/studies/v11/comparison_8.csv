@@ -1,0 +1,2 @@
+recipe,family,train_mean,train_sd,train_delta,train_wins,train_macro,pooled_mean,pooled_sd,pooled_delta,pooled_wins,pooled_macro,qualifies
+current_lda_control,reason_metric,0.9317940552016986,0.005759695969801151,0.0,0,0.883643079231301,0.9216312056737589,0.006718899050176055,0.0,0,0.8442189983033608,False

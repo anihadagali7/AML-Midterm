@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "Numerical failure before a complete scored repeat",
+    "study": "original v1",
+    "issue": "Poisson query-neighbor weights underflowed to zero, producing non-finite probabilities and an assertion failure.",
+    "resolution": "The v1.1 fix normalizes query weights in log space. The corrected frozen implementation is retained. No failed fold was dropped from a scored repeat; obsolete source snapshots and logs were discarded during consolidation."
+  },
+  {
+    "kind": "Audit mismatch from concurrent documentation edits",
+    "study": "v11\u2013v14 audit",
+    "issue": "The original-checkout hash audit detected a changed benchmark documentation file.",
+    "resolution": "Reviewed the documentation-only diff and recorded its exact old/new hashes. Model/data/protocol/prediction hashes remain checked. The audit explicitly reports that the whole checkout is not byte-identical."
+  }
+]

@@ -1,0 +1,179 @@
+{
+  "version": "new-directions-v5",
+  "frozen_at": 1793954530.555476,
+  "recipes": [
+    {
+      "name": "entropy_linear_0",
+      "family": "entropy",
+      "representation": "linear",
+      "strength": 0.0
+    },
+    {
+      "name": "entropy_linear_0.1",
+      "family": "entropy",
+      "representation": "linear",
+      "strength": 0.1
+    },
+    {
+      "name": "entropy_linear_0.5",
+      "family": "entropy",
+      "representation": "linear",
+      "strength": 0.5
+    },
+    {
+      "name": "entropy_kernel_0",
+      "family": "entropy",
+      "representation": "kernel",
+      "strength": 0.0
+    },
+    {
+      "name": "entropy_kernel_0.1",
+      "family": "entropy",
+      "representation": "kernel",
+      "strength": 0.1
+    },
+    {
+      "name": "entropy_kernel_0.5",
+      "family": "entropy",
+      "representation": "kernel",
+      "strength": 0.5
+    },
+    {
+      "name": "mixture_k1_u0.5",
+      "family": "multimixture",
+      "components": 1,
+      "unlabeled_mass": 0.5
+    },
+    {
+      "name": "mixture_k3_u0",
+      "family": "multimixture",
+      "components": 3,
+      "unlabeled_mass": 0.0
+    },
+    {
+      "name": "mixture_k3_u0.5",
+      "family": "multimixture",
+      "components": 3,
+      "unlabeled_mass": 0.5
+    },
+    {
+      "name": "mixture_k3_u2",
+      "family": "multimixture",
+      "components": 3,
+      "unlabeled_mass": 2.0
+    },
+    {
+      "name": "rfm_complement_all15",
+      "family": "complement",
+      "weights": [
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "name": "rfm_complement_all30",
+      "family": "complement",
+      "weights": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "name": "rfm_complement_safety50",
+      "family": "complement",
+      "weights": [
+        0.5,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rfm_complement_safety_funding50",
+      "family": "complement",
+      "weights": [
+        0.5,
+        0.5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rfm_complement_first3_50",
+      "family": "complement",
+      "weights": [
+        0.5,
+        0.5,
+        0.5,
+        0,
+        0
+      ]
+    }
+  ],
+  "sources": {
+    "study.py": "b97d648453a67c40e8326a05f827fce2c8e16efeff53e918d06ba3b2e6827eb0",
+    "models.py": "38f2e27d6feca7cff373a8130480ffa52ff9364d3fa4f1645aa9e5f2fd83cf5c",
+    "models_v2.py": "b80ff878de48f26da233ee1d98dee5962142c8a0599b1edc0f58d0a864fa0ebe",
+    "models_v5.py": "4b045b4a4e098bf55dfe1340fbe2fecc92a42d6cd1525664f1c7f86f18f55a97",
+    "study_v5.py": "4eda6393274a3fc4519e087b0e493aa8b8221e5f6fc115c2832fc984d2b6685f",
+    "references/legacy_engine/phase21.py": "5d6b5d5c54f19943fba9a5533c48938b1b5afcafe7f0865659f4fc2498300dcc",
+    "references/legacy_engine/phase4.py": "81f84b0b7d63f11dd1ed94228a71b821574b1e57c571941ce9bfc2b78daaeca4",
+    "references/legacy_engine/phase11.py": "c7670388bb191c72a04cc548476a40223659c789f304bba3088d7d64210bee20",
+    "references/legacy_engine/phase25.py": "eb6d5eb104f530a676b4c14549b9075b7544898f4fb86885c0f473b92c311ffd",
+    "references/legacy_engine/phase5.py": "ae1a0164e36de0eb8ba979fb7493d7e53423a83d14ab68da7ada45fc1fcaf6e7",
+    "references/legacy_engine/phase10.py": "699091e038b267283a079fcb70f4478fdab10d0b9835fd8e2ee765f5d7f78da4",
+    "references/legacy_engine/phase24.py": "3baa7d6205211d7989fb801fb6d96461dc8f1f8cf143e811db99f8ec6fcb4217",
+    "references/legacy_engine/phase20.py": "6b5642e9c333cf8e8bfde9d51665d33a70012ccf2d67409caae8ee6cc8a05692",
+    "references/legacy_engine/phase14.py": "74ed2f4aa227620334c505a1825c1e06b55285ff8fb4b129db313b907aa231e4",
+    "references/legacy_engine/benchmark_pooled_cv.py": "fed9b6d81ad85d17529e09fa1dace0a72a086d40e7edca9750fe46e9105f3e2b",
+    "references/legacy_engine/cross_repo_models.py": "21c4d6ad410dee401ab2719c8eaf3e8675d2cc3e0fa766ec60016d3a038c36ea",
+    "references/legacy_engine/run_cross_repo_benchmark.py": "a8abb93dac1aff01d24d4b2841a93b020c5314501300c0dfbe5d7bced3c7b95f",
+    "references/legacy_engine/experiment.py": "bf4584f8af7ffbfa6945a447da2d3b528fb207a93be5ae61e312d7ef7ed074bd",
+    "references/legacy_engine/phase8.py": "b358eb8324a2bc8f8c497d047aa8512ad712615cab3c52eec537d030acf1f09b",
+    "references/legacy_engine/phase9.py": "5a9c52cd235125d32249faab0d7932786f4c0578efa42656f83b14299d1fab37",
+    "references/legacy_engine/benchmark_cv.py": "81516a4cb0a98e1073c64693a538bd36c5c61e0c7d213ea6eb5d542f425e0807",
+    "references/legacy_engine/phase18.py": "4c453eb76eb1a633c16ee53873d334d3d10c4c573f7d5e4863ac827694a7ce3c",
+    "references/legacy_engine/phase6.py": "37e3eba538946985edda221725b42c2940650d33548446ee46149b8ddf106533",
+    "references/legacy_engine/phase23.py": "634494f719756ed4273552a53dc93f95ec76f78048d72c5e34365cb5aec710d3",
+    "references/legacy_engine/phase17.py": "8f490c261b032a2869ee6e726e39f6e85cc54c2ef65bf3a02f6da75693f66841",
+    "references/legacy_engine/phase3.py": "53cfbb46726de7009c7ca2e062d48426bb71b99e8f50b23a340a927ff1936467",
+    "references/legacy_engine/phase22.py": "ce837c5e83daca1a05fe6df25842e6b4336917a8e27514e029bfe9d0e5c6ab1b",
+    "references/legacy_engine/phase16.py": "9dcca68690fdcdad0fe04e5e96dfee268f3016886f9fbcbcbbd4f380716d98b7",
+    "references/legacy_engine/phase7.py": "ff64ae8dc0f91bb9f0489630a96c85ca7dbbd87829001eb503d734cf09b2eb1d",
+    "references/legacy_engine/phase26.py": "82f76d2f4e6278d63bd13924d1147fa25c723881f794afd932165e2bf4050bc8",
+    "references/legacy_engine/experiments/phase24-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "references/legacy_engine/experiments/phase25-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "references/legacy_engine/experiments/phase22-baseline.json": "bf987b6a247da5bda1588629fbaa0f8f39f728483df5e47a1cfbb33c13de92c0",
+    "references/legacy_engine/experiments/phase26-baseline.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "references/legacy_engine/experiments/cross_repo_benchmark_v1/registry.json": "20d07f750011b14aabfd535d17f2833233c57d3b934fbf6f216083e17ec4bd03"
+  },
+  "raw_data": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "protocols": {
+    "chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+    "train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29"
+  },
+  "comparator": "Submitted 70/15/15 ensemble; legacy ani_delta fields in shared helper refer to THIS declared comparator.",
+  "selection": "First three saved repeats in both pools: positive mean and >=2/3 wins versus submitted ensemble. Qualifiers receive 5 remaining repeats; positive mean >=5/8 wins in both required. Then fixed validation and chronology. Standalone methods also compared to exact supervised/no-unlabeled controls.",
+  "hypothesis": "Direct entropy minimization learns low-density boundaries; multiple mixture components represent semantic subtypes per reason; selective learned-kernel use retains complementary Safety/Funding corrections.",
+  "next_requested": "After this work, test averages of several clustering types with separate individual-clustering controls.",
+  "external_data": false,
+  "deep_learning": false,
+  "feature_access": "inductive"
+}

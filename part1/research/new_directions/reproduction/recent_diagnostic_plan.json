@@ -1,0 +1,16 @@
+{
+  "frozen_at": 1793957288.277832,
+  "source_sha256": "bc6f15c4d1162c8d48fb1db89e8428ebe083fa47c47dcbc2c79e2ef46d36d2e4",
+  "diagnostic": [
+    {
+      "study": "v8",
+      "recipe": "hybrid_leaf_nested"
+    }
+  ],
+  "rationale": "The fixed v8 blend gains both eight-repeat means and wins 5/8 train, 4/8 pooled; it failed the five-win-in-both rule. Run the fixed supplementary populations as a disclosed diagnostic. No recipe change or promotion.",
+  "finalists": "Also run these checks for any v7-v10 recipe that passes its frozen eight-repeat gate.",
+  "unchanged_gate": true,
+  "no_test_fit": true,
+  "no_promotion": true,
+  "evidence_before_diagnostic": "2b9292f5c141bb6ce47e90c2b713251d8e6c297c246dd62d426de0552011c567"
+}
