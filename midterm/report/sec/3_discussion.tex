@@ -2,114 +2,121 @@
 \label{sec:discussion}
 
 \paragraph{Clustering is a poor labeler but a useful prior.}
-Used directly, the 30-component mixture is the worst model in
-Table~\ref{tab:p1models} (0.780 sample-F1, 0.570 macro-F1). Inspecting the
-components explains why: they overwhelmingly separate Recruitment from
-everything else, and additional components mostly subdivide Recruitment further
-rather than isolating Safety or Efficacy. Since the embeddings do carry that
-signal---a purely supervised model reaches Safety F1 0.947---the failure is the
-clustering objective, not the features. Unsupervised structure in this space
-tracks the dominant topic, and with Recruitment on 64\% of trials the dominant
-topic is Recruitment. What does work is demoting the mixture from decision-maker
-to prior: as a 0.2-weighted term inside the pseudo-labeling step it raises
-cross-validated macro-F1 from 0.805 to 0.814 (and validation sample-F1 from 0.889
-to 0.893) over identical self-training without it. The mixture's contribution is
-to regularize which unlabeled trials get promoted, not to name their reasons.
+Used on its own, the 30-component mixture is the worst model in
+Table~\ref{tab:p1models}. Looking at what its components actually contain explains
+why: they mostly separate Recruitment from everything else, and adding more
+components splits Recruitment into finer pieces rather than isolating Safety or
+Efficacy. The signal is there---a purely supervised model reaches 0.947 F1 on
+Safety from the same embeddings---so the problem is the clustering, not the
+features. Clustering finds whatever structure dominates the data, and with
+Recruitment on 64\% of trials the dominant structure is Recruitment. What does
+work is demoting the mixture from decision-maker to adviser. As a 20\% voice in
+the self-training step it lifts the cross-validated macro-F1 from 0.805 to 0.814
+and the validation score from 0.889 to 0.893, compared with the same self-training
+without it. Its real job is to steady which unlabeled trials get promoted, not to
+name their reasons.
 
 \paragraph{Why the extra features fail.}
-This is the ablation's most informative result. The reason embeddings are a
-compressed encoding of the very stopping-reason text the labels were derived
-from, so they are close to a sufficient statistic for the target. Criteria,
-disease and drug fields describe \emph{what the trial was}, not \emph{why it
-stopped}---a trial can be halted for funding reasons regardless of its indication.
-Appending them adds 20--50 parameters per block to a model fit on 157 labeled
-trials, so the variance cost arrives immediately while the bias reduction never
-does: criteria TF-IDF drops validation sample-F1 from 0.893 to 0.876. The Morgan
-fingerprints are the clearest null result, moving cross-validated macro-F1 by
-$+0.001$---within repeat-to-repeat noise---which is unsurprising given that 44\%
-of trials have no matched drug and receive an all-zero block. \texttt{start\_year}
-fails for a more interesting reason: it is genuinely predictive in-sample, because
-the labeled trials are deliberately the earliest ones, but the test trials are the
-latest, so the model would be extrapolating a year effect fit entirely outside the
-test range. Including everything is actively harmful here, not merely redundant.
+This is the most informative result in the ablation. The reason embeddings are a
+compressed version of the stopping-reason text itself, which is the very thing the
+labels were written from, so they already contain nearly everything there is to
+know about the target. The criteria, disease and drug fields describe what the
+trial was, not why it stopped---a trial can run out of money whatever disease it
+targets. Adding one of these blocks means adding 20 to 50 new inputs to a model
+fit on 157 labeled trials, so the extra noise arrives immediately while the extra
+information never does; criteria text drops the validation score from 0.893 to
+0.876. The molecular fingerprints are the clearest non-result, moving the
+cross-validated score by 0.001, which is smaller than the variation between
+repeats, and 44\% of trials have no matched drug and so receive an all-zero block
+anyway. Start year fails for a more interesting reason. It genuinely predicts the
+labels we can see, because the labeled trials were deliberately chosen to be the
+earliest ones, but the test trials are the latest, so the model would be reading a
+year pattern learned entirely outside the range it has to predict. Here, adding
+everything is not merely wasteful but actively harmful.
 
-\paragraph{Rare labels dominate macro-F1.}
-Recruitment appears on 64\% of trials and Funding on 5\%. Funding F1 (0.400) and
-Other F1 (0.500) rest on 4 and 10 positive validation trials respectively, so a
-single trial moves macro-F1 by several points. This is why the validation macro-F1
-column in Table~\ref{tab:p1models} is non-monotone with the CV column, and why we
-selected on the latter: the final model has slightly lower validation macro-F1
-than the balanced LR + $k$NN blend (0.714 vs.\ 0.724) but the best CV macro-F1
-(0.814 vs.\ 0.800), and the 235-trial CV estimate is the more reliable of the two.
+\paragraph{Rare labels dominate the macro average.}
+Recruitment appears on 64\% of trials and Funding on 5\%. The Funding score of
+0.400 and the Other score of 0.500 rest on just 4 and 10 positive validation
+trials, so a single trial moves the five-reason average by several points. This is
+why the validation and cross-validated columns of Table~\ref{tab:p1models}
+disagree about which model is best, and why we followed the cross-validated one:
+our final model scores slightly below the balanced blend on validation macro-F1
+(0.714 against 0.724) but best of all on the cross-validated figure (0.814 against
+0.800), and the estimate built from 235 trials is the more reliable of the two.
 
 \paragraph{What the stack buys in Part 2.}
-The fitted meta-model weights are informative: criteria LR 0.62, criteria $k$NN
-0.55, drug-name LR 0.41, metadata 0.16, with disease (0.06) and ICD (0.03) nearly
-ignored and drug-knowledge slightly negative ($-0.11$). The drug-knowledge block
-is not useless in isolation---it is redundant once drug names are present, since
-targets and pathways are a deterministic function of the matched drug, and the
-meta-model subtracts it as a partial correction. The $k$NN's large weight shows
-the stack is exploiting near-duplicate trials that the linear criteria model
-cannot represent. Pooling phases matters most for Phase~I, which has only 1,012
-training rows and gains the most from the shared representation.
+The weights the combiner learns are revealing: 0.62 for the criteria regression,
+0.55 for the criteria nearest-neighbour model, 0.41 for drug names, 0.16 for the
+metadata, almost nothing for disease (0.06) and ICD codes (0.03), and a slightly
+negative $-0.11$ for drug targets and pathways. That negative weight does not mean
+the drug-knowledge fields are useless. It means they are redundant once drug names
+are known, since a drug's targets and pathways follow directly from which drug it
+is, and the combiner subtracts them as a small correction. The large weight on the
+nearest-neighbour model shows the stack is picking up on near-duplicate trials
+that a linear model on the same text cannot represent. Pooling the phases helps
+Phase~I most, since it has only 1,012 training rows of its own.
 
-\paragraph{The F1 / log-loss trade-off.}
-The unweighted stack \emph{lowers} mean validation F1 from 0.739 to 0.736 while
-improving log loss (0.591 $\to$ 0.559) and PR-AUC (0.796 $\to$ 0.810). This is not
-a regression: F1 at a fixed 0.5 threshold is a statement about calibration near
-that threshold, and the stack's meta-model shifts probabilities toward the base
-rate, pushing borderline positives below 0.5. Ranking quality, which is what
-ROC-AUC and PR-AUC measure, improves in every phase. Recency weighting then raises
-the probabilities again and lifts F1 to 0.755, better than either predecessor.
-Since the competition metric is log loss, we optimized for calibration and treat
-the F1 recovery as a bonus; a project scored on F1 would instead have tuned the
-threshold per phase.
+\paragraph{Better probabilities, briefly worse F1.}
+The plain stack actually lowers mean F1, from 0.739 to 0.736, while improving log
+loss from 0.591 to 0.559 and PR-AUC from 0.796 to 0.810. This is not a step
+backwards. F1 is measured by cutting predictions at 0.5 and counting, so it
+reports how well the probabilities happen to land relative to that one cutoff. The
+stack pulls borderline predictions toward the overall success rate, which nudges
+some just-positive trials below 0.5 and costs F1 even as the underlying ranking
+improves in every phase. Recency weighting pushes the probabilities back up and
+raises F1 to 0.755, better than either earlier model. Because the competition is
+scored on log loss, we optimized for well-calibrated probabilities and treat the
+F1 recovery as a bonus; had F1 been the target, the right move would have been to
+tune the cutoff separately for each phase rather than leaving it at 0.5.
 
 \paragraph{Where the errors live.}
-The strongest signal in Table~\ref{tab:p2errors} is that failure is hardest to
-detect in Phase~III and among trials with no recorded stopping reason. Both follow
-from the same cause: these are trials that ran to completion and missed their
-endpoint, so nothing in the eligibility text, indication or drug marks them as
-different from a successful trial---and Phase~III has a 0.65 success base rate
-pulling predictions upward. By contrast, trials stopped for Recruitment or Funding
-are administrative failures, and the stack catches them better (Phase~II
-Recruitment 0.207 $\to$ 0.149) partly because small, slow-recruiting trials leave
-traces in criteria length and drug-count metadata. The improvement is largest
-exactly where the baseline was worst: Phase~I no-reason 0.643 $\to$ 0.321,
-Phase~III no-reason 0.695 $\to$ 0.585.
+The clearest message in Table~\ref{tab:p2errors} is that failure is hardest to
+spot in Phase~III and among trials with no recorded stopping reason. Both follow
+from the same cause. These are trials that ran all the way to the end and simply
+missed their target, so nothing in the eligibility text, the disease or the drug
+marks them out from a trial that succeeded, and Phase~III carries a 0.65 success
+rate that pulls every prediction upward. Trials stopped for recruitment or funding
+problems are a different matter: they failed for administrative reasons, and the
+stack catches them better---Phase~II Recruitment falls from 0.207 to 0.149---partly
+because small, slowly recruiting trials leave traces in the criteria length and
+drug-count features. The improvement is largest exactly where the baseline was
+worst, with the Phase~I no-reason group falling from 0.643 to 0.321 and the
+Phase~III no-reason group from 0.695 to 0.585.
 
 \paragraph{How much of the error table to believe.}
-Two caveats temper this. Category sizes are small---Safety, Funding, Efficacy and
-Other have fewer than 25 failed trials in every phase, and Phase~III Efficacy has
-8, so its apparent 1.000 $\to$ 0.875 $\to$ 1.000 trajectory is one trial moving.
-Phase~III Funding has no trials at all. More subtly, 171 of the 198 matched reason
-labels are Part~1 \emph{predictions} rather than ground truth, and the Part~1
-model has roughly 10\% sample-F1 error. Those errors are not random: because the
-Part~1 model over-predicts the majority reason, trials are more likely to be
-misfiled \emph{into} Recruitment than out of it, which biases the Recruitment row
-toward the population average and makes the rare-reason rows noisier than their
-sample sizes alone suggest. Only the Phase~II Recruitment row and the three
-no-reason rows (whose membership is determined by a join, not a prediction, and so
-is error-free) support confident conclusions.
+Two cautions. The groups are small: Safety, Funding, Efficacy and Other have fewer
+than 25 failed trials in every phase, and Phase~III Efficacy has 8, so its
+apparent swing from 1.000 to 0.875 and back is one trial changing its mind.
+Phase~III Funding has no trials at all. The subtler problem is that 171 of the 198
+matched reason labels are predictions from our own Part~1 model rather than real
+labels, and that model is wrong about 10\% of the time. Those mistakes are not
+evenly spread. Because the Part~1 model leans toward the majority reason, a trial
+is more likely to be filed wrongly into Recruitment than out of it, which drags
+the Recruitment row toward the overall average and makes the rare-reason rows
+noisier than their already small counts suggest. Only the Phase~II Recruitment row
+and the three no-reason rows support firm conclusions, the latter because
+membership there is decided by whether a trial appears in Part~1 at all, which is
+a lookup rather than a prediction and so carries no error.
 
 \paragraph{The validation-to-test gap.}
 Mean log loss rises from 0.556 on validation to 0.58688 on Kaggle. The cause is
-temporal: validation trials started up to 2013 and were split at random from the
-training trials, while test trials started 2013--2022, later than every training
-row, and the success rate climbs from 0.38 in 2000 to 0.81 in 2013. A model fit on
-the pooled base rate is therefore systematically under-confident on test. Recency
-weighting is our response and was the single largest holdout gain we found
-(0.5514 $\to$ 0.5475 fitting to 2009; 0.4657 $\to$ 0.4553 fitting to 2011); it
-redistributes mean test predictions per phase rather than inflating them
-uniformly---Phase~III rises from 0.711 to 0.738 while Phase~I falls from 0.617 to
-0.598 and Phase~II from 0.565 to 0.557---because recent Phase~III trials succeeded
-far more often than recent early-phase ones. The residual gap reflects what we deliberately did not model. We
-built an alternative submission that lets the meta-model learn an explicit
-Phase~III year trend (Phase~III success rises 0.71 in 2009 to 0.96 in 2013), which
-pushes mean Phase~III test predictions to 0.788; on the holdouts it gains only
-about 0.001 log loss, and it extrapolates a trend fit on four years out to 2022,
-so we kept it as a recorded alternative rather than the submission. A per-phase
-trend for all phases was rejected outright: it fits flat or negative Phase~I/II
-slopes and would drive those predictions below the training base rate. Beyond the
-year effect, the test trials differ in disease and drug mix, and no amount of
-reweighting on pre-2014 data can calibrate for that.
+timing. The validation trials started up to 2013 and were drawn at random from the
+same pool as the training trials, whereas the test trials started between 2013 and
+2022, later than every training row, and the success rate climbs from 0.38 in 2000
+to 0.81 in 2013. A model fitted to the overall rate is therefore too pessimistic
+about the test trials. Recency weighting is our answer to this and was the single
+biggest gain we found on the holdouts, from 0.5514 to 0.5475 when training to 2009
+and from 0.4657 to 0.4553 when training to 2011. It does not inflate every
+prediction: Phase~III rises from 0.711 to 0.738 while Phase~I falls from 0.617 to
+0.598 and Phase~II from 0.565 to 0.557, because recent Phase~III trials succeeded
+far more often than recent early-phase ones. What remains of the gap is what we
+chose not to model. We built an alternative submission that lets the combiner
+learn an explicit year trend for Phase~III, where success climbs from 0.71 in 2009
+to 0.96 in 2013, and it lifts the average Phase~III test prediction to 0.788. On
+the holdouts it gains only about 0.001, and it would be projecting a trend fitted
+on four years all the way out to 2022, so we kept it as a recorded alternative
+rather than the submission. A year trend for all three phases was rejected
+outright, because it fits flat or falling slopes for Phases~I and II and would
+push those predictions below the rate we already know. Beyond the year effect, the
+test trials differ in which diseases and drugs they involve, and no amount of
+reweighting data from before 2014 can correct for that.
