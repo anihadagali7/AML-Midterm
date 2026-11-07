@@ -190,8 +190,8 @@
   },
   "experiment_local_submission_copies_retained": true,
   "upload_performed": false,
-  "latest_submitted_file": "submissions/archive/submitted/three_way_trainval235__kaggle_0.89401.csv",
-  "latest_reported_kaggle_score": 0.89401,
+  "latest_submitted_file": "submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv",
+  "latest_reported_kaggle_score": 0.89636,
   "post_submission_moves": {
     "submissions/ready/part1_dbscan_logistic_trainval235.csv": "submissions/archive/submitted/dbscan_logistic_trainval235__kaggle_0.86452.csv",
     "submissions/ready/part1_dbscan_logistic_train157_no_validation.csv": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
@@ -210,8 +210,9 @@
       "note": "Archived exact duplicate of the original 157-label fit selected for the next manual upload; see ready/. No validation-label refit."
     }
   ],
-  "highest_reported_file": "submissions/archive/submitted/ani_original_trainval235__kaggle_0.89423.csv",
-  "highest_reported_kaggle_score": 0.89423,
+  "highest_reported_file": "submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv",
+  "highest_reported_kaggle_score": 0.89636,
   "integration_uploaded": false,
-  "result_checkpoints": "submissions/results/"
+  "result_checkpoints": "submissions/results/",
+  "latest_result_record": "experiments/paired_improvement/candidate/kaggle_result.json"
 }

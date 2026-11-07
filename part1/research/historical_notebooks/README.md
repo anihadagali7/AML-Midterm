@@ -11,6 +11,8 @@ The [manifest](manifest.json) records full source commits and SHA-256 hashes. Th
 
 The former long [project overview](research_overview_c0d443b.md) is also archived; only its relative links were rebased. Its model recommendations describe that historical checkpoint.
 
+The [pre-reconciliation working overview](working_overview_before_main.md) preserves the fuller uncommitted root README, including the anchored development narrative. It is an exact copy: its links still assume the original repository-root location, and its older recommendations remain historical. The [reconciliation record](workspace_reconciliation.json) explains how the original checkout was accounted for.
+
 ## Reading and replaying history
 
 Use these notebooks to understand the original experiments. Their relative paths, environments, recommendations and output-writing cells are unchanged. Replay them only in a disposable reconstruction of their original project layout, regenerating any discarded intermediate outputs. Running them in the current project can overwrite historical outputs or recreate discarded caches.
