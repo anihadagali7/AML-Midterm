@@ -1,7 +1,0 @@
-{
-  "nodes": 1136,
-  "undirected_edges": 20114,
-  "graph_penalty_scale": 0.005313697566753035,
-  "approximation": "192-dimensional Nystroem RBF map",
-  "graph_weight": 10
-}

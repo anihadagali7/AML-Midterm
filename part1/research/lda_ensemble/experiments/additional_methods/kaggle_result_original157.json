@@ -1,0 +1,15 @@
+{
+  "experiment": "dbscan_m5_q25__logistic_C1000",
+  "verified_labels": 157,
+  "kaggle_score": 0.875,
+  "source": "Score reported by Michael for unchanged original 157-label CSV",
+  "submission_file": "submissions/archive/submitted/dbscan_logistic_train157__kaggle_0.87500.csv",
+  "submission_sha256": "b4f8e154c6105698d6c7fac2a34d3c0e1ecd3dcd095bd2d8634ee6608d336dba",
+  "source_submission_file": "experiments/additional_methods/submissions/part1_dbscan_m5_q25_logistic_C1000_submission.csv",
+  "source_model_file": "experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib",
+  "source_model_sha256": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3",
+  "comparison_235_label_refit_score": 0.86452,
+  "delta_vs_refit": 0.01048,
+  "historical_preparation_manifest_retained": true,
+  "reported_utc": "2026-11-06T00:17:26.227000+00:00"
+}

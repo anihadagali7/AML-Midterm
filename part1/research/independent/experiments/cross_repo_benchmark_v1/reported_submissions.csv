@@ -1,6 +1,0 @@
-candidate,gold_labels,feature_access,kaggle_f1,provenance
-Ani original submitted model,235,Transductive,0.89423,Prior user report and repo submission records
-Classical tri-training,235,Inductive,0.88012,User report; exact local CSV SHA256 verified
-DBSCAN + logistic original,157,Inductive,0.875,Repo submission records
-DBSCAN + logistic refit,235,Inductive,0.86452,Repo submission records
-Ani + tri/SVM 15% each,235,Inductive,0.89401,User report; exact local CSV SHA256 verified; predictions/three_way_trainval235/kaggle_result.json

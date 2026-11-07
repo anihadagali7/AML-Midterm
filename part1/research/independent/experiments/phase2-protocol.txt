@@ -1,4 +1,0 @@
-POST-FIRST-VALIDATION EXTENSION
-First frozen 3-candidate validation comparison: 0.850427 best sample-F1. This result did not meet the objective and is permanently retained in validation-once.json. No candidate was submitted to Kaggle.
-Continue training-only work to address incomplete method coverage: soft multiclass/powerset formulations, semi-supervised Gaussian mixtures, manifold regularization, and stronger chronology-oriented selection. Do not use per-row validation errors, labels, thresholds, or feature relevance to guide extension. Do not evaluate another candidate on the same validation set during this extension. A replacement candidate must be selected from grouped repeated CV plus chronological stress tests, and honestly requires a new external evaluation to establish performance.
-All later predictions/results are distinguished as phase 2. Do not overwrite the first validation results or label a later unmeasured candidate as validated.

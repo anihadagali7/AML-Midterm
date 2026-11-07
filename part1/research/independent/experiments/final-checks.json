@@ -1,9 +1,0 @@
-{
-  "submission_rows": 312,
-  "submission_id_order_matches_sample": true,
-  "labels_valid": true,
-  "augmented_rows": 1171,
-  "preserved_ground_truth_rows": 157,
-  "generated_label_rows": 1014,
-  "submission_sha256": "668287c652d6d35a1614e5663f4a53e4f49e714f79ed52ded3d0633fa8bee22e"
-}
