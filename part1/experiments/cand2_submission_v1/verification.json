@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source_data_and_artifact_hashes": true,
+  "independent_expected_f1_decode": true,
+  "ids_order_and_nonempty_labels": true,
+  "rows": 312,
+  "changed_label_sets_vs_anchored": 49,
+  "validation_replay_max_error": 0.0,
+  "kaggle_score": null,
+  "uploaded": false
+}

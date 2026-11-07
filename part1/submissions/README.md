@@ -35,6 +35,8 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
+The [Cand2 strict-inductive five-seed CSV](candidates/cand2_cs_features_inductive5.csv) is prepared as a user-requested exploratory candidate. It changes 49/312 predictions from anchored and has weaker local benchmark scores; it is not a promoted leader or a recorded upload. [Recipe, evidence and exact hash](../experiments/cand2_submission_v1/README.md).
+
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 
 Uploads remain manual. An archived CSV or preparation manifest does not queue an upload. Earlier statements about remaining daily slots are historical and do not establish a current budget.
