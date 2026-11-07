@@ -43,6 +43,10 @@ Ani's reported .89423 corresponds to the original recipe/artifact at commit `a54
 
 The user reported two remaining submissions after the .88012 and .89401 uploads, subsequently reported the LDA .89401 result and one remaining slot, and then reported the separate better submission. Those earlier quota statements are historical. No additional submission was created by the transductive experiment. Historical Git tags remain unchanged.
 
+## Commit and submission checkpoints
+
+The consolidated work is committed locally on the existing `codex/part1-research-integration` branch. [Commit and tag index](research/consolidation_v1/commit_index.json) records the idea batches and five dedicated result checkpoints. The annotated tags identify the exact submitted CSV and recipe hashes. These are backfilled records of earlier submissions, not new uploads. [Verification from committed files](research/consolidation_v1/commit_verification.json) passed; no branch merge or push was performed. Follow [AGENTS.md](AGENTS.md) for future experiment commits and score tags.
+
 ## Retention policy
 
 Keep source, fixed settings, evaluation protocols, failures and summary results for all experiments. Keep detailed predictions and useful audits for leaders, scored submissions and matched reference comparisons. Discard unsuccessful-run fold caches, per-trial tables, duplicated inputs and logs after checking their summaries. Replays write to a new disposable directory; delete those outputs after extracting any useful summary. Historical audit counts below describe checks completed before this cleanup, not files still stored.

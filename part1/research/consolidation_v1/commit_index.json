@@ -81,9 +81,16 @@
       "commit": "32c6c35d369276c021e5f6fced037f11152c35c7",
       "title": "Preserve the shared grouped comparison of Part 1 leaders",
       "changed_files": 42
+    },
+    {
+      "commit": "4d4d273e937e62835b1c6b250458d8895249bfcf",
+      "title": "Document compact retention, reproducibility and scored result checkpoints",
+      "changed_files": 25
     }
   ],
   "no_branch_merge": true,
   "no_push": true,
-  "working_checkout_preserved": true
+  "working_checkout_preserved": true,
+  "indexed_through_commit": "4d4d273e937e62835b1c6b250458d8895249bfcf",
+  "verification_file": "commit_verification.json"
 }
