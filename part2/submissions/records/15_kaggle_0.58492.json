@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "record_kind": "retrospective_submission_record",
+  "submission_id": "15",
+  "artifact": "part2/submissions/15_file10_legacy20_tree10_trend10.csv",
+  "sha256": "7c86d5e89d1e9e81db9ab50200e5d147df9b9fd6af6ff23ed173b9663279c37b",
+  "metric": "log_loss",
+  "lower_is_better": true,
+  "kaggle_score": 0.58492,
+  "score_source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+  "score_reported_at_utc": "2026-11-06T23:44:47.296572+00:00",
+  "training_rows": 9050,
+  "recipe": {
+    "legacy": 0.2,
+    "tree": 0.1,
+    "trend": 0.1
+  },
+  "artifact_first_commit": "a250cb95e46e6de85df3a0881da20feee9ca11f0",
+  "trial_phase_commit": "a250cb95e46e6de85df3a0881da20feee9ca11f0",
+  "original_score_commit": "a250cb95e46e6de85df3a0881da20feee9ca11f0",
+  "evidence_manifest": "part2/experiments/leaderboard_sprint/refine/2e5c792462013673/exports/15_file10_legacy20_tree10_trend10.json",
+  "evidence_manifest_sha256": "757dd76be5f099a1b9936b2378f8f447980d13ff8cfb34b14a72a1247a7de7d6",
+  "score_tag": "part2-submission-15-kaggle-0.58492",
+  "record_created_at_utc": "2026-11-07T17:00:06.184280+00:00",
+  "provenance_note": "Retrospective record of an already-submitted, unchanged CSV. Original export and experiment commits remain intact; tag creation is not the historical submission date.",
+  "remaining_weight_component": "file10 (0.6)"
+}
