@@ -1,0 +1,23 @@
+{
+  "policy": "Full selected finalist evidence; compact source/protocol/results for rejected arms; existing component sources referenced without duplication.",
+  "files": {
+    "part1/research/blend_followup_v1/README.md": "e256deec44ef3dc046637124f08a2f4bc5977f96e5975bef845f7ea6e202192b",
+    "part1/research/blend_followup_v1/blend50_50_final.npz": "cb789dfd5d251cadec80ce935acd23975783da2389e6f06d106f79eaab7ffb66",
+    "part1/research/blend_followup_v1/export_verification.json": "12232b96d0d3f698e5c9d62a5efda2e00096c80627873e08ad13b73a648a108c",
+    "part1/research/blend_followup_v1/finalist_cv.npz": "73a30acf47151f9b8698ebd2f46a7044c2f52b8f8fb889fcb1de849e0f046007",
+    "part1/research/blend_followup_v1/protocol.json": "cb45ad5e0be2547ccf6d7813e746c5176e149a306ee3a03f205e3a31e6f2f533",
+    "part1/research/blend_followup_v1/results/cv_summary.csv": "c30e3457b984a83554cb88bb112f07edaac1399bf963c8092e60d3a85330fe71",
+    "part1/research/blend_followup_v1/results/paired_repeat_deltas.csv": "c6f2946e3db26b3f3a06d4a1e8cffc148dd423e329942288d5ba3338d5201685",
+    "part1/research/blend_followup_v1/results/paired_summary.csv": "a09049f98cbb4e785d3b83655a9b7c6d5fa9837fa7f869a22a3c794d7eb29ad8",
+    "part1/research/blend_followup_v1/results/prediction_changes.csv": "06d9dc76bb7ea2d7f3ce072281e4076dee660f5d2808fc4ba8822a9815a32bbd",
+    "part1/research/blend_followup_v1/results/repeat_scores.csv": "b6b32efef15bd124dd3343c2ca9f542983db4bb6f8c5ce3c7ad1498680d61bc6",
+    "part1/research/blend_followup_v1/results/supplementary_scores.csv": "52d99b6f9295e5e0d0715524a2140097a1fac5b7964275adcb6c1fe2d412c4b9",
+    "part1/research/blend_followup_v1/results/verification.json": "cd8cbed9ba56ee23d3c5d9fa7b6d4c8afc0001db15f02e0f75479a81e08536c7",
+    "part1/research/blend_followup_v1/run.py": "ba6f9b8bd566306b104b90b8afd691386c7fadd6dc6d1f4fee08213eec67d5ea",
+    "part1/research/blend_followup_v1/selection.json": "88024e6b1d5b108e8e337837e195ee91fd7d73662c959b815a0ea4f9b05b5c7d",
+    "part1/research/blend_followup_v1/submissions.json": "7f2bbe73e72e827adba77d95ab47736b5cd24a2b1ee50ca036f643621c8eda99",
+    "part1/research/blend_followup_v1/verify.py": "7aadc754c39ca477c1c5702520e2b8212df97dc1c133025f66c735feb90aefd5",
+    "part1/submissions/ready/part1_blend50_50_trainval235.csv": "f390553295ed3b23379e3eba801bf5590f543b433d71188ca82c693a4182bcf3"
+  },
+  "bytes": 300072
+}

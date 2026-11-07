@@ -8,6 +8,10 @@ The **75% anchored / 25% LDA ensemble blend** is the highest recorded, user-repo
 
 On the common grouped benchmark, anchored beats current Ani LDA in both CV pools. Against the submitted LDA ensemble it is essentially tied: Train157 +.000265, Pooled235 −.000266, lower original validation, higher pooled chronology. The [complete comparison](experiments/current_leaders_grouped_v1/comparison.csv) preserves the tradeoffs. Original Ani's .89423 belongs to its original transductive artifact; no Kaggle score is established for the changed current Ani LDA CSV.
 
+## Latest unsubmitted trials
+
+The [fixed weight/cutoff study](research/blend_followup_v1/README.md), [partner-only blends](research/blend_partners_v1/README.md) and [half-step check](research/blend_halfstep_v1/README.md) evaluated ten candidates on all 84 matched cases. Two manual trial CSVs are prepared: 50/50 anchored/LDA first (higher validation, nearly tied CV, lower chronology), then 90% anchored / 5% tri-training / 5% SVM (both CV means higher, larger chronology loss). Neither passes the strict both-pool rule; neither has a reported Kaggle score. The current 0.89850 leader is unchanged. Full finalist arrays and compact negative records follow retention policy; the first study's `verify.py` audits all three batches.
+
 ## Next experiment
 
 The frozen testing policy and completed studies use anchored 0.89636 as their declared parent. Preserve those controls and rules, and include the submitted 0.89850 blend as a matched reference in future predeclared comparisons. Start with a small, explicit hypothesis and the saved grouped splits. Complete both pools and the supplementary checks before claiming a full comparison. A negative finding against an older parent does not establish that the same change fails against the new blend.

@@ -1,0 +1,19 @@
+[
+  {
+    "recipe": "blend50_50",
+    "spec": {
+      "lda_weight": 0.5,
+      "cutoff": 0.5
+    },
+    "file": "part1/submissions/ready/part1_blend50_50_trainval235.csv",
+    "sha256": "f390553295ed3b23379e3eba801bf5590f543b433d71188ca82c693a4182bcf3",
+    "rows": 312,
+    "changed_labelsets_vs_current": 3,
+    "both_components_verified_labels": 235,
+    "original_masked_rows": 1014,
+    "new_model_fits": 0,
+    "test_inputs_used_for_fit": false,
+    "kaggle_score": null,
+    "uploaded": false
+  }
+]

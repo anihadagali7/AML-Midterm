@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "new_component_fits": 0,
+  "reused_component_cases": 84,
+  "recipes_scored": 10,
+  "complete_cv_repeat_records": 160,
+  "supplementary_records": 50,
+  "independent_metric_values_checked": 4620,
+  "max_metric_error": 0.0,
+  "exact_control_predictions": true,
+  "protocol_sha256": "cb45ad5e0be2547ccf6d7813e746c5176e149a306ee3a03f205e3a31e6f2f533"
+}
