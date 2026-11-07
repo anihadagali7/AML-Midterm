@@ -1,0 +1,16 @@
+{
+  "recipe": "anchored-trainval235",
+  "reported_kaggle_score": 0.89636,
+  "tag": "part1-anchored-trainval235-kaggle-0.89636",
+  "submission_file": "part1/submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv",
+  "submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+  "frozen_recipe_file": "part1/experiments/paired_improvement/candidate/manifest.json",
+  "frozen_recipe_sha256": "eebd8dc347c7fa6e40b42c366c47e18ba674687301410f402a2dc31641788398",
+  "verified_training_labels": 235,
+  "fitting_access": "inductive; test inputs used only for prediction",
+  "score_provenance": "User reported 0.89636 immediately after receiving the exact candidate filename and scp command. Not independently queried from Kaggle.",
+  "record_type": "Backfilled commit checkpoint for an earlier manually submitted result; no new upload or refit.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "historical_result_file": "part1/experiments/paired_improvement/candidate/kaggle_result.json",
+  "development_provenance": "Separate anchored-model agent; retained here as the submitted leader and matched comparison reference."
+}

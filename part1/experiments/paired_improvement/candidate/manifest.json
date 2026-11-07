@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-11-06T23:03:24.145989+00:00",
+  "status": "Unsubmitted candidate; local CV improvement over pinned current Ani, Kaggle performance unknown.",
+  "selected": {
+    "stage": "06_final_ablations",
+    "name": "selected_control",
+    "spec": {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.05,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "selected_control"
+    },
+    "ani_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+    "reason": "Largest minimum improvement across the two required CV pools; macro F1 also higher on both. All four additional sample-F1 checks improve. Retains Ani C, blend, rounds and decision cutoff.",
+    "caveat": "Development-fold selection; neither CV pool nor the additional diagnostics is untouched. Kaggle score unknown.",
+    "feature_policy": "Strict fold-local feature fitting for all models. Exclude held-out/test inputs. 157-pool fits also exclude all78validation inputs and labels.",
+    "test_features_used_for_fit": false
+  },
+  "known_labels": 235,
+  "originally_unlabeled": 1014,
+  "test_rows": 312,
+  "final_fit_audit": [
+    {
+      "step": 0,
+      "known": 235,
+      "generated": 0,
+      "known_weight": 235.0,
+      "generated_weight": 0.0
+    },
+    {
+      "step": 1,
+      "known": 235,
+      "generated": 685,
+      "known_weight": 235.0,
+      "generated_weight": 102.79687754649603
+    },
+    {
+      "step": 2,
+      "known": 235,
+      "generated": 757,
+      "known_weight": 235.0,
+      "generated_weight": 119.52692709831274
+    }
+  ],
+  "independent_fold_replays": 55,
+  "independent_diagnostic_replays": 4,
+  "exact_model_reload": true,
+  "protected_originals_unchanged": true,
+  "kaggle_score": null,
+  "cv_summary": [
+    {
+      "pool": "train157",
+      "name": "selected_control",
+      "mean_f1": 0.9252653927813164,
+      "repeat_sd": 0.0072622638541346,
+      "macro_f1": 0.8749248467151493,
+      "f1_Safety": 0.920535998183057,
+      "f1_Funding": 0.9060924369747898,
+      "f1_Efficacy": 0.908167388167388,
+      "f1_Recruitment": 0.9671119661727512,
+      "f1_Other": 0.67271644407776,
+      "delta_ani": 0.0038216560509553,
+      "repeat_wins": 3.0,
+      "repeat_ties": 1.0,
+      "fold_wins": 8.0,
+      "fold_ties": 1.0
+    },
+    {
+      "pool": "trainval235",
+      "name": "selected_control",
+      "mean_f1": 0.9215425531914894,
+      "repeat_sd": 0.0038834008551361,
+      "macro_f1": 0.848383962298075,
+      "f1_Safety": 0.9356627073906486,
+      "f1_Funding": 0.8322463768115942,
+      "f1_Efficacy": 0.8723792476564654,
+      "f1_Recruitment": 0.9783210828482402,
+      "f1_Other": 0.6233103967834269,
+      "delta_ani": 0.0078014184397163,
+      "repeat_wins": 6.0,
+      "repeat_ties": 0.0,
+      "fold_wins": 26.0,
+      "fold_ties": 6.0
+    }
+  ],
+  "source_sha256": {
+    "anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "paired_models.py": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
+    "paired_search.py": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
+    "paired_cutoffs.py": "53aeaad09ebd8b908ba698002d20cb0327b0808304d568ea87d1bb5c1601d042",
+    "paired_finalize.py": "3cbe4a75e75cf510a66c0754b70d59fbd94d595aea18cde016ecb078becd8a36",
+    "simple_models.py": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32",
+    "simple_benchmark.py": "25d9609e2c3587f8e4bcb6f15812e4a04edd6bb3c3a970e4c23f7936e50e676d"
+  },
+  "input_sha256": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "artifact_sha256": {
+    "part1_anchored_submission.csv": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "generated_labels.csv": "ef5f5c62b0b75da90c8a0bd4cd979a5619c965dbb838c259d871f4888fb33332",
+    "independent_repeat_scores.csv": "f425b39bfa305f95f600ed9dd1fbdfae13678fca90eeb1f36ff976b6ebd64856",
+    "anchored_model.joblib": "76a1c862d07e59b1073d0c9835eb616076365576a985d4da2c2e8d0ba17e4839",
+    "part1_train_augmented.csv": "ffdbc3a91a1e6f54f445859a59b370d7ac766396d324ba35ecfad02de29f4a55",
+    "anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "test_scores.csv": "78cc0fab5dd969948e66d7a0a36dc9e9ced9991c57de08c07f4a6fbbe48a8b56",
+    "independent_replay_checks.json": "d02395532903315a5987d9c64b0a4d84fa52132187b34a26bec9581e0ccffada"
+  },
+  "versions": {
+    "python": "3.12.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "joblib": "1.6.0"
+  }
+}
