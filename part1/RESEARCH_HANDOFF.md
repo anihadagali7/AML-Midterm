@@ -14,6 +14,8 @@ Use anchored as the declared parent when trying to improve the submitted model. 
 
 The [LDA study catalog](research/lda_ensemble/experiments/lda_research_checkpoint_v1/index.html) retains feature tests, failed versions, and selection rules. Its [temporal and decision follow-ups](research/lda_ensemble/experiments/temporal_generalization_review_v1/report.html) tested fourteen fixed variants without a confirmed ensemble upgrade. [New directions](research/new_directions/index.html) retains 136 settings across fourteen studies; none was promoted or submitted. Consult the relevant family before repeating an idea.
 
+The [anchored transductive study](research/anchored_transductive_v1/README.md) completed all 84 standard cases for the unchanged parent and two target-input ablations. Geometry-only access slightly improved both CV means but failed the repeat-win rule and regressed on validation/chronology. Adding target-generated labels also failed. Keep the inductive leader; the compact records include every repeat and supplementary result.
+
 ## Repository and evidence
 
 The research is consolidated under Part 1. Use current `main` as the starting point for new work. The [canonical notebook](part1.ipynb) runs the anchored final fit; the [two former entry notebooks](research/historical_notebooks/README.md) remain archived byte for byte. Keep current model files in their existing locations; their paths are part of frozen provenance. Archived absolute paths describe removed workspaces. Use [current_leaders_local.py](current_leaders_local.py) and the replay wrappers linked from the research index to run in the current checkout.

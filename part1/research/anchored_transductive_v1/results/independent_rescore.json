@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "method": "Direct TP/FP/FN arithmetic from all 84 saved prediction packets; independent of sklearn metrics and run.py.",
+  "metric_values_checked": 1386,
+  "maximum_absolute_error": 1.1102230246251565e-16,
+  "cv_repeat_records": 48,
+  "supplementary_records": 15,
+  "scoring_repeated_before_cache_removal": true
+}
