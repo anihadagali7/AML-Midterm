@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "both_original_notebooks_verified": true,
+  "notebook_max_differences": {
+    "inductive": {
+      "ani": 0.0,
+      "lda_source": 0.0
+    },
+    "target_inputs": {
+      "ani": 0.0,
+      "lda_source": 0.0
+    }
+  },
+  "query_label_mutation_cannot_change_fitting_or_query_inputs": true,
+  "fresh_partners_reproduce_original_ensemble": true,
+  "latest_ensemble_control_reproduced": true,
+  "original_notebook_loading_and_export_cells_executed": false
+}

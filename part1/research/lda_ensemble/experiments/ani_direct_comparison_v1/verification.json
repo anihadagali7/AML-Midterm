@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "grouped_folds_verified": 80,
+  "supplementary_windows_verified": 4,
+  "source_function_parity_checks": 336,
+  "fresh_inductive_controls_verified": true,
+  "all_six_recipes_evaluated_everywhere": true,
+  "identical_permitted_gold_and_original_masked_inputs": true,
+  "target_labels_erased": true,
+  "input_access_regimes_separate": true,
+  "original_gold_unchanged": true,
+  "actual_test_inputs_loaded": false,
+  "submissions_created": false,
+  "source_hashes_unchanged": true,
+  "independent_rescore": {
+    "passed": true,
+    "manually_rescored_repeats": 96,
+    "fold_arrays_checked": 480,
+    "supplementary_scores_checked": 24,
+    "source_hashes_unchanged": true,
+    "row_coverage_and_alignment": true,
+    "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__gold_lda",
+    "ensemble__gold_lda",
+    "ani__half_gold_lda",
+    "ensemble__half_gold_lda",
+    "ani__gold_rda",
+    "ensemble__gold_rda",
+    "ani__augmented_rda",
+    "ensemble__augmented_rda"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

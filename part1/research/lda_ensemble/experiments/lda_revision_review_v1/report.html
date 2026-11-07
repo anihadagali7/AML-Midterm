@@ -1,0 +1,73 @@
+<p><strong>Retention update:</strong> This is a historical report. Code, settings and summary results are retained. Failed-run detail outputs were discarded; detailed evidence is kept for leaders and matched references. Historical audit counts describe the original checks.</p><!doctype html><html lang="en"><meta charset="utf-8"><title>Latest Ani revision: confirmed CV gain</title>
+    <style>body{font:16px/1.55 system-ui;max-width:1200px;margin:40px auto;padding:0 24px;color:#182739}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px;border:1px solid #d9e0e7;text-align:left}th{background:#e9f0f7}a{color:#075c9b}.callout{padding:20px;background:#ecf5ef;border-left:5px solid #337a4e}</style>
+    <h1>A stronger grouped-CV candidate from the latest Ani revision</h1>
+    <p class="callout">Replacing the original Ani component with the previously unbenchmarked LDA revision improves the 70/15/15 ensemble by <strong>+.006104 train CV and +.005142 pooled CV</strong>, winning <strong>7/8 repeats in both pools</strong>. Original validation is lower by .004274 and chronology ties. This is a confirmed development-CV improvement, not a measured Kaggle improvement.</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>train</th>
+      <th>pooled</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original 70/15/15 ensemble</td>
+      <td>0.925690</td>
+      <td>0.916489</td>
+      <td>0.910256</td>
+      <td>0.877551</td>
+    </tr>
+    <tr>
+      <td>LDA-revision 70/15/15 ensemble</td>
+      <td>0.931794</td>
+      <td>0.921631</td>
+      <td>0.905983</td>
+      <td>0.877551</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>What was missing</h2>
+    <p>The preserved 8a8c3fc Ani notebook changed the source model to .5 multinomial logistic regression, .3 cosine neighbors and .2 shrinkage LDA, and changed logistic C from .3 to .1. It also used that LDA mixture during pseudo-label teaching. The shared grouped benchmark had only evaluated the earlier source generation. This study adds an inductive adapter, with direct parity against the notebook's function definitions on identical permitted fitting data. Notebook input-loading, transductive fitting and export cells were not executed.</p>
+    <p>The notebook itself uses a different input-access regime and validation protocol. These measurements belong to this inductive adapter and cannot be assigned to its existing submission CSV. The highest reported Kaggle score remains .89423 for the older transductive artifact; the user reports another team near .93.</p>
+    <h2>Matched ablations and further tests</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>study</th>
+      <th>recipes</th>
+      <th>passed_against_declared_control</th>
+      <th>comparator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../ani_lda_revision_cv_v1/report.html">ani_lda_revision_cv_v1</a></td>
+      <td>8</td>
+      <td>6</td>
+      <td>Original Ani/ensemble</td>
+    </tr>
+    <tr>
+      <td><a href="../lda_covariance_cv_v1/report.html">lda_covariance_cv_v1</a></td>
+      <td>8</td>
+      <td>0</td>
+      <td>Latest LDA Ani/ensemble</td>
+    </tr>
+    <tr>
+      <td><a href="../joint_utility_cv_v1/report.html">joint_utility_cv_v1</a></td>
+      <td>8</td>
+      <td>0</td>
+      <td>Latest LDA Ani/ensemble</td>
+    </tr>
+  </tbody>
+</table>
+    <p>The new full ensemble also beats its C.1/no-LDA control by +.004777 train and +.003901 pooled. The separate paired repeat counts are in <a href="lda_vs_regularization.csv">the contrast table</a>; the gain is not solely the regularization change. Gold-only covariance heads and class-specific covariance models failed to improve the new revision consistently. A direct conditional sample-F1 utility expert, compared with matched independent-label regression, also failed the two-pool confirmation rule.</p>
+    <p>The utility experiment used the conditional expected-F1 decision principle described by <a href="https://www.jmlr.org/papers/v15/waegeman14a.html">Waegeman et al.</a>, implemented here as kernel regression of all 31 nonempty label-set utilities. Its finite-sample estimates have no Bayes-optimality guarantee. It used existing Part 1 labels and embeddings only.</p>
+    <h2>Where the remaining gap is</h2>
+    <p>Pooled Funding F1 improves from .769493 to .821196. Other precision rises from .707766 to .758236, but Other recall slips from .550000 to .539286. The strongest persistent Other misses are therefore still unresolved. The .931794 training-CV number must not be presented as .93 Kaggle performance, or as evidence that the leaderboard gap has been closed.</p>
+    <h2>Verification and status</h2>
+    <p>Independent rescoring verified 768 complete-OOF repeat records, 3,840 fold arrays and 52 supplementary records. Protected source/data hashes, fold coverage, grouped purges, original controls, notebook-function parity and query-batch invariance passed. All recipes were frozen before scoring; follow-ups used the new LDA revision as their comparator.</p>
+    <p>No Part 2 data, external records, test fitting/predictions, final235 refit, upload, retagging or model promotion. This candidate is ready for review; no submission has been spent.</p>
+    <p><a href="all_results.csv">All candidate results</a> · <a href="summary.json">Sources and verification</a> · <a href="../../RESEARCH_HANDOFF.md">Research handoff</a></p></html>

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ani__revision_full",
+    "parent": "ani",
+    "block": "revision_full",
+    "description": "{'C': 0.1, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+  },
+  {
+    "name": "ensemble__revision_full",
+    "parent": "ensemble",
+    "block": "revision_full",
+    "description": "{'C': 0.1, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+  },
+  {
+    "name": "ani__regularization_only",
+    "parent": "ani",
+    "block": "regularization_only",
+    "description": "{'C': 0.1, 'teacher_lda': 0.0, 'final_lda': 0.0}"
+  },
+  {
+    "name": "ensemble__regularization_only",
+    "parent": "ensemble",
+    "block": "regularization_only",
+    "description": "{'C': 0.1, 'teacher_lda': 0.0, 'final_lda': 0.0}"
+  },
+  {
+    "name": "ani__lda_both_c03",
+    "parent": "ani",
+    "block": "lda_both_c03",
+    "description": "{'C': 0.3, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+  },
+  {
+    "name": "ensemble__lda_both_c03",
+    "parent": "ensemble",
+    "block": "lda_both_c03",
+    "description": "{'C': 0.3, 'teacher_lda': 0.2, 'final_lda': 0.2}"
+  },
+  {
+    "name": "ani__lda_final_only",
+    "parent": "ani",
+    "block": "lda_final_only",
+    "description": "{'C': 0.3, 'teacher_lda': 0.0, 'final_lda': 0.2}"
+  },
+  {
+    "name": "ensemble__lda_final_only",
+    "parent": "ensemble",
+    "block": "lda_final_only",
+    "description": "{'C': 0.3, 'teacher_lda': 0.0, 'final_lda': 0.2}"
+  }
+]
