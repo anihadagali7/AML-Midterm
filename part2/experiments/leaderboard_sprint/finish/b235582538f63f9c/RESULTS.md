@@ -45,8 +45,8 @@ The smaller interpolations between files 13 and 15 improve local averages versus
 ## Reproduce
 
 ```sh
-.venv/bin/python part2/sprint_finish.py benchmark
-.venv/bin/python part2/sprint_finish_report.py
+.venv/bin/python part2/run.py sprint_finish.py benchmark
+.venv/bin/python part2/run.py sprint_finish_report.py
 ```
 
 This batch only evaluates local predictions. It neither exports nor uploads a Kaggle submission.

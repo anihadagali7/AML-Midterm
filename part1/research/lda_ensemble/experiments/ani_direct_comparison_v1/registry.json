@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ani__inductive",
+    "recipe": "ani",
+    "access": "inductive",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  },
+  {
+    "name": "lda_source__inductive",
+    "recipe": "lda_source",
+    "access": "inductive",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  },
+  {
+    "name": "lda_ensemble__inductive",
+    "recipe": "lda_ensemble",
+    "access": "inductive",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  },
+  {
+    "name": "ani__target_inputs",
+    "recipe": "ani",
+    "access": "target_inputs",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  },
+  {
+    "name": "lda_source__target_inputs",
+    "recipe": "lda_source",
+    "access": "target_inputs",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  },
+  {
+    "name": "lda_ensemble__target_inputs",
+    "recipe": "lda_ensemble",
+    "access": "target_inputs",
+    "decoder": "Ani and latest source: raw .3 cutoff plus argmax, represented by monotone .5 centering; ensemble: .5 cutoff plus nonempty argmax"
+  }
+]

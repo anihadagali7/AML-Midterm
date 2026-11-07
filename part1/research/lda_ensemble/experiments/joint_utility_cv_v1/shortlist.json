@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__f1_alpha0.1",
+    "ensemble__f1_alpha0.1",
+    "ani__f1_alpha1.0",
+    "ensemble__f1_alpha1.0",
+    "ani__labels_alpha0.1",
+    "ensemble__labels_alpha0.1",
+    "ani__labels_alpha1.0",
+    "ensemble__labels_alpha1.0"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

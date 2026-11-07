@@ -1,0 +1,170 @@
+[
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 0.3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 10
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "linear",
+    "C": 0.01
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "linear",
+    "C": 0.1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "linear",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 0.3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 10
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "linear",
+    "C": 0.01
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "linear",
+    "C": 0.1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "linear",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "rbf",
+    "C": 0.3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "rbf",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "rbf",
+    "C": 3
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "rbf",
+    "C": 10
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "linear",
+    "C": 0.01
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "linear",
+    "C": 0.1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_error",
+    "kernel": "linear",
+    "C": 1
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 1,
+    "components": 600
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 3,
+    "components": 600
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "squared_hinge",
+    "kernel": "rbf",
+    "C": 10,
+    "components": 600
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 1,
+    "components": 600
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 3,
+    "components": 600
+  },
+  {
+    "model": "loss_ssl",
+    "loss": "logistic",
+    "kernel": "rbf",
+    "C": 10,
+    "components": 600
+  }
+]

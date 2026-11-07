@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__half_all",
+    "ensemble__half_all",
+    "ani__half_other",
+    "ensemble__half_other",
+    "ani__pure_all",
+    "ensemble__pure_all",
+    "ani__pure_other",
+    "ensemble__pure_other"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

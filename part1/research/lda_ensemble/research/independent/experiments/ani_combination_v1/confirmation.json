@@ -1,0 +1,1270 @@
+{
+  "created_at": "2026-11-06T04:43:09.602034+00:00",
+  "comparison": [
+    {
+      "candidate": "Ani + tri 25%",
+      "parent": "Ani + tri 25%",
+      "kind": "control",
+      "train_mean": 0.9267515923566879,
+      "train_sd": 0.005412971882794895,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": 0.0,
+      "train_frontier_wins": 0,
+      "pooled_mean": 0.9164007092198582,
+      "pooled_sd": 0.00484191907958206,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": -8.865248226946898e-05,
+      "pooled_frontier_wins": 3,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -8.865248226946898e-05,
+      "qualifies": false
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "parent": "Ani + tri/SVM 15% each",
+      "kind": "control",
+      "train_mean": 0.9256900212314225,
+      "train_sd": 0.005200615165144745,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": -0.0010615711252653787,
+      "train_frontier_wins": 2,
+      "pooled_mean": 0.9164893617021276,
+      "pooled_sd": 0.007685715177905405,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": 0.0,
+      "pooled_frontier_wins": 0,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -0.0010615711252653787,
+      "qualifies": false
+    },
+    {
+      "candidate": "70/15/15 + pseudo weight 0.5",
+      "parent": "Ani + tri/SVM 15% each",
+      "kind": "pseudo weight 0.5",
+      "train_mean": 0.9248938428874734,
+      "train_sd": 0.005999285857461447,
+      "train_parent_delta": -0.0007961783439490583,
+      "train_parent_wins": 2,
+      "train_frontier_delta": -0.001857749469214437,
+      "train_frontier_wins": 0,
+      "pooled_mean": 0.9168439716312057,
+      "pooled_sd": 0.005670987798482076,
+      "pooled_parent_delta": 0.00035460992907804245,
+      "pooled_parent_wins": 3,
+      "pooled_frontier_delta": 0.00035460992907804245,
+      "pooled_frontier_wins": 3,
+      "minimum_parent_gain": -0.0007961783439490583,
+      "minimum_frontier_gain": -0.001857749469214437,
+      "qualifies": false
+    },
+    {
+      "candidate": "Ani frozen control",
+      "parent": "Ani frozen control",
+      "kind": "control",
+      "train_mean": 0.9195859872611466,
+      "train_sd": 0.008045385557974575,
+      "train_parent_delta": 0.0,
+      "train_parent_wins": 0,
+      "train_frontier_delta": -0.0071656050955413025,
+      "train_frontier_wins": 0,
+      "pooled_mean": 0.9098404255319148,
+      "pooled_sd": 0.007633900200554031,
+      "pooled_parent_delta": 0.0,
+      "pooled_parent_wins": 0,
+      "pooled_frontier_delta": -0.006648936170212741,
+      "pooled_frontier_wins": 1,
+      "minimum_parent_gain": 0.0,
+      "minimum_frontier_gain": -0.0071656050955413025,
+      "qualifies": false
+    }
+  ],
+  "repeat_results": {
+    "train": {
+      "Ani frozen control": {
+        "candidate": "Ani frozen control",
+        "parent": "Ani frozen control",
+        "kind": "control",
+        "result_key": "6034224783eed6448a5c",
+        "mean": 0.9228591648973815,
+        "sd": 0.009547584970440195,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9150743099787687,
+            "macro_f1": 0.8596803209732737,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6222222222222222
+          },
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8644759972954699,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6190476190476191
+          },
+          {
+            "sample_f1": 0.9363057324840764,
+            "macro_f1": 0.8814181074728742,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.7111111111111111
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8620469399881164,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9705882352941176,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8480859010270775,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9705882352941176,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9065817409766455,
+            "macro_f1": 0.8259957821382725,
+            "f1_Safety": 0.7894736842105263,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9658536585365853,
+            "f1_Other": 0.5853658536585366
+          },
+          {
+            "sample_f1": 0.9150743099787687,
+            "macro_f1": 0.8498162468678968,
+            "f1_Safety": 0.8648648648648649,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8561128526645767,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6818181818181818
+          }
+        ]
+      },
+      "Ani + tri 25%": {
+        "candidate": "Ani + tri 25%",
+        "parent": "Ani + tri 25%",
+        "kind": "control",
+        "result_key": "e081a717b2fa3d95ad49",
+        "mean": 0.9313517338995047,
+        "sd": 0.005296047256580241,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9299363057324841,
+            "macro_f1": 0.8798116693485906,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6808510638297872
+          },
+          {
+            "sample_f1": 0.9256900212314225,
+            "macro_f1": 0.8709762929562068,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9384288747346072,
+            "macro_f1": 0.9058948998840488,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 1.0,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.7083333333333334
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8711609122584733,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6818181818181818
+          },
+          {
+            "sample_f1": 0.9278131634819532,
+            "macro_f1": 0.8704997523958783,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9193205944798301,
+            "macro_f1": 0.86454855104796,
+            "f1_Safety": 0.8648648648648649,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.6046511627906976
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8644951329150693,
+            "f1_Safety": 0.8648648648648649,
+            "f1_Funding": 0.9333333333333333,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9758454106280193,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8519810535465668,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          }
+        ]
+      },
+      "Ani + tri/SVM 15% each": {
+        "candidate": "Ani + tri/SVM 15% each",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "control",
+        "result_key": "03d36d833b88a1a96eac",
+        "mean": 0.9271054493984431,
+        "sd": 0.0065630704143635225,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8730716994443954,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8699577037023236,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6363636363636364
+          },
+          {
+            "sample_f1": 0.9363057324840764,
+            "macro_f1": 0.8934976362086336,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6956521739130435
+          },
+          {
+            "sample_f1": 0.9278131634819532,
+            "macro_f1": 0.8680327666913034,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6818181818181818
+          },
+          {
+            "sample_f1": 0.9299363057324841,
+            "macro_f1": 0.868318800766667,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9193205944798302,
+            "macro_f1": 0.8604611075199312,
+            "f1_Safety": 0.8205128205128205,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6190476190476191
+          },
+          {
+            "sample_f1": 0.9214437367303608,
+            "macro_f1": 0.8537758889771677,
+            "f1_Safety": 0.8648648648648649,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9805825242718447,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8519810535465668,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          }
+        ]
+      },
+      "75/25 + pseudo weight 0.5": {
+        "candidate": "75/25 + pseudo weight 0.5",
+        "parent": "Ani + tri 25%",
+        "kind": "pseudo weight 0.5",
+        "result_key": "ed9a3ed93e610275c8ad",
+        "mean": 0.9278131634819534,
+        "sd": 0.0017335383883815836,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9256900212314225,
+            "macro_f1": 0.8831707951771397,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6808510638297872
+          },
+          {
+            "sample_f1": 0.9278131634819534,
+            "macro_f1": 0.8803921568627452,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9705882352941176,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9299363057324841,
+            "macro_f1": 0.9019324344157725,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 1.0,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6938775510204082
+          }
+        ]
+      },
+      "75/25 + three-seed average": {
+        "candidate": "75/25 + three-seed average",
+        "parent": "Ani + tri 25%",
+        "kind": "three-seed average",
+        "result_key": "acacf564943724c6fe9c",
+        "mean": 0.9306440198159943,
+        "sd": 0.009857316544362482,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9341825902335458,
+            "macro_f1": 0.8833613445378152,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.868953399541635,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9705882352941176,
+            "f1_Other": 0.6363636363636364
+          },
+          {
+            "sample_f1": 0.9405520169851381,
+            "macro_f1": 0.9089090842812121,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 1.0,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.723404255319149
+          }
+        ]
+      },
+      "75/25 + inner Other threshold": {
+        "candidate": "75/25 + inner Other threshold",
+        "parent": "Ani + tri 25%",
+        "kind": "inner Other threshold",
+        "result_key": "112273363728d1b3661c",
+        "mean": 0.9306440198159945,
+        "sd": 0.005296047256580261,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9320594479830151,
+            "macro_f1": 0.8824169667867148,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6938775510204082
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8680777422315691,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9363057324840764,
+            "macro_f1": 0.9003984459833397,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 1.0,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.6808510638297872
+          }
+        ]
+      },
+      "75/25 + Other specialist 50%": {
+        "candidate": "75/25 + Other specialist 50%",
+        "parent": "Ani + tri 25%",
+        "kind": "Other specialist 50%",
+        "result_key": "c8778d5540079fd7bc24",
+        "mean": 0.9242745930644021,
+        "sd": 0.007217295843726582,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8612885154061625,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5882352941176471
+          },
+          {
+            "sample_f1": 0.9214437367303608,
+            "macro_f1": 0.8653025340909586,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6382978723404256
+          },
+          {
+            "sample_f1": 0.9341825902335458,
+            "macro_f1": 0.9000772898211558,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 1.0,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.6792452830188679
+          }
+        ]
+      },
+      "70/15/15 + pseudo weight 0.5": {
+        "candidate": "70/15/15 + pseudo weight 0.5",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "pseudo weight 0.5",
+        "result_key": "c8a134ca7a38ee947db4",
+        "mean": 0.9299363057324842,
+        "sd": 0.0034670767767632127,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9299363057324841,
+            "macro_f1": 0.8823568047908819,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9256900212314225,
+            "macro_f1": 0.8760183097629296,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9341825902335458,
+            "macro_f1": 0.8926309401903895,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.723404255319149
+          },
+          {
+            "sample_f1": 0.9214437367303608,
+            "macro_f1": 0.8660334875852117,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6818181818181818
+          },
+          {
+            "sample_f1": 0.9278131634819532,
+            "macro_f1": 0.8673240614075087,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9129511677282378,
+            "macro_f1": 0.8509372979961215,
+            "f1_Safety": 0.8205128205128205,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5714285714285714
+          },
+          {
+            "sample_f1": 0.9214437367303608,
+            "macro_f1": 0.8537758889771677,
+            "f1_Safety": 0.8648648648648649,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9805825242718447,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8519810535465668,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          }
+        ]
+      },
+      "70/15/15 + three-seed average": {
+        "candidate": "70/15/15 + three-seed average",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "three-seed average",
+        "result_key": "edcd95f5d9b54c8e38bd",
+        "mean": 0.927105449398443,
+        "sd": 0.007006011986278575,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9320594479830149,
+            "macro_f1": 0.8833613445378152,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.868953399541635,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9705882352941176,
+            "f1_Other": 0.6363636363636364
+          },
+          {
+            "sample_f1": 0.9320594479830148,
+            "macro_f1": 0.8838682376128574,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.7111111111111111
+          }
+        ]
+      },
+      "70/15/15 + inner Other threshold": {
+        "candidate": "70/15/15 + inner Other threshold",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "inner Other threshold",
+        "result_key": "bb129c17bbbd5cc8dcbd",
+        "mean": 0.9285208775654636,
+        "sd": 0.005572546266108853,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8730716994443954,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8823529411764706,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9256900212314225,
+            "macro_f1": 0.8760183097629296,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9363057324840764,
+            "macro_f1": 0.8934976362086336,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6956521739130435
+          }
+        ]
+      },
+      "70/15/15 + Other specialist 50%": {
+        "candidate": "70/15/15 + Other specialist 50%",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "Other specialist 50%",
+        "result_key": "50ab19e222efe5347979",
+        "mean": 0.9235668789808917,
+        "sd": 0.0030025765655479195,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9214437367303608,
+            "macro_f1": 0.8714724510493852,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6122448979591837
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8703445508976813,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6382978723404256
+          },
+          {
+            "sample_f1": 0.9278131634819532,
+            "macro_f1": 0.8851364321952557,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6538461538461539
+          }
+        ]
+      }
+    },
+    "pooled": {
+      "Ani frozen control": {
+        "candidate": "Ani frozen control",
+        "parent": "Ani frozen control",
+        "kind": "control",
+        "result_key": "09f063f7235ce43dcd53",
+        "mean": 0.9049645390070923,
+        "sd": 0.00919253999774171,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.900709219858156,
+            "macro_f1": 0.8094961416379443,
+            "f1_Safety": 0.8461538461538461,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9177304964539008,
+            "macro_f1": 0.8467888028937391,
+            "f1_Safety": 0.9387755102040817,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.8964539007092198,
+            "macro_f1": 0.7942406774512036,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.7272727272727273,
+            "f1_Efficacy": 0.8253968253968254,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.5714285714285714
+          },
+          {
+            "sample_f1": 0.9163120567375886,
+            "macro_f1": 0.8377936793679368,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.976897689768977,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8405511897084802,
+            "f1_Safety": 0.8979591836734694,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9120567375886524,
+            "macro_f1": 0.8300952650443314,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9736842105263158,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9070921985815602,
+            "macro_f1": 0.8147457607228775,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8307692307692308,
+            "f1_Recruitment": 0.9736842105263158,
+            "f1_Other": 0.5666666666666667
+          },
+          {
+            "sample_f1": 0.9092198581560283,
+            "macro_f1": 0.8407647768676074,
+            "f1_Safety": 0.9166666666666666,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.8524590163934426,
+            "f1_Recruitment": 0.976897689768977,
+            "f1_Other": 0.5882352941176471
+          }
+        ]
+      },
+      "Ani + tri 25%": {
+        "candidate": "Ani + tri 25%",
+        "parent": "Ani + tri 25%",
+        "kind": "control",
+        "result_key": "e452be4e28286e5a91b6",
+        "mean": 0.9120567375886525,
+        "sd": 0.004011953368434318,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9063829787234042,
+            "macro_f1": 0.8122330652691184,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6031746031746031
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8370045194220387,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9738562091503268,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8272305386392074,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9802631578947368,
+            "f1_Other": 0.6031746031746031
+          },
+          {
+            "sample_f1": 0.9219858156028369,
+            "macro_f1": 0.8429986758744725,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.6363636363636364
+          },
+          {
+            "sample_f1": 0.921985815602837,
+            "macro_f1": 0.8435854101680473,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9771986970684039,
+            "f1_Other": 0.6461538461538462
+          },
+          {
+            "sample_f1": 0.9205673758865247,
+            "macro_f1": 0.8410580929060648,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9834983498349835,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9156028368794326,
+            "macro_f1": 0.8382982326869206,
+            "f1_Safety": 0.9387755102040817,
+            "f1_Funding": 0.8333333333333334,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9771986970684039,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8431800716668395,
+            "f1_Safety": 0.9387755102040817,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.875,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.5970149253731343
+          }
+        ]
+      },
+      "Ani + tri/SVM 15% each": {
+        "candidate": "Ani + tri/SVM 15% each",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "control",
+        "result_key": "fb05f20d810dc916d115",
+        "mean": 0.9087470449172576,
+        "sd": 0.005829233099734223,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.902127659574468,
+            "macro_f1": 0.7994380594020433,
+            "f1_Safety": 0.8679245283018868,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5901639344262295
+          },
+          {
+            "sample_f1": 0.9163120567375885,
+            "macro_f1": 0.8385007451564828,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9078014184397162,
+            "macro_f1": 0.8185241624412853,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8267585812879931,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.9290780141843971,
+            "macro_f1": 0.8489909058667026,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9205673758865247,
+            "macro_f1": 0.8381372549019609,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.875,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6333333333333333
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8417942071222232,
+            "f1_Safety": 0.96,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.576271186440678
+          },
+          {
+            "sample_f1": 0.9177304964539008,
+            "macro_f1": 0.8441181041181041,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8333333333333334,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.6060606060606061
+          }
+        ]
+      },
+      "75/25 + pseudo weight 0.5": {
+        "candidate": "75/25 + pseudo weight 0.5",
+        "parent": "Ani + tri 25%",
+        "kind": "pseudo weight 0.5",
+        "result_key": "1eb96602c3e923419972",
+        "mean": 0.9111111111111111,
+        "sd": 0.006378599320677054,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9035460992907802,
+            "macro_f1": 0.8073715978447427,
+            "f1_Safety": 0.8679245283018868,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6031746031746031
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8515395463357294,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9704918032786886,
+            "f1_Other": 0.6567164179104478
+          },
+          {
+            "sample_f1": 0.9106382978723404,
+            "macro_f1": 0.8203845219108377,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8484848484848485,
+            "f1_Recruitment": 0.9802631578947368,
+            "f1_Other": 0.6031746031746031
+          }
+        ]
+      },
+      "75/25 + three-seed average": {
+        "candidate": "75/25 + three-seed average",
+        "parent": "Ani + tri 25%",
+        "kind": "three-seed average",
+        "result_key": "178811242b263ef9c3ec",
+        "mean": 0.9115839243498817,
+        "sd": 0.004067293270469329,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9063829787234042,
+            "macro_f1": 0.8122330652691184,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6031746031746031
+          },
+          {
+            "sample_f1": 0.9163120567375886,
+            "macro_f1": 0.8450045194220387,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9738562091503268,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9120567375886524,
+            "macro_f1": 0.8220818547489775,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.5806451612903226
+          }
+        ]
+      },
+      "75/25 + inner Other threshold": {
+        "candidate": "75/25 + inner Other threshold",
+        "parent": "Ani + tri 25%",
+        "kind": "inner Other threshold",
+        "result_key": "17f95a4b93ebf651a6b5",
+        "mean": 0.9120567375886525,
+        "sd": 0.004011953368434318,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9063829787234042,
+            "macro_f1": 0.8122330652691184,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6031746031746031
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8370045194220387,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9738562091503268,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8272305386392074,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9802631578947368,
+            "f1_Other": 0.6031746031746031
+          }
+        ]
+      },
+      "75/25 + Other specialist 50%": {
+        "candidate": "75/25 + Other specialist 50%",
+        "parent": "Ani + tri 25%",
+        "kind": "Other specialist 50%",
+        "result_key": "15f6f60cf1479f2da718",
+        "mean": 0.9130023640661938,
+        "sd": 0.005222392915927787,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9063829787234042,
+            "macro_f1": 0.8159594526753295,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9771986970684039,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8481632615750263,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9738562091503268,
+            "f1_Other": 0.6764705882352942
+          },
+          {
+            "sample_f1": 0.9134751773049644,
+            "macro_f1": 0.8253456180042867,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9802631578947368,
+            "f1_Other": 0.59375
+          }
+        ]
+      },
+      "70/15/15 + pseudo weight 0.5": {
+        "candidate": "70/15/15 + pseudo weight 0.5",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "pseudo weight 0.5",
+        "result_key": "28c5b740340bdb7b1be8",
+        "mean": 0.9115839243498818,
+        "sd": 0.004680612263173371,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9106382978723404,
+            "macro_f1": 0.815682072395924,
+            "f1_Safety": 0.8679245283018868,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8571428571428571,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6229508196721312
+          },
+          {
+            "sample_f1": 0.9177304964539007,
+            "macro_f1": 0.8412047078604455,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9063829787234042,
+            "macro_f1": 0.8178465606313307,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9234042553191489,
+            "macro_f1": 0.8431315678856663,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9836065573770492,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9248226950354609,
+            "macro_f1": 0.8461352074685898,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.90625,
+            "f1_Recruitment": 0.9836065573770492,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9177304964539007,
+            "macro_f1": 0.8381699346405229,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6229508196721312
+          },
+          {
+            "sample_f1": 0.9163120567375885,
+            "macro_f1": 0.838658259773014,
+            "f1_Safety": 0.96,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9836065573770492,
+            "f1_Other": 0.5573770491803278
+          },
+          {
+            "sample_f1": 0.9177304964539008,
+            "macro_f1": 0.8375810197191272,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.6060606060606061
+          }
+        ]
+      },
+      "70/15/15 + three-seed average": {
+        "candidate": "70/15/15 + three-seed average",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "three-seed average",
+        "result_key": "0cd9b2fda615aa6f1d64",
+        "mean": 0.9101654846335697,
+        "sd": 0.0057130241009903495,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.902127659574468,
+            "macro_f1": 0.7984948536599391,
+            "f1_Safety": 0.8727272727272727,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9148936170212766,
+            "macro_f1": 0.8362793148880104,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6229508196721312
+          },
+          {
+            "sample_f1": 0.9134751773049645,
+            "macro_f1": 0.8227504500559529,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8615384615384616,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5806451612903226
+          }
+        ]
+      },
+      "70/15/15 + inner Other threshold": {
+        "candidate": "70/15/15 + inner Other threshold",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "inner Other threshold",
+        "result_key": "2a334831ca7366cd3597",
+        "mean": 0.9101654846335697,
+        "sd": 0.006585526372191096,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9035460992907801,
+            "macro_f1": 0.8061552725167974,
+            "f1_Safety": 0.8679245283018868,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.59375
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8428723298559364,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6885245901639344
+          },
+          {
+            "sample_f1": 0.9078014184397162,
+            "macro_f1": 0.8185241624412853,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.5806451612903226
+          }
+        ]
+      },
+      "70/15/15 + Other specialist 50%": {
+        "candidate": "70/15/15 + Other specialist 50%",
+        "parent": "Ani + tri/SVM 15% each",
+        "kind": "Other specialist 50%",
+        "result_key": "70bac7c7aebf09dad66c",
+        "mean": 0.9065721040189124,
+        "sd": 0.004372436131138235,
+        "repeat_scores": [
+          {
+            "sample_f1": 0.9007092198581561,
+            "macro_f1": 0.8001326904292124,
+            "f1_Safety": 0.8518518518518519,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9771986970684039,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9112056737588652,
+            "macro_f1": 0.8305405461515077,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6268656716417911
+          },
+          {
+            "sample_f1": 0.9078014184397162,
+            "macro_f1": 0.8211451301832209,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.59375
+          }
+        ]
+      }
+    }
+  },
+  "supplementary_names": [
+    "Ani frozen control",
+    "Ani + tri 25%",
+    "Ani + tri/SVM 15% each"
+  ]
+}

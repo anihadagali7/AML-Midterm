@@ -1,0 +1,5 @@
+context,variant,passed
+repeat0_fold0,dbscan_train_only,True
+repeat0_fold0,ani_transductive,True
+repeat0_fold0,ani_train_only,True
+repeat0_fold0,dbscan_transductive,True

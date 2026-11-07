@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ani__gold_lda",
+    "parent": "ani",
+    "block": "gold_lda",
+    "description": "Replace final LDA with a gold-only LDA"
+  },
+  {
+    "name": "ensemble__gold_lda",
+    "parent": "ensemble",
+    "block": "gold_lda",
+    "description": "Replace final LDA with a gold-only LDA"
+  },
+  {
+    "name": "ani__half_gold_lda",
+    "parent": "ani",
+    "block": "half_gold_lda",
+    "description": "Average final gold-only and augmented LDA"
+  },
+  {
+    "name": "ensemble__half_gold_lda",
+    "parent": "ensemble",
+    "block": "half_gold_lda",
+    "description": "Average final gold-only and augmented LDA"
+  },
+  {
+    "name": "ani__gold_rda",
+    "parent": "ani",
+    "block": "gold_rda",
+    "description": "Gold-only regularized class-specific covariance in PCA30"
+  },
+  {
+    "name": "ensemble__gold_rda",
+    "parent": "ensemble",
+    "block": "gold_rda",
+    "description": "Gold-only regularized class-specific covariance in PCA30"
+  },
+  {
+    "name": "ani__augmented_rda",
+    "parent": "ani",
+    "block": "augmented_rda",
+    "description": "Augmented regularized class-specific covariance in PCA30"
+  },
+  {
+    "name": "ensemble__augmented_rda",
+    "parent": "ensemble",
+    "block": "augmented_rda",
+    "description": "Augmented regularized class-specific covariance in PCA30"
+  }
+]

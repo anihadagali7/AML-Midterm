@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__lr_empirical",
+    "ensemble__lr_empirical",
+    "ani__lr_balanced",
+    "ensemble__lr_balanced",
+    "ani__lda_empirical",
+    "ensemble__lda_empirical",
+    "ani__lda_balanced",
+    "ensemble__lda_balanced"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

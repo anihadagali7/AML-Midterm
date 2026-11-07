@@ -1,0 +1,3 @@
+# Three leading alternatives on the fixed training-only benchmark
+
+Freeze GMM tied k=10 + logistic C1000, K-means k=8 + logistic C1000, and normalized DBSCAN + logistic C100. No parameter search. Reuse the exact 40 saved folds (235 known labels,188 fit/47 held out; eight repeats of five folds). All feature learning and label generation excludes the held-out trials and all Kaggle test trials. Clustering uses the 188 known + 1,014 originally unlabeled training trials. Score each recipe using pooled trial sample F1 per repeat, then the eight-repeat mean, with paired fold/repeat differences against the frozen training-only Ani and original DBSCAN references. Old single-validation scores are reproduction controls only.

@@ -1,0 +1,18 @@
+{
+  "names": [
+    "ani__augmented_none",
+    "ensemble__augmented_none",
+    "ani__augmented_drug_targets",
+    "ensemble__augmented_drug_targets",
+    "ani__augmented_morgan",
+    "ensemble__augmented_morgan",
+    "ani__goldhalf_none",
+    "ensemble__goldhalf_none",
+    "ani__goldhalf_drug_targets",
+    "ensemble__goldhalf_drug_targets",
+    "ani__goldhalf_morgan",
+    "ensemble__goldhalf_morgan"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

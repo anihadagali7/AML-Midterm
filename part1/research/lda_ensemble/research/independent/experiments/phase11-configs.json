@@ -1,0 +1,280 @@
+[
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.5,
+    "unlabeled_fraction": 0.5,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.5,
+    "unlabeled_fraction": 0.8,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.5,
+    "unlabeled_fraction": 1.0,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.75,
+    "unlabeled_fraction": 0.5,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.75,
+    "unlabeled_fraction": 0.8,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.75,
+    "unlabeled_fraction": 1.0,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.9,
+    "unlabeled_fraction": 0.5,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.9,
+    "unlabeled_fraction": 0.8,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 0.9,
+    "unlabeled_fraction": 1.0,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 1.0,
+    "unlabeled_fraction": 0.5,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "feature_fraction": 1.0,
+    "unlabeled_fraction": 0.8,
+    "members": 9
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.25,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.25,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.25,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.5,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.5,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.5,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.75,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.75,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 0.75,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 1.0,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 1.0,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "constrain_prior": true,
+    "prior_mix": 1.0,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.1,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.3,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.3,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.6,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.6,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.9,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 0.9,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 1.2,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "subspace_ssl",
+    "C": 1,
+    "gamma": 0.001,
+    "margin_min": 1.2,
+    "pseudo_weight": 0.1
+  }
+]

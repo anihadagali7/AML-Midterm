@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "native_control_reproduced": true,
+  "original_notebook_functions_reproduced_on_same_allowed_inputs": true,
+  "query_batch_invariance": true,
+  "native_augmentation_rows_and_labels_identical": true,
+  "notebook_data_loading_cells_executed": false
+}

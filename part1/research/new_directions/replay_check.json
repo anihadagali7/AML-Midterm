@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "scope": "Relocation smoke replay: 15 outer folds and 4 supplementary fits, plus their chronological aggregation. These reruns do not add independent statistical evidence.",
+  "frozen_model_imports_checked": 14,
+  "checks": [
+    {
+      "study": "v3",
+      "recipe": "new_blend_75",
+      "pool": "train",
+      "seed": 20261126,
+      "folds": 5,
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "pool": "train",
+      "seed": 20261126,
+      "folds": 5,
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v14",
+      "recipe": "pair_lda_augmented_final",
+      "pool": "train",
+      "seed": 20261126,
+      "folds": 5,
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "case": "chronological98",
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "case": "through_2004_test_2005_2006",
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "case": "through_2006_test_2007_2007",
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "case": "through_2007_test_2008_2010",
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    },
+    {
+      "study": "v6",
+      "recipe": "teacher_mean3",
+      "case": "validation",
+      "predictions_identical": true,
+      "max_probability_error": 0.0
+    }
+  ],
+  "source_workspace_required_by_replay": false
+}

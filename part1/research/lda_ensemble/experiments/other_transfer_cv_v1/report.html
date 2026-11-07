@@ -1,0 +1,150 @@
+<p><strong>Retention update:</strong> This is a historical report. Code, settings and summary results are retained. Failed-run detail outputs were discarded; detailed evidence is kept for leaders and matched references. Historical audit counts describe the original checks.</p><!doctype html><meta charset="utf-8"><title>Other-only corrective score transfer</title><style>body{font:16px system-ui;max-width:1400px;margin:40px auto;padding:0 20px;line-height:1.5}table{border-collapse:collapse;font-size:14px}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}th{background:#eee}</style><h1>Preserving the ensemble while correcting Other</h1><p>Eight frozen Other-only transfers, using gold-corrected or pseudo-trained sources and matched embedding-only controls. Scores for Safety, Funding, Efficacy and Recruitment stay unchanged. The final nonempty-label fallback remains active. Sources use only Part 1 and the same saved grouped splits.</p><h2>Eight-repeat confirmation</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train F1</th>
+      <th>train delta</th>
+      <th>train wins</th>
+      <th>pooled F1</th>
+      <th>pooled delta</th>
+      <th>pooled wins</th>
+      <th>qualifies</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ensemble__gold_targets_full</td>
+      <td>0.926221</td>
+      <td>0.000531</td>
+      <td>4</td>
+      <td>0.917908</td>
+      <td>0.001418</td>
+      <td>4</td>
+      <td>False</td>
+      <td>0.897436</td>
+      <td>0.877551</td>
+    </tr>
+  </tbody>
+</table><p>Advancement requires positive paired means and at least five of eight repeat wins in both pools. Supplementary results marked diagnostic in summary.json do not establish a confirmed improvement. Chronology pools 98 predictions; validation uses the original 157-label fit.</p><h2>Complete three-repeat screen</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train F1</th>
+      <th>train delta</th>
+      <th>train wins</th>
+      <th>pooled F1</th>
+      <th>pooled delta</th>
+      <th>pooled wins</th>
+      <th>qualifies</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ensemble__gold_targets_full</td>
+      <td>0.929229</td>
+      <td>0.002123</td>
+      <td>3</td>
+      <td>0.910638</td>
+      <td>0.001891</td>
+      <td>2</td>
+      <td>True</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__gold_targets_half</td>
+      <td>0.929229</td>
+      <td>0.002123</td>
+      <td>2</td>
+      <td>0.910165</td>
+      <td>0.001418</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__gold_embedding_half</td>
+      <td>0.928521</td>
+      <td>0.001415</td>
+      <td>1</td>
+      <td>0.910165</td>
+      <td>0.001418</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__native_ani_full</td>
+      <td>0.927813</td>
+      <td>0.000708</td>
+      <td>1</td>
+      <td>0.909693</td>
+      <td>0.000946</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__pseudo_targets_half</td>
+      <td>0.927813</td>
+      <td>0.000708</td>
+      <td>1</td>
+      <td>0.910165</td>
+      <td>0.001418</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__gold_embedding_full</td>
+      <td>0.928521</td>
+      <td>0.001415</td>
+      <td>2</td>
+      <td>0.909220</td>
+      <td>0.000473</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__native_ani_half</td>
+      <td>0.926398</td>
+      <td>-0.000708</td>
+      <td>0</td>
+      <td>0.910165</td>
+      <td>0.001418</td>
+      <td>1</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ensemble__pseudo_targets_full</td>
+      <td>0.926398</td>
+      <td>-0.000708</td>
+      <td>0</td>
+      <td>0.911820</td>
+      <td>0.003073</td>
+      <td>2</td>
+      <td>False</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table><h2>No new metadata-only fits</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table><p>All labels and folds are reused development data. Negative results apply to these encodings and the fixed feature weight; they do not rule out every use of a raw field. No Kaggle improvement or final model promotion is claimed.</p><p><a href="protocol.json">Protocol</a> · <a href="verification.json">Verification</a> · <a href="summary.json">Per-trial corrections and regressions (summary retained)</a> · <a href="summary.json">Per-label results (summary retained)</a> · <a href="summary.json">Full results</a></p>

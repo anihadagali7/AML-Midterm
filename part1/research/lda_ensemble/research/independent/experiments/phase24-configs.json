@@ -1,0 +1,588 @@
+[
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 1.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 1.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": false,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.1,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "agreement": true,
+    "pseudo_weight": 0.3,
+    "metadata_vote": 0.2
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 0.0
+  },
+  {
+    "model": "co_training",
+    "views": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "drug_actions",
+      "diseases_cleaned"
+    ],
+    "no_exchange": true,
+    "metadata_vote": 1.0
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 2,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 2,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 2,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 5,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 5,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 5,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 10,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 10,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 25,
+    "components": 10,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 1,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 1,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 1,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 2,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 2,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 2,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 3,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 3,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 25,
+    "subtypes": 3,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 2,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 2,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 2,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 5,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 5,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 5,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 10,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 10,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "nca",
+    "metric_pca": 50,
+    "components": 10,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 1,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 1,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 1,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 2,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 2,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 2,
+    "metric_weight": 0.7
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 3,
+    "metric_weight": 0.15
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 3,
+    "metric_weight": 0.4
+  },
+  {
+    "model": "metric_ssl",
+    "metric": "fisher",
+    "metric_pca": 50,
+    "subtypes": 3,
+    "metric_weight": 0.7
+  }
+]

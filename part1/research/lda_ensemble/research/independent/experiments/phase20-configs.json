@@ -1,0 +1,279 @@
+[
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria"
+    ],
+    "aux_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria"
+    ],
+    "aux_weight": 0.3
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drugs"
+    ],
+    "aux_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drugs"
+    ],
+    "aux_weight": 0.3
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drug_targets"
+    ],
+    "aux_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drug_targets"
+    ],
+    "aux_weight": 0.3
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "fingerprint"
+    ],
+    "aux_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "fingerprint"
+    ],
+    "aux_weight": 0.3
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "drugs"
+    ],
+    "aux_weight": 0.3,
+    "C": 0.5
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "drugs"
+    ],
+    "aux_weight": 0.3,
+    "C": 1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "drugs"
+    ],
+    "aux_weight": 0.3,
+    "C": 2
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "fingerprint"
+    ],
+    "aux_weight": 0.3,
+    "C": 0.5
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "fingerprint"
+    ],
+    "aux_weight": 0.3,
+    "C": 1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "fingerprint"
+    ],
+    "aux_weight": 0.3,
+    "C": 2
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "diseases_cleaned",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 0.5
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "diseases_cleaned",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "diseases_cleaned",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 2
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drugs",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 0.5
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drugs",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "drugs",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 2
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "fingerprint",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 0.5
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "fingerprint",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 1
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "fingerprint",
+      "drug_targets"
+    ],
+    "aux_weight": 0.3,
+    "C": 2
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "fingerprint"
+    ],
+    "aux_weight": 0.2,
+    "alignment": true
+  },
+  {
+    "model": "audited_ssl",
+    "aux_blocks": [
+      "criteria",
+      "drugs",
+      "drug_targets",
+      "fingerprint"
+    ],
+    "aux_weight": 0.5,
+    "alignment": true
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 0.3,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 0.3,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 0.3,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 1,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 1,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 1,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 3,
+    "pseudo_weight": 0.01
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 3,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "C": 3,
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "raw",
+    "deduplicate": true
+  },
+  {
+    "model": "audited_ssl",
+    "balance": "effective",
+    "deduplicate": true
+  }
+]

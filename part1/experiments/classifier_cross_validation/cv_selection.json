@@ -1,0 +1,10 @@
+{
+  "criterion": "Mean pooled out-of-fold sample F1 over five repeats; ties use predeclared order",
+  "choices": {
+    "tolerance": "tolerance_0p001",
+    "normalization": "normalized_C100",
+    "blend": "blend_gmm_0p5",
+    "overall": "normalized_C100"
+  },
+  "external_validation_used_for_selection": false
+}

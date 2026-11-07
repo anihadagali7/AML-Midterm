@@ -1,0 +1,22 @@
+{
+  "Safety": {
+    "maximum_coefficient_change_at_3x": 0.0,
+    "maximum_validation_probability_change_at_3x": 0.0
+  },
+  "Funding": {
+    "maximum_coefficient_change_at_3x": 0.23435921064476478,
+    "maximum_validation_probability_change_at_3x": 0.024428059040848882
+  },
+  "Efficacy": {
+    "maximum_coefficient_change_at_3x": 0.0,
+    "maximum_validation_probability_change_at_3x": 0.0
+  },
+  "Recruitment": {
+    "maximum_coefficient_change_at_3x": 0.0,
+    "maximum_validation_probability_change_at_3x": 0.0
+  },
+  "Other": {
+    "maximum_coefficient_change_at_3x": 0.34488933015948264,
+    "maximum_validation_probability_change_at_3x": 0.3561133988346312
+  }
+}

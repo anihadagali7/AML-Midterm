@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "gradient_error": 4.350545111017857e-07,
+  "verified_utility_examples": true,
+  "query_invariance": true,
+  "native_control_parity": true,
+  "objective_restored_after_each_fit": true
+}

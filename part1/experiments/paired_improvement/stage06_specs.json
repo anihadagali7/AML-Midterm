@@ -1,0 +1,79 @@
+[
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "selected_control"
+  },
+  {
+    "C": 0.05,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "regularization_C0.05"
+  },
+  {
+    "C": 0.2,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "regularization_C0.2"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "augmented",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "ablation_augmented_balance"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 1.0,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "ablation_full_pseudo_weight"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": false,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "ablation_fractional_neighbors"
+  },
+  {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.2,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "ablation_original_gmm"
+  }
+]

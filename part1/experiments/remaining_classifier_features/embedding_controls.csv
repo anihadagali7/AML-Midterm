@@ -1,0 +1,3 @@
+experiment,representation,feature_group,minimum_training_trials,C,additional_features,total_features,sample_f1,macro_f1,delta_vs_current_leader,delta_vs_same_C_embeddings,fallback_trials,changed_trials_vs_current,f1_Safety,f1_Funding,f1_Efficacy,f1_Recruitment,f1_Other,is_current,kaggle_score
+embeddings_only_C100,embeddings_only,none,,100.0,0,150,0.8888888888888891,0.7900919710134069,-0.02136752136752118,0.0,6,4,0.9411764705882353,0.6666666666666666,0.7407407407407407,0.9702970297029703,0.631578947368421,False,
+embeddings_only_C1000,embeddings_only,none,,1000.0,0,150,0.9102564102564102,0.811421460284173,0.0,0.0,4,0,0.9411764705882353,0.6666666666666666,0.8275862068965517,0.9900990099009901,0.631578947368421,True,

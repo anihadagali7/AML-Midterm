@@ -1,0 +1,13 @@
+{
+  "fit_role_checks": 55,
+  "all_saved_splits_used": true,
+  "current_ani_fetched_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+  "legacy_235_probabilities_reproduced_on_all40folds": true,
+  "candidate_235_probabilities_reproduced_on_all40folds": true,
+  "all_pooled_scores_independently_rescored": true,
+  "no_recipe_tuning": true,
+  "no_test_feature_fitting": true,
+  "source_sha256": "9a1e9336f37da7433b8daf5f7166522488729689168e2cef418a0cd2cc82be42",
+  "notebook_executed_without_errors": true,
+  "notebook_sha256": "c433b6d82cbcd5ad83d7b13888b3f56836322794770b2bee32dfa8a4500e6532"
+}

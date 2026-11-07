@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "latest_revision_control_parity": true,
+  "query_batch_invariance": true,
+  "inner_only_cutoff_learning": true,
+  "inner_group_separation": true,
+  "complete_inner_oof_coverage": true,
+  "native_cutoff_transform_parity": true
+}

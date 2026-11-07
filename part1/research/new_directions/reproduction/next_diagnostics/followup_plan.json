@@ -1,0 +1,13 @@
+{
+  "frozen_at": 1794007010.822599,
+  "source_sha256": "e0338e64ebc9b6f8a3cb4efecd19f4760ae43eda7f8658dbd54daf17e68ceddb",
+  "studies": [
+    "v11",
+    "v12",
+    "v13"
+  ],
+  "rule": "Only initial qualifiers receive five additional repeats. Only eight-repeat qualifiers receive validation78 and fixed chronology98. No diagnostic exceptions.",
+  "comparator": "Current LDA 70/15/15 ensemble",
+  "no_test_predictions": true,
+  "no_automatic_promotion": true
+}

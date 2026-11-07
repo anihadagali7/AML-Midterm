@@ -1,0 +1,2 @@
+# Preserve bytes of frozen research sources and prediction arrays.
+lda_ensemble/** -text

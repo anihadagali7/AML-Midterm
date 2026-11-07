@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "stages_rescored": 104,
+  "repeats_rescored": 416,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "native_control_parity": true,
+    "binary_label_votes_verified": true,
+    "query_batch_invariance": true,
+    "other_scope_boundary": true
+  }
+}

@@ -1,0 +1,4 @@
+comparison,dbscan_variant,ani_variant,dbscan_cv_sample_f1,ani_cv_sample_f1,ani_minus_dbscan,ani_fold_wins,fold_ties,ani_fold_losses,ani_repeat_wins,repeat_ties,ani_repeat_losses
+native_recipes,dbscan_train_only,ani_transductive,0.8883156028368795,0.9142730496453901,0.025957446808510642,35,1,4,8,0,0
+shared_train_only,dbscan_train_only,ani_train_only,0.8883156028368795,0.9088652482269504,0.020549645390070884,31,2,7,8,0,0
+shared_transductive,dbscan_transductive,ani_transductive,0.8876063829787234,0.9142730496453901,0.02666666666666663,35,1,4,8,0,0

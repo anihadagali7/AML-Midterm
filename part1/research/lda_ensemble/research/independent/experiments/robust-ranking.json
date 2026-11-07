@@ -1,0 +1,358 @@
+[
+  {
+    "averaged_oof_score": 0.9222929936305733,
+    "mean_split_score": 0.9178874734607219,
+    "worst_split_score": 0.9063694267515924,
+    "n_seeds": 4,
+    "rule": "expected_f1",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drug_targets"
+      ],
+      "feature_weight": 1.0
+    }
+  },
+  {
+    "averaged_oof_score": 0.9265392781316351,
+    "mean_split_score": 0.9151804670912953,
+    "worst_split_score": 0.8989384288747345,
+    "n_seeds": 4,
+    "rule": "t0.25",
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "cluster",
+        "cluster": "hdbscan",
+        "min_cluster": 5,
+        "pca": 25
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true
+    }
+  },
+  {
+    "averaged_oof_score": 0.9235668789808917,
+    "mean_split_score": 0.9148089171974522,
+    "worst_split_score": 0.8874734607218683,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "fingerprint"
+      ],
+      "feature_weight": 0.5
+    }
+  },
+  {
+    "averaged_oof_score": 0.9171974522292994,
+    "mean_split_score": 0.9147558386411888,
+    "worst_split_score": 0.8925690021231422,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "pathway_levels"
+      ],
+      "feature_weight": 0.5
+    }
+  },
+  {
+    "averaged_oof_score": 0.9235668789808917,
+    "mean_split_score": 0.9140127388535033,
+    "worst_split_score": 0.902335456475584,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "criteria"
+      ],
+      "feature_weight": 1.0
+    }
+  },
+  {
+    "averaged_oof_score": 0.9214437367303611,
+    "mean_split_score": 0.9136942675159235,
+    "worst_split_score": 0.8938428874734606,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs"
+      ],
+      "feature_weight": 0.5
+    }
+  },
+  {
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9124203821656051,
+    "worst_split_score": 0.8938428874734606,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "graph",
+        "pca": 25,
+        "k": 5,
+        "alpha": 0.8
+      },
+      "student": "logistic",
+      "C": 0.3,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.95,
+      "labelwise": true,
+      "consensus": true
+    }
+  },
+  {
+    "averaged_oof_score": 0.9256900212314225,
+    "mean_split_score": 0.9121549893842887,
+    "worst_split_score": 0.9033970276008492,
+    "n_seeds": 4,
+    "rule": "expected_f1",
+    "config": {
+      "model": "logistic",
+      "scale": "global",
+      "C": 0.2
+    }
+  },
+  {
+    "averaged_oof_score": 0.9214437367303611,
+    "mean_split_score": 0.9115711252653929,
+    "worst_split_score": 0.8936305732484077,
+    "n_seeds": 4,
+    "rule": "t0.25",
+    "config": {
+      "model": "chain"
+    }
+  },
+  {
+    "averaged_oof_score": 0.9193205944798302,
+    "mean_split_score": 0.9108280254777071,
+    "worst_split_score": 0.902335456475584,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "svc",
+      "scale": "global",
+      "C": 10,
+      "gamma": 0.0001
+    }
+  },
+  {
+    "averaged_oof_score": 0.9235668789808917,
+    "mean_split_score": 0.9099787685774947,
+    "worst_split_score": 0.8789808917197452,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "pathway_level0"
+      ],
+      "feature_weight": 0.5
+    }
+  },
+  {
+    "averaged_oof_score": 0.9193205944798302,
+    "mean_split_score": 0.9097133757961784,
+    "worst_split_score": 0.8895966029723993,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "logistic",
+      "scale": "global",
+      "norm": true,
+      "C": 100
+    }
+  },
+  {
+    "averaged_oof_score": 0.9214437367303611,
+    "mean_split_score": 0.9096602972399149,
+    "worst_split_score": 0.9053078556263269,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "logistic",
+      "C": 0.1,
+      "scale": "global",
+      "features": [
+        "year"
+      ],
+      "feature_weight": 0.15
+    }
+  },
+  {
+    "averaged_oof_score": 0.9256900212314225,
+    "mean_split_score": 0.9089702760084926,
+    "worst_split_score": 0.8991507430997876,
+    "n_seeds": 4,
+    "rule": "expected_f1",
+    "config": {
+      "model": "logistic",
+      "scale": "global",
+      "C": 0.3
+    }
+  },
+  {
+    "averaged_oof_score": 0.9129511677282377,
+    "mean_split_score": 0.9085987261146498,
+    "worst_split_score": 0.8891719745222931,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "descriptors"
+      ],
+      "feature_weight": 0.5
+    }
+  },
+  {
+    "averaged_oof_score": 0.9171974522292994,
+    "mean_split_score": 0.9057855626326963,
+    "worst_split_score": 0.8885350318471338,
+    "n_seeds": 4,
+    "rule": "expected_f1",
+    "config": {
+      "model": "svc",
+      "scale": "global",
+      "C": 30,
+      "gamma": 0.0003
+    }
+  },
+  {
+    "averaged_oof_score": 0.9256900212314225,
+    "mean_split_score": 0.9049893842887473,
+    "worst_split_score": 0.8874734607218683,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "pseudo",
+      "teacher": {
+        "model": "graph",
+        "pca": 25,
+        "k": 5,
+        "alpha": 0.8
+      },
+      "student": "logistic",
+      "C": 0.1,
+      "gamma": 0.001,
+      "scale": "global",
+      "pseudo_weight": 0.05,
+      "confidence": 0.8,
+      "labelwise": true,
+      "consensus": true
+    }
+  },
+  {
+    "averaged_oof_score": 0.9193205944798301,
+    "mean_split_score": 0.9028662420382165,
+    "worst_split_score": 0.8726114649681529,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drug_pathways"
+      ],
+      "feature_weight": 0.15
+    }
+  },
+  {
+    "averaged_oof_score": 0.9193205944798301,
+    "mean_split_score": 0.9002123142250531,
+    "worst_split_score": 0.8704883227176222,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard"
+    }
+  },
+  {
+    "averaged_oof_score": 0.8959660297239916,
+    "mean_split_score": 0.8964968152866242,
+    "worst_split_score": 0.8619957537154989,
+    "n_seeds": 4,
+    "rule": "t0.55",
+    "config": {
+      "model": "lda"
+    }
+  },
+  {
+    "averaged_oof_score": 0.8874734607218683,
+    "mean_split_score": 0.8842887473460722,
+    "worst_split_score": 0.8726114649681529,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "powerset"
+    }
+  },
+  {
+    "averaged_oof_score": 0.8895966029723993,
+    "mean_split_score": 0.8800424628450106,
+    "worst_split_score": 0.8641188959660296,
+    "n_seeds": 4,
+    "rule": "t0.45",
+    "config": {
+      "model": "cluster",
+      "cluster": "hdbscan",
+      "min_cluster": 5,
+      "pca": 25
+    }
+  },
+  {
+    "averaged_oof_score": 0.8895966029723991,
+    "mean_split_score": 0.8739384288747346,
+    "worst_split_score": 0.8556263269639065,
+    "n_seeds": 4,
+    "rule": "t0.35",
+    "config": {
+      "model": "graph",
+      "pca": 25,
+      "k": 5,
+      "alpha": 0.8
+    }
+  }
+]

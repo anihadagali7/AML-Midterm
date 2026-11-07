@@ -1,0 +1,97 @@
+{
+  "label_pool": 235,
+  "folds": 5,
+  "repeats": 8,
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
+  ],
+  "splitter": "sklearn.model_selection.KFold(shuffle=True)",
+  "split_reason": "Match Ani original CV fold count, seeds, and ordering; same assignments for every variant",
+  "fitting_labels_per_fold": 188,
+  "held_labels_per_fold": 47,
+  "primary_comparison": "native_recipes",
+  "comparisons": {
+    "native_recipes": [
+      "dbscan_train_only",
+      "ani_transductive"
+    ],
+    "shared_train_only": [
+      "dbscan_train_only",
+      "ani_train_only"
+    ],
+    "shared_transductive": [
+      "dbscan_transductive",
+      "ani_transductive"
+    ]
+  },
+  "variants": [
+    "dbscan_train_only",
+    "ani_transductive",
+    "ani_train_only",
+    "dbscan_transductive"
+  ],
+  "train_only_policy": "Fit scalers/clustering to remaining 188 verified + 1014 unlabeled training rows; no held-out or test features enter fitting; pseudo-label only 1014 unlabeled training rows",
+  "transductive_policy": "Fit feature-only scaler/clustering to all 1561 embeddings; label-dependent fitting uses 188 verified labels and may pseudo-label the same 1014 originally unlabeled + 312 test rows; held-out known rows never receive pseudo-labels",
+  "classifier_scaling": "DBSCAN classifier scaler uses verified fitting rows only; Ani scaler uses the permitted feature pool; preserve recipe-specific choices",
+  "ani_recipe": {
+    "C": 0.3,
+    "knn": 10,
+    "knn_weight": 0.3,
+    "pca": 30,
+    "gmm_components": 30,
+    "covariance": "diag",
+    "gmm_weight": 0.2,
+    "confidence": 0.8,
+    "rounds": 2,
+    "cutoff": 0.3,
+    "random_state": 0
+  },
+  "dbscan_recipe": {
+    "C": 1000.0,
+    "tol": 0.0001,
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "min_samples": 5,
+    "eps_quantile": 0.25,
+    "eps_floor": 1e-06,
+    "cutoff": 0.5,
+    "label_rule": {
+      "minimum_support": 3.0,
+      "prior_strength": 2.0,
+      "positive_threshold": 0.6,
+      "negative_threshold": 0.1,
+      "maximum_generated_weight": 0.25,
+      "maximum_class_fraction": 0.5
+    }
+  },
+  "primary_metric": "sample F1 pooled over all 235 out-of-fold predictions within repeat, then mean of eight repeats",
+  "secondary_metrics": "macro/per-reason F1, paired fold/repeat differences, original-training/former-validation subgroups",
+  "no_tuning": true,
+  "no_protocol_selection_after_scores": true,
+  "no_test_labels": true,
+  "interpretation": "Known Kaggle scores motivate the audit but are not used to choose seeds, settings, data policy, or winning protocol; agreement across two recipes does not independently validate a model-selection system",
+  "known_kaggle_scores": {
+    "ani_235": 0.89423,
+    "dbscan_157": 0.875,
+    "dbscan_235": 0.86452
+  },
+  "protected_input_sha256": {
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3",
+    "experiments/additional_methods/submissions/part1_dbscan_m5_q25_logistic_C1000_submission.csv": "b4f8e154c6105698d6c7fac2a34d3c0e1ecd3dcd095bd2d8634ee6608d336dba",
+    "experiments/additional_methods/datasets/dbscan_m5_q25.csv": "09a4d747e5b43893c4ba4b3c0789577cb4b767304d352ca11b4c199601559810",
+    "experiments/additional_methods/submission_manifest.json": "772d06d27020165e21e73984c5eb0d4793b72065f9b602999dbb07602a5304cd",
+    "experiments/ani_ensemble/ani_source/part1_best_model.ipynb": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7",
+    "experiments/ani_ensemble/models/ani_validation_component.joblib": "2f2f8a8c06201e02c9117bd86246b9cbd7d00f2118065d61424225914a7d3b89",
+    "experiments/final_dbscan_trainval235/models/dbscan_logistic_trainval235.joblib": "7a138c16d3442f22c5ad3616a7158510fcd40df695d1c87243b0d1525286289f"
+  }
+}

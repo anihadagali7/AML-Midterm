@@ -1,0 +1,10 @@
+{
+  "status": "No established improvement over current Ani across both saved label pools.",
+  "supersedes": "Earlier recommendation based on235-label CV against the legacy no-LDA Ani recipe.",
+  "current_ani_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+  "candidate_157_delta": -0.0008492569002122,
+  "candidate_235_delta": 0.001595744680851,
+  "candidate_csv_unchanged": true,
+  "kaggle_score": null,
+  "procedure": "Use the saved15folds over157labels and40folds over235labels, strict fold-local features for every model."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "model": "lowdensity_v2",
+    "C": 0.4,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 0.8,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1.5,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.0006,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.002,
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "lowdensity_v2",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "cluster_gate": true,
+    "clusters": 10
+  }
+]

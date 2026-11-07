@@ -1,0 +1,78 @@
+[
+  {
+    "name": "final_control_r3",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 3,
+    "cutoff": 0.3
+  },
+  {
+    "name": "final_rounds5",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 5,
+    "cutoff": 0.3
+  },
+  {
+    "name": "final_rounds10",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 10,
+    "cutoff": 0.3
+  },
+  {
+    "name": "final_verified_neighbors",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 3,
+    "cutoff": 0.3,
+    "neighbors_verified_only": true
+  },
+  {
+    "name": "final_distance_neighbors",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 3,
+    "cutoff": 0.3,
+    "neighbor_weighting": "inverse_distance"
+  },
+  {
+    "name": "final_verified_distance_neighbors",
+    "family": "simple_ani",
+    "geometry": "standard",
+    "C": 0.3,
+    "confidence": 0.8,
+    "balanced": true,
+    "knn_weight": 0.3,
+    "knn_count": 10,
+    "rounds": 3,
+    "cutoff": 0.3,
+    "neighbors_verified_only": true,
+    "neighbor_weighting": "inverse_distance"
+  }
+]

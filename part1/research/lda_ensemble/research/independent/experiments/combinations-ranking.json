@@ -1,0 +1,320 @@
+[
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "criteria"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9341825902335458,
+    "mean_split_score": 0.9249823071479123
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "descriptors",
+        "criteria"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9299363057324841,
+    "mean_split_score": 0.9227176220806795
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "criteria"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9320594479830149,
+    "mean_split_score": 0.9221514508138714
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_level0"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9309978768577496,
+    "mean_split_score": 0.9206652512384995
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "descriptors"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.45",
+    "averaged_oof_score": 0.9256900212314225,
+    "mean_split_score": 0.9193205944798302
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "pathway_levels",
+        "descriptors"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9193205944798302
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "pathway_levels",
+        "descriptors"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9299363057324841,
+    "mean_split_score": 0.9191790516631281
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314225,
+    "mean_split_score": 0.9181882519462139
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "descriptors"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9278131634819534,
+    "mean_split_score": 0.9179051663128096
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_level0"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9214437367303608,
+    "mean_split_score": 0.9164897381457892
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9235668789808917,
+    "mean_split_score": 0.9157820240622788
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "descriptors",
+        "criteria"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9153573956121727
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "pathway_levels",
+        "criteria"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9235668789808917,
+    "mean_split_score": 0.9143665958952584
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "criteria"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9143665958952583
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "descriptors"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9122434536447276
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "criteria",
+        "diseases_cleaned",
+        "drugs",
+        "icdcodes",
+        "matched_drugs",
+        "drug_targets",
+        "drug_actions",
+        "drug_pathways",
+        "fingerprint",
+        "descriptors",
+        "year",
+        "missingness",
+        "counts"
+      ],
+      "feature_weight": 0.15
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9256900212314224,
+    "mean_split_score": 0.9111111111111111
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "drugs",
+        "descriptors"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "t0.35",
+    "averaged_oof_score": 0.9244161358811039,
+    "mean_split_score": 0.9105449398443031
+  },
+  {
+    "config": {
+      "model": "svc",
+      "C": 10,
+      "gamma": 0.001,
+      "scale": "standard",
+      "features": [
+        "criteria",
+        "diseases_cleaned",
+        "drugs",
+        "icdcodes",
+        "matched_drugs",
+        "drug_targets",
+        "drug_actions",
+        "drug_pathways",
+        "fingerprint",
+        "descriptors",
+        "year",
+        "missingness",
+        "counts"
+      ],
+      "feature_weight": 0.5
+    },
+    "rule": "expected_f1",
+    "averaged_oof_score": 0.9023354564755838,
+    "mean_split_score": 0.892144373673036
+  }
+]

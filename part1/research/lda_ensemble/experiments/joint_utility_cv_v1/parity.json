@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "latest_revision_control_parity": true,
+  "query_batch_invariance": true,
+  "exact_sample_f1_counterexample_verified": true,
+  "head_training_boundaries_verified": true
+}

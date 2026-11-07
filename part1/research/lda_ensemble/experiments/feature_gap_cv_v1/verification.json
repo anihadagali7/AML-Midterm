@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "stages_rescored": 80,
+  "repeats_rescored": 284,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "source_sha256": "7a8ee75bcbd1b7cc5ccb97f20e5a09b28cb8868d92748eb1254abede914c97f0",
+    "max_control_difference": 1.1102230246251565e-16,
+    "parser_checks_passed": true,
+    "feature_boundary_checks": [
+      {
+        "block": "inclusion_text",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 2001
+      },
+      {
+        "block": "exclusion_text",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 2001
+      },
+      {
+        "block": "eligibility_structure",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 18
+      },
+      {
+        "block": "icd_full_category",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 855
+      },
+      {
+        "block": "criteria_text",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 2001
+      },
+      {
+        "block": "diseases",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 142
+      },
+      {
+        "block": "icd_category",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 257
+      },
+      {
+        "block": "drug_targets",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 228
+      },
+      {
+        "block": "matched_drugs",
+        "query_batch_invariance": true,
+        "fitting_transform_unchanged": true,
+        "query_only_token_excluded": true,
+        "dimensions": 70
+      }
+    ]
+  }
+}

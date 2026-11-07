@@ -1,0 +1,20 @@
+{
+  "stage": "06_final_ablations",
+  "name": "selected_control",
+  "spec": {
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbors": true,
+    "lda_weight": 0.2,
+    "gmm_weight": 0.05,
+    "rounds": 2,
+    "lda_source": "augmented",
+    "name": "selected_control"
+  },
+  "ani_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+  "reason": "Largest minimum improvement across the two required CV pools; macro F1 also higher on both. All four additional sample-F1 checks improve. Retains Ani C, blend, rounds and decision cutoff.",
+  "caveat": "Development-fold selection; neither CV pool nor the additional diagnostics is untouched. Kaggle score unknown.",
+  "feature_policy": "Strict fold-local feature fitting for all models. Exclude held-out/test inputs. 157-pool fits also exclude all78validation inputs and labels.",
+  "test_features_used_for_fit": false
+}

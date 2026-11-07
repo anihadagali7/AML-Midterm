@@ -1,0 +1,12 @@
+{
+  "independently_rescored_complete_repeats": 128,
+  "complete_cv_fits_per_new_model": 80,
+  "ani_control_exact_predictions": 80,
+  "max_control_score_difference": 7.188138972935576e-12,
+  "source_hashes_unchanged": true,
+  "original_candidate_and_preparation_sources_unchanged": true,
+  "scored_archive_identical": true,
+  "no_new_test_predictions": true,
+  "no_recipe_tuning": true,
+  "reported_kaggle": 0.89636
+}

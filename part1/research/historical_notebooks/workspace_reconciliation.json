@@ -1,0 +1,36 @@
+{
+  "scope": "Pre-switch accounting for the original AML-Midterm working checkout against merged main.",
+  "original_branch": "codex/part2-improvements",
+  "original_head": "4f3e84130ab718050ab76f00b6ff6eeade22e501",
+  "merged_main_before_reconciliation": "aec5382c89d38d2589dbcb7dd3a01923ff518e81",
+  "pending_part2_changes": 0,
+  "pending_categories": {
+    "differs_from_main": 9,
+    "deleted_absent_from_main": 3991,
+    "identical_in_main": 1111,
+    "identical_archived_copy": 174,
+    "unmapped": 79,
+    "deleted_still_in_main": 0
+  },
+  "older_documentation_resolution": {
+    "six_documents": "Exact earlier versions remain in main history.",
+    "root_readme": {
+      "archive": "part1/research/historical_notebooks/working_overview_before_main.md",
+      "sha256": "721e614cc4a1f4dc5cdfddb8204ca700d20a36736f49ad0f1291dd3ddc071a75",
+      "bytes": 34449,
+      "links_rebased": false
+    },
+    "submission_csv": "All ten original rows are identical members of the fourteen-row merged ledger.",
+    "submission_manifest": "All original records preserved; restore latest/highest pointers to anchored 0.89636 and its exact result record."
+  },
+  "omitted_generated_outputs_by_family": {
+    "part1/experiments/paired_improvement": 16,
+    "part1/experiments/simple_methodical": 23,
+    "part1/experiments/trusted_iteration": 40
+  },
+  "omitted_outputs_bytes": 75713673,
+  "retention_basis": "early_iterations/manifest.json and pre_import_checks.json; 2246 saved recipe/repeat scores and 193 prototype summaries were checked before compact import.",
+  "retained_archived_copies_byte_checked": 174,
+  "new_model_fits": 0,
+  "new_submission_uploads": 0
+}

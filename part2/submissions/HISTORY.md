@@ -4,7 +4,7 @@ The work is split across trial-phase commits. Each of our six confirmed submitte
 CSVs now also has a dedicated submission-record commit and an annotated Git tag
 containing its reported Kaggle score. Lower log loss is better.
 
-For the Part Two-only replay onto `main`, see the [integration mapping](../MAIN_INTEGRATION.md).
+For the Part Two-only replay onto `main`, see the [integration mapping](../docs/MAIN_INTEGRATION.md).
 The original annotated score tags retain their targets; the mapping identifies
 the corresponding commits in the main-integration history.
 
@@ -66,7 +66,7 @@ From the repository root:
 git tag --list 'part2-submission-*'
 git show --stat part2-submission-13-kaggle-0.58465
 git show part2-submission-13-kaggle-0.58465:part2/submissions/13_file10_legacy30.csv > /tmp/part2_winner.csv
-.venv/bin/python part2/verify_submission_tags.py
+.venv/bin/python part2/run.py verify_submission_tags.py
 ```
 
 The verifier checks one distinct commit per record, annotated tags, the score

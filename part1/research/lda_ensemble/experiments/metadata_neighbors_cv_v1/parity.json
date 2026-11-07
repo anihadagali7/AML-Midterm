@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "no_feature_retrieval_parity": true,
+  "query_batch_invariance": true,
+  "retrieved_rows_fit_only": true,
+  "original_logistic_head_unchanged": true
+}

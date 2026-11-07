@@ -1,0 +1,126 @@
+{
+  "purpose": "Feature-priority investigation using existing eight-repeat pooled OOF predictions",
+  "models_fitted": 0,
+  "submissions_created": 0,
+  "three_way_pooled_sample_f1": 0.9164893617021277,
+  "persistent_errors": {
+    "definition": "Both Ani and three-way fail exact label set on at least six of eight repeats",
+    "rows": 26,
+    "ids": [
+      "TR05389",
+      "TR08552",
+      "TR03775",
+      "TR10695",
+      "TR01793",
+      "TR09248",
+      "TR01470",
+      "TR01988",
+      "TR00363",
+      "TR00357",
+      "TR00525",
+      "TR05426",
+      "TR00705",
+      "TR01808",
+      "TR10420",
+      "TR11226",
+      "TR10050",
+      "TR09519",
+      "TR09218",
+      "TR07268",
+      "TR03536",
+      "TR00640",
+      "TR00125",
+      "TR04002",
+      "TR03856",
+      "TR07665"
+    ],
+    "actual_label_sets": {
+      "Recruitment Other": 8,
+      "Other": 8,
+      "Funding": 3,
+      "Safety": 2,
+      "Recruitment": 2,
+      "Safety Efficacy": 2,
+      "Efficacy": 1
+    },
+    "share_of_total_three_way_sample_f1_loss": 0.8152866242038216
+  },
+  "label_diagnostics": {
+    "Safety": {
+      "gold_positives": 25,
+      "mean_precision": 0.8964392551892553,
+      "mean_recall": 0.94,
+      "mean_label_f1": 0.9173970517089274,
+      "diagnostic_perfect_label_replacement_sample_f1_gain": 0.004609929078014052
+    },
+    "Funding": {
+      "gold_positives": 12,
+      "mean_precision": 0.7593240093240093,
+      "mean_recall": 0.78125,
+      "mean_label_f1": 0.7694927536231884,
+      "diagnostic_perfect_label_replacement_sample_f1_gain": 0.008953900709219753
+    },
+    "Efficacy": {
+      "gold_positives": 31,
+      "mean_precision": 0.842925194271257,
+      "mean_recall": 0.907258064516129,
+      "mean_label_f1": 0.8735674635624233,
+      "diagnostic_perfect_label_replacement_sample_f1_gain": 0.007624113475177219
+    },
+    "Recruitment": {
+      "gold_positives": 151,
+      "mean_precision": 0.9693283195299325,
+      "mean_recall": 0.994205298013245,
+      "mean_label_f1": 0.981605549430395,
+      "diagnostic_perfect_label_replacement_sample_f1_gain": 0.0035460992907799804
+    },
+    "Other": {
+      "gold_positives": 35,
+      "mean_precision": 0.7077655193805082,
+      "mean_recall": 0.55,
+      "mean_label_f1": 0.6181009443605628,
+      "diagnostic_perfect_label_replacement_sample_f1_gain": 0.040336879432624206
+    }
+  },
+  "oracle_note": "Perfect single-label replacement uses known answers only to locate error budget. It is not a model, performance forecast, or an attainable-gain claim; gains need not be additive.",
+  "input_scope": "Part 1 only; no Part 2 phase or outcome data.",
+  "input_coverage": {
+    "train157": {
+      "rows": 157,
+      "median_start_year": 2001.0,
+      "matched_drug_rate": 0.6178343949044586,
+      "criteria_median_characters": 2126.0,
+      "explicit_inclusion_heading": 76,
+      "explicit_exclusion_heading": 74
+    },
+    "validation78": {
+      "rows": 78,
+      "median_start_year": 2006.0,
+      "matched_drug_rate": 0.6025641025641025,
+      "criteria_median_characters": 2076.5,
+      "explicit_inclusion_heading": 66,
+      "explicit_exclusion_heading": 63
+    },
+    "test312": {
+      "rows": 312,
+      "median_start_year": 2011.0,
+      "matched_drug_rate": 0.5,
+      "criteria_median_characters": 2754.0,
+      "explicit_inclusion_heading": 304,
+      "explicit_exclusion_heading": 300
+    }
+  },
+  "limitations": "Development labels and folds have already influenced selection. Coverage and retrospective error concentration do not establish predictive gains or explain leaderboard competitors.",
+  "source_sha256": {
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled3/index.json": "af37dd06034d2fa0f3fa31225f47df687dd575f6f0816d1e6dde298c5652bdc4",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled3/f800dc8ba1ce9ede5ff9.npz": "c1bb848544246493a732d3d2c23e7f2f2e05891a7e847936b5c52610b52d9077",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled5/index.json": "b5ea3bd7df47bda456f682d16d71911ffa54d02d6054e0fa43a48c30a993d79f",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled5/d601defbfe4ff390f092.npz": "1c32070dcd4b9bb8bcb1c110134d7da57c0106cf05f16bcbece20a0aeeb29467",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled3/cbd5a8d1f2e08c9a9463.npz": "7305e092039b6245bdbcbf06f0a33bfa1866172c744e7794a381a55c5eb32b4d",
+    "part1/research/independent/experiments/ani_improvement_v1/pooled5/75728fc99653e984729e.npz": "c15273ef4a26d87472229c0a852c05709481274653d11c95ddfee4cb1ff283d3"
+  },
+  "audit_script_sha256": "0cc4e706c7da6f0c2dc768b7247fbb954ac4173fdea01c814a46a00d9abc2ecf"
+}

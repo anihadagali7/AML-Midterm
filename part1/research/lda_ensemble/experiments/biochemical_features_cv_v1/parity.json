@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "augmented_no_feature_parity": true,
+  "query_batch_invariance": true,
+  "supervised_selection_gold_only": true,
+  "synthetic_chi2_ranking_verified": true,
+  "query_transform_does_not_change_fitted_vocabulary": true,
+  "molecule_and_catalog_checks": true
+}

@@ -1,0 +1,11 @@
+recipe,reference,mean_delta,fold_wins,fold_ties,fold_losses,repeat_wins,repeat_ties,repeat_losses
+ani_train_only,ani_train_only,0.0,0,40,0,0,8,0
+ani_train_only,dbscan_train_only,0.020549645390070884,31,2,7,8,0,0
+dbscan_train_only,ani_train_only,-0.020549645390070884,7,2,31,0,0,8
+dbscan_train_only,dbscan_train_only,0.0,0,40,0,0,8,0
+gmm_tied_k10,ani_train_only,-0.021312056737588625,11,3,26,1,0,7
+gmm_tied_k10,dbscan_train_only,-0.0007624113475177413,17,7,16,5,0,3
+kmeans_k8,ani_train_only,-0.013776595744680875,10,4,26,0,0,8
+kmeans_k8,dbscan_train_only,0.0067730496453900085,22,10,8,7,0,1
+dbscan_normalized_C100,ani_train_only,-0.016241134751773023,9,7,24,0,0,8
+dbscan_normalized_C100,dbscan_train_only,0.0043085106382978605,20,1,19,5,0,3

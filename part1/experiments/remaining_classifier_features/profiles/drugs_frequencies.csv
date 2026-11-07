@@ -1,0 +1,1012 @@
+category,training_trials,known_label_trials
+placebo,140,17
+cisplatin,61,17
+docetaxel,57,6
+cyclophosphamide,57,19
+carboplatin,41,7
+oxaliplatin,37,3
+capecitabine,37,2
+bevacizumab,36,1
+paclitaxel,35,8
+gemcitabine,32,3
+rituximab,26,2
+methotrexate,25,9
+dexamethasone,24,3
+erlotinib,23,1
+etoposide,23,11
+fludarabine,22,4
+bortezomib,19,1
+pemetrexed,19,1
+doxorubicin hydrochloride,19,8
+gemcitabine hydrochloride,18,6
+prednisone,18,3
+melphalan,18,3
+cetuximab,16,0
+fluorouracil,16,7
+cyclosporine,16,8
+irinotecan,15,0
+lenalidomide,14,0
+cytarabine,14,3
+fludarabine phosphate,14,4
+dasatinib,14,0
+temozolomide,13,4
+celecoxib,13,3
+busulfan,13,6
+doxorubicin,12,1
+sorafenib,12,1
+leucovorin calcium,11,5
+mycophenolate mofetil,11,1
+everolimus,11,1
+epoetin alfa,11,1
+thalidomide,10,2
+imatinib mesylate,10,0
+methylprednisolone,10,5
+vincristine,10,2
+5-fluorouracil,9,0
+leucovorin,9,0
+sunitinib malate,9,0
+vorinostat,9,0
+trastuzumab,9,0
+sunitinib,9,0
+tacrolimus,9,3
+irinotecan hydrochloride,9,2
+gefitinib,9,2
+letrozole,9,0
+vinorelbine,8,0
+ifosfamide,8,3
+fulvestrant,7,2
+vincristine sulfate,7,2
+sorafenib tosylate,7,2
+clofarabine,7,1
+vinblastine,7,2
+zoledronic acid,7,0
+erlotinib hydrochloride,7,0
+arsenic trioxide,7,1
+lapatinib,6,0
+carmustine,6,3
+mesna,6,2
+topotecan hydrochloride,6,3
+bosentan,6,0
+sirolimus,6,1
+mitoxantrone,5,1
+vandetanib,5,1
+exemestane,5,1
+imatinib,5,1
+azacitidine,5,1
+pemetrexed disodium,5,0
+rad001,5,0
+bicalutamide,5,2
+simvastatin,5,0
+gm-csf,5,1
+hydroxyurea,5,2
+mycophenolate mofetil (mmf),5,0
+thiotepa,5,3
+quetiapine,4,0
+lovastatin,4,1
+avastin,4,0
+atorvastatin,4,0
+goserelin,4,0
+panobinostat,4,0
+filgrastim,4,2
+comparator: placebo,4,0
+lbh589,4,1
+ixabepilone,4,0
+alemtuzumab,4,0
+dacarbazine,4,1
+chemotherapy,4,1
+anastrozole,4,0
+campath,4,1
+temsirolimus,4,0
+cediranib maleate,3,0
+interleukin-2,3,0
+bifeprunox,3,0
+epirubicin,3,0
+azd4877,3,0
+ciprofloxacin,3,1
+ocrelizumab,3,0
+liposomal doxorubicin,3,0
+donepezil,3,0
+velcade,3,0
+allopurinol,3,0
+tamoxifen,3,0
+pentostatin,3,1
+e2007,3,3
+topiramate,3,0
+abatacept,3,1
+amifostine trihydrate,3,2
+thymoglobulin,3,0
+g-csf,3,1
+ritonavir,3,0
+su011248,3,0
+metformin,3,0
+sildenafil,3,1
+capecitabine (xeloda),3,0
+mitomycin c,3,1
+idarubicin,3,1
+ziprasidone,2,0
+5-fluorouracil (5-fu),2,0
+isotretinoin,2,2
+enoxaparin,2,0
+maraviroc,2,0
+anti-thymocyte globulin,2,1
+comparator: placebo (unspecified),2,0
+pd-0325901,2,0
+etanercept,2,2
+nitazoxanide,2,0
+taxol,2,0
+phenytoin,2,0
+lapaquistat acetate and stable statin therapy,2,0
+stable statin therapy,2,0
+flutamide,2,0
+leuprolide,2,0
+epoch regimen,2,0
+tipranavir,2,0
+decitabine,2,0
+induction chemotherapy,2,2
+atacicept,2,1
+sodium thiosulfate,2,0
+paroxetine,2,0
+zileuton,2,0
+infliximab,2,0
+abt-751,2,0
+vinorelbine tartrate,2,1
+clopidogrel,2,0
+alendronate,2,0
+amg 706,2,0
+ave1642,2,0
+homoharringtonine,2,1
+5-fu,2,0
+pregabalin,2,0
+atamestane,2,0
+toremifene,2,0
+mitoxantrone hydrochloride,2,1
+trabectedin,2,1
+triptorelin,2,0
+minocycline,2,0
+extended release niacin,2,0
+hydroxychloroquine,2,0
+modafinil,2,0
+becatecarin,2,1
+matched placebo,2,0
+methylphenidate hydrochloride,2,1
+ribavirin,2,0
+acetaminophen,2,0
+diphenhydramine,2,0
+perifosine,2,0
+somatropin,2,0
+prednisolone,2,0
+asparaginase,2,0
+mercaptopurine,2,0
+enzastaurin,2,0
+depsipeptide,2,0
+galiximab in combination with rituximab,2,0
+pioglitazone,2,0
+tac-101,2,0
+calcitriol,2,0
+sutent,2,0
+inhaled placebo,2,0
+ranibizumab,2,0
+goserelin acetate,2,1
+aldesleukin,2,0
+perampanel,2,2
+warfarin,2,0
+darbepoetin alfa,2,0
+pegylated liposomal doxorubicin hydrochloride,2,0
+gw873140,2,0
+herceptin,2,0
+chop,2,0
+fondaparinux,2,0
+leuprolide acetate,2,1
+fosaprepitant dimeglumine,2,0
+sublingual methadone,2,0
+n-acetylcysteine,2,0
+aripiprazole,2,0
+corticosteroids,2,0
+losartan,2,0
+palonosetron hydrochloride,2,0
+exenatide,2,0
+pegylated liposomal doxorubicin,2,0
+mesalamine,2,0
+nitric oxide,2,0
+tamoxifen citrate,2,2
+valganciclovir,2,0
+eplerenone,2,0
+ly2599506,2,2
+gw572016 (lapatinib),1,0
+autologous tumor cell vaccine,1,0
+therapeutic autologous dendritic cells,1,0
+"uk-432,097",1,0
+chemoprotection,1,0
+bcnu wafer,1,0
+velcade (bortezomib),1,0
+ec17 (folate-fitc),1,0
+interferon-alpha,1,0
+alprostadil,1,0
+sildenafil citrate,1,0
+zd1839,1,1
+ciprofloxacin and amoxicillin,1,0
+i.v. antibiotics,1,0
+oxycodone,1,0
+pf-000592379,1,0
+docetaxel + estramustine + hydrocortisone,1,0
+docetaxel + prednisone,1,0
+tnp-470,1,1
+chemotherapy at the investigator's discretion,1,0
+daltéparine,1,0
+itv depocyt + temozolomide,1,0
+rosiglitazone maleate,1,0
+"cp-751,871",1,0
+tanespimycin,1,0
+finasteride and alfuzosin,1,0
+cetuximab 5mg/ml,1,0
+sodium valproate,1,1
+human albumin,1,0
+comparator: atorvastatin / duration of treatment: 6 weeks,1,0
+"mk0653a, ezetimibe (+) simvastatin / duration of treatment: 6 weeks",1,0
+"paclitaxel, carboplatin and irinotecan",1,0
+sjg-136,1,0
+levocetirizine,1,0
+ramipril,1,0
+ramipril-telmisartan,1,0
+rebetol (ribavirin),1,0
+osi-906,1,0
+jnj-39393406,1,0
+humira then humira plus 3 b vitamins,1,0
+botulinum toxin type a,1,0
+anastrozole 1 mg,1,0
+fluoxymesterone 10 mg,1,0
+trastuzumab (herceptin®),1,0
+pf03512676,1,0
+memantine,1,0
+gemcitabine and oxaliplatin,1,0
+etoposide + carboplatin,1,0
+topotecan + cisplatin,1,0
+valproic acid & fludarabine,1,0
+triptorelin (decapeptyl®),1,0
+bland emollient cream (udderly smooth® udder cream),1,0
+fluocinonide 0.05% cream,1,0
+tazarotene 0.1% cream,1,0
+urea 40% cream,1,0
+"pemetrexed, carboplatin, placebo",1,0
+"pemetrexed, carboplatin, sorafenib",1,0
+"docetaxel, cisplatin and sti571",1,0
+peg interferon plus ribavirin,1,0
+erlotinib and capecitabine,1,0
+maraviroc placebo,1,0
+"docetaxel, 75 mg/m^2 + capecitabine, 1000 mg/m^2",1,0
+"ixabepilone, 32 mg/m^2 + capecitabine, 1000 mg/m^2",1,0
+"ixabepilone, 40 mg/m^2 + capecitabine, 1000 mg/m^2",1,0
+ca4p,1,0
+preservative-free triamcinolone acetonide (tac-pf),1,0
+jnj-42160443 1 mg,1,1
+jnj-42160443 10 mg,1,1
+jnj-42160443 3 mg,1,1
+jnj-42160443 6 mg/3mg,1,1
+matching placebo,1,1
+testosterone,1,0
+jnj-18054478,1,0
+sham comparator,1,0
+therapeutic insulin,1,0
+zoledronate,1,0
+ssr180711c,1,0
+pegaspargase,1,0
+escitalopram oxalate,1,0
+alvimopan,1,0
+alvimopan 0.5 mg/day,1,0
+alvimopan 1 mg/day,1,0
+palonosetron (aloxi) and dexamethasone,1,0
+azd6244,1,0
+cediranib (azd2171),1,0
+eptacog alfa (activated),1,0
+mk-0736,1,0
+epinephrine,1,0
+metoprolol,1,0
+interferon gamma-1b,1,1
+t2000,1,0
+dobutamine,1,0
+irofulven,1,1
+nacl %0.9,1,0
+triptorelin acetate,1,0
+tab premarin (ethinyl estradiol),1,0
+il-2 (interleukin-2),1,0
+okt3,1,0
+anticholinergic agents or propanolol,1,0
+haloperidol,1,0
+preladenant,1,0
+"hormonal treatment (tamoxifen, exemestane, anastrozole or letrozole)",1,0
+erbitux,1,0
+liposomal daunorubicin citrate,1,0
+androgen receptor antagonists,1,0
+lh-rh agonist,1,0
+tocosol paclitaxel,1,0
+mesalazine (mesalamine),1,0
+org 24448,1,0
+alemtuzumab (campath-1h),1,0
+i5np,1,0
+ibritumomab tiuxetan,1,0
+"melphalan, velcade, thalidomide, dexamethasone",1,0
+sertraline (zoloft),1,0
+simvastatin (zocor),1,0
+ce-224535,1,0
+naproxen,1,0
+"docetaxel, erlotinib",1,0
+"erlotinib, docetaxel",1,0
+tegafur/gimeracil/oteracil potassium (s-1),1,0
+"tegafur/gimeracil/oteracil potassium (s-1), krestin (psk)",1,0
+antithymocyte globulin,1,0
+haelan,1,0
+hydrochlorothiazide (+) losartan potassium,1,1
+losartan potassium,1,1
+placebo for losartan,1,1
+placebo for losartan/hctz,1,1
+cyclosporine a,1,0
+levofloxacin,1,0
+vp-16,1,0
+paclitaxel albumin nanoparticle for injectable suspension (abraxane),1,0
+sorafenib (nexavar),1,0
+pegfilgrastim,1,0
+tezosentan,1,0
+interferon alfa-2b,1,0
+dutasteride (avodart),1,0
+"gemcitabine, docetaxel, and capecitabine",1,0
+placebo matched to atacicept,1,1
+panhematin,1,0
+capecitabine and cetuximab,1,0
+etoposide phosphate,1,0
+neulasta,1,0
+neupogen,1,0
+rituxan,1,0
+taxteral,1,0
+tmc114 (darunavir) / ritonavir,1,0
+atenolol,1,0
+lisinopril,1,0
+dimethyl sulfoxide,1,0
+ic cocktail,1,0
+other chemotherapy in association with trastuzumab,1,0
+bortezomib + ganciclovir,1,0
+prasugrel,1,0
+adderall-xr®,1,0
+concerta®,1,0
+metoclopramide,1,0
+selenium,1,0
+zinc,1,0
+"reduced intensity conditioning, busulfan and fludarabine",1,0
+tasisulam-sodium,1,0
+chloroquine phosphate,1,0
+"oncaspar, doxil, decadron",1,0
+pafuramidine maleate (db289),1,0
+trimethoprim-sulfamethoxazole (tmp-smx),1,0
+dhea,1,0
+apricoxib + lapatinib + capecitabine,1,0
+placebo + lapatinib + capecitabine,1,0
+gliadel/avastin/cpt-11,1,0
+pf-03654746,1,0
+imipenem/cilastatin,1,0
+tigecycline,1,0
+tki258,1,0
+abetimus sodium (ljp 394),1,0
+abetimus sodium (ljp 394) and/or placebo solution,1,0
+phosphate-buffered saline,1,0
+remeron (mirtazapine),1,0
+plerixafor,1,0
+taxotere,1,0
+bexxar (tositumomab),1,0
+potassium iodide (ki),1,0
+methadone,1,0
+morphine,1,0
+cyclophosphamide and rituximab,1,0
+gvhd prophylaxis,1,0
+non-myeloablative conditioning regimen,1,0
+rituximab maintenance therapy,1,0
+floxuridine,1,0
+cangrelor,1,0
+placebo bolus & placebo infusion,1,0
+placebo capsules - end of infusion,1,0
+placebo capsules - end of pci,1,0
+placebo drug: docetaxel drug: carboplatin,1,0
+suramin drug:docetaxel drug: carboplatin,1,0
+"velcade, melphalan, and dexamethasone",1,0
+"velcade, thalidomide, and dexamethasone",1,0
+naltrexone,1,0
+intensified chemotherapy (folfoxiri/bevacizumab),1,0
+aromatase inhibition,1,0
+estrogen receptor blocker,1,0
+"fluticasone, cream",1,0
+"placebo,",1,0
+vitamin e,1,0
+gemcitabine and cisplatin plus sorafenib,1,0
+"interferon gamma-1b (""actimmune"")",1,0
+"cp 751,871 (figitumumab)",1,0
+itraconazole,1,0
+ketamine,1,0
+olanzapine tablets 20 mg,1,0
+zyprexa® tablets 20 mg,1,0
+quetiapine xr,1,0
+bleomycin,1,1
+vindesine,1,1
+zd6474,1,0
+placebo (tetracycline),1,0
+jnj-26113100 (100 mg) once daily,1,0
+jnj-26113100 (100 mg) twice daily,1,0
+jnj-26113100 (250 mg) twice daily,1,0
+jnj-26113100 (50 mg) once daily,1,0
+"[s,s]-reboxetine",1,0
+rosiglitazone xr (extended release) oral tablets,1,0
+emla,1,1
+fentanyl,1,1
+l.m.x4,1,1
+propofol,1,1
+doripenem,1,0
+imipenem-cilastatin,1,0
+levetiracetam,1,0
+sorafenib escalated dose,1,0
+sorafenib standard dose,1,0
+fotemustine,1,0
+isolated perfusion,1,0
+mre0094,1,0
+vehicle gel,1,0
+ir methylphenidate,1,0
+sr methylphenidate,1,0
+oral lapatinib tablets or placebo tablets,1,0
+paricalcitol,1,0
+acipimox,1,0
+comparator: bexarotene,1,0
+bromocriptine mesylate,1,0
+mrx-801,1,0
+5-fluorouracil plus leucovorin,1,0
+premarin and provera,1,1
+comparator: atorvastatin,1,0
+comparator: rosuvastatin,1,0
+"comparator: simvastatin 20, 40 and 80 mg",1,0
+ezetimibe,1,0
+forodesine,1,0
+rad 001,1,0
+trastuzumab (herceptin),1,0
+"lapatinib, vinorelbine",1,0
+intravenous immunoglobulin,1,0
+matching placebo nasal spray plus antibiotic,1,0
+mfns and antibiotic,1,0
+mycofenolate mofetil (mmf),1,0
+cep-1347 10mg,1,1
+cep-1347 50mg,1,1
+cep1347 25mg,1,1
+betaine,1,0
+peginterferon alpha 2a,1,0
+amifostine,1,0
+brivaracetam,1,0
+hcrf,1,0
+placebo hcrf,1,0
+lacosamide,1,0
+vitamin d,1,0
+"cp-195,543",1,0
+gleevec and chlorambucil,1,0
+fludarabine/busulfan x 4 days,1,0
+anti-thymocyte globulin (atg),1,0
+hydrocortisone,1,0
+ica-17043,1,0
+docetaxel and cisplatin,1,0
+iressa,1,0
+saracatinib,1,0
+arixtra (fondaparinux sodium),1,0
+cdp323,1,0
+porfimer sodium,1,0
+apremilast,1,0
+ribavirin + pegylated interferon-alpha,1,0
+o6-benzylguanine,1,1
+agn201781,1,0
+casodex,1,0
+lupron,1,0
+campath -1h,1,1
+dilantin,1,1
+horse antithymocyte globulin,1,0
+rabbit antithymocyte globulin,1,0
+crx-102 (2.7/180),1,0
+crx-102 (2.7/360),1,0
+crx-102 (2.7/90),1,0
+daunorubicin hydrochloride,1,0
+thioguanine,1,0
+asacol 400 mg,1,0
+chemotherapy (taxotere and prednisone),1,0
+"velcade (bortezomib), rituximab, ifosfamide, carboplatin, etoposide",1,0
+qax576,1,0
+ps-341 (velcade-drug),1,0
+epratuzumab,1,0
+leuprolide acetate depot (lad) 11.25 mg 3 month,1,0
+"cp-316,311",1,1
+sertraline,1,1
+ps-341 (velcade),1,0
+rituximab in combination with placebo,1,0
+risedronate,1,0
+forodesine hydrochloride capsules (100 mg),1,0
+"forodesine hydrochloride sterile solution, 5 mg/ml",1,0
+intravenous magnesium,1,0
+comparator: kaletra™ (lopinavir (+) ritonavir ),1,0
+mk0518 (raltegravir),1,0
+lo-ovral oral contraceptive pills,1,0
+placebo - sugar pill,1,0
+immediate release formulation of oxcarbazepine (oxc ir),1,0
+modified release formulation of oxcarbazepine (oxc mr),1,0
+compound 506u78,1,1
+carboplatin + paclitaxel + bevacizumab + pf-3512676,1,0
+paclitaxel + carboplatin + bevacizumab,1,0
+pazopanib (gw786034),1,0
+combination of pegylated interferon alfa-2b (peg) and ribavirin (rbv),1,0
+baclofen,1,0
+"rituximab, etoposide, methylprednisolone, cytarabine, cisplatin",1,0
+il2,1,0
+octreotide acetate,1,0
+nordihydroguaiaretic acid (ndga),1,0
+pleneva tm bgc20-0134,1,0
+normal saline control,1,0
+vasopressin,1,0
+azathioprine individualised dose,1,0
+azathioprine weight-based dose,1,0
+ly500307,1,0
+fenretinide,1,1
+aminoglutethimide,1,1
+ketoconazole,1,1
+therapeutic hydrocortisone,1,1
+chr-2797 (tosedostat),1,0
+olmesartan medoxomil + candesartan cilexetil placebo,1,0
+olmesartan medoxomil placebo + candesartan cilexetil,1,0
+nesiritide,1,0
+pemetrexate,1,0
+captopril,1,0
+"anti-thymocyte globulin, rabbit",1,0
+clinimacs cd34 reagent system,1,0
+conventional t-cells,1,0
+regulatory t-cells,1,0
+tarceva,1,0
+fenretinide (4-hpr),1,0
+sch66336,1,0
+ataluren,1,0
+buthionine sulfoximine,1,0
+optimized background regimen (obr),1,0
+inhaled cannabis,1,0
+oral placebo,1,0
+oral thc,1,0
+sapacitabine,1,0
+domperidone (drug),1,0
+extraneal,1,0
+depocyt,1,0
+voraxaze (glucarpidase),1,0
+calcium gluconate,1,0
+magnesium sulfate,1,0
+pilocarpine hydrochloride,1,1
+chemotherapy (docetaxel and prednisone),1,0
+melatonin,1,0
+ibritumomab tiuxetan (zevalin) + rituximab,1,0
+rosiglitazone,1,0
+rosuvastatin,1,0
+faslodex,1,0
+ezetimibe + simvastatin,1,0
+vatalanib,1,0
+pegylated liposomal doxorubicin (caelyx),1,0
+ativan®,1,0
+benadryl®,1,0
+decadron®,1,0
+ondansetron hydrochloride,1,0
+"doxil, melphalan, bortezomib",1,0
+degarelix,1,0
+raltegravir,1,0
+paclitaxel poliglumex,1,0
+current lipid-lowering treatment,1,0
+lapaquistat acetate and current lipid-lowering treatment,1,0
+vancomycin,1,0
+hll1-dox (the doxorubicin conjugate of milatuzumab),1,0
+imatinib mesylate (im),1,0
+tall-104 cells,1,0
+elb245,1,0
+tolterodine,1,0
+"mci-196(colestilan(inn), colestimide(jan), cholebine®)",1,0
+bemiparin,1,0
+adriamycin,1,0
+cyproheptadine hydrochloride,1,0
+natalizumab,1,0
+entinostat,1,0
+placebo + paclitaxel + carboplatin,1,0
+sorafenib + paclitaxel + carboplatin,1,0
+megestrol acetate,1,0
+bortezomib (velcade),1,0
+matrix transdermal fentanyl/chadd drug delivery system,1,0
+placebo patch,1,0
+carboplatin plus paclitaxel,1,0
+"nexavar (sorafenib, bay43-9006) + carboplatin + paclitaxel",1,0
+infliximab control,1,0
+infliximab increased dose,1,0
+infliximab increased frequency,1,0
+recombinant human igf-1,1,0
+panobinostat (lbh589),1,0
+sulindac,1,0
+deferasirox,1,0
+bupropion hydrochloride,1,1
+nicotine,1,1
+"capecitabine, bevacizumab",1,0
+cephalexin,1,1
+efalizumab,1,0
+velcade™,1,0
+azathioprine (aza),1,0
+placebo infusion,1,0
+placebo to azathioprine,1,0
+pxd101,1,0
+smoked cannabis,1,0
+"cyclophosphamide (cyclo, cy)",1,0
+ftbi,1,0
+ramelteon,1,1
+topiramate (drug),1,0
+gemcitabine and lapatinib,1,0
+nuvigil®,1,0
+[18-f] fluorodeoxyglucose (fdg),1,0
+high dose aspirin (1300 mg/day),1,0
+low dose aspirin (162 mg/day),1,0
+rasburicase,1,0
+comparator: lopinavir (+) ritonavir,1,0
+comparator: raltegravir,1,0
+ast-120,1,0
+celphere cp-305,1,0
+antineoplaston a10,1,1
+antineoplaston as2-1,1,1
+bendamustine,1,0
+"botulinum toxin a, bladder detrusor muscle injection",1,0
+vehicle saline as placebo,1,0
+abraxane,1,0
+dronedarone (sr33589),1,1
+duragesic 25 mcg/h + clinical procedure 1,1,0
+duragesic 25 mcg/h + clinical procedure 2,1,0
+duragesic 25 mcg/h + clinical procedure 3,1,0
+mylan fentanyl transdermal system 25 mcg/h + clinical procedure 1,1,0
+mylan fentanyl transdermal system 25 mcg/h + clinical procedure 2,1,0
+mylan fentanyl transdermal system 25 mcg/h + clinical procedure 3,1,0
+odanacatib,1,0
+placebo for odanacatib,1,0
+citicoline,1,0
+alimta,1,0
+fluticasone propionate,1,0
+ancrod (viprinex),1,0
+mcn36 (nutritional supplement),1,0
+nilutamide,1,0
+fosbretabulin disodium,1,0
+premedication,1,1
+anti-il-20,1,0
+lamictal in the treatment of post-herpetic neuralgia,1,0
+quetiapine ir (immediate release),1,0
+dmf5 melanoma reactive til,1,0
+palcebo,1,0
+zd4054,1,0
+spironolactone,1,0
+"cp-724,714",1,0
+eptifibatide,1,0
+paclitaxel + carboplatin,1,0
+pf-3512676 + paclitaxel + carboplatin,1,0
+docetaxel plus doxercalciferol,1,1
+docetaxel plus placebo,1,1
+dexrazoxane,1,0
+erwinase,1,0
+triple intrathecal therapy,1,0
+7-hydroxystaurosporine,1,0
+atomoxetine,1,0
+vinblastine sulfate,1,1
+denspm ),1,0
+2 mg nicotine polacrilex,1,1
+iloprost inhalation solution (ventavis),1,0
+ditpa,1,0
+gemtuzumab ozogamicin,1,0
+lenalidomide (revlimid),1,0
+rhgad65,1,0
+cis-retinoic acid,1,1
+intravenous vitamin c,1,0
+lomustine,1,1
+cetuximab +/- dexamethasone,1,0
+"uk-500,001",1,0
+squalamine lactate,1,1
+eslicarbazepine acetate 1200 mg,1,0
+eslicarbazepine acetate 1800 mg,1,0
+eslicarbazepine acetate 600 mg,1,0
+cc-5103 (lenalidomide),1,0
+mk-0873 0.75 mg,1,0
+mk-0873 1.25 mg,1,0
+mk-0873 2.5 mg,1,0
+placebo to mk-0873,1,0
+usual care,1,0
+systemic chemotherapy,1,0
+cetrorelix 78 mg + 52 mg,1,0
+cetrorelix 78 mg + 78 mg,1,0
+inno-105,1,0
+neoadjuvant therapy with cisplatin plus docetaxel,1,0
+esomeprazole,1,0
+ave1625,1,0
+"panitumumab, epirubicin, oxaliplatin, xeloda",1,0
+casodex (bicalutamide),1,0
+clazosentan 15 mg/h,1,0
+clazosentan 5 m/h,1,0
+interferon beta-1a,1,1
+spd557,1,0
+5% topical lidocaine ointment,1,1
+placebo cream,1,1
+inotuzumab ozogamicin,1,0
+prednisone/prednisolone,1,0
+ziprasidone oral capsules,1,0
+gleevec,1,0
+adefovir dipivoxil,1,0
+telbivudine,1,0
+cisplatin (cddp),1,0
+cyclo-z,1,0
+du125530,1,0
+sargramostim (leukine),1,0
+ucn-01 (7-hydroxystaurosporine),1,0
+ain457,1,0
+lithium carbonate,1,0
+methadone hydrochloride,1,0
+sugar pill,1,0
+dronabinol,1,0
+ixabepilone (oral formulation),1,0
+"a-002, varespladib methyl",1,0
+iron supplement 300-600 mg/day,1,1
+vitamin e 800iu,1,1
+oral satraplatin,1,1
+dacogen,1,0
+volinanserin,1,0
+ethosuximide,1,0
+gsk189254,1,0
+corticosteroids (prednisone or prednisolone),1,0
+mangosteen juice,1,0
+placebo juice,1,0
+diclofenac/misoprostol,1,0
+pn400 (vimovo),1,0
+fenofibrate,1,0
+tln-4601,1,0
+risperidone,1,0
+"combination therapy of irinotecan with 5-fu, leucovorin plus bevacizumab in the neoadjuvant setting.",1,0
+aspirin,1,1
+xeliri,1,0
+xelox,1,0
+motesanib diphosphate,1,1
+ambrisentan,1,0
+temodar (temozolomide),1,0
+sorafenib & capecitabine,1,0
+"sodium nitrite injection, usp",1,0
+cyclosporin (csa),1,0
+methotrexate (mtx),1,0
+triptorelin (decapeptyl®) - treatment 8 months (pivotal study) followed by a treatment extension of 8 months (extension study),1,0
+"fludarabine, mitoxantrone and rituximab",1,1
+azathioprine,1,0
+gleevec/paclitaxel,1,0
+"combination of gemcitabine, capecitabine, and bevacizumab",1,0
+azacitadine and hematopoietic growth factors,1,0
+intron-a,1,0
+velban,1,0
+fk-506,1,0
+fasudil hydrochloride,1,0
+placebo oral tablet,1,0
+cilengitide,1,0
+chromium picolinate,1,0
+paclitaxel and carboplatin combination,1,0
+onercept,1,0
+erythromycin,1,0
+pravastatin,1,0
+combination of temsirolimus and sunitinib,1,0
+caelyx,1,1
+paclitaxel hcl,1,1
+fulvestrant and erlotinib,1,0
+nab-paclitaxel,1,0
+mfolfox6,1,0
+inhaled nitric oxide,1,1
+adrenal cortex hormones,1,1
+adrenergic-beta agonists,1,1
+albuterol,1,1
+colchicine,1,1
+"gemcitabine, bosutinib",1,0
+bevacizumab cycles 3 onwards,1,0
+folfox6 cycles 1-3,1,0
+folfox6 cycles 4 onwards,1,0
+lamivudine,1,0
+dt pace + rituxan,1,1
+azacitidine (monotherapy),1,0
+erythropoietin,1,0
+cytarabine liposome injection,1,0
+ranitidine & pantoprazole,1,1
+azd8418,1,0
+"mitoxantrone/cyclophosphamide, fludarabine, rituximab and gm-csf",1,1
+placebo (for rimonabant),1,1
+rimonabant,1,1
+esterified estrogens 1.25 mg,1,0
+esterified estrogens 1.25mg and methyltestosterone 2.5mg,1,0
+procrit,1,0
+docetaxel+cddp,1,0
+docetaxel+s-1,1,0
+creatine,1,0
+ethanol,1,0
+gk activator (2),1,0
+comparator: carboplatin,1,0
+comparator: paclitaxel,1,0
+"gleevec (imatinib), valproic acid",1,0
+mk-0646,1,0
+leuprolide acetate (lhrh analogue),1,0
+buserelin,1,0
+sandostatin,1,0
+xaliproden,1,0
+induction pegfilgrastim,1,0
+induction/consolidation adriamycin,1,0
+induction/consolidation cisplatin,1,0
+induction/consolidation dexamethasone,1,0
+induction/consolidation etoposide,1,0
+inductionconsolidation cyclophosphamide,1,0
+interim/maintenance dexamethasone,1,0
+transplant 1 adriamycin,1,0
+transplant 1 and 2 bortezomib,1,0
+transplant 1 and 2 pegfilgrastim,1,0
+transplant 1 and 2 thalidomide,1,0
+transplant 1 cisplatin,1,0
+transplant 1 cyclophosphamide,1,0
+transplant 1 dexamethasone,1,0
+transplant 1 etoposide,1,0
+transplant 1 melphalan,1,0
+transplant 2 carmustine,1,0
+transplant 2 cytarabine,1,0
+transplant 2 dexamethasone,1,0
+transplant 2 etoposide,1,0
+transplant 2 melphalan,1,0
+lorazepam,1,0
+rituximab [mabthera/rituxan],1,0
+cyclophosphamide dose level 1,1,0
+cyclophosphamide dose level 2,1,0
+cyclophosphamide dose level 3,1,0
+cyclophosphamide dose level 4,1,0
+nilotinib,1,0
+canasa,1,0
+gemcitabine and capecitabine and avastin,1,0
+"vorinostat, carboplatin, etoposide",1,0
+fentanyl buccal tablets,1,0
+androgel,1,0
+"taxane, avastin",1,0
+"taxane, avastin, xeloda",1,0
+diphenhydramine hydrochloride (hcl),1,0
+pioglitazone hydrochloride,1,0
+cdop plus rituximab,1,0
+igf-1r inhibitor osi-906,1,0
+"carboplatin, bevacizumab and pemetrexed",1,0
+oxygen,1,0
+px-12,1,0
+bevacizumab [avastin],1,0
+platinum-based chemotherapy,1,0
+bisoprolol,1,0
+pi-88,1,0
+zactima,1,0
+"gemcitabine, cisplatin",1,0
+proellex 25 mg,1,0
+proellex 50 mg,1,0
+glibenclamide,1,0
+insulin aspart,1,0
+ganciclovir,1,0
+"sorafenib (nexavar, bay43-9006)",1,0
+"sorafenib (nexavar, bay43-9006) + interferon",1,0
+zk219477,1,0
+abi-007 (abraxane®),1,0
+alkalinized xylocaine,1,1
+zoloft (sertraline),1,1
+haldol,1,0
+olanzapine,1,0
+identical-appearing placebo,1,0
+gs-9219,1,1
+octreotide acetate in microspheres,1,0
+semapimod,1,1
+"arsenic trioxide, ascorbic acid and bortezomib",1,0
+calcium,1,0
+teriparatide (forteo),1,0
+ciclosporin,1,0
+jnj-38877605,1,0
+oxaliplatin+capecitabine,1,0
+oxaliplatin+capecitabine+bevacizumab,1,0
+dronedarone,1,1
+placebo (for dronedarone),1,1
+gabapentin,1,0
+"cp-751,871 (figitumumab)",1,0
+grt3938y,1,0
+"topotecan, vorinostat",1,0
+bicillin l-a,1,0
+"[s,s]-reboxetine + pregabalin",1,0
+"neoadjuvant chemotherapy (cisplatin, 5-fluorouracil)",1,1
+pemetrexed + pf-3512676,1,0
+indantadol,1,1
+rapamycin,1,0
+gamma-secretase/notch signalling pathway inhibitor ro4929097,1,0
+6-thioguanine,1,0
+peg-asparaginase,1,0
+"paclitaxel, carboplatin, temozolomide",1,0
+sir-spheres agent administration,1,0
+iv methylprednisolone,1,0
+megadose oral methylprednisolone,1,0
+mg pidolate,1,1
+lopinavir,1,0
+bcnu,1,0
+campath-1h,1,0
+preparative regimen for allogenic stem cell transplantation,1,0
+stem cell transplant,1,0
+folic acid,1,0
+omega 3 fats,1,0
+"campt, topotesin",1,0
+peginesatide,1,0
+"irinotecan, cisplatin, celecoxib",1,0
+treprostinil sodium for inhalation,1,0
+inhaled iloprost (5 μg),1,0
+cellulose sulfate gel (6%),1,1
+dio-902,1,0
+dio-902 placebo,1,0
+tru-015,1,0
+rhumab-vegf,1,0
+"oanzapine, risperidone, or quetiapine",1,0
+s-1,1,0
+iressa (gefitinib),1,0
+methylphenidate,1,0
+odsh,1,0
+open-label,1,0
+placebo comparator: placebo-control arm 0.9% sodium chloride,1,0
+ascorbic acid,1,0
+ip chemotherapy,1,0
+disulfiram,1,0
+nexium,1,0
+peginterferon alfa-2b,1,0
+viramidine,1,0
+arixtra alone,1,0
+oral zinc and vitamin c supplements,1,0
+tarceva (osi-774),1,0
+normal saline (placebo),1,0
+pegylated liposomal doxorubicin (doxil) and rituximab,1,0
+cellulose sulfate vaginal gel (microbicide),1,0
+epirubicin hydrochloride,1,0
+deferiprone (l1),1,0
+deferoxamine,1,0
+temozolomide and radiotherapy,1,0
+interferon alfa-2a,1,0
+decitabine and pegylated interferon-alfa 2b,1,0
+saline,1,0
+talabostat mesylate,1,0
+darifenacin,1,0
+idronoxil,1,0
+4-aminosalicylic acid,1,0
+paser placebo granules,1,0
+bortezomid (velcade®),1,0
+sunitinib malate (sutent),1,0
+abt-751 and carboplatin,1,0
+cpt-11,1,0
+gemcitabine and cisplatin,1,0
+dmards (methotrexate; chloroquine; leflunomidum; cyclosporin a; sulfasalazine; om 89.,1,0
+comparator: pioglitazone,1,0
+mk0533,1,0
+resatorvid,1,0
+continuation of azathioprine,1,0
+switch to myfortic,1,0
+natrecor (nesiritide)+standard care+dobutamine or milrinone,1,0
+placebo+standard care+dobutamine or milrinone,1,0
+sargramostim,1,0
+pegifn / tdf / ftc combination therapy,1,0
+pegylated interferon alfa-2a,1,0
+tenofovir df / emtricitabine combination therapy,1,0
+topotecan,1,0
+5fu,1,0
+folfox 6,1,0
+nelfinavir,1,0
+azd7762,1,0
+estramustine phosphate sodium,1,1
+ciprofloxacin placebo,1,0
+metronidazole,1,0
+metronidazole placebo,1,0
+ronacaleret,1,0
+teriparatide,1,0
+iressa day 1 given with arimidex and faslodex,1,0
+iressa day 21 given with arimidex and faslodex,1,0
+tretinoin,1,0
+temsirolimus (torisel),1,0
+campath 1h,1,1
+fk506,1,1
+lithium,1,0
+fluvastatin,1,0
+glyburide,1,1
+riluzole,1,0
+chop regimen,1,0
+peginterferon alpha-2a,1,0
+telbivudine (ldt),1,0
+ptk787,1,0
+bexarotene,1,0
+methoxypsoralen,1,0
+exanta,1,0

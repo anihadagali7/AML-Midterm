@@ -133,14 +133,14 @@ independently rescores all 338 model/split/track results, checks trial boundarie
 fixed blends, source hashes and inference invariance to IDs and outcome labels.
 
 ```sh
-uv pip install --python .venv/bin/python -r part2/requirements-all-submissions.txt
-.venv/bin/python part2/all_submissions_benchmark.py --workers 2
-.venv/bin/python part2/all_submissions_verify.py
-.venv/bin/python part2/all_submissions_report.py
+uv pip install --python .venv/bin/python -r part2/requirements/requirements-all-submissions.txt
+.venv/bin/python part2/run.py all_submissions_benchmark.py --workers 2
+.venv/bin/python part2/run.py all_submissions_verify.py
+.venv/bin/python part2/run.py all_submissions_report.py
 ```
 
-See [comparison policy](../../ALL_SUBMISSIONS_PROTOCOL.md),
-[executed notebook](../../all_submissions.ipynb),
+See [comparison policy](../../docs/ALL_SUBMISSIONS_PROTOCOL.md),
+[executed notebook](../../notebooks/all_submissions.ipynb),
 [strict machine-readable table](runs/8f68385e25e07615/comparison_strict.csv), and
 [source/input manifest](runs/8f68385e25e07615/manifest.json). Native caches are ignored
 by Git and can be rebuilt; per-row held-out predictions and fitting IDs are saved.

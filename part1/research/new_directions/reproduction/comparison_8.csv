@@ -1,0 +1,2 @@
+recipe,family,train_mean,train_sd,train_delta,train_wins,train_macro,pooled_mean,pooled_sd,pooled_delta,pooled_wins,pooled_macro,qualifies
+fisher_k24_w1_s1,fisher,0.9137473460721868,0.010665356314973558,-0.005838641188959728,3,0.8896053475665904,0.9049645390070922,0.004797074205130725,-0.004875886524822667,2,0.8437560831630215,False

@@ -133,19 +133,19 @@ Final fits use all 9,050 labeled rows and the same feature-only transductive pre
 - [10_ani_fast2_neighbors_half.csv](../../submissions/10_ani_fast2_neighbors_half.csv): Kaggle score 0.58609 (user-reported); SHA-256 `d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448`.
 
 ```sh
-# From repository root, with part2/requirements-benchmark.txt installed in .venv:
-.venv/bin/python part2/extension_meta.py --track strict
-.venv/bin/python part2/extension_meta.py --track published
-.venv/bin/python part2/extension_neighbors.py --track strict
-.venv/bin/python part2/extension_neighbors.py --track published
-.venv/bin/python part2/extension_followthrough.py select
-.venv/bin/python part2/extension_followthrough.py compare
-.venv/bin/python part2/extension_followthrough.py gaps --track strict
-.venv/bin/python part2/extension_followthrough.py gaps --track published
-.venv/bin/python part2/extension_followthrough.py final
-.venv/bin/python part2/extension_verify.py
-.venv/bin/python -m unittest discover -s part2 -p 'test_*.py'
-.venv/bin/python part2/extension_predict.py --input part2/outcome_test.csv --output /tmp/replayed.csv
+# From repository root, with part2/requirements/requirements-benchmark.txt installed in .venv:
+.venv/bin/python part2/run.py extension_meta.py --track strict
+.venv/bin/python part2/run.py extension_meta.py --track published
+.venv/bin/python part2/run.py extension_neighbors.py --track strict
+.venv/bin/python part2/run.py extension_neighbors.py --track published
+.venv/bin/python part2/run.py extension_followthrough.py select
+.venv/bin/python part2/run.py extension_followthrough.py compare
+.venv/bin/python part2/run.py extension_followthrough.py gaps --track strict
+.venv/bin/python part2/run.py extension_followthrough.py gaps --track published
+.venv/bin/python part2/run.py extension_followthrough.py final
+.venv/bin/python part2/run.py extension_verify.py
+.venv/bin/python part2/run.py test 'test_*.py'
+.venv/bin/python part2/run.py extension_predict.py --input part2/data/outcome_test.csv --output /tmp/replayed.csv
 ```
 
-Native caches are regenerable and ignored by Git. Existing OOF arrays and fitting IDs permit replay without retraining the original base models. If the old final native cache is missing, final fitting rebuilds it. [Notebook with embedded implementation source](../../ani_extensions.ipynb).
+Native caches are regenerable and ignored by Git. Existing OOF arrays and fitting IDs permit replay without retraining the original base models. If the old final native cache is missing, final fitting rebuilds it. [Notebook with embedded implementation source](../../notebooks/ani_extensions.ipynb).

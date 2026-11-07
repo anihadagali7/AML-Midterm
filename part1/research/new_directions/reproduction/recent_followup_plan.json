@@ -1,0 +1,10 @@
+{
+  "frozen_at": 1793957777.694155,
+  "source_sha256": "841f547ca9edc66fb1841e422b8206f12aaf05578f16e247f6f034b9d8788f5d",
+  "study": "v10",
+  "recipe": "hybrid_leaf_one_raw",
+  "evidence_sha256": "7a8f71843a5c322f2e36a3f938c06f253509ca319bd4c69f5f77a145c185d036",
+  "rationale": "Best fixed follow-up improves both CV means, wins 6/8 train and 4/8 pooled, but fails the frozen two-pool gate. Evaluate fixed validation and chronology as a diagnostic; no promotion or threshold change.",
+  "general_protocol_sha256": "23070f1379655b1a5ed5bf9c701392de64b52ed77370ca12f95d686e828245b7",
+  "no_promotion": true
+}

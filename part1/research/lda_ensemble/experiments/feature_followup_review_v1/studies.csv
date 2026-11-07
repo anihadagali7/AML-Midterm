@@ -1,0 +1,10 @@
+study,hypothesis,screened,eight_repeat_recipes,confirmed_vs_parent,ensemble_confirmations,independent_verification
+gold_correction_cv_v1,Gold-only corrective heads and matched embedding controls,20,1,1,0,True
+other_transfer_cv_v1,Transfer only Other corrections into the ensemble,8,1,0,0,True
+neighbor_labels_cv_v1,Preserve multiple labels in nearest-neighbor votes,16,16,1,0,True
+other_residual_cv_v1,Cross-fitted Other corrections with context and metadata,24,2,0,0,True
+other_utility_cv_v3,Weight corrections by inner sample-F1 benefit or harm,12,12,0,0,True
+multilabel_teacher_cv_v1,Allow multiple reasons during pseudo-label teaching,12,12,0,0,True
+selected_text_cv_v2,"Finer criteria, raw drug and disease text features",20,1,0,0,True
+biochemical_features_cv_v1,"Actions, pathway granularity and molecular fingerprints",20,1,0,0,True
+metadata_neighbors_cv_v1,Use metadata to retrieve neighbors with matched embedding controls,20,4,0,0,True

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ani__lr_empirical",
+    "parent": "ani",
+    "block": "lr_empirical",
+    "description": "('lr', 'empirical')"
+  },
+  {
+    "name": "ensemble__lr_empirical",
+    "parent": "ensemble",
+    "block": "lr_empirical",
+    "description": "('lr', 'empirical')"
+  },
+  {
+    "name": "ani__lr_balanced",
+    "parent": "ani",
+    "block": "lr_balanced",
+    "description": "('lr', 'balanced')"
+  },
+  {
+    "name": "ensemble__lr_balanced",
+    "parent": "ensemble",
+    "block": "lr_balanced",
+    "description": "('lr', 'balanced')"
+  },
+  {
+    "name": "ani__lda_empirical",
+    "parent": "ani",
+    "block": "lda_empirical",
+    "description": "('lda', 'empirical')"
+  },
+  {
+    "name": "ensemble__lda_empirical",
+    "parent": "ensemble",
+    "block": "lda_empirical",
+    "description": "('lda', 'empirical')"
+  },
+  {
+    "name": "ani__lda_balanced",
+    "parent": "ani",
+    "block": "lda_balanced",
+    "description": "('lda', 'balanced')"
+  },
+  {
+    "name": "ensemble__lda_balanced",
+    "parent": "ensemble",
+    "block": "lda_balanced",
+    "description": "('lda', 'balanced')"
+  }
+]

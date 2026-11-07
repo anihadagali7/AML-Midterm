@@ -1,0 +1,11 @@
+{
+  "names": [
+    "ensemble__tri25",
+    "ensemble__tri40",
+    "ensemble__tri15",
+    "ensemble__svm15",
+    "ensemble__partners25"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All five candidates; predeclared before scores"
+}

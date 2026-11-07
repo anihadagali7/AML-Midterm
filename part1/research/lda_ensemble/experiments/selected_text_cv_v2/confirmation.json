@@ -1,0 +1,97 @@
+{
+  "comparison": [
+    {
+      "candidate": "ensemble__augmented_disease_words",
+      "parent": "ensemble",
+      "block": "augmented_disease_words",
+      "train_mean": 0.9254246284501062,
+      "train_sd": 0.006319469692033255,
+      "train_repeats": [
+        0.9256900212314224,
+        0.9193205944798301,
+        0.9384288747346071,
+        0.9214437367303608,
+        0.9299363057324841,
+        0.9171974522292994,
+        0.9278131634819534,
+        0.9235668789808917
+      ],
+      "train_vs_ani_delta": 0.005838641188959562,
+      "train_vs_ani_wins": 6,
+      "train_vs_ani_ties": 2,
+      "train_vs_ani_deltas": [
+        0.010615711252653703,
+        0.002123142250530674,
+        0.002123142250530674,
+        -2.220446049250313e-16,
+        0.00849256900212303,
+        0.010615711252653925,
+        0.01273885350318471,
+        0.0
+      ],
+      "train_vs_ensemble_delta": -0.000265392781316362,
+      "train_vs_ensemble_wins": 3,
+      "train_vs_ensemble_ties": 1,
+      "train_vs_ensemble_deltas": [
+        0.002123142250530674,
+        -0.002123142250531007,
+        0.002123142250530674,
+        -0.006369426751592355,
+        0.0,
+        -0.002123142250530785,
+        0.006369426751592577,
+        -0.002123142250530674
+      ],
+      "pooled_mean": 0.9154255319148936,
+      "pooled_sd": 0.006873855310276622,
+      "pooled_repeats": [
+        0.9035460992907801,
+        0.9163120567375885,
+        0.9092198581560285,
+        0.9205673758865247,
+        0.9276595744680851,
+        0.9134751773049645,
+        0.9191489361702128,
+        0.9134751773049646
+      ],
+      "pooled_vs_ani_delta": 0.005585106382978738,
+      "pooled_vs_ani_wins": 7,
+      "pooled_vs_ani_ties": 0,
+      "pooled_vs_ani_deltas": [
+        0.0028368794326241176,
+        -0.0014184397163122808,
+        0.01276595744680864,
+        0.004255319148936065,
+        0.008510638297872353,
+        0.0014184397163121698,
+        0.012056737588652555,
+        0.004255319148936287
+      ],
+      "pooled_vs_ensemble_delta": -0.0010638297872340025,
+      "pooled_vs_ensemble_wins": 3,
+      "pooled_vs_ensemble_ties": 2,
+      "pooled_vs_ensemble_deltas": [
+        0.0014184397163120588,
+        0.0,
+        0.0014184397163122808,
+        0.0014184397163119478,
+        -0.0014184397163119478,
+        -0.007092198581560183,
+        0.0,
+        -0.004255319148936176
+      ],
+      "minimum_parent_gain": -0.0010638297872340025,
+      "qualifies": false,
+      "train_vs_matched_delta": -0.000265392781316362,
+      "train_vs_matched_wins": 3,
+      "pooled_vs_matched_delta": -0.0010638297872340025,
+      "pooled_vs_matched_wins": 3,
+      "matched_control": "ensemble__augmented_none",
+      "metadata_contribution_confirmed": false
+    }
+  ],
+  "supplementary_names": [
+    "ensemble__augmented_disease_words"
+  ],
+  "diagnostic_only": true
+}

@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "pool": "train",
+      "check": "inductive_repacking_parity",
+      "max_difference": 0.0
+    },
+    {
+      "pool": "train",
+      "mode": "ani_transductive",
+      "heldout_label_mutation_invariant": true,
+      "labels_supplied_in_query_ignored": true,
+      "unused_global_heldout_features_ignored": true,
+      "masked_duplicates_purged": 0,
+      "explicit_target_rows": 31
+    },
+    {
+      "pool": "train",
+      "mode": "all_transductive",
+      "heldout_label_mutation_invariant": true,
+      "labels_supplied_in_query_ignored": true,
+      "unused_global_heldout_features_ignored": true,
+      "masked_duplicates_purged": 0,
+      "explicit_target_rows": 31
+    },
+    {
+      "pool": "pooled",
+      "check": "inductive_repacking_parity",
+      "max_difference": 0.0
+    },
+    {
+      "pool": "pooled",
+      "mode": "ani_transductive",
+      "heldout_label_mutation_invariant": true,
+      "labels_supplied_in_query_ignored": true,
+      "unused_global_heldout_features_ignored": true,
+      "masked_duplicates_purged": 72,
+      "explicit_target_rows": 52
+    },
+    {
+      "pool": "pooled",
+      "mode": "all_transductive",
+      "heldout_label_mutation_invariant": true,
+      "labels_supplied_in_query_ignored": true,
+      "unused_global_heldout_features_ignored": true,
+      "masked_duplicates_purged": 72,
+      "explicit_target_rows": 52
+    }
+  ]
+}

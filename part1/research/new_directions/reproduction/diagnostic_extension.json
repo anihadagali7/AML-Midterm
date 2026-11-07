@@ -1,0 +1,31 @@
+{
+  "version": "new-family-confirmation-diagnostic-v1",
+  "frozen_at": 1793948024.0004601,
+  "reason": "No candidate passed the original Ani screening gate. New 75% RFM / 25% Fisher blend missed train Ani by .001415 but gained .008983 pooled. It improves its exact new RFM parent in both pools (all 3 train repeats, 2/3 pooled). RFM also improves its zero-iteration parent in both pools. Assess these new-family gains on all eight saved repeats, without changing any recipe or choosing new seeds.",
+  "candidates": [
+    {
+      "study": "v1",
+      "name": "fisher_k24_w1_s1"
+    },
+    {
+      "study": "v2",
+      "name": "rfm_i0_r0.01_p0.5_aug0"
+    },
+    {
+      "study": "v2",
+      "name": "rfm_i2_r0.01_p0.5_aug0"
+    },
+    {
+      "study": "v3",
+      "name": "new_blend_75"
+    }
+  ],
+  "role": "Explicit diagnostic extension after failed initial Ani gate, not automatic promotion or an untouched confirmation set.",
+  "comparisons": [
+    "RFM versus zero-iteration kernel",
+    "new blend versus exact RFM and Fisher parents",
+    "all candidates versus Ani and submitted three-way ensemble"
+  ],
+  "supplementary": "Evaluate original validation and exact three chronological windows for these four frozen models after eight-repeat diagnostic; show regressions. No test-feature fitting or Kaggle upload.",
+  "decision": "A candidate must exceed Ani means with >=5/8 wins in BOTH pools to be considered a new contender; submitted ensemble comparison and supplementary checks must remain visible. Do not claim Kaggle superiority."
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Ani frozen control",
+    "parent": "Ani frozen control",
+    "kind": "control",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 1.0
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "Ani + tri 25%",
+    "parent": "Ani + tri 25%",
+    "kind": "control",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "Ani + tri/SVM 15% each",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "control",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + pseudo weight 0.5",
+    "parent": "Ani + tri 25%",
+    "kind": "pseudo weight 0.5",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "variant": {
+        "pseudo_weight": 0.5
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + three-seed average",
+    "parent": "Ani + tri 25%",
+    "kind": "three-seed average",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + inner Other threshold",
+    "parent": "Ani + tri 25%",
+    "kind": "inner Other threshold",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "other": {
+        "specialist_weight": 0.0
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + Other specialist 50%",
+    "parent": "Ani + tri 25%",
+    "kind": "Other specialist 50%",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "other": {
+        "specialist_weight": 0.5
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + pseudo weight 0.5",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "pseudo weight 0.5",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "variant": {
+        "pseudo_weight": 0.5
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + three-seed average",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "three-seed average",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + inner Other threshold",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "inner Other threshold",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "other": {
+        "specialist_weight": 0.0
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + Other specialist 50%",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "Other specialist 50%",
+    "config": {
+      "model": "ani_combination",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "other": {
+        "specialist_weight": 0.5
+      },
+      "source_sha256": {
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  }
+]

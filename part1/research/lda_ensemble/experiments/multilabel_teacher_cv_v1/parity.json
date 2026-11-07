@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "native_augmentation_targets_and_rows_identical": true,
+  "native_generated_multilabel_rows": 0,
+  "query_invariance": true,
+  "scope_checks": true
+}

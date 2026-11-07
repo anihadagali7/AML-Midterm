@@ -1,0 +1,86 @@
+{
+  "status": "unsubmitted development candidate; historical reference unchanged",
+  "selection": {
+    "primary": "final_control_r3",
+    "candidates": [
+      {
+        "stage": "07_final_neighbor_check",
+        "recipe": {
+          "name": "final_control_r3",
+          "family": "simple_ani",
+          "geometry": "standard",
+          "C": 0.3,
+          "confidence": 0.8,
+          "balanced": true,
+          "knn_weight": 0.3,
+          "knn_count": 10,
+          "rounds": 3,
+          "cutoff": 0.3
+        }
+      },
+      {
+        "stage": "04_simpler_self_training",
+        "recipe": {
+          "name": "joint_standard_knn0.3_r2",
+          "family": "simple_ani",
+          "geometry": "standard",
+          "C": 0.3,
+          "confidence": 0.8,
+          "balanced": true,
+          "knn_weight": 0.3,
+          "rounds": 2,
+          "cutoff": 0.3
+        }
+      }
+    ],
+    "selection_reason": "Highest fixed-benchmark mean; retain original cosine weighting and 3 rounds. Freeze before chronological diagnostics.",
+    "status": "development candidate; no Kaggle score; historical reference unchanged",
+    "test_feature_access": "prediction only, after final training on known and originally unlabeled training rows"
+  },
+  "known_labels": 235,
+  "originally_unlabeled_rows": 1014,
+  "final_self_training_counts": [
+    691,
+    774,
+    807
+  ],
+  "test_rows": 312,
+  "held_features_used_in_cv_fit": false,
+  "test_features_used_for_fit": false,
+  "prediction_policy": "Probability >=0.3; select the highest probability reason when none qualify.",
+  "unsupervised_comparison": "K-means k40 augmented labels are a separate evaluated baseline, not the selected classifier targets.",
+  "cv_mean_sample_f1": 0.9131914893617021,
+  "cv_reference_sample_f1": 0.9088652482269504,
+  "kaggle_score": null,
+  "independent_fold_replay_count": 40,
+  "reload_exact": true,
+  "versions": {
+    "python": "3.12.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "joblib": "1.6.0"
+  },
+  "source_sha256": {
+    "simple_solution.py": "b4563fbaf856f5d8e0d081959504289b3d0a9fae3816ebab2f37f6c5a0643364",
+    "simple_models.py": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32",
+    "simple_benchmark.py": "25d9609e2c3587f8e4bcb6f15812e4a04edd6bb3c3a970e4c23f7936e50e676d",
+    "simple_verify.py": "90990c122c5ab5322a1bc2a5b0950aff3352bc0ebec715aec55ea742a5ec130f",
+    "simple_prepare.py": "bdbcee06e5cd045102711be52a8ada3ef17ad23f47343a4e57825b210a488612"
+  },
+  "input_sha256": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "artifact_sha256": {
+    "independent_40_fold_replay.csv": "1873e3ae6c6e3079f477ecad98b6eef8c32b5bac74af7892daaad0d5e9899578",
+    "part1_simple_submission.csv": "48a94f0e34bd453a25e0a9523c3b79c37223f6430364a3360f69d4470a6182e0",
+    "generated_labels.csv": "1c8a0b3c07d070126f05bfb60b7f64018874b3b7f7a77a9f946b2d12c5873c42",
+    "kmeans_comparison_train_augmented.csv": "ed2c9b956ec5402c9394cb999a214d0737bf693166b237b4f01ea277b32f6171",
+    "test_probabilities.csv": "eddae4a53e32c7d79affabdbee4b3a48e60a9d9d37ce6689a8afb1bf85ab4e6a",
+    "part1_train_augmented.csv": "cfe5dd556806c555351080b9c36e2fb0ea3597c00dd9d1bf2f45791c3cd04da4",
+    "reason_classifier.joblib": "0ab8b0cc30064dabf3a2755878204a03d01ba6e40ef8a12d50e24c8bb046216f"
+  }
+}

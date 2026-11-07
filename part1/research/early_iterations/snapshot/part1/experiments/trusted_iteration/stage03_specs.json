@@ -1,0 +1,83 @@
+[
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "binary_trusted_control"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "C": 0.1,
+    "name": "binary_C_0.1"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "C": 0.6,
+    "name": "binary_C_0.6"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "C": 1.0,
+    "name": "binary_C_1.0"
+  },
+  {
+    "pseudo_weight": 0.5,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "binary_pseudo_weight_0.5"
+  },
+  {
+    "pseudo_weight": 1.0,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "binary_pseudo_weight_1.0"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "neighbor_pseudo_weight": 0.25,
+    "name": "binary_neighbor_pseudo_weight_0.25"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "balance_power": 0.5,
+    "name": "binary_balance_power_0.5"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "balance_power": 0.75,
+    "name": "binary_balance_power_0.75"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "binary_rounds_2"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 5,
+    "name": "binary_rounds_5"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "soft_pseudo": true,
+    "name": "binary_soft_pseudo_True"
+  }
+]

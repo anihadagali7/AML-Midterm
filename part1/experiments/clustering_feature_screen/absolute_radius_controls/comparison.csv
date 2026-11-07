@@ -1,0 +1,3 @@
+experiment,radius_source,eps,sample_f1,macro_f1,different_trial_predictions_vs_expanded,generated_trials,clusters,noise_trials
+embeddings_at_dbscan_diseases_scale0p25_q50_radius,dbscan_diseases_scale0p25_q50,10.095424386803986,0.893162393162393,0.8043238108640585,4,0,7,456
+embeddings_at_dbscan_criteria_scale0p25_q50_radius,dbscan_criteria_scale0p25_q50,10.137843372469467,0.893162393162393,0.8043238108640585,4,0,8,450

@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "command": "python part1/research/early_iterations/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "files_checked": 207,
+        "bytes_checked": 10396758,
+        "working_files_accounted_for": 275,
+        "pre_import_repeat_scores_checked": 2246,
+        "pre_import_scoring_repeated": false,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/legacy_retention_v1/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "retained_files_checked": 672,
+        "recipe_sources_checked": 39,
+        "additional_records_checked": 1,
+        "studies_checked": 31,
+        "retained_bytes": 40274159,
+        "pre_cleanup_checks": {
+          "prediction_files_rescored": 1270,
+          "heldout_predictions_checked": 81740,
+          "summary_rows_checked": 1226,
+          "per_trial_tables_checked": 917,
+          "reference_or_alias_without_same_named_summary": 44
+        },
+        "pre_cleanup_checks_repeated": false,
+        "note": "Discarded predictions were rescored before cleanup; this run checks retained hashes and coverage. Use current_leaders_local.py verify to rescore current leaders.",
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/current_leaders_local.py verify",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "independently_rescored_complete_repeats": 128,
+        "complete_cv_fits_per_new_model": 80,
+        "ani_control_exact_predictions": 80,
+        "max_control_score_difference": 7.188138972935576e-12,
+        "original_candidate_and_preparation_sources_unchanged": true,
+        "scored_archive_identical": true,
+        "no_new_test_predictions": true,
+        "no_recipe_tuning": true,
+        "reported_kaggle": 0.89636,
+        "original_worktree_required": false,
+        "relocated_source_files": 32,
+        "retained_source_hashes_verified": 50,
+        "omitted_caches_note": "Original cache-file hashes cannot be rechecked after their separate cleanup. Saved comparison arrays and all 128 complete-OOF metrics remain independently verified.",
+        "prediction_loaders_verified": true,
+        "historical_files_rewritten": false,
+        "models_fitted": 0,
+        "omitted_other_workspace_cache_hashes_count": 40
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "retained_files_verified": 784,
+        "retained_bytes": 13783443,
+        "shared_data_files_verified": 5,
+        "study_settings_preserved": 27,
+        "omitted_output_hashes_not_rechecked": 20,
+        "main_entry_links_checked": 51,
+        "archive_required": false,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify_leaders.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "arrays": 93,
+        "repeat_scores": 192,
+        "supplementary_scores": 44,
+        "final_submissions": 1,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/new_directions/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "attempts": 136,
+        "studies": 14,
+        "saved_repeat_scores": 926,
+        "supplementary_fits": 40,
+        "frozen_files_checked": 137,
+        "local_links_checked": 174,
+        "data_hashes_checked": true,
+        "model_fitting": false,
+        "note": "Checks retained summaries and reproduction inputs. Original predictions were rescored during migration and are intentionally not retained."
+      }
+    }
+  ],
+  "models_fitted": 0,
+  "submissions_changed": false,
+  "note": "Compact import and source-preservation audit; no new model evaluation or Kaggle query.",
+  "source_checks_file": "ani_source_checks.json"
+}

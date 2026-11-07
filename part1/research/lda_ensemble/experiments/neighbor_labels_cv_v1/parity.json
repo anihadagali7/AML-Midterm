@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "binary_label_votes_verified": true,
+  "query_batch_invariance": true,
+  "other_scope_boundary": true
+}

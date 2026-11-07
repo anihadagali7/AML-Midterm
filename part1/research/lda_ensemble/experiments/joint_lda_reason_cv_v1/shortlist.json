@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__gold_empirical",
+    "ensemble__gold_empirical",
+    "ani__gold_uniform",
+    "ensemble__gold_uniform",
+    "ani__augmented_empirical",
+    "ensemble__augmented_empirical",
+    "ani__augmented_uniform",
+    "ensemble__augmented_uniform"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

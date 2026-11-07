@@ -1,0 +1,15 @@
+study,topic,settings,repeat_artifacts,outer_fold_evaluations,comparator,registry
+v1,"Poisson graphs, compositional EM, and Fisher residuals",12,82,410,Ani inductive,reproduction/registry_v1.json
+v2,Duplicate-aware graphs and recursive feature machines,10,80,400,Ani inductive,reproduction/studies/v2/registry.json
+v3,"Joint kernels, averaging, nested selection, and new-model blends",6,46,230,Ani inductive,reproduction/studies/v3/registry.json
+v4,Source-prior correction,2,12,60,Ani inductive,reproduction/studies/v4/registry.json
+v5,"Entropy minimization, class mixtures, and selective kernel blends",15,100,500,Submitted 70/15/15 ensemble,reproduction/studies/v5/registry.json
+v6,Averaging multiple clustering types,16,116,580,Submitted 70/15/15 ensemble,reproduction/studies/v6/registry.json
+v7,Bayesian kNN label-distribution propagation,10,60,300,Submitted 70/15/15 ensemble,reproduction/studies/v7/registry.json
+v8,"xRFM kernels, inner selection, and soft-label augmentation",12,82,410,Submitted 70/15/15 ensemble,reproduction/studies/v8/registry.json
+v9,Dirichlet probability-space inference,8,48,240,Submitted 70/15/15 ensemble,reproduction/studies/v9/registry.json
+v10,Fixed one-update xRFM follow-up,8,68,340,Submitted 70/15/15 ensemble,reproduction/studies/v10/registry.json
+v11,Reason-specific learned distances,8,58,290,Current C.1/LDA 70/15/15 ensemble,reproduction/studies/v11/registry.json
+v12,Classical VAST adaptation,8,48,240,Current C.1/LDA 70/15/15 ensemble,reproduction/studies/v12/registry.json
+v13,Jacobian-transformed forests and boosting,13,78,390,Current C.1/LDA 70/15/15 ensemble,reproduction/studies/v13/registry.json
+v14,Pairwise reason classifiers and probability coupling,8,48,240,Current C.1/LDA 70/15/15 ensemble,reproduction/studies/v14/registry.json

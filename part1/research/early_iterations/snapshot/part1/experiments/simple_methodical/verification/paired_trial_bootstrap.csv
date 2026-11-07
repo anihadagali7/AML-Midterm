@@ -1,0 +1,5 @@
+name,reference,mean_delta,lower_95,upper_95,caveat
+final_control_r3,ani_train_only,0.004326241134751774,-0.0007092198581560282,0.009893617021276597,Trial bootstrap of development predictions; not adjusted for model selection or correlated training fits.
+final_control_r3,dbscan_train_only,0.024875886524822696,0.00542508865248227,0.046312499999999986,Trial bootstrap of development predictions; not adjusted for model selection or correlated training fits.
+joint_standard_knn0.3_r2,ani_train_only,0.00274822695035461,-0.0010638297872340421,0.007003546099290781,Trial bootstrap of development predictions; not adjusted for model selection or correlated training fits.
+joint_standard_knn0.3_r2,dbscan_train_only,0.02329787234042553,0.004166666666666667,0.04413120567375887,Trial bootstrap of development predictions; not adjusted for model selection or correlated training fits.

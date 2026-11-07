@@ -1,0 +1,29 @@
+category,training_trials,known_label_trials
+inhibitor,536,79
+antagonist,177,15
+agonist,126,20
+binder,115,30
+modulator,101,18
+blocker,67,19
+other/unknown,46,13
+negative modulator,38,3
+activator,31,1
+inducer,28,2
+downregulator,17,2
+multitarget,15,1
+ligand,10,0
+partial agonist,10,0
+degradation,7,1
+inhibitory allosteric modulator,6,0
+inverse agonist,5,0
+potentiator,4,1
+stimulator,4,0
+substrate,3,0
+product of,3,0
+cofactor,2,0
+positive allosteric modulator,2,1
+disruptor,2,0
+other,1,0
+unknown,1,0
+allosteric modulator,1,0
+upregulator,1,0

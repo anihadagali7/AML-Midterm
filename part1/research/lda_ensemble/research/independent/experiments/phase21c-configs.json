@@ -1,0 +1,34 @@
+[
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "cluster_gate": false,
+    "pseudo_weight": 1.0,
+    "aggregation": "vote",
+    "stratified_bootstrap": false
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "cluster_gate": false,
+    "pseudo_weight": 1.0,
+    "aggregation": "vote",
+    "stratified_bootstrap": false
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "cluster_gate": false,
+    "pseudo_weight": 1.0,
+    "aggregation": "vote",
+    "stratified_bootstrap": false
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "cluster_gate": false,
+    "pseudo_weight": 1.0,
+    "aggregation": "vote",
+    "stratified_bootstrap": false
+  }
+]

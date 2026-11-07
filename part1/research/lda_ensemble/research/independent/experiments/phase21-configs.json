@@ -1,0 +1,254 @@
+[
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "textbook",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "textbook",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "textbook",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "crossfit",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "crossfit",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.7,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.85,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "no_teaching": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "rbf",
+    "pseudo_weight": 0.1,
+    "aggregation": "vote"
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "textbook",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "textbook",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "textbook",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "crossfit",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "crossfit",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.7,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.85,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "no_teaching": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "mixed",
+    "pseudo_weight": 0.1,
+    "aggregation": "vote"
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "textbook",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "textbook",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "textbook",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "crossfit",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "crossfit",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.7,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.85,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "no_teaching": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "scales",
+    "pseudo_weight": 0.1,
+    "aggregation": "vote"
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "textbook",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "textbook",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "textbook",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "crossfit",
+    "pseudo_weight": 0.03
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "crossfit",
+    "pseudo_weight": 1.0
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.7,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "guard": "crossfit",
+    "pseudo_weight": 0.1,
+    "confidence": 0.85,
+    "cap_mass": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "no_teaching": true
+  },
+  {
+    "model": "tri_training",
+    "committee": "kernels",
+    "pseudo_weight": 0.1,
+    "aggregation": "vote"
+  }
+]

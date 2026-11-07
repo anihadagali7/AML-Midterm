@@ -1,0 +1,15 @@
+{
+  "name": "final_r2_control",
+  "stage": "06_final_regularization_check",
+  "spec": {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_control"
+  },
+  "reason": "Best single-model CV result; gains in all3chronological checks. Equal C0.1/C0.3 average gains only0.000177 and has higher repeat variability, so retain one model.",
+  "caveat": "Old78-row validation is lower than Ani. All local checks are reused development evidence; Kaggle performance unknown.",
+  "primary_reference": "ani_train_only",
+  "test_fitting_access": false
+}

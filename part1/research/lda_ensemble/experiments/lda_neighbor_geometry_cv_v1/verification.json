@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "stages_rescored": 116,
+  "repeats_rescored": 464,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "native_control_parity": true,
+    "latest_revision_control_parity": true,
+    "query_batch_invariance": true,
+    "identity_geometry_matches_revision": true,
+    "head_training_boundaries_verified": true
+  }
+}

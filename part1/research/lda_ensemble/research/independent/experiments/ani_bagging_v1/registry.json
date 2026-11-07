@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Ani frozen control",
+    "parent": "Ani frozen control",
+    "kind": "control",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 1.0
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "Ani + tri 25%",
+    "parent": "Ani + tri 25%",
+    "kind": "control",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "Ani + tri/SVM 15% each",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "control",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + half subset average",
+    "parent": "Ani + tri 25%",
+    "kind": "half subset average",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      },
+      "bagging": {
+        "folds": 5,
+        "seed": 270118,
+        "full_weight": 0.5
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "75/25 + full subset average",
+    "parent": "Ani + tri 25%",
+    "kind": "full subset average",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.75,
+        "tri": 0.25
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      },
+      "bagging": {
+        "folds": 5,
+        "seed": 270118,
+        "full_weight": 0.0
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + half subset average",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "half subset average",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      },
+      "bagging": {
+        "folds": 5,
+        "seed": 270118,
+        "full_weight": 0.5
+      }
+    },
+    "rule": "t0.5"
+  },
+  {
+    "name": "70/15/15 + full subset average",
+    "parent": "Ani + tri/SVM 15% each",
+    "kind": "full subset average",
+    "config": {
+      "model": "ani_bagged",
+      "weights": {
+        "ani": 0.7,
+        "tri": 0.15,
+        "svm": 0.15
+      },
+      "source_sha256": {
+        "ani_bagging.py": "ee434b7080bd0144fd11af6d746675062cac50297b109c67d2a464799e248f3a",
+        "run_ani_bagging.py": "7bf8b41059a379426ef06e7abd32c06997d7bdd49fe2696f352b3073a6b28933",
+        "ani_combinations.py": "0e15dbc95ca4f1d5c436c2925c48bb64c69f32dd608973625a0ba36b749e5de3",
+        "run_ani_combinations.py": "2c582baf311635b0f8ca6ca9f77f34a6f3e93e7f15aca357e07a5f22a75035b1"
+      },
+      "bagging": {
+        "folds": 5,
+        "seed": 270118,
+        "full_weight": 0.0
+      }
+    },
+    "rule": "t0.5"
+  }
+]

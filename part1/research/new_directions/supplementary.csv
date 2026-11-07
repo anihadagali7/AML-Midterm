@@ -1,0 +1,41 @@
+study,recipe,case,sample_f1,rows,role,plan
+v2,rfm_i2_r0.01_p0.5_aug0,through_2007_test_2008_2010,0.8558558558558558,37,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i2_r0.01_p0.5_aug0,through_2006_test_2007_2007,0.8939393939393938,22,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i2_r0.01_p0.5_aug0,validation,0.8482905982905984,78,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i2_r0.01_p0.5_aug0,through_2004_test_2005_2006,0.8034188034188033,39,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v1,fisher_k24_w1_s1,through_2007_test_2008_2010,0.8558558558558558,37,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v1,fisher_k24_w1_s1,through_2006_test_2007_2007,0.8787878787878788,22,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v1,fisher_k24_w1_s1,validation,0.8418803418803419,78,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v1,fisher_k24_w1_s1,through_2004_test_2005_2006,0.8376068376068375,39,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v3,new_blend_75,through_2007_test_2008_2010,0.8648648648648649,37,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v3,new_blend_75,through_2006_test_2007_2007,0.8787878787878788,22,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v3,new_blend_75,validation,0.8504273504273504,78,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v3,new_blend_75,through_2004_test_2005_2006,0.7863247863247863,39,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i0_r0.01_p0.5_aug0,through_2007_test_2008_2010,0.7927927927927928,37,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i0_r0.01_p0.5_aug0,through_2006_test_2007_2007,0.8030303030303029,22,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i0_r0.01_p0.5_aug0,validation,0.8461538461538461,78,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v2,rfm_i0_r0.01_p0.5_aug0,through_2004_test_2005_2006,0.7692307692307693,39,Explicit diagnostic; not a confirmed finalist,reproduction/diagnostic_extension.json
+v5,submitted_reference,through_2007_test_2008_2010,0.882882882882883,37,Matched supplementary reference,reproduction/continuation_diagnostic_plan.json
+v5,submitted_reference,through_2006_test_2007_2007,0.8787878787878788,22,Matched supplementary reference,reproduction/continuation_diagnostic_plan.json
+v5,submitted_reference,validation,0.9102564102564102,78,Matched supplementary reference,reproduction/continuation_diagnostic_plan.json
+v5,submitted_reference,through_2004_test_2005_2006,0.8717948717948718,39,Matched supplementary reference,reproduction/continuation_diagnostic_plan.json
+v5,rfm_complement_all15,through_2007_test_2008_2010,0.8918918918918919,37,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v5,rfm_complement_all15,through_2006_test_2007_2007,0.8939393939393938,22,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v5,rfm_complement_all15,validation,0.9059829059829061,78,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v5,rfm_complement_all15,through_2004_test_2005_2006,0.8717948717948718,39,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,single_gmm,through_2007_test_2008_2010,0.8738738738738737,37,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,single_gmm,through_2006_test_2007_2007,0.8787878787878788,22,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,single_gmm,validation,0.8910256410256411,78,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,single_gmm,through_2004_test_2005_2006,0.8376068376068375,39,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,teacher_mean3,through_2007_test_2008_2010,0.8468468468468469,37,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,teacher_mean3,through_2006_test_2007_2007,0.8484848484848484,22,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,teacher_mean3,validation,0.8910256410256411,78,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v6,teacher_mean3,through_2004_test_2005_2006,0.8376068376068375,39,Explicit diagnostic; not a confirmed finalist,reproduction/continuation_diagnostic_plan.json
+v8,hybrid_leaf_nested,through_2007_test_2008_2010,0.8918918918918919,37,Explicit diagnostic; not a confirmed finalist,reproduction/recent_diagnostic_plan.json
+v8,hybrid_leaf_nested,through_2006_test_2007_2007,0.8939393939393938,22,Explicit diagnostic; not a confirmed finalist,reproduction/recent_diagnostic_plan.json
+v8,hybrid_leaf_nested,validation,0.9017094017094016,78,Explicit diagnostic; not a confirmed finalist,reproduction/recent_diagnostic_plan.json
+v8,hybrid_leaf_nested,through_2004_test_2005_2006,0.8717948717948718,39,Explicit diagnostic; not a confirmed finalist,reproduction/recent_diagnostic_plan.json
+v10,hybrid_leaf_one_raw,through_2007_test_2008_2010,0.8918918918918919,37,Explicit diagnostic; not a confirmed finalist,reproduction/recent_followup_plan.json
+v10,hybrid_leaf_one_raw,through_2006_test_2007_2007,0.8939393939393938,22,Explicit diagnostic; not a confirmed finalist,reproduction/recent_followup_plan.json
+v10,hybrid_leaf_one_raw,validation,0.9017094017094016,78,Explicit diagnostic; not a confirmed finalist,reproduction/recent_followup_plan.json
+v10,hybrid_leaf_one_raw,through_2004_test_2005_2006,0.8717948717948718,39,Explicit diagnostic; not a confirmed finalist,reproduction/recent_followup_plan.json

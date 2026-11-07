@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__global_lda_empirical",
+    "parent": "ani",
+    "block": "global_lda_empirical",
+    "description": "('global', 'lda', 'empirical')"
+  },
+  {
+    "name": "ensemble__global_lda_empirical",
+    "parent": "ensemble",
+    "block": "global_lda_empirical",
+    "description": "('global', 'lda', 'empirical')"
+  },
+  {
+    "name": "ani__global_lda_balanced",
+    "parent": "ani",
+    "block": "global_lda_balanced",
+    "description": "('global', 'lda', 'balanced')"
+  },
+  {
+    "name": "ensemble__global_lda_balanced",
+    "parent": "ensemble",
+    "block": "global_lda_balanced",
+    "description": "('global', 'lda', 'balanced')"
+  },
+  {
+    "name": "ani__conditional_lda_empirical",
+    "parent": "ani",
+    "block": "conditional_lda_empirical",
+    "description": "('conditional', 'lda', 'empirical')"
+  },
+  {
+    "name": "ensemble__conditional_lda_empirical",
+    "parent": "ensemble",
+    "block": "conditional_lda_empirical",
+    "description": "('conditional', 'lda', 'empirical')"
+  },
+  {
+    "name": "ani__conditional_lda_balanced",
+    "parent": "ani",
+    "block": "conditional_lda_balanced",
+    "description": "('conditional', 'lda', 'balanced')"
+  },
+  {
+    "name": "ensemble__conditional_lda_balanced",
+    "parent": "ensemble",
+    "block": "conditional_lda_balanced",
+    "description": "('conditional', 'lda', 'balanced')"
+  },
+  {
+    "name": "ani__conditional_lr_empirical",
+    "parent": "ani",
+    "block": "conditional_lr_empirical",
+    "description": "('conditional', 'lr', 'empirical')"
+  },
+  {
+    "name": "ensemble__conditional_lr_empirical",
+    "parent": "ensemble",
+    "block": "conditional_lr_empirical",
+    "description": "('conditional', 'lr', 'empirical')"
+  },
+  {
+    "name": "ani__conditional_lr_balanced",
+    "parent": "ani",
+    "block": "conditional_lr_balanced",
+    "description": "('conditional', 'lr', 'balanced')"
+  },
+  {
+    "name": "ensemble__conditional_lr_balanced",
+    "parent": "ensemble",
+    "block": "conditional_lr_balanced",
+    "description": "('conditional', 'lr', 'balanced')"
+  }
+]

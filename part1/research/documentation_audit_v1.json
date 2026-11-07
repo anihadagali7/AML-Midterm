@@ -1,0 +1,147 @@
+{
+  "scope": "Consolidate current Part 1 documentation and verify existing evidence; no model fitting, recipe changes, new predictions, uploads, push, or branch merge.",
+  "baseline_research_commit": "f41e4216fd86c591f19efefa06348000356f8444",
+  "current_entry_point": "part1/README.md",
+  "current_policy": "part1/TESTING_POLICY.md",
+  "resolved": [
+    "Replaced the pointer-only testing page with the operational grouped contract and exact saved assignments.",
+    "Separated current grouped 157/235 CV from historical ungrouped protocols and clarified the four required evaluation checks.",
+    "Shortened the current handoff and linked detailed historical catalogs.",
+    "Reconciled submission guidance around anchored 0.89636 without assigning original Ani's score to its changed source.",
+    "Documented saved-evidence verification separately from actual replay and final submission refitting.",
+    "Named separate dependency records for research families and recorded a failed replay preflight."
+  ],
+  "checks": [
+    {
+      "command": "python part1/current_leaders_local.py verify",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "independently_rescored_complete_repeats": 128,
+        "complete_cv_fits_per_new_model": 80,
+        "ani_control_exact_predictions": 80,
+        "max_control_score_difference": 7.188138972935576e-12,
+        "original_candidate_and_preparation_sources_unchanged": true,
+        "scored_archive_identical": true,
+        "no_new_test_predictions": true,
+        "no_recipe_tuning": true,
+        "reported_kaggle": 0.89636,
+        "original_worktree_required": false,
+        "relocated_source_files": 32,
+        "retained_source_hashes_verified": 50,
+        "omitted_caches_note": "Original cache-file hashes cannot be rechecked after their separate cleanup. Saved comparison arrays and all 128 complete-OOF metrics remain independently verified.",
+        "prediction_loaders_verified": true,
+        "historical_files_rewritten": false,
+        "models_fitted": 0,
+        "omitted_other_workspace_cache_hashes_count": 40
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "retained_files_verified": 784,
+        "retained_bytes": 13783443,
+        "shared_data_files_verified": 5,
+        "study_settings_preserved": 27,
+        "omitted_output_hashes_not_rechecked": 20,
+        "main_entry_links_checked": 44,
+        "archive_required": false,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/consolidation_v1/verify_leaders.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "arrays": 93,
+        "repeat_scores": 192,
+        "supplementary_scores": 44,
+        "final_submissions": 1,
+        "models_fitted": 0
+      }
+    },
+    {
+      "command": "python part1/research/new_directions/verify.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "attempts": 136,
+        "studies": 14,
+        "saved_repeat_scores": 926,
+        "supplementary_fits": 40,
+        "frozen_files_checked": 137,
+        "local_links_checked": 174,
+        "data_hashes_checked": true,
+        "model_fitting": false,
+        "note": "Checks retained summaries and reproduction inputs. Original predictions were rescored during migration and are intentionally not retained."
+      }
+    },
+    {
+      "command": "python part1/research/new_directions/reproduce.py v6 --recipe teacher_mean3 --check",
+      "exit_code": 1,
+      "failure": "New Directions preflight requires iterative-stratification, absent from the current main project environment. Use the archive's separate recorded requirements; no packages or frozen source files changed."
+    },
+    {
+      "command": "python part1/research/consolidation_v1/reproduce.py ani_lda_revision_cv_v1 --block revision_full --stage train3 --check",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "study": "ani_lda_revision_cv_v1",
+        "models_fitted": 0,
+        "omitted_historical_outputs": 0
+      }
+    }
+  ],
+  "remaining_setup": [
+    "Install the New Directions recorded requirements in a separate environment before its replay; the current main environment lacks iterative-stratification and differs from its recorded numerical package versions."
+  ],
+  "limits": [
+    "No fresh 80-fold training run was performed during this documentation audit.",
+    "Historical discarded fold-cache file hashes cannot be rechecked; retained summaries, leader arrays and comparison snapshots remain verifiable.",
+    "Scored Kaggle results remain user/branch reports, not independent Kaggle queries."
+  ],
+  "artifacts_changed": "Documentation only; frozen research source, settings, folds, data, predictions, ledgers and submission bytes preserved.",
+  "documentation_checks": {
+    "local_links_and_fragments_checked": 136,
+    "saved_protocol_copies_byte_identical": true,
+    "protocol_sha256": {
+      "chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+      "pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+      "pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29",
+      "train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+      "train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d"
+    },
+    "anchored_submission_sha256": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "document_sha256": {
+      "README.md": "2feded57d46bf6db6a2fac85caf4ee2d9e695384880f1091453c3fcc582693d7",
+      "part1/README.md": "5ee2a9c95860e9735218ec80e1f126b634005c892044cba71ccb75dc941ba0b6",
+      "part1/TESTING_POLICY.md": "560fbb708bd7653876cc0ddcce499bc8a0cf1e32fbb50298437d5d1464d06e2a",
+      "part1/RESEARCH_HANDOFF.md": "d8b34aed389ef2998f93bfa9f3ef2c280b23ef69757268588a9ba33ee396519a",
+      "part1/RESEARCH_INDEX.html": "d3a0dc309e1da48c40dcf0c2be4fd280e9bcaceed0127c9071353eb16bf8266e",
+      "part1/submissions/README.md": "9d58c475867b7d6c208262b5d8bcb06193565686e26e98ae7dd15a03ab96934a",
+      "part1/AGENTS.md": "d7953ae52978bc4ab2085d9247f847b03557fbfa3403e71e5fd0cffaa890a939"
+    }
+  },
+  "verification_checkout": "Isolated worktree of codex/part1-research-integration. Shared checkout root README retains its separate Part 2 content.",
+  "environment": {
+    "installed": {
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.0",
+      "iterative-stratification": null,
+      "threadpoolctl": "3.8.0"
+    },
+    "recorded_new_directions": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "iterative-stratification": "0.1.9",
+      "threadpoolctl": "3.7.0"
+    }
+  }
+}

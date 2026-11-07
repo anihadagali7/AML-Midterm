@@ -1,0 +1,116 @@
+{
+  "comparison": [
+    {
+      "mode": "all_transductive",
+      "candidate": "Three-way: all components transductive",
+      "train_mean": 0.9264861995753715,
+      "train_sd": 0.006792188902372427,
+      "train_paired_delta": 0.0007961783439490305,
+      "train_wins": 4,
+      "pooled_mean": 0.9180851063829787,
+      "pooled_sd": 0.004744357503638173,
+      "pooled_paired_delta": 0.0015957446808511078,
+      "pooled_wins": 4,
+      "minimum_gain": 0.0007961783439490305,
+      "qualifies": false,
+      "validation": 0.8974358974358975,
+      "chronological": 0.8843537414965987
+    },
+    {
+      "mode": "ani_transductive",
+      "candidate": "Three-way: Ani transductive",
+      "train_mean": 0.9270169851380042,
+      "train_sd": 0.005193839116449272,
+      "train_paired_delta": 0.0013269639065817268,
+      "train_wins": 2,
+      "pooled_mean": 0.9168439716312056,
+      "pooled_sd": 0.006536279642257765,
+      "pooled_paired_delta": 0.0003546099290780286,
+      "pooled_wins": 3,
+      "minimum_gain": 0.0003546099290780286,
+      "qualifies": false
+    },
+    {
+      "mode": "inductive",
+      "candidate": "Submitted three-way, inductive",
+      "train_mean": 0.9256900212314225,
+      "train_sd": 0.005200615165144745,
+      "train_paired_delta": 0.0,
+      "train_wins": 0,
+      "pooled_mean": 0.9164893617021276,
+      "pooled_sd": 0.007685715177905405,
+      "pooled_paired_delta": 0.0,
+      "pooled_wins": 0,
+      "minimum_gain": 0.0,
+      "qualifies": false,
+      "validation": 0.9102564102564102,
+      "chronological": 0.8775510204081632
+    }
+  ],
+  "final_prediction_runs": [
+    {
+      "mode": "ani_transductive",
+      "gold_rows": 235,
+      "original_masked_rows": 1014,
+      "target_rows": 312,
+      "target_inputs_used_for_fit": true,
+      "test_labels_used": false,
+      "changed_test_label_sets": 13,
+      "label_counts": {
+        "Safety": 54,
+        "Funding": 6,
+        "Efficacy": 44,
+        "Recruitment": 180,
+        "Other": 55
+      },
+      "ani_pseudo_history": [
+        {
+          "round": 1,
+          "pseudo_rows": 826,
+          "pseudo_target_rows": 182
+        },
+        {
+          "round": 2,
+          "pseudo_rows": 951,
+          "pseudo_target_rows": 220
+        }
+      ],
+      "submission_created": false,
+      "kaggle_score": null
+    },
+    {
+      "mode": "all_transductive",
+      "gold_rows": 235,
+      "original_masked_rows": 1014,
+      "target_rows": 312,
+      "target_inputs_used_for_fit": true,
+      "test_labels_used": false,
+      "changed_test_label_sets": 15,
+      "label_counts": {
+        "Safety": 53,
+        "Funding": 6,
+        "Efficacy": 44,
+        "Recruitment": 180,
+        "Other": 56
+      },
+      "ani_pseudo_history": [
+        {
+          "round": 1,
+          "pseudo_rows": 826,
+          "pseudo_target_rows": 182
+        },
+        {
+          "round": 2,
+          "pseudo_rows": 951,
+          "pseudo_target_rows": 220
+        }
+      ],
+      "submission_created": false,
+      "kaggle_score": null
+    }
+  ],
+  "qualified": [],
+  "diagnostic_only": true,
+  "kaggle_upload": false,
+  "protocol_sha256": "b3a86ce45bc48d8582d8609a727786888ff20c2c17532374d6cb2f5b5b703f7a"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "rows": 312,
+  "gold_rows": 235,
+  "masked_training_rows": 1014,
+  "exact_sample_id_order": true,
+  "valid_nonempty_labels": true,
+  "manual_decoder_matches": true,
+  "protected_sources_unchanged": true,
+  "test_inputs_excluded_from_fit": true,
+  "submission_sha256": "871bd7faff1380c13b4e099f725372399b40bf3954c70854efe9f3bad7d3f7a2",
+  "uploaded": false
+}

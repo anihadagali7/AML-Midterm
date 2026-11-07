@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "imported_files_verified": 3607,
+  "source_code_and_frozen_artifacts_unchanged": true,
+  "isolated_contract_checks": [
+    "cross_repo",
+    "improvements",
+    "combinations",
+    "bagging",
+    "refit",
+    "transductive",
+    "train_folds",
+    "pooled_folds",
+    "original_benchmark_scores"
+  ],
+  "grouped_folds_verified": 80,
+  "recent_oof_records_rescored": 96,
+  "recent_oof_repeats_rescored": 348,
+  "submission_files_verified": 12,
+  "ani_revision_distinction_verified": true,
+  "models_fitted": 0,
+  "uploads_performed": 0,
+  "python": "3.12.13",
+  "clean_environment_install_tested": false
+}

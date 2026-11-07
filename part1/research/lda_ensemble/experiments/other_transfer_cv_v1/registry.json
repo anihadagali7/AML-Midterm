@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ensemble__gold_targets_half",
+    "parent": "ensemble",
+    "block": "gold_targets_half",
+    "description": "Transfer half of gold_targets Other score only"
+  },
+  {
+    "name": "ensemble__gold_targets_full",
+    "parent": "ensemble",
+    "block": "gold_targets_full",
+    "description": "Transfer full of gold_targets Other score only"
+  },
+  {
+    "name": "ensemble__gold_embedding_half",
+    "parent": "ensemble",
+    "block": "gold_embedding_half",
+    "description": "Transfer half of gold_embedding Other score only"
+  },
+  {
+    "name": "ensemble__gold_embedding_full",
+    "parent": "ensemble",
+    "block": "gold_embedding_full",
+    "description": "Transfer full of gold_embedding Other score only"
+  },
+  {
+    "name": "ensemble__pseudo_targets_half",
+    "parent": "ensemble",
+    "block": "pseudo_targets_half",
+    "description": "Transfer half of pseudo_targets Other score only"
+  },
+  {
+    "name": "ensemble__pseudo_targets_full",
+    "parent": "ensemble",
+    "block": "pseudo_targets_full",
+    "description": "Transfer full of pseudo_targets Other score only"
+  },
+  {
+    "name": "ensemble__native_ani_half",
+    "parent": "ensemble",
+    "block": "native_ani_half",
+    "description": "Transfer half of native_ani Other score only"
+  },
+  {
+    "name": "ensemble__native_ani_full",
+    "parent": "ensemble",
+    "block": "native_ani_full",
+    "description": "Transfer full of native_ani Other score only"
+  }
+]

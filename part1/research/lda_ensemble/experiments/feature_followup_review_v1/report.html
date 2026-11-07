@@ -1,0 +1,187 @@
+<p><strong>Retention update:</strong> This is a historical report. Code, settings and summary results are retained. Failed-run detail outputs were discarded; detailed evidence is kept for leaders and matched references. Historical audit counts describe the original checks.</p><!doctype html><html lang="en"><meta charset="utf-8"><title>Part 1 feature follow-up results</title>
+    <style>body{font:16px/1.55 system-ui;max-width:1400px;margin:40px auto;padding:0 24px;color:#172333;background:#fafbfc}table{border-collapse:collapse;font-size:13px;width:100%;background:white}th,td{padding:9px;border:1px solid #dce2e8;text-align:left}th{background:#eaf0f7}a{color:#075c9b}code{font-size:.9em}.note{background:#fff2d6;padding:18px;border-left:4px solid #b06c00}</style>
+    <h1>Part 1 feature follow-up results</h1>
+    <p class="note"><strong>No confirmed upgrade to the three-way ensemble.</strong> 152 parent-specific recipes across 9 completed studies were screened; 50 received all eight repeats in both pools. This count includes matched controls and related variants, not independent scientific hypotheses.</p>
+    <p>The existing ensemble scores train157 <strong>.925690</strong>, pooled235 <strong>.916489</strong>, original validation <strong>.910256</strong>, and chronology <strong>.877551</strong>. The subset-averaged 75/25 model has higher grouped CV (.928875/.918794) but worse supplementary scores (.880342/.870748). The follow-ups establish no replacement for either reference. No Kaggle improvement has been measured.</p>
+    <h2>Decision-relevant results</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>train</th>
+      <th>pooled</th>
+      <th>train_wins</th>
+      <th>pooled_wins</th>
+      <th>confirmed_vs_parent</th>
+      <th>validation</th>
+      <th>chronology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ani__half_drug_targets</td>
+      <td>0.922240</td>
+      <td>0.914007</td>
+      <td>5</td>
+      <td>5</td>
+      <td>True</td>
+      <td>0.878205</td>
+      <td>0.853741</td>
+    </tr>
+    <tr>
+      <td>ani__augmented_binary10_all</td>
+      <td>0.921444</td>
+      <td>0.911791</td>
+      <td>6</td>
+      <td>7</td>
+      <td>True</td>
+      <td>0.891026</td>
+      <td>0.863946</td>
+    </tr>
+    <tr>
+      <td>ensemble__augmented_binary10_all</td>
+      <td>0.926486</td>
+      <td>0.917199</td>
+      <td>3</td>
+      <td>3</td>
+      <td>False</td>
+      <td>Not evaluated</td>
+      <td>Not evaluated</td>
+    </tr>
+    <tr>
+      <td>ensemble__gold_targets_full</td>
+      <td>0.926221</td>
+      <td>0.917908</td>
+      <td>4</td>
+      <td>4</td>
+      <td>False</td>
+      <td>0.897436</td>
+      <td>0.877551</td>
+    </tr>
+    <tr>
+      <td>ensemble__augmented_disease_words</td>
+      <td>0.925425</td>
+      <td>0.915426</td>
+      <td>3</td>
+      <td>3</td>
+      <td>False</td>
+      <td>0.910256</td>
+      <td>0.880952</td>
+    </tr>
+    <tr>
+      <td>ani__goldhalf_morgan</td>
+      <td>0.921975</td>
+      <td>0.913032</td>
+      <td>6</td>
+      <td>4</td>
+      <td>False</td>
+      <td>0.880342</td>
+      <td>0.860544</td>
+    </tr>
+  </tbody>
+</table>
+    <p>Wins are paired repeat wins against the declared parent. Confirmation requires positive means and at least five of eight wins in both pools. Protein-target correction and binary neighbor votes passed against Ani only; both remain below the stronger ensemble. Fingerprints won six train repeats but only four pooled repeats. Their paired effect beyond the matched gold-only embedding correction was only +.000796 train / +.000089 pooled. Disease phrases lost their initial-screen gain.</p>
+    <h2>Completed studies</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>study</th>
+      <th>hypothesis</th>
+      <th>screened</th>
+      <th>eight_repeat_recipes</th>
+      <th>confirmed_vs_parent</th>
+      <th>ensemble_confirmations</th>
+      <th>independent_verification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../gold_correction_cv_v1/report.html">gold_correction_cv_v1</a></td>
+      <td>Gold-only corrective heads and matched embedding controls</td>
+      <td>20</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../other_transfer_cv_v1/report.html">other_transfer_cv_v1</a></td>
+      <td>Transfer only Other corrections into the ensemble</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../neighbor_labels_cv_v1/report.html">neighbor_labels_cv_v1</a></td>
+      <td>Preserve multiple labels in nearest-neighbor votes</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../other_residual_cv_v1/report.html">other_residual_cv_v1</a></td>
+      <td>Cross-fitted Other corrections with context and metadata</td>
+      <td>24</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../other_utility_cv_v3/report.html">other_utility_cv_v3</a></td>
+      <td>Weight corrections by inner sample-F1 benefit or harm</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../multilabel_teacher_cv_v1/report.html">multilabel_teacher_cv_v1</a></td>
+      <td>Allow multiple reasons during pseudo-label teaching</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../selected_text_cv_v2/report.html">selected_text_cv_v2</a></td>
+      <td>Finer criteria, raw drug and disease text features</td>
+      <td>20</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../biochemical_features_cv_v1/report.html">biochemical_features_cv_v1</a></td>
+      <td>Actions, pathway granularity and molecular fingerprints</td>
+      <td>20</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td><a href="../metadata_neighbors_cv_v1/report.html">metadata_neighbors_cv_v1</a></td>
+      <td>Use metadata to retrieve neighbors with matched embedding controls</td>
+      <td>20</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>What this changes</h2>
+    <p>Retesting previously rejected fields under grouped CV was worthwhile: several initially promising effects disappeared on confirmation, and matched controls showed that much of the gold-head gain came from the training change rather than the added feature. Raw-drug subwords, supervised criteria terms, pathway granularity and molecular fingerprints now have explicit evidence under the stronger models. These bounded encodings do not exhaust all uses of those fields.</p>
+    <p>The native pseudo-label teacher cannot generate multiple positives with its probability normalization, confidence .8 and label cutoff .3. Removing that restriction did not improve the ensemble reliably; it is not established as the cause of the performance gap. Other still concentrates the error budget. Context, nearest-label geometry, metadata and sample-F1-weighted corrections did not solve it in these tests.</p>
+    <p>The final targeted study also tested molecular fingerprints, criteria terms, raw-drug fragments and protein targets as neighbor-retrieval features, using matched embedding-only controls. Its full results are linked above. Further work should be justified by a new representation or measurable complementary signal. These results do not support another threshold or blend search on the same predictions, or combining several unconfirmed features and calling the result a discovery.</p>
+    <h2>Verification and retained failures</h2>
+    <p>Independent rescoring checked 2,762 complete-OOF repeat records, 13,810 fold prediction arrays and 124 supplementary records. 720 outer-fold contexts checked row coverage, group purges, original-control parity and protected hashes. These are development repeats over reused data, not independent datasets.</p>
+    <p>Three failed versions remain preserved: the initial utility test rejected valid zero-utility examples; its next version stopped on optimizer line-search failure; the first selected-text version mishandled bracketed isotope notation in raw drug names. Corrected versions reran their tests; no failed fold was dropped. All completed versions passed verification.</p>
+    <p>Only supplied Part 1 files were used. No Part 2 phase/outcome data, external records, test fitting, test predictions, final235 refit, submission or model promotion.</p>
+    <p><a href="all_screening.csv">All screens</a> · <a href="all_confirmation.csv">All confirmations</a> · <a href="all_supplementary.csv">Supplementary results</a> · <a href="summary.json">Provenance and verification totals</a></p></html>

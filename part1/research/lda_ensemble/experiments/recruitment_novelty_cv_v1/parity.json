@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "latest_revision_control_parity": true,
+  "query_batch_invariance": true,
+  "conditional_gold_training_verified": true,
+  "query_gate_uses_predictions_only": true,
+  "synthetic_group_exclusion_check": true,
+  "head_training_boundaries_verified": true
+}

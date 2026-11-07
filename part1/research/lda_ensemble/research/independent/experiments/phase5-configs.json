@@ -1,0 +1,362 @@
+[
+  {
+    "model": "sparse_examples",
+    "pca": 0,
+    "alpha": 0.005,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 0,
+    "alpha": 0.02,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 0,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 0,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 0,
+    "alpha": 0.2,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 25,
+    "alpha": 0.005,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 25,
+    "alpha": 0.02,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 25,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 25,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 25,
+    "alpha": 0.2,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 75,
+    "alpha": 0.005,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 75,
+    "alpha": 0.02,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 75,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 75,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_examples",
+    "pca": 75,
+    "alpha": 0.2,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 1,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 1,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 1,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 2,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 2,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 2,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 4,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 4,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 0,
+    "clusters": 4,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 1,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 1,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 1,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 2,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 2,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 2,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 4,
+    "alpha": 0,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 4,
+    "alpha": 0.05,
+    "scale": "global"
+  },
+  {
+    "model": "sparse_prototypes",
+    "pca": 25,
+    "clusters": 4,
+    "alpha": 0.1,
+    "scale": "global"
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 3,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 3,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 5,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 5,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 10,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 10,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 20,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 0,
+    "k": 20,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 3,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 3,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 5,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 5,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 10,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 10,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 20,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 25,
+    "k": 20,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 3,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 3,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 5,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 5,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 10,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 10,
+    "smoothing": 1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 20,
+    "smoothing": 0.1
+  },
+  {
+    "model": "mlknn",
+    "pca": 75,
+    "k": 20,
+    "smoothing": 1
+  }
+]

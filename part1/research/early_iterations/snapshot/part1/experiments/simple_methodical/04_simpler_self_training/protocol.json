@@ -1,0 +1,275 @@
+{
+  "stage": "04_simpler_self_training",
+  "hypotheses": "Direct reason embeddings; simple geometry, local neighbors, and linear boundaries. No auxiliary features or IDs as predictors.",
+  "specs": [
+    {
+      "name": "selftrain_C0.1_w0.25_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 0.1,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C0.1_w0.25_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 0.1,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C0.1_w1_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 0.1,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C0.1_w1_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 0.1,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C1_w0.25_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C1_w0.25_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C1_w1_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C1_w1_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C10_w0.25_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 10.0,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C10_w0.25_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 10.0,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C10_w1_r1",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 10.0,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "selftrain_C10_w1_r2",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 10.0,
+      "confidence": 0.9,
+      "weight": 1.0,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0_r0",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 0,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0_r1",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0_r2",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0.3_r0",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 0,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0.3_r1",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_standard_knn0.3_r2",
+      "family": "simple_ani",
+      "geometry": "standard",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0_r0",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 0,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0_r1",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0_r2",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.0,
+      "rounds": 2,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0.3_r0",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 0,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0.3_r1",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 1,
+      "cutoff": 0.3
+    },
+    {
+      "name": "joint_scalar_knn0.3_r2",
+      "family": "simple_ani",
+      "geometry": "scalar",
+      "C": 0.3,
+      "confidence": 0.8,
+      "balanced": true,
+      "knn_weight": 0.3,
+      "rounds": 2,
+      "cutoff": 0.3
+    }
+  ],
+  "fixed_folds": {
+    "repeat0.csv": "1ff4ee50eb8157acbd6cae7f21c75913d4d3d85fb943dcdce0736542ffbb775f",
+    "repeat1.csv": "9f68473ddf1eba753ca77d471134f36a2f3a795767f7679cc375558e91d32b4a",
+    "repeat2.csv": "c0c0aa4c2735d223d0143d3a7b2d053f26e62a7ce0d421439270caa3845f70dd",
+    "repeat3.csv": "7196e3b587cee68ea60904c0bfe2832673034b04c27203ac8e736eccae9f9fa6",
+    "repeat4.csv": "1f802367f3d3e3f2b134f7fe7136b116e3151a5cc3346df23e13d5a26cefce18",
+    "repeat5.csv": "ad933e83d9e540d2f128c32719b3bba2543a38f3caf6e67fdfe1cab63e07e47b",
+    "repeat6.csv": "4ef4cc5e94e020691f6f6b884da19e7684b895b565be32f7badf9a517cefd8a0",
+    "repeat7.csv": "e2a51efb1acaa2c8998d88617a2334a38086fdf5079705d6cfe9296c93b225ee"
+  },
+  "inputs": {
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "policy": "Fit only 188 known fitting rows plus 1014 unlabeled training rows. Exclude held/test inputs from every fit.",
+  "metric": "Mean sample F1 of all 235 OOF rows per repeat, then average 8 repeats.",
+  "interpretation": "Development benchmark; repeated folds overlap and are not independent test sets."
+}

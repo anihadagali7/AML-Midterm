@@ -1,0 +1,11 @@
+dataset,reason,known_positives,known_negatives,generated_positives,generated_negatives,generated_positive_weight,generated_negative_weight
+known_only,Safety,16,141,0,0,0.0,0.0
+known_only,Funding,8,149,0,0,0.0,0.0
+known_only,Efficacy,17,140,0,0,0.0,0.0
+known_only,Recruitment,101,56,0,0,0.0,0.0
+known_only,Other,25,132,0,0,0.0,0.0
+gmm_full_k10,Safety,16,141,0,0,0.0,0.0
+gmm_full_k10,Funding,8,149,0,0,0.0,0.0
+gmm_full_k10,Efficacy,17,140,77,776,8.5,70.0
+gmm_full_k10,Recruitment,101,56,702,143,50.50000000000001,27.999999999999993
+gmm_full_k10,Other,25,132,0,0,0.0,0.0

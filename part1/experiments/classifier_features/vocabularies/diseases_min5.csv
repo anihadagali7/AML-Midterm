@@ -1,0 +1,72 @@
+disease,training_trials,known_label_trials
+acute myeloid leukemia,6,1
+adenocarcinoma of the prostate,5,1
+alzheimer's disease,5,0
+anemia,16,2
+bladder cancer,15,7
+brain and central nervous system tumors,7,3
+breast cancer,81,12
+breast neoplasms,11,1
+cancer,16,0
+"carcinoma, non-small-cell lung",17,1
+"carcinoma, squamous cell",5,0
+cardiovascular diseases,5,0
+cervical cancer,10,2
+chronic kidney disease,5,0
+chronic lymphocytic leukemia,8,2
+chronic myeloproliferative disorders,6,4
+colorectal cancer,26,3
+crohn's disease,10,3
+depression,5,1
+"diabetes mellitus, type 2",7,2
+esophageal cancer,15,3
+extrahepatic bile duct cancer,6,2
+fallopian tube cancer,10,1
+fatigue,5,1
+gallbladder cancer,5,1
+gastric cancer,12,1
+glioblastoma multiforme,6,0
+graft versus host disease,9,4
+head and neck cancer,25,5
+hepatocellular carcinoma,8,0
+hiv infections,13,0
+hypercholesterolemia,6,0
+hypertension,6,1
+kidney cancer,8,1
+leukemia,45,13
+liver cancer,9,3
+lung cancer,41,7
+lymphoma,48,16
+"lymphoma, non-hodgkin",6,0
+melanoma,12,0
+metastatic breast cancer,9,1
+metastatic cancer,12,2
+metastatic colorectal cancer,5,0
+metastatic melanoma,6,1
+multiple myeloma,33,5
+multiple myeloma and plasma cell neoplasm,11,4
+multiple sclerosis,7,0
+myelodysplastic syndrome,7,1
+myelodysplastic syndromes,20,4
+non small cell lung cancer,7,1
+non-hodgkin's lymphoma,11,2
+non-small cell lung cancer,18,1
+non-small-cell lung cancer,6,0
+ovarian cancer,24,5
+pain,12,1
+pancreatic cancer,22,0
+parkinson's disease,9,6
+primary peritoneal cavity cancer,5,1
+prostate cancer,41,10
+prostatic neoplasms,7,0
+pulmonary hypertension,11,1
+rectal cancer,6,0
+renal cell carcinoma,9,0
+rheumatoid arthritis,7,0
+sarcoma,7,3
+schizophrenia,13,0
+sickle cell disease,8,1
+small cell lung cancer,6,0
+type 2 diabetes,6,0
+"unspecified adult solid tumor, protocol specific",6,1
+"unspecified childhood solid tumor, protocol specific",5,1

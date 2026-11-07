@@ -1,0 +1,2 @@
+recipe,family,train_mean,train_sd,train_delta,train_wins,train_macro,pooled_mean,pooled_sd,pooled_delta,pooled_wins,pooled_macro,qualifies
+hybrid_leaf_nested,xrfm_leaf,0.9286093418259023,0.005193839116449315,0.0029193205944798017,5,0.8748685419251223,0.9171985815602837,0.007895547545465367,0.0007092198581560571,4,0.8343304506809158,False

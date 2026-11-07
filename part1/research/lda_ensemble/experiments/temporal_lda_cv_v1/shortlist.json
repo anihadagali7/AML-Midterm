@@ -1,0 +1,18 @@
+{
+  "names": [
+    "ani__global_trend_half",
+    "ensemble__global_trend_half",
+    "ani__within_reason_half",
+    "ensemble__within_reason_half",
+    "ani__recent_lr_5",
+    "ensemble__recent_lr_5",
+    "ani__recent_lr_10",
+    "ensemble__recent_lr_10",
+    "ani__time_knn_final",
+    "ensemble__time_knn_final",
+    "ani__time_knn_joint",
+    "ensemble__time_knn_joint"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

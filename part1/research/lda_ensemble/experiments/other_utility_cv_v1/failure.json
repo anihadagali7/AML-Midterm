@@ -1,0 +1,7 @@
+{
+  "status": "failed preflight; no outer candidates scored",
+  "stage": "parity",
+  "reason": "Adding Other can have zero sample-F1 utility when both alternative label sets miss all true reasons. The v1 assertion incorrectly required nonzero utility.",
+  "resolution": "Preserved frozen v1. Version v2 permits zero utility and assigns those examples zero weight.",
+  "source_sha256": "96926c023ebf2bff06265f671fb95ab0f4ed2d24c39d62c413939854816feb33"
+}

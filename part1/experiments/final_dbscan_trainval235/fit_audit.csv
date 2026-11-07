@@ -1,0 +1,6 @@
+reason,verified_rows,fitting_rows,generated_rows,weight_total,iterations,C,tol,solver
+Safety,235,235,0,235.0,15,1000.0,0.0001,lbfgs
+Funding,235,235,0,235.0,13,1000.0,0.0001,lbfgs
+Efficacy,235,408,173,234.99999999999952,15,1000.0,0.0001,lbfgs
+Recruitment,235,235,0,235.0,14,1000.0,0.0001,lbfgs
+Other,235,235,0,235.0,16,1000.0,0.0001,lbfgs

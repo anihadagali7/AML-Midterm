@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ani__calibration_ridge1",
+    "parent": "ani",
+    "block": "calibration_ridge1",
+    "description": "Other offset-logistic correction: calibration, penalty 1"
+  },
+  {
+    "name": "ensemble__calibration_ridge1",
+    "parent": "ensemble",
+    "block": "calibration_ridge1",
+    "description": "Other offset-logistic correction: calibration, penalty 1"
+  },
+  {
+    "name": "ani__calibration_ridge10",
+    "parent": "ani",
+    "block": "calibration_ridge10",
+    "description": "Other offset-logistic correction: calibration, penalty 10"
+  },
+  {
+    "name": "ensemble__calibration_ridge10",
+    "parent": "ensemble",
+    "block": "calibration_ridge10",
+    "description": "Other offset-logistic correction: calibration, penalty 10"
+  },
+  {
+    "name": "ani__context_ridge1",
+    "parent": "ani",
+    "block": "context_ridge1",
+    "description": "Other offset-logistic correction: context, penalty 1"
+  },
+  {
+    "name": "ensemble__context_ridge1",
+    "parent": "ensemble",
+    "block": "context_ridge1",
+    "description": "Other offset-logistic correction: context, penalty 1"
+  },
+  {
+    "name": "ani__context_ridge10",
+    "parent": "ani",
+    "block": "context_ridge10",
+    "description": "Other offset-logistic correction: context, penalty 10"
+  },
+  {
+    "name": "ensemble__context_ridge10",
+    "parent": "ensemble",
+    "block": "context_ridge10",
+    "description": "Other offset-logistic correction: context, penalty 10"
+  },
+  {
+    "name": "ani__neighbors_ridge1",
+    "parent": "ani",
+    "block": "neighbors_ridge1",
+    "description": "Other offset-logistic correction: neighbors, penalty 1"
+  },
+  {
+    "name": "ensemble__neighbors_ridge1",
+    "parent": "ensemble",
+    "block": "neighbors_ridge1",
+    "description": "Other offset-logistic correction: neighbors, penalty 1"
+  },
+  {
+    "name": "ani__neighbors_ridge10",
+    "parent": "ani",
+    "block": "neighbors_ridge10",
+    "description": "Other offset-logistic correction: neighbors, penalty 10"
+  },
+  {
+    "name": "ensemble__neighbors_ridge10",
+    "parent": "ensemble",
+    "block": "neighbors_ridge10",
+    "description": "Other offset-logistic correction: neighbors, penalty 10"
+  },
+  {
+    "name": "ani__drug_targets_ridge1",
+    "parent": "ani",
+    "block": "drug_targets_ridge1",
+    "description": "Other offset-logistic correction: drug_targets, penalty 1"
+  },
+  {
+    "name": "ensemble__drug_targets_ridge1",
+    "parent": "ensemble",
+    "block": "drug_targets_ridge1",
+    "description": "Other offset-logistic correction: drug_targets, penalty 1"
+  },
+  {
+    "name": "ani__drug_targets_ridge10",
+    "parent": "ani",
+    "block": "drug_targets_ridge10",
+    "description": "Other offset-logistic correction: drug_targets, penalty 10"
+  },
+  {
+    "name": "ensemble__drug_targets_ridge10",
+    "parent": "ensemble",
+    "block": "drug_targets_ridge10",
+    "description": "Other offset-logistic correction: drug_targets, penalty 10"
+  },
+  {
+    "name": "ani__diseases_ridge1",
+    "parent": "ani",
+    "block": "diseases_ridge1",
+    "description": "Other offset-logistic correction: diseases, penalty 1"
+  },
+  {
+    "name": "ensemble__diseases_ridge1",
+    "parent": "ensemble",
+    "block": "diseases_ridge1",
+    "description": "Other offset-logistic correction: diseases, penalty 1"
+  },
+  {
+    "name": "ani__diseases_ridge10",
+    "parent": "ani",
+    "block": "diseases_ridge10",
+    "description": "Other offset-logistic correction: diseases, penalty 10"
+  },
+  {
+    "name": "ensemble__diseases_ridge10",
+    "parent": "ensemble",
+    "block": "diseases_ridge10",
+    "description": "Other offset-logistic correction: diseases, penalty 10"
+  },
+  {
+    "name": "ani__criteria_text_ridge1",
+    "parent": "ani",
+    "block": "criteria_text_ridge1",
+    "description": "Other offset-logistic correction: criteria_text, penalty 1"
+  },
+  {
+    "name": "ensemble__criteria_text_ridge1",
+    "parent": "ensemble",
+    "block": "criteria_text_ridge1",
+    "description": "Other offset-logistic correction: criteria_text, penalty 1"
+  },
+  {
+    "name": "ani__criteria_text_ridge10",
+    "parent": "ani",
+    "block": "criteria_text_ridge10",
+    "description": "Other offset-logistic correction: criteria_text, penalty 10"
+  },
+  {
+    "name": "ensemble__criteria_text_ridge10",
+    "parent": "ensemble",
+    "block": "criteria_text_ridge10",
+    "description": "Other offset-logistic correction: criteria_text, penalty 10"
+  }
+]

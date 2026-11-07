@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ani__half_all",
+    "parent": "ani",
+    "block": "half_all",
+    "description": "half subset average for all"
+  },
+  {
+    "name": "ensemble__half_all",
+    "parent": "ensemble",
+    "block": "half_all",
+    "description": "half subset average for all"
+  },
+  {
+    "name": "ani__half_other",
+    "parent": "ani",
+    "block": "half_other",
+    "description": "half subset average for other"
+  },
+  {
+    "name": "ensemble__half_other",
+    "parent": "ensemble",
+    "block": "half_other",
+    "description": "half subset average for other"
+  },
+  {
+    "name": "ani__pure_all",
+    "parent": "ani",
+    "block": "pure_all",
+    "description": "pure subset average for all"
+  },
+  {
+    "name": "ensemble__pure_all",
+    "parent": "ensemble",
+    "block": "pure_all",
+    "description": "pure subset average for all"
+  },
+  {
+    "name": "ani__pure_other",
+    "parent": "ani",
+    "block": "pure_other",
+    "description": "pure subset average for other"
+  },
+  {
+    "name": "ensemble__pure_other",
+    "parent": "ensemble",
+    "block": "pure_other",
+    "description": "pure subset average for other"
+  }
+]

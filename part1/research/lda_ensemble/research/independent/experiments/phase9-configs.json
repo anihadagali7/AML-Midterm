@@ -1,0 +1,668 @@
+[
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": false,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": false,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": false,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": false,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": true,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": true,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": true,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "global",
+    "postnorm": true,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": false,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": false,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": false,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": false,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": true,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": true,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": true,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "raw",
+    "postnorm": true,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": false,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": false,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": false,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": false,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": true,
+    "remove_top": 0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": true,
+    "remove_top": 1
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": true,
+    "remove_top": 3
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "scale": "standard",
+    "postnorm": true,
+    "remove_top": 5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.25
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 0.5
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 25,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 75,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 125,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 0.3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 1,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "C": 3,
+    "gamma": 0.001,
+    "pca": 150,
+    "white": 1.0
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 0.3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 0.3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 1,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 1,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "laplacian",
+    "C": 3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 0.3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 0.3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 1,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 1,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "C": 3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 0.3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 0.3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 1,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 1,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "rq",
+    "C": 3,
+    "gamma": 0.01
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "linear",
+    "C": 0.3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "linear",
+    "C": 1,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "linear",
+    "C": 3,
+    "gamma": 0.001
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 3,
+    "C": 0.3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 3,
+    "C": 1,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 3,
+    "C": 3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 4,
+    "C": 0.3,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 4,
+    "C": 1,
+    "gamma": 0.003
+  },
+  {
+    "model": "kernel_lowdensity",
+    "kernel": "poly",
+    "degree": 4,
+    "C": 3,
+    "gamma": 0.003
+  }
+]

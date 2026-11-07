@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "source_alignment": true,
+  "non_other_score_columns_unchanged": true,
+  "label_free_elementwise_transfer": true,
+  "source_models_previously_verified": true
+}

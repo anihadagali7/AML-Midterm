@@ -1,0 +1,253 @@
+{
+  "classifier": "logistic regression",
+  "C_grid": [
+    100.0,
+    1000.0
+  ],
+  "categorical_minimum_counts": [
+    3,
+    5
+  ],
+  "categorical_fields": [
+    "drug_actions",
+    "icdcodes",
+    "drug_targets",
+    "drugs",
+    "matched_drugs"
+  ],
+  "configurations": 30,
+  "reference_sample_f1": 0.9102564102564102,
+  "reference_macro_f1": 0.811421460284173,
+  "generated_labels_changed": false,
+  "generated_weights_changed": false,
+  "clustering_changed": false,
+  "embedding_scaler_fit_rows": 157,
+  "new_preprocessing_fit_rows": 1171,
+  "categorical_binary_features": "unscaled 0/1",
+  "feature_block_weight": 1.0,
+  "icd_encoding": "three-character alphanumeric category prefixes from safely parsed nested code lists",
+  "smiles_descriptors": [
+    "molecular_weight",
+    "logP",
+    "polar_surface_area",
+    "hydrogen_donors",
+    "hydrogen_acceptors",
+    "rotatable_bonds",
+    "ring_count",
+    "fraction_sp3"
+  ],
+  "smiles_aggregation": [
+    "mean",
+    "max"
+  ],
+  "smiles_extra_features": [
+    "valid_structure_count",
+    "no_valid_structure",
+    "has_invalid_structure"
+  ],
+  "numeric_imputation": "training medians for missing descriptors",
+  "numeric_scaling": "training-only StandardScaler; binary flags unscaled",
+  "numeric_imputation_fit_rows": 1171,
+  "validation_used_for_fit": false,
+  "validation_rows": 78,
+  "cutoff": 0.5,
+  "fallback": true,
+  "fitting_weight_total_per_reason": 157,
+  "matrices": {
+    "embeddings_only": {
+      "shape": [
+        1171,
+        150
+      ],
+      "kind": "none",
+      "field": null,
+      "minimum_training_trials": null
+    },
+    "drug_actions_min3": {
+      "shape": [
+        1171,
+        172
+      ],
+      "kind": "categorical",
+      "field": "drug_actions",
+      "minimum_training_trials": 3
+    },
+    "drug_actions_min5": {
+      "shape": [
+        1171,
+        168
+      ],
+      "kind": "categorical",
+      "field": "drug_actions",
+      "minimum_training_trials": 5
+    },
+    "icdcodes_min3": {
+      "shape": [
+        1171,
+        416
+      ],
+      "kind": "categorical",
+      "field": "icdcodes",
+      "minimum_training_trials": 3
+    },
+    "icdcodes_min5": {
+      "shape": [
+        1171,
+        336
+      ],
+      "kind": "categorical",
+      "field": "icdcodes",
+      "minimum_training_trials": 5
+    },
+    "drug_targets_min3": {
+      "shape": [
+        1171,
+        381
+      ],
+      "kind": "categorical",
+      "field": "drug_targets",
+      "minimum_training_trials": 3
+    },
+    "drug_targets_min5": {
+      "shape": [
+        1171,
+        320
+      ],
+      "kind": "categorical",
+      "field": "drug_targets",
+      "minimum_training_trials": 5
+    },
+    "drugs_min3": {
+      "shape": [
+        1171,
+        274
+      ],
+      "kind": "categorical",
+      "field": "drugs",
+      "minimum_training_trials": 3
+    },
+    "drugs_min5": {
+      "shape": [
+        1171,
+        232
+      ],
+      "kind": "categorical",
+      "field": "drugs",
+      "minimum_training_trials": 5
+    },
+    "matched_drugs_min3": {
+      "shape": [
+        1171,
+        221
+      ],
+      "kind": "categorical",
+      "field": "matched_drugs",
+      "minimum_training_trials": 3
+    },
+    "matched_drugs_min5": {
+      "shape": [
+        1171,
+        201
+      ],
+      "kind": "categorical",
+      "field": "matched_drugs",
+      "minimum_training_trials": 5
+    },
+    "matched_drugs_missing_only": {
+      "shape": [
+        1171,
+        151
+      ],
+      "kind": "missing_only",
+      "field": "matched_drugs",
+      "minimum_training_trials": null
+    },
+    "drug_actions_missing_only": {
+      "shape": [
+        1171,
+        151
+      ],
+      "kind": "missing_only",
+      "field": "drug_actions",
+      "minimum_training_trials": null
+    },
+    "year": {
+      "shape": [
+        1171,
+        151
+      ],
+      "kind": "year",
+      "field": null,
+      "minimum_training_trials": null
+    },
+    "smiles": {
+      "shape": [
+        1171,
+        169
+      ],
+      "kind": "smiles",
+      "field": null,
+      "minimum_training_trials": null
+    }
+  },
+  "year_scaler_mean": 2005.7933390264732,
+  "year_scaler_standard_deviation": 2.6426812789164567,
+  "best_experiment": "embeddings_only_C1000",
+  "best_sample_f1": 0.9102564102564102,
+  "best_macro_f1": 0.811421460284173,
+  "candidate": null,
+  "protected_input_sha256": {
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "experiments/classifier_features/models/embeddings_only.joblib": "cb9067524cfb6a9472c23bfd0dea9604bc383355102b015d106767eec020014c",
+    "experiments/classifier_features/datasets/fixed_targets_weights.csv": "0a68e6e4d363036a49246689bb26ab8e900ca1295c855d7e7e723e351a12387b",
+    "experiments/classifier_features/settings.json": "a6850a793fdd40630c4936fbd7654b4cd088b3f2af12fa3ec4bc8c0b40b80a79",
+    "experiments/additional_methods/datasets/dbscan_m5_q25.csv": "09a4d747e5b43893c4ba4b3c0789577cb4b767304d352ca11b4c199601559810",
+    "experiments/additional_methods/labeling_models/dbscan_m5_q25.joblib": "c5a3110894e08fc03a031e8b9ab057b5cbdd782f450ef19828b12e80b550c0f3",
+    "experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3"
+  },
+  "dataset_file_sha256": {
+    "datasets/drug_actions_min3.npz": "01b12841cdd666b30b4e840e7fae395024c8a7ec892a513651ef21f48d23ed5b",
+    "datasets/drug_actions_min3_columns.json": "9928c8f9df1682d4edd8f197cc233617c647227ca60949b66016df94ecd12ba6",
+    "datasets/drug_actions_min5.npz": "7e2c7bdf9c789523da35aae947861221fe370d7f57d456d495687e92fc959058",
+    "datasets/drug_actions_min5_columns.json": "695b7cb11f93bb1567dc2d4fbfe1ea7a2b8ff51f1a3235db18096177e50c33ef",
+    "datasets/drug_actions_missing_only.npz": "66378a6ab3262abf0a895e69b7a1be4bb9f03b49fee90ff4e0d0271ba9cb7d05",
+    "datasets/drug_actions_missing_only_columns.json": "979d45ab4a86c100bc184bd576079e96ac444de0883ff0beea0f942f32283c95",
+    "datasets/drug_targets_min3.npz": "f3e6cd30f2f5739aa86e4c53343810e2ada2c0381db2c987169e0f46d404554a",
+    "datasets/drug_targets_min3_columns.json": "f06686817b4ed60c48f6d40e4cec3ea5a07f8fa10424fb261301830bae7325ec",
+    "datasets/drug_targets_min5.npz": "77417a6bfb537b88b435010ab1c50c82cecca0aeabbdf60ad0f34488c0399dca",
+    "datasets/drug_targets_min5_columns.json": "79e18bb291ea94803bbb3636bfbcd5b51101067950c5bbbe160bfbade1b6e789",
+    "datasets/drugs_min3.npz": "62bf601304f85056f0aaa1f63e32f7b5624810facc4ca789b3089e8bb1c753ce",
+    "datasets/drugs_min3_columns.json": "95a3b0f289381f9f885c075450d55be2fabba1ff5bd925b73e97d6d79ef5c77c",
+    "datasets/drugs_min5.npz": "37f2384d3f83297271b47e8c3c558ceb1bea6bf09e2605993bb351860d8e4710",
+    "datasets/drugs_min5_columns.json": "38ba03c532349e1543b7adb5baa44c952ab43e753c0186543e50cf040808d535",
+    "datasets/embeddings_only.npz": "184d89d7381bb0039fc49ce47d24976f7b4b1b3fe0f1d480ce2559fcba749dda",
+    "datasets/embeddings_only_columns.json": "bb52dc1d4563a61ee1f47ca105f10357b4e67ad8569bf5eb066dee9048166651",
+    "datasets/fixed_targets_weights.csv": "0a68e6e4d363036a49246689bb26ab8e900ca1295c855d7e7e723e351a12387b",
+    "datasets/icdcodes_min3.npz": "00b7d7cd6c793d6ed4306125eb9a625a4a4a365ae8b4336ca0243ed2d8753424",
+    "datasets/icdcodes_min3_columns.json": "99ae22c0de9bca93599a5d6fd6c94484083600c305fd658e5ba739da3fbe4455",
+    "datasets/icdcodes_min5.npz": "fc707c8f0ae894781b753daeb27f99ad746b961df8b4b21374cc757aec4b3f4e",
+    "datasets/icdcodes_min5_columns.json": "274836e293496274bdefe5a5618f9b0219e083ea9d8a918036c44735c427a125",
+    "datasets/matched_drugs_min3.npz": "f06878d6218fff1149743b4b7aa8b94624272ec7dca0bcb03b08558bf343f400",
+    "datasets/matched_drugs_min3_columns.json": "4d1688b81ec7765b98adb8cf7e1ec252f698719d34ea4fbe2d30e13148b4a49c",
+    "datasets/matched_drugs_min5.npz": "94ddaf012215592dfbd18d284608dc655e0bca0b13f502ba41718067e57afeb6",
+    "datasets/matched_drugs_min5_columns.json": "56e269fff2226a9375915f37cca56f7e5005786f5f5d4a2039fba21c8bfcb181",
+    "datasets/matched_drugs_missing_only.npz": "4450242b024506980cadd1fb68d22f54a06303b52c2d80734225b5b95a6ed2ec",
+    "datasets/matched_drugs_missing_only_columns.json": "d80095fa627b9adde4f8ff2a02dc33939bbbc5f5d23aaf547a83122a1fde1154",
+    "datasets/smiles.npz": "6e66263962cadb4bfdd570786cbc5be9980acf44a58878a7a0923c31dd24b4a4",
+    "datasets/smiles_columns.json": "783ea4cba675470142fed1ff3d795065609f1ad97a1ff11e4c1de7837f029f18",
+    "datasets/year.npz": "d41608b38835373fe678f1a660b4d09902ff5f0d154695f68201ca9b1bb358b3",
+    "datasets/year_columns.json": "e034db61397b289402287d6ee933fd268b8e15eecba55281cdacd5ff57e2892c"
+  },
+  "selection": "sample F1; ties prefer current leader, fewer features, then original C",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.0",
+    "scipy": "1.18.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "rdkit": "2026.09.1"
+  },
+  "new_kaggle_scores": null,
+  "reported_best_kaggle": 0.87393
+}

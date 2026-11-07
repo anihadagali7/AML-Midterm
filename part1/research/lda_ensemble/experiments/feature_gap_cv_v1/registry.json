@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ani__inclusion_text",
+    "parent": "ani",
+    "block": "inclusion_text",
+    "description": "new: inclusion section word/bigram TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__inclusion_text",
+    "parent": "ensemble",
+    "block": "inclusion_text",
+    "description": "new: inclusion section word/bigram TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__exclusion_text",
+    "parent": "ani",
+    "block": "exclusion_text",
+    "description": "new: exclusion section word/bigram TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__exclusion_text",
+    "parent": "ensemble",
+    "block": "exclusion_text",
+    "description": "new: exclusion section word/bigram TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__eligibility_structure",
+    "parent": "ani",
+    "block": "eligibility_structure",
+    "description": "new: section, bullet, restriction and formatting counts",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__eligibility_structure",
+    "parent": "ensemble",
+    "block": "eligibility_structure",
+    "description": "new: section, bullet, restriction and formatting counts",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__icd_full_category",
+    "parent": "ani",
+    "block": "icd_full_category",
+    "description": "new: full ICD codes plus three-character categories",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__icd_full_category",
+    "parent": "ensemble",
+    "block": "icd_full_category",
+    "description": "new: full ICD codes plus three-character categories",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__criteria_text",
+    "parent": "ani",
+    "block": "criteria_text",
+    "description": "retry: whole eligibility text TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__criteria_text",
+    "parent": "ensemble",
+    "block": "criteria_text",
+    "description": "retry: whole eligibility text TF-IDF",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__diseases",
+    "parent": "ani",
+    "block": "diseases",
+    "description": "retry: parsed disease-name indicators",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__diseases",
+    "parent": "ensemble",
+    "block": "diseases",
+    "description": "retry: parsed disease-name indicators",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__icd_category",
+    "parent": "ani",
+    "block": "icd_category",
+    "description": "retry/control: parsed three-character ICD categories",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__icd_category",
+    "parent": "ensemble",
+    "block": "icd_category",
+    "description": "retry/control: parsed three-character ICD categories",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__drug_targets",
+    "parent": "ani",
+    "block": "drug_targets",
+    "description": "retry: protein-target indicators and missingness",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__drug_targets",
+    "parent": "ensemble",
+    "block": "drug_targets",
+    "description": "retry: protein-target indicators and missingness",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ani__matched_drugs",
+    "parent": "ani",
+    "block": "matched_drugs",
+    "description": "retry: matched drug-name indicators and missingness",
+    "decoder": "threshold .5 then nonempty argmax"
+  },
+  {
+    "name": "ensemble__matched_drugs",
+    "parent": "ensemble",
+    "block": "matched_drugs",
+    "description": "retry: matched drug-name indicators and missingness",
+    "decoder": "threshold .5 then nonempty argmax"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "status": "aborted before first fold scores",
+  "cause": "KNN graph components without labeled nodes yielded NaN probabilities; added nearest-verified fallback in 02b."
+}

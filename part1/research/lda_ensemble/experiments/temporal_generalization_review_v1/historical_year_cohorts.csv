@@ -1,0 +1,4 @@
+cohort,trials,previous_ensemble,submitted_lda_ensemble,delta,wins,note
+Through 2004,137,0.9367396593673967,0.9419099756690997,0.005170316301703254,6,"Retrospective subset of pooled CV, not a new temporal holdout; cohorts overlap."
+2005 onward,98,0.8881802721088434,0.8932823129251701,0.00510204081632655,5,"Retrospective subset of pooled CV, not a new temporal holdout; cohorts overlap."
+2008 onward,37,0.8490990990990991,0.8659909909909911,0.016891891891891886,6,"Retrospective subset of pooled CV, not a new temporal holdout; cohorts overlap."

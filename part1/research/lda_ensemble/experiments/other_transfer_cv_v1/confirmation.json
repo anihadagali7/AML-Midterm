@@ -1,0 +1,96 @@
+{
+  "comparison": [
+    {
+      "candidate": "ensemble__gold_targets_full",
+      "parent": "ensemble",
+      "block": "gold_targets_full",
+      "train_mean": 0.9262208067940552,
+      "train_sd": 0.006075118440689784,
+      "train_repeats": [
+        0.9256900212314225,
+        0.9235668789808917,
+        0.9384288747346072,
+        0.9256900212314224,
+        0.9299363057324841,
+        0.9150743099787687,
+        0.9256900212314224,
+        0.9256900212314224
+      ],
+      "train_vs_ani_delta": 0.00663481953290862,
+      "train_vs_ani_wins": 8,
+      "train_vs_ani_ties": 0,
+      "train_vs_ani_deltas": [
+        0.010615711252653814,
+        0.006369426751592355,
+        0.002123142250530785,
+        0.004246284501061348,
+        0.00849256900212303,
+        0.008492569002123251,
+        0.010615711252653703,
+        0.002123142250530674
+      ],
+      "train_vs_ensemble_delta": 0.0005307855626326963,
+      "train_vs_ensemble_wins": 4,
+      "train_vs_ensemble_ties": 2,
+      "train_vs_ensemble_deltas": [
+        0.002123142250530785,
+        0.002123142250530674,
+        0.002123142250530785,
+        -0.002123142250530785,
+        0.0,
+        -0.004246284501061459,
+        0.00424628450106157,
+        0.0
+      ],
+      "pooled_mean": 0.9179078014184396,
+      "pooled_sd": 0.006781770035072806,
+      "pooled_repeats": [
+        0.9063829787234042,
+        0.9163120567375885,
+        0.9092198581560283,
+        0.9191489361702128,
+        0.9276595744680851,
+        0.9234042553191489,
+        0.9234042553191489,
+        0.9177304964539008
+      ],
+      "pooled_vs_ani_delta": 0.008067375886524841,
+      "pooled_vs_ani_wins": 7,
+      "pooled_vs_ani_ties": 0,
+      "pooled_vs_ani_deltas": [
+        0.005673758865248235,
+        -0.0014184397163122808,
+        0.012765957446808529,
+        0.0028368794326241176,
+        0.008510638297872353,
+        0.011347517730496581,
+        0.01631205673758873,
+        0.008510638297872464
+      ],
+      "pooled_vs_ensemble_delta": 0.0014184397163121004,
+      "pooled_vs_ensemble_wins": 4,
+      "pooled_vs_ensemble_ties": 3,
+      "pooled_vs_ensemble_deltas": [
+        0.004255319148936176,
+        0.0,
+        0.0014184397163121698,
+        0.0,
+        -0.0014184397163119478,
+        0.0028368794326242286,
+        0.004255319148936176,
+        0.0
+      ],
+      "minimum_parent_gain": 0.0005307855626326963,
+      "qualifies": false,
+      "matched_transfer_control": "ensemble__gold_embedding_full",
+      "train_vs_matched_transfer_delta": -4.163336342344337e-17,
+      "train_vs_matched_transfer_wins": 3,
+      "pooled_vs_matched_transfer_delta": 0.0012411347517730792,
+      "pooled_vs_matched_transfer_wins": 4
+    }
+  ],
+  "supplementary_names": [
+    "ensemble__gold_targets_full"
+  ],
+  "diagnostic_only": true
+}

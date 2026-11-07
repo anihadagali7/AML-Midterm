@@ -1,0 +1,218 @@
+<p><strong>Retention update:</strong> This is a historical report. Code, settings and summary results are retained. Failed-run detail outputs were discarded; detailed evidence is kept for leaders and matched references. Historical audit counts describe the original checks.</p><!doctype html><html lang="en"><meta charset="utf-8"><title>Original Ani versus current LDA ensemble</title>
+    <style>body{font:16px/1.55 system-ui;max-width:1400px;margin:40px auto;padding:0 24px;color:#192a3b}table{border-collapse:collapse;font-size:13px}td,th{padding:9px;border:1px solid #d8e0e8;text-align:left}th{background:#eaf0f6}.scroll{overflow-x:auto}a{color:#075c9b}</style>
+    <h1>Original Ani versus current LDA ensemble: identical tests</h1>
+    <p>Both recipes are freshly fitted on all 80 saved grouped CV partitions, plus original validation and three chronological windows. The original Ani recipe comes directly from a548721, associated with the reported .89423 submission artifact. Every fit verifies original and later notebook function outputs on identical inputs. No settings, folds, weights or cutoffs were selected from these results.</p>
+    <ul><li>inductive: current ensemble minus original Ani is +0.012208 train and +0.011791 pooled, with 8/8 and 8/8 wins. Validation +0.014957; chronology +0.017007. Two-pool CV rule: passed.</li><li>target_inputs: current ensemble minus original Ani is +0.010881 train and +0.010461 pooled, with 7/8 and 8/8 wins. Validation +0.014957; chronology +0.005102. Two-pool CV rule: passed.</li></ul>
+    <h2>Results on the same labeled populations</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>recipe</th>
+      <th>access</th>
+      <th>train_mean</th>
+      <th>train_sd</th>
+      <th>pooled_mean</th>
+      <th>pooled_sd</th>
+      <th>validation</th>
+      <th>chronological</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original Ani (.89423 source recipe)</td>
+      <td>inductive</td>
+      <td>0.919586</td>
+      <td>0.008045</td>
+      <td>0.909840</td>
+      <td>0.007634</td>
+      <td>0.891026</td>
+      <td>0.860544</td>
+    </tr>
+    <tr>
+      <td>Latest Ani LDA source alone</td>
+      <td>inductive</td>
+      <td>0.928079</td>
+      <td>0.004799</td>
+      <td>0.915426</td>
+      <td>0.007504</td>
+      <td>0.871795</td>
+      <td>0.874150</td>
+    </tr>
+    <tr>
+      <td>Current LDA 70/15/15 ensemble</td>
+      <td>inductive</td>
+      <td>0.931794</td>
+      <td>0.005760</td>
+      <td>0.921631</td>
+      <td>0.006719</td>
+      <td>0.905983</td>
+      <td>0.877551</td>
+    </tr>
+    <tr>
+      <td>Original Ani (.89423 source recipe)</td>
+      <td>target_inputs</td>
+      <td>0.921709</td>
+      <td>0.005760</td>
+      <td>0.911702</td>
+      <td>0.005102</td>
+      <td>0.888889</td>
+      <td>0.872449</td>
+    </tr>
+    <tr>
+      <td>Latest Ani LDA source alone</td>
+      <td>target_inputs</td>
+      <td>0.926752</td>
+      <td>0.007042</td>
+      <td>0.916135</td>
+      <td>0.007317</td>
+      <td>0.899573</td>
+      <td>0.870748</td>
+    </tr>
+    <tr>
+      <td>Current LDA 70/15/15 ensemble</td>
+      <td>target_inputs</td>
+      <td>0.932590</td>
+      <td>0.007022</td>
+      <td>0.922163</td>
+      <td>0.005604</td>
+      <td>0.903846</td>
+      <td>0.877551</td>
+    </tr>
+  </tbody>
+</table></div>
+    <p>Train CV covers 157 labeled rows; pooled CV covers 235. Each is eight repeats of five grouped folds, scored on complete OOF predictions. Validation covers the original 78 rows. Chronology pools 98 predictions from the three fixed later-year windows. SD measures repeat variation, not an independent confidence interval.</p>
+    <h2>What is held equal</h2>
+    <p><strong>Inductive:</strong> both pipelines fit only eligible training gold and original masked rows, with held embedding groups purged. Query inputs enter prediction only. This reproduces the earlier Ani control and current LDA ensemble exactly while freshly refitting the tri-training/SVM partners.</p>
+    <p><strong>Target inputs:</strong> both pipelines additionally receive only the current held-out batch with every label erased. Scaling, PCA, GMM, pseudo-labeling and all ensemble partners use that same permitted input pool. This models original Ani's final submission access, in which target rows can receive pseudo-labels. It is separately labeled and is not inductive generalization. Chronological targets are visible as unlabeled inputs only in this arm.</p>
+    <p>The original notebook's historical CV used globally fitted transforms, different KFold assignments and actual Kaggle test inputs. Those historical CV results are not used here. The shared local experiment uses each fold's target batch; actual Kaggle test data is never loaded. Its smaller target batches need not reproduce a final 312-row transductive fit.</p>
+    <h2>Paired comparisons and attribution</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>candidate</th>
+      <th>control</th>
+      <th>train_delta</th>
+      <th>train_wins</th>
+      <th>pooled_delta</th>
+      <th>pooled_wins</th>
+      <th>validation_delta</th>
+      <th>chronological_delta</th>
+      <th>passes_cv_rule</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lda_ensemble__inductive</td>
+      <td>ani__inductive</td>
+      <td>0.012208</td>
+      <td>8</td>
+      <td>0.011791</td>
+      <td>8</td>
+      <td>0.014957</td>
+      <td>0.017007</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>lda_ensemble__target_inputs</td>
+      <td>ani__target_inputs</td>
+      <td>0.010881</td>
+      <td>7</td>
+      <td>0.010461</td>
+      <td>8</td>
+      <td>0.014957</td>
+      <td>0.005102</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>lda_source__inductive</td>
+      <td>ani__inductive</td>
+      <td>0.008493</td>
+      <td>7</td>
+      <td>0.005585</td>
+      <td>6</td>
+      <td>-0.019231</td>
+      <td>0.013605</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>lda_source__target_inputs</td>
+      <td>ani__target_inputs</td>
+      <td>0.005042</td>
+      <td>5</td>
+      <td>0.004433</td>
+      <td>6</td>
+      <td>0.010684</td>
+      <td>-0.001701</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>lda_ensemble__inductive</td>
+      <td>lda_source__inductive</td>
+      <td>0.003715</td>
+      <td>7</td>
+      <td>0.006206</td>
+      <td>8</td>
+      <td>0.034188</td>
+      <td>0.003401</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>lda_ensemble__target_inputs</td>
+      <td>lda_source__target_inputs</td>
+      <td>0.005839</td>
+      <td>5</td>
+      <td>0.006028</td>
+      <td>8</td>
+      <td>0.004274</td>
+      <td>0.006803</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ani__target_inputs</td>
+      <td>ani__inductive</td>
+      <td>0.002123</td>
+      <td>4</td>
+      <td>0.001862</td>
+      <td>4</td>
+      <td>-0.002137</td>
+      <td>0.011905</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>lda_source__target_inputs</td>
+      <td>lda_source__inductive</td>
+      <td>-0.001327</td>
+      <td>3</td>
+      <td>0.000709</td>
+      <td>4</td>
+      <td>0.027778</td>
+      <td>-0.003401</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>lda_ensemble__target_inputs</td>
+      <td>lda_ensemble__inductive</td>
+      <td>0.000796</td>
+      <td>4</td>
+      <td>0.000532</td>
+      <td>3</td>
+      <td>-0.002137</td>
+      <td>0.000000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>lda_ensemble__inductive</td>
+      <td>ani__target_inputs</td>
+      <td>0.010085</td>
+      <td>8</td>
+      <td>0.009929</td>
+      <td>7</td>
+      <td>0.017094</td>
+      <td>0.005102</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table></div>
+    <p>The first two rows are primary matched-access comparisons. Source-only rows separate the LDA revision from the contribution of the two ensemble partners. Access contrasts measure the input-policy effect. The final row compares the current inductive pipeline with original Ani's target-input policy; that contrast combines model and access differences.</p>
+    <h2>Original code and checks</h2>
+    <p>Only function definitions from the two preserved notebooks are executed. Original loading, exploratory evaluation and export cells are not run. Verification checks source hashes, labels, row alignment, group purges, target-label erasure and manual rescoring of every saved prediction. Gold labels remain unchanged. All six recipe/access combinations receive all predeclared checks.</p>
+    <p>These are reused development labels. Passing the paired CV rule supports a local improvement; it does not establish a new Kaggle score. Original Ani's reported .89423 remains attached to its exact historical artifact. No actual test prediction, final235 refit, submission or promotion was performed.</p>
+    <p><a href="comparison.csv">Full comparison</a> · <a href="paired_comparisons.csv">All repeat deltas</a> · <a href="per_label_metrics.csv">Per-label metrics</a> · <a href="summary.json">Per-trial changes (summary retained)</a> · <a href="protocol.json">Frozen protocol</a> · <a href="verification.json">Verification</a> · <a href="summary.json">Summary</a></p></html>

@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__revision_full",
+    "ensemble__revision_full",
+    "ani__regularization_only",
+    "ensemble__regularization_only",
+    "ani__lda_both_c03",
+    "ensemble__lda_both_c03",
+    "ani__lda_final_only",
+    "ensemble__lda_final_only"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All recipes, predeclared before scoring"
+}

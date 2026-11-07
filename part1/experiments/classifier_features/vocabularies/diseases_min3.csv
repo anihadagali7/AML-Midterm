@@ -1,0 +1,146 @@
+disease,training_trials,known_label_trials
+acute lymphoblastic leukemia,3,0
+acute myelogenous leukemia,3,0
+acute myeloid leukemia,6,1
+adenocarcinoma of the colon,3,1
+adenocarcinoma of the prostate,5,1
+adenocarcinoma of the rectum,3,1
+alzheimer's disease,5,0
+anemia,16,2
+"arthritis, rheumatoid",3,0
+asthma,4,1
+atherosclerosis,4,0
+atrial fibrillation,4,1
+benign prostatic hyperplasia,3,0
+bladder cancer,15,7
+brain and central nervous system tumors,7,3
+brain tumor,4,0
+breast cancer,81,12
+breast neoplasms,11,1
+cancer,16,0
+"carcinoma, hepatocellular",3,0
+"carcinoma, non-small-cell lung",17,1
+"carcinoma, renal cell",3,1
+"carcinoma, squamous cell",5,0
+cardiovascular diseases,5,0
+cervical cancer,10,2
+chronic hepatitis c,3,0
+chronic kidney disease,5,0
+chronic lymphocytic leukemia,8,2
+chronic myelogenous leukemia,4,0
+chronic myeloproliferative disorders,6,4
+cognitive/functional effects,3,1
+colon cancer,3,0
+colorectal cancer,26,3
+colorectal carcinoma,3,0
+colorectal neoplasms,4,0
+congestive heart failure,4,1
+crohn's disease,10,3
+depression,5,1
+"diabetes mellitus, type 2",7,2
+drug/agent toxicity by tissue/organ,3,1
+epilepsy,3,0
+esophageal cancer,15,3
+esophageal neoplasms,4,1
+extrahepatic bile duct cancer,6,2
+fallopian tube cancer,10,1
+fatigue,5,1
+gallbladder cancer,5,1
+gastric cancer,12,1
+gastrointestinal stromal tumor,3,0
+glioblastoma multiforme,6,0
+graft versus host disease,9,4
+head and neck cancer,25,5
+healthy,3,0
+heart diseases,4,0
+hematologic diseases,4,1
+hepatitis b,3,0
+"hepatitis c, chronic",3,0
+hepatocellular carcinoma,8,0
+hiv infection,4,1
+hiv infections,13,0
+hypercholesterolemia,6,0
+hypertension,6,1
+idiopathic pulmonary fibrosis,3,0
+kidney cancer,8,1
+leukemia,45,13
+liver cancer,9,3
+lung cancer,41,7
+"lung cancer, non-small cell",3,0
+"lupus erythematosus, systemic",3,0
+lupus nephritis,4,0
+lymphoma,48,16
+"lymphoma, b-cell",4,1
+"lymphoma, follicular",4,0
+"lymphoma, non-hodgkin",6,0
+mantle cell lymphoma,3,1
+melanoma,12,0
+melanoma (skin),4,2
+mesothelioma,3,0
+metastatic breast cancer,9,1
+metastatic cancer,12,2
+metastatic colorectal cancer,5,0
+metastatic melanoma,6,1
+multiple myeloma,33,5
+multiple myeloma and plasma cell neoplasm,11,4
+multiple sclerosis,7,0
+myelodysplastic syndrome,7,1
+myelodysplastic syndrome (mds),3,0
+myelodysplastic syndromes,20,4
+myeloma,3,1
+nausea,3,0
+nausea and vomiting,3,0
+neoplasms,3,0
+"neoplasms, breast",3,0
+neuroblastoma,3,1
+non small cell lung cancer,7,1
+non-hodgkin's lymphoma,11,2
+non-small cell lung cancer,18,1
+non-small-cell lung cancer,6,0
+non-small-cell lung carcinoma,3,1
+osteoarthritis,4,0
+osteoporosis,3,0
+ovarian cancer,24,5
+overactive bladder,4,1
+pain,12,1
+pancreatic cancer,22,0
+pancreatic neoplasms,3,1
+parkinson's disease,9,6
+peritoneal cancer,3,0
+polycythemia vera,3,1
+primary peritoneal cavity cancer,5,1
+prostate cancer,41,10
+prostatic neoplasms,7,0
+psoriasis,4,0
+"pulmonary disease, chronic obstructive",4,0
+pulmonary hypertension,11,1
+rectal cancer,6,0
+recurrent breast cancer,4,0
+recurrent colon cancer,4,1
+recurrent melanoma,3,0
+recurrent rectal cancer,4,1
+renal cell carcinoma,9,0
+rheumatoid arthritis,7,0
+sarcoma,7,3
+schizophrenia,13,0
+secondary myelofibrosis,3,0
+sepsis,4,0
+sickle cell anemia,3,1
+sickle cell disease,8,1
+skin cancer,3,0
+small cell lung cancer,6,0
+solid tumor,3,0
+squamous cell carcinoma,3,0
+stage i prostate cancer,3,0
+stage iv breast cancer,4,0
+stage iv colon cancer,3,1
+stage iv melanoma,3,0
+stage iv prostate cancer,4,0
+stage iv rectal cancer,3,1
+systemic lupus erythematosus,4,1
+thromboembolism,3,0
+type 2 diabetes,6,0
+ulcerative colitis,4,1
+"unspecified adult solid tumor, protocol specific",6,1
+"unspecified childhood solid tumor, protocol specific",5,1
+uterine cancer,3,1

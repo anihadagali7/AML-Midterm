@@ -1,0 +1,90 @@
+[
+  {
+    "name": "trusted_r2_control",
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_none_C0.1",
+    "family": "labelset",
+    "labelset_balance": "none",
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_none_C0.3",
+    "family": "labelset",
+    "labelset_balance": "none",
+    "C": 0.3,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_none_C1",
+    "family": "labelset",
+    "labelset_balance": "none",
+    "C": 1.0,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_reason_C0.1",
+    "family": "labelset",
+    "labelset_balance": "reason",
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_reason_C0.3",
+    "family": "labelset",
+    "labelset_balance": "reason",
+    "C": 0.3,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_reason_C1",
+    "family": "labelset",
+    "labelset_balance": "reason",
+    "C": 1.0,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_combination_C0.1",
+    "family": "labelset",
+    "labelset_balance": "combination",
+    "C": 0.1,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_combination_C0.3",
+    "family": "labelset",
+    "labelset_balance": "combination",
+    "C": 0.3,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_combination_C1",
+    "family": "labelset",
+    "labelset_balance": "combination",
+    "C": 1.0,
+    "pseudo_weight": 0.25,
+    "rounds": 2
+  },
+  {
+    "name": "labelset_reason_expected",
+    "family": "labelset",
+    "labelset_balance": "reason",
+    "C": 0.3,
+    "pseudo_weight": 0.25,
+    "rounds": 2,
+    "decision": "expected_labelset"
+  }
+]

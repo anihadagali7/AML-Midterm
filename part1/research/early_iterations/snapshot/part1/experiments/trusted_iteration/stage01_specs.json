@@ -1,0 +1,56 @@
+[
+  {
+    "name": "trust_augmented_w1",
+    "pseudo_weight": 1.0,
+    "balance_source": "augmented"
+  },
+  {
+    "name": "trust_augmented_w0.5",
+    "pseudo_weight": 0.5,
+    "balance_source": "augmented"
+  },
+  {
+    "name": "trust_augmented_w0.25",
+    "pseudo_weight": 0.25,
+    "balance_source": "augmented"
+  },
+  {
+    "name": "trust_augmented_w0.1",
+    "pseudo_weight": 0.1,
+    "balance_source": "augmented"
+  },
+  {
+    "name": "trust_verified_w1",
+    "pseudo_weight": 1.0,
+    "balance_source": "verified"
+  },
+  {
+    "name": "trust_verified_w0.5",
+    "pseudo_weight": 0.5,
+    "balance_source": "verified"
+  },
+  {
+    "name": "trust_verified_w0.25",
+    "pseudo_weight": 0.25,
+    "balance_source": "verified"
+  },
+  {
+    "name": "trust_verified_w0.1",
+    "pseudo_weight": 0.1,
+    "balance_source": "verified"
+  },
+  {
+    "name": "trust_augmented_w0.25_masscontrol",
+    "pseudo_weight": 0.25,
+    "normalize_mass": true
+  },
+  {
+    "name": "trust_weighted_w0.25",
+    "pseudo_weight": 0.25,
+    "balance_source": "weighted"
+  },
+  {
+    "name": "control_inner_other",
+    "decision": "inner_other"
+  }
+]

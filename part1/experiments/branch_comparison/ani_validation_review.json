@@ -1,0 +1,36 @@
+{
+  "ani_branch": "origin/ani",
+  "ani_commit": "a5487215115e30afb68ab865bc5fd98be6b3e199",
+  "ani_notebook": "midterm/part1_best_model.ipynb",
+  "ani_validation_metrics_reproduced": {
+    "sample_F1": 0.8931623931623932,
+    "macro_F1": 0.7137002637312235,
+    "F1_Safety": 0.9473684210526315,
+    "F1_Funding": 0.4,
+    "F1_Efficacy": 0.7407407407407407,
+    "F1_Recruitment": 0.9803921568627451,
+    "F1_Other": 0.5
+  },
+  "ani_reported_kaggle_score": 0.89423,
+  "ani_generated_trials_in_validation_fit": 985,
+  "ani_verified_training_labels": 157,
+  "ani_submission_verified_labels_after_refit": 235,
+  "our_branch": "experiments/logistic-semisupervised",
+  "our_model": "dbscan_m5_q25__logistic_C1000",
+  "our_validation_sample_f1": 0.9102564102564102,
+  "our_validation_macro_f1": 0.811421460284173,
+  "our_current_model_kaggle_score": null,
+  "our_model_verified_training_labels": 157,
+  "sample_f1_difference": 0.017094017094017033,
+  "same_validation_trials": 78,
+  "data_files_byte_identical": true,
+  "source_data_sha256": {
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a"
+  },
+  "reproduction": "Reviewed and executed only notebook setup, preprocessing, model definitions, evaluation helpers, and final validation call. No CV, test submission generation, or train+validation refit was run.",
+  "protocol_difference": "Ani fits scaler/PCA/GMM on all train/validation/test embeddings without validation/test labels; our scalers/clustering use training rows only. Ani refits the submitted classifier with validation labels; our prepared current candidate does not.",
+  "ani_repeated_cv_sample_f1_displayed": 0.914,
+  "cv_note": "The repeated-CV result is distinct from the held-out 78-trial validation score and should not be compared directly with our validation F1."
+}

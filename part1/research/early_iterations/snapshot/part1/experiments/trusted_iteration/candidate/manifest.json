@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-11-06T09:01:52.162742+00:00",
+  "status": "unsubmitted recommended candidate; fixed benchmark reference unchanged",
+  "selected": {
+    "name": "final_r2_control",
+    "stage": "06_final_regularization_check",
+    "spec": {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_control"
+    },
+    "reason": "Best single-model CV result; gains in all3chronological checks. Equal C0.1/C0.3 average gains only0.000177 and has higher repeat variability, so retain one model.",
+    "caveat": "Old78-row validation is lower than Ani. All local checks are reused development evidence; Kaggle performance unknown.",
+    "primary_reference": "ani_train_only",
+    "test_fitting_access": false
+  },
+  "known_labels": 235,
+  "originally_unlabeled_rows": 1014,
+  "test_rows": 312,
+  "final_generated_counts": [
+    698,
+    766
+  ],
+  "final_fit_weights": [
+    {
+      "step": 0,
+      "known": 235.0,
+      "generated": 0.0
+    },
+    {
+      "step": 1,
+      "known": 235.0,
+      "generated": 105.88540633088871
+    },
+    {
+      "step": 2,
+      "known": 235.0,
+      "generated": 123.2000130320679
+    }
+  ],
+  "cv_metrics": {
+    "mean_f1": 0.915336879432624,
+    "repeat_sd": 0.0041516846774667,
+    "macro_f1": 0.8315224863211322,
+    "f1_Safety": 0.920668959891649,
+    "f1_Funding": 0.7732213438735178,
+    "f1_Efficacy": 0.86762185227407,
+    "f1_Recruitment": 0.9775362874711864,
+    "f1_Other": 0.618563988095238,
+    "delta_ani": 0.0064716312056738,
+    "repeat_wins_ani": 7.0,
+    "fold_wins_ani": 25.0,
+    "fold_ties_ani": 7.0,
+    "delta_dbscan": 0.0270212765957446,
+    "repeat_wins_dbscan": 8.0,
+    "fold_wins_dbscan": 34.0,
+    "fold_ties_dbscan": 3.0
+  },
+  "kaggle_score": null,
+  "independent_fold_replays": 40,
+  "independent_diagnostic_replays": 4,
+  "model_reload_exact": true,
+  "protected_originals_unchanged": true,
+  "versions": {
+    "python": "3.12.13",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "joblib": "1.6.0"
+  },
+  "source_sha256": {
+    "trusted_solution.py": "237da5fff11d849bfb8bdd5c9df4e9758bf5bd82ac1cf6724a47e118e7af377a",
+    "trusted_models.py": "5ac7a95c6b648bfb02f9d64a310a5dc9adeea43c2f65704f4fcb4c167e26eb5a",
+    "trusted_benchmark.py": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+    "trusted_average.py": "94c1d60a046af2d41c2d5dbe86dc0b47ad02af38656bc721bcd213a7d8562a28",
+    "trusted_finalize.py": "e6ce08e54a9209d7b359a30f14ad4b98df9604df11943fe9320a487e58fc3c10"
+  },
+  "input_sha256": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "artifact_sha256": {
+    "independent_40_fold_replay.csv": "e691d88ad118f84eeed58d635c71f14c1bf6f3ec32473fdadf27817250bcba5b",
+    "generated_labels.csv": "061efc976e487af7acc846887adb28a91956fe11c0a2de75579df8f73a667664",
+    "trusted_two_pass.joblib": "81cf0a1aac66cf4917066874fae4aced0f465257f98dadfe8013249e956a05a1",
+    "part1_train_augmented.csv": "2547dc9af141b4f03413a7c3aa0070a32bbfb0995c2a19b375493e3429ac0510",
+    "test_scores.csv": "7cef5f5d6a1ee639c091f38b48964ce7ae69dc48d92d79cb37e905520c069012",
+    "part1_trusted_submission.csv": "b13b8a44436b73de73cc6b088efa69a42de7978754322ff67182c3b3248ae55b",
+    "independent_diagnostic_replay.csv": "3eb6ec068b4da2902defede9f374afede1d3ae37555a8aea10021c5653594502"
+  }
+}

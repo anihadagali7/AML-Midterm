@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "exact_source_alignment": true,
+  "both_ensemble_controls_reconstructed": true,
+  "svm_binary_votes_verified": true,
+  "label_free_elementwise_mix": true,
+  "query_batch_invariance": true,
+  "source_models_previously_verified": true
+}

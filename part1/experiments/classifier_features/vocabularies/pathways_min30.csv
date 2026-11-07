@@ -1,0 +1,27 @@
+reactome_id,pathway_name,pathway_level,training_trials,known_label_trials
+R-HSA-109582,Hemostasis,0,322,51
+R-HSA-112316,Neuronal System,0,217,32
+R-HSA-1266738,Developmental Biology,0,374,50
+R-HSA-1430728,Metabolism,0,348,41
+R-HSA-1474244,Extracellular matrix organization,0,139,22
+R-HSA-1500931,Cell-Cell communication,0,113,6
+R-HSA-162582,Signal Transduction,0,469,66
+R-HSA-1640170,Cell Cycle,0,356,59
+R-HSA-1643685,Disease,0,470,67
+R-HSA-168256,Immune System,0,378,58
+R-HSA-1852241,Organelle biogenesis and maintenance,0,151,19
+R-HSA-382551,Transport of small molecules,0,163,34
+R-HSA-392499,Metabolism of proteins,0,366,63
+R-HSA-397014,Muscle contraction,0,70,14
+R-HSA-4839726,Chromatin organization,0,43,2
+R-HSA-5357801,Programmed Cell Death,0,147,19
+R-HSA-5653656,Vesicle-mediated transport,0,257,39
+R-HSA-69306,DNA Replication,0,52,8
+R-HSA-73894,DNA Repair,0,106,24
+R-HSA-74160,Gene expression (Transcription),0,328,45
+R-HSA-8953854,Metabolism of RNA,0,46,2
+R-HSA-8953897,Cellular responses to stimuli,0,366,57
+R-HSA-9609507,Protein localization,0,45,11
+R-HSA-9612973,Autophagy,0,159,21
+R-HSA-9748784,Drug ADME,0,50,7
+R-HSA-9909396,Circadian clock,0,33,2

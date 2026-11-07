@@ -1,0 +1,356 @@
+[
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "joint",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "joint",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "initial",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "initial",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "gold",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "balance_source": "gold",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0.1
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": false,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0.5
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "joint",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "joint",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "initial",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "initial",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "gold",
+    "gradual": false,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "balance_source": "gold",
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 0.6,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.01,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 2,
+    "gamma": 0.001,
+    "pseudo_weight": 0.08,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0.1
+  },
+  {
+    "model": "lowdensity_v3",
+    "C": 1,
+    "gamma": 0.001,
+    "pseudo_weight": 0.03,
+    "transductive": true,
+    "gradual": true,
+    "iterations": 15,
+    "cluster_gate": true,
+    "clusters": 10,
+    "gate_weight": 0.5
+  }
+]

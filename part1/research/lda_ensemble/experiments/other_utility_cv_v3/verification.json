@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "stages_rescored": 80,
+  "repeats_rescored": 320,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "gradient_error": 4.350545111017857e-07,
+    "verified_utility_examples": true,
+    "query_invariance": true,
+    "native_control_parity": true,
+    "objective_restored_after_each_fit": true
+  }
+}

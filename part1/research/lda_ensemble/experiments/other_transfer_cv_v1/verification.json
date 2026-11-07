@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "stages_rescored": 34,
+  "repeats_rescored": 130,
+  "folds_verified": 80,
+  "protected_sources_unchanged": true,
+  "native_control_parity_all_folds": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "parser_and_boundary_checks": {
+    "passed": true,
+    "source_alignment": true,
+    "non_other_score_columns_unchanged": true,
+    "label_free_elementwise_transfer": true,
+    "source_models_previously_verified": true
+  }
+}

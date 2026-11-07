@@ -1,0 +1,18 @@
+{
+  "names": [
+    "ani__gmm_binary_all",
+    "ensemble__gmm_binary_all",
+    "ani__gmm_binary_other",
+    "ensemble__gmm_binary_other",
+    "ani__neighbors_binary_all",
+    "ensemble__neighbors_binary_all",
+    "ani__neighbors_binary_other",
+    "ensemble__neighbors_binary_other",
+    "ani__both_binary_all",
+    "ensemble__both_binary_all",
+    "ani__both_binary_other",
+    "ensemble__both_binary_other"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All recipes as declared before scoring"
+}

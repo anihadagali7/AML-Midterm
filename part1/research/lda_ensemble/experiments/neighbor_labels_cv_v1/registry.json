@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ani__augmented_binary10_all",
+    "parent": "ani",
+    "block": "augmented_binary10_all",
+    "description": "augmented_binary10, all score correction"
+  },
+  {
+    "name": "ensemble__augmented_binary10_all",
+    "parent": "ensemble",
+    "block": "augmented_binary10_all",
+    "description": "augmented_binary10, all score correction"
+  },
+  {
+    "name": "ani__augmented_binary10_other",
+    "parent": "ani",
+    "block": "augmented_binary10_other",
+    "description": "augmented_binary10, other score correction"
+  },
+  {
+    "name": "ensemble__augmented_binary10_other",
+    "parent": "ensemble",
+    "block": "augmented_binary10_other",
+    "description": "augmented_binary10, other score correction"
+  },
+  {
+    "name": "ani__gold_fractional10_all",
+    "parent": "ani",
+    "block": "gold_fractional10_all",
+    "description": "gold_fractional10, all score correction"
+  },
+  {
+    "name": "ensemble__gold_fractional10_all",
+    "parent": "ensemble",
+    "block": "gold_fractional10_all",
+    "description": "gold_fractional10, all score correction"
+  },
+  {
+    "name": "ani__gold_fractional10_other",
+    "parent": "ani",
+    "block": "gold_fractional10_other",
+    "description": "gold_fractional10, other score correction"
+  },
+  {
+    "name": "ensemble__gold_fractional10_other",
+    "parent": "ensemble",
+    "block": "gold_fractional10_other",
+    "description": "gold_fractional10, other score correction"
+  },
+  {
+    "name": "ani__gold_binary10_all",
+    "parent": "ani",
+    "block": "gold_binary10_all",
+    "description": "gold_binary10, all score correction"
+  },
+  {
+    "name": "ensemble__gold_binary10_all",
+    "parent": "ensemble",
+    "block": "gold_binary10_all",
+    "description": "gold_binary10, all score correction"
+  },
+  {
+    "name": "ani__gold_binary10_other",
+    "parent": "ani",
+    "block": "gold_binary10_other",
+    "description": "gold_binary10, other score correction"
+  },
+  {
+    "name": "ensemble__gold_binary10_other",
+    "parent": "ensemble",
+    "block": "gold_binary10_other",
+    "description": "gold_binary10, other score correction"
+  },
+  {
+    "name": "ani__gold_binary3_all",
+    "parent": "ani",
+    "block": "gold_binary3_all",
+    "description": "gold_binary3, all score correction"
+  },
+  {
+    "name": "ensemble__gold_binary3_all",
+    "parent": "ensemble",
+    "block": "gold_binary3_all",
+    "description": "gold_binary3, all score correction"
+  },
+  {
+    "name": "ani__gold_binary3_other",
+    "parent": "ani",
+    "block": "gold_binary3_other",
+    "description": "gold_binary3, other score correction"
+  },
+  {
+    "name": "ensemble__gold_binary3_other",
+    "parent": "ensemble",
+    "block": "gold_binary3_other",
+    "description": "gold_binary3, other score correction"
+  }
+]

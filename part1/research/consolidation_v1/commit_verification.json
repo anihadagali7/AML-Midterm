@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "branch": "codex/part1-research-integration",
+  "verified_commit": "4d4d273e937e62835b1c6b250458d8895249bfcf",
+  "tag_checks": [
+    {
+      "tag": "part1-ani-original-kaggle-0.89423",
+      "commit": "bfcaf823ad4c7583e8b1c45ec3b14abecb3109b1",
+      "csv_and_recipe_hashes_match": true
+    },
+    {
+      "tag": "part1-tri-training-trainval235-kaggle-0.88012",
+      "commit": "152ab391bc0bb0577cf187c0f5d7a58e8ce1cad8",
+      "csv_and_recipe_hashes_match": true
+    },
+    {
+      "tag": "part1-three-way-trainval235-kaggle-0.89401",
+      "commit": "a1bfe7030bdef93b3c041a703edef75acfd21c02",
+      "csv_and_recipe_hashes_match": true
+    },
+    {
+      "tag": "part1-lda-ensemble-trainval235-kaggle-0.89401",
+      "commit": "107e39dec432493c3b252a307401b4dc88b8f58e",
+      "csv_and_recipe_hashes_match": true
+    },
+    {
+      "tag": "part1-anchored-trainval235-kaggle-0.89636",
+      "commit": "b7b04bb848bb80747c62f912b4f2f2a90c4047e4",
+      "csv_and_recipe_hashes_match": true
+    }
+  ],
+  "clean_committed_files_checks": [
+    {
+      "command": "part1/research/consolidation_v1/verify.py",
+      "passed": true
+    },
+    {
+      "command": "part1/research/consolidation_v1/verify_leaders.py",
+      "passed": true
+    },
+    {
+      "command": "part1/current_leaders_local.py verify",
+      "passed": true
+    },
+    {
+      "command": "part1/research/consolidation_v1/reproduce.py other_transfer_cv_v1 --check",
+      "passed": true
+    }
+  ],
+  "active_checkout_unchanged": true,
+  "branch_merges": 0,
+  "submissions_uploaded": 0,
+  "model_refits": 0,
+  "note": "Verified from Git objects and a disposable export of committed Part 1 files, not untracked working files. Export removed after verification."
+}

@@ -1,0 +1,31 @@
+{
+  "purpose": "Reproduce all 80 folds of the current LDA control; no candidate selection or supplemental evaluation",
+  "control": "current_lda_control",
+  "sources": {
+    "current_reference.py": "aeb2d2782b226086ae09cd1efc78ba37915c0e324a3cbf64f6fd7f4648dc98ca",
+    "models_v11.py": "2ef7c56ff8bd79807bb401a56c6b6784ce7f41a52411a0522bdf536dd8d63af3",
+    "study_v11.py": "e85f8b34282b6dbe9708415b630500d16ca8ff222060c94ac7949a19fd3fb2fb"
+  },
+  "current_reference_scores": {
+    "train": [
+      0.9320594479830148,
+      0.9278131634819534,
+      0.9384288747346071,
+      0.9299363057324841,
+      0.9341825902335458,
+      0.9193205944798301,
+      0.9363057324840764,
+      0.9363057324840764
+    ],
+    "pooled": [
+      0.9134751773049645,
+      0.9191489361702128,
+      0.9134751773049645,
+      0.9304964539007092,
+      0.9304964539007092,
+      0.9219858156028369,
+      0.9276595744680851,
+      0.9163120567375885
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "recipe": "three-way-trainval235",
+  "reported_kaggle_score": 0.89401,
+  "tag": "part1-three-way-trainval235-kaggle-0.89401",
+  "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/three_way_trainval235__kaggle_0.89401.csv",
+  "submission_sha256": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f",
+  "frozen_recipe_file": "part1/research/lda_ensemble/research/independent/predictions/three_way_trainval235/frozen_recipe.json",
+  "frozen_recipe_sha256": "d997c8a8c7a4482273f787985dfd5ae121ce276a9a39dd70f110e3c69955e4a9",
+  "verified_training_labels": 235,
+  "fitting_access": "inductive; test inputs used only for prediction",
+  "score_provenance": "User report in this conversation; no live Kaggle lookup",
+  "record_type": "Backfilled commit checkpoint for an earlier manually submitted result; no new upload or refit.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "historical_result_file": "part1/research/lda_ensemble/research/independent/predictions/three_way_trainval235/kaggle_result.json"
+}

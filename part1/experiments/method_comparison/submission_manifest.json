@@ -1,0 +1,38 @@
+{
+  "submissions": [
+    {
+      "experiment": "gmm_tied_k10__logistic_C1000",
+      "dataset": "gmm_tied_k10",
+      "classifier": "logistic",
+      "parameter": 1000.0,
+      "validation_sample_f1": 0.9059829059829059,
+      "validation_macro_f1": 0.8116263524085356,
+      "submission_file": "submissions/part1_gmm_tied_k10_logistic_C1000_submission.csv",
+      "test_rows": 312,
+      "test_fallback_trials": 14,
+      "test_trials_changed_from_submitted_k02": 54,
+      "submission_sha256": "c8366ea1a0e3600295f967fe3e17916d92caaa5823c9724ba23e8f2531863d09",
+      "model_sha256": "f2cbb7e7ccbad42d7fde4b40d9896435e9f87bb74698332db1a3500352a01c61",
+      "kaggle_score": null,
+      "kaggle_status": "pending manual submission"
+    },
+    {
+      "experiment": "kmeans_k08__logistic_C1000",
+      "dataset": "kmeans_k08",
+      "classifier": "logistic",
+      "parameter": 1000.0,
+      "validation_sample_f1": 0.9017094017094016,
+      "validation_macro_f1": 0.8090767180658671,
+      "submission_file": "submissions/part1_kmeans_k08_logistic_C1000_submission.csv",
+      "test_rows": 312,
+      "test_fallback_trials": 12,
+      "test_trials_changed_from_submitted_k02": 58,
+      "submission_sha256": "20b591e87b1868ca579d90b3c62028ad6bc3bfc5ce8414f223c16eaa96a27055",
+      "model_sha256": "fc97400056d150fb507b469811a2e5c7b798a73b69093b0e73c9e55f82ab1331",
+      "kaggle_score": null,
+      "kaggle_status": "pending manual submission"
+    }
+  ],
+  "comparator_score": 0.87393,
+  "comparator_source": "reported by Michael for original K=2; current-best-kaggle tag unchanged"
+}

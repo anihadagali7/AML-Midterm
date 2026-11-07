@@ -1,0 +1,9 @@
+{
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/train3/ensemble__revision_full.npz": "c0e3d5b9129fd5dfbb8784387c317c3adea70e82c79b019648a9fdd7be7ab3dc",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/train5/ensemble__revision_full.npz": "af22f683dc2579c6d66afc4afcfebd8e2de2ecfc973312c0b0ceed9a308118cf",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/pooled3/ensemble__revision_full.npz": "9103ed86ae148cd6299cee2f03be1fd1d227e6d2ae04097cc588db051c4afdd6",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/pooled5/ensemble__revision_full.npz": "7ddd76214064dff3f3202cd8be141bfb403f78a829b33f7bbf1e4eb692d004b9",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/protocol.json": "c51db994b7832b641f23e59486cd3987dc9e97e8f3e222ae6bb30be93f16cb34",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/study.py": "6dd41316bf8f0472b5a9ff80b0a3ba57842a8d873bdab4e2a5d0ee0defd7ea9b",
+  "/Users/matthew/Desktop/michael/AML-Midterm-integration/part1/experiments/ani_lda_revision_cv_v1/independent_verification.json": "13260ee2d42e64350fd71efeb4af69a933be6efdc5e70760c2020af618f53db8"
+}

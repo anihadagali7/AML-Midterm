@@ -1,0 +1,6 @@
+{
+  "status": "stopped_in_confirmation",
+  "reason": "L-BFGS-B returned ABNORMAL during train5 seed20261130 fold2; assertion stopped all further scoring. No fold omitted.",
+  "source_sha256": "cdf0f888aabf9e0f164dbce65b39886873848287038472b5bb1441cc496275f9",
+  "resolution": "Rerun every fold in separately frozen v3 with longer line search and explicit gradient convergence checks. No recipe or selection change."
+}

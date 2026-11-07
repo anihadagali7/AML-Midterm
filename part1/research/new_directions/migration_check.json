@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checked_utc": "2026-11-07T18:10:53.003065+00:00",
+  "scope": "One-time migration check against original saved results before discarding raw attempt records; not a fresh statistical confirmation.",
+  "scored_configurations": 136,
+  "studies": 14,
+  "source_complete_oof_repeats_rescored": 926,
+  "source_outer_folds": 4630,
+  "source_supplementary_fits_rescored": 40,
+  "frozen_source_hash_checks": 473,
+  "data_and_protocol_hashes_checked": true,
+  "exact_recipe_settings_checked": true,
+  "all_repeat_artifacts_accounted_for": true,
+  "original_artifact_digest": "5977884d87991eefd59dceb1fcc0f15541f59525a0c455fa8455f8a09c176cb2",
+  "original_ledger_sha256": "234a338bf0c37d753a31d6d5445802fa1a1e64988cd62c965d4427f8536c2f36",
+  "compact_summary_sha256": {
+    "attempts.csv": "f9be7229c1c6b0662affc5bd199634eb4fb16cfae9ca374952f1df1cc6a863af",
+    "supplementary.csv": "c0cef0379f60905c57766d202b1d7cd7d7a0d06e0405fd3bcb5c1eb3aee1b5a2",
+    "studies.csv": "2bfede56124c0689c4eea02e2251b4dfddaca12de4840dda46f81bee387ab66f",
+    "failures.json": "5e4f7fd0a90c3843f122c42fdfd29d643bec92a854a446663ea535cac88769cf"
+  },
+  "model_fitting_during_summary_migration": false,
+  "submitted": false,
+  "compact_csv_line_endings_normalized_without_record_changes": true
+}

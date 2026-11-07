@@ -1,0 +1,122 @@
+[
+  {
+    "name": "ani__augmented_none",
+    "parent": "ani",
+    "block": "augmented_none",
+    "description": "augmented final LR with fold-selected none"
+  },
+  {
+    "name": "ensemble__augmented_none",
+    "parent": "ensemble",
+    "block": "augmented_none",
+    "description": "augmented final LR with fold-selected none"
+  },
+  {
+    "name": "ani__augmented_criteria_words",
+    "parent": "ani",
+    "block": "augmented_criteria_words",
+    "description": "augmented final LR with fold-selected criteria_words"
+  },
+  {
+    "name": "ensemble__augmented_criteria_words",
+    "parent": "ensemble",
+    "block": "augmented_criteria_words",
+    "description": "augmented final LR with fold-selected criteria_words"
+  },
+  {
+    "name": "ani__augmented_criteria_chars",
+    "parent": "ani",
+    "block": "augmented_criteria_chars",
+    "description": "augmented final LR with fold-selected criteria_chars"
+  },
+  {
+    "name": "ensemble__augmented_criteria_chars",
+    "parent": "ensemble",
+    "block": "augmented_criteria_chars",
+    "description": "augmented final LR with fold-selected criteria_chars"
+  },
+  {
+    "name": "ani__augmented_drug_chars",
+    "parent": "ani",
+    "block": "augmented_drug_chars",
+    "description": "augmented final LR with fold-selected drug_chars"
+  },
+  {
+    "name": "ensemble__augmented_drug_chars",
+    "parent": "ensemble",
+    "block": "augmented_drug_chars",
+    "description": "augmented final LR with fold-selected drug_chars"
+  },
+  {
+    "name": "ani__augmented_disease_words",
+    "parent": "ani",
+    "block": "augmented_disease_words",
+    "description": "augmented final LR with fold-selected disease_words"
+  },
+  {
+    "name": "ensemble__augmented_disease_words",
+    "parent": "ensemble",
+    "block": "augmented_disease_words",
+    "description": "augmented final LR with fold-selected disease_words"
+  },
+  {
+    "name": "ani__goldhalf_none",
+    "parent": "ani",
+    "block": "goldhalf_none",
+    "description": "goldhalf final LR with fold-selected none"
+  },
+  {
+    "name": "ensemble__goldhalf_none",
+    "parent": "ensemble",
+    "block": "goldhalf_none",
+    "description": "goldhalf final LR with fold-selected none"
+  },
+  {
+    "name": "ani__goldhalf_criteria_words",
+    "parent": "ani",
+    "block": "goldhalf_criteria_words",
+    "description": "goldhalf final LR with fold-selected criteria_words"
+  },
+  {
+    "name": "ensemble__goldhalf_criteria_words",
+    "parent": "ensemble",
+    "block": "goldhalf_criteria_words",
+    "description": "goldhalf final LR with fold-selected criteria_words"
+  },
+  {
+    "name": "ani__goldhalf_criteria_chars",
+    "parent": "ani",
+    "block": "goldhalf_criteria_chars",
+    "description": "goldhalf final LR with fold-selected criteria_chars"
+  },
+  {
+    "name": "ensemble__goldhalf_criteria_chars",
+    "parent": "ensemble",
+    "block": "goldhalf_criteria_chars",
+    "description": "goldhalf final LR with fold-selected criteria_chars"
+  },
+  {
+    "name": "ani__goldhalf_drug_chars",
+    "parent": "ani",
+    "block": "goldhalf_drug_chars",
+    "description": "goldhalf final LR with fold-selected drug_chars"
+  },
+  {
+    "name": "ensemble__goldhalf_drug_chars",
+    "parent": "ensemble",
+    "block": "goldhalf_drug_chars",
+    "description": "goldhalf final LR with fold-selected drug_chars"
+  },
+  {
+    "name": "ani__goldhalf_disease_words",
+    "parent": "ani",
+    "block": "goldhalf_disease_words",
+    "description": "goldhalf final LR with fold-selected disease_words"
+  },
+  {
+    "name": "ensemble__goldhalf_disease_words",
+    "parent": "ensemble",
+    "block": "goldhalf_disease_words",
+    "description": "goldhalf final LR with fold-selected disease_words"
+  }
+]

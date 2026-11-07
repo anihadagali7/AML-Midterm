@@ -1,0 +1,10 @@
+{
+  "selected_sha256": "b95c014c1bb7940e3e5b939d5e083ba5b679d8d375b4c44338a348119ce0cd86",
+  "source_reference_sha256": "ab409670420c361da15c2a735919316997c4b07fcd5b51479eb6a3ea9a7e5eba",
+  "diagnostics": [
+    "original 157/78 split (already used in development)",
+    "known-label chronological cutoffs 2003, 2005, 2007"
+  ],
+  "temporal_unlabeled_policy": "Only originally unlabeled rows starting at or before the cutoff; all later labeled/unknown features excluded from fitting.",
+  "caution": "Diagnostics, not untouched test estimates. No candidate retuning after these scores."
+}

@@ -1,7 +1,7 @@
 # Part Two manual Kaggle submissions
 
 See [commit and score-tag history](HISTORY.md) for the trial phases and the separate
-record commit for each confirmed submission. Run `python part2/verify_submission_tags.py`
+record commit for each confirmed submission. Run `python part2/run.py verify_submission_tags.py`
 from the repository root to check every tag against its exact CSV and original evidence.
 
 **Current best: file 13, Kaggle 0.58465, user-reported first place.** The improvement

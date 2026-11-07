@@ -1,0 +1,107 @@
+{
+  "logged_evaluations": 2293,
+  "families": 68,
+  "distinct_configs": 1840,
+  "logged_count_note": "These are evaluation records, including repeats, not independent datasets. Historical scores used different split/selection policies and are not directly ranked here.",
+  "common_persistent_error_rows": 26,
+  "gold_embedding_groups": 222,
+  "conflicting_gold_embedding_groups": [],
+  "structural_input_audit": [
+    {
+      "cohort": "train",
+      "rows": 1171,
+      "explicit_inclusion_heading": 945,
+      "explicit_exclusion_heading": 924,
+      "rows_with_parseable_icd": 1170,
+      "median_icd_codes": 7.0,
+      "rows_with_broad_pathway": 657
+    },
+    {
+      "cohort": "validation",
+      "rows": 78,
+      "explicit_inclusion_heading": 66,
+      "explicit_exclusion_heading": 63,
+      "rows_with_parseable_icd": 78,
+      "median_icd_codes": 7.0,
+      "rows_with_broad_pathway": 47
+    },
+    {
+      "cohort": "test",
+      "rows": 312,
+      "explicit_inclusion_heading": 304,
+      "explicit_exclusion_heading": 300,
+      "rows_with_parseable_icd": 312,
+      "median_icd_codes": 7.0,
+      "rows_with_broad_pathway": 156
+    }
+  ],
+  "next_steps": [
+    {
+      "direction": "Structured eligibility and disease representation",
+      "evidence": "Prior features treated criteria as whole-document word/character TF-IDF and ICD codes as generic text. ICD strings contain nested lists and dotted codes; generic tokenization separates decimal suffixes. No explicit inclusion/exclusion feature extractor was found in the phase scripts.",
+      "work": "Build separate inclusion/exclusion text views, validated eligibility-burden features, and correctly parsed ICD code sets with parent categories. Keep unsupported clinical-bound extraction out until reviewed.",
+      "evaluation": "Compare each view alone and added to the fixed reason-embedding model, using fold-local vocabulary/scaling and the common grouped CV. Reject a block without repeatable gain."
+    },
+    {
+      "direction": "Separate models for reason embeddings and structured metadata",
+      "evidence": "Trees were tested mainly on raw/PCA reason coordinates; tree students and fixed-weight metadata co-training were also tried. The PDF says reason embeddings are randomly rotated, so coordinate splits have no inherent semantic meaning. Drug metadata are missing for a substantial fraction of trials.",
+      "work": "Keep a rotation-tolerant embedding classifier; train regularized linear and shallow tree models on the new structured metadata. Evaluate metadata signal independently before any combination. If useful, test a strongly regularized gate learned from inner-fold predictions and explicit metadata coverage, rather than another global weight sweep.",
+      "evaluation": "Use exact matched embedding-only, metadata-only and combined controls. Fit any gate only within outer-training data. This direction is not a claim that metadata will help."
+    },
+    {
+      "direction": "Joint multilabel prediction from representations",
+      "evidence": "Powerset models, one classifier-chain recipe, and score-level joint decoders already exist. Repeating their names would not constitute a new architecture.",
+      "work": "Only reopen joint modeling if the persistent-error review shows recurring co-occurrence mistakes. Compare a regularized joint label-set estimator on the new representations with independent heads, retaining an escape route for rare/unseen combinations. Prior semisupervised Gaussian mixtures and sparse prototypes should be controls, not advertised as untried methods.",
+      "evaluation": "Use the unchanged sample-F1 target, per-label diagnostics, and nested decoder selection. Advance based on both common CV pools before validation."
+    }
+  ],
+  "new_model_fits": 0,
+  "source_provenance": [
+    {
+      "candidate": "Ani frozen control",
+      "path": "experiments/ani_improvement_v1/pooled3/f800dc8ba1ce9ede5ff9.npz",
+      "sha256": "c1bb848544246493a732d3d2c23e7f2f2e05891a7e847936b5c52610b52d9077"
+    },
+    {
+      "candidate": "Ani frozen control",
+      "path": "experiments/ani_improvement_v1/pooled5/d601defbfe4ff390f092.npz",
+      "sha256": "1c32070dcd4b9bb8bcb1c110134d7da57c0106cf05f16bcbece20a0aeeb29467"
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "path": "experiments/ani_improvement_v1/pooled3/cbd5a8d1f2e08c9a9463.npz",
+      "sha256": "7305e092039b6245bdbcbf06f0a33bfa1866172c744e7794a381a55c5eb32b4d"
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "path": "experiments/ani_improvement_v1/pooled5/75728fc99653e984729e.npz",
+      "sha256": "c15273ef4a26d87472229c0a852c05709481274653d11c95ddfee4cb1ff283d3"
+    }
+  ],
+  "trial_log_sha256": "3b1462ff6fcabb65c2cea81720ace9d3f9985cf21c0ca8e7b16a4d72a5c2d8ec",
+  "script_sha256": "3df2b3bd8d725c3d70f55c1897d1ac856791526e1613b07ded3d50c9cc10d248",
+  "protected_sha256": {
+    "data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "experiments/current-best.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "predictions/current_best/validation_audit.csv": "b683abbf3c3d01392833ef9877766c8bcce9c7fe291409d07aa33d698108921a",
+    "predictions/current_best/part1_submission.csv": "f9a287fb1d28fd9a6bbc0c583ac84ec2061e72945e2fbeb5aced9ff5b15ff44a",
+    "predictions/current_best/validation_scores.csv": "dc475b272a99f24520bc47682273b485f4018f8e00f100baa06089b60d84ce83",
+    "predictions/current_best/part1_train_augmented.csv": "fa6c5894184d81c4b2b90467bd4c1ef504567daf9f8968def4e737baedcf1f46",
+    "predictions/current_best/manifest.json": "bd32730504c4a24d26fcc1a55e21aaaf7897f0789c670f3dab54726bc12ad4e3",
+    "predictions/current_best/test_scores.csv": "db64f853769ab10bb40c93f118fa099878a45032f8a119870d003139542269dd",
+    "predictions/current_best/unlabeled_scores.csv": "d0ed4baccbd40f4894b34d51cdd26540a24d55aed5b4e81f2e404303423a9bc6",
+    "experiments/benchmark_v1/protocol.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "experiments/benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/benchmark_v1/comparison.csv": "e0ff75e2fd069c9a5f520acc8e81027fe930445668890e29e808b26f6f0562d8",
+    "experiments/pooled_benchmark_v1/protocol.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "experiments/pooled_benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/pooled_benchmark_v1/comparison.csv": "25a2dbc6f8700855e34f1c978f3cd7e7c6e121f83695519d2f4019bd4dfea97f",
+    "predictions/part1_tri_training_trainval235.csv": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145",
+    "predictions/tri_training_trainval235/kaggle_result.json": "3de4f154ac478ff059fbf83225ac7b18f098feafbbb00e1eeab16b9d25ec7f1d"
+  },
+  "constraints": "No deep learning, external trial data, label edits or ID predictors. Read-only review; historical benchmark and model artifacts unchanged."
+}

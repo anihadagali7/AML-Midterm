@@ -1,0 +1,5 @@
+# Frozen research artifacts use byte-level provenance and source guards.
+# Preserve original line endings when checking out on another platform.
+part1/research/independent/** -text
+part1/research/ani_snapshots/** -text
+part1/submissions/archive/** -text

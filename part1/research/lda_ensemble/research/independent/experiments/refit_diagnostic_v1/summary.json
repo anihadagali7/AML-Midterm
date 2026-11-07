@@ -1,0 +1,137 @@
+{
+  "comparison": [
+    {
+      "candidate": "Ani frozen control",
+      "scope": "all235",
+      "rows": 235,
+      "reduced_mean": 0.9027482269503546,
+      "expanded_mean": 0.9098404255319148,
+      "paired_delta": 0.007092198581560294,
+      "delta_sd": 0.00737042896837821,
+      "expanded_wins": 5,
+      "ties": 1
+    },
+    {
+      "candidate": "Ani frozen control",
+      "scope": "original_train157",
+      "rows": 157,
+      "reduced_mean": 0.917728237791932,
+      "expanded_mean": 0.9221072186836519,
+      "paired_delta": 0.004378980891719744,
+      "delta_sd": 0.008696423767415577,
+      "expanded_wins": 5,
+      "ties": 1
+    },
+    {
+      "candidate": "Ani frozen control",
+      "scope": "original_validation78",
+      "rows": 78,
+      "reduced_mean": 0.8725961538461539,
+      "expanded_mean": 0.8851495726495726,
+      "paired_delta": 0.012553418803418773,
+      "delta_sd": 0.014231374791407255,
+      "expanded_wins": 7,
+      "ties": 0
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "scope": "all235",
+      "rows": 235,
+      "reduced_mean": 0.913031914893617,
+      "expanded_mean": 0.9164893617021276,
+      "paired_delta": 0.0034574468085105947,
+      "delta_sd": 0.008105280758756047,
+      "expanded_wins": 5,
+      "ties": 0
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "scope": "original_train157",
+      "rows": 157,
+      "reduced_mean": 0.9304670912951167,
+      "expanded_mean": 0.9267515923566879,
+      "paired_delta": -0.003715498938428874,
+      "delta_sd": 0.011470373028117953,
+      "expanded_wins": 3,
+      "ties": 0
+    },
+    {
+      "candidate": "Ani + tri/SVM 15% each",
+      "scope": "original_validation78",
+      "rows": 78,
+      "reduced_mean": 0.8779380341880343,
+      "expanded_mean": 0.8958333333333333,
+      "paired_delta": 0.017895299145299068,
+      "delta_sd": 0.009611674260388088,
+      "expanded_wins": 7,
+      "ties": 1
+    }
+  ],
+  "test_sensitivity": {
+    "candidate": "Ani + tri/SVM 15% each",
+    "test_rows": 312,
+    "changed_label_sets": 29,
+    "changed_label_bits": 38,
+    "total_label_bits": 1560,
+    "mean_absolute_score_change": 0.026482357826266623,
+    "labels": {
+      "Safety": {
+        "original157_positives": 59,
+        "refit235_positives": 53,
+        "changed_bits": 8
+      },
+      "Funding": {
+        "original157_positives": 6,
+        "refit235_positives": 6,
+        "changed_bits": 0
+      },
+      "Efficacy": {
+        "original157_positives": 45,
+        "refit235_positives": 47,
+        "changed_bits": 6
+      },
+      "Recruitment": {
+        "original157_positives": 185,
+        "refit235_positives": 181,
+        "changed_bits": 10
+      },
+      "Other": {
+        "original157_positives": 44,
+        "refit235_positives": 54,
+        "changed_bits": 14
+      }
+    },
+    "accuracy_comparison": null,
+    "interpretation": "Prediction sensitivity only; test labels are unknown and neither direction is shown to be more accurate.",
+    "submission_created": false
+  },
+  "protocol_sha256": "8f981e70b8493290d20cc9a7cff079f64dc8a34b7be399a4c9ab598b4fdec3ef",
+  "verification_passed": true,
+  "protected_sha256": {
+    "data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "experiments/current-best.json": "863de1b0fa3a0724c8bb67373fd397b88e117f061cb036913d5dd11bc709bf7f",
+    "predictions/current_best/validation_audit.csv": "b683abbf3c3d01392833ef9877766c8bcce9c7fe291409d07aa33d698108921a",
+    "predictions/current_best/part1_submission.csv": "f9a287fb1d28fd9a6bbc0c583ac84ec2061e72945e2fbeb5aced9ff5b15ff44a",
+    "predictions/current_best/validation_scores.csv": "dc475b272a99f24520bc47682273b485f4018f8e00f100baa06089b60d84ce83",
+    "predictions/current_best/part1_train_augmented.csv": "fa6c5894184d81c4b2b90467bd4c1ef504567daf9f8968def4e737baedcf1f46",
+    "predictions/current_best/manifest.json": "bd32730504c4a24d26fcc1a55e21aaaf7897f0789c670f3dab54726bc12ad4e3",
+    "predictions/current_best/test_scores.csv": "db64f853769ab10bb40c93f118fa099878a45032f8a119870d003139542269dd",
+    "predictions/current_best/unlabeled_scores.csv": "d0ed4baccbd40f4894b34d51cdd26540a24d55aed5b4e81f2e404303423a9bc6",
+    "experiments/benchmark_v1/protocol.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "experiments/benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/benchmark_v1/comparison.csv": "e0ff75e2fd069c9a5f520acc8e81027fe930445668890e29e808b26f6f0562d8",
+    "experiments/pooled_benchmark_v1/protocol.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "experiments/pooled_benchmark_v1/registry.json": "4517dcd1f79c7acf3cfd4e272a230e5e67b169784df841abc5b657594b8331ed",
+    "experiments/pooled_benchmark_v1/comparison.csv": "25a2dbc6f8700855e34f1c978f3cd7e7c6e121f83695519d2f4019bd4dfea97f",
+    "predictions/part1_tri_training_trainval235.csv": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145",
+    "predictions/tri_training_trainval235/kaggle_result.json": "3de4f154ac478ff059fbf83225ac7b18f098feafbbb00e1eeab16b9d25ec7f1d",
+    "predictions/part1_three_way_trainval235.csv": "1ce915dc48a530fcf80eda65d024f93c9a1e5edfa923c18f836bb195c8566a4f",
+    "predictions/three_way_trainval235/manifest.json": "9fb99ca0ffed886cd75c672cf5203f7c46ce53b4947bf851ca1ff025087f4431",
+    "predictions/three_way_trainval235/test_scores.csv": "46a705407fe0ade24af066cc09ac2440bb8817327e6d9205acddd46801d55b05",
+    "predictions/three_way_trainval235/kaggle_result.json": "937258a13bb97d2ee98d28ad5c38680d5b1f6f8c8ac437b2884cf726f6f63a72"
+  }
+}

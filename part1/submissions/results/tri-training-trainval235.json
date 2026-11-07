@@ -1,0 +1,15 @@
+{
+  "recipe": "tri-training-trainval235",
+  "reported_kaggle_score": 0.88012,
+  "tag": "part1-tri-training-trainval235-kaggle-0.88012",
+  "submission_file": "part1/research/lda_ensemble/submissions/archive/submitted/tri_training_trainval235__kaggle_0.88012.csv",
+  "submission_sha256": "e3155e729f7be6bebe67d04bde524edd85be7c0514474fcb3cd5c50ba0241145",
+  "frozen_recipe_file": "part1/research/lda_ensemble/research/independent/predictions/tri_training_trainval235/frozen_recipe.json",
+  "frozen_recipe_sha256": "ed2578a7deb465e7ee4fc2979b3231817ad25e85aa8685778194457e372456a2",
+  "verified_training_labels": 235,
+  "fitting_access": "inductive; test inputs used only for prediction",
+  "score_provenance": "User report in this conversation; no live Kaggle lookup",
+  "record_type": "Backfilled commit checkpoint for an earlier manually submitted result; no new upload or refit.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "historical_result_file": "part1/research/lda_ensemble/research/independent/predictions/tri_training_trainval235/kaggle_result.json"
+}

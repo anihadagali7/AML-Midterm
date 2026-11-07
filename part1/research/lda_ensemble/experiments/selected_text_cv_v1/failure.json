@@ -1,0 +1,6 @@
+{
+  "status": "preflight_failed_no_candidate_outer_scores",
+  "reason": "Generic recursive list parser mistook drug names starting with bracketed isotope notation for another list.",
+  "source_sha256": "89bf1fcc8a56f83ab18236e592a09dcacfbacedc4672acae10e07a7adb855658",
+  "resolution": "Parse only the outer raw-drug list in v2, preserving bracketed names as literal text. Same recipes."
+}

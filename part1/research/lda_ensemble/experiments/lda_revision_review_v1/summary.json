@@ -1,0 +1,135 @@
+{
+  "outcome": "Confirmed grouped-CV improvement from latest Ani LDA revision; original validation slightly worse and chronology tied. No established Kaggle improvement.",
+  "candidate": "ensemble__revision_full",
+  "source_study": "ani_lda_revision_cv_v1",
+  "studies": [
+    {
+      "study": "ani_lda_revision_cv_v1",
+      "recipes": 8,
+      "passed_against_declared_control": 6,
+      "comparator": "Original Ani/ensemble"
+    },
+    {
+      "study": "lda_covariance_cv_v1",
+      "recipes": 8,
+      "passed_against_declared_control": 0,
+      "comparator": "Latest LDA Ani/ensemble"
+    },
+    {
+      "study": "joint_utility_cv_v1",
+      "recipes": 8,
+      "passed_against_declared_control": 0,
+      "comparator": "Latest LDA Ani/ensemble"
+    }
+  ],
+  "paired_train_delta": 0.006104033970276021,
+  "paired_pooled_delta": 0.005141843971631241,
+  "paired_train_wins": 7,
+  "paired_pooled_wins": 7,
+  "comparison": [
+    {
+      "model": "Original 70/15/15 ensemble",
+      "train": 0.9256900212314225,
+      "pooled": 0.9164893617021276,
+      "validation": 0.9102564102564102,
+      "chronology": 0.8775510204081632
+    },
+    {
+      "model": "LDA-revision 70/15/15 ensemble",
+      "train": 0.9317940552016986,
+      "pooled": 0.9216312056737589,
+      "validation": 0.9059829059829061,
+      "chronology": 0.8775510204081632
+    }
+  ],
+  "lda_vs_regularization": [
+    {
+      "parent": "ani",
+      "contrast": "LDA revision minus C.1 without LDA",
+      "train_mean_delta": 0.006369426751592355,
+      "train_wins": 7,
+      "train_ties": 1,
+      "train_paired_deltas": [
+        0.004246284501061681,
+        0.002123142250530785,
+        0.008492569002123251,
+        0.0,
+        0.00424628450106157,
+        0.01273885350318471,
+        0.00849256900212314,
+        0.010615711252653703
+      ],
+      "pooled_mean_delta": 0.0023936170212765645,
+      "pooled_wins": 6,
+      "pooled_ties": 1,
+      "pooled_paired_deltas": [
+        0.004255319148936176,
+        0.0014184397163119478,
+        0.0,
+        0.005673758865248124,
+        0.005673758865248235,
+        0.004255319148936176,
+        0.0021276595744680327,
+        -0.004255319148936176
+      ]
+    },
+    {
+      "parent": "ensemble",
+      "contrast": "LDA revision minus C.1 without LDA",
+      "train_mean_delta": 0.004777070063694308,
+      "train_wins": 6,
+      "train_ties": 1,
+      "train_paired_deltas": [
+        0.00424628450106157,
+        -0.002123142250530674,
+        0.004246284501061348,
+        0.004246284501061681,
+        2.220446049250313e-16,
+        0.00849256900212303,
+        0.008492569002123251,
+        0.010615711252654036
+      ],
+      "pooled_mean_delta": 0.0039007092198582033,
+      "pooled_wins": 5,
+      "pooled_ties": 2,
+      "pooled_paired_deltas": [
+        0.007092198581560294,
+        0.0,
+        -0.0028368794326240065,
+        0.009929078014184523,
+        0.007092198581560294,
+        0.007092198581560294,
+        0.0028368794326242286,
+        0.0
+      ]
+    }
+  ],
+  "independent_repeat_records": 768,
+  "independent_fold_arrays": 3840,
+  "independent_supplementary_records": 52,
+  "source_sha256": {
+    "ani_lda_revision_cv_v1/protocol.json": "c51db994b7832b641f23e59486cd3987dc9e97e8f3e222ae6bb30be93f16cb34",
+    "ani_lda_revision_cv_v1/registry.json": "79774f3d0e60757285fed284866559839aa1304570586a136218c3a45dfe78ff",
+    "ani_lda_revision_cv_v1/confirmation.json": "56a608590c0d0fe395f04cd7528d6744435aaecdd1c86b755917f974c01b0f9c",
+    "ani_lda_revision_cv_v1/summary.json": "a36ba4501b1aa41c344a4f09038e1cc84c77f6bc9d88f77c0915488cf3f7e96a",
+    "ani_lda_revision_cv_v1/independent_verification.json": "13260ee2d42e64350fd71efeb4af69a933be6efdc5e70760c2020af618f53db8",
+    "ani_lda_revision_cv_v1/report.html": "8a8ab63e03544a753aa3a21c7e08c4cabf31a1e5c25cddb6ccf821e46b29b81f",
+    "lda_covariance_cv_v1/protocol.json": "41da7edcd8ca79b189c3ce7a0927ab869582e24c0e9ac495960f37ea1a7fa991",
+    "lda_covariance_cv_v1/registry.json": "4f481eeec2fa40e1b778f7c0606f2a2b0568fbaea0f0922178bae023c96459fa",
+    "lda_covariance_cv_v1/confirmation.json": "35edcac2537f6598cd7662835c614867c703a77e5f9dc4c8988b7147a5d30387",
+    "lda_covariance_cv_v1/summary.json": "4113ac19fc213512a31014cd3d5bc0cc01fef74f3f58c8d48b702300e51607b0",
+    "lda_covariance_cv_v1/independent_verification.json": "3ec82bdde22840775c5bcc0bf526d3e6eb15d2f74651ff858afbee10483f6ac0",
+    "lda_covariance_cv_v1/report.html": "a4f98f43764c962d9fd3a8091e7f20bcc6c76050a01a3072fcbcb3578311a1ac",
+    "joint_utility_cv_v1/protocol.json": "ecdeaf15c0e7db7a6e3bc3a6e1521c13b7dd6ccd33b5fd883227d4b561514801",
+    "joint_utility_cv_v1/registry.json": "59f8a79b65a820ff00678959a9ce0d61100502b637a1381c9b4e389def5b161b",
+    "joint_utility_cv_v1/confirmation.json": "98fb7f5ebdf18ef44b9c5b6ba4992e799947526cca73a918def6553c76e375da",
+    "joint_utility_cv_v1/summary.json": "3192d040df5fbbf5b6d9f694962e2ece3c92033a7f1f6bcf50f8d13503c20a39",
+    "joint_utility_cv_v1/independent_verification.json": "3ec82bdde22840775c5bcc0bf526d3e6eb15d2f74651ff858afbee10483f6ac0",
+    "joint_utility_cv_v1/report.html": "7b260b1ecb1978e7e1478620a7c86398ddb9750eaf4b17934ba28147b495b00d"
+  },
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "full235_refit": false,
+  "builder_sha256": "f07f0345a6a4e94f216685ae5a0d1d8e5c945630f31cdc82bfa268dde8e597a6"
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "model": "calibrated_ssl",
+    "calibration": "independent",
+    "meta_C": 0.1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "independent",
+    "meta_C": 1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "independent",
+    "meta_C": 10
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "joint",
+    "meta_C": 0.1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "joint",
+    "meta_C": 1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "joint",
+    "meta_C": 10
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "meta_C": 0.1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "meta_C": 1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "meta_C": 10
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0.25
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 0.5
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "thresholds",
+    "macro_weight": 1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "gfm": true,
+    "meta_C": 0.1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "gfm": true,
+    "meta_C": 1
+  },
+  {
+    "model": "calibrated_ssl",
+    "calibration": "patterns",
+    "gfm": true,
+    "meta_C": 10
+  }
+]

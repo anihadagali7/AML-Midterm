@@ -1,0 +1,37 @@
+{
+  "policy": "Byte-for-byte copies of historical entry notebooks and their original main-branch exports.",
+  "files": [
+    {
+      "file": "main_gmm_logistic_b1cfb38.ipynb",
+      "source_commit": "b1cfb38e9d83562e8ada41e59176e9fb046788da",
+      "source_path": "part1/part1.ipynb",
+      "sha256": "4fa2ad83a3b384723c5038d66ee88f7a3ea69bcbe7e958f7be05765d0bdd76e0",
+      "bytes": 225224,
+      "kind": "historical_notebook"
+    },
+    {
+      "file": "research_baselines_c0d443b.ipynb",
+      "source_commit": "c0d443ba2c2457db8ab3816c05e26985fdf6e9da",
+      "source_path": "part1/part1.ipynb",
+      "sha256": "5a40e82cf5838a5b8057b14126b86d168d174d397da9a4c36981ea0ee525c685",
+      "bytes": 220672,
+      "kind": "historical_notebook"
+    },
+    {
+      "file": "main_gmm_logistic_b1cfb38_outputs/part1_submission.csv",
+      "source_commit": "b1cfb38e9d83562e8ada41e59176e9fb046788da",
+      "source_path": "part1/part1_submission.csv",
+      "sha256": "0cca480f1a114a476a5d9a1e5379ae6fae17bb322224631f4dc43debc362a836",
+      "bytes": 6003,
+      "kind": "historical_export"
+    },
+    {
+      "file": "main_gmm_logistic_b1cfb38_outputs/part1_reason_labels.csv",
+      "source_commit": "b1cfb38e9d83562e8ada41e59176e9fb046788da",
+      "source_path": "part1/part1_reason_labels.csv",
+      "sha256": "ca0c34519cc21ec1d323efec6d6aa74398cc77c5dbffb23c6b624a17b273daf9",
+      "bytes": 51489,
+      "kind": "historical_export"
+    }
+  ]
+}

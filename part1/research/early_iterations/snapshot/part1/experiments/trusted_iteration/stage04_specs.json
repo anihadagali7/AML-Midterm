@@ -1,0 +1,82 @@
+[
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r2_fixed",
+    "rounds": 2,
+    "decision": "fixed"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r2_relative",
+    "rounds": 2,
+    "decision": "relative"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r2_expected_single",
+    "rounds": 2,
+    "decision": "expected_single"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r2_expected_independent",
+    "rounds": 2,
+    "decision": "expected_independent"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r2_expected_neighbors",
+    "rounds": 2,
+    "decision": "expected_neighbors"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r3_fixed",
+    "rounds": 3,
+    "decision": "fixed"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r3_relative",
+    "rounds": 3,
+    "decision": "relative"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r3_expected_single",
+    "rounds": 3,
+    "decision": "expected_single"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r3_expected_independent",
+    "rounds": 3,
+    "decision": "expected_independent"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "name": "decision_r3_expected_neighbors",
+    "rounds": 3,
+    "decision": "expected_neighbors"
+  }
+]

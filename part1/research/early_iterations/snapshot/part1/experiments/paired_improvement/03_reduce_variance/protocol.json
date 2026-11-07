@@ -1,0 +1,102 @@
+{
+  "stage": "03_reduce_variance",
+  "specs": [
+    {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.1,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "structure_control"
+    },
+    {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.1,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "base_pca30",
+      "base_components": 30
+    },
+    {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.1,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "base_pca60",
+      "base_components": 60
+    },
+    {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.1,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "lda_pca30",
+      "lda_components": 30
+    },
+    {
+      "C": 0.1,
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbors": true,
+      "lda_weight": 0.2,
+      "gmm_weight": 0.1,
+      "rounds": 2,
+      "lda_source": "augmented",
+      "name": "lda_pca60",
+      "lda_components": 60
+    }
+  ],
+  "ani_commit": "8a8c3fca70f13b62e989739a0bc1d97d229186e1",
+  "pools": {
+    "train157": {
+      "labels": 157,
+      "repeats": 5,
+      "folds": 3,
+      "split_sha256": {
+        "repeat0.csv": "e9768b67c36460c15e533246a23f84ca1b626d64b65ba1073946e13c3e97d8e3",
+        "repeat1.csv": "baed46d872320700869b9a7d08ee73c89c7e6c21061b60cf89c2f783c0c4e44c",
+        "repeat2.csv": "ecc13cd1ba452cb08d51adb12dfc363c1364d3144c8b4952469011796fbb9213",
+        "repeat3.csv": "055f3ff1945e6b6e3de20d9a07d289a2add2c67b77dc4caf5dc6742bbc9b2bed",
+        "repeat4.csv": "eb760a937cfd5bde8901b8bc05919ca0a0ad7ab18bd58b42ee62b821c609e3cd"
+      }
+    },
+    "trainval235": {
+      "labels": 235,
+      "repeats": 8,
+      "folds": 5,
+      "split_sha256": {
+        "repeat0.csv": "1ff4ee50eb8157acbd6cae7f21c75913d4d3d85fb943dcdce0736542ffbb775f",
+        "repeat1.csv": "9f68473ddf1eba753ca77d471134f36a2f3a795767f7679cc375558e91d32b4a",
+        "repeat2.csv": "c0c0aa4c2735d223d0143d3a7b2d053f26e62a7ce0d421439270caa3845f70dd",
+        "repeat3.csv": "7196e3b587cee68ea60904c0bfe2832673034b04c27203ac8e736eccae9f9fa6",
+        "repeat4.csv": "1f802367f3d3e3f2b134f7fe7136b116e3151a5cc3346df23e13d5a26cefce18",
+        "repeat5.csv": "ad933e83d9e540d2f128c32719b3bba2543a38f3caf6e67fdfe1cab63e07e47b",
+        "repeat6.csv": "4ef4cc5e94e020691f6f6b884da19e7684b895b565be32f7badf9a517cefd8a0",
+        "repeat7.csv": "e2a51efb1acaa2c8998d88617a2334a38086fdf5079705d6cfe9296c93b225ee"
+      }
+    }
+  },
+  "features": "150 supplied reason embeddings only",
+  "feature_policy": "Strict fold-local feature fitting for all models. Exclude held-out/test inputs. 157-pool fits also exclude all78validation inputs and labels.",
+  "selection": "Prefer improvements on both pools; neither may be silently dropped. No test labels or inputs in fitting.",
+  "reference_sha256": "e263915f96ea894b2a7b349789fb0ad6ca61ee2b9503e040e047f60b8418f3c6",
+  "input_sha256": {
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  }
+}

@@ -1,0 +1,1628 @@
+[
+  {
+    "candidate": "Ani frozen control",
+    "results": [
+      {
+        "scope": "all235",
+        "rows": 235,
+        "reduced_mean": 0.9027482269503546,
+        "expanded_mean": 0.9098404255319148,
+        "paired_delta": 0.007092198581560294,
+        "delta_sd": 0.00737042896837821,
+        "expanded_wins": 5,
+        "ties": 1,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.8914893617021277,
+            "macro_f1": 0.7920320985173935,
+            "f1_Safety": 0.8301886792452831,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9579288025889967,
+            "f1_Other": 0.5714285714285714
+          },
+          {
+            "sample_f1": 0.8978723404255319,
+            "macro_f1": 0.7978158567688631,
+            "f1_Safety": 0.8235294117647058,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.835820895522388,
+            "f1_Recruitment": 0.9576547231270358,
+            "f1_Other": 0.6101694915254238
+          },
+          {
+            "sample_f1": 0.8985815602836879,
+            "macro_f1": 0.790090555512076,
+            "f1_Safety": 0.8846153846153846,
+            "f1_Funding": 0.7,
+            "f1_Efficacy": 0.8253968253968254,
+            "f1_Recruitment": 0.9641693811074918,
+            "f1_Other": 0.576271186440678
+          },
+          {
+            "sample_f1": 0.9163120567375885,
+            "macro_f1": 0.8356503484372337,
+            "f1_Safety": 0.9259259259259259,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.8524590163934426,
+            "f1_Recruitment": 0.961038961038961,
+            "f1_Other": 0.676923076923077
+          },
+          {
+            "sample_f1": 0.9106382978723404,
+            "macro_f1": 0.8110030102734147,
+            "f1_Safety": 0.9056603773584906,
+            "f1_Funding": 0.7,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9706840390879479,
+            "f1_Other": 0.6349206349206349
+          },
+          {
+            "sample_f1": 0.9014184397163121,
+            "macro_f1": 0.8226287721939896,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.7936507936507936,
+            "f1_Recruitment": 0.961038961038961,
+            "f1_Other": 0.6
+          },
+          {
+            "sample_f1": 0.9092198581560283,
+            "macro_f1": 0.8201443001443002,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.961038961038961,
+            "f1_Other": 0.6
+          },
+          {
+            "sample_f1": 0.8964539007092198,
+            "macro_f1": 0.792150591572568,
+            "f1_Safety": 0.8301886792452831,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9675324675324676,
+            "f1_Other": 0.5573770491803278
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.900709219858156,
+            "macro_f1": 0.8094961416379443,
+            "f1_Safety": 0.8461538461538461,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9177304964539008,
+            "macro_f1": 0.8467888028937391,
+            "f1_Safety": 0.9387755102040817,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.8964539007092198,
+            "macro_f1": 0.7942406774512036,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.7272727272727273,
+            "f1_Efficacy": 0.8253968253968254,
+            "f1_Recruitment": 0.9671052631578947,
+            "f1_Other": 0.5714285714285714
+          },
+          {
+            "sample_f1": 0.9163120567375886,
+            "macro_f1": 0.8377936793679368,
+            "f1_Safety": 0.88,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.976897689768977,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8405511897084802,
+            "f1_Safety": 0.8979591836734694,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9120567375886524,
+            "macro_f1": 0.8300952650443314,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9736842105263158,
+            "f1_Other": 0.6129032258064516
+          },
+          {
+            "sample_f1": 0.9070921985815602,
+            "macro_f1": 0.8147457607228775,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8307692307692308,
+            "f1_Recruitment": 0.9736842105263158,
+            "f1_Other": 0.5666666666666667
+          },
+          {
+            "sample_f1": 0.9092198581560283,
+            "macro_f1": 0.8407647768676074,
+            "f1_Safety": 0.9166666666666666,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.8524590163934426,
+            "f1_Recruitment": 0.976897689768977,
+            "f1_Other": 0.5882352941176471
+          }
+        ]
+      },
+      {
+        "scope": "original_train157",
+        "rows": 157,
+        "reduced_mean": 0.917728237791932,
+        "expanded_mean": 0.9221072186836519,
+        "paired_delta": 0.004378980891719744,
+        "delta_sd": 0.008696423767415577,
+        "expanded_wins": 5,
+        "ties": 1,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8451540616246499,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9065817409766455,
+            "macro_f1": 0.8423354613163095,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.6046511627906976
+          },
+          {
+            "sample_f1": 0.9150743099787687,
+            "macro_f1": 0.8415882967607106,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6190476190476191
+          },
+          {
+            "sample_f1": 0.9341825902335456,
+            "macro_f1": 0.8860753866764096,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.7391304347826086
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8535320575006615,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.6956521739130435
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8668129724834902,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8601540616246499,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9065817409766455,
+            "macro_f1": 0.8256382641748494,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9658536585365853,
+            "f1_Other": 0.5909090909090909
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8503873916803444,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.8235294117647058,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8650406500340357,
+            "f1_Safety": 0.9696969696969697,
+            "f1_Funding": 0.8235294117647058,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.910828025477707,
+            "macro_f1": 0.8311842563566703,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6222222222222222
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8695476644851187,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9320594479830148,
+            "macro_f1": 0.872055472136608,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.8235294117647058,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9753694581280788,
+            "f1_Other": 0.7111111111111111
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8652506364107504,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.8421052631578947,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6976744186046512
+          },
+          {
+            "sample_f1": 0.9225053078556266,
+            "macro_f1": 0.8506516708169111,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.8235294117647058,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9655172413793104,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8753702880647047,
+            "f1_Safety": 0.9032258064516129,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.6530612244897959
+          }
+        ]
+      },
+      {
+        "scope": "original_validation78",
+        "rows": 78,
+        "reduced_mean": 0.8725961538461539,
+        "expanded_mean": 0.8851495726495726,
+        "paired_delta": 0.012553418803418773,
+        "delta_sd": 0.014231374791407255,
+        "expanded_wins": 7,
+        "ties": 0,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.8397435897435898,
+            "macro_f1": 0.6888888888888889,
+            "f1_Safety": 0.7777777777777778,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7142857142857143,
+            "f1_Recruitment": 0.9523809523809523,
+            "f1_Other": 0.3333333333333333
+          },
+          {
+            "sample_f1": 0.8803418803418804,
+            "macro_f1": 0.691306442401577,
+            "f1_Safety": 0.7058823529411765,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.7741935483870968,
+            "f1_Recruitment": 0.9514563106796117,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.8653846153846154,
+            "macro_f1": 0.6777035348552377,
+            "f1_Safety": 0.8421052631578947,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.7142857142857143,
+            "f1_Recruitment": 0.9615384615384616,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.8803418803418804,
+            "macro_f1": 0.7151926825611036,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.7407407407407407,
+            "f1_Recruitment": 0.9615384615384616,
+            "f1_Other": 0.5263157894736842
+          },
+          {
+            "sample_f1": 0.8846153846153846,
+            "macro_f1": 0.7076231615080767,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9615384615384616,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.8611111111111112,
+            "macro_f1": 0.7341753384571307,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.6428571428571429,
+            "f1_Recruitment": 0.9433962264150944,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.8931623931623932,
+            "macro_f1": 0.7161875067864178,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9615384615384616,
+            "f1_Other": 0.4444444444444444
+          },
+          {
+            "sample_f1": 0.8760683760683762,
+            "macro_f1": 0.7289054311603003,
+            "f1_Safety": 0.7777777777777778,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.47058823529411764
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.8675213675213675,
+            "macro_f1": 0.726887536623845,
+            "f1_Safety": 0.7777777777777778,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9607843137254902,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.9059829059829061,
+            "macro_f1": 0.8113111453460335,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.7058823529411765
+          },
+          {
+            "sample_f1": 0.8675213675213675,
+            "macro_f1": 0.7276541771824242,
+            "f1_Safety": 0.8235294117647058,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7333333333333333,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.4444444444444444
+          },
+          {
+            "sample_f1": 0.9017094017094016,
+            "macro_f1": 0.7726873701568939,
+            "f1_Safety": 0.8235294117647058,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.5555555555555556
+          },
+          {
+            "sample_f1": 0.8931623931623932,
+            "macro_f1": 0.7751921639799295,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5263157894736842
+          },
+          {
+            "sample_f1": 0.8846153846153846,
+            "macro_f1": 0.7541395324009821,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.42105263157894735
+          },
+          {
+            "sample_f1": 0.8760683760683762,
+            "macro_f1": 0.7422877995603552,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.42105263157894735
+          },
+          {
+            "sample_f1": 0.8846153846153846,
+            "macro_f1": 0.760941812889825,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7857142857142857,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.42105263157894735
+          }
+        ]
+      }
+    ],
+    "fold_counts": [
+      {
+        "seed": 20261126,
+        "fold": 0,
+        "heldout_rows": 52,
+        "reduced_gold": 122,
+        "expanded_gold": 183,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261126,
+        "fold": 1,
+        "heldout_rows": 42,
+        "reduced_gold": 134,
+        "expanded_gold": 193,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261126,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 126,
+        "expanded_gold": 190,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261126,
+        "fold": 3,
+        "heldout_rows": 50,
+        "reduced_gold": 121,
+        "expanded_gold": 185,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261126,
+        "fold": 4,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 0,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 1,
+        "heldout_rows": 45,
+        "reduced_gold": 128,
+        "expanded_gold": 190,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261127,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 126,
+        "expanded_gold": 190,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 3,
+        "heldout_rows": 47,
+        "reduced_gold": 126,
+        "expanded_gold": 188,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261127,
+        "fold": 4,
+        "heldout_rows": 52,
+        "reduced_gold": 123,
+        "expanded_gold": 183,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261128,
+        "fold": 0,
+        "heldout_rows": 51,
+        "reduced_gold": 123,
+        "expanded_gold": 184,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261128,
+        "fold": 1,
+        "heldout_rows": 47,
+        "reduced_gold": 128,
+        "expanded_gold": 188,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261128,
+        "fold": 2,
+        "heldout_rows": 50,
+        "reduced_gold": 120,
+        "expanded_gold": 185,
+        "added_validation_gold": 65
+      },
+      {
+        "seed": 20261128,
+        "fold": 3,
+        "heldout_rows": 44,
+        "reduced_gold": 128,
+        "expanded_gold": 191,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261128,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 129,
+        "expanded_gold": 192,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261129,
+        "fold": 0,
+        "heldout_rows": 56,
+        "reduced_gold": 120,
+        "expanded_gold": 179,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261129,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261129,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 130,
+        "expanded_gold": 190,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261129,
+        "fold": 3,
+        "heldout_rows": 46,
+        "reduced_gold": 126,
+        "expanded_gold": 189,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261129,
+        "fold": 4,
+        "heldout_rows": 42,
+        "reduced_gold": 127,
+        "expanded_gold": 193,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261130,
+        "fold": 0,
+        "heldout_rows": 51,
+        "reduced_gold": 127,
+        "expanded_gold": 184,
+        "added_validation_gold": 57
+      },
+      {
+        "seed": 20261130,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 123,
+        "expanded_gold": 189,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261130,
+        "fold": 2,
+        "heldout_rows": 48,
+        "reduced_gold": 126,
+        "expanded_gold": 187,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261130,
+        "fold": 3,
+        "heldout_rows": 44,
+        "reduced_gold": 127,
+        "expanded_gold": 191,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261130,
+        "fold": 4,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261201,
+        "fold": 0,
+        "heldout_rows": 48,
+        "reduced_gold": 123,
+        "expanded_gold": 187,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261201,
+        "fold": 1,
+        "heldout_rows": 50,
+        "reduced_gold": 122,
+        "expanded_gold": 185,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261201,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 125,
+        "expanded_gold": 190,
+        "added_validation_gold": 65
+      },
+      {
+        "seed": 20261201,
+        "fold": 3,
+        "heldout_rows": 49,
+        "reduced_gold": 132,
+        "expanded_gold": 186,
+        "added_validation_gold": 54
+      },
+      {
+        "seed": 20261201,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 126,
+        "expanded_gold": 192,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261202,
+        "fold": 0,
+        "heldout_rows": 45,
+        "reduced_gold": 132,
+        "expanded_gold": 190,
+        "added_validation_gold": 58
+      },
+      {
+        "seed": 20261202,
+        "fold": 1,
+        "heldout_rows": 47,
+        "reduced_gold": 125,
+        "expanded_gold": 188,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261202,
+        "fold": 2,
+        "heldout_rows": 49,
+        "reduced_gold": 127,
+        "expanded_gold": 186,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261202,
+        "fold": 3,
+        "heldout_rows": 46,
+        "reduced_gold": 121,
+        "expanded_gold": 189,
+        "added_validation_gold": 68
+      },
+      {
+        "seed": 20261202,
+        "fold": 4,
+        "heldout_rows": 48,
+        "reduced_gold": 123,
+        "expanded_gold": 187,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261203,
+        "fold": 0,
+        "heldout_rows": 48,
+        "reduced_gold": 127,
+        "expanded_gold": 187,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261203,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 131,
+        "expanded_gold": 189,
+        "added_validation_gold": 58
+      },
+      {
+        "seed": 20261203,
+        "fold": 2,
+        "heldout_rows": 47,
+        "reduced_gold": 124,
+        "expanded_gold": 188,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261203,
+        "fold": 3,
+        "heldout_rows": 51,
+        "reduced_gold": 122,
+        "expanded_gold": 184,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261203,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 124,
+        "expanded_gold": 192,
+        "added_validation_gold": 68
+      }
+    ],
+    "reference_files": [
+      {
+        "path": "experiments/ani_improvement_v1/pooled3/f800dc8ba1ce9ede5ff9.npz",
+        "sha256": "c1bb848544246493a732d3d2c23e7f2f2e05891a7e847936b5c52610b52d9077"
+      },
+      {
+        "path": "experiments/ani_improvement_v1/pooled5/d601defbfe4ff390f092.npz",
+        "sha256": "1c32070dcd4b9bb8bcb1c110134d7da57c0106cf05f16bcbece20a0aeeb29467"
+      }
+    ],
+    "predictions_file": "experiments/refit_diagnostic_v1/model0.npz",
+    "predictions_sha256": "4e66493643d1abd34fad5ec50d778313c0f37e4528a12fa1688117fba436c35a"
+  },
+  {
+    "candidate": "Ani + tri/SVM 15% each",
+    "results": [
+      {
+        "scope": "all235",
+        "rows": 235,
+        "reduced_mean": 0.913031914893617,
+        "expanded_mean": 0.9164893617021276,
+        "paired_delta": 0.0034574468085105947,
+        "delta_sd": 0.008105280758756047,
+        "expanded_wins": 5,
+        "ties": 0,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.9099290780141844,
+            "macro_f1": 0.8310310446614046,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9773462783171522,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9106382978723404,
+            "macro_f1": 0.8327967457379222,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8307692307692308,
+            "f1_Recruitment": 0.9738562091503268,
+            "f1_Other": 0.6
+          },
+          {
+            "sample_f1": 0.9085106382978724,
+            "macro_f1": 0.8328570917192977,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.8253968253968254,
+            "f1_Recruitment": 0.9771986970684039,
+            "f1_Other": 0.5901639344262295
+          },
+          {
+            "sample_f1": 0.9177304964539007,
+            "macro_f1": 0.8398388059644818,
+            "f1_Safety": 0.9056603773584906,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.65625
+          },
+          {
+            "sample_f1": 0.9120567375886524,
+            "macro_f1": 0.8229316231596258,
+            "f1_Safety": 0.9056603773584906,
+            "f1_Funding": 0.7619047619047619,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6229508196721312
+          },
+          {
+            "sample_f1": 0.9099290780141843,
+            "macro_f1": 0.8246834922658106,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.78125,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.6
+          },
+          {
+            "sample_f1": 0.926241134751773,
+            "macro_f1": 0.8520232358555543,
+            "f1_Safety": 0.8846153846153846,
+            "f1_Funding": 0.8695652173913043,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.6333333333333333
+          },
+          {
+            "sample_f1": 0.9092198581560285,
+            "macro_f1": 0.8198035214496547,
+            "f1_Safety": 0.8727272727272727,
+            "f1_Funding": 0.8181818181818182,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.5806451612903226
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.902127659574468,
+            "macro_f1": 0.7994380594020433,
+            "f1_Safety": 0.8679245283018868,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5901639344262295
+          },
+          {
+            "sample_f1": 0.9163120567375885,
+            "macro_f1": 0.8385007451564828,
+            "f1_Safety": 0.92,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9078014184397162,
+            "macro_f1": 0.8185241624412853,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.75,
+            "f1_Efficacy": 0.84375,
+            "f1_Recruitment": 0.9770491803278688,
+            "f1_Other": 0.5806451612903226
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8267585812879931,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.72,
+            "f1_Efficacy": 0.8787878787878788,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.625
+          },
+          {
+            "sample_f1": 0.9290780141843971,
+            "macro_f1": 0.8489909058667026,
+            "f1_Safety": 0.9230769230769231,
+            "f1_Funding": 0.782608695652174,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9837133550488599,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9205673758865247,
+            "macro_f1": 0.8381372549019609,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.875,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6333333333333333
+          },
+          {
+            "sample_f1": 0.9191489361702128,
+            "macro_f1": 0.8417942071222232,
+            "f1_Safety": 0.96,
+            "f1_Funding": 0.8,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.576271186440678
+          },
+          {
+            "sample_f1": 0.9177304964539008,
+            "macro_f1": 0.8441181041181041,
+            "f1_Safety": 0.9019607843137255,
+            "f1_Funding": 0.8333333333333334,
+            "f1_Efficacy": 0.8923076923076924,
+            "f1_Recruitment": 0.9869281045751634,
+            "f1_Other": 0.6060606060606061
+          }
+        ]
+      },
+      {
+        "scope": "original_train157",
+        "rows": 157,
+        "reduced_mean": 0.9304670912951167,
+        "expanded_mean": 0.9267515923566879,
+        "paired_delta": -0.003715498938428874,
+        "delta_sd": 0.011470373028117953,
+        "expanded_wins": 3,
+        "ties": 0,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.9405520169851381,
+            "macro_f1": 0.8918078723104422,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9805825242718447,
+            "f1_Other": 0.6818181818181818
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8713629324604935,
+            "f1_Safety": 0.9696969696969697,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6222222222222222
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8762617774382481,
+            "f1_Safety": 0.9090909090909091,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6363636363636364
+          },
+          {
+            "sample_f1": 0.9384288747346071,
+            "macro_f1": 0.8869473480449089,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.7555555555555555
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8637394957983193,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9320594479830149,
+            "macro_f1": 0.8761759436238099,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9384288747346071,
+            "macro_f1": 0.8885925650458875,
+            "f1_Safety": 0.8823529411764706,
+            "f1_Funding": 0.9411764705882353,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9805825242718447,
+            "f1_Other": 0.6976744186046512
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.850803329461866,
+            "f1_Safety": 0.8571428571428571,
+            "f1_Funding": 0.875,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6222222222222222
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8393494745991985,
+            "f1_Safety": 0.9142857142857143,
+            "f1_Funding": 0.7368421052631579,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6511627906976745
+          },
+          {
+            "sample_f1": 0.9214437367303611,
+            "macro_f1": 0.8579088261803001,
+            "f1_Safety": 0.9696969696969697,
+            "f1_Funding": 0.7777777777777778,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9171974522292994,
+            "macro_f1": 0.8461319073083778,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.7777777777777778,
+            "f1_Efficacy": 0.9090909090909091,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.6222222222222222
+          },
+          {
+            "sample_f1": 0.9235668789808917,
+            "macro_f1": 0.8408894462884593,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.7368421052631579,
+            "f1_Efficacy": 0.8888888888888888,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6521739130434783
+          },
+          {
+            "sample_f1": 0.9426751592356688,
+            "macro_f1": 0.8827475208971498,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.8235294117647058,
+            "f1_Efficacy": 0.9411764705882353,
+            "f1_Recruitment": 0.9805825242718447,
+            "f1_Other": 0.7272727272727273
+          },
+          {
+            "sample_f1": 0.9341825902335456,
+            "macro_f1": 0.8699199936714095,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.8421052631578947,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6666666666666666
+          },
+          {
+            "sample_f1": 0.9278131634819532,
+            "macro_f1": 0.8671688089403109,
+            "f1_Safety": 0.9696969696969697,
+            "f1_Funding": 0.8421052631578947,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.975609756097561,
+            "f1_Other": 0.6341463414634146
+          },
+          {
+            "sample_f1": 0.9256900212314224,
+            "macro_f1": 0.8660414246999613,
+            "f1_Safety": 0.875,
+            "f1_Funding": 0.8888888888888888,
+            "f1_Efficacy": 0.9142857142857143,
+            "f1_Recruitment": 0.9853658536585366,
+            "f1_Other": 0.6666666666666666
+          }
+        ]
+      },
+      {
+        "scope": "original_validation78",
+        "rows": 78,
+        "reduced_mean": 0.8779380341880343,
+        "expanded_mean": 0.8958333333333333,
+        "paired_delta": 0.017895299145299068,
+        "delta_sd": 0.009611674260388088,
+        "expanded_wins": 7,
+        "ties": 1,
+        "reduced_repeats": [
+          {
+            "sample_f1": 0.8482905982905982,
+            "macro_f1": 0.7054529527702752,
+            "f1_Safety": 0.8421052631578947,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7142857142857143,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.3333333333333333
+          },
+          {
+            "sample_f1": 0.8846153846153846,
+            "macro_f1": 0.7585038503850384,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7333333333333333,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.5333333333333333
+          },
+          {
+            "sample_f1": 0.873931623931624,
+            "macro_f1": 0.7422606583086309,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7142857142857143,
+            "f1_Recruitment": 0.970873786407767,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.8760683760683762,
+            "macro_f1": 0.7414895875552466,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7407407407407407,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.42105263157894735
+          },
+          {
+            "sample_f1": 0.8888888888888891,
+            "macro_f1": 0.7172762535141098,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.4,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.5
+          },
+          {
+            "sample_f1": 0.8653846153846154,
+            "macro_f1": 0.7205218929677134,
+            "f1_Safety": 0.8421052631578947,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.6428571428571429,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.9017094017094018,
+            "macro_f1": 0.768765801529443,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.8846153846153846,
+            "macro_f1": 0.7552535496957404,
+            "f1_Safety": 0.9,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9803921568627451,
+            "f1_Other": 0.47058823529411764
+          }
+        ],
+        "expanded_repeats": [
+          {
+            "sample_f1": 0.8632478632478634,
+            "macro_f1": 0.7235613216494062,
+            "f1_Safety": 0.7777777777777778,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7586206896551724,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.4444444444444444
+          },
+          {
+            "sample_f1": 0.9059829059829059,
+            "macro_f1": 0.8029576217583807,
+            "f1_Safety": 0.8235294117647058,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8387096774193549,
+            "f1_Recruitment": 0.98,
+            "f1_Other": 0.7058823529411765
+          },
+          {
+            "sample_f1": 0.8888888888888888,
+            "macro_f1": 0.7645843901278173,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.7741935483870968,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.47058823529411764
+          },
+          {
+            "sample_f1": 0.9102564102564102,
+            "macro_f1": 0.7935753575357536,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8666666666666667,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.5555555555555556
+          },
+          {
+            "sample_f1": 0.9017094017094016,
+            "macro_f1": 0.7799113123653563,
+            "f1_Safety": 0.8888888888888888,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.5263157894736842
+          },
+          {
+            "sample_f1": 0.893162393162393,
+            "macro_f1": 0.76872697411729,
+            "f1_Safety": 0.8235294117647058,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8275862068965517,
+            "f1_Recruitment": 0.9702970297029703,
+            "f1_Other": 0.5555555555555556
+          },
+          {
+            "sample_f1": 0.9017094017094018,
+            "macro_f1": 0.7818106516534007,
+            "f1_Safety": 0.9411764705882353,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8666666666666667,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.4444444444444444
+          },
+          {
+            "sample_f1": 0.9017094017094016,
+            "macro_f1": 0.78304904174628,
+            "f1_Safety": 0.9473684210526315,
+            "f1_Funding": 0.6666666666666666,
+            "f1_Efficacy": 0.8666666666666667,
+            "f1_Recruitment": 0.9900990099009901,
+            "f1_Other": 0.4444444444444444
+          }
+        ]
+      }
+    ],
+    "fold_counts": [
+      {
+        "seed": 20261126,
+        "fold": 0,
+        "heldout_rows": 52,
+        "reduced_gold": 122,
+        "expanded_gold": 183,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261126,
+        "fold": 1,
+        "heldout_rows": 42,
+        "reduced_gold": 134,
+        "expanded_gold": 193,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261126,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 126,
+        "expanded_gold": 190,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261126,
+        "fold": 3,
+        "heldout_rows": 50,
+        "reduced_gold": 121,
+        "expanded_gold": 185,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261126,
+        "fold": 4,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 0,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 1,
+        "heldout_rows": 45,
+        "reduced_gold": 128,
+        "expanded_gold": 190,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261127,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 126,
+        "expanded_gold": 190,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261127,
+        "fold": 3,
+        "heldout_rows": 47,
+        "reduced_gold": 126,
+        "expanded_gold": 188,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261127,
+        "fold": 4,
+        "heldout_rows": 52,
+        "reduced_gold": 123,
+        "expanded_gold": 183,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261128,
+        "fold": 0,
+        "heldout_rows": 51,
+        "reduced_gold": 123,
+        "expanded_gold": 184,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261128,
+        "fold": 1,
+        "heldout_rows": 47,
+        "reduced_gold": 128,
+        "expanded_gold": 188,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261128,
+        "fold": 2,
+        "heldout_rows": 50,
+        "reduced_gold": 120,
+        "expanded_gold": 185,
+        "added_validation_gold": 65
+      },
+      {
+        "seed": 20261128,
+        "fold": 3,
+        "heldout_rows": 44,
+        "reduced_gold": 128,
+        "expanded_gold": 191,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261128,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 129,
+        "expanded_gold": 192,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261129,
+        "fold": 0,
+        "heldout_rows": 56,
+        "reduced_gold": 120,
+        "expanded_gold": 179,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261129,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261129,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 130,
+        "expanded_gold": 190,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261129,
+        "fold": 3,
+        "heldout_rows": 46,
+        "reduced_gold": 126,
+        "expanded_gold": 189,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261129,
+        "fold": 4,
+        "heldout_rows": 42,
+        "reduced_gold": 127,
+        "expanded_gold": 193,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261130,
+        "fold": 0,
+        "heldout_rows": 51,
+        "reduced_gold": 127,
+        "expanded_gold": 184,
+        "added_validation_gold": 57
+      },
+      {
+        "seed": 20261130,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 123,
+        "expanded_gold": 189,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261130,
+        "fold": 2,
+        "heldout_rows": 48,
+        "reduced_gold": 126,
+        "expanded_gold": 187,
+        "added_validation_gold": 61
+      },
+      {
+        "seed": 20261130,
+        "fold": 3,
+        "heldout_rows": 44,
+        "reduced_gold": 127,
+        "expanded_gold": 191,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261130,
+        "fold": 4,
+        "heldout_rows": 46,
+        "reduced_gold": 125,
+        "expanded_gold": 189,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261201,
+        "fold": 0,
+        "heldout_rows": 48,
+        "reduced_gold": 123,
+        "expanded_gold": 187,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261201,
+        "fold": 1,
+        "heldout_rows": 50,
+        "reduced_gold": 122,
+        "expanded_gold": 185,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261201,
+        "fold": 2,
+        "heldout_rows": 45,
+        "reduced_gold": 125,
+        "expanded_gold": 190,
+        "added_validation_gold": 65
+      },
+      {
+        "seed": 20261201,
+        "fold": 3,
+        "heldout_rows": 49,
+        "reduced_gold": 132,
+        "expanded_gold": 186,
+        "added_validation_gold": 54
+      },
+      {
+        "seed": 20261201,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 126,
+        "expanded_gold": 192,
+        "added_validation_gold": 66
+      },
+      {
+        "seed": 20261202,
+        "fold": 0,
+        "heldout_rows": 45,
+        "reduced_gold": 132,
+        "expanded_gold": 190,
+        "added_validation_gold": 58
+      },
+      {
+        "seed": 20261202,
+        "fold": 1,
+        "heldout_rows": 47,
+        "reduced_gold": 125,
+        "expanded_gold": 188,
+        "added_validation_gold": 63
+      },
+      {
+        "seed": 20261202,
+        "fold": 2,
+        "heldout_rows": 49,
+        "reduced_gold": 127,
+        "expanded_gold": 186,
+        "added_validation_gold": 59
+      },
+      {
+        "seed": 20261202,
+        "fold": 3,
+        "heldout_rows": 46,
+        "reduced_gold": 121,
+        "expanded_gold": 189,
+        "added_validation_gold": 68
+      },
+      {
+        "seed": 20261202,
+        "fold": 4,
+        "heldout_rows": 48,
+        "reduced_gold": 123,
+        "expanded_gold": 187,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261203,
+        "fold": 0,
+        "heldout_rows": 48,
+        "reduced_gold": 127,
+        "expanded_gold": 187,
+        "added_validation_gold": 60
+      },
+      {
+        "seed": 20261203,
+        "fold": 1,
+        "heldout_rows": 46,
+        "reduced_gold": 131,
+        "expanded_gold": 189,
+        "added_validation_gold": 58
+      },
+      {
+        "seed": 20261203,
+        "fold": 2,
+        "heldout_rows": 47,
+        "reduced_gold": 124,
+        "expanded_gold": 188,
+        "added_validation_gold": 64
+      },
+      {
+        "seed": 20261203,
+        "fold": 3,
+        "heldout_rows": 51,
+        "reduced_gold": 122,
+        "expanded_gold": 184,
+        "added_validation_gold": 62
+      },
+      {
+        "seed": 20261203,
+        "fold": 4,
+        "heldout_rows": 43,
+        "reduced_gold": 124,
+        "expanded_gold": 192,
+        "added_validation_gold": 68
+      }
+    ],
+    "reference_files": [
+      {
+        "path": "experiments/ani_improvement_v1/pooled3/cbd5a8d1f2e08c9a9463.npz",
+        "sha256": "7305e092039b6245bdbcbf06f0a33bfa1866172c744e7794a381a55c5eb32b4d"
+      },
+      {
+        "path": "experiments/ani_improvement_v1/pooled5/75728fc99653e984729e.npz",
+        "sha256": "c15273ef4a26d87472229c0a852c05709481274653d11c95ddfee4cb1ff283d3"
+      }
+    ],
+    "predictions_file": "experiments/refit_diagnostic_v1/model1.npz",
+    "predictions_sha256": "adb381e3e3e581c64ec509c39720e5961b9a6bd399ecad3d1744cc4d1765a6b9"
+  }
+]

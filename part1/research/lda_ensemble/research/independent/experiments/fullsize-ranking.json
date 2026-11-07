@@ -1,0 +1,150 @@
+[
+  {
+    "name": "balanced_ensemble",
+    "config": {
+      "model": "ensemble",
+      "members": [
+        {
+          "model": "pseudo",
+          "teacher": {
+            "model": "cluster",
+            "cluster": "hdbscan",
+            "min_cluster": 5,
+            "pca": 25
+          },
+          "student": "logistic",
+          "C": 0.3,
+          "gamma": 0.001,
+          "scale": "global",
+          "pseudo_weight": 0.05,
+          "confidence": 0.95,
+          "labelwise": true,
+          "consensus": true,
+          "features": [
+            "fingerprint"
+          ],
+          "feature_weight": 0.5
+        },
+        {
+          "model": "svc",
+          "C": 10,
+          "gamma": 0.001,
+          "scale": "standard",
+          "features": [
+            "drugs",
+            "criteria"
+          ],
+          "feature_weight": 0.5
+        },
+        {
+          "model": "svc",
+          "C": 10,
+          "gamma": 0.001,
+          "scale": "standard",
+          "features": [
+            "drug_targets"
+          ],
+          "feature_weight": 1.0
+        }
+      ],
+      "weights": [
+        0.5,
+        0.25,
+        0.25
+      ]
+    },
+    "rule": "t0.35",
+    "fullsize_oof_f1": 0.9363057324840764,
+    "metrics": {
+      "sample_f1": 0.9363057324840764,
+      "macro_f1": 0.8988405374017123,
+      "f1_Safety": 0.967741935483871,
+      "f1_Funding": 0.875,
+      "f1_Efficacy": 0.9411764705882353,
+      "f1_Recruitment": 0.9711538461538461,
+      "f1_Other": 0.7391304347826086
+    }
+  },
+  {
+    "name": "fingerprint_ssl",
+    "config": {
+      "model": "ensemble",
+      "members": [
+        {
+          "model": "pseudo",
+          "teacher": {
+            "model": "cluster",
+            "cluster": "hdbscan",
+            "min_cluster": 5,
+            "pca": 25
+          },
+          "student": "logistic",
+          "C": 0.3,
+          "gamma": 0.001,
+          "scale": "global",
+          "pseudo_weight": 0.05,
+          "confidence": 0.95,
+          "labelwise": true,
+          "consensus": true,
+          "features": [
+            "fingerprint"
+          ],
+          "feature_weight": 0.5
+        }
+      ],
+      "weights": [
+        1
+      ]
+    },
+    "rule": "t0.35",
+    "fullsize_oof_f1": 0.9320594479830149,
+    "metrics": {
+      "sample_f1": 0.9320594479830148,
+      "macro_f1": 0.895324100163797,
+      "f1_Safety": 0.967741935483871,
+      "f1_Funding": 0.875,
+      "f1_Efficacy": 0.9696969696969697,
+      "f1_Recruitment": 0.9665071770334929,
+      "f1_Other": 0.6976744186046512
+    }
+  },
+  {
+    "name": "embedding_ssl",
+    "config": {
+      "model": "ensemble",
+      "members": [
+        {
+          "model": "pseudo",
+          "teacher": {
+            "model": "cluster",
+            "cluster": "hdbscan",
+            "min_cluster": 5,
+            "pca": 25
+          },
+          "student": "logistic",
+          "C": 0.3,
+          "gamma": 0.001,
+          "scale": "global",
+          "pseudo_weight": 0.05,
+          "confidence": 0.95,
+          "labelwise": true,
+          "consensus": true
+        }
+      ],
+      "weights": [
+        1
+      ]
+    },
+    "rule": "expected_f1",
+    "fullsize_oof_f1": 0.9299363057324841,
+    "metrics": {
+      "sample_f1": 0.9299363057324841,
+      "macro_f1": 0.8682842451665982,
+      "f1_Safety": 0.9090909090909091,
+      "f1_Funding": 0.8,
+      "f1_Efficacy": 0.9411764705882353,
+      "f1_Recruitment": 0.9711538461538461,
+      "f1_Other": 0.72
+    }
+  }
+]

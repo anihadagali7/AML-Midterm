@@ -1,0 +1,108 @@
+{
+  "version": "new-directions-v1.1-numerical-fix",
+  "frozen_at": 1793947334.378397,
+  "recipes": [
+    {
+      "name": "poisson_k10_t1",
+      "family": "poisson",
+      "neighbors": 10,
+      "temperature": 1.0
+    },
+    {
+      "name": "poisson_k10_t2",
+      "family": "poisson",
+      "neighbors": 10,
+      "temperature": 2.0
+    },
+    {
+      "name": "poisson_k30_t1",
+      "family": "poisson",
+      "neighbors": 30,
+      "temperature": 1.0
+    },
+    {
+      "name": "poisson_k30_t2",
+      "family": "poisson",
+      "neighbors": 30,
+      "temperature": 2.0
+    },
+    {
+      "name": "compositional_d30_u0",
+      "family": "compositional",
+      "dimensions": 30,
+      "unlabeled_mass": 0.0
+    },
+    {
+      "name": "compositional_d30_u0.5",
+      "family": "compositional",
+      "dimensions": 30,
+      "unlabeled_mass": 0.5
+    },
+    {
+      "name": "compositional_d80_u0",
+      "family": "compositional",
+      "dimensions": 80,
+      "unlabeled_mass": 0.0
+    },
+    {
+      "name": "compositional_d80_u0.5",
+      "family": "compositional",
+      "dimensions": 80,
+      "unlabeled_mass": 0.5
+    },
+    {
+      "name": "fisher_k8_w0.5_s0",
+      "family": "fisher",
+      "clusters": 8,
+      "residual_weight": 0.5,
+      "second_order": false
+    },
+    {
+      "name": "fisher_k8_w1_s1",
+      "family": "fisher",
+      "clusters": 8,
+      "residual_weight": 1.0,
+      "second_order": true
+    },
+    {
+      "name": "fisher_k24_w0.5_s0",
+      "family": "fisher",
+      "clusters": 24,
+      "residual_weight": 0.5,
+      "second_order": false
+    },
+    {
+      "name": "fisher_k24_w1_s1",
+      "family": "fisher",
+      "clusters": 24,
+      "residual_weight": 1.0,
+      "second_order": true
+    }
+  ],
+  "sources": {
+    "models.py": "38f2e27d6feca7cff373a8130480ffa52ff9364d3fa4f1645aa9e5f2fd83cf5c",
+    "study.py": "b97d648453a67c40e8326a05f827fce2c8e16efeff53e918d06ba3b2e6827eb0"
+  },
+  "raw_data": {
+    "part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "protocols": {
+    "chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+    "train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29"
+  },
+  "selection": "Screen first 3 repeats in BOTH pools against fixed Ani inductive control. Advance positive means and >=2/3 wins in each. Confirm on 5 added repeats, require positive means and >=5/8 wins in each. Compare submitted ensemble as secondary reference. Evaluate original validation and chronology only after shortlist.",
+  "no_kaggle_inputs": true,
+  "access": "inductive",
+  "hypotheses": {
+    "poisson": "Sources/sinks may avoid oversmoothing ordinary label propagation; normalized embedding graph, independent prediction extension.",
+    "compositional": "Share semantic prototype estimates across all 31 reason combinations, infer missing patterns with anchored EM and decode joint expected F1.",
+    "fisher": "Mixture residual directions may preserve distinctions erased by plain cluster probabilities. Signed-root and L2 normalization."
+  }
+}

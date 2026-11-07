@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Local SVM specialist hybrid",
+    "config": {
+      "model": "policy25",
+      "learner": {
+        "model": "local_ssl",
+        "regions": 3,
+        "C": 3,
+        "gamma": 0.001,
+        "local_mix": 0.25
+      },
+      "baseline": {
+        "model": "tri_labelwise",
+        "base": {
+          "model": "lowdensity_v2",
+          "cluster_gate": true,
+          "clusters": 10,
+          "C": 1,
+          "gamma": 0.001,
+          "pseudo_weight": 0.03
+        },
+        "tri": {
+          "model": "tri_training",
+          "committee": "mixed",
+          "cluster_gate": false,
+          "pseudo_weight": 1.0,
+          "aggregation": "vote",
+          "stratified_bootstrap": false
+        },
+        "base_rule": "t0.55",
+        "tri_rule": "t0.5",
+        "use_tri": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "decision_rule": "t0.65",
+      "scope": "recruitment_other"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9059829059829061,
+      "macro_f1": 0.7713531353135313,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.9900990099009901,
+      "f1_Other": 0.5
+    },
+    "validation_source": "experiments/phase25-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.821436+00:00"
+  },
+  {
+    "name": "Classical tri-training",
+    "config": {
+      "model": "tri_training",
+      "committee": "mixed",
+      "cluster_gate": false,
+      "pseudo_weight": 1.0,
+      "aggregation": "vote",
+      "stratified_bootstrap": false
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": {
+      "sample_f1": 0.9038461538461541,
+      "macro_f1": 0.8053642010163748,
+      "f1_Safety": 0.8888888888888888,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.7857142857142857,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    },
+    "validation_source": "experiments/phase21c-validation-results.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:32:23.819774+00:00"
+  },
+  {
+    "name": "Current best hybrid",
+    "config": {
+      "model": "tri_labelwise",
+      "base": {
+        "model": "lowdensity_v2",
+        "cluster_gate": true,
+        "clusters": 10,
+        "C": 1,
+        "gamma": 0.001,
+        "pseudo_weight": 0.03
+      },
+      "tri": {
+        "model": "tri_training",
+        "committee": "mixed",
+        "cluster_gate": false,
+        "pseudo_weight": 1.0,
+        "aggregation": "vote",
+        "stratified_bootstrap": false
+      },
+      "base_rule": "t0.55",
+      "tri_rule": "t0.5",
+      "use_tri": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rule": "t0.5",
+    "incumbent": true,
+    "recorded_validation": {
+      "sample_f1": 0.9123931623931625,
+      "macro_f1": 0.81044356609574,
+      "f1_Safety": 0.9,
+      "f1_Funding": 0.6666666666666666,
+      "f1_Efficacy": 0.8,
+      "f1_Recruitment": 0.98989898989899,
+      "f1_Other": 0.6956521739130435
+    },
+    "validation_source": "experiments/current-best.json",
+    "validation_status": "Previously measured; not rerun by this benchmark",
+    "registered_at": "2026-11-06T01:13:44.018297+00:00"
+  },
+  {
+    "name": "Ani training-only adaptation",
+    "config": {
+      "model": "repo_ani",
+      "adapter_sha256": "21c4d6ad410dee401ab2719c8eaf3e8675d2cc3e0fa766ec60016d3a038c36ea"
+    },
+    "rule": "t0.3",
+    "incumbent": false,
+    "recorded_validation": null,
+    "validation_source": "New inductive evaluation of frozen imported recipe"
+  },
+  {
+    "name": "DBSCAN + logistic C1000",
+    "config": {
+      "model": "repo_dbscan",
+      "adapter_sha256": "21c4d6ad410dee401ab2719c8eaf3e8675d2cc3e0fa766ec60016d3a038c36ea"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": null,
+    "validation_source": "New inductive evaluation of frozen imported recipe"
+  },
+  {
+    "name": "K-means k8 + logistic C1000",
+    "config": {
+      "model": "repo_kmeans",
+      "adapter_sha256": "21c4d6ad410dee401ab2719c8eaf3e8675d2cc3e0fa766ec60016d3a038c36ea"
+    },
+    "rule": "t0.5",
+    "incumbent": false,
+    "recorded_validation": null,
+    "validation_source": "New inductive evaluation of frozen imported recipe"
+  }
+]
