@@ -2,7 +2,7 @@
 
 **File 10 Kaggle result: 0.58609 (user-reported).** File 09's Kaggle score is unknown. The current ledger records results reported after the frozen export manifests.
 
-File 10 improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. Its reported Kaggle score of 0.58609 improves that reference by 0.00079. The user reported second place behind 0.58526, a remaining gap of 0.00083. Use file 10 as the next experiment's reference. File 09 has the strongest improvement on the original three forward windows, but a small grouped-CV regression and no reported Kaggle score.
+File 10 improves all six chronological windows under both preprocessing policies, with a small grouped-CV improvement over Ani's 0.58688 model. Its reported Kaggle score of 0.58609 improves that reference by 0.00079. At that stage, the user reported second place behind 0.58526, a gap of 0.00083. File 10 became the frozen reference for the subsequent sprint; see the current Part Two README and ledger for later results. File 09 has the strongest improvement on the original three forward windows, but a small grouped-CV regression and no reported Kaggle score.
 
 ## What the earlier search missed
 

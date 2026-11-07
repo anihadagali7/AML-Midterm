@@ -1,13 +1,13 @@
 # Part Two manual Kaggle submissions
 
-**Current best: file 10, Kaggle 0.58609.** The user reported second place behind
-0.58526. The improvement over Ani's 0.58688 is 0.00079; the gap to the reported
-leader is 0.00083. Use this exact file as the next experiment's reference.
+**Current best: file 11, Kaggle 0.58474, user-reported first place.** The improvement
+over file 10 is 0.00135 and over Ani's 0.58688 is 0.00214. It beats the previously
+reported leader's 0.58526 by 0.00052. Preserve this exact file as the scored reference.
 The [current ledger](leaderboard_results.json) records the score against its hash.
 
-**New candidates:** [11_file10_legacy20.csv](11_file10_legacy20.csv) is the first
-upload recommendation. Files 12–14 are prepared reserves; choose the next upload
-after receiving file 11's score. All four Kaggle scores are currently unknown.
+**Winning submission:** [11_file10_legacy20.csv](11_file10_legacy20.csv) blends
+80% file 10 with 20% of the original ensemble, refitted on all 9,050 labeled rows.
+Files 12–14 are prepared, unscored reserves. One of four additional uploads was used.
 See the [common comparison and SCP command](../experiments/leaderboard_sprint/RESULTS.md)
 and [four-submission queue](sprint_queue.json).
 
@@ -20,7 +20,7 @@ from 0.540324 to 0.535890 and longer-gap mean from 0.568506 to 0.563189, while
 grouped CV worsens from 0.578048 to 0.586891. The chronological intervals include
 zero; the later Kaggle score provides separate evidence of an improvement.
 
-**Best scored file: [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv).**
+**Previous best: [10_ani_fast2_neighbors_half.csv](10_ani_fast2_neighbors_half.csv).**
 It beats Ani's recency model on all six chronological windows in both preprocessing
 tracks, with a small grouped-CV improvement. [09_ani_replace_knn5.csv](09_ani_replace_knn5.csv)
 has the larger gain on the original three windows, but a small CV regression.
@@ -32,6 +32,7 @@ The chronological uncertainty intervals remain unchanged by the Kaggle result.
 | Ani recency reference | 0.537446 | 0.587411 | 0.564681 | 0.58688 |
 | 09: sharper recent kNN | 0.535213 | 0.589230 | 0.563657 | Unknown |
 | 10: recent-neighbor blend | 0.535890 | 0.586891 | 0.563189 | **0.58609** |
+| 11: 20% original-ensemble blend | 0.533926 | 0.581169 | 0.561563 | **0.58474** |
 
 See [full findings](../experiments/ani_extensions/RESULTS.md) and the
 [recipes, checksums and native bundle manifest](ani_extensions_manifest.json).
@@ -41,7 +42,7 @@ so local fitting and selection evidence remain reproducible.
 The [previous research round](../experiments/stack_improvements/RESULTS.md) and its
 [empty promotion manifest](stack_improvements_manifest.json) remain historical records.
 
-Historical results below used Ani's **0.58688** reference. Our 03 scored **0.59562**, then 02 improved to **0.58993**. File 10 is now the best scored model at **0.58609**. Initial 01/04 remain unscored. **Hold 05/06; use the fixed benchmark for future comparisons.**
+Historical results below used Ani's **0.58688** reference. Our 03 scored **0.59562**, then 02 improved to **0.58993**, file 10 to **0.58609**, and file 11 to **0.58474**. Initial 01/04 remain unscored. **Hold 05/06; use the fixed benchmark for future comparisons.**
 
 | submission | validation_logloss | temporal_logloss | kaggle_score |
 | --- | --- | --- | --- |
@@ -61,7 +62,7 @@ Hold **05/06** after the Ani comparison. The new chronological benchmark favors 
 
 ## Optional Ani-anchored candidates
 
-07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. These are historical proposals; file 10 is now the confirmed best and the current sprint above determines subsequent upload choices. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
+07 blends 75% of the known 0.58688 reference with 25% of Ani's capped Phase III trend alternative. It has small favorable point differences across both benchmark tracks, but temporal intervals include zero. 08 is an Ani-heavy linear blend: it improves grouped CV but is less consistent across time. Neither has a known Kaggle score. These are historical proposals; file 11 is now the confirmed best. See [the benchmark report](../experiments/local_benchmark/RESULTS.md).
 
 | submission | mean_abs_change_from_ani | kaggle_score |
 | --- | --- | --- |

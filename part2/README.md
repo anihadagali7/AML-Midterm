@@ -1,18 +1,18 @@
 # Part Two: clinical-trial outcome prediction
 
-**Current best: [submission 10](submissions/10_ani_fast2_neighbors_half.csv), Kaggle
-0.58609.** The user reported second place behind 0.58526. This improves Ani's
-0.58688 by 0.00079 and leaves a 0.00083 gap to the reported leader. The result is
+**Current best: [submission 11](submissions/11_file10_legacy20.csv), Kaggle
+0.58474, user-reported first place.** This improves file 10 by 0.00135 and Ani's
+0.58688 by 0.00214, beating the previously reported leader's 0.58526 by 0.00052. The result is
 tied to the exact CSV hash in [the ledger](submissions/leaderboard_results.json).
-Use file 10 as the baseline for the next experiment.
+Use file 11 as the scored reference for any further experiment.
 
 **Current iteration:** [files 11–14 and the fixed-benchmark comparison](experiments/leaderboard_sprint/RESULTS.md).
 Thirty-two blend/meta variants and four recent-tree blends were evaluated across
-the same 13 splits under both preprocessing policies. File 11 is the first upload
-recommendation; the other files are reserves pending its score. All four scores
-are unknown. Native replay checks pass and all 16 regression tests pass.
+the same 13 splits under both preprocessing policies. The first upload, file 11,
+reached first place. Files 12–14 remain unscored reserves; one of four additional
+submissions has been used. Native replay checks pass and all 16 regression tests pass.
 
-**Direct comparison of every saved submission:** [common benchmark results](experiments/all_submissions/RESULTS.md)
+**Earlier comparison of files 01–10:** [common benchmark results](experiments/all_submissions/RESULTS.md)
 and [executed notebook](all_submissions.ipynb). All ten numbered recipes, both Ani
 winners, and the trend control use identical fitting/evaluation trials across the
 ten original splits and three longer-gap checks. Files 02/03 include their full
@@ -21,7 +21,7 @@ File 10 beats file 02 in all six chronological windows, but has worse grouped CV
 and supplied-validation loss. The chronological uncertainty intervals include
 zero; the later Kaggle result above is separate evidence of an improvement.
 
-**Latest extension: submission 10 is the best scored model.**
+**Previous extension: submission 10 scored 0.58609.**
 The recent-neighbor blend improves all six chronological windows in both
 preprocessing tracks and slightly improves grouped CV versus Ani's recency winner.
 [Submission 09](submissions/09_ani_replace_knn5.csv) has a larger original-window
@@ -38,7 +38,7 @@ It preserves all unsuccessful experiments and keeps unknown Kaggle scores explic
 Use `make -C part2 improve-test` and `make -C part2 improve-verify` from the repository
 root; create `.venv` with `part2/requirements-benchmark.txt` first.
 
-**Historical recommendation: hold 05/06.** Ani's published 0.58688 model was reproduced. The [original benchmark](experiments/local_benchmark/RESULTS.md) and selection below are historical; the current best is file 10 at 0.58609. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
+**Historical recommendation: hold 05/06.** Ani's published 0.58688 model was reproduced. The [original benchmark](experiments/local_benchmark/RESULTS.md) and selection below are historical; the current best is file 11 at 0.58474. Optional Ani-anchored candidates are documented in [ani_candidates_manifest.json](submissions/ani_candidates_manifest.json); their Kaggle scores remain unknown.
 
 The initial four manual submissions and two follow-ups are preserved below. **Lower log loss is better.** Their reference was **0.58688**. Our `03_phase_specialized.csv` scored **0.59562**; `02_text_heavy.csv` improved to **0.58993**. File 10 later reached **0.58609**. Initial candidates 01 and 04 have unknown Kaggle scores. Results are recorded against exact file hashes in [submissions/leaderboard_results.json](submissions/leaderboard_results.json).
 
