@@ -1,0 +1,120 @@
+\section{Results}
+\label{sec:results}
+
+Table~\ref{tab:p1first} is the first model family. The mixture by itself is the
+weakest result. One logistic model over all five reasons beats a separate
+classifier for each reason. Letting the model teach itself is the largest single
+gain. Giving the mixture a small role in that step gives the best
+cross-validated score in this family. That model, refit on all 235 real labels,
+is the reported 0.89423 Kaggle submission. As noted above, its preprocessing saw
+the test rows, so we do not treat it as the same experiment as the later models.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}cccc@{}}
+\toprule
+\multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
+\midrule
+\multicolumn{4}{@{}l@{}}{\textit{One-vs-rest logistic regression}} \\
+0.868 & 0.706 & 0.898 & 0.797 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Cosine nearest neighbors ($k{=}10$)}} \\
+0.872 & 0.607 & 0.881 & 0.734 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Mixture used as the labeler}} \\
+0.780 & 0.570 & 0.819 & 0.640 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Logistic regression, no class weights}} \\
+0.850 & 0.677 & 0.894 & 0.765 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Balanced logistic regression $+$ neighbors}} \\
+0.885 & 0.724 & 0.898 & 0.800 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Self-training, mixture left out}} \\
+0.889 & 0.723 & 0.913 & 0.805 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{Self-training with the mixture}} \\
+0.893 & 0.714 & 0.914 & 0.814 \\
+\bottomrule
+\end{tabular*}
+\caption{First model family. Validation is the 78 labeled trials. Repeated CV is
+eight repeats of five folds over all 235 labeled trials. The last row is the
+model behind the reported 0.89423 submission.}
+\label{tab:p1first}
+\end{table}
+
+Table~\ref{tab:p1features} adds one extra input block at a time to that same
+model. None of them raises validation sample-wise F1. Morgan fingerprints move
+the cross-validated score by 0.004, which is inside the noise between repeats.
+Later checks that added diseases, pathways, or eligibility text to an
+embeddings-only logistic model also failed to help, and the pathway block
+lowered the score. We kept the embeddings alone.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}cccc@{}}
+\toprule
+\multicolumn{2}{c}{Validation} & \multicolumn{2}{c}{Repeated CV} \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+samp.\ F1 & macro F1 & samp.\ F1 & macro F1 \\
+\midrule
+\multicolumn{4}{@{}l@{}}{\textbf{Embeddings only}} \\
+\textbf{0.893} & \textbf{0.714} & 0.914 & 0.814 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ start year}} \\
+0.891 & 0.711 & 0.912 & 0.807 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ eligibility text}} \\
+0.876 & 0.709 & 0.913 & 0.801 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ disease names}} \\
+0.876 & 0.696 & 0.914 & 0.806 \\
+\addlinespace
+\multicolumn{4}{@{}l@{}}{\textit{$+$ drug fingerprints}} \\
+0.889 & 0.719 & 0.918 & 0.815 \\
+\bottomrule
+\end{tabular*}
+\caption{Feature check on the first self-training model. No added block improves
+validation sample-wise F1.}
+\label{tab:p1features}
+\end{table}
+
+Table~\ref{tab:p1final} compares the later models on one shared set of checks.
+The final model is the one described in Section~\ref{sec:methods}. On
+cross-validation it is tied with the linear-discriminant ensemble: 0.9321
+against 0.9318 on the 157 training labels, and 0.9214 against 0.9216 on all
+235. Its 78-trial validation score is lower, 0.891 against 0.906. Its
+time-ordered score is higher, 0.884 against 0.878. The reported Kaggle score
+is 0.89636, above both 0.89423 and the ensemble's 0.89401.
+We submitted it because that was the best reported test score, and the repeated
+checks did not show a real loss.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+Model & Train & Pooled & Val. & Time & Kaggle \\
+\midrule
+Final blend & \textbf{.9321} & .9214 & .891 & \textbf{.884} & \textbf{.89636} \\
+LDA ensemble & .9318 & \textbf{.9216} & \textbf{.906} & .878 & .89401 \\
+Earlier LDA blend & .9281 & .9154 & .872 & .874 & --- \\
+First submission & .9196 & .9098 & .891 & .861 & .89423 \\
+\bottomrule
+\end{tabular*}
+\caption{Later models on the same grouped checks. Train is cross-validation on
+157 labels. Pooled is cross-validation on 235 labels. Val.\ is the original 78
+validation trials. Time pools the three chronological windows. Kaggle scores
+are the reported public scores.}
+\label{tab:p1final}
+\end{table}
+
+On the 78 validation trials, the final blend scores 0.941 on Safety (9
+trials), 0.667 on Funding (4), 0.759 on Efficacy (14), 0.990 on Recruitment
+(50), and 0.471 on Other (10). The sample-wise average is 0.891 and the
+macro average is 0.765. The two common reasons are handled well. Funding and
+Other are not, and each rests on too few trials to trust a small difference.
+The grouped cross-validation macro F1 is 0.883 on the 157 training labels and
+0.850 on all 235.

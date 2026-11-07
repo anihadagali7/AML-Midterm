@@ -1,0 +1,58 @@
+% Part 1 report. Compile from this directory:
+%   latexmk -pdf main.tex
+% The course write-up is one PDF of at most five pages, including figures,
+% for both parts together. This file is the Part 1 report on its own.
+% cvpr.sty, preamble.tex, main.bib, and the bibliography style are links
+% to the shared template in midterm/report.
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage[pagenumbers]{cvpr}
+\input{preamble}
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+\def\paperID{*****}
+\def\confName{CVPR}
+\def\confYear{2026}
+
+\title{Filling In Missing Stopping Reasons\\
+for Clinical Trials\\
+\vspace{0.35em}
+\large CS5785 / ORIE5750 / ECE5414 --- Midterm Project, Part 1}
+
+\author{Anirudha Hadagali\\
+Cornell University
+\and
+Michael Mazzola\\
+Cornell University
+\and
+Tarun Mandalapu\\
+Cornell University
+}
+
+\begin{document}
+\maketitle
+
+\input{sec/0_abstract}
+
+\noindent\textbf{Team responsibilities.}
+All three authors worked on Part~1, Part~2, and the report.
+\textbf{Michael Mazzola} led the Part~1 model.
+\textbf{Tarun Mandalapu} built the first Part~2 classifier, which
+\textbf{Anirudha Hadagali} then turned into the final Part~2 ensemble.
+Tarun Mandalapu wrote the combined project report. This Part~1 write-up
+follows that report and the later model checks.
+
+\input{sec/1_methods}
+\input{sec/2_results}
+\input{sec/3_discussion}
+
+{
+    \small
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{main}
+}
+
+\end{document}

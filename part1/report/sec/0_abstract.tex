@@ -1,0 +1,14 @@
+\begin{abstract}
+We predict why a clinical trial stopped early. Each trial can have any of five
+reasons, and most of the training reasons are hidden. The useful input is a
+150-number summary of the stopping-reason text. Eligibility criteria, disease
+names, drug fingerprints, pathways, and start year did not improve the score, so
+the submitted model uses the embeddings alone.
+
+The model is a blend of logistic regression, cosine nearest neighbors, and
+shrinkage linear discriminant analysis. A 30-component Gaussian mixture does not
+name the reasons. It only helps decide which unlabeled trials are safe to learn
+from. Those trials are added in two rounds, at a quarter of the weight of a real
+label. On the 78 validation trials this scores 0.891 sample-wise F1. After a
+final fit on all 235 real labels, the reported Kaggle score is 0.89636.
+\end{abstract}

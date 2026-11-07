@@ -1,0 +1,51 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{The mixture is a poor labeler and a useful tie-breaker.}
+Used on its own, the mixture is the worst row in Table~\ref{tab:p1first}. Its
+components mostly separate Recruitment from the other reasons. Adding more
+components splits Recruitment into smaller pieces. It does not isolate Safety or
+Funding. The embeddings do contain those reasons: a supervised model reaches
+0.941 F1 on Safety from the same inputs. The problem is the clustering. It finds
+the largest pattern in the data, and that pattern is Recruitment.
+
+The mixture still earns its place once it is demoted. In the first family, using
+it as a 20\% voice in self-training raised cross-validated macro F1 from 0.805 to
+0.814. In the submitted model we cut that voice to 5\%. Its job is to steady
+which unlabeled trials get promoted, not to name their reasons. The quarter
+weight on a generated row does the same kind of work. In the final fit the 757
+accepted rows carry about half the weight of the 235 real labels, so a confident
+guess can help and cannot take over.
+
+\paragraph{Why adding every feature makes the model worse.}
+This was the clearest negative result. The embeddings are a compressed copy of
+the stopping-reason text, which is the text the labels came from. They already
+hold most of what the labels have to say. Criteria, diseases, and drugs describe
+what the trial was, not why it ended. Adding one of those blocks means 20 to
+2,000 new inputs on 157 real labels. The noise shows up immediately. Eligibility
+text drops validation sample-wise F1 from 0.893 to 0.876 in
+Table~\ref{tab:p1features}. Fingerprints barely move the cross-validated score,
+and 44\% of trials have no matched drug. Start year looks predictive only because
+the labeled trials were chosen to be early. The test trials are the late ones,
+so a year pattern learned here points the wrong way. Leaving a feature out was a
+result, not a shortcut.
+
+\paragraph{A higher validation score was not enough.}
+The linear-discriminant ensemble beats the submitted blend by 0.015 on the 78
+validation trials and is tied with it under cross-validation. We did not follow
+the validation number. Four Funding trials and ten Other trials can move the
+macro average by several points, which is why the validation and
+cross-validated columns in Table~\ref{tab:p1first} already disagree about which
+early model is best. The time-ordered windows, which look more like the later
+test years, favor the submitted blend. So does the reported Kaggle score. The
+validation score also belongs to a fit that has not yet seen those 78 labels.
+The submitted file is retrained with them included.
+
+\paragraph{What we would not do again.}
+We would not fit the scaler or the mixture on the test rows. That choice is part
+of the 0.89423 submission, and the later inductive fit scored higher. We would
+not let generated labels rewrite the class weights, because the model then starts
+believing its own class balance. We would not add year, text, or drug features
+in the hope that more inputs are safer. The gain that held up was smaller than
+that search: freeze the weights, keep both of a neighbor's reasons, and let the
+mixture advise instead of decide.
