@@ -18,7 +18,7 @@
     },
     {
       "file": "12_file10_sharp_trend.csv",
-      "status": "Prepared reserve; testing combinations against file 11 before next selection",
+      "status": "Unsubmitted reserve; iteration concluded with file 13 as the winner",
       "kaggle_score": null,
       "sha256": "534966af71199aa287e83931d6935601bb6674dd6064686dc885025c7c1db1cf",
       "export_receipt": "experiments/leaderboard_sprint/runs/4dc0f274d45bce9e/exports/12_file10_sharp_trend.json"
@@ -33,7 +33,7 @@
     },
     {
       "file": "14_file10_recent_tree20.csv",
-      "status": "Prepared reserve; testing combinations against file 11 before next selection",
+      "status": "Unsubmitted reserve; iteration concluded with file 13 as the winner",
       "kaggle_score": null,
       "sha256": "87f1140ad7531ce45ab6fdfff4076880ca75ad939478d86fde551972a325e930",
       "export_receipt": "experiments/leaderboard_sprint/recent_tree/dea847f57c7c07ee/exports/14_file10_recent_tree20.json"

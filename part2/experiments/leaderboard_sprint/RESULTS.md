@@ -2,7 +2,7 @@
 
 **Best scored submission: `13_file10_legacy30.csv`, 0.58465.** Scores are user-reported and tied to exact CSV hashes in the [ledger](../../submissions/leaderboard_results.json). File 11 reached reported first place at 0.58474; file 13 subsequently improved to 0.58465.
 
-3 of the original four additional uploads have reported results; 1 remain unconfirmed. The [live queue](../../submissions/sprint_queue.json) records the latest request. The user revised the active deadline to 2026-11-07 00:06:49 UTC.
+3 of the original four additional uploads were used; the remaining 1 submission slot was deliberately left unused. The [live queue](../../submissions/sprint_queue.json) records the final hold decision. The user revised the active deadline to 2026-11-07 00:06:49 UTC.
 
 ## Direct comparison
 
