@@ -1,0 +1,53 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Log loss and F1 answer different questions.}
+File~10 lowers log loss on later years while its validation F1 goes down in
+Phases~I and~II. That is not a failed model. F1 cuts every probability at
+0.5. A model that pulls uncertain trials toward the recent success rate can
+cross that cutoff the wrong way and still assign the better probability.
+The contest scores the probability. We treated F1 as a check, not as the
+thing to maximize. Had F1 been the target, the right next step would have
+been a separate cutoff for each phase.
+
+\paragraph{The test set is a later cohort.}
+Validation trials are drawn from the same years as the training trials. Test
+trials start later, and success becomes more common over time. A model fit to
+the average training year is too pessimistic about the test file. Recency
+weights are the direct answer: a recent trial counts more, with a decay
+chosen on time-ordered holdouts. The neighbor change does the same job from
+the other side. A similar past trial is more relevant if it is also recent,
+and a Phase~I trial should be compared with Phase~I. File~10's validation
+log loss is worse than the plain recency stack, and its Kaggle loss is
+better. We trusted the check that looks like the test set.
+
+\paragraph{Why 30\% of the old ensemble, and then stop.}
+The older ensemble is weaker on later years and stronger when the years are
+mixed. Blending it with file~10 is useful only while the two models miss
+different trials. The first 20\% was worth 0.00135 on Kaggle. The next 10\%
+was worth 0.00009. File~15 added a recent tree and a phase trend, improved
+the local averages, and lost 0.00027 on Kaggle. After that, a better
+historical average was not a reason to upload. The last prepared file had
+small local gains, intervals that included zero, and a slightly worse grouped
+score. We left the last submission slot unused.
+
+\paragraph{Where the errors stay.}
+Failed Phase~III trials are hard to recognize. They often ran to the end and
+simply missed the endpoint, so the eligibility text looks like the text of a
+success, and the high Phase~III success rate pulls the probability up.
+Recruitment and funding failures are more administrative, and the early
+ensemble catches a few more of them. The Phase~III efficacy row moves from
+8 of 9 to 6 of 9 in Table~\ref{tab:p2err}, then back to 9 of 9 under the
+neighbor model. All nine of those tags are Part~1 predictions. Safety,
+Funding, and Other are small in every phase. Only Phase~II Recruitment and
+the three no-reason groups are large, and membership in the no-reason group
+is a lookup rather than a prediction. The reason table told us to look past
+eligibility text. It was not a safe place to tune a cutoff.
+
+\paragraph{What we would not do again.}
+We would not ship the model with the best random validation loss. File~03
+did that and scored 0.59562. We would not add fingerprints or a raw year
+slope just because the feature is available. Year fitted on 2000--2013 has
+to be believed out to 2022, and drug structure is missing more often in the
+test file than in training. We would not treat a 0.0001 local gain as a new
+submission once the leaderboard had already contradicted that kind of gain.
