@@ -4,9 +4,12 @@ Use the existing `codex/part1-research-integration` branch for this research.
 Do not merge branches unless Michael asks. Keep unrelated work out of commits.
 The workspace GitHub account and commit identity rules still apply.
 
-Read `RESEARCH_HANDOFF.md` and the grouped testing policy linked from it before
-new model work. Use only supplied Part 1 inputs; keep held-out labels and test
-inputs outside fitting under the default inductive protocol.
+Read `README.md` and `TESTING_POLICY.md` before new model work. Use
+`RESEARCH_HANDOFF.md` for the short handoff and `RESEARCH_INDEX.html` to find
+relevant historical experiments. When improving the submitted model, declare
+the anchored 0.89636 recipe as the parent before scoring. Use only supplied
+Part 1 inputs; keep held-out labels and test inputs outside fitting under the
+default inductive protocol.
 
 Commit each completed experiment or coherent batch of ideas with its code,
 fixed settings, evaluation protocol, summary results, and failure notes.

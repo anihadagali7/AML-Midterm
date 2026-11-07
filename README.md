@@ -1,12 +1,15 @@
 # AML Midterm — Part 1 research
 
+Start with the [Part 1 README](part1/README.md) for the current model, comparable scores, and working verification commands.
+
 The consolidated [Part 1 research index](part1/RESEARCH_INDEX.html), [handoff](part1/RESEARCH_HANDOFF.md) and [testing policy](part1/TESTING_POLICY.md) cover the preserved experiment history and leaders. Latest reported Kaggle leader: the separately developed anchored classifier, **0.89636**. The LDA ensemble and previous three-way ensemble each scored **0.89401** on different CSVs; original Ani scored **0.89423**.
 
 Experiment batches have ordinary commits. Each recorded submission has a dedicated result commit and immutable score-bearing tag; see [result checkpoints](part1/research/consolidation_v1/commit_index.json) and [workflow](part1/AGENTS.md). Failed experiments retain code, settings and summaries; detailed evidence is retained for leaders and references. No branch merge was performed.
 
-The material below is the **historical logistic-branch checkpoint at 7425345**. Its references to “active,” “latest,” or “current” describe that checkpoint; use the central handoff above for current status. Its older KFold benchmark remains valid under its own protocol.
+The material below is the **historical logistic-branch checkpoint at 7425345**. Its references to “active,” “latest,” or “current” describe that checkpoint; use the Part 1 README above for current status. Its older KFold benchmark remains valid under its own protocol.
 
----
+<details>
+<summary>Historical logistic-branch checkpoint (7425345)</summary>
 
 # AML-Midterm
 
@@ -104,3 +107,5 @@ Executed notebooks are saved in `part1/`: `additional_methods.ipynb`, `dbscan_re
 - [Original-fit Kaggle result and provenance](part1/experiments/additional_methods/kaggle_result_original157.json)
 
 All ten cutoff/fallback prediction sets were independently rescored from disk. Training experiments also check reference reproduction and refit the selected model from its saved dataset. Feature, combination, and RBF SVM followups retain this embeddings-only logistic configuration as the reference. These experiments introduce no new submission tag.
+
+</details>
