@@ -1,0 +1,51 @@
+{
+  "policy": "No candidate passed both-pool advancement. Retain full blend/anchored/LDA predictions as a useful matched comparison: the fixed blend won all eight Pooled235 repeats without a sample-F1 supplementary regression. Keep compact results and fit-access counts for both unsuccessful neighbor arms.",
+  "registration_commit": "924ae04",
+  "source_packets_verified": 84,
+  "raw_prediction_bytes": 832179,
+  "raw_fit_audit_bytes": 295798,
+  "omitted": "Unsuccessful neighbor predictions and detailed fit-round audits; no fitted models were saved. Raw input is disposable after retained verification passes.",
+  "files": {
+    "results/cv_summary.csv": {
+      "sha256": "a19e4729798bdb942b3bf80f913fc7d9090486ac816621c0591e61f39a9bf383",
+      "bytes": 867
+    },
+    "results/fit_access_summary.csv": {
+      "sha256": "1e64cd06420749585d22cb891713cd6c9e7f240156395834db2e9f4d78ce1c02",
+      "bytes": 41142
+    },
+    "results/independent_rescore.json": {
+      "sha256": "66714cc417ee45c1340f099d77dfe575fd4845c258b23d3e86f3a659eb3b7b58",
+      "bytes": 349
+    },
+    "results/paired_repeat_deltas.csv": {
+      "sha256": "497427e1fc1af2b7e438f80661fb057498b7aa5f8b1129577a35b02b28bc0673",
+      "bytes": 2666
+    },
+    "results/paired_summary.csv": {
+      "sha256": "721668d44c61e40970d840070210932eefab2713565e1b62fb71274c3537476b",
+      "bytes": 417
+    },
+    "results/prediction_change_summary.csv": {
+      "sha256": "08091608b87b996b030b69a134ab76bda183f02c7e53010108fc4e6f21b7351f",
+      "bytes": 20744
+    },
+    "results/repeat_scores.csv": {
+      "sha256": "fc203bf8681a6e88e2a555cf3d8ae622a4fc536e866c0ea07e5f7f8b1a99211e",
+      "bytes": 25910
+    },
+    "results/supplementary_scores.csv": {
+      "sha256": "545863b199ec3444b8fd3aeaea4c2efc67d37403f96f1afbae021c6a64a2a2be",
+      "bytes": 7441
+    },
+    "results/useful_comparison.npz": {
+      "sha256": "c0c2a152b2aa52e6fac6a52ec79448fe50da5643f3c998eee8f09baeacfb2499",
+      "bytes": 497009
+    },
+    "results/verification.json": {
+      "sha256": "ccd71ffa6755c869ac09cf6056fe1058be531198d8f315983cd3b2a940d9337b",
+      "bytes": 721
+    }
+  },
+  "temporary_run_removed": true
+}

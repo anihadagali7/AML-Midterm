@@ -1,0 +1,7 @@
+pool,mode,mean_delta,wins,ties,losses,meets_pool_rule
+train,grouped_neighbors,-0.0021231422505308267,0,4,4,False
+train,pseudo_neighbor_quarter,-0.0013269639065817268,3,1,4,False
+train,anchored75_lda25,-1.3877787807814457e-17,3,3,2,False
+pooled,grouped_neighbors,-0.002216312056737585,2,0,6,False
+pooled,pseudo_neighbor_quarter,-0.0036347517730496853,2,0,6,False
+pooled,anchored75_lda25,0.00203900709219855,8,0,0,True
