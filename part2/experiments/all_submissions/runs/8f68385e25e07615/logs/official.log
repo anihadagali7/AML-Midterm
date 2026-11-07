@@ -1,0 +1,5 @@
+official linear components fitted 16.3s
+official CatBoost depth 6 fitted 68.2s
+official CatBoost depth 8 fitted 216.3s
+Original replay max error 4.99942309772905e-11
+official all 13 recipes scored in both tracks 223.9s

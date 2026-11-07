@@ -3,6 +3,16 @@ PYTHON ?= ../.venv/bin/python
 .PHONY: benchmark benchmark-quick benchmark-test benchmark-report benchmark-verify
 .PHONY: improve improve-test improve-report improve-verify
 .PHONY: extensions extensions-check extensions-final extensions-report
+.PHONY: compare-all compare-all-check compare-all-report
+
+compare-all:
+	$(PYTHON) all_submissions_benchmark.py --workers 2
+
+compare-all-check:
+	$(PYTHON) all_submissions_verify.py
+
+compare-all-report:
+	$(PYTHON) all_submissions_report.py
 
 benchmark:
 	$(PYTHON) local_benchmark.py --suite full

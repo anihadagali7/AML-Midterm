@@ -1,5 +1,12 @@
 # Repeatable Part Two local benchmark
 
+The [all-submission comparison](experiments/all_submissions/RESULTS.md) evaluates
+the exact recipes for files 01–10, both Ani winners, and the trend control on all
+ten splits below plus the three saved gap checks. It replaces linear-component
+proxies with the full original ensembles. Run `make -C part2 compare-all`, then
+`compare-all-check` and `compare-all-report`, after installing
+`requirements-all-submissions.txt`. [Policy](ALL_SUBMISSIONS_PROTOCOL.md).
+
 The [latest neighbor extensions](experiments/ani_extensions/RESULTS.md) reuse all
 splits below and compare both Ani winners. Their separate, prospectively declared
 decision rule is in [EXTENSION_PROTOCOL.md](EXTENSION_PROTOCOL.md); it prioritizes
