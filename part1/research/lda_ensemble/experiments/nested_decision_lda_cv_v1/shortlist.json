@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__global",
+    "ensemble__global",
+    "ani__per_label",
+    "ensemble__per_label",
+    "ani__global_recent",
+    "ensemble__global_recent",
+    "ani__per_label_recent",
+    "ensemble__per_label_recent"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

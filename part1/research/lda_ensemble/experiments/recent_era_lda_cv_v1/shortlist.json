@@ -1,0 +1,14 @@
+{
+  "names": [
+    "ani__recent5_half_all",
+    "ensemble__recent5_half_all",
+    "ani__recent5_half_late",
+    "ensemble__recent5_half_late",
+    "ani__recent5_quarter_late",
+    "ensemble__recent5_quarter_late",
+    "ani__recent8_half_late",
+    "ensemble__recent8_half_late"
+  ],
+  "diagnostic_only": false,
+  "selection_rule": "All candidates, predeclared before scoring"
+}

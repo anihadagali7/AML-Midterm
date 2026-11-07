@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "feature_records": 504,
+  "expert_records": 336,
+  "decision_records": 336,
+  "inner_fold_records": 1008,
+  "studies": [
+    {
+      "study": "temporal_lda_cv_v1",
+      "records_checked": 504,
+      "independent_rescore": {
+        "passed": true,
+        "manually_rescored_repeats": 368,
+        "fold_arrays_checked": 1840,
+        "supplementary_scores_checked": 36,
+        "source_hashes_unchanged": true,
+        "row_coverage_and_alignment": true,
+        "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+      }
+    },
+    {
+      "study": "recent_era_lda_cv_v1",
+      "records_checked": 336,
+      "independent_rescore": {
+        "passed": true,
+        "manually_rescored_repeats": 272,
+        "fold_arrays_checked": 1360,
+        "supplementary_scores_checked": 28,
+        "source_hashes_unchanged": true,
+        "row_coverage_and_alignment": true,
+        "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+      }
+    },
+    {
+      "study": "nested_decision_lda_cv_v1",
+      "records_checked": 336,
+      "independent_rescore": {
+        "passed": true,
+        "manually_rescored_repeats": 272,
+        "fold_arrays_checked": 1360,
+        "supplementary_scores_checked": 28,
+        "source_hashes_unchanged": true,
+        "row_coverage_and_alignment": true,
+        "script_sha256": "e7955e5adf7e773942fa5b57b8daeaf1630444f952669b09ee65e4b7b0d2ce86"
+      }
+    }
+  ],
+  "all_protected_hashes_unchanged": true,
+  "nested_cutoffs_independently_reconstructed": true,
+  "part1_only": true,
+  "test_inputs_loaded": false,
+  "submissions_created": false,
+  "artifact_sha256": {
+    "experiments/temporal_lda_cv_v1/protocol.json": "223d62c86f87dfc8af93e3368f1082bc7b1825395393544612013917bf0b850e",
+    "experiments/temporal_lda_cv_v1/summary.json": "17c7cff71cc914bce3d1c95631b755a18396f308a2b0b3a3a2a56dad94d4fa1b",
+    "experiments/temporal_lda_cv_v1/verification.json": "a834069d6ea06b7d7ed2dc1440d4e5bdec5cbf3d3558a67480daea6a392f4206",
+    "experiments/temporal_lda_cv_v1/independent_verification.json": "1f83f6b61f4c6d6bfb0d42137caf32fd5a845fc313319c833bc464165758f18b",
+    "experiments/recent_era_lda_cv_v1/protocol.json": "6ea4b4289fd898f8f85efc2bd34867e93302d084411ae89b736cce859d66be43",
+    "experiments/recent_era_lda_cv_v1/summary.json": "6bf70d0a97627afab557a28ab99deb0808b97c4cb83eaf93d0bbf4dcd93de531",
+    "experiments/recent_era_lda_cv_v1/verification.json": "1e76dd815f3106bf76b4bb99446305fc13a773c3be58cc2c7a7e9728a7970510",
+    "experiments/recent_era_lda_cv_v1/independent_verification.json": "0669e62bc0c000cbe2312d2f224ca5c91b10513a0547dbe756899403bf1978df",
+    "experiments/nested_decision_lda_cv_v1/protocol.json": "1e9f5226dde50f6cb66d56663501e13b6e9a3b9b67ed34a624498516ec1046e8",
+    "experiments/nested_decision_lda_cv_v1/summary.json": "27169d4385e021647a5ba3bcee4f7888ba032e46eccb831ac6caeec1991bfbbe",
+    "experiments/nested_decision_lda_cv_v1/verification.json": "8ccf7bdb45b44b487f53fcbabc86717c365a1e0e6a4f69a189f9a4b989d7e102",
+    "experiments/nested_decision_lda_cv_v1/independent_verification.json": "0669e62bc0c000cbe2312d2f224ca5c91b10513a0547dbe756899403bf1978df"
+  },
+  "audit_script_sha256": "d4cdfad39eb7b81020a12487840c1624e9b815d41c75f63d75e4438e45c50b9a"
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "native_control_parity": true,
+  "latest_revision_control_parity": true,
+  "query_batch_invariance": true,
+  "expert_fit_boundaries_verified": true,
+  "excluded_gold_never_pseudo_labeled": true,
+  "expert_group_closure": true,
+  "minimum_reason_support": true
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__global",
+    "parent": "ani",
+    "block": "global",
+    "description": {
+      "per_label": false,
+      "recent": false
+    }
+  },
+  {
+    "name": "ensemble__global",
+    "parent": "ensemble",
+    "block": "global",
+    "description": {
+      "per_label": false,
+      "recent": false
+    }
+  },
+  {
+    "name": "ani__per_label",
+    "parent": "ani",
+    "block": "per_label",
+    "description": {
+      "per_label": true,
+      "recent": false
+    }
+  },
+  {
+    "name": "ensemble__per_label",
+    "parent": "ensemble",
+    "block": "per_label",
+    "description": {
+      "per_label": true,
+      "recent": false
+    }
+  },
+  {
+    "name": "ani__global_recent",
+    "parent": "ani",
+    "block": "global_recent",
+    "description": {
+      "per_label": false,
+      "recent": true
+    }
+  },
+  {
+    "name": "ensemble__global_recent",
+    "parent": "ensemble",
+    "block": "global_recent",
+    "description": {
+      "per_label": false,
+      "recent": true
+    }
+  },
+  {
+    "name": "ani__per_label_recent",
+    "parent": "ani",
+    "block": "per_label_recent",
+    "description": {
+      "per_label": true,
+      "recent": true
+    }
+  },
+  {
+    "name": "ensemble__per_label_recent",
+    "parent": "ensemble",
+    "block": "per_label_recent",
+    "description": {
+      "per_label": true,
+      "recent": true
+    }
+  }
+]

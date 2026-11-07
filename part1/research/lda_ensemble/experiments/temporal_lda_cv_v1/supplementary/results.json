@@ -1,0 +1,1406 @@
+[
+  {
+    "candidate": "ani",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.8910256410256411,
+    "macro_f1": 0.7107377332544615,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7058823529411765,
+        "recall": 0.8571428571428571,
+        "f1": 0.7741935483870968,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9259259259259259,
+        "recall": 1.0,
+        "f1": 0.9615384615384616,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.5714285714285714,
+        "recall": 0.4,
+        "f1": 0.47058823529411764,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9102564102564102,
+    "macro_f1": 0.7808268195240576,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__revision_full",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9059829059829061,
+    "macro_f1": 0.7691309130913091,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__global_trend_half",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.8931623931623932,
+    "macro_f1": 0.7603914172929898,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7857142857142857,
+        "recall": 0.7857142857142857,
+        "f1": 0.7857142857142857,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.5714285714285714,
+        "recall": 0.4,
+        "f1": 0.47058823529411764,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__within_reason_half",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.8995726495726496,
+    "macro_f1": 0.7674934861907243,
+    "reasons": {
+      "Safety": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.6875,
+        "recall": 0.7857142857142857,
+        "f1": 0.7333333333333333,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_5",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9059829059829061,
+    "macro_f1": 0.7691309130913091,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_10",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9059829059829061,
+    "macro_f1": 0.7691309130913091,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_final",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9059829059829061,
+    "macro_f1": 0.7691309130913091,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.8,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_joint",
+    "window": 0,
+    "window_name": "original_validation",
+    "sample_f1": 0.9038461538461539,
+    "macro_f1": 0.7639696227687285,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 9
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7058823529411765,
+        "recall": 0.8571428571428571,
+        "f1": 0.7741935483870968,
+        "support": 14
+      },
+      "Recruitment": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901,
+        "support": 50
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "support": 10
+      }
+    }
+  },
+  {
+    "candidate": "ani",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8376068376068375,
+    "macro_f1": 0.8012554112554113,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.75,
+        "recall": 0.9,
+        "f1": 0.8181818181818182,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.8888888888888888,
+        "recall": 0.9411764705882353,
+        "f1": 0.9142857142857143,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__revision_full",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__global_trend_half",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.8146273291925465,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.625,
+        "recall": 0.625,
+        "f1": 0.625,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__within_reason_half",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_5",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_10",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_final",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.82296066252588,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_joint",
+    "window": 1,
+    "window_name": "through_2004_test_2005_2006",
+    "sample_f1": 0.8717948717948718,
+    "macro_f1": 0.8286749482401656,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "Funding": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "support": 4
+      },
+      "Efficacy": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913043,
+        "support": 10
+      },
+      "Recruitment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 17
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "support": 8
+      }
+    }
+  },
+  {
+    "candidate": "ani",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7192307692307692,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.9230769230769231,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__revision_full",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__global_trend_half",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8636363636363636,
+    "macro_f1": 0.7031002331002331,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__within_reason_half",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_5",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_10",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7212820512820513,
+    "reasons": {
+      "Safety": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_final",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7164335664335665,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_joint",
+    "window": 2,
+    "window_name": "through_2006_test_2007_2007",
+    "sample_f1": 0.8787878787878788,
+    "macro_f1": 0.7164335664335665,
+    "reasons": {
+      "Safety": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "Efficacy": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.9230769230769231,
+        "support": 6
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "support": 5
+      }
+    }
+  },
+  {
+    "candidate": "ani",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8738738738738737,
+    "macro_f1": 0.8393753200204813,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9333333333333333,
+        "recall": 0.875,
+        "f1": 0.9032258064516129,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.882882882882883,
+    "macro_f1": 0.8369810744810744,
+    "reasons": {
+      "Safety": {
+        "precision": 0.7777777777777778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1": 0.9375,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__revision_full",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8828828828828829,
+    "macro_f1": 0.8398490398490399,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__global_trend_half",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8738738738738737,
+    "macro_f1": 0.8200688200688202,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846154,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__within_reason_half",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8738738738738737,
+    "macro_f1": 0.8200688200688202,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846154,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_5",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8828828828828829,
+    "macro_f1": 0.8398490398490399,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__recent_lr_10",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8828828828828829,
+    "macro_f1": 0.8398490398490399,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_final",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8828828828828829,
+    "macro_f1": 0.8398490398490399,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  },
+  {
+    "candidate": "ensemble__time_knn_joint",
+    "window": 3,
+    "window_name": "through_2007_test_2008_2010",
+    "sample_f1": 0.8828828828828829,
+    "macro_f1": 0.8398490398490399,
+    "reasons": {
+      "Safety": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571,
+        "support": 7
+      },
+      "Funding": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5
+      },
+      "Efficacy": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307693,
+        "support": 6
+      },
+      "Recruitment": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 16
+      },
+      "Other": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      }
+    }
+  }
+]

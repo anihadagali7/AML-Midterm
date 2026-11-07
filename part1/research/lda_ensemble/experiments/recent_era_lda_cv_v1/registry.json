@@ -1,0 +1,90 @@
+[
+  {
+    "name": "ani__recent5_half_all",
+    "parent": "ani",
+    "block": "recent5_half_all",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": false,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ensemble__recent5_half_all",
+    "parent": "ensemble",
+    "block": "recent5_half_all",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": false,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ani__recent5_half_late",
+    "parent": "ani",
+    "block": "recent5_half_late",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ensemble__recent5_half_late",
+    "parent": "ensemble",
+    "block": "recent5_half_late",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ani__recent5_quarter_late",
+    "parent": "ani",
+    "block": "recent5_quarter_late",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.25,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ensemble__recent5_quarter_late",
+    "parent": "ensemble",
+    "block": "recent5_quarter_late",
+    "description": {
+      "year_width": 5,
+      "raw_probability_weight": 0.25,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ani__recent8_half_late",
+    "parent": "ani",
+    "block": "recent8_half_late",
+    "description": {
+      "year_width": 8,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  },
+  {
+    "name": "ensemble__recent8_half_late",
+    "parent": "ensemble",
+    "block": "recent8_half_late",
+    "description": {
+      "year_width": 8,
+      "raw_probability_weight": 0.5,
+      "late_query_gate": true,
+      "minimum_positive_support": 3
+    }
+  }
+]

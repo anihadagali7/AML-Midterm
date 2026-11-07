@@ -1,0 +1,18 @@
+study,candidate,window,ID,truth,baseline,prediction,sample_f1_delta
+temporal_lda_cv_v1,ensemble__global_trend_half,1,TR00640,Funding,Efficacy,Efficacy Other,0.0
+temporal_lda_cv_v1,ensemble__global_trend_half,2,TR07268,Safety Efficacy,Safety Efficacy,Safety,-0.33333333333333337
+temporal_lda_cv_v1,ensemble__global_trend_half,3,TR09519,Recruitment Other,Recruitment Other,Recruitment,-0.33333333333333337
+temporal_lda_cv_v1,ensemble__time_knn_final,2,TR10695,Other,Safety Other,Other,0.33333333333333337
+temporal_lda_cv_v1,ensemble__time_knn_final,2,TR07268,Safety Efficacy,Safety Efficacy,Safety,-0.33333333333333337
+temporal_lda_cv_v1,ensemble__within_reason_half,3,TR09519,Recruitment Other,Recruitment Other,Recruitment,-0.33333333333333337
+temporal_lda_cv_v1,ensemble__time_knn_joint,1,TR11226,Other,Efficacy Recruitment,Efficacy,0.0
+temporal_lda_cv_v1,ensemble__time_knn_joint,2,TR10695,Other,Safety Other,Other,0.33333333333333337
+temporal_lda_cv_v1,ensemble__time_knn_joint,2,TR07268,Safety Efficacy,Safety Efficacy,Safety,-0.33333333333333337
+recent_era_lda_cv_v1,ensemble__recent8_half_late,2,TR07268,Safety Efficacy,Safety Efficacy,Safety,-0.33333333333333337
+recent_era_lda_cv_v1,ensemble__recent8_half_late,3,TR09519,Recruitment Other,Recruitment Other,Recruitment,-0.33333333333333337
+recent_era_lda_cv_v1,ensemble__recent5_half_late,3,TR09519,Recruitment Other,Recruitment Other,Recruitment,-0.33333333333333337
+recent_era_lda_cv_v1,ensemble__recent5_half_all,3,TR09519,Recruitment Other,Recruitment Other,Recruitment,-0.33333333333333337
+nested_decision_lda_cv_v1,ensemble__global_recent,3,TR08398,Other,Other,Funding Other,-0.33333333333333337
+nested_decision_lda_cv_v1,ensemble__global_recent,3,TR08868,Other,Other,Safety Other,-0.33333333333333337
+nested_decision_lda_cv_v1,ensemble__global_recent,3,TR08905,Safety Efficacy,Safety,Safety Efficacy,0.33333333333333337
+nested_decision_lda_cv_v1,ensemble__global_recent,3,TR03856,Safety,Recruitment,Safety Recruitment,0.6666666666666666

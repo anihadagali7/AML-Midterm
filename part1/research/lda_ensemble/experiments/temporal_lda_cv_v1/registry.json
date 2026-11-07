@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ani__global_trend_half",
+    "parent": "ani",
+    "block": "global_trend_half",
+    "description": "Remove half of training-input linear embedding drift with year; rebuild source"
+  },
+  {
+    "name": "ensemble__global_trend_half",
+    "parent": "ensemble",
+    "block": "global_trend_half",
+    "description": "Remove half of training-input linear embedding drift with year; rebuild source"
+  },
+  {
+    "name": "ani__within_reason_half",
+    "parent": "ani",
+    "block": "within_reason_half",
+    "description": "Remove half of gold within-reason linear drift; rebuild source"
+  },
+  {
+    "name": "ensemble__within_reason_half",
+    "parent": "ensemble",
+    "block": "within_reason_half",
+    "description": "Remove half of gold within-reason linear drift; rebuild source"
+  },
+  {
+    "name": "ani__recent_lr_5",
+    "parent": "ani",
+    "block": "recent_lr_5",
+    "description": "Final source LR with five-year recency half-life and preserved class mass"
+  },
+  {
+    "name": "ensemble__recent_lr_5",
+    "parent": "ensemble",
+    "block": "recent_lr_5",
+    "description": "Final source LR with five-year recency half-life and preserved class mass"
+  },
+  {
+    "name": "ani__recent_lr_10",
+    "parent": "ani",
+    "block": "recent_lr_10",
+    "description": "Final source LR with ten-year recency half-life and preserved class mass"
+  },
+  {
+    "name": "ensemble__recent_lr_10",
+    "parent": "ensemble",
+    "block": "recent_lr_10",
+    "description": "Final source LR with ten-year recency half-life and preserved class mass"
+  },
+  {
+    "name": "ani__time_knn_final",
+    "parent": "ani",
+    "block": "time_knn_final",
+    "description": "Time-distance weighted cosine neighbors at final prediction only"
+  },
+  {
+    "name": "ensemble__time_knn_final",
+    "parent": "ensemble",
+    "block": "time_knn_final",
+    "description": "Time-distance weighted cosine neighbors at final prediction only"
+  },
+  {
+    "name": "ani__time_knn_joint",
+    "parent": "ani",
+    "block": "time_knn_joint",
+    "description": "Same time-aware neighbors in teaching and final prediction"
+  },
+  {
+    "name": "ensemble__time_knn_joint",
+    "parent": "ensemble",
+    "block": "time_knn_joint",
+    "description": "Same time-aware neighbors in teaching and final prediction"
+  }
+]
