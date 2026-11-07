@@ -2,9 +2,9 @@
 
 ## Part 1: stopping reasons
 
-The **anchored reason classifier** scored **0.89636 sample-wise F1** on Kaggle (user-reported; higher is better), using a final fit on all 235 verified labels. Its exact submission and original Ani reference are preserved with score tags and hashes.
+The **75% anchored / 25% LDA ensemble blend** scored **0.89850 sample-wise F1** on Kaggle (user-reported; higher is better), improving the previous anchored result of 0.89636 by 0.00214. Both components use their verified full-235 fits. The [exact-file result](part1/submissions/results/anchored75-lda25-trainval235.json) records its CSV hash, recipe and score provenance.
 
-- [Current executed notebook](part1/part1.ipynb) and [Part 1 overview](part1/README.md)
+- [Anchored component notebook](part1/part1.ipynb), [winning blend](part1/research/anchored_lda_blend_submission_v1/README.md), and [Part 1 overview](part1/README.md)
 - [Testing methodology](part1/TESTING_POLICY.md) and [research index](part1/RESEARCH_INDEX.html)
 - [Scored submissions](part1/submissions/README.md) and [retention policy](part1/RETENTION.md)
 - [Historical notebook archive](part1/research/historical_notebooks/README.md)

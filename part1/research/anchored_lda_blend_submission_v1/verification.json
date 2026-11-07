@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows": 312,
+  "correct_id_order": true,
+  "independent_blend_and_decoder_match": true,
+  "source_hashes_checked": 53,
+  "changed_labelsets_vs_anchored": 5,
+  "new_model_fits": 0,
+  "submission_sha256": "6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b"
+}

@@ -1,0 +1,5 @@
+pool,mode,mean_delta,wins,ties,losses,meets_pool_rule
+train,geometry_only,0.001592356687898061,4,3,1,False
+train,target_self_training,-0.0007961783439490305,1,5,2,False
+pooled,geometry_only,0.0005319148936169943,4,1,3,False
+pooled,target_self_training,0.0007092198581560016,4,0,4,False

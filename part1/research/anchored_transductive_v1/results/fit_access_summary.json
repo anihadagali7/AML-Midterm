@@ -1,0 +1,146 @@
+[
+  {
+    "pool": "train",
+    "mode": "inductive",
+    "fits": 40,
+    "gold_rows_range": [
+      122,
+      129
+    ],
+    "geometry_rows_range": [
+      1130,
+      1143
+    ],
+    "total_query_rows": 1256,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "train",
+    "mode": "geometry_only",
+    "fits": 40,
+    "gold_rows_range": [
+      122,
+      129
+    ],
+    "geometry_rows_range": [
+      1162,
+      1171
+    ],
+    "total_query_rows": 1256,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "train",
+    "mode": "target_self_training",
+    "fits": 40,
+    "gold_rows_range": [
+      122,
+      129
+    ],
+    "geometry_rows_range": [
+      1162,
+      1171
+    ],
+    "total_query_rows": 1256,
+    "total_query_rows_generated": 1025,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "pooled",
+    "mode": "inductive",
+    "fits": 40,
+    "gold_rows_range": [
+      179,
+      193
+    ],
+    "geometry_rows_range": [
+      1103,
+      1206
+    ],
+    "total_query_rows": 1880,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "pooled",
+    "mode": "geometry_only",
+    "fits": 40,
+    "gold_rows_range": [
+      179,
+      193
+    ],
+    "geometry_rows_range": [
+      1159,
+      1249
+    ],
+    "total_query_rows": 1880,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "pooled",
+    "mode": "target_self_training",
+    "fits": 40,
+    "gold_rows_range": [
+      179,
+      193
+    ],
+    "geometry_rows_range": [
+      1159,
+      1249
+    ],
+    "total_query_rows": 1880,
+    "total_query_rows_generated": 1521,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "supplementary",
+    "mode": "inductive",
+    "fits": 4,
+    "gold_rows_range": [
+      136,
+      194
+    ],
+    "geometry_rows_range": [
+      287,
+      1171
+    ],
+    "total_query_rows": 176,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "supplementary",
+    "mode": "geometry_only",
+    "fits": 4,
+    "gold_rows_range": [
+      136,
+      194
+    ],
+    "geometry_rows_range": [
+      326,
+      1249
+    ],
+    "total_query_rows": 176,
+    "total_query_rows_generated": 0,
+    "all_target_labels_excluded": true
+  },
+  {
+    "pool": "supplementary",
+    "mode": "target_self_training",
+    "fits": 4,
+    "gold_rows_range": [
+      136,
+      194
+    ],
+    "geometry_rows_range": [
+      326,
+      1249
+    ],
+    "total_query_rows": 176,
+    "total_query_rows_generated": 121,
+    "all_target_labels_excluded": true
+  }
+]
