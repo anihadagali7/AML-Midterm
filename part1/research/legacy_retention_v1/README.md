@@ -1,0 +1,62 @@
+# Older Part 1 experiment retention
+
+The existing retention policy now covers the older logistic, clustering, feature, and tuning studies. Every study keeps its available source, fixed settings, protocols, failure notes, and complete result tables. Detailed evidence remains for the current anchored leader, the common grouped comparison, scored checkpoints, and useful historical benchmark controls.
+
+Before removal, 1,270 prediction CSVs were independently rescored against the supplied gold labels. All 1,226 matched summary rows agreed; 44 additional reference/alias files lacked a same-named summary row and were checked separately for truth and prediction validity. No model was fitted. [Pre-cleanup checks](pre_cleanup_checks.json).
+
+The cleanup removes 3,991 generated files and reduces the tracked experiments tree from 1,474.09 MiB to 38.41 MiB. Per-study totals and retained file hashes are in the [manifest](manifest.json). Unsuccessful fitted models, generated datasets, row-level audits, and fold predictions are omitted. Existing Git history remains; no duplicate backup archive or exhaustive discarded-file manifest is added.
+
+This scope covers the 31 experiment families below. The compact LDA and New Directions archives are unchanged. Additional untracked working experiments are outside this checkpoint and are not deleted.
+
+## Verify retained evidence
+
+From the repository root:
+
+```sh
+python part1/research/legacy_retention_v1/verify.py
+python part1/current_leaders_local.py verify
+python part1/research/consolidation_v1/verify.py
+python part1/research/consolidation_v1/verify_leaders.py
+```
+
+The first checks retained hashes and study coverage. The others independently check existing leader/reference evidence. Pre-cleanup verification records describe checks completed while discarded files still existed; they do not claim those files remain available.
+
+## Historical reproduction
+
+Read a study's source, settings, and result table together. Original inputs and saved splits remain. Historical notebooks can depend on generated outputs from earlier notebooks; regenerate those dependencies in a disposable checkout before replaying them. Old paths and output hashes are historical provenance. Do not run exporters over frozen leader directories merely to verify saved results. Current grouped comparisons use the supported [replay command](../../README.md#testing-and-verification).
+
+## Study index
+
+| Study | Recipe and results | Files before → retained | Retention |
+|---|---|---:|---|
+| `additional_methods` | [source](../../additional_methods.ipynb) · [conclusion](../../experiments/additional_methods/SUMMARY.md) · [settings](../../experiments/additional_methods/settings.json) · [scores](../../experiments/additional_methods/comparison.csv) · [submission](../../experiments/additional_methods/submission_manifest.json) | 185 → 16 | Compact history, with selected checkpoints/controls |
+| `ani_ensemble` | [source](../../ani_ensemble.ipynb) · [conclusion](../../experiments/ani_ensemble/SUMMARY.md) · [settings](../../experiments/ani_ensemble/settings.json) · [scores](../../experiments/ani_ensemble/comparison.csv) | 19 → 10 | Compact history, with selected checkpoints/controls |
+| `branch_comparison` | [conclusion](../../experiments/branch_comparison/SUMMARY.md) · [review](../../experiments/branch_comparison/ani_validation_review.json) | 2 → 2 | Compact history, with selected checkpoints/controls |
+| `classifier_combinations` | [source](../../classifier_combinations.ipynb) · [conclusion](../../experiments/classifier_combinations/SUMMARY.md) · [settings](../../experiments/classifier_combinations/settings.json) · [scores](../../experiments/classifier_combinations/comparison.csv) | 37 → 11 | Compact history, with selected checkpoints/controls |
+| `classifier_cross_validation` | [source](../../classifier_cross_validation.ipynb) · [conclusion](../../experiments/classifier_cross_validation/SUMMARY.md) · [settings](../../experiments/classifier_cross_validation/settings.json) · [scores](../../experiments/classifier_cross_validation/comparison.csv) | 629 → 19 | Compact history, with selected checkpoints/controls |
+| `classifier_feature_tuning` | [source](../../classifier_feature_tuning.ipynb) · [conclusion](../../experiments/classifier_feature_tuning/SUMMARY.md) · [settings](../../experiments/classifier_feature_tuning/settings.json) · [scores](../../experiments/classifier_feature_tuning/comparison.csv) | 198 → 26 | Compact history, with selected checkpoints/controls |
+| `classifier_features` | [source](../../classifier_features.ipynb) · [conclusion](../../experiments/classifier_features/SUMMARY.md) · [settings](../../experiments/classifier_features/settings.json) · [scores](../../experiments/classifier_features/comparison.csv) | 62 → 28 | Compact history, with selected checkpoints/controls |
+| `clustering_feature_screen` | [source](../../clustering_feature_screen.ipynb) · [conclusion](../../experiments/clustering_feature_screen/SUMMARY.md) · [settings](../../experiments/clustering_feature_screen/settings.json) · [scores](../../experiments/clustering_feature_screen/comparison.csv) | 244 → 13 | Compact history, with selected checkpoints/controls |
+| `current_ani_pool_audit` | [protocol](../../experiments/current_ani_pool_audit/protocol.json) | 1 → 1 | Compact history, with selected checkpoints/controls |
+| `current_leaders_grouped_v1` | [source](../../current_leaders_comparison.ipynb) · [protocol](../../experiments/current_leaders_grouped_v1/protocol.json) · [scores](../../experiments/current_leaders_grouped_v1/comparison.csv) | 38 → 38 | Full retained record |
+| `dbscan_label_tuning` | [source](../../dbscan_label_tuning.ipynb) · [conclusion](../../experiments/dbscan_label_tuning/SUMMARY.md) · [settings](../../experiments/dbscan_label_tuning/settings.json) · [scores](../../experiments/dbscan_label_tuning/comparison.csv) | 209 → 6 | Compact history, with selected checkpoints/controls |
+| `dbscan_prediction_cutoffs` | [source](../../dbscan_prediction_cutoffs.ipynb) · [conclusion](../../experiments/dbscan_prediction_cutoffs/SUMMARY.md) · [settings](../../experiments/dbscan_prediction_cutoffs/settings.json) · [scores](../../experiments/dbscan_prediction_cutoffs/comparison.csv) | 18 → 5 | Compact history, with selected checkpoints/controls |
+| `dbscan_refinement` | [source](../../dbscan_refinement.ipynb) · [conclusion](../../experiments/dbscan_refinement/SUMMARY.md) · [settings](../../experiments/dbscan_refinement/settings.json) · [scores](../../experiments/dbscan_refinement/comparison.csv) | 100 → 5 | Compact history, with selected checkpoints/controls |
+| `dbscan_weight_fine_tuning` | [source](../../dbscan_weight_fine_tuning.ipynb) · [conclusion](../../experiments/dbscan_weight_fine_tuning/SUMMARY.md) · [settings](../../experiments/dbscan_weight_fine_tuning/settings.json) · [scores](../../experiments/dbscan_weight_fine_tuning/comparison.csv) | 306 → 7 | Compact history, with selected checkpoints/controls |
+| `final_dbscan_trainval235` | [source](../../final_dbscan_trainval235.ipynb) · [conclusion](../../experiments/final_dbscan_trainval235/SUMMARY.md) · [submission](../../experiments/final_dbscan_trainval235/submission_manifest.json) | 13 → 13 | Full retained record |
+| `full_covariance_check` | [source](../../full_covariance_check.ipynb) · [conclusion](../../experiments/full_covariance_check/SUMMARY.md) · [settings](../../experiments/full_covariance_check/settings.json) · [scores](../../experiments/full_covariance_check/comparison.csv) | 16 → 5 | Compact history, with selected checkpoints/controls |
+| `gmm_pca` | [source](../../gmm_pca.ipynb) · [conclusion](../../experiments/gmm_pca/SUMMARY.md) · [settings](../../experiments/gmm_pca/settings.json) · [scores](../../experiments/gmm_pca/comparison.csv) | 39 → 5 | Compact history, with selected checkpoints/controls |
+| `gmm_pca_grid` | [source](../../gmm_pca_grid.ipynb) · [conclusion](../../experiments/gmm_pca_grid/SUMMARY.md) · [settings](../../experiments/gmm_pca_grid/settings.json) · [scores](../../experiments/gmm_pca_grid/comparison.csv) | 53 → 4 | Compact history, with selected checkpoints/controls |
+| `kmeans` | [source](../../part1.ipynb) · [conclusion](../../experiments/kmeans/SUMMARY.md) · [settings](../../experiments/kmeans/settings.json) · [scores](../../experiments/kmeans/comparison.csv) | 32 → 6 | Compact history, with selected checkpoints/controls |
+| `leading_recipes_cv` | [source](../../leading_recipes_cv.ipynb) · [conclusion](../../experiments/leading_recipes_cv/SUMMARY.md) · [settings](../../experiments/leading_recipes_cv/settings.json) · [protocol](../../experiments/leading_recipes_cv/protocol.json) · [scores](../../experiments/leading_recipes_cv/comparison.csv) | 701 → 94 | Compact history, with selected checkpoints/controls |
+| `logistic_penalties` | [source](../../logistic_penalties.ipynb) · [conclusion](../../experiments/logistic_penalties/SUMMARY.md) · [settings](../../experiments/logistic_penalties/settings.json) · [scores](../../experiments/logistic_penalties/comparison.csv) | 297 → 14 | Compact history, with selected checkpoints/controls |
+| `method_comparison` | [source](../../method_comparison.ipynb) · [conclusion](../../experiments/method_comparison/SUMMARY.md) · [settings](../../experiments/method_comparison/settings.json) · [scores](../../experiments/method_comparison/comparison.csv) · [submission](../../experiments/method_comparison/submission_manifest.json) | 176 → 10 | Compact history, with selected checkpoints/controls |
+| `nonlinear_combinations` | [source](../../nonlinear_combinations.ipynb) · [conclusion](../../experiments/nonlinear_combinations/SUMMARY.md) · [settings](../../experiments/nonlinear_combinations/settings.json) · [scores](../../experiments/nonlinear_combinations/comparison.csv) | 107 → 11 | Compact history, with selected checkpoints/controls |
+| `paired_improvement` | [source](../../paired_improvement.ipynb) · [scored result](../../experiments/paired_improvement/candidate/kaggle_result.json) | 30 → 30 | Full retained record |
+| `paired_recipe_cv` | [source](../../paired_recipe_cv.ipynb) · [conclusion](../../experiments/paired_recipe_cv/SUMMARY.md) · [settings](../../experiments/paired_recipe_cv/settings.json) · [protocol](../../experiments/paired_recipe_cv/protocol.json) · [scores](../../experiments/paired_recipe_cv/comparison.csv) | 754 → 228 | Compact history, with selected checkpoints/controls |
+| `per_reason_regularization` | [source](../../per_reason_regularization.ipynb) · [conclusion](../../experiments/per_reason_regularization/SUMMARY.md) · [settings](../../experiments/per_reason_regularization/settings.json) · [scores](../../experiments/per_reason_regularization/comparison.csv) | 159 → 8 | Compact history, with selected checkpoints/controls |
+| `rare_label_weights` | [source](../../rare_label_weights.ipynb) · [conclusion](../../experiments/rare_label_weights/SUMMARY.md) · [settings](../../experiments/rare_label_weights/settings.json) · [scores](../../experiments/rare_label_weights/comparison.csv) | 54 → 5 | Compact history, with selected checkpoints/controls |
+| `remaining_classifier_features` | [source](../../remaining_classifier_features.ipynb) · [conclusion](../../experiments/remaining_classifier_features/SUMMARY.md) · [settings](../../experiments/remaining_classifier_features/settings.json) · [scores](../../experiments/remaining_classifier_features/comparison.csv) | 114 → 36 | Compact history, with selected checkpoints/controls |
+| `safety_year_bias` | [source](../../part1.ipynb) · [conclusion](../../experiments/safety_year_bias/SUMMARY.md) · [settings](../../experiments/safety_year_bias/settings.json) · [scores](../../experiments/safety_year_bias/comparison.csv) · [submission](../../experiments/safety_year_bias/submission_manifest.json) | 9 → 5 | Compact history, with selected checkpoints/controls |
+| `self_training` | [source](../../self_training.ipynb) · [conclusion](../../experiments/self_training/SUMMARY.md) · [settings](../../experiments/self_training/settings.json) · [scores](../../experiments/self_training/comparison.csv) | 44 → 5 | Compact history, with selected checkpoints/controls |
+| `year_feature` | [source](../../part1.ipynb) · [conclusion](../../experiments/year_feature/SUMMARY.md) · [settings](../../experiments/year_feature/settings.json) · [scores](../../experiments/year_feature/comparison.csv) | 17 → 6 | Compact history, with selected checkpoints/controls |

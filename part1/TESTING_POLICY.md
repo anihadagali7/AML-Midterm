@@ -69,7 +69,7 @@ Fit every step on earlier eligible inputs. Report each window and sample-wise F1
 
 ## Evidence and reproducibility
 
-Record source/config/decoder/data hashes, saved protocol hashes, feature access, fitting populations, IDs, fold coverage, and prediction locations. Independently rescore retained predictions and check group separation, input boundaries, and protected hashes. Keep detailed predictions for leaders and useful matched controls. After checking summaries, unsuccessful studies may retain code, fixed settings, failures, and summaries without bulky fold caches; follow the [retention policy](research/lda_ensemble/EVIDENCE.html).
+Record source/config/decoder/data hashes, saved protocol hashes, feature access, fitting populations, IDs, fold coverage, and prediction locations. Independently rescore retained predictions and check group separation, input boundaries, and protected hashes. Keep detailed predictions for leaders and useful matched controls. After checking summaries, unsuccessful studies may retain code, fixed settings, failures, and summaries without bulky fold caches; follow the [retention policy](RETENTION.md).
 
 The [Part 1 README](README.md#testing-and-verification) gives working verification and replay commands. Verification rescoring does **not** count as fresh model fitting. A replay of one study does not establish that every competitor was refitted. Version changed recipes or runners and rerun matched controls; do not edit frozen source registries or overwrite saved studies.
 

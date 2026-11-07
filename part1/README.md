@@ -24,6 +24,7 @@ Run these commands from the repository root with the project's Python environmen
 
 ```sh
 python part1/current_leaders_local.py verify
+python part1/research/legacy_retention_v1/verify.py
 python part1/research/consolidation_v1/verify.py
 python part1/research/consolidation_v1/verify_leaders.py
 python part1/research/new_directions/verify.py
@@ -47,13 +48,17 @@ The research families recorded different package versions. Keep their environmen
 | LDA research | [requirements-lock.txt](research/lda_ensemble/research/independent/requirements-lock.txt) |
 | New Directions | [requirements.txt](research/new_directions/reproduction/requirements.txt) |
 
-The documentation audit passed all four evidence checks above in the existing environment. The LDA replay import check also passed. The New Directions replay import check stopped because that environment lacks `iterative-stratification`; its recorded NumPy, pandas, and scikit-learn versions also differ. Install that archive's requirements in a separate environment before replaying it, then check imports without fitting:
+The earlier documentation audit passed the four original evidence checks in the existing environment. The later retention cleanup added its own retained-file check. The LDA replay import check also passed. The New Directions replay import check stopped because that environment lacks `iterative-stratification`; its recorded NumPy, pandas, and scikit-learn versions also differ. Install that archive's requirements in a separate environment before replaying it, then check imports without fitting:
 
 ```sh
 python part1/research/new_directions/reproduce.py v6 --recipe teacher_mean3 --check
 ```
 
 Passing evidence verification checks retained files and scores; it does not establish that every historical training environment is installed. The [documentation audit](research/documentation_audit_v1.json) records the checks and this remaining setup requirement.
+
+## Evidence storage
+
+Follow [RETENTION.md](RETENTION.md): keep full leader/control results and compact recipes plus results for unsuccessful experiments. The [older-study cleanup](research/legacy_retention_v1/README.md) reduced tracked experiment outputs from 1,474 MiB to 38 MiB after checking the saved scores.
 
 ## Where things belong
 

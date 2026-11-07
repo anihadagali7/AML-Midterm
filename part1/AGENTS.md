@@ -15,7 +15,8 @@ Commit each completed experiment or coherent batch of ideas with its code,
 fixed settings, evaluation protocol, summary results, and failure notes.
 Record negative findings too. Keep detailed predictions for leaders and useful
 matched comparisons; discard unsuccessful fold caches, logs and duplicate data
-once summaries are checked. Follow `research/lda_ensemble/EVIDENCE.html`.
+once summaries are checked. Follow `RETENTION.md`; do not create duplicate
+backup archives of discarded unsuccessful outputs. Keep exact scored artifacts.
 
 Each manually submitted result gets a separate commit with the exact CSV (or
 an existing tracked copy), SHA-256, frozen recipe/source reference, fitting

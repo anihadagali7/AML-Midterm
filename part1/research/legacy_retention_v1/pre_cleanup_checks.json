@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "models_fitted": 0,
+  "studies": {
+    "additional_methods": {
+      "prediction_files_rescored": 62,
+      "heldout_predictions_checked": 4836,
+      "summary_rows_checked": 62
+    },
+    "ani_ensemble": {
+      "prediction_files_rescored": 5,
+      "heldout_predictions_checked": 390,
+      "per_trial_tables_checked": 5,
+      "summary_rows_checked": 5
+    },
+    "classifier_combinations": {
+      "prediction_files_rescored": 10,
+      "heldout_predictions_checked": 780,
+      "per_trial_tables_checked": 10,
+      "summary_rows_checked": 10
+    },
+    "classifier_cross_validation": {
+      "prediction_files_rescored": 256,
+      "heldout_predictions_checked": 13808,
+      "per_trial_tables_checked": 256,
+      "summary_rows_checked": 256
+    },
+    "classifier_feature_tuning": {
+      "prediction_files_rescored": 76,
+      "heldout_predictions_checked": 5928,
+      "per_trial_tables_checked": 76,
+      "summary_rows_checked": 76
+    },
+    "classifier_features": {
+      "prediction_files_rescored": 11,
+      "heldout_predictions_checked": 858,
+      "per_trial_tables_checked": 11,
+      "summary_rows_checked": 11
+    },
+    "clustering_feature_screen": {
+      "prediction_files_rescored": 34,
+      "heldout_predictions_checked": 2652,
+      "summary_rows_checked": 30,
+      "reference_or_alias_without_same_named_summary": 4
+    },
+    "dbscan_label_tuning": {
+      "prediction_files_rescored": 52,
+      "heldout_predictions_checked": 4056,
+      "reference_or_alias_without_same_named_summary": 3,
+      "summary_rows_checked": 49
+    },
+    "dbscan_prediction_cutoffs": {
+      "prediction_files_rescored": 10,
+      "heldout_predictions_checked": 780,
+      "per_trial_tables_checked": 10,
+      "summary_rows_checked": 10
+    },
+    "dbscan_refinement": {
+      "prediction_files_rescored": 30,
+      "heldout_predictions_checked": 2340,
+      "reference_or_alias_without_same_named_summary": 3,
+      "summary_rows_checked": 27
+    },
+    "dbscan_weight_fine_tuning": {
+      "prediction_files_rescored": 76,
+      "heldout_predictions_checked": 5928,
+      "summary_rows_checked": 73,
+      "reference_or_alias_without_same_named_summary": 3
+    },
+    "full_covariance_check": {
+      "prediction_files_rescored": 4,
+      "heldout_predictions_checked": 312,
+      "summary_rows_checked": 1,
+      "reference_or_alias_without_same_named_summary": 3
+    },
+    "gmm_pca": {
+      "prediction_files_rescored": 8,
+      "heldout_predictions_checked": 624,
+      "reference_or_alias_without_same_named_summary": 4,
+      "summary_rows_checked": 4
+    },
+    "gmm_pca_grid": {
+      "prediction_files_rescored": 11,
+      "heldout_predictions_checked": 858,
+      "reference_or_alias_without_same_named_summary": 5,
+      "summary_rows_checked": 6
+    },
+    "kmeans": {
+      "prediction_files_rescored": 6,
+      "heldout_predictions_checked": 468,
+      "reference_or_alias_without_same_named_summary": 1,
+      "summary_rows_checked": 5
+    },
+    "leading_recipes_cv": {
+      "prediction_files_rescored": 200,
+      "heldout_predictions_checked": 9400,
+      "per_trial_tables_checked": 200,
+      "summary_rows_checked": 200
+    },
+    "logistic_penalties": {
+      "prediction_files_rescored": 41,
+      "heldout_predictions_checked": 3198,
+      "per_trial_tables_checked": 41,
+      "summary_rows_checked": 41
+    },
+    "method_comparison": {
+      "prediction_files_rescored": 52,
+      "heldout_predictions_checked": 4056,
+      "summary_rows_checked": 37,
+      "reference_or_alias_without_same_named_summary": 15
+    },
+    "nonlinear_combinations": {
+      "prediction_files_rescored": 45,
+      "heldout_predictions_checked": 3510,
+      "per_trial_tables_checked": 45,
+      "summary_rows_checked": 45
+    },
+    "paired_recipe_cv": {
+      "prediction_files_rescored": 160,
+      "heldout_predictions_checked": 7520,
+      "per_trial_tables_checked": 160,
+      "summary_rows_checked": 160
+    },
+    "per_reason_regularization": {
+      "prediction_files_rescored": 57,
+      "heldout_predictions_checked": 4446,
+      "per_trial_tables_checked": 57,
+      "summary_rows_checked": 57
+    },
+    "rare_label_weights": {
+      "prediction_files_rescored": 16,
+      "heldout_predictions_checked": 1248,
+      "per_trial_tables_checked": 16,
+      "summary_rows_checked": 16
+    },
+    "remaining_classifier_features": {
+      "prediction_files_rescored": 30,
+      "heldout_predictions_checked": 2340,
+      "per_trial_tables_checked": 30,
+      "summary_rows_checked": 30
+    },
+    "safety_year_bias": {
+      "prediction_files_rescored": 3,
+      "heldout_predictions_checked": 234,
+      "summary_rows_checked": 3
+    },
+    "self_training": {
+      "prediction_files_rescored": 11,
+      "heldout_predictions_checked": 858,
+      "summary_rows_checked": 8,
+      "reference_or_alias_without_same_named_summary": 3
+    },
+    "year_feature": {
+      "prediction_files_rescored": 4,
+      "heldout_predictions_checked": 312,
+      "summary_rows_checked": 4
+    }
+  },
+  "totals": {
+    "prediction_files_rescored": 1270,
+    "heldout_predictions_checked": 81740,
+    "summary_rows_checked": 1226,
+    "per_trial_tables_checked": 917,
+    "reference_or_alias_without_same_named_summary": 44
+  },
+  "mismatches": [],
+  "note": "Rescored held-out CSVs against raw gold labels before discarding unsuccessful outputs. Named comparison/fold summary rows checked when present. Reference aliases are counted separately."
+}
