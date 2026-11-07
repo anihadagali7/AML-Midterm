@@ -1,0 +1,60 @@
+{
+  "recipes": {
+    "recent_joint_stack": {
+      "bank": "recent",
+      "tau": 3.0,
+      "extra": [
+        0
+      ],
+      "trend": false
+    },
+    "recent_ratio_stack": {
+      "bank": "recent",
+      "tau": 3.0,
+      "extra": [
+        1
+      ],
+      "trend": false
+    },
+    "recent_text_stack": {
+      "bank": "recent",
+      "tau": 3.0,
+      "extra": [
+        0,
+        1
+      ],
+      "trend": false
+    },
+    "recent_text_trend": {
+      "bank": "recent",
+      "tau": 3.0,
+      "extra": [
+        0,
+        1
+      ],
+      "trend": true
+    },
+    "unweighted_text_stack": {
+      "bank": "unweighted",
+      "tau": null,
+      "extra": [
+        0,
+        1
+      ],
+      "trend": false
+    },
+    "unweighted_text_trend": {
+      "bank": "unweighted",
+      "tau": null,
+      "extra": [
+        0,
+        1
+      ],
+      "trend": true
+    }
+  },
+  "source_sha256": "383e85858a3990d07af6f96c2c5922005b1fd33a66c4724198dfd27f1c973307",
+  "joint_model": "L2 logistic C1 on all eight feature blocks plus phase",
+  "ratio_model": "Binary criteria counts times smoothed, class-normalized log-count ratio; logistic C0.1; ratios fit inside each inner fold",
+  "context": "Final adaptive batch after two failed calibration batches, before any gapped-window scores; no further sweep"
+}

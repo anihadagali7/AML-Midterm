@@ -1,0 +1,166 @@
+{
+  "catboost_d4_n250_none": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 250,
+    "year": "none"
+  },
+  "catboost_d4_n600_none": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 600,
+    "year": "none"
+  },
+  "catboost_d4_n1000_none": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 1000,
+    "year": "none"
+  },
+  "catboost_d6_n250_none": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 250,
+    "year": "none"
+  },
+  "catboost_d6_n600_none": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 600,
+    "year": "none"
+  },
+  "catboost_d6_n1000_none": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 1000,
+    "year": "none"
+  },
+  "catboost_d8_n250_none": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 250,
+    "year": "none"
+  },
+  "catboost_d8_n600_none": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 600,
+    "year": "none"
+  },
+  "catboost_d8_n1000_none": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 1000,
+    "year": "none"
+  },
+  "histgb_leaves7_none": {
+    "family": "histgb",
+    "leaves": 7,
+    "l2": 10,
+    "year": "none"
+  },
+  "histgb_leaves15_none": {
+    "family": "histgb",
+    "leaves": 15,
+    "l2": 20,
+    "year": "none"
+  },
+  "histgb_leaves31_none": {
+    "family": "histgb",
+    "leaves": 31,
+    "l2": 30,
+    "year": "none"
+  },
+  "extratrees_leaf5_none": {
+    "family": "extratrees",
+    "leaf": 5,
+    "year": "none"
+  },
+  "extratrees_leaf20_none": {
+    "family": "extratrees",
+    "leaf": 20,
+    "year": "none"
+  },
+  "catboost_d4_n250_year": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 250,
+    "year": "year"
+  },
+  "catboost_d4_n600_year": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 600,
+    "year": "year"
+  },
+  "catboost_d4_n1000_year": {
+    "family": "catboost",
+    "depth": 4,
+    "iterations": 1000,
+    "year": "year"
+  },
+  "catboost_d6_n250_year": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 250,
+    "year": "year"
+  },
+  "catboost_d6_n600_year": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 600,
+    "year": "year"
+  },
+  "catboost_d6_n1000_year": {
+    "family": "catboost",
+    "depth": 6,
+    "iterations": 1000,
+    "year": "year"
+  },
+  "catboost_d8_n250_year": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 250,
+    "year": "year"
+  },
+  "catboost_d8_n600_year": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 600,
+    "year": "year"
+  },
+  "catboost_d8_n1000_year": {
+    "family": "catboost",
+    "depth": 8,
+    "iterations": 1000,
+    "year": "year"
+  },
+  "histgb_leaves7_year": {
+    "family": "histgb",
+    "leaves": 7,
+    "l2": 10,
+    "year": "year"
+  },
+  "histgb_leaves15_year": {
+    "family": "histgb",
+    "leaves": 15,
+    "l2": 20,
+    "year": "year"
+  },
+  "histgb_leaves31_year": {
+    "family": "histgb",
+    "leaves": 31,
+    "l2": 30,
+    "year": "year"
+  },
+  "extratrees_leaf5_year": {
+    "family": "extratrees",
+    "leaf": 5,
+    "year": "year"
+  },
+  "extratrees_leaf20_year": {
+    "family": "extratrees",
+    "leaf": 20,
+    "year": "year"
+  }
+}

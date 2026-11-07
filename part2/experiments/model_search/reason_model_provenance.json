@@ -1,0 +1,6 @@
+{
+  "path": "part1/experiments/additional_methods/classifier_models/dbscan_m5_q25__logistic_C1000.joblib",
+  "sha256": "522ae60a545a600b9f993ce4fac66d55e37c8ae8c4d7ba1dbe7dfa72f82598a3",
+  "policy": "Visible Part 1 train/val labels when available; otherwise frozen DBSCAN/logistic Part 1 model, cutoff 0.5, argmax fallback.",
+  "usage": "Error analysis only; none of these columns or embeddings is an outcome predictor."
+}

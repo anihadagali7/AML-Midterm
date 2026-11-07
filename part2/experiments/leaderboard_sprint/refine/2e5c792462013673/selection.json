@@ -1,0 +1,18 @@
+{
+  "selected": "legacy0.2_tree0.1_trend0.1",
+  "file": "15_file10_legacy20_tree10_trend10.csv",
+  "selected_at_utc": "2026-11-06T23:41:50.654933+00:00",
+  "observed_kaggle": {
+    "file11": 0.58474,
+    "file13": 0.58465
+  },
+  "reference": "file13",
+  "rationale": "Best mean of the two chronological averages among recipes eligible in both tracks; improves both chronological means, grouped CV and latest forward period against file 13, with small worst-gap regression. File 13 gave only a 0.00009 Kaggle gain, favoring complementary recent-tree/trend signal over a large further legacy-weight increase.",
+  "alternate": "legacy0.3_tree0.05_trend0.1",
+  "summary_sha256": {
+    "strict": "f4f9d99aa0252464617cee27247f05028d0710a87b1a501835b348bd42e23b9d",
+    "published": "096ca46c890a9cf9bcc1c9fcac2944b968693fa68f4c99cf9f2980d9202dee0e"
+  },
+  "score_known_at_selection": false,
+  "remaining_uploads_before_this": 2
+}

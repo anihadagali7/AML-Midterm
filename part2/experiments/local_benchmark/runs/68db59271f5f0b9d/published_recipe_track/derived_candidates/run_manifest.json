@@ -1,0 +1,16 @@
+{
+  "parent": "experiments/local_benchmark/runs/68db59271f5f0b9d/published_recipe_track",
+  "parent_manifest_sha256": "fd16ef8ccf9e2e43a07201414c0a3ae9608eacdbb78d1dbccc36ed54627fafd7",
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "weights": {
+    "ani_mild_phase3_trend": {
+      "ani_stack": 0.75,
+      "ani_phase3_trend": 0.25
+    },
+    "ani_anchored_linear25": {
+      "ani_stack": 0.75,
+      "our_linear": 0.25
+    }
+  },
+  "selection_note": "Exploratory, fixed conservative blends after inspecting the initial batch; every saved split is evaluated, not just favorable periods."
+}

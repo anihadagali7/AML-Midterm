@@ -1,0 +1,14 @@
+{
+  "splits": 10,
+  "strict_recipes": 6,
+  "published_recipe_variants": 5,
+  "complete_comparisons": true,
+  "dataset_and_source_hashes_match": true,
+  "native_probability_replay_max_errors": {
+    "ani_stack": 5.551115123125783e-16,
+    "our_linear": 5.551115123125783e-16
+  },
+  "valid_submission_files": 8,
+  "cached_run_refits_no_models": true,
+  "cached_metrics_and_intervals_repeat": true
+}

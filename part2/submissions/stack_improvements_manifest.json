@@ -1,0 +1,14 @@
+{
+  "status": "No proposal passed the predeclared rule; no new numbered submission exported. Retain Ani 0.58688.",
+  "submissions": [],
+  "source_parity": {
+    "ani_stack": {
+      "source_sha256": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2",
+      "max_probability_error": 3.542518944854578e-09
+    },
+    "ani_first": {
+      "source_sha256": "63a5ed6154c6c96cb838c27fa7feb2656a24960362a1c69be05cd6c3d7c789e5",
+      "max_probability_error": 2.4297228318204134e-07
+    }
+  }
+}

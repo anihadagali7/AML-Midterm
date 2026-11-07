@@ -1,0 +1,12 @@
+{
+  "recipes": 19,
+  "controls": 4,
+  "evaluations": 598,
+  "same_fixed_splits": true,
+  "source_and_component_hashes_verified": true,
+  "independent_blend_replay": true,
+  "exports_verified": [
+    "15_file10_legacy20_tree10_trend10.csv",
+    "16_file10_legacy30_sharp20.csv"
+  ]
+}

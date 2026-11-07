@@ -1,0 +1,18 @@
+temporal                               name  phase_mean_logloss
+   lr_clinical_yearcap_C0.5_phase0            0.570595
+lr_clinical_yearcap_C0.5_phase0.25            0.572671
+  lr_clinical_yearcap_C2_phase0.25            0.572805
+       lr_rich_yearcap_C0.5_phase0            0.574055
+    lr_rich_yearcap_C0.5_phase0.25            0.574487
+     lr_clinical_yearcap_C2_phase0            0.575284
+   lr_clinical_yearcap_C2_phase0.5            0.575750
+ lr_clinical_yearcap_C0.5_phase0.5            0.576888
+validation                             name  phase_mean_logloss
+   lr_criteria_yearcap_C2_phase0            0.562744
+lr_criteria_yearcap_C2_phase0.25            0.563747
+ lr_criteria_yearcap_C2_phase0.5            0.566903
+    lr_rich_yearcap_C2_phase0.25            0.570605
+  lr_rich_yearcap_C0.5_phase0.25            0.570751
+     lr_rich_yearcap_C0.5_phase0            0.570980
+     lr_rich_yearcap_C2_phase0.5            0.572877
+   lr_rich_yearcap_C0.5_phase0.5            0.573358

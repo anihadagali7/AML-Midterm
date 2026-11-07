@@ -1,0 +1,36 @@
+{
+  "baseline_score": 0.58688,
+  "baseline_source_commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347",
+  "reference_file_sha256": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2",
+  "trend_file_sha256": "79bc34c128e6be1e34feb8ac4e0694ac899b0c4f52b8886d15becbc7a094248e",
+  "benchmark_run": "experiments/local_benchmark/runs/68db59271f5f0b9d",
+  "linear_final_training_rows": 9050,
+  "recipe": {
+    "07_ani_mild_phase3_trend": {
+      "Ani 0.58688 published probabilities": 0.75,
+      "Ani capped Phase III trend alternative": 0.25
+    },
+    "08_ani_linear25": {
+      "Ani 0.58688 published probabilities": 0.75,
+      "Our linear component refitted on train+validation": 0.25
+    }
+  },
+  "files": [
+    {
+      "submission": "07_ani_mild_phase3_trend.csv",
+      "mean_test_probability": 0.6349695393142645,
+      "mean_abs_change_from_ani": 0.004530087478559439,
+      "sha256": "4ef1f2087aba2fd33f89d1bd870dd06dd492bf2a65e35848d4bbbfe8aeeecc9e",
+      "kaggle_score": null
+    },
+    {
+      "submission": "08_ani_linear25.csv",
+      "mean_test_probability": 0.6290382319728088,
+      "mean_abs_change_from_ani": 0.012796653375319243,
+      "sha256": "8f254268cac73620a94917cf390df74c334db2d67a168bcf483d17951337c282",
+      "kaggle_score": null
+    }
+  ],
+  "status": "Unsubmitted, optional experiments. Small local differences and overlapping paired intervals do not establish a Kaggle improvement.",
+  "selection": "Compare both strict and faithful-published-recipe tracks. Prefer consistency across chronological windows and grouped CV over supplied-validation F1."
+}

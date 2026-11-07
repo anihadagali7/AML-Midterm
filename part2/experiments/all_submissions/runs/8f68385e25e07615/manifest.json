@@ -1,0 +1,169 @@
+{
+  "models": [
+    "01_balanced_ensemble",
+    "02_text_heavy",
+    "03_phase_specialized",
+    "04_capped_year",
+    "05_text_later_phases",
+    "06_lighter_tree_blend",
+    "07_ani_mild_phase3_trend",
+    "08_ani_linear25",
+    "ani_first",
+    "ani_stack",
+    "ani_phase3_trend",
+    "09_ani_replace_knn5",
+    "10_ani_fast2_neighbors_half"
+  ],
+  "recipes": {
+    "01_balanced_ensemble": {
+      "recency_clinical_C0.5_half3": 0.125,
+      "recency_criteria_C2_half6": 0.1875,
+      "catboost_d8_n1000_none": 0.25,
+      "catboost_d6_n1000_none": 0.25,
+      "text_wordwide_C2": 0.1875
+    },
+    "02_text_heavy": {
+      "recency_clinical_C0.5_half3": 0.1875,
+      "recency_criteria_C2_half6": 0.28125,
+      "catboost_d8_n1000_none": 0.125,
+      "catboost_d6_n1000_none": 0.125,
+      "text_wordwide_C2": 0.28125
+    },
+    "03_phase_specialized": {
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.125,
+        "III": 0.0625
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.1875,
+        "III": 0.09375
+      },
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.25,
+        "III": 0.375
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.25,
+        "III": 0.375
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.1875,
+        "III": 0.09375
+      }
+    },
+    "04_capped_year": {
+      "lr_criteria_yearcap_C2_phase0": 0.5,
+      "catboost_d6_n1000_none": 0.25,
+      "catboost_d8_n1000_none": 0.25
+    },
+    "05_text_later_phases": {
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.0,
+        "III": 0.0
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.0,
+        "III": 0.0
+      },
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.25,
+        "III": 0.25
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.375,
+        "III": 0.375
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.375,
+        "III": 0.375
+      }
+    },
+    "06_lighter_tree_blend": {
+      "catboost_d8_n1000_none": {
+        "I": 0.125,
+        "II": 0.0625,
+        "III": 0.0625
+      },
+      "catboost_d6_n1000_none": {
+        "I": 0.125,
+        "II": 0.0625,
+        "III": 0.0625
+      },
+      "recency_clinical_C0.5_half3": {
+        "I": 0.1875,
+        "II": 0.21875,
+        "III": 0.21875
+      },
+      "text_wordwide_C2": {
+        "I": 0.28125,
+        "II": 0.328125,
+        "III": 0.328125
+      },
+      "recency_criteria_C2_half6": {
+        "I": 0.28125,
+        "II": 0.328125,
+        "III": 0.328125
+      }
+    }
+  },
+  "aliases": {
+    "ani_first": "ani_first",
+    "ani_stack": "ani_stack",
+    "ani_phase3_trend": "ani_phase3_trend",
+    "09_ani_replace_knn5": "replace_knn5",
+    "10_ani_fast2_neighbors_half": "fast2_neighbors_half"
+  },
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "gap_protocol_sha256": "e82c9ea3b46efaed20164103cb2c99616acf500df03837b3cf6098daab7c9027",
+  "policy_sha256": "c9e0f3055bb120cc65df21bc6b633e8a431294385715e8193827bc0b7928031d",
+  "source_sha256": {
+    "all_submission_models.py": "7d8a51f78d13c64a7cdaef02a4b97b5b408d4164a7c806aa96593c001c8d8832",
+    "all_submissions_benchmark.py": "fce474d88e9d29b68daf05521a63e4816e1c8a8f66c9cbd2ea03cfda7cc9cab2",
+    "benchmark_models.py": "719918c15adb87b3797a1b57a7ce15c0e61e49535988994198acb26df76c741a",
+    "benchmark_protocol.py": "e5eb9190d2681607fc2d5cd305f68c6c63158ab1dd248b49d9ecee8772102ebe",
+    "boosted.py": "c2a3da5c682cb7f74fbb78649cd1f7a598b21848d667175aa24d3af039d1029f",
+    "experiments.py": "7346197ed8466c54bc4caad0ad31f4570e8838a9aa81663eab01903f901e4a70",
+    "ensemble_search.py": "7bcb0054fd1ddbc82629d59acb4dc0337838fa3ee1a1a8c3965e41bb57aee3b9",
+    "local_benchmark.py": "67ab861407c66f3572d8916ed933f04ce37a55c462ce00ebfecdf02a5bb4deae",
+    "improvement_report.py": "b84ba427e78b93fc21ec5ed73fdf8eba8fde0933a6a05ee85aa172141a4c99fa"
+  },
+  "input_sha256": {
+    "submissions/manifest.json": "9ab53b9088db2b462206115a660d52271db8191c01f3e42f21f031523e23d2b0",
+    "submissions/followup_manifest.json": "38ad74c72116cab914be7839603dd80c8f0f793138bdfc5ea9531a9e81c6d866",
+    "submissions/ani_candidates_manifest.json": "fd48a452bac69b9852b8660567bd1c70112985e89d64e9937b23bfdf79885299",
+    "submissions/ani_extensions_manifest.json": "b097163c6745920fdf846df47cc8a20e76398d4c5279ab14e13d3d9327fb519c",
+    "submissions/leaderboard_results.json": "9b32ce2953e2a3624fbb7f49222c6dda9e8b0c789751be2ef074921c18eeada6",
+    "submissions/01_balanced_ensemble.csv": "2c0799f879775bf5eb19a4fb58814fdde75c4035ee0837a69b64eb09b6675a81",
+    "submissions/02_text_heavy.csv": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
+    "submissions/03_phase_specialized.csv": "52503212b3b46f347ad5c24c3a185a59843b865cf89d6369d0745c871342d892",
+    "submissions/04_capped_year.csv": "423d53f115372ddf717b21d67e33799361892b636ddb23a80ab96c216e2206a4",
+    "submissions/05_text_later_phases.csv": "3c8d498a6ed79e3e2267a18784cc9b424576da038b532963cf3459519049dde6",
+    "submissions/06_lighter_tree_blend.csv": "064f8ca0935d4a7c4721d39dcd66e0229e1267f5c6a63bc4888a530fd8e27588",
+    "submissions/07_ani_mild_phase3_trend.csv": "4ef1f2087aba2fd33f89d1bd870dd06dd492bf2a65e35848d4bbbfe8aeeecc9e",
+    "submissions/08_ani_linear25.csv": "8f254268cac73620a94917cf390df74c334db2d67a168bcf483d17951337c282",
+    "submissions/09_ani_replace_knn5.csv": "2aef6030c184ea3dbb0fa271519e2330d61bb9853bd7c63b2baab8f18f9ea75d",
+    "submissions/10_ani_fast2_neighbors_half.csv": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448"
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  },
+  "preprocessing": {
+    "strict": "All models training-fold-only",
+    "published": "Original recipe policies: Ani covariate-transductive; legacy components training-fold-only"
+  }
+}

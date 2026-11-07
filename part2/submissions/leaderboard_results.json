@@ -1,0 +1,85 @@
+{
+  "metric": "log_loss",
+  "lower_is_better": true,
+  "prior_reported_best": 0.59528,
+  "ani_winners": {
+    "ani_first": {
+      "kaggle_score": 0.5881,
+      "source": "Score reported in Ani commit message; not a fresh Kaggle API query.",
+      "source_commit": "628088a3be8050b0a20d8719991ec8f517ad8649",
+      "submission": "../experiments/ani_comparison/source/part2_first_submission.csv",
+      "submission_sha256": "63a5ed6154c6c96cb838c27fa7feb2656a24960362a1c69be05cd6c3d7c789e5",
+      "recipe": "Unweighted eight-base grouped-OOF logistic stack; final fit on train plus validation"
+    },
+    "ani_stack": {
+      "kaggle_score": 0.58688,
+      "source": "User-reported and Ani commit-reported score; not a fresh Kaggle API query.",
+      "source_commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347",
+      "submission": "../experiments/ani_comparison/source/part2_best_submission.csv",
+      "submission_sha256": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2",
+      "recipe": "Same stack with exponential recency weights tau=3; final fit on train plus validation"
+    }
+  },
+  "reference": {
+    "kaggle_score": 0.58688,
+    "source": "Ani origin/ani commit 1b8bd11c47428fb5453e53cdc275542b92a3b347; user-reported and commit-reported Kaggle score, exact submission reproduced locally.",
+    "validation_phase_mean_logloss_rounded": 0.556,
+    "source_commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347",
+    "submission_sha256": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2"
+  },
+  "submissions": {
+    "03_phase_specialized.csv": {
+      "sha256": "52503212b3b46f347ad5c24c3a185a59843b865cf89d6369d0745c871342d892",
+      "kaggle_score": 0.59562,
+      "source": "User-reported Kaggle result"
+    },
+    "02_text_heavy.csv": {
+      "sha256": "46236538b620c456a95ebc2528e1498d9c4a9bd360f967bfe700604b681c41ec",
+      "kaggle_score": 0.58993,
+      "source": "User-reported Kaggle result"
+    },
+    "10_ani_fast2_neighbors_half.csv": {
+      "sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+      "kaggle_score": 0.58609,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T19:15:50.519955+00:00",
+      "reported_rank": 2,
+      "reported_leader_score": 0.58526
+    },
+    "11_file10_legacy20.csv": {
+      "sha256": "26ea655feba5094c2045657d328d8a16041f74eca5106f556f1971c7e4bab635",
+      "kaggle_score": 0.58474,
+      "source": "User-reported Kaggle result and first place; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T23:32:29Z",
+      "reported_rank": 1,
+      "previous_reported_leader_score": 0.58526
+    },
+    "13_file10_legacy30.csv": {
+      "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+      "kaggle_score": 0.58465,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T23:40:09.338846+00:00",
+      "improvement_over_previous_best": 9e-05
+    },
+    "15_file10_legacy20_tree10_trend10.csv": {
+      "sha256": "7c86d5e89d1e9e81db9ab50200e5d147df9b9fd6af6ff23ed173b9663279c37b",
+      "kaggle_score": 0.58492,
+      "source": "User-reported Kaggle result; not a fresh Kaggle API query.",
+      "reported_at_utc": "2026-11-06T23:44:47.296572+00:00",
+      "delta_vs_file13": 0.00027
+    }
+  },
+  "current_best": {
+    "submission": "13_file10_legacy30.csv",
+    "sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+    "kaggle_score": 0.58465,
+    "improvement_over_ani": 0.00223,
+    "improvement_over_file10": 0.00144,
+    "improvement_over_file11": 9e-05,
+    "margin_over_previous_reported_leader": 0.00061,
+    "reported_at_utc": "2026-11-06T23:40:09.338846+00:00",
+    "source": "User-reported score and subsequent confirmation of first place",
+    "reported_rank": 1,
+    "rank_reported_at_utc": "2026-11-06T23:50:30.004149+00:00"
+  }
+}

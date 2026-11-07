@@ -1,0 +1,10 @@
+{
+  "recipes": 32,
+  "controls": 7,
+  "evaluations": 1014,
+  "same_fixed_splits": true,
+  "grouped_inner_boundaries_verified": true,
+  "source_hashes_match": true,
+  "exports_verified": 3,
+  "baseline_kaggle_score": 0.58609
+}

@@ -1,0 +1,135 @@
+{
+  "protocol_sha256": "52ac0d16c7b55224f4f5d108c6ff2dd1c1659c931b09ccd10364a8f0d047eb43",
+  "recipes": {
+    "ani_stack": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 1.0
+    },
+    "ani_first": {
+      "banks": [
+        "unweighted"
+      ],
+      "tau": null,
+      "C": 1.0
+    },
+    "tau6_stack": {
+      "banks": [
+        "moderate"
+      ],
+      "tau": 6.0,
+      "C": 1.0
+    },
+    "recent_meta_tau6": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 6.0,
+      "C": 1.0
+    },
+    "recent_equal_phase": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 1.0,
+      "balance": true
+    },
+    "recent_phase_shrink": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 0.3,
+      "interactions": true
+    },
+    "recent_phase_C1": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 1.0,
+      "interactions": true
+    },
+    "tau6_phase_shrink": {
+      "banks": [
+        "moderate"
+      ],
+      "tau": 6.0,
+      "C": 0.3,
+      "interactions": true
+    },
+    "recent_without_nb": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 1.0,
+      "drop_nb": true
+    },
+    "multiscale_stack": {
+      "banks": [
+        "recent",
+        "unweighted"
+      ],
+      "tau": 3.0,
+      "C": 0.3
+    },
+    "multiscale_phase": {
+      "banks": [
+        "recent",
+        "unweighted"
+      ],
+      "tau": 3.0,
+      "C": 0.3,
+      "interactions": true
+    },
+    "ani_phase3_trend": {
+      "banks": [
+        "recent"
+      ],
+      "tau": 3.0,
+      "C": 1.0,
+      "trend": true
+    },
+    "blend_winners50": {
+      "blend": {
+        "ani_stack": 0.5,
+        "ani_first": 0.5
+      }
+    }
+  },
+  "banks": {
+    "unweighted": null,
+    "recent": 3.0,
+    "moderate": 6.0
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.6.0"
+  },
+  "source_sha256": {
+    "improvement_models.py": "79c482fa2a2fcb4327df03b44e484822f505f4500a76db31e95b919661790939",
+    "improvement_benchmark.py": "b25a472ef73f8c82007bc79997b4a05dadfa357dc17388d941f86eb2b284e88d",
+    "ani_models.py": "13639f92744f3d4a1fc38113861bb15cc85d32e26964cf1e5f774a8974956c53",
+    "benchmark_protocol.py": "e5eb9190d2681607fc2d5cd305f68c6c63158ab1dd248b49d9ecee8772102ebe",
+    "local_benchmark.py": "67ab861407c66f3572d8916ed933f04ce37a55c462ce00ebfecdf02a5bb4deae",
+    "experiments.py": "7346197ed8466c54bc4caad0ad31f4570e8838a9aa81663eab01903f901e4a70"
+  },
+  "references": {
+    "ani_first": {
+      "kaggle": 0.5881,
+      "commit": "628088a3be8050b0a20d8719991ec8f517ad8649"
+    },
+    "ani_stack": {
+      "kaggle": 0.58688,
+      "commit": "1b8bd11c47428fb5453e53cdc275542b92a3b347"
+    }
+  },
+  "selection": "Freeze all recipes, evaluate all ten saved splits. Prioritize chronological mean and worst window; require corroboration in pooled grouped CV and compare both winners. Bootstrap intervals are conditional exploratory evidence."
+}

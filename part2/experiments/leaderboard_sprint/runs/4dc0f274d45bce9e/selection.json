@@ -1,0 +1,16 @@
+{
+  "first_candidate": "mix_legacy01_0.2",
+  "first_file": "11_file10_legacy20.csv",
+  "rationale": "Thirty percent has the best mean loss, but twenty percent preserves more of the latest forward-window performance and limits worst-gap regression. First measure this direction on Kaggle before increasing it.",
+  "reserve_orthogonal": "mix_sharp_trend",
+  "reserve_if_first_improves": "mix_legacy01_0.3",
+  "baseline": {
+    "file": "10_ani_fast2_neighbors_half.csv",
+    "kaggle_score": 0.58609
+  },
+  "submission_limit": 4,
+  "input_sha256": {
+    "strict": "96caa30c5b4b6c6d068d6b41cff4cf8965fe7fa186938db2528f78347d7ae729",
+    "published": "7f30621844f25246e18303d27826e2071e8ec7b784f2a249ccaf136b3a4c5df5"
+  }
+}

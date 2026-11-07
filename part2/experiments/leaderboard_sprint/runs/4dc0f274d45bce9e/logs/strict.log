@@ -1,0 +1,14 @@
+strict official complete
+strict time_2007_to_2008_2009 complete
+strict time_2009_to_2010_2011 complete
+strict time_2011_to_2012_2013 complete
+strict group_repeat0_fold0 complete
+strict group_repeat0_fold1 complete
+strict group_repeat0_fold2 complete
+strict group_repeat1_fold0 complete
+strict group_repeat1_fold1 complete
+strict group_repeat1_fold2 complete
+strict gap_2005_to_2008_2009 complete
+strict gap_2007_to_2010_2011 complete
+strict gap_2009_to_2012_2013 complete
+Finished strict /Users/matthew/Desktop/michael/AML-Midterm/part2/experiments/leaderboard_sprint/runs/4dc0f274d45bce9e

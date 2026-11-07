@@ -1,0 +1,60 @@
+{
+  "file": "12_file10_sharp_trend.csv",
+  "model": "mix_sharp_trend",
+  "recipe": {
+    "blend": {
+      "file10": 0.5,
+      "sharp": 0.25,
+      "trend": 0.25
+    }
+  },
+  "sha256": "534966af71199aa287e83931d6935601bb6674dd6064686dc885025c7c1db1cf",
+  "kaggle_score": null,
+  "training_rows": 9050,
+  "native_replay_max_error": 0.0,
+  "baseline_sha256": "d6fa9e347cbb670d3c190b2cf387dcdd06d42d92930bae8abc35974e2b648448",
+  "original_bundle_sha256": "276a5b130b0b393fc0a3e432d9bf2125486a9149217dba8b13d63c750a558648",
+  "model_bundle_path": "experiments/leaderboard_sprint/cache/4dc0f274d45bce9e/mix_sharp_trend.joblib",
+  "model_bundle_sha256": "2d077be8e5b10bb25ab97ce71c06c4013c2ec4beb2b29c0be639e97ea1e4d699",
+  "source_sha256": {
+    "sprint_export.py": "ac57ad77a6e1a3ebd5e711509414b678fb642bd310ae2b320dd158669469a0fa",
+    "sprint_models.py": "3a5ff9cf01468bd5c46985fcb6fc1347be9ed9355edcccbceff790079077a0c7"
+  },
+  "benchmark_manifest_sha256": "36ac333d4705f87d6931c64234da1619977c4412088b895ba1926974860f0f6b",
+  "metrics": {
+    "strict": {
+      "completed_splits": 10,
+      "official": 0.5569093110320248,
+      "temporal": 0.5355441637296228,
+      "worst": 0.5867932189057226,
+      "cv": 0.5861052165709929,
+      "gap_mean": 0.5624906869448253,
+      "gap_worst": 0.6277645455002999,
+      "official_delta": -0.0009300016722962,
+      "temporal_delta": -0.0003461468620443,
+      "worst_delta": -0.0003081446303723,
+      "cv_delta": -0.0007862339840533,
+      "gap_mean_delta": -0.000698435253201,
+      "gap_worst_delta": -0.0010514439555193,
+      "time_average_delta": -0.0005222910576226,
+      "eligible": true
+    },
+    "published": {
+      "completed_splits": 10,
+      "official": 0.5581533093186574,
+      "temporal": 0.5341120679524608,
+      "worst": 0.586431627560018,
+      "cv": 0.5844775646774314,
+      "gap_mean": 0.5616707328794732,
+      "gap_worst": 0.6257680540263197,
+      "official_delta": -0.0010195447061693,
+      "temporal_delta": -0.0004349243090427,
+      "worst_delta": -0.0003967144868586,
+      "cv_delta": -0.0009753339944011,
+      "gap_mean_delta": -0.0006348584080355,
+      "gap_worst_delta": -0.0006605635085333,
+      "time_average_delta": -0.0005348913585391,
+      "eligible": true
+    }
+  }
+}
