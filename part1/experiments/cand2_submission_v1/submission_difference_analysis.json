@@ -1,0 +1,145 @@
+{
+  "total_test_rows": 312,
+  "changed_rows": 49,
+  "unchanged_rows": 263,
+  "changed_fraction": 0.15705128205128205,
+  "change_types": {
+    "add_only": 21,
+    "shared_at_least_one": 40,
+    "disjoint": 9,
+    "one_label_toggle": 39,
+    "involves_other_change": 27,
+    "replace_labels": 10,
+    "remove_only": 18
+  },
+  "labels_added": {
+    "Other": 24,
+    "Efficacy": 2,
+    "Funding": 2,
+    "Safety": 1,
+    "Recruitment": 5
+  },
+  "labels_removed": {
+    "Efficacy": 7,
+    "Safety": 8,
+    "Recruitment": 11,
+    "Other": 3
+  },
+  "most_common_changes": [
+    {
+      "anchored": "Recruitment",
+      "cand2": "Recruitment Other",
+      "count": 12
+    },
+    {
+      "anchored": "Recruitment Other",
+      "cand2": "Other",
+      "count": 6
+    },
+    {
+      "anchored": "Safety Other",
+      "cand2": "Other",
+      "count": 4
+    },
+    {
+      "anchored": "Efficacy Other",
+      "cand2": "Other",
+      "count": 3
+    },
+    {
+      "anchored": "Efficacy",
+      "cand2": "Efficacy Other",
+      "count": 2
+    },
+    {
+      "anchored": "Recruitment",
+      "cand2": "Other",
+      "count": 2
+    },
+    {
+      "anchored": "Safety",
+      "cand2": "Safety Efficacy",
+      "count": 2
+    },
+    {
+      "anchored": "Efficacy",
+      "cand2": "Other",
+      "count": 2
+    },
+    {
+      "anchored": "Safety",
+      "cand2": "Recruitment Other",
+      "count": 2
+    },
+    {
+      "anchored": "Recruitment Other",
+      "cand2": "Recruitment",
+      "count": 2
+    },
+    {
+      "anchored": "Safety Efficacy",
+      "cand2": "Other",
+      "count": 1
+    },
+    {
+      "anchored": "Recruitment",
+      "cand2": "Funding Recruitment",
+      "count": 1
+    },
+    {
+      "anchored": "Other",
+      "cand2": "Safety Other",
+      "count": 1
+    },
+    {
+      "anchored": "Safety Recruitment",
+      "cand2": "Safety Other",
+      "count": 1
+    },
+    {
+      "anchored": "Efficacy",
+      "cand2": "Recruitment Other",
+      "count": 1
+    },
+    {
+      "anchored": "Efficacy Other",
+      "cand2": "Efficacy",
+      "count": 1
+    },
+    {
+      "anchored": "Safety",
+      "cand2": "Other",
+      "count": 1
+    },
+    {
+      "anchored": "Other",
+      "cand2": "Recruitment Other",
+      "count": 1
+    },
+    {
+      "anchored": "Funding Recruitment",
+      "cand2": "Funding",
+      "count": 1
+    },
+    {
+      "anchored": "Funding",
+      "cand2": "Funding Recruitment",
+      "count": 1
+    },
+    {
+      "anchored": "Other",
+      "cand2": "Funding Other",
+      "count": 1
+    },
+    {
+      "anchored": "Efficacy Recruitment",
+      "cand2": "Efficacy",
+      "count": 1
+    }
+  ],
+  "reported_anchored_score": 0.89636,
+  "reported_cand2_score": 0.89102,
+  "reported_delta": -0.00534,
+  "delta_percentage_points": -0.534,
+  "interpretation": "Predictions only: no hidden-label correctness is inferred. Scores are user reported; leaderboard row population is not independently verified."
+}

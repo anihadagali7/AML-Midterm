@@ -4,7 +4,7 @@ The highest recorded, user-reported Kaggle score is **anchored: 0.89636**. Its e
 
 ## Scored checkpoints
 
-These records identify earlier manually submitted CSVs, exact hashes, frozen recipes, fitting access, and reported scores. The dedicated commits and tags are backfilled checkpoints, not new uploads.
+These records identify manually submitted CSVs, exact hashes, frozen recipes, fitting access, and reported scores. The original five checkpoints were backfilled from earlier reports; Cand2 records the newly reported result. Creating a record or tag does not upload a file.
 
 | Recipe | Reported Kaggle F1 | Immutable annotated tag |
 |---|---:|---|
@@ -13,6 +13,7 @@ These records identify earlier manually submitted CSVs, exact hashes, frozen rec
 | [LDA 70/15/15 ensemble, 235 labels](results/lda-ensemble-trainval235.json) | 0.89401 | `part1-lda-ensemble-trainval235-kaggle-0.89401` |
 | [Previous 70/15/15 ensemble, 235 labels](results/three-way-trainval235.json) | 0.89401 | `part1-three-way-trainval235-kaggle-0.89401` |
 | [Tri-training, 235 labels](results/tri-training-trainval235.json) | 0.88012 | `part1-tri-training-trainval235-kaggle-0.88012` |
+| [Cand2 graph/features, inductive five-seed, 235 labels](results/cand2-cs-features-inductive5-trainval235.json) | 0.89102 | `part1-cand2-cs-features-inductive5-trainval235-kaggle-0.89102` |
 
 Scores come from user/branch reports; uploaded bytes and leaderboard partition were not independently inspected. Original Ani's .89423 identifies the original `a548721` transductive artifact. The later `8a8c3fc` best-model source and CSV changed; no score is established for that changed CSV. See [Ani provenance](../research/lda_ensemble/research/ani_snapshots/README.md).
 
@@ -35,7 +36,7 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
-The [Cand2 strict-inductive five-seed CSV](candidates/cand2_cs_features_inductive5.csv) is prepared as a user-requested exploratory candidate. It changes 49/312 predictions from anchored and has weaker local benchmark scores; it is not a promoted leader or a recorded upload. [Recipe, evidence and exact hash](../experiments/cand2_submission_v1/README.md).
+The user reported **0.89102** for the [Cand2 strict-inductive five-seed CSV](candidates/cand2_cs_features_inductive5.csv), prepared as an exploratory candidate. It changes 49/312 predictions from anchored and scores 0.00534 lower. Anchored remains the leader. [Recipe, evidence and exact hash](../experiments/cand2_submission_v1/README.md); [reported result](results/cand2-cs-features-inductive5-trainval235.json).
 
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 

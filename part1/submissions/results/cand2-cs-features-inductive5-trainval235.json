@@ -1,0 +1,33 @@
+{
+  "recipe": "cand2-cs-features-inductive5-trainval235",
+  "reported_kaggle_score": 0.89102,
+  "tag": "part1-cand2-cs-features-inductive5-trainval235-kaggle-0.89102",
+  "submission_file": "part1/submissions/candidates/cand2_cs_features_inductive5.csv",
+  "submission_sha256": "521f2825cfc20711f435edc633038b1ca59834e4804f06fc358fce05337ddde7",
+  "frozen_recipe_file": "part1/experiments/cand2_submission_v1/protocol.json",
+  "frozen_recipe_sha256": "1e05a517e92f72e1aa5b4710e2c92c959736c0014c25ac5487d9dfff85308508",
+  "original_model_manifest": "part1/experiments/cand2_submission_v1/original_manifest.json",
+  "original_model_manifest_sha256": "3b8887f6b422a5a0b056ca22df1c027166b98505594d411ad4ba13aa77e5b972",
+  "fitting_source_commit": "1150f9c",
+  "verified_training_labels": 235,
+  "originally_masked_training_rows": 1014,
+  "inner_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fitting_access": "Strict inductive: test inputs used only for prediction; grouped nested refits and calibration.",
+  "score_provenance": "User reported 0.89102 after receiving the exact Cand2 filename and scp command in this conversation. Not independently queried from Kaggle.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "leaderboard_partition": "Not specified by user; not independently verified.",
+  "record_type": "Newly reported manual submission outcome; no upload, prediction change or model refit by the agent in this result-recording step.",
+  "recorded_at_utc": "2026-11-07T23:12:48.709363+00:00",
+  "parent_recipe": "anchored-trainval235",
+  "parent_reported_score": 0.89636,
+  "reported_delta_vs_parent": -0.00534,
+  "changed_test_label_sets_vs_parent": 49,
+  "preparation_record": "part1/experiments/cand2_submission_v1/prepared_submission.json",
+  "preparation_status_note": "The earlier preparation and verification records describe the pre-submission state; this result supersedes their unknown-score status."
+}
