@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-07T21:58:01.391736+00:00",
+  "purpose": "Check the five-inner-seed procedure used to build the proposed CSVs, in addition to reproducing the published single-seed benchmark.",
+  "parent": "Anchored 0.89636; exact same fixed seven candidates/blends and all138 contexts.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "aggregation": "Average raw float64 combo posteriors and source priors BEFORE prior correction and decoding, matching submit.final_fit. Use the corresponding query batch (native) or eligible masked training pool (strict) for SLD.",
+  "access": "Identical native and strict boundaries to the primary protocol. Five seeds alter inner OOF/calibration, not outer split assignments.",
+  "preexisting_results": "Single-seed results were known before this supplementary check. No candidate selection or parameter changes; all seven repeated.",
+  "controls": "Reuse the freshly fitted deterministic anchored score arrays from the primary study; do not count these as fresh anchored fits.",
+  "no_submission_generated": true,
+  "source_hashes": {
+    "part1/experiments/dylan_v2_candidates_v1/seed_ensemble.py": "9dc1473782a6e45636e8c318f9d0f8f41a4b8bb59fa8be8bda9f2cd928669c62",
+    "part1/experiments/dylan_v2_candidates_v1/run.py": "66c6b644b79a6e69ca10cdc20bda2b1c3b4dbf6e8c018484a25e92896c6ba0fa",
+    "part1/experiments/dylan_v2_candidates_v1/strict_adapter.py": "1455ac44397465fddba8d8e448828b5a8ab91e187f08a0429e8fe4cbf790eea0",
+    "part1/experiments/dylan_v2_candidates_v1/protocol.json": "6fa5fbf91dbd6bee5c4533e09fd9c759d95b75ce5d7a9aad48b87efac996e701",
+    "part1/experiments/dylan_v2_candidates_v1/case_plan.json": "927f058300e20a543ec7a8dc7c8bad6721358da08500a8312c3992ef5564ac58"
+  }
+}

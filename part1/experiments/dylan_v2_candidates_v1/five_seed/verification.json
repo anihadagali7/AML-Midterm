@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "cases": 138,
+  "recipe_evaluations": 1104,
+  "seed_convention": "five-inner-seed raw posterior average",
+  "deterministic_anchored_reused": true,
+  "anchored_historical_prediction_checks": 138,
+  "complete_OOF_repeats": 26,
+  "protected_source_hashes": 43,
+  "nested_context_audits": 332675,
+  "native_difference_vs_supplied_single_seed_max_abs": 0.005870921016155606,
+  "bootstrap": {
+    "resamples": 5000,
+    "seed": 20261107,
+    "unit": "222 embedding groups, common weights across models and occurrences",
+    "limitation": "Conditional on fitted predictions; not independent validation or uncertainty of a new Kaggle result."
+  }
+}

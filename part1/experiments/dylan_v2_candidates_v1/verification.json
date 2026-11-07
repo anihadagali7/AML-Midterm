@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "cases": 138,
+  "recipe_evaluations": 1104,
+  "anchored_historical_prediction_checks": 138,
+  "complete_OOF_repeats": 26,
+  "protected_source_hashes": 40,
+  "nested_context_audits": 66535,
+  "native_reproduction_max_abs_error": 1.1102230246251565e-16,
+  "native_exact_to_1e_12": true,
+  "bootstrap": {
+    "resamples": 5000,
+    "seed": 20261107,
+    "unit": "222 embedding groups, common weights across models and occurrences",
+    "limitation": "Conditional on fitted predictions; not independent validation or uncertainty of a new Kaggle result."
+  }
+}

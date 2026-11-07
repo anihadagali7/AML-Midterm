@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "test_case": "strict_inductive__validation",
+  "outer_query_label_change_max_errors": {
+    "cand1": 0.0,
+    "cand2": 0.0,
+    "cand4": 0.0,
+    "cand5": 0.0
+  },
+  "changing_one_query_embedding_does_not_change_other_queries": {
+    "cand1": 0.0,
+    "cand2": 0.0,
+    "cand4": 0.0,
+    "cand5": 0.0
+  },
+  "calibration_inner_query_label_change_max_error": 0.0,
+  "literal_test_rows_present": false,
+  "query_labels_masked_before_fit": true,
+  "caveat": "These are targeted invariance probes, in addition to all saved-boundary audits; not a proof about every future pipeline."
+}

@@ -1,0 +1,285 @@
+{
+  "created_utc": "2026-11-07T21:50:03.272470+00:00",
+  "base_commit": "859a873309687c131b3fcdf3f7ed726689509726",
+  "branch": "codex/part1-derived-benchmark-audit",
+  "parent": "Anchored 0.89636",
+  "models": [
+    "anchored",
+    "cand1",
+    "cand2",
+    "cand4",
+    "cand5",
+    "anchored_cand1",
+    "anchored_cand5",
+    "anchored_cand1_cand5"
+  ],
+  "configs": {
+    "cand1": {
+      "model": {
+        "features": {
+          "scale": true,
+          "pca": null,
+          "l2": false,
+          "blocks": {}
+        },
+        "synth": [],
+        "labeler": {
+          "type": "cs",
+          "graph": {
+            "space": {
+              "scale": true,
+              "pca": 64,
+              "l2": true
+            },
+            "k": 10,
+            "s": 1.0,
+            "sym": "max"
+          },
+          "lam": 0.05196473063140133,
+          "a1": 0.8,
+          "a2": 0.6382007398005838,
+          "hard": true,
+          "tau": 0.5
+        },
+        "clf": {
+          "type": "lda",
+          "class_weight": "balanced"
+        },
+        "temperature": true
+      },
+      "head": {
+        "prior": "none",
+        "decode": "expf1"
+      },
+      "transductive": true
+    },
+    "cand2": {
+      "model": {
+        "features": {
+          "scale": true,
+          "pca": null,
+          "l2": false,
+          "blocks": {}
+        },
+        "synth": [
+          {
+            "type": "kmeans",
+            "k": 8,
+            "out": "soft"
+          },
+          {
+            "type": "knn_vote",
+            "k": 20
+          }
+        ],
+        "labeler": {
+          "type": "cs",
+          "graph": {
+            "space": {
+              "scale": true,
+              "pca": 64,
+              "l2": true
+            },
+            "k": 10,
+            "s": 1.0,
+            "sym": "max"
+          },
+          "lam": 0.06307249103049938,
+          "a1": 0.8,
+          "a2": 0.4199619766036297,
+          "hard": true,
+          "tau": 0.5
+        },
+        "clf": {
+          "type": "lda",
+          "class_weight": "balanced"
+        },
+        "temperature": true
+      },
+      "head": {
+        "prior": "none",
+        "decode": "expf1"
+      },
+      "transductive": true
+    },
+    "cand4": {
+      "model": {
+        "ensemble": [
+          {
+            "features": {
+              "scale": true
+            },
+            "synth": [],
+            "labeler": null,
+            "clf": {
+              "type": "lr",
+              "C": 0.1
+            },
+            "temperature": false
+          },
+          {
+            "features": {
+              "scale": true
+            },
+            "synth": [],
+            "labeler": null,
+            "clf": {
+              "type": "lda"
+            },
+            "temperature": true
+          },
+          {
+            "features": {
+              "scale": true
+            },
+            "synth": [],
+            "labeler": null,
+            "clf": {
+              "type": "direct",
+              "labeler": {
+                "type": "cs",
+                "graph": {
+                  "space": {
+                    "scale": true,
+                    "pca": 64,
+                    "l2": true
+                  },
+                  "k": 10,
+                  "s": 1.0,
+                  "sym": "max"
+                },
+                "a1": 0.5,
+                "a2": 0.5
+              }
+            },
+            "temperature": false
+          }
+        ],
+        "weights": null
+      },
+      "head": {
+        "prior": "sld",
+        "sld_a": 100,
+        "decode": "expf1"
+      },
+      "transductive": true
+    },
+    "cand5": {
+      "model": {
+        "features": {
+          "scale": true
+        },
+        "synth": [],
+        "labeler": {
+          "type": "cs",
+          "graph": {
+            "space": {
+              "scale": true,
+              "pca": 64,
+              "l2": true
+            },
+            "k": 10,
+            "s": 1.0,
+            "sym": "max"
+          },
+          "a1": 0.8,
+          "a2": 0.64,
+          "hard": true,
+          "tau": 0.5,
+          "lam": 0.1
+        },
+        "clf": {
+          "type": "lr",
+          "C": 0.1
+        },
+        "temperature": false
+      },
+      "head": {
+        "prior": "sld",
+        "sld_a": 25,
+        "decode": "expf1"
+      },
+      "transductive": true
+    }
+  },
+  "hypothesis": "Do the four fixed Dylan v2 candidates and three supplied fixed blends improve on anchored under our benchmark, and how do they score under the supplied native benchmark?",
+  "plans": "All saved 80 grouped CV folds + validation + three chronology windows; native Dylan A50+B3+C1. All seven candidates/blends are diagnostic full comparisons, including unfavorable results; no shortlist selection.",
+  "native_access": "Unmodified p1lib model code, full1561 label-free preprocessing including query and actual test features. Source inner folds/calibration retained. Gold labels restricted by native ctx.train. SLD on query batch. Anchor remains inductive, as in supplied comparison.",
+  "strict_access": "Only eligible fitting rows and query rows exist in per-case Data; query labels masked, no test rows. Explicit fitting gold/masked sets from saved plans. All preprocessing and pseudo labels refit within grouped calibration folds. Inner group-matching masked rows purged. C&S residual base OOF uses grouped folds and refit scaling. KNN synthetic training features use leave-embedding-group-out fitting and scaling. Kmeans soft-feature temperature estimated on fitting rows only. SLD uses eligible masked training pool, never query batch.",
+  "schema": "Eight source label combinations are frozen recipe support, not selected during this experiment. All prediction labels are five fixed task labels; no query labels enter fit.",
+  "seeds": "One inner seed0 per benchmark fit, matching Dylan evaluate.run_fold. The preexisting final submission CSVs average five inner seeds; these runs evaluate the supplied benchmark convention, not a five-seed final artifact.",
+  "blends": {
+    "weights": "equal, supplied definitions unchanged",
+    "decode": "argmax label plus all label scores >=0.3",
+    "members": {
+      "anchored_cand1": [
+        "anchored",
+        "cand1"
+      ],
+      "anchored_cand5": [
+        "anchored",
+        "cand5"
+      ],
+      "anchored_cand1_cand5": [
+        "anchored",
+        "cand1",
+        "cand5"
+      ]
+    }
+  },
+  "advancement": "No automatic promotion. Primary check: positive paired mean and >=5/8 wins in BOTH grouped pools; report validation and chronology regressions. No tuning hyperparameters, cutoffs, heads, or blend weights.",
+  "retention": "Keep compact matched comparisons and source/recipes/summaries; remove transformed features, graph/fitted caches, temporary logs. Prediction retention decided by usefulness of matched access comparison, not by winning within this study.",
+  "references_excluded": "The two reference CSVs are explicitly not proposed assignment-compliant candidates; their supplied scores remain in candidate_definitions.md. cand3 duplicates cand1.",
+  "source_hashes": {
+    "part1/experiments/dylan_v2_candidates_v1/run.py": "66c6b644b79a6e69ca10cdc20bda2b1c3b4dbf6e8c018484a25e92896c6ba0fa",
+    "part1/experiments/dylan_v2_candidates_v1/strict_adapter.py": "1455ac44397465fddba8d8e448828b5a8ab91e187f08a0429e8fe4cbf790eea0",
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "part1/experiments/derived_benchmark_audit_v1/splits.json": "8b183d94e2284d34fdf0ea201edf94299c2ddd2c0dbfa54f0322f8ef73f38015",
+    "part1/experiments/derived_benchmark_audit_v1/protocol.json": "4dd967770033fb5f110330381b6cd4a1704b9a28f10be7f96f8d4573df11697a",
+    "part1/experiments/derived_benchmark_audit_v1/comparison.csv": "3ca1daf8142c4c3dc820f80417fdbc643a15ff62060af5023955271901ce05c8",
+    "part1/experiments/dylan_v2_candidates_v1/requirements-lock.txt": "faa81af5d99aa1ad7f95189c38fd349d7f154e0b32c7e902525cb56f9a469ff5",
+    "part1/data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1/data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/synth.py": "0db8de6c693141e024da022d9a21b85dd6714f8e840422577e4ea81dd3e45c73",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/submit.py": "e4eb29a5ae75631738c205b1de0c4433c34fcfeccf1f433f3b2b0ae8ded961dc",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/configs.py": "fae1bea4abe340100fc9d65aa4e1c0088b197880d3753944297fcbf468b1fbf5",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/graph.py": "c554b0f993074a695de7797f8b982e962a664eb23bc9e35887d61a130972c436",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/cache.py": "548ed28caa2acf1b2b9eb629750327e137878e02fc476c75b35035f9cab795c8",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/__init__.py": "1a4193bd55a5a5b2a43a378cb9f54b65922f70dbbb652807e899db5224cd15d9",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/features.py": "572ee22ba5e2ed855bff4eac11b1cbb19f98d424b19be937e691becbb18e80dd",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/classifiers.py": "192636327764c72061350a27b68eea55c2622f36b7cead3d3724ec93cc1a2a15",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/context.py": "6ebc82855ce3cd4bcf61e2be9179a9df65c250ecb8700f7727c9774e9d442b9f",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/pipeline.py": "bd7176f27af31cafb283c742762e02201d81684031be91826e589ba6003a232e",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/head.py": "cdede0e03b391fa6cc04cd81c6f9f88749711bf85ac60c20feb5624f6419191e",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/labelers.py": "f818fadb88de18386c4136b783383e6b06658c8816fcce315e34650217cfafd6",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/search.py": "a7c0e64f08693342fd115dfa7cc6bb23f45afe565a852ffd91e2e0f141a68a7f",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/evaluate.py": "8d4c12d023632889ef1b416eafe47fd5aa9904065f725ab327fa5f37cc0fff4c",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/blocks.py": "426c4c6df627f0a2f985d3797f95c33f1a159d732ab06a1a9f222a744fdca119",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/viz.py": "b4c28474fa7d34906bbecb45fe3a3a69dbf8cb7e79f7077f6d42772f8d2fad13",
+    "part1/experiments/dylan_v2_candidates_v1/source/p1lib/data.py": "04708ec48b1d0bb709b5bbb99d36ff936dec95a7eb116fad6a03bd5143b9b5fd",
+    "part1/experiments/dylan_v2_candidates_v1/manifests/cand5_lr_cs_sld_robust.manifest.json": "b8f8c4f83f5c75b7baad546500d7c3ffa2e616a86d1609c80b61833cce6f21d4",
+    "part1/experiments/dylan_v2_candidates_v1/manifests/cand2_compliant_argmax.manifest.json": "3b8887f6b422a5a0b056ca22df1c027166b98505594d411ad4ba13aa77e5b972",
+    "part1/experiments/dylan_v2_candidates_v1/manifests/cand1_selected_1se.manifest.json": "1da330d41ac98144489dccd3b4b84f588acbc87f86141a91ed75e9f01a89ac04",
+    "part1/experiments/dylan_v2_candidates_v1/manifests/cand4_ens3_cs_sld.manifest.json": "a61fcfa3177bd3cf224881ec0c28d6747dd9b1b50d4deff07427788dd8a8e0e7",
+    "part1/experiments/dylan_v2_candidates_v1/candidate_definitions.md": "16d46f5da8477c6080aed9bd8cca946d35d9e8c8d2800ea2feb22ab6ad499706",
+    "part1/experiments/dylan_v2_candidates_v1/supplied_candidates.csv": "aa656ed212b98e7786cfc0bfb157c5d0fa6d9d5d7345117a8cbc908764499772",
+    "part1/experiments/dylan_v2_candidates_v1/supplied_ensemble_results.json": "ab7fba8f1ecd31427dda49697280272b55bf37ebabf85d4f23d66a7038ead356",
+    "part1/experiments/dylan_v2_candidates_v1/supplied_ensemble.py": "bf9f188c399654418f9e6029acde8798341795078aea2867b29a846f8d6126f2",
+    "part1/experiments/dylan_v2_candidates_v1/supplied_REPORT.md": "ddeb606e84474fca46187640585dada194c3b7f4945c45ce444f64b11bff7b53",
+    "part1/experiments/dylan_v2_candidates_v1/supplied_requirements.txt": "18743d1dd0fc41f604f5960e0034548db68c8386b39f79a15da9f46696f04a19"
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "iterative-stratification": "0.1.9",
+    "joblib": "1.6.0"
+  },
+  "package_version_note": "Use the current repository environment for matched fits. Supplied native score replay will report any difference from Dylan package versions; never silently substitute reported scores.",
+  "no_new_submission": true
+}

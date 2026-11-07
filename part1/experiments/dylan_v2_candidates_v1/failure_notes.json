@@ -1,0 +1,9 @@
+{
+  "model_fitting_failures": 0,
+  "verification_failures": 0,
+  "negative_finding": "All seven candidate/blend means are below anchored on all four current-policy checks; none meets the paired advancement rule.",
+  "version_note": "The repository environment differs slightly from supplied dependency versions; all 28 native candidate/blend aggregate checks nevertheless reproduce to floating-point tolerance.",
+  "artifact_scope": "Published seed0 benchmark reproduced; separately evaluated the fixed five-inner-seed averaging procedure on every context. Existing final CSV artifacts were not regenerated or submitted.",
+  "five_seed_conclusion": "Averaging five inner seeds leaves every candidate and blend below anchored on all four current-policy means.",
+  "five_seed_context": "Supplementary check declared after seeing single-seed results; all candidates repeated without tuning or selection."
+}
