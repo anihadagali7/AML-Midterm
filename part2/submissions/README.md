@@ -1,5 +1,11 @@
 # Part Two manual Kaggle submissions
 
+The [latest research comparison](../experiments/stack_improvements/RESULTS.md)
+benchmarks both Ani winners and all proposed variants on identical saved splits.
+Read its decision before choosing another upload; original numbered files below
+remain historical artifacts. Any new shortlisted files and their unknown Kaggle
+scores are recorded in [stack_improvements_manifest.json](stack_improvements_manifest.json).
+
 Lower log loss is better. Best reported reference: **0.58688**. Our 03 scored **0.59562**, then 02 improved to **0.58993**. Initial 01/04 remain unscored. **Hold 05/06; use the new fixed benchmark for future comparisons.**
 
 | submission | validation_logloss | temporal_logloss | kaggle_score |

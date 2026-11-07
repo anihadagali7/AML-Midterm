@@ -1,0 +1,224 @@
+published official fitting
+published official inner 1/5 8.2 s
+published official inner 2/5 15.9 s
+published official inner 3/5 24.1 s
+published official inner 4/5 32.8 s
+published official inner 5/5 41.4 s
+published official complete 51.0 s
+              model  phase_mean_logloss
+          ani_stack            0.556108
+          ani_first            0.558898
+         tau6_stack            0.554641
+   recent_meta_tau6            0.555431
+ recent_equal_phase            0.558669
+recent_phase_shrink            0.561675
+    recent_phase_C1            0.562028
+  tau6_phase_shrink            0.558057
+  recent_without_nb            0.557935
+   multiscale_stack            0.556203
+   multiscale_phase            0.562152
+   ani_phase3_trend            0.557150
+    blend_winners50            0.555490
+published time_2007_to_2008_2009 fitting
+published time_2007_to_2008_2009 inner 1/5 4.7 s
+published time_2007_to_2008_2009 inner 2/5 10.4 s
+published time_2007_to_2008_2009 inner 3/5 16.1 s
+published time_2007_to_2008_2009 inner 4/5 22.0 s
+published time_2007_to_2008_2009 inner 5/5 27.6 s
+published time_2007_to_2008_2009 complete 36.1 s
+              model  phase_mean_logloss
+          ani_stack            0.587659
+          ani_first            0.588684
+         tau6_stack            0.586562
+   recent_meta_tau6            0.587303
+ recent_equal_phase            0.589217
+recent_phase_shrink            0.592604
+    recent_phase_C1            0.593289
+  tau6_phase_shrink            0.590184
+  recent_without_nb            0.588811
+   multiscale_stack            0.589455
+   multiscale_phase            0.598959
+   ani_phase3_trend            0.587985
+    blend_winners50            0.587668
+published time_2009_to_2010_2011 fitting
+published time_2009_to_2010_2011 inner 1/5 7.5 s
+published time_2009_to_2010_2011 inner 2/5 13.7 s
+published time_2009_to_2010_2011 inner 3/5 21.0 s
+published time_2009_to_2010_2011 inner 4/5 28.2 s
+published time_2009_to_2010_2011 inner 5/5 34.2 s
+published time_2009_to_2010_2011 complete 44.1 s
+              model  phase_mean_logloss
+          ani_stack            0.564268
+          ani_first            0.567443
+         tau6_stack            0.564975
+   recent_meta_tau6            0.564545
+ recent_equal_phase            0.564462
+recent_phase_shrink            0.566493
+    recent_phase_C1            0.566512
+  tau6_phase_shrink            0.566175
+  recent_without_nb            0.564135
+   multiscale_stack            0.566213
+   multiscale_phase            0.567184
+   ani_phase3_trend            0.564527
+    blend_winners50            0.565073
+published time_2011_to_2012_2013 fitting
+published time_2011_to_2012_2013 inner 1/5 9.4 s
+published time_2011_to_2012_2013 inner 2/5 18.3 s
+published time_2011_to_2012_2013 inner 3/5 26.7 s
+published time_2011_to_2012_2013 inner 4/5 34.6 s
+published time_2011_to_2012_2013 inner 5/5 42.4 s
+published time_2011_to_2012_2013 complete 52.7 s
+              model  phase_mean_logloss
+          ani_stack            0.455326
+          ani_first            0.465748
+         tau6_stack            0.458763
+   recent_meta_tau6            0.457678
+ recent_equal_phase            0.455223
+recent_phase_shrink            0.453164
+    recent_phase_C1            0.453022
+  tau6_phase_shrink            0.457127
+  recent_without_nb            0.455376
+   multiscale_stack            0.455980
+   multiscale_phase            0.453141
+   ani_phase3_trend            0.453869
+    blend_winners50            0.459588
+published group_repeat0_fold0 fitting
+published group_repeat0_fold0 inner 1/5 5.8 s
+published group_repeat0_fold0 inner 2/5 11.4 s
+published group_repeat0_fold0 inner 3/5 17.2 s
+published group_repeat0_fold0 inner 4/5 23.5 s
+published group_repeat0_fold0 inner 5/5 29.9 s
+published group_repeat0_fold0 complete 38.8 s
+              model  phase_mean_logloss
+          ani_stack            0.581536
+          ani_first            0.574335
+         tau6_stack            0.576126
+   recent_meta_tau6            0.578954
+ recent_equal_phase            0.580835
+recent_phase_shrink            0.581512
+    recent_phase_C1            0.581817
+  tau6_phase_shrink            0.576402
+  recent_without_nb            0.582599
+   multiscale_stack            0.579330
+   multiscale_phase            0.582986
+   ani_phase3_trend            0.580295
+    blend_winners50            0.575807
+published group_repeat0_fold1 fitting
+published group_repeat0_fold1 inner 1/5 5.0 s
+published group_repeat0_fold1 inner 2/5 10.3 s
+published group_repeat0_fold1 inner 3/5 15.6 s
+published group_repeat0_fold1 inner 4/5 21.1 s
+published group_repeat0_fold1 inner 5/5 26.3 s
+published group_repeat0_fold1 complete 34.9 s
+              model  phase_mean_logloss
+          ani_stack            0.583667
+          ani_first            0.577195
+         tau6_stack            0.578349
+   recent_meta_tau6            0.581262
+ recent_equal_phase            0.583194
+recent_phase_shrink            0.582899
+    recent_phase_C1            0.582990
+  tau6_phase_shrink            0.577482
+  recent_without_nb            0.584956
+   multiscale_stack            0.581092
+   multiscale_phase            0.582165
+   ani_phase3_trend            0.583090
+    blend_winners50            0.578482
+published group_repeat0_fold2 fitting
+published group_repeat0_fold2 inner 1/5 5.2 s
+published group_repeat0_fold2 inner 2/5 10.5 s
+published group_repeat0_fold2 inner 3/5 15.5 s
+published group_repeat0_fold2 inner 4/5 20.5 s
+published group_repeat0_fold2 inner 5/5 25.5 s
+published group_repeat0_fold2 complete 34.5 s
+              model  phase_mean_logloss
+          ani_stack            0.590168
+          ani_first            0.582131
+         tau6_stack            0.584984
+   recent_meta_tau6            0.588876
+ recent_equal_phase            0.591187
+recent_phase_shrink            0.590104
+    recent_phase_C1            0.590385
+  tau6_phase_shrink            0.583784
+  recent_without_nb            0.591673
+   multiscale_stack            0.586116
+   multiscale_phase            0.588364
+   ani_phase3_trend            0.589582
+    blend_winners50            0.584122
+published group_repeat1_fold0 fitting
+published group_repeat1_fold0 inner 1/5 6.2 s
+published group_repeat1_fold0 inner 2/5 12.4 s
+published group_repeat1_fold0 inner 3/5 18.5 s
+published group_repeat1_fold0 inner 4/5 23.6 s
+published group_repeat1_fold0 inner 5/5 28.9 s
+published group_repeat1_fold0 complete 36.8 s
+              model  phase_mean_logloss
+          ani_stack            0.587821
+          ani_first            0.580452
+         tau6_stack            0.582541
+   recent_meta_tau6            0.585159
+ recent_equal_phase            0.587957
+recent_phase_shrink            0.587011
+    recent_phase_C1            0.587320
+  tau6_phase_shrink            0.580805
+  recent_without_nb            0.590038
+   multiscale_stack            0.585828
+   multiscale_phase            0.589081
+   ani_phase3_trend            0.586497
+    blend_winners50            0.581985
+published group_repeat1_fold1 fitting
+published group_repeat1_fold1 inner 1/5 5.4 s
+published group_repeat1_fold1 inner 2/5 10.6 s
+published group_repeat1_fold1 inner 3/5 15.6 s
+published group_repeat1_fold1 inner 4/5 20.9 s
+published group_repeat1_fold1 inner 5/5 26.1 s
+published group_repeat1_fold1 complete 35.3 s
+              model  phase_mean_logloss
+          ani_stack            0.577871
+          ani_first            0.567754
+         tau6_stack            0.571049
+   recent_meta_tau6            0.575852
+ recent_equal_phase            0.577236
+recent_phase_shrink            0.580753
+    recent_phase_C1            0.580949
+  tau6_phase_shrink            0.573441
+  recent_without_nb            0.577913
+   multiscale_stack            0.571814
+   multiscale_phase            0.575133
+   ani_phase3_trend            0.577198
+    blend_winners50            0.571208
+published group_repeat1_fold2 fitting
+published group_repeat1_fold2 inner 1/5 4.9 s
+published group_repeat1_fold2 inner 2/5 9.9 s
+published group_repeat1_fold2 inner 3/5 15.2 s
+published group_repeat1_fold2 inner 4/5 20.6 s
+published group_repeat1_fold2 inner 5/5 25.6 s
+published group_repeat1_fold2 complete 34.2 s
+              model  phase_mean_logloss
+          ani_stack            0.591744
+          ani_first            0.583189
+         tau6_stack            0.585190
+   recent_meta_tau6            0.589660
+ recent_equal_phase            0.592803
+recent_phase_shrink            0.593098
+    recent_phase_C1            0.593716
+  tau6_phase_shrink            0.586447
+  recent_without_nb            0.591333
+   multiscale_stack            0.587566
+   multiscale_phase            0.589459
+   ani_phase3_trend            0.590993
+    blend_winners50            0.584720
+              model  completed_splits  expected_splits  official_logloss  temporal_windows  temporal_mean_logloss  worst_temporal_logloss  cv_completed_repeats  cv_mean_logloss  cv_repeat_std  temporal_delta  temporal_delta_lower  temporal_delta_upper  group_cv_delta  group_cv_delta_lower  group_cv_delta_upper  temporal_mean_delta_vs_ani  cv_mean_delta_vs_ani  complete_comparison
+   ani_phase3_trend                10               10          0.557150                 3               0.535460                0.587985                     2         0.584607       0.000291       -0.000291             -0.001077              0.000544       -0.000858             -0.002043              0.000412                   -0.000291             -0.000858                 True
+          ani_stack                10               10          0.556108                 3               0.535751                0.587659                     2         0.585465       0.000348             NaN                   NaN                   NaN             NaN                   NaN                   NaN                    0.000000              0.000000                 True
+  recent_without_nb                10               10          0.557935                 3               0.536107                0.588811                     2         0.586417       0.000014        0.000356             -0.001309              0.001875        0.000952              0.000080              0.001826                    0.000356              0.000952                 True
+ recent_equal_phase                10               10          0.558669                 3               0.536300                0.589217                     2         0.585532       0.000467        0.000549             -0.000808              0.001770        0.000067             -0.000700              0.000839                    0.000549              0.000067                 True
+   recent_meta_tau6                10               10          0.555431                 3               0.536509                0.587303                     2         0.583291       0.000267        0.000757             -0.000148              0.001583       -0.002174             -0.003079             -0.001306                    0.000757             -0.002174                 True
+         tau6_stack                10               10          0.554641                 3               0.536767                0.586562                     2         0.579704       0.000109        0.001015             -0.000633              0.002641       -0.005762             -0.007199             -0.004225                    0.001015             -0.005762                 True
+   multiscale_stack                10               10          0.556203                 3               0.537216                0.589455                     2         0.581956       0.000216        0.001465             -0.001121              0.004129       -0.003509             -0.005476             -0.001588                    0.001465             -0.003509                 True
+recent_phase_shrink                10               10          0.561675                 3               0.537420                0.592604                     2         0.585893       0.001062        0.001669             -0.001982              0.004868        0.000428             -0.001755              0.002649                    0.001669              0.000428                 True
+    blend_winners50                10               10          0.555490                 3               0.537443                0.587668                     2         0.579385       0.000078        0.001692             -0.000227              0.003350       -0.006080             -0.007567             -0.004471                    0.001692             -0.006080                 True
+    recent_phase_C1                10               10          0.562028                 3               0.537607                0.593289                     2         0.586193       0.001136        0.001856             -0.002059              0.005343        0.000728             -0.001590              0.003112                    0.001856              0.000728                 True
+  tau6_phase_shrink                10               10          0.558057                 3               0.537829                0.590184                     2         0.579724       0.000508        0.002078             -0.001626              0.005419       -0.005741             -0.008140             -0.003194                    0.002078             -0.005741                 True
+   multiscale_phase                10               10          0.562152                 3               0.539761                0.598959                     2         0.584531       0.000032        0.004010             -0.000444              0.008368       -0.000935             -0.004063              0.002822                    0.004010             -0.000935                 True
+          ani_first                10               10          0.558898                 3               0.540625                0.588684                     2         0.577507       0.000373        0.004874              0.001202              0.008132       -0.007958             -0.010874             -0.004795                    0.004874             -0.007958                 True
