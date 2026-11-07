@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "full_cv_fits": 240,
+  "supplementary_fits": 12,
+  "implementation_equivalence_fits": 1,
+  "frozen_parent_cv_checks": 80,
+  "frozen_parent_supplementary_checks": 4,
+  "parent_max_score_error": 0.0,
+  "empty_target_max_error": 2.950972799453666e-13,
+  "repeats_scored": 48,
+  "qualified_cv": {
+    "geometry_only": false,
+    "target_self_training": false
+  },
+  "protected_hashes_unchanged": true,
+  "query_truth_passed_to_model": false,
+  "actual_kaggle_test_inputs_used": false,
+  "new_test_predictions": false,
+  "protocol_sha256": "62bdd662dfeeee6d8957bd703d47799b4ebd04e0bd95baeef14093ef0a9bc6d9"
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "new_cv_fits": 240,
+  "new_supplementary_fits": 12,
+  "implementation_control_fits": 1,
+  "reused_lda_cv_evaluations": 80,
+  "reused_lda_supplementary_evaluations": 4,
+  "blend_evaluated_cases": 84,
+  "parent_frozen_cv_checks": 80,
+  "parent_supplementary_checks": 4,
+  "parent_max_score_error": 0.0,
+  "row_control_max_error": 0.0,
+  "repeats_scored": 80,
+  "qualified_cv": {
+    "grouped_neighbors": false,
+    "pseudo_neighbor_quarter": false,
+    "anchored75_lda25": false
+  },
+  "all_source_hashes_unchanged": true,
+  "lda_standalone_matches_common_comparison": true,
+  "actual_test_inputs_used": false,
+  "protocol_sha256": "1ea1621d81b0fb0360f15283473a06f99b7a7e1ce522d5d984d2f02d90393995"
+}

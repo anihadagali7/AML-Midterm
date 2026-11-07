@@ -1,20 +1,21 @@
 # Part 1
 
-Start here for the current model and testing procedure. The [executed Part 1 notebook](part1.ipynb) explains the recipe, performs one final235 refit, and reproduces the exact scored CSV. It verifies saved comparison results; fresh 80-fold CV is a separate replay. The **anchored reason classifier** has the highest recorded, user-reported Kaggle score: **0.89636**. Its submitted fit used all **235 verified labels** and the **1,014 originally masked training rows**; Kaggle test inputs were used only for prediction.
+Start here for the current model and testing procedure. The **75% anchored / 25% LDA ensemble blend** has the highest recorded, user-reported Kaggle score: **0.89850**, up **0.00214** from anchored's 0.89636. Both components use their existing final fits on **235 verified labels** and the **1,014 originally masked training rows**; Kaggle test inputs were used only for prediction. See the [winning blend recipe and verification](research/anchored_lda_blend_submission_v1/README.md) and [exact-file score record](submissions/results/anchored75-lda25-trainval235.json).
 
-The model blends logistic regression, cosine nearest neighbors, and shrinkage LDA over the supplied reason embeddings. Clustering supports missing-label generation. See the [implementation](anchored_solution.py), [frozen recipe](experiments/paired_improvement/candidate/manifest.json), and [scored result with exact CSV hash](submissions/results/anchored-trainval235.json). The preparation manifest predates submission; the result record carries the later score.
+The blend aligns component decision cutoffs before combining scores. Its anchored component combines logistic regression, cosine nearest neighbors, and shrinkage LDA over the supplied reason embeddings, with clustering supporting missing-label generation. The [executed Part 1 notebook](part1.ipynb) still explains and refits that anchored component and reproduces its 0.89636 CSV; the winning blend's separate export adds the existing LDA ensemble. The notebook also verifies saved comparisons; fresh 80-fold CV is a separate replay. Frozen preparation manifests retain their earlier status; later score records supersede it.
 
 ## Comparable results
 
-These results use the same saved **grouped, eight-repeat, five-fold** plans in each pool. Validation describes a separate fit on 157 labels; chronology pools the three fixed windows. [Complete comparison and paired results](experiments/current_leaders_grouped_v1/comparison.csv).
+These results use the same saved **grouped, eight-repeat, five-fold** plans in each pool. Validation describes a separate fit on 157 labels; chronology pools the three fixed windows. [Original component comparison](experiments/current_leaders_grouped_v1/comparison.csv) and [complete blend study with paired results](research/anchored_neighbor_blend_v1/README.md).
 
 | Model | Train157 CV | Pooled235 CV | Validation78 | Chronology98 | Reported Kaggle |
 |---|---:|---:|---:|---:|---:|
-| Anchored | .932059 | .921365 | .891026 | .884354 | **.89636** |
+| **Anchored75/LDA25 blend** | .932059 | **.923404** | .891026 | .884354 | **.89850** |
+| Anchored | .932059 | .921365 | .891026 | .884354 | .89636 |
 | LDA 70/15/15 ensemble | .931794 | .921631 | .905983 | .877551 | .89401 |
 | Current Ani LDA source | .928079 | .915426 | .871795 | .874150 | Unknown |
 
-Anchored is effectively tied with the LDA ensemble on CV: slightly higher on Train157 and slightly lower on Pooled235. Its validation score is lower and its pooled chronology score is higher. It does **not** beat LDA on every check. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
+The winning blend improved Pooled235 in all eight repeats and tied anchored's other three sample-F1 headlines. It did not meet the strict both-pool CV advancement rule because Train157's average tied (3 wins / 3 ties / 2 losses). The user authorized a manual trial after reviewing that distinction; its subsequently reported Kaggle score improved. Preserve that outcome without retroactively changing the evaluation rule. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
 
 Ani's [original notebook](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb), [original scored CSV](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_submission.csv), and [result checkpoint](submissions/results/ani-original.json) are preserved on this branch. The notebook matches source commit `a548721` byte for byte; the score tag is `part1-ani-original-kaggle-0.89423`. The [later LDA notebook](research/lda_ensemble/research/ani_snapshots/8a8c3fc/part1_best_model.ipynb) is preserved separately. Archived handoff statements about its evaluation status describe their original checkpoint; the common comparison above includes the later source.
 
@@ -26,6 +27,8 @@ Run these commands from the repository root with the project's Python environmen
 
 ```sh
 python part1/current_leaders_local.py verify
+python part1/research/anchored_neighbor_blend_v1/evidence.py verify
+python part1/research/anchored_lda_blend_submission_v1/verify.py
 python part1/research/legacy_retention_v1/verify.py
 python part1/research/early_iterations/verify.py
 python part1/research/consolidation_v1/verify.py

@@ -1,0 +1,54 @@
+{
+  "version": "anchored-transductive-v1",
+  "registered_at": "2026-11-07T21:51:58.718986+00:00",
+  "parent": "Unchanged anchored classifier; user-reported Kaggle 0.89636; inductive final235 fit.",
+  "hypothesis": "Target embeddings may improve geometry; confident target-generated labels may add support or reinforce errors.",
+  "modes": {
+    "inductive": "Frozen parent fit on eligible gold and originally masked training inputs only.",
+    "geometry_only": "Append target embeddings only when fitting StandardScaler, PCA30 and diagonal GMM30; target rows cannot receive generated training labels.",
+    "target_self_training": "Append target embeddings with five -100 labels to the exact frozen parent fit; geometry and confidence-filtered target-generated labels may influence fitting."
+  },
+  "settings": "All parent features, random seeds, C, priors, weights, thresholds, two generated-label passes and decoder fixed; no tuning.",
+  "schedule": "Predeclared full 8 repeats x 5 folds on both saved grouped pools plus validation78 and three chronological windows for EVERY mode: 252 scored fits.",
+  "supplementary_exception": "Run all four supplementary fits even if CV fails, to answer this focused access question without post-result selection.",
+  "target_access": "Only each evaluated batch's embeddings enter transductive fits. Target truth never enters fit_predict. Actual Kaggle test inputs are hashed for protection but not loaded or used in evaluation.",
+  "group_policy": "Same gold/masked fitting IDs, original order and group purges as the frozen parent. Only the explicit target batch is added. Train157 excludes every validation-source row.",
+  "chronology": "Same earlier fitting IDs and later query IDs; transductive variants deliberately see later query embeddings. These are transductive chronological diagnostics, not strict future-input-excluded forecasts.",
+  "original_ani_difference": "Ani's final fit used test inputs for geometry and generated labels. Its old CV used globally fitted geometry and actual Kaggle inputs; this study instead refits each fold and uses its held-out batch as the target analogue.",
+  "advancement": "Positive paired mean sample-F1 delta and at least 5/8 repeat wins in BOTH pools. Supplementary regressions remain visible; no automatic replacement, final test fit, upload or merge.",
+  "metrics": "Complete OOF sample-F1 per repeat, mean, population SD, paired repeat deltas/wins/ties/losses, macro-F1 and every label precision/recall/F1/support; chronology pooled over 98 rows.",
+  "controls": "Refit parent on all 84 cases; require every CV score array within 1e-7 and all CV/supplementary predicted labels identical to frozen records. Empty-target geometry implementation must match parent on the first fold.",
+  "limitations": [
+    "Reused development splits are not an untouched test.",
+    "CV/chronology target batches have fewer rows than the 312-row final test; a local effect may not transfer.",
+    "The PDF describes supplied unlabeled data, unsupervised augmentation and no test-label reverse engineering; it does not explicitly settle transductive submission permission."
+  ],
+  "retention": "Keep code, protocol, aggregate/per-repeat/per-label results and verification. Full predictions only for a qualifying candidate or useful matched control; no fitted models or per-fold datasets.",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0"
+  },
+  "sources": {
+    "part1/research/anchored_transductive_v1/models.py": "948f22b61047bf469f510df22694e75b89b8a9422711d6d5318b558b6a991642",
+    "part1/research/anchored_transductive_v1/run.py": "f56bcac1e04156399b23d91df02cb036698490871046b0cf52333f51418c8ffb",
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "Midterm_Project.pdf": "0d027e47108328ce18bfc168ecb314d1af921ecf24708ef301a003dc72c494b5",
+    "part1/experiments/current_leaders_grouped_v1/anchored_train.npz": "7d9114ef710dbdd364bcae6c7f5aca8f4c9a331debe2091cb5c96b4b8bd4be95",
+    "part1/experiments/current_leaders_grouped_v1/anchored_pooled.npz": "2851299685f75fc599cedf2d35dd7523a8cb036ea34bc6be5881890ce22ea379",
+    "part1/experiments/current_leaders_grouped_v1/diagnostic_predictions.csv": "764ff5034d6ea208afc68097687867bd2e0ea8136b2ba12ae5ef72306091fc8e",
+    "part1/submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "part1/experiments/paired_improvement/candidate/manifest.json": "eebd8dc347c7fa6e40b42c366c47e18ba674687301410f402a2dc31641788398",
+    "part1/research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb": "06ac000e36d820d9e8c3e96c21b07631e6716e4f29883e726a8fcfc64c1ddbe7",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15"
+  }
+}

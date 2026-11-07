@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "method": "Direct TP/FP/FN arithmetic; no sklearn metric calls",
+  "records_checked": 105,
+  "metric_values_checked": 2310,
+  "max_absolute_error": 1.1102230246251565e-16,
+  "modes": [
+    "anchored",
+    "grouped_neighbors",
+    "pseudo_neighbor_quarter",
+    "anchored75_lda25",
+    "lda_control"
+  ],
+  "models_fitted": 0
+}

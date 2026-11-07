@@ -1,0 +1,45 @@
+{
+  "policy": "Neither candidate qualified. Retain source, preregistered recipe, all repeat/per-label/paired/supplementary scores, count summaries and verification. Omit failed candidate predictions and detailed fit audits after independent rescoring.",
+  "parent_control": "../../experiments/current_leaders_grouped_v1",
+  "discarded_prediction_packets": 84,
+  "discarded_prediction_bytes": 454968,
+  "discarded_fit_audit_bytes": 296229,
+  "files": {
+    "results/cv_summary.csv": {
+      "sha256": "2f0b9ab9a03893b9ceecbff3220652eac4d034b95df320b970a16b6988aa4fb3",
+      "bytes": 535
+    },
+    "results/fit_access_summary.json": {
+      "sha256": "fd022ce1a1205502a7e097caa452c13183fd69ff0ca425aa1502bf163cd64195",
+      "bytes": 2675
+    },
+    "results/independent_rescore.json": {
+      "sha256": "898da219dbd28b4da307170f19ce6b749d1bc1e5f57ec53869d71fd8ce164df1",
+      "bytes": 336
+    },
+    "results/paired_repeat_deltas.csv": {
+      "sha256": "fbee3bf5febd616129de11a78829d085fafcc2b0564703e16cafddfd53a50f6d",
+      "bytes": 1665
+    },
+    "results/paired_summary.csv": {
+      "sha256": "cc650077f5363b7dbd93922904fef80c777bef12fa14b72925ffda902626d82e",
+      "bytes": 286
+    },
+    "results/prediction_change_summary.csv": {
+      "sha256": "e32c301f84bdd5676ac598193db624ddbd5d7652b3005d68b64644afd22b61ea",
+      "bytes": 10753
+    },
+    "results/repeat_scores.csv": {
+      "sha256": "0ab33eb4f75b2298d3bed840497fb44c95d68ecff9c152154acfa782c327ce13",
+      "bytes": 15778
+    },
+    "results/supplementary_scores.csv": {
+      "sha256": "3b7ce3b278a72fd9a3af6eac841f3b2cef297008db3b75aa1ca68947455829a8",
+      "bytes": 4624
+    },
+    "results/verification.json": {
+      "sha256": "0f0289b7256ff2a52264b0851e261ae7c4e8e9bf0f846852bace9e6f1fc95d11",
+      "bytes": 626
+    }
+  }
+}

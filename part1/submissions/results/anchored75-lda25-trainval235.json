@@ -1,0 +1,43 @@
+{
+  "recipe": "anchored75-lda25-trainval235",
+  "reported_kaggle_score": 0.8985,
+  "reported_score_display": "0.89850",
+  "recorded_at_utc": "2026-11-07T23:11:30.513241+00:00",
+  "tag": "part1-anchored75-lda25-trainval235-kaggle-0.89850",
+  "submission_file": "part1/submissions/ready/part1_anchored75_lda25_trainval235.csv",
+  "submission_sha256": "6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b",
+  "frozen_recipe_file": "part1/research/anchored_lda_blend_submission_v1/frozen_recipe.json",
+  "frozen_recipe_sha256": "84d75d9f41c25aaf61c84114565f7255ee3d49a9c2ab6c891750c9e16108b9e1",
+  "preparation_manifest": "part1/research/anchored_lda_blend_submission_v1/manifest.json",
+  "preparation_commit": "2a5b0d2",
+  "verified_training_labels": 235,
+  "originally_masked_training_rows": 1014,
+  "test_rows": 312,
+  "component_weights": {
+    "anchored": 0.75,
+    "lda_ensemble": 0.25
+  },
+  "fitting_access": "Inductive; both existing full-235 fits exclude test inputs from fitting. No additional fitting or tuning for the fixed blend.",
+  "score_provenance": "User reported 0.89850 immediately after receiving this exact candidate filename and scp command. Not independently queried from Kaggle.",
+  "record_type": "Checkpoint for the newly user-reported manual submission; recording performed no upload or refit.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "leaderboard_partition_independently_verified": false,
+  "preparation_manifest_preserved": true,
+  "comparison": {
+    "previous_best_recipe": "anchored-trainval235",
+    "previous_best_reported_score": 0.89636,
+    "delta_previous_best": 0.00214,
+    "lda_ensemble_reported_score": 0.89401,
+    "delta_lda_ensemble": 0.00449,
+    "changed_labelsets_vs_previous_best": 5
+  },
+  "local_evidence": {
+    "study": "part1/research/anchored_neighbor_blend_v1",
+    "train157_mean_sample_f1": 0.9320594479830149,
+    "pooled235_mean_sample_f1": 0.9234042553191489,
+    "validation78_sample_f1": 0.8910256410256411,
+    "chronology98_sample_f1": 0.8843537414965985,
+    "met_registered_both_pool_advancement_rule": false
+  },
+  "status": "Highest recorded user-reported Part 1 Kaggle score; preserve the prior anchored and LDA components and all matched evidence."
+}
