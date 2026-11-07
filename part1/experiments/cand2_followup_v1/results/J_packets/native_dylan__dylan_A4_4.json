@@ -1,0 +1,24 @@
+{
+  "key": "native_dylan__dylan_A4_4",
+  "kind": "A",
+  "repeat": 4,
+  "cut": null,
+  "fresh_parent_max_error": 3.26183524634871e-13,
+  "gold": 188,
+  "masked": 1014,
+  "query": 47,
+  "inner_contexts": 4625,
+  "inner_group_overlaps": 0,
+  "temperatures": [
+    3.5999350153955034,
+    3.4116157800202953,
+    3.484542074514371,
+    3.53768756468938,
+    3.5911301619574454
+  ],
+  "outer_gold_group_overlap": 2,
+  "outer_masked_group_overlap": 3,
+  "outer_future_masked": 1014,
+  "sha256": "3e9c78e686be5b34b34c1ae10e20ed1c99318734b3412eaf55496a3f0edc5995",
+  "seconds": 23.320679457858205
+}

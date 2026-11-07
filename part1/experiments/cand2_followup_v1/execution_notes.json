@@ -1,0 +1,16 @@
+{
+  "fresh_J_cases": 54,
+  "cand2_seed_fits": 270,
+  "fresh_parent_controls": 54,
+  "current_policy_cases_reused": 84,
+  "parent_prediction_sets_identical": true,
+  "parent_score_max_abs": 1.9788837235523715e-11,
+  "inner_contexts": 246650,
+  "inner_group_overlaps": 0,
+  "recipe_or_parameter_changes_after_freeze": false,
+  "model_failures": 0,
+  "notes": [
+    "Protocol uses exact agreement informally; frozen code requires parent scores within 1e-10 and identical binary predictions. Observed rounding-level difference is recorded here.",
+    "Runner console group means are arithmetic means of individual chronological windows. The retained summary correctly pools all 98 chronological rows; J B intentionally remains an equal-window mean."
+  ]
+}

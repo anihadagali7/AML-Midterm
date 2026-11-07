@@ -1,0 +1,15 @@
+{
+  "status": "prepared exploratory candidate; not uploaded; Kaggle score unknown",
+  "csv": "submissions/candidates/anchored80_cand2_inductive20.csv",
+  "sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+  "rows": 312,
+  "gold": 235,
+  "masked": 1014,
+  "test_features_used_for_fit": false,
+  "changed_vs_anchored": 14,
+  "changed_vs_cand2": 42,
+  "parent_scored_predictions_reproduced": true,
+  "cand2_exact_scored_csv_reconstructed": true,
+  "final_prediction_sha256": "640ca62408f5dfc9e92ba54fafce500b94387e3576ae5b5db6becb3f6f136c8a",
+  "export_protocol_sha256": "8b4e2e9e69c2fddf026038a883411aa3c4e59cb870025d01c5fe2729a4b76cb4"
+}
