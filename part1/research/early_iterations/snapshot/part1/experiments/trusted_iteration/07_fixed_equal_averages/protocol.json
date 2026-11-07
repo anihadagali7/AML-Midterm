@@ -1,0 +1,27 @@
+{
+  "combinations": {
+    "average_C0.3_C0.1": [
+      "final_r2_control",
+      "final_r2_C0.1"
+    ],
+    "average_rounds2_3": [
+      "final_r2_control",
+      "binary_neighbor_targets"
+    ],
+    "average_trusted_ani": [
+      "final_r2_control",
+      "ani_train_only"
+    ]
+  },
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "cutoff": 0.3,
+  "reason": "Fixed equal averages check whether nearby simple fits reduce variability. No fitted ensemble or weight search.",
+  "inputs": {
+    "experiments/trusted_iteration/06_final_regularization_check/probabilities.npz": "5583915c18f9029269b7395815d35b1657df6648a2d1636236ab9d7539aa88a2",
+    "experiments/trusted_iteration/02_other_and_paired_labels/probabilities.npz": "b893c501995fd812368b0344177639c1f57145c1cda5f8aa1dca2c30542c5c94"
+  },
+  "fitting": "Reuse strict held-out scores from the exact40folds; no new feature or label fitting."
+}

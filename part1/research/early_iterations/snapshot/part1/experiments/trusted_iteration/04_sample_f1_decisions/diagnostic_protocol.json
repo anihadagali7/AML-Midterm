@@ -1,0 +1,10 @@
+{
+  "cutoffs": [
+    2003,
+    2005,
+    2007
+  ],
+  "originally_unlabeled_policy": "Exclude years after cutoff, including their inputs.",
+  "old_validation": "157 original known fit; 78 former-validation held, all1014 unknown allowed.",
+  "caveat": "Diagnostics reused during development, not new independent confirmation."
+}

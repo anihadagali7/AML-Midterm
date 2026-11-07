@@ -1,0 +1,1261 @@
+{
+  "baseline_commit": "2c8770f518a752100ccee837c797e167bd080bb2",
+  "scope": "Account for all 275 existing working files absent from the Part 1 research branch. Preserve compact unsuccessful studies plus complete selected anchored ablation and useful Ani control evidence.",
+  "files": {
+    "part1/research/early_iterations/snapshot/part1/build_current_ani_pool_report.py": {
+      "original_path": "part1/build_current_ani_pool_report.py",
+      "sha256": "12dcb2fd7d8575cff04ffcac08ecd3fdf8c49b6db8bbd955b502e5ca6647401f",
+      "bytes": 9286,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/build_simple_notebook.py": {
+      "original_path": "part1/build_simple_notebook.py",
+      "sha256": "76f7c5f71ad4372721e457ca09e349674107612970bf93b61c04d6439e046e66",
+      "bytes": 12892,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/build_trusted_notebook.py": {
+      "original_path": "part1/build_trusted_notebook.py",
+      "sha256": "65ceea9438e96bf5bbbd1ed35be475f8c9520edff43fd2689e5e4b37aebf77d6",
+      "bytes": 13987,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/compare_ani_pools.py": {
+      "original_path": "part1/compare_ani_pools.py",
+      "sha256": "9a1e9336f37da7433b8daf5f7166522488729689168e2cef418a0cd2cc82be42",
+      "bytes": 10140,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/experiments/current_ani_pool_audit/ani_current_source.ipynb": {
+      "original_path": "part1/experiments/current_ani_pool_audit/ani_current_source.ipynb",
+      "sha256": "339bca31284fd013fb795f659c4e2d96dcb40b5be6e4315db69e1dbc3f65d2b4",
+      "bytes": 63261,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/ani_functions.py": {
+      "original_path": "part1/experiments/current_ani_pool_audit/ani_functions.py",
+      "sha256": "d14c32ee5c5ca09622ab2875d4bf9b3c91b1b90318eac6e01feaf815f9860604",
+      "bytes": 2236,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/checks.json": {
+      "original_path": "part1/experiments/current_ani_pool_audit/checks.json",
+      "sha256": "c66f7e9b464a38d3a54604a4dfba19be5470b3e997939bea437a799db0e7fe7e",
+      "bytes": 597,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/current_diagnostic_scores.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/current_diagnostic_scores.csv",
+      "sha256": "b79c298ae4591f83fe46100ef95d029b10af10db47bfee52f9535d2d113185c6",
+      "bytes": 1426,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/fold_scores.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/fold_scores.csv",
+      "sha256": "befd04950811583f7b099dcb6df8d5c63c48d32755a6e30eca6132c8be0b0f59",
+      "bytes": 23049,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/paired_trial_bootstrap.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/paired_trial_bootstrap.csv",
+      "sha256": "9295b23f6bc5908a1ffd43cea261fee2584a4bb09294d370f9e6071e199d31b3",
+      "bytes": 352,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/predictions.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/predictions.csv",
+      "sha256": "e263915f96ea894b2a7b349789fb0ad6ca61ee2b9503e040e047f60b8418f3c6",
+      "bytes": 1295601,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/repeat_scores.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/repeat_scores.csv",
+      "sha256": "c64d6bd92a5677e92e41607fd3c5d0a014400b3b97bc6fb68cc1dc95fadda463",
+      "bytes": 5804,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/review.json": {
+      "original_path": "part1/experiments/current_ani_pool_audit/review.json",
+      "sha256": "3b02973925973948cee0a8a2ebce9d759cccf9b98c59c4a2b2e635e564fb9db1",
+      "bytes": 534,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/role_audit.json": {
+      "original_path": "part1/experiments/current_ani_pool_audit/role_audit.json",
+      "sha256": "97b7cf73d2ab3e55f8e35bde57161f351803b07ec1c36f6a06733895d8a55ee6",
+      "bytes": 681422,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/current_ani_pool_audit/summary.csv": {
+      "original_path": "part1/experiments/current_ani_pool_audit/summary.csv",
+      "sha256": "b07e11cfd514029cd983dbb653d155a65ed187e4318bd83142555cb6f7b98308",
+      "bytes": 1375,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_roundoff_attempt/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/00_control_roundoff_attempt/paired_models.py",
+      "sha256": "d56e5f51c70adfe51277631a815f9c2a887c04e89006bbcafd29fc4a015efac5",
+      "bytes": 5628,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_roundoff_attempt/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/00_control_roundoff_attempt/paired_search.py",
+      "sha256": "868a1e616c466a6d3555efc8fa7327d36316dab35d85b0db540b4bcd8f789f31",
+      "bytes": 9482,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_scaler_order_attempt/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/00_control_scaler_order_attempt/paired_models.py",
+      "sha256": "d56e5f51c70adfe51277631a815f9c2a887c04e89006bbcafd29fc4a015efac5",
+      "bytes": 5628,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_scaler_order_attempt/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/00_control_scaler_order_attempt/paired_search.py",
+      "sha256": "49ee3820352d7448dffab812faedcf72dd37f0460cdc0cee19cad04fa8270df1",
+      "bytes": 10089,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/both_pools.csv",
+      "sha256": "c1869bc974662de5e69725d36c6aee1d1f16cc4ecbbb2c9d101ae24be54f1039",
+      "bytes": 1809,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/control_checks.json": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/control_checks.json",
+      "sha256": "84dafe109d59d909e68c5e3c206c1751d20a13bc9ab7bbe6d41d2fd7141ab555",
+      "bytes": 19948,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/diagnostic_scores.csv",
+      "sha256": "ae60891494d13beac62727656de26d5e1062933e8a32ef5cce52daea8c85967b",
+      "bytes": 7426,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/fold_scores.csv",
+      "sha256": "585da7a6dabee5ef3585db39e9adaee19d45379ea5cf43863125a7590b7f7fb7",
+      "bytes": 83483,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/paired_models.py",
+      "sha256": "df1329254a6719d06a6560c14e11fc0b9caceca8e94f8e3c09ac0a37b0ae6542",
+      "bytes": 5948,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/paired_search.py",
+      "sha256": "49ee3820352d7448dffab812faedcf72dd37f0460cdc0cee19cad04fa8270df1",
+      "bytes": 10089,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/repeat_scores.csv",
+      "sha256": "15757ce0736af096eb41e3da96eab464b8b47bbcd42d1a2836587fe983f19e37",
+      "bytes": 21986,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/summary.csv",
+      "sha256": "562a4565edc879ba7eb5003e3e90b9c979ba9e86eec005912dfc9637e2f1e8d3",
+      "bytes": 4977,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/both_pools.csv",
+      "sha256": "ad2ba3995e88251228474f6a5b10fbd7ae2b1a0c159e43bfde69fd04f89beaed",
+      "bytes": 1775,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/control_checks.json": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/control_checks.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/diagnostic_scores.csv",
+      "sha256": "f316b4022c7ea44b911b224b3a32df5e319f2c235688603b5c130f9adde1faa8",
+      "bytes": 7154,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/fold_scores.csv",
+      "sha256": "0be4e8c617c76a7453f97d894ae2e9e0d8c863eb695a2755f38784e90b552f94",
+      "bytes": 78734,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/paired_models.py",
+      "sha256": "df1329254a6719d06a6560c14e11fc0b9caceca8e94f8e3c09ac0a37b0ae6542",
+      "bytes": 5948,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/paired_search.py",
+      "sha256": "49ee3820352d7448dffab812faedcf72dd37f0460cdc0cee19cad04fa8270df1",
+      "bytes": 10089,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/repeat_scores.csv",
+      "sha256": "194ad68fa19880dce9d153833fc2cbb6eca80825bcff2ff15c70c56b511c853d",
+      "bytes": 20863,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/summary.csv",
+      "sha256": "af77fb10d6c8167207f00ee1f6e3e028b4abdbf0f5ecb1e16195a3ce9788fdf1",
+      "bytes": 4852,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/both_pools.csv",
+      "sha256": "f486d96a60f71e8ab260b6df0dcd9197d6d1467cca83a4a9719a7df6fed65bf2",
+      "bytes": 1161,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/control_checks.json": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/control_checks.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/diagnostic_scores.csv",
+      "sha256": "6dd7d472b8e5c429e776ab178e37e97e8d33e317f6c8ddd13a4cba2385cc4353",
+      "bytes": 4435,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/fold_scores.csv",
+      "sha256": "049b0c2586b8aab35ba3a10367107eb9aa27a5fce019a691db8f5c97cc5356df",
+      "bytes": 50921,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/paired_models.py",
+      "sha256": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
+      "bytes": 6655,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/paired_search.py",
+      "sha256": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
+      "bytes": 10284,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/repeat_scores.csv",
+      "sha256": "9553e6f97d2719cb68251ccc26e156aa47569b569db6f3ccea1a60463b969426",
+      "bytes": 13608,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/summary.csv",
+      "sha256": "1ae8404a77fb0abc36f62d13d01405f62d5721117a324ee93e1f5a7e95d45517",
+      "bytes": 3120,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/both_pools.csv",
+      "sha256": "c37a6fe3f2ef92a6c0c2f683acfeff50056a2a091c58d2e4ad8b42bfb8324441",
+      "bytes": 1322,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/control_checks.json": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/control_checks.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/diagnostic_scores.csv",
+      "sha256": "14067a7d52194c5434cc0b3e9587edbbdded0493048d677eda8db85a09c2cf60",
+      "bytes": 5275,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/fold_scores.csv",
+      "sha256": "0b9a5490c9ea0b0f67180f3d3e85197ed6f70947bbc23282ce58b72ff6c7ded7",
+      "bytes": 57940,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/paired_models.py",
+      "sha256": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
+      "bytes": 6655,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/paired_search.py",
+      "sha256": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
+      "bytes": 10284,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/repeat_scores.csv",
+      "sha256": "dc2000c98380e04b9b5d8fd8870e57f47f958a8ff8e4ff2ba431fd8f0d5bf02e",
+      "bytes": 15467,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/summary.csv",
+      "sha256": "6715e6ef2b54ac8544d30fd9f864379702a2933f6e72dafad1ea1630dadfcb1d",
+      "bytes": 3573,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/both_pools.csv",
+      "sha256": "3287cfabeeb7f9a826283fa67b6b4e52e3f56356c6e64e43353f910b19712b95",
+      "bytes": 847,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/diagnostic_scores.csv",
+      "sha256": "a122e7c2eed6ae44847cf74940670759545a6a2ad39a2678a328583ce8125244",
+      "bytes": 3276,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/fold_scores.csv",
+      "sha256": "05bc13197ecc9cb27cb186a27ef2c03e121687e4ef5282c9c283224178def601",
+      "bytes": 35846,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/paired_cutoffs.py": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/paired_cutoffs.py",
+      "sha256": "53aeaad09ebd8b908ba698002d20cb0327b0808304d568ea87d1bb5c1601d042",
+      "bytes": 2625,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/repeat_scores.csv",
+      "sha256": "d7adaa26640ae791f1113b1c6a248aadd09bd9503642041ec6e6b9f0a5cb5b84",
+      "bytes": 9601,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/summary.csv",
+      "sha256": "d594f55cfcc4158e9aa49d798a88404e66292617a088b06587969dcdc22a1e57",
+      "bytes": 2256,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/both_pools.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/both_pools.csv",
+      "sha256": "9d6cb72c9bd8fabdcbf5173808117deb98f908b2b4d768fd636387703d7bdcf4",
+      "bytes": 1539,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/control_checks.json": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/control_checks.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/diagnostic_predictions.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/diagnostic_predictions.csv",
+      "sha256": "743b8b66d1cca64baad670263774029129139170f1454122c26307fa50e64388",
+      "bytes": 364447,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/diagnostic_scores.csv",
+      "sha256": "0ab415b2c469a330b941bc4eb2025408e162afbb1d864c73eb8902fd65a50a2b",
+      "bytes": 6227,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/fit_audits.json": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/fit_audits.json",
+      "sha256": "afa9d6ff28fe8e6ef54a6ad202198b4acea743bea9cecd84694d603c51994045",
+      "bytes": 996979,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/fold_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/fold_scores.csv",
+      "sha256": "39e1d1675d670442a3daf74abe77c84f260a1b08e045f29959787ddbe2424e9b",
+      "bytes": 68861,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/paired_models.py": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/paired_models.py",
+      "sha256": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
+      "bytes": 6655,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/paired_search.py": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/paired_search.py",
+      "sha256": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
+      "bytes": 10284,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/predictions.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/predictions.csv",
+      "sha256": "0877b976dbd2d3a58eedd252109a82ea41b9d0cca36c7381b8d1be1587db2109",
+      "bytes": 4018027,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/repeat_scores.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/repeat_scores.csv",
+      "sha256": "e1badea4cab545083ab104fbb77bd86d3ea69413e5cf87f52d828971478e86ef",
+      "bytes": 18177,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/experiments/paired_improvement/06_final_ablations/summary.csv": {
+      "original_path": "part1/experiments/paired_improvement/06_final_ablations/summary.csv",
+      "sha256": "971dec01fd935421de5a36c100e3c599d4842dc704af2059b00e1ec5efc57331",
+      "bytes": 4135,
+      "reason": "Detailed selected-model ablation or matched Ani control record"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/01_simple_baselines/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/01_simple_baselines/fold_scores.csv",
+      "sha256": "26a32d02b17c22314dc7d3eb21084ef6f3f925eafc5135f34aff8478c9838b38",
+      "bytes": 192271,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/01_simple_baselines/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/01_simple_baselines/protocol.json",
+      "sha256": "9e5bdb12d7827cc43f2d542bbdad1127e23d2cfd7c8d89315beae726fb18c95d",
+      "bytes": 6701,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/01_simple_baselines/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/01_simple_baselines/repeat_scores.csv",
+      "sha256": "10a0baca6b0547e8ba963bd010aaaac6af09862cc6a18d9f13e0eb005fea4c62",
+      "bytes": 44535,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/01_simple_baselines/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/01_simple_baselines/summary.csv",
+      "sha256": "ef683341a41097d58cebf170f1230c525923b750804877171db4694109ba7c99",
+      "bytes": 9214,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02_unlabeled_structure/aborted.json": {
+      "original_path": "part1/experiments/simple_methodical/02_unlabeled_structure/aborted.json",
+      "sha256": "4da156c2d046c68f57033e554de02f78db4fbe6e074165bd4d994c9e78f886d0",
+      "bytes": 175,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02_unlabeled_structure/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/02_unlabeled_structure/protocol.json",
+      "sha256": "01fc6dd6a6b5350f5031c15130408de06360a848598a958d867759c87bdad927",
+      "bytes": 5955,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02b_unlabeled_structure/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/02b_unlabeled_structure/fold_scores.csv",
+      "sha256": "6155e96143970fc542a624dc4060057ece8d9f5b8c44a2dceb376753661d3b23",
+      "bytes": 145320,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02b_unlabeled_structure/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/02b_unlabeled_structure/protocol.json",
+      "sha256": "290c2aa41e0c82405afb3b9ef72c809de1278729b69ee14f295df4f4ac9a2e06",
+      "bytes": 6874,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02b_unlabeled_structure/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/02b_unlabeled_structure/repeat_scores.csv",
+      "sha256": "b02fb205ab14dacceba8a70f2b0e58d9a5e58ccce12bee7604ac6673ee935858",
+      "bytes": 32576,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/02b_unlabeled_structure/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/02b_unlabeled_structure/summary.csv",
+      "sha256": "57557a920e74aa4ed5fda94cbc0119ab0806dff6125f9dd038e983e6003018f9",
+      "bytes": 6907,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/fold_scores.csv",
+      "sha256": "f5d9ca5f51ae0342743ccd83a7b16d7f1a9316fecbd9390ff033786c05ee0b03",
+      "bytes": 74162,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/protocol.json",
+      "sha256": "3e25b0623bb4fcf36dab3f65ca320208a83b060fe0c0fef19ef5f6f38ce9abe0",
+      "bytes": 3419,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/repeat_scores.csv",
+      "sha256": "8d1b71d4573f8152d8c74c213e320664e672c91c43f0ca45de82ca25e2af7e0b",
+      "bytes": 17121,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/03_labelsets_and_smooth_boundaries/summary.csv",
+      "sha256": "bf5a89a3584a5c29d609ebe16610169070ae0859a3c05b4bf4f6e994376696f5",
+      "bytes": 3637,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/04_simpler_self_training/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/04_simpler_self_training/fold_scores.csv",
+      "sha256": "4b1fe8d3fcbb09e221e5e0097ad176889ab24f05cbefdd145c3b5a8e4bba1f8d",
+      "bytes": 134375,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/04_simpler_self_training/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/04_simpler_self_training/protocol.json",
+      "sha256": "15dba2b38fda062f36dc7b426791119e0e52de568a8b09bb114b9d2da47f6788",
+      "bytes": 6863,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/04_simpler_self_training/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/04_simpler_self_training/repeat_scores.csv",
+      "sha256": "b43b45aa6a99de1c033204010fd55de7bcdd46777d2cf71cb8a3b9abed2087da",
+      "bytes": 30768,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/04_simpler_self_training/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/04_simpler_self_training/summary.csv",
+      "sha256": "4a8110680bc4527e2b2b002d6b0e2242460b1cfffc329fa5b2809a4366e65691",
+      "bytes": 6499,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/05_repeated_text_and_imbalance/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/05_repeated_text_and_imbalance/fold_scores.csv",
+      "sha256": "7b5084a81c988e4e4a233aa51a04081f104df25cc1ddacd7440b5229de193ce7",
+      "bytes": 57841,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/05_repeated_text_and_imbalance/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/05_repeated_text_and_imbalance/protocol.json",
+      "sha256": "bd194284547df1ab65037b4ddf26d5d9286f849200543aada8c293b392372dd1",
+      "bytes": 3064,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/05_repeated_text_and_imbalance/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/05_repeated_text_and_imbalance/repeat_scores.csv",
+      "sha256": "210c3fd8678600dfcfb15496471fc1bd60ec6e328348aba8a226087f4bfd0a42",
+      "bytes": 13329,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/05_repeated_text_and_imbalance/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/05_repeated_text_and_imbalance/summary.csv",
+      "sha256": "9b5bb69679af3a47da2f1480830c63ec04f77f9157ddb937ae7a0f60ecd06cde",
+      "bytes": 2868,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/06_one_change_at_a_time/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/06_one_change_at_a_time/fold_scores.csv",
+      "sha256": "732afb2d9bfa94a2cc4752f85161b990cee858fc2844fa7037c047e6f2bf9686",
+      "bytes": 83834,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/06_one_change_at_a_time/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/06_one_change_at_a_time/protocol.json",
+      "sha256": "414e7b0dfef9f19660513d19b7c9de613056c94414254339bee6822513d04e49",
+      "bytes": 5157,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/06_one_change_at_a_time/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/06_one_change_at_a_time/repeat_scores.csv",
+      "sha256": "ecaa64dbbfed8e8e566beedd225cb7be9ee0fbf5ac7e9a5f4e75a8575eaf26ba",
+      "bytes": 18928,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/06_one_change_at_a_time/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/06_one_change_at_a_time/summary.csv",
+      "sha256": "ef1c354bde21db8db0a6b848269f4664c57028e3376921aff41df32d41c9b312",
+      "bytes": 4093,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/07_final_neighbor_check/fold_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/07_final_neighbor_check/fold_scores.csv",
+      "sha256": "2bf830e529f89fe02a8249beb904d6c40c27dff34439f5460b3449eae795c010",
+      "bytes": 41230,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/07_final_neighbor_check/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/07_final_neighbor_check/protocol.json",
+      "sha256": "4ce1367af67e77cff7e7f9a6cdcf6672b8594daaba36d732f76ebe85db7a291a",
+      "bytes": 3191,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/07_final_neighbor_check/repeat_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/07_final_neighbor_check/repeat_scores.csv",
+      "sha256": "63e0a53809dc4c691a7fcf142847d86fa6f337fd5178ba311b409e205c1f18e2",
+      "bytes": 9259,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/07_final_neighbor_check/summary.csv": {
+      "original_path": "part1/experiments/simple_methodical/07_final_neighbor_check/summary.csv",
+      "sha256": "0d68a47d8b20ee3d6f9134a876cc1fa6626aa4d8e552b19a3cf1a609a532d052",
+      "bytes": 2114,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/all_results.csv": {
+      "original_path": "part1/experiments/simple_methodical/all_results.csv",
+      "sha256": "271858ef6fd087cdaf2aac78f6357921a6c32d694a370933cb48292906dd977e",
+      "bytes": 36774,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/candidate/independent_40_fold_replay.csv": {
+      "original_path": "part1/experiments/simple_methodical/candidate/independent_40_fold_replay.csv",
+      "sha256": "1873e3ae6c6e3079f477ecad98b6eef8c32b5bac74af7892daaad0d5e9899578",
+      "bytes": 346,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/candidate/manifest.json": {
+      "original_path": "part1/experiments/simple_methodical/candidate/manifest.json",
+      "sha256": "ec58930ffc157b54418f46f8225d85e44e3dab23245a69856337a6e73a0075a4",
+      "bytes": 3658,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/selected.json": {
+      "original_path": "part1/experiments/simple_methodical/selected.json",
+      "sha256": "b95c014c1bb7940e3e5b939d5e083ba5b679d8d375b4c44338a348119ce0cd86",
+      "bytes": 1079,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage2_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage2_specs.json",
+      "sha256": "08755ae96f0abe211570bae8f24ed00e50dc5e0574f1f3e4f98de82674920248",
+      "bytes": 4969,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage3_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage3_specs.json",
+      "sha256": "8b0f16b9f1a4029b6ece2b9b30f5c054560524036fef0075104544b2c93a18f5",
+      "bytes": 1797,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage4_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage4_specs.json",
+      "sha256": "add1f7074699bcb2acaed6928546772befe3991f01c11d363926ce4685cc0d9f",
+      "bytes": 4927,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage5_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage5_specs.json",
+      "sha256": "c8ebd03612fcc28d263a781a2ad404f82692ff91bacc7d906125abe05f0a4893",
+      "bytes": 1482,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage6_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage6_specs.json",
+      "sha256": "cd38bdbba73627a1d664cb9ae091bca83b6412aeb769ad970c5de6c8436aa096",
+      "bytes": 3390,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/stage7_specs.json": {
+      "original_path": "part1/experiments/simple_methodical/stage7_specs.json",
+      "sha256": "b020f637a8890897b8a4bd63767fa84d37294ecc925ad211b7dc19c354f1aa60",
+      "bytes": 1608,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/verification/checks.json": {
+      "original_path": "part1/experiments/simple_methodical/verification/checks.json",
+      "sha256": "6bfbb157e7ac2fdd582a2c67d403fc3fff9fb326b0bd6b73e8a0619f05f203d9",
+      "bytes": 111,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/verification/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/simple_methodical/verification/diagnostic_scores.csv",
+      "sha256": "6dec231870b174bb6d12455bf303de555e0e7ca0d6a03dd87bdadca913adcd99",
+      "bytes": 2087,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/verification/final_artifact_audit.json": {
+      "original_path": "part1/experiments/simple_methodical/verification/final_artifact_audit.json",
+      "sha256": "28c247366542b6980f07ea0d310365f890fa718e25cd8e039c4fdd4e9a60e182",
+      "bytes": 433,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/verification/paired_trial_bootstrap.csv": {
+      "original_path": "part1/experiments/simple_methodical/verification/paired_trial_bootstrap.csv",
+      "sha256": "9d178caff0cef77f04f9d76857d22ce522bbfa14452c79078fef7b6fa6420bd5",
+      "bytes": 877,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/simple_methodical/verification/protocol.json": {
+      "original_path": "part1/experiments/simple_methodical/verification/protocol.json",
+      "sha256": "0430916e8985306f44a1557ba5a07a55f245678a25d6e9f9df988a70b2e746ed",
+      "bytes": 587,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/diagnostic_scores.csv",
+      "sha256": "975caa1ea37f22e0d2abae1cf5797a8bfdc274c0dc3938b66a552898c911d01b",
+      "bytes": 7987,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/fold_scores.csv",
+      "sha256": "77c620b2d53746a63a05a5d604fef1db01e9efc703caf176fed4afa940cdf3d5",
+      "bytes": 66742,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/protocol.json",
+      "sha256": "c46f0f569263bd4a0e7a20304b63efea638afd69926e80e4909cbd477849c36b",
+      "bytes": 2728,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/repeat_scores.csv",
+      "sha256": "ca9396853b496bf5e30a610c4739bdde91c07cacf64b7bf5493c0d93e70febf2",
+      "bytes": 14951,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/summary.csv",
+      "sha256": "2c55348358c7ba5724fd96f2e52e61cd87f3b295162e3fd60e40678ad60dd84e",
+      "bytes": 3332,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/01_trust_and_anchoring/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/01_trust_and_anchoring/trusted_models.py",
+      "sha256": "539fb7cbcb94b8531ec2b4693e76d33d4a1658fb1edd59bb2285be833af433e3",
+      "bytes": 7571,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/diagnostic_scores.csv",
+      "sha256": "f0452036018d95b76f1f1ffe8233961a974c470b296e87744eef86c412cb3638",
+      "bytes": 9392,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/fold_scores.csv",
+      "sha256": "f567ee2fab689f19274d6e977b30627b74be95a4c066f35b5539a541eebe4d12",
+      "bytes": 77538,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/protocol.json",
+      "sha256": "7f664ad6fa50e0e5a4b068e8e32f9d0eda98445ee6983a2d9b639dd3c5e9ef28",
+      "bytes": 3668,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/repeat_scores.csv",
+      "sha256": "683d5dce67687bea4a37a82bb95cc62dbe604591fdc5bed573e3d3f2d636ee38",
+      "bytes": 17240,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/summary.csv",
+      "sha256": "9f577710f713eb9599ce4a456027ef4e5d11fab9f08117807d6966e07a868f2e",
+      "bytes": 3830,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/02_other_and_paired_labels/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/02_other_and_paired_labels/trusted_models.py",
+      "sha256": "d6619d7a70bb8a8a113fd152a0372d1c1106bc26a578535111864443515be7cb",
+      "bytes": 7736,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/diagnostic_scores.csv",
+      "sha256": "d7a8a54ca50b0443277068626e9d9e95f01496a6470b431154c2039165c44d2a",
+      "bytes": 8652,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/fold_scores.csv",
+      "sha256": "0488881b7d5e112232ef91c8f7afb69474b77603b6095748aeb2f2559586a786",
+      "bytes": 71415,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/protocol.json",
+      "sha256": "508854729672313aa78e830f40704990133bccb00e01c72d364a160f14ffddad",
+      "bytes": 3563,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/repeat_scores.csv",
+      "sha256": "c5a3c316ba5aafa2eac877d64ab8ae3518b735e5d5b9fc27cfa1daa583c7705a",
+      "bytes": 15966,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/summary.csv",
+      "sha256": "375c991b4ce5b1266d6d8d8f7c73e6256523cdeeb90298f2dbc80522d41e3000",
+      "bytes": 3555,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/03_trusted_multilabel_refinement/trusted_models.py",
+      "sha256": "015ff769286ca34c5f157ab5d03c855e39547e8715115b1a9a588d86236e2b28",
+      "bytes": 7802,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/diagnostic_scores.csv",
+      "sha256": "6cf9053bcc5d99ef341514f022692e88ddd427262adbddb8280028a26385b96a",
+      "bytes": 7578,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/fold_scores.csv",
+      "sha256": "5894e69ce7e94cced96dcd6b632d3760a385a1416258fb48c3b4a3542bb04130",
+      "bytes": 63577,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/protocol.json",
+      "sha256": "9ab19ac2bee9e6bf311a09c5de92a87e0f0716623b47e7be1887c55d155aec5e",
+      "bytes": 3631,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/repeat_scores.csv",
+      "sha256": "c38acff6ad2dff50dd95292803c10df576fa1d7176303ea5aed83b4342797c58",
+      "bytes": 13935,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/summary.csv",
+      "sha256": "895c23e165865b06823c30c381ff6e9e49aa4bd516a83a961329c24c893aa2de",
+      "bytes": 3123,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/04_sample_f1_decisions/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/04_sample_f1_decisions/trusted_models.py",
+      "sha256": "723bb42f2c19c492f28020061cc78985c6b270b0e3ed52bb610b5a4211063ba1",
+      "bytes": 9772,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/diagnostic_scores.csv",
+      "sha256": "720da74195353db48ccaf81a5ddc6b1f2e060a08d15bfefb498b9220c90eace7",
+      "bytes": 7819,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/fold_scores.csv",
+      "sha256": "dda08ce34a11d47fcb8074396890cbae89ca69bf4f3e56fc11396a9e98f050e7",
+      "bytes": 66676,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/protocol.json",
+      "sha256": "1aafac70671952cb6d4754849b2bc91e474264df540b90a992873e6c94312b26",
+      "bytes": 3509,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/repeat_scores.csv",
+      "sha256": "e60ab1a6af46c795495092baf5a11e4cc08ff59d11ac6079df5ff5001f07d5a2",
+      "bytes": 14647,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/summary.csv",
+      "sha256": "8e4bbe3db5d13c25680af024ea4223fb154ca3f17d59955c8772ae415e5eda22",
+      "bytes": 3320,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/05_joint_reason_combinations/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/05_joint_reason_combinations/trusted_models.py",
+      "sha256": "5ac7a95c6b648bfb02f9d64a310a5dc9adeea43c2f65704f4fcb4c167e26eb5a",
+      "bytes": 13258,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/diagnostic_protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/diagnostic_protocol.json",
+      "sha256": "6d7d6a799412de80067cd981823444e9cd30796c777367489eb671dcda31caf9",
+      "bytes": 327,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/diagnostic_scores.csv",
+      "sha256": "16da0356bb424861725c001c9a5c2b76c679e654819ec012d69d57b09c3fe0bb",
+      "bytes": 4522,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/fold_scores.csv",
+      "sha256": "430698de39deeb4346808ae0aa678892cd3b4fc293b0e5df73a184eced0134cd",
+      "bytes": 40745,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/protocol.json",
+      "sha256": "80c7fc1cfb574f5f6c4fa58cae3f2ddea0af3b42ff0e7fbe05cde6bedba7f24a",
+      "bytes": 2637,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/repeat_scores.csv",
+      "sha256": "db7454eed772b9696797dbed2a47b0f633477aff27d468e04323f5ba51b794b3",
+      "bytes": 8992,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/summary.csv",
+      "sha256": "55128329ae10afd3fc5bdfb2f5363970f0aa6110505ce2ddb11b2a76e37d0732",
+      "bytes": 2090,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/trusted_benchmark.py": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/06_final_regularization_check/trusted_models.py": {
+      "original_path": "part1/experiments/trusted_iteration/06_final_regularization_check/trusted_models.py",
+      "sha256": "5ac7a95c6b648bfb02f9d64a310a5dc9adeea43c2f65704f4fcb4c167e26eb5a",
+      "bytes": 13258,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/07_fixed_equal_averages/diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/07_fixed_equal_averages/diagnostic_scores.csv",
+      "sha256": "07f13530ca4534748ef998b3820f73ac31788d5e2303f5978fd102df25a75557",
+      "bytes": 1934,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/07_fixed_equal_averages/fold_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/07_fixed_equal_averages/fold_scores.csv",
+      "sha256": "5ff7627bafffbb86f9d3d105acec8d851e63b45af01ec78274bb05160027bce3",
+      "bytes": 25293,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/07_fixed_equal_averages/protocol.json": {
+      "original_path": "part1/experiments/trusted_iteration/07_fixed_equal_averages/protocol.json",
+      "sha256": "334e78bd39fe9cf51dd0269a897b44c91032b7371bd9080d25a5a82e5f3ff1cf",
+      "bytes": 888,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/07_fixed_equal_averages/repeat_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/07_fixed_equal_averages/repeat_scores.csv",
+      "sha256": "7460ffcfb583a3dd4eeabf68681d2e5c4045aa83b9fcd232b2322a5f48278cec",
+      "bytes": 5577,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/07_fixed_equal_averages/summary.csv": {
+      "original_path": "part1/experiments/trusted_iteration/07_fixed_equal_averages/summary.csv",
+      "sha256": "374b2c5d2be401467b75e49a9fb0e97c86f6d9397663517dc11b2433f2f21c35",
+      "bytes": 1371,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/all_diagnostic_scores.csv": {
+      "original_path": "part1/experiments/trusted_iteration/all_diagnostic_scores.csv",
+      "sha256": "f28e0989683a3f5f03a30dd9ea2c14ea811e0308590b0ec6bf1d22ec55fac3f0",
+      "bytes": 56169,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/all_results.csv": {
+      "original_path": "part1/experiments/trusted_iteration/all_results.csv",
+      "sha256": "d34e21fe508807d3b3c58f219a2e6ef6d9cb28998c0b6a45ae35bfd583aa59ac",
+      "bytes": 21071,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/candidate/current_reference_review.json": {
+      "original_path": "part1/experiments/trusted_iteration/candidate/current_reference_review.json",
+      "sha256": "3b02973925973948cee0a8a2ebce9d759cccf9b98c59c4a2b2e635e564fb9db1",
+      "bytes": 534,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/candidate/independent_40_fold_replay.csv": {
+      "original_path": "part1/experiments/trusted_iteration/candidate/independent_40_fold_replay.csv",
+      "sha256": "e691d88ad118f84eeed58d635c71f14c1bf6f3ec32473fdadf27817250bcba5b",
+      "bytes": 753,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/candidate/independent_diagnostic_replay.csv": {
+      "original_path": "part1/experiments/trusted_iteration/candidate/independent_diagnostic_replay.csv",
+      "sha256": "3eb6ec068b4da2902defede9f374afede1d3ae37555a8aea10021c5653594502",
+      "bytes": 90,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/candidate/manifest.json": {
+      "original_path": "part1/experiments/trusted_iteration/candidate/manifest.json",
+      "sha256": "bb2df49305dd373cf04a16c822461557f8c59162305afb0c51dfc263572e56f7",
+      "bytes": 3722,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/delivery_manifest.json": {
+      "original_path": "part1/experiments/trusted_iteration/delivery_manifest.json",
+      "sha256": "f2de5b6f7b87898399b7644ad9432d908232feab8b13309f70dd05a2bf513a64",
+      "bytes": 13060,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/error_analysis/prior_other_and_multilabel_errors.csv": {
+      "original_path": "part1/experiments/trusted_iteration/error_analysis/prior_other_and_multilabel_errors.csv",
+      "sha256": "819055b54b1eef152855848f2df1d09833ee417a7aba35e0d6e9860e0a249bca",
+      "bytes": 969,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/final_audit.json": {
+      "original_path": "part1/experiments/trusted_iteration/final_audit.json",
+      "sha256": "072529314799fc0482c1aadb19e148b9f5eebc909ac2a9fc2cffa73c615fda20",
+      "bytes": 465,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/paired_trial_bootstrap.csv": {
+      "original_path": "part1/experiments/trusted_iteration/paired_trial_bootstrap.csv",
+      "sha256": "dbc2b657cc443b02275e1d42c018eddc631e7a597938524482da4daa569415d6",
+      "bytes": 435,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/selected.json": {
+      "original_path": "part1/experiments/trusted_iteration/selected.json",
+      "sha256": "9d928b3f80acaa358844349ace749087402b1bcc0666f3f251d6f501a0bc426d",
+      "bytes": 624,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/selected_comparison.csv": {
+      "original_path": "part1/experiments/trusted_iteration/selected_comparison.csv",
+      "sha256": "69bcd0a38b151227af7a961617370dbbedee21500f5720f0853d9670f2fdd5ea",
+      "bytes": 871,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/selected_diagnostics.csv": {
+      "original_path": "part1/experiments/trusted_iteration/selected_diagnostics.csv",
+      "sha256": "0e8973bce6af3ce5b3233c47c14cbfa95b1764605a2b43325f2efa2fe1322bc3",
+      "bytes": 1401,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage01_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage01_specs.json",
+      "sha256": "a1172a0b8c7ed9c3786abc049bd84cf661290a90760ddcea3b65f9b20516bdff",
+      "bytes": 1126,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage02_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage02_specs.json",
+      "sha256": "d3cf3fd56bd7a30f3b54eb9dbdd56128c2586cf3d3d952ae64938dc5f82da3aa",
+      "bytes": 2000,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage03_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage03_specs.json",
+      "sha256": "8ec9f083b48ee3f8b063899ceb0fa1c7403f50ef92b93cc1daa44741eccfb591",
+      "bytes": 1897,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage04_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage04_specs.json",
+      "sha256": "b4892c9b13d857d6759a6e08680252134cfd42e254639e1b0a50267e8a824cbe",
+      "bytes": 1977,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage05_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage05_specs.json",
+      "sha256": "6ba87ee80192b28c3f7e48bfd48fedb3bdce07b39a9e4e727d3f61a4bec14bcd",
+      "bytes": 1833,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/trusted_iteration/stage06_specs.json": {
+      "original_path": "part1/experiments/trusted_iteration/stage06_specs.json",
+      "sha256": "0ea2097f158f463ed00c1ab8e523ed30807b75f5db51031b2c80d374e223ae6a",
+      "bytes": 1042,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_methodical.ipynb": {
+      "original_path": "part1/simple_methodical.ipynb",
+      "sha256": "eb95965ff35c10ef8a8726bd7cd4ac2b3acc6755f6f848c622977cd7ccefff4c",
+      "bytes": 115057,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_prepare.py": {
+      "original_path": "part1/simple_prepare.py",
+      "sha256": "bdbcee06e5cd045102711be52a8ada3ef17ad23f47343a4e57825b210a488612",
+      "bytes": 6711,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_solution.py": {
+      "original_path": "part1/simple_solution.py",
+      "sha256": "b4563fbaf856f5d8e0d081959504289b3d0a9fae3816ebab2f37f6c5a0643364",
+      "bytes": 3635,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_verify.py": {
+      "original_path": "part1/simple_verify.py",
+      "sha256": "90990c122c5ab5322a1bc2a5b0950aff3352bc0ebec715aec55ea742a5ec130f",
+      "bytes": 8409,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_audit.py": {
+      "original_path": "part1/trusted_audit.py",
+      "sha256": "e14af444546a7791f7db64cf54756b99023cd24e8611c217472f472bab211002",
+      "bytes": 3750,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_average.py": {
+      "original_path": "part1/trusted_average.py",
+      "sha256": "94c1d60a046af2d41c2d5dbe86dc0b47ad02af38656bc721bcd213a7d8562a28",
+      "bytes": 4025,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_benchmark.py": {
+      "original_path": "part1/trusted_benchmark.py",
+      "sha256": "42fa7d69cd0683696368bbbbb2050bdaa60fd755a89393989feec0335425260e",
+      "bytes": 6754,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_finalize.py": {
+      "original_path": "part1/trusted_finalize.py",
+      "sha256": "e6ce08e54a9209d7b359a30f14ad4b98df9604df11943fe9320a487e58fc3c10",
+      "bytes": 10359,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_iteration.ipynb": {
+      "original_path": "part1/trusted_iteration.ipynb",
+      "sha256": "f53e587585659d25ad5b9e0472a852a2c6208c4aa3c1bb4b56c3f4cab8c2ebb1",
+      "bytes": 139143,
+      "reason": "Frozen source, settings, failure record, or compact result table"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_models.py": {
+      "original_path": "part1/trusted_models.py",
+      "sha256": "5ac7a95c6b648bfb02f9d64a310a5dc9adeea43c2f65704f4fcb4c167e26eb5a",
+      "bytes": 13258,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/trusted_solution.py": {
+      "original_path": "part1/trusted_solution.py",
+      "sha256": "237da5fff11d849bfb8bdd5c9df4e9758bf5bd82ac1cf6724a47e118e7af377a",
+      "bytes": 3565,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_models.py": {
+      "original_path": "part1/simple_models.py",
+      "sha256": "8f447bfcdf419fbc98374df316af1f267a4c1b524950b63e901962e8ae371a32",
+      "bytes": 12531,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/simple_benchmark.py": {
+      "original_path": "part1/simple_benchmark.py",
+      "sha256": "25d9609e2c3587f8e4bcb6f15812e4a04edd6bb3c3a970e4c23f7936e50e676d",
+      "bytes": 7413,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/paired_search.py": {
+      "original_path": "part1/paired_search.py",
+      "sha256": "5837f044db1fc8b92eb2e668614851d0652f261e87c0d753c5528dbdbd5227f3",
+      "bytes": 10284,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/paired_models.py": {
+      "original_path": "part1/paired_models.py",
+      "sha256": "0bd28f2d0b939c45533ad1ae604dfc7c32c14bb1c8e84a2448d51aef0043bc35",
+      "bytes": 6655,
+      "reason": "Local Python dependency of retained source"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_roundoff_attempt/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/00_control_roundoff_attempt/protocol.json",
+      "sha256": "e376fa133721a1f9d7a60b9e5c9940587b34af976e5cc7af8ee9b5936dcff6c5",
+      "bytes": 4548,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/00_control_scaler_order_attempt/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/00_control_scaler_order_attempt/protocol.json",
+      "sha256": "e376fa133721a1f9d7a60b9e5c9940587b34af976e5cc7af8ee9b5936dcff6c5",
+      "bytes": 4548,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/01_rare_reason_structure/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/01_rare_reason_structure/protocol.json",
+      "sha256": "e376fa133721a1f9d7a60b9e5c9940587b34af976e5cc7af8ee9b5936dcff6c5",
+      "bytes": 4548,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/02_lda_stability/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/02_lda_stability/protocol.json",
+      "sha256": "913880b83f4604af29633724616c77595b6a72ae75376a394a78c2cffe1f33e0",
+      "bytes": 4517,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/03_reduce_variance/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/03_reduce_variance/protocol.json",
+      "sha256": "4eb0a7eb6649f45be01ef57adde4e0b106373e8ea0826987515779f2cac50f0f",
+      "bytes": 3575,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/04_local_support/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/04_local_support/protocol.json",
+      "sha256": "0efebcdcd1e6ce55ddfccb183350b658b109de23ca69c4f8fa7997cb5667b94a",
+      "bytes": 3760,
+      "reason": "Frozen context for the archived stage"
+    },
+    "part1/research/early_iterations/snapshot/part1/experiments/paired_improvement/05_final_decision/protocol.json": {
+      "original_path": "part1/experiments/paired_improvement/05_final_decision/protocol.json",
+      "sha256": "b190028eb1e4cf0ad75f1cb73191757677429558dcae07c344b7885a2b8eed16",
+      "bytes": 599,
+      "reason": "Frozen context for the archived stage"
+    }
+  },
+  "coverage": {
+    "compact_records": 174,
+    "full_evidence": 22
+  },
+  "working_files_accounted_for": 275,
+  "omitted_generated_outputs_by_family": {
+    "part1/experiments/paired_improvement": 16,
+    "part1/experiments/simple_methodical": 23,
+    "part1/experiments/trusted_iteration": 40
+  },
+  "retention_note": "Generated nonwinning models, augmented datasets, per-trial audits, and prediction/probability caches are not imported. Existing local working copies are untouched. Historical artifact hashes and notebook recommendations describe their original checkpoints.",
+  "source_use": "snapshot/ mirrors original paths for reading frozen code and recipes. Original inputs and saved folds live in the main Part 1 tree. Regenerate dependencies in disposable output space when replaying old studies; this archive is not a new selected model or standalone runner.",
+  "pre_import_verification": "pre_import_checks.json"
+}

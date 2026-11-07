@@ -1,0 +1,16 @@
+model,group,trials,mean_f1,other_false_negatives_per_repeat,other_false_positives_per_repeat
+simple3,single_reason,216,0.9304591049382716,7.125,8.75
+simple3,two_reasons,19,0.7168859649122807,8.75,0.25
+simple3,other_only,26,0.6971153846153846,7.125,0.0
+simple3,recruitment_other,9,0.6388888888888888,8.75,0.0
+simple3,without_other,200,0.953625,0.0,9.0
+ani_train_only,single_reason,216,0.9250578703703703,7.125,10.375
+ani_train_only,two_reasons,19,0.724780701754386,8.375,0.125
+ani_train_only,other_only,26,0.7019230769230769,7.125,0.0
+ani_train_only,recruitment_other,9,0.6620370370370371,8.375,0.0
+ani_train_only,without_other,200,0.946875,0.0,10.5
+dbscan_train_only,single_reason,216,0.8955439814814815,7.5,11.625
+dbscan_train_only,two_reasons,19,0.806140350877193,6.875,0.75
+dbscan_train_only,other_only,26,0.6706730769230769,7.5,0.0
+dbscan_train_only,recruitment_other,9,0.6944444444444444,6.875,0.0
+dbscan_train_only,without_other,200,0.9253333333333333,0.0,12.375

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "dedup_logistic_C0.1_power0.5",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 0.1,
+    "deduplicate_power": 0.5,
+    "cutoff": 0.3
+  },
+  {
+    "name": "dedup_logistic_C0.1_power1",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 0.1,
+    "deduplicate_power": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "balanced_logistic_C0.1",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 0.1,
+    "class_weight": "balanced",
+    "cutoff": 0.5
+  },
+  {
+    "name": "dedup_logistic_C1_power0.5",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 1.0,
+    "deduplicate_power": 0.5,
+    "cutoff": 0.3
+  },
+  {
+    "name": "dedup_logistic_C1_power1",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 1.0,
+    "deduplicate_power": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "balanced_logistic_C1",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "cutoff": 0.5
+  },
+  {
+    "name": "dedup_logistic_C10_power0.5",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 10.0,
+    "deduplicate_power": 0.5,
+    "cutoff": 0.3
+  },
+  {
+    "name": "dedup_logistic_C10_power1",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 10.0,
+    "deduplicate_power": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "balanced_logistic_C10",
+    "family": "logistic",
+    "geometry": "scalar",
+    "C": 10.0,
+    "class_weight": "balanced",
+    "cutoff": 0.5
+  }
+]

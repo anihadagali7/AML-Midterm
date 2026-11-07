@@ -1,0 +1,70 @@
+{
+  "stage": "06_final_regularization_check",
+  "specs": [
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_control"
+    },
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_C0.1",
+      "C": 0.1
+    },
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 1,
+      "name": "final_r1"
+    },
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_confidence0.7",
+      "confidence": 0.7
+    },
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_confidence0.9",
+      "confidence": 0.9
+    },
+    {
+      "pseudo_weight": 0.25,
+      "balance_source": "verified",
+      "binary_neighbor_targets": true,
+      "rounds": 2,
+      "name": "final_r2_C0.1_confidence0.9",
+      "C": 0.1,
+      "confidence": 0.9
+    }
+  ],
+  "question": "Effect of pseudo-label trust, anchored class balancing and targeted Other decisions.",
+  "fixed_splits": {
+    "repeat0.csv": "1ff4ee50eb8157acbd6cae7f21c75913d4d3d85fb943dcdce0736542ffbb775f",
+    "repeat1.csv": "9f68473ddf1eba753ca77d471134f36a2f3a795767f7679cc375558e91d32b4a",
+    "repeat2.csv": "c0c0aa4c2735d223d0143d3a7b2d053f26e62a7ce0d421439270caa3845f70dd",
+    "repeat3.csv": "7196e3b587cee68ea60904c0bfe2832673034b04c27203ac8e736eccae9f9fa6",
+    "repeat4.csv": "1f802367f3d3e3f2b134f7fe7136b116e3151a5cc3346df23e13d5a26cefce18",
+    "repeat5.csv": "ad933e83d9e540d2f128c32719b3bba2543a38f3caf6e67fdfe1cab63e07e47b",
+    "repeat6.csv": "4ef4cc5e94e020691f6f6b884da19e7684b895b565be32f7badf9a517cefd8a0",
+    "repeat7.csv": "e2a51efb1acaa2c8998d88617a2334a38086fdf5079705d6cfe9296c93b225ee"
+  },
+  "inputs": {
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "fitting": "188 known + 1014 originally unlabeled; all 47 held and all test inputs excluded from every fit.",
+  "inner_tuning": "When enabled: 3 stratified inner folds, seed8128; fit excludes inner held inputs; select Other cutoff by pooled sample F1, fixed tie preference.",
+  "interpretation": "Reused development benchmark. Later-year diagnostics have also been seen in prior work; no untouched final test claim."
+}

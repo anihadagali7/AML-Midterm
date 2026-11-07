@@ -1,0 +1,37 @@
+{
+  "primary": "final_control_r3",
+  "candidates": [
+    {
+      "stage": "07_final_neighbor_check",
+      "recipe": {
+        "name": "final_control_r3",
+        "family": "simple_ani",
+        "geometry": "standard",
+        "C": 0.3,
+        "confidence": 0.8,
+        "balanced": true,
+        "knn_weight": 0.3,
+        "knn_count": 10,
+        "rounds": 3,
+        "cutoff": 0.3
+      }
+    },
+    {
+      "stage": "04_simpler_self_training",
+      "recipe": {
+        "name": "joint_standard_knn0.3_r2",
+        "family": "simple_ani",
+        "geometry": "standard",
+        "C": 0.3,
+        "confidence": 0.8,
+        "balanced": true,
+        "knn_weight": 0.3,
+        "rounds": 2,
+        "cutoff": 0.3
+      }
+    }
+  ],
+  "selection_reason": "Highest fixed-benchmark mean; retain original cosine weighting and 3 rounds. Freeze before chronological diagnostics.",
+  "status": "development candidate; no Kaggle score; historical reference unchanged",
+  "test_feature_access": "prediction only, after final training on known and originally unlabeled training rows"
+}

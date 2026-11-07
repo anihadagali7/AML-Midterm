@@ -1,0 +1,92 @@
+[
+  {
+    "name": "powerset_scalar_C0.1_t0.3",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 0.1,
+    "cutoff": 0.3
+  },
+  {
+    "name": "powerset_scalar_C0.1_t0.5",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 0.1,
+    "cutoff": 0.5
+  },
+  {
+    "name": "powerset_scalar_C1_t0.3",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "powerset_scalar_C1_t0.5",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 1.0,
+    "cutoff": 0.5
+  },
+  {
+    "name": "powerset_scalar_C10_t0.3",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 10.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "powerset_scalar_C10_t0.5",
+    "family": "powerset",
+    "geometry": "scalar",
+    "C": 10.0,
+    "cutoff": 0.5
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.003_a0.1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.003,
+    "alpha": 0.1,
+    "cutoff": 0.3
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.003_a1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.003,
+    "alpha": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.01_a0.1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.01,
+    "alpha": 0.1,
+    "cutoff": 0.3
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.01_a1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.01,
+    "alpha": 1.0,
+    "cutoff": 0.3
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.03_a0.1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.03,
+    "alpha": 0.1,
+    "cutoff": 0.3
+  },
+  {
+    "name": "kernel_ridge_scalar_g0.03_a1",
+    "family": "kernel_ridge",
+    "geometry": "scalar",
+    "gamma": 0.03,
+    "alpha": 1.0,
+    "cutoff": 0.3
+  }
+]

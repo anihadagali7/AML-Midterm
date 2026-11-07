@@ -16,6 +16,8 @@ These results use the same saved **grouped, eight-repeat, five-fold** plans in e
 
 Anchored is effectively tied with the LDA ensemble on CV: slightly higher on Train157 and slightly lower on Pooled235. Its validation score is lower and its pooled chronology score is higher. It does **not** beat LDA on every check. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
 
+Ani's [original notebook](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb), [original scored CSV](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_submission.csv), and [result checkpoint](submissions/results/ani-original.json) are preserved on this branch. The notebook matches source commit `a548721` byte for byte; the score tag is `part1-ani-original-kaggle-0.89423`. The [later LDA notebook](research/lda_ensemble/research/ani_snapshots/8a8c3fc/part1_best_model.ipynb) is preserved separately. Archived handoff statements about its evaluation status describe their original checkpoint; the common comparison above includes the later source.
+
 ## Testing and verification
 
 Use [TESTING_POLICY.md](TESTING_POLICY.md) for the exact folds, fitting boundaries, metric, and advancement rules. A full comparison requires **40 fits on Train157, 40 on Pooled235, the original validation fit, and three chronological fits per recipe**. Older ungrouped CV remains a separate historical benchmark.
@@ -25,6 +27,7 @@ Run these commands from the repository root with the project's Python environmen
 ```sh
 python part1/current_leaders_local.py verify
 python part1/research/legacy_retention_v1/verify.py
+python part1/research/early_iterations/verify.py
 python part1/research/consolidation_v1/verify.py
 python part1/research/consolidation_v1/verify_leaders.py
 python part1/research/new_directions/verify.py
@@ -59,6 +62,8 @@ Passing evidence verification checks retained files and scores; it does not esta
 ## Evidence storage
 
 Follow [RETENTION.md](RETENTION.md): keep full leader/control results and compact recipes plus results for unsuccessful experiments. The [older-study cleanup](research/legacy_retention_v1/README.md) reduced tracked experiment outputs from 1,474 MiB to 38 MiB after checking the saved scores.
+
+The [earlier-iteration archive](research/early_iterations/README.md) also preserves the simple/trusted prototypes and corrected Ani comparison that previously existed only in the working folder. Their recipes and summaries are committed; nonwinning generated caches are excluded. The selected anchored ablation and useful Ani control retain detailed evidence at their original paths.
 
 ## Where things belong
 

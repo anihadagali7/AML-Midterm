@@ -1,0 +1,260 @@
+{
+  "stage": "02b_unlabeled_structure",
+  "hypotheses": "Direct reason embeddings; simple geometry, local neighbors, and linear boundaries. No auxiliary features or IDs as predictors.",
+  "specs": [
+    {
+      "name": "graph_standard_k5_a0.2",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 5,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_standard_k5_a0.8",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 5,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_standard_k10_a0.2",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 10,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_standard_k10_a0.8",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 10,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_standard_k20_a0.2",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 20,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_standard_k20_a0.8",
+      "family": "graph",
+      "geometry": "standard",
+      "k": 20,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_standard_g0.003",
+      "family": "graph",
+      "geometry": "standard",
+      "kernel": "rbf",
+      "gamma": 0.003,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_standard_g0.01",
+      "family": "graph",
+      "geometry": "standard",
+      "kernel": "rbf",
+      "gamma": 0.01,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_standard_g0.03",
+      "family": "graph",
+      "geometry": "standard",
+      "kernel": "rbf",
+      "gamma": 0.03,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "cluster_standard_k20",
+      "family": "cluster",
+      "geometry": "standard",
+      "k": 20,
+      "cutoff": 0.3
+    },
+    {
+      "name": "cluster_standard_k40",
+      "family": "cluster",
+      "geometry": "standard",
+      "k": 40,
+      "cutoff": 0.3
+    },
+    {
+      "name": "cluster_standard_k80",
+      "family": "cluster",
+      "geometry": "standard",
+      "k": 80,
+      "cutoff": 0.3
+    },
+    {
+      "name": "graph_scalar_k5_a0.2",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 5,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_scalar_k5_a0.8",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 5,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_scalar_k10_a0.2",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 10,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_scalar_k10_a0.8",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 10,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_scalar_k20_a0.2",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 20,
+      "alpha": 0.2,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_scalar_k20_a0.8",
+      "family": "graph",
+      "geometry": "scalar",
+      "k": 20,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_scalar_g0.003",
+      "family": "graph",
+      "geometry": "scalar",
+      "kernel": "rbf",
+      "gamma": 0.003,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_scalar_g0.01",
+      "family": "graph",
+      "geometry": "scalar",
+      "kernel": "rbf",
+      "gamma": 0.01,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "graph_rbf_scalar_g0.03",
+      "family": "graph",
+      "geometry": "scalar",
+      "kernel": "rbf",
+      "gamma": 0.03,
+      "alpha": 0.8,
+      "cutoff": 0.3,
+      "disconnected_fallback": "nearest_verified"
+    },
+    {
+      "name": "cluster_scalar_k20",
+      "family": "cluster",
+      "geometry": "scalar",
+      "k": 20,
+      "cutoff": 0.3
+    },
+    {
+      "name": "cluster_scalar_k40",
+      "family": "cluster",
+      "geometry": "scalar",
+      "k": 40,
+      "cutoff": 0.3
+    },
+    {
+      "name": "cluster_scalar_k80",
+      "family": "cluster",
+      "geometry": "scalar",
+      "k": 80,
+      "cutoff": 0.3
+    },
+    {
+      "name": "self_train_scalar_c0.8",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.8,
+      "weight": 0.25,
+      "cutoff": 0.3
+    },
+    {
+      "name": "self_train_scalar_c0.9",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.9,
+      "weight": 0.25,
+      "cutoff": 0.3
+    },
+    {
+      "name": "self_train_scalar_c0.95",
+      "family": "self_train",
+      "geometry": "scalar",
+      "C": 1.0,
+      "confidence": 0.95,
+      "weight": 0.25,
+      "cutoff": 0.3
+    }
+  ],
+  "fixed_folds": {
+    "repeat0.csv": "1ff4ee50eb8157acbd6cae7f21c75913d4d3d85fb943dcdce0736542ffbb775f",
+    "repeat1.csv": "9f68473ddf1eba753ca77d471134f36a2f3a795767f7679cc375558e91d32b4a",
+    "repeat2.csv": "c0c0aa4c2735d223d0143d3a7b2d053f26e62a7ce0d421439270caa3845f70dd",
+    "repeat3.csv": "7196e3b587cee68ea60904c0bfe2832673034b04c27203ac8e736eccae9f9fa6",
+    "repeat4.csv": "1f802367f3d3e3f2b134f7fe7136b116e3151a5cc3346df23e13d5a26cefce18",
+    "repeat5.csv": "ad933e83d9e540d2f128c32719b3bba2543a38f3caf6e67fdfe1cab63e07e47b",
+    "repeat6.csv": "4ef4cc5e94e020691f6f6b884da19e7684b895b565be32f7badf9a517cefd8a0",
+    "repeat7.csv": "e2a51efb1acaa2c8998d88617a2334a38086fdf5079705d6cfe9296c93b225ee"
+  },
+  "inputs": {
+    "part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8"
+  },
+  "policy": "Fit only 188 known fitting rows plus 1014 unlabeled training rows. Exclude held/test inputs from every fit.",
+  "metric": "Mean sample F1 of all 235 OOF rows per repeat, then average 8 repeats.",
+  "interpretation": "Development benchmark; repeated folds overlap and are not independent test sets."
+}

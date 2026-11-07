@@ -1,0 +1,12 @@
+{
+  "protected_originals_unchanged": true,
+  "all_40_selected_fold_replays": true,
+  "all_80_cutoff_replays": true,
+  "cutoff_replay_max_abs_error": 0.0,
+  "notebook_executed_without_errors": true,
+  "notebook_source_snapshots_match": true,
+  "notebook_sha256": "eb95965ff35c10ef8a8726bd7cd4ac2b3acc6755f6f848c622977cd7ccefff4c",
+  "submission_rows": 312,
+  "submission_schema_and_labels_valid": true,
+  "model_reload_exact": true
+}

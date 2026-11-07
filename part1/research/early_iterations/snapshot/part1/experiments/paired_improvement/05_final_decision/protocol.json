@@ -1,0 +1,15 @@
+{
+  "parent": "04_local_support",
+  "name": "support_gmm0.05",
+  "cutoffs": [
+    0.25,
+    0.3,
+    0.35
+  ],
+  "parent_sha256": {
+    "protocol.json": "0efebcdcd1e6ce55ddfccb183350b658b109de23ca69c4f8fa7997cb5667b94a",
+    "predictions.csv": "1124c5ff385726d77d75a01ee7b308bad2a914286fcd6150a2a3dc4f053dc3c5",
+    "diagnostic_predictions.csv": "55059ae659d36e651e434c72095b4653fbb95fa8a162b7c65504f709ea4337ba"
+  },
+  "policy": "Only the final prediction cutoff changes. Fitting and pseudo-label cutoff stay fixed; reuse every saved fold score in both pools. These are development comparisons."
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_control"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_C0.1",
+    "C": 0.1
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 1,
+    "name": "final_r1"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_confidence0.7",
+    "confidence": 0.7
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_confidence0.9",
+    "confidence": 0.9
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "binary_neighbor_targets": true,
+    "rounds": 2,
+    "name": "final_r2_C0.1_confidence0.9",
+    "C": 0.1,
+    "confidence": 0.9
+  }
+]

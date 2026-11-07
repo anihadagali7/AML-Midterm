@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "models_fitted": 0,
+  "totals": {
+    "recipe_repeat_scores": 2246,
+    "recipe_summaries": 193,
+    "stage_arrays": 14,
+    "stage_csvs": 7
+  },
+  "by_study": {
+    "simple_methodical": {
+      "recipe_repeat_scores": 1016,
+      "recipe_summaries": 127,
+      "stage_arrays": 7
+    },
+    "trusted_iteration": {
+      "recipe_repeat_scores": 528,
+      "recipe_summaries": 66,
+      "stage_arrays": 7
+    },
+    "paired_improvement": {
+      "recipe_repeat_scores": 663,
+      "stage_csvs": 6
+    },
+    "current_ani_pool_audit": {
+      "recipe_repeat_scores": 39,
+      "stage_csvs": 1
+    }
+  },
+  "scope": "Existing predictions rescored before compact import; this is not fresh fitting or new validation."
+}

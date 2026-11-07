@@ -1,0 +1,87 @@
+[
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "anchored_quarter_control"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "anchored_quarter_inner_other",
+    "decision": "inner_other"
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_C0.1",
+    "other_head": "conditional_logistic",
+    "other_C": 0.1
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_C1",
+    "other_head": "conditional_logistic",
+    "other_C": 1.0
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_C10",
+    "other_head": "conditional_logistic",
+    "other_C": 10.0
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_knn3",
+    "other_head": "conditional_knn",
+    "other_k": 3
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_knn5",
+    "other_head": "conditional_knn",
+    "other_k": 5
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "conditional_other_knn10",
+    "other_head": "conditional_knn",
+    "other_k": 10
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "independent_other_C0.1",
+    "other_head": "independent_logistic",
+    "other_C": 0.1
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "independent_other_C1",
+    "other_head": "independent_logistic",
+    "other_C": 1.0
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "verified_pairs_w2",
+    "verified_pair_weight": 2.0
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "verified_pairs_w4",
+    "verified_pair_weight": 4.0
+  },
+  {
+    "pseudo_weight": 0.25,
+    "balance_source": "verified",
+    "name": "binary_neighbor_targets",
+    "binary_neighbor_targets": true
+  }
+]

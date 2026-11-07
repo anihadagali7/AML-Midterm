@@ -1,0 +1,239 @@
+[
+  {
+    "name": "graph_standard_k5_a0.2",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 5,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_standard_k5_a0.8",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 5,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_standard_k10_a0.2",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 10,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_standard_k10_a0.8",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 10,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_standard_k20_a0.2",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 20,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_standard_k20_a0.8",
+    "family": "graph",
+    "geometry": "standard",
+    "k": 20,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_standard_g0.003",
+    "family": "graph",
+    "geometry": "standard",
+    "kernel": "rbf",
+    "gamma": 0.003,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_standard_g0.01",
+    "family": "graph",
+    "geometry": "standard",
+    "kernel": "rbf",
+    "gamma": 0.01,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_standard_g0.03",
+    "family": "graph",
+    "geometry": "standard",
+    "kernel": "rbf",
+    "gamma": 0.03,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "cluster_standard_k20",
+    "family": "cluster",
+    "geometry": "standard",
+    "k": 20,
+    "cutoff": 0.3
+  },
+  {
+    "name": "cluster_standard_k40",
+    "family": "cluster",
+    "geometry": "standard",
+    "k": 40,
+    "cutoff": 0.3
+  },
+  {
+    "name": "cluster_standard_k80",
+    "family": "cluster",
+    "geometry": "standard",
+    "k": 80,
+    "cutoff": 0.3
+  },
+  {
+    "name": "graph_scalar_k5_a0.2",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 5,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_scalar_k5_a0.8",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 5,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_scalar_k10_a0.2",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 10,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_scalar_k10_a0.8",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 10,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_scalar_k20_a0.2",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 20,
+    "alpha": 0.2,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_scalar_k20_a0.8",
+    "family": "graph",
+    "geometry": "scalar",
+    "k": 20,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_scalar_g0.003",
+    "family": "graph",
+    "geometry": "scalar",
+    "kernel": "rbf",
+    "gamma": 0.003,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_scalar_g0.01",
+    "family": "graph",
+    "geometry": "scalar",
+    "kernel": "rbf",
+    "gamma": 0.01,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "graph_rbf_scalar_g0.03",
+    "family": "graph",
+    "geometry": "scalar",
+    "kernel": "rbf",
+    "gamma": 0.03,
+    "alpha": 0.8,
+    "cutoff": 0.3,
+    "disconnected_fallback": "nearest_verified"
+  },
+  {
+    "name": "cluster_scalar_k20",
+    "family": "cluster",
+    "geometry": "scalar",
+    "k": 20,
+    "cutoff": 0.3
+  },
+  {
+    "name": "cluster_scalar_k40",
+    "family": "cluster",
+    "geometry": "scalar",
+    "k": 40,
+    "cutoff": 0.3
+  },
+  {
+    "name": "cluster_scalar_k80",
+    "family": "cluster",
+    "geometry": "scalar",
+    "k": 80,
+    "cutoff": 0.3
+  },
+  {
+    "name": "self_train_scalar_c0.8",
+    "family": "self_train",
+    "geometry": "scalar",
+    "C": 1.0,
+    "confidence": 0.8,
+    "weight": 0.25,
+    "cutoff": 0.3
+  },
+  {
+    "name": "self_train_scalar_c0.9",
+    "family": "self_train",
+    "geometry": "scalar",
+    "C": 1.0,
+    "confidence": 0.9,
+    "weight": 0.25,
+    "cutoff": 0.3
+  },
+  {
+    "name": "self_train_scalar_c0.95",
+    "family": "self_train",
+    "geometry": "scalar",
+    "C": 1.0,
+    "confidence": 0.95,
+    "weight": 0.25,
+    "cutoff": 0.3
+  }
+]

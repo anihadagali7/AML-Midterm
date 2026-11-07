@@ -1,0 +1,13 @@
+{
+  "reference_control_all40folds_reproduced": true,
+  "outer_fit_role_audits": 2520,
+  "inner_threshold_selections_rescored": 80,
+  "inner_fit_count": 240,
+  "inner_labels_aligned_with_saved_outer_training_ids": true,
+  "candidate_fold_replays": 40,
+  "candidate_diagnostic_replays": 4,
+  "candidate_artifact_and_source_checksums_valid": true,
+  "submission_rows": 312,
+  "sample_submission_order_and_valid_labels": true,
+  "protected_originals_unchanged": true
+}
