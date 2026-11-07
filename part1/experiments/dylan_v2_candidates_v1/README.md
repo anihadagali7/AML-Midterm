@@ -4,6 +4,13 @@ Read [report.html](report.html). Parent: anchored, reported Kaggle **0.89636**.
 Four fixed candidates (cand1, cand2, cand4, cand5) and three supplied equal-weight
 blends were freshly compared with anchored. No candidate was tuned or submitted.
 
+The subsequent [error-complementarity review](diversity_report.html) identifies
+Cand1/Cand2's graph mechanism as a focused research follow-up despite the weaker
+whole-model scores. Reproduce with `python
+part1/experiments/dylan_v2_candidates_v1/diversity_review.py` from the repository
+root. This is retrospective analysis of saved predictions, with no new model fits,
+gates or hyperparameter selection; the proposed follow-ups have not been run.
+
 ## Outcome
 
 All seven alternatives score below anchored on each of our four checks. No recipe
