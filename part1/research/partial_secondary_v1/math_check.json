@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "unit_weight_lda_max_error": 2.220446049250313e-16,
+  "unknown_neighbor_does_not_vote_zero": true,
+  "gold_negatives_preserved": true,
+  "selected_pseudo_positive_observed": true,
+  "partial_vote": 0.9999999984375001,
+  "complete_vote": 0.3902439022010708
+}

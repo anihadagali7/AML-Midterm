@@ -1,0 +1,12 @@
+{
+  "cases": 84,
+  "fresh_anchored_fits": 84,
+  "altered_fits": 252,
+  "no_change_control_fits": 1,
+  "cached_cand2_cases": 84,
+  "total_fit_seconds": 70.74686729814857,
+  "parent_max_error": 0.0,
+  "control_max_error": [
+    2.220446049250313e-16
+  ]
+}
