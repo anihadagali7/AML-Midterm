@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "max_gradient_absolute_errors": [
+    1.9704687014010513e-08,
+    2.0665299332867093e-08,
+    1.8145631865140732e-08
+  ],
+  "checked_nested_partitions": 1008,
+  "chosen_inner_seeds": [
+    270301,
+    270302
+  ],
+  "synthetic_optimizer_and_fusion": true,
+  "decoder_equivalence": true
+}

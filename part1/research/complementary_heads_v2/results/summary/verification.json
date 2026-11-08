@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "outer_cases": 84,
+  "nested_boundaries_checked": 1008,
+  "independent_metric_rows": 252,
+  "independent_label_metric_rows": 1260,
+  "all_saved_ids_and_groups_checked": true,
+  "protected_source_hashes_unchanged": true,
+  "all_four_parent_headlines_reproduced": true,
+  "v1_calibration_reproduced": true,
+  "protocol_sha256": "d157adf2d7b354e3a6c8d29d7aca32a236eb328e2338032f98694f1b5237a4c6"
+}
