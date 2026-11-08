@@ -8,9 +8,9 @@ The **75% anchored / 25% LDA ensemble blend** is the highest recorded, user-repo
 
 On the common grouped benchmark, anchored beats current Ani LDA in both CV pools. Against the submitted LDA ensemble it is essentially tied: Train157 +.000265, Pooled235 −.000266, lower original validation, higher pooled chronology. The [complete comparison](experiments/current_leaders_grouped_v1/comparison.csv) preserves the tradeoffs. Original Ani's .89423 belongs to its original transductive artifact; no Kaggle score is established for the changed current Ani LDA CSV.
 
-## Latest unsubmitted trials
+## Closed unsubmitted trials
 
-The [fixed weight/cutoff study](research/blend_followup_v1/README.md), [partner-only blends](research/blend_partners_v1/README.md) and [half-step check](research/blend_halfstep_v1/README.md) evaluated ten candidates on all 84 matched cases. Two manual trial CSVs are prepared: 50/50 anchored/LDA first (higher validation, nearly tied CV, lower chronology), then 90% anchored / 5% tri-training / 5% SVM (both CV means higher, larger chronology loss). Neither passes the strict both-pool rule; neither has a reported Kaggle score. The current 0.89850 leader is unchanged. Full finalist arrays and compact negative records follow retention policy; the first study's `verify.py` audits all three batches.
+The [fixed weight/cutoff study](research/blend_followup_v1/README.md), [partner-only blends](research/blend_partners_v1/README.md) and [half-step check](research/blend_halfstep_v1/README.md) evaluated ten candidates on all 84 matched cases. The user confirmed that neither exported candidate was submitted. The 50/50 anchored/LDA and 90% anchored / 5% tri-training / 5% SVM trials are closed without Kaggle scores or score tags; neither passed the strict both-pool rule. Exact CSVs are archived as unsubmitted, with source and complete compact results retained. Four redundant prediction arrays were removed after verification; the first study's `verify.py` reproduces all results and both CSVs from existing component controls. Our scored 0.89850 submission remains at its existing immutable result tag.
 
 ## Next experiment
 

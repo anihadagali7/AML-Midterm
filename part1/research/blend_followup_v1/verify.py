@@ -1,6 +1,7 @@
 """Read-only audit of the two exports and all three retained study batches."""
 import importlib.util
 import json
+import subprocess
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -49,28 +50,39 @@ np.testing.assert_allclose(a,f['anchored_centered'],atol=1e-12,rtol=0)
 partner=(f['lda_ensemble']-.7*source)/.3
 sample=pd.read_csv(b.PART1/'data/part1_sample_submission.csv')
 records=json.loads((HERE/'submissions.json').read_text())+[json.loads((p.HERE/'submission.json').read_text())]
+outcomes=[json.loads((folder/'outcome.json').read_text()) for folder in (HERE,p.HERE)]
 expected_scores=[.5*a+.5*f['lda_ensemble'],.9*a+.1*partner]
 saved=[HERE/'blend50_50_final.npz',p.HERE/'finalist_test.npz']
 outputs=[]
-for record,scores,path in zip(records,expected_scores,saved):
+for record,outcome,scores,path in zip(records,outcomes,expected_scores,saved):
+    assert outcome['status']=='not_submitted' and outcome['reported_kaggle_score'] is None
+    assert outcome['submission_sha256']==record['sha256']
     pred=(scores>=.5).astype(int)
     for i in range(len(pred)):
         if not pred[i].any():pred[i,scores[i].argmax()]=1
-    csv=b.ROOT/record['file'];frame=pd.read_csv(csv)
+    csv=b.ROOT/outcome['archived_submission_file'];frame=pd.read_csv(csv)
     assert b.sha(csv)==record['sha256'] and len(frame)==312 and frame.ID.is_unique
     np.testing.assert_array_equal(frame.ID,sample.ID)
     labels=[' '.join(label for label,flag in zip(b.LABELS,row) if flag) for row in pred]
     assert frame.Predicted.tolist()==labels
-    with np.load(path) as z:
-        np.testing.assert_allclose(z['scores'],scores,atol=1e-12,rtol=0)
-        np.testing.assert_array_equal(z['predictions'],pred)
+    assert not path.exists(), 'Closed trials retain reconstructed scores, not duplicate prediction dumps.'
     changed=int((pred!=f['predictions']).any(axis=1).sum())
     assert changed==record['changed_labelsets_vs_current']>0
     outputs.append(pred)
     cvpath=HERE/'finalist_cv.npz' if record['recipe']=='blend50_50' else p.HERE/'finalist_cv.npz'
-    with np.load(cvpath) as z:
-        q=z['predictions'][0] if z['predictions'].ndim==3 else z['predictions']
-        np.testing.assert_array_equal(q,all_predictions[record['recipe']])
-        for key in ('ids','truth','case','pool','seed'):np.testing.assert_array_equal(z[key],data[key])
+    assert not cvpath.exists()
+    retained=json.loads((cvpath.parent/'retention.json').read_text())
+    assert retained['candidate_prediction_arrays_retained'] is False
 distinct=int((outputs[0]!=outputs[1]).any(axis=1).sum());assert distinct>0
-print(json.dumps(dict(passed=True,metric_values_recomputed=count,all_cases=84,distinct_labelsets_between_candidates=distinct,export_rows_each=312),indent=2))
+result_path='part1/submissions/results/anchored75-lda25-trainval235.json'
+result=json.loads((b.ROOT/result_path).read_text())
+tag=result['tag']
+git=lambda *args:subprocess.check_output(['git','-C',str(b.ROOT),*args])
+assert git('cat-file','-t','refs/tags/'+tag).strip()==b'tag'
+commit=git('rev-parse',tag+'^{commit}').decode().strip()
+assert commit=='39a5b46a58c650c29d921ae2dabb8cf2a29ab403'
+assert git('show',commit+':'+result_path)==(b.ROOT/result_path).read_bytes()
+for path,key in [(result['submission_file'],'submission_sha256'),(result['frozen_recipe_file'],'frozen_recipe_sha256')]:
+    assert b.sha(b.ROOT/path)==result[key]
+    assert git('show',commit+':'+path)==(b.ROOT/path).read_bytes()
+print(json.dumps(dict(passed=True,metric_values_recomputed=count,all_cases=84,distinct_labelsets_between_candidates=distinct,export_rows_each=312,closed_trials=2,submitted_result_commit=commit,submitted_result_tag=tag),indent=2))

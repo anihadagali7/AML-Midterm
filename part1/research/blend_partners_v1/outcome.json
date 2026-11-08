@@ -1,0 +1,13 @@
+{
+  "status": "not_submitted",
+  "recorded_at_utc": "2026-11-08T00:07:10.775772+00:00",
+  "recipe": "anchored90_partners10",
+  "reported_kaggle_score": null,
+  "score_tag": null,
+  "provenance": "User explicitly stated that neither of these two candidates was submitted, and restricted this bookkeeping to our own submission and experiments.",
+  "archived_submission_file": "part1/submissions/archive/unsubmitted/part1_anchored90_partners10_trainval235.csv",
+  "submission_sha256": "57cc00677d1b68b791b5655f65ab6936080e03e489b436b32e4dbe63b1465156",
+  "preparation_manifest_preserved": "submission.json",
+  "decision": "Close as unsubmitted research; no candidate passed the strict both-pool advancement rule. No promotion and no score tag.",
+  "retention": "Keep exact small CSV, source, protocol, complete compact results and verification. Remove duplicate candidate prediction arrays after checking; regenerate from retained component controls."
+}

@@ -1,9 +1,9 @@
 {
-  "policy": "Full selected finalist evidence; compact source/protocol/results for rejected arms; existing component sources referenced without duplication.",
+  "policy": "Closed, unsubmitted experiments: source, protocol, complete compact results, verification and exact small archived CSVs. Existing leader/component evidence remains; redundant candidate arrays removed after verification.",
+  "candidate_prediction_arrays_retained": false,
   "files": {
-    "part1/research/blend_partners_v1/README.md": "edb8d308b6ddf3220ce029076225e43dbb6797356fac8dfe7ed723accc427c3c",
-    "part1/research/blend_partners_v1/finalist_cv.npz": "91b72e40b4660f9db872e73dd36965e3513d9f02dec79db85d918318ad0ac66e",
-    "part1/research/blend_partners_v1/finalist_test.npz": "a421fc3822ce9923ace52d13d15d9d76d2288922c0a77b8134836092aee8eb5a",
+    "part1/research/blend_partners_v1/README.md": "5a3ba163f44506cf5f11a0c40b5d7ee62b0bcd92d5b4dc3554338f63b5c5589d",
+    "part1/research/blend_partners_v1/outcome.json": "6dcd338c5849fd3597df6983278eec12e46e9015672af7d45105054a7b62e048",
     "part1/research/blend_partners_v1/protocol.json": "a45ceac9cc6dd6649295bd71e53f8b0bfef5fae3f12744dec77d4fec999b32cb",
     "part1/research/blend_partners_v1/results/cv_summary.csv": "39c7739d947751b6c1565d3a62ea892751e701da6105ad00b698045a8ea582ee",
     "part1/research/blend_partners_v1/results/paired_repeat_deltas.csv": "eb152facb4d7b3a94a5e7496dca3c23cc15eb941c590c5889b512bd4d816617d",
@@ -14,7 +14,7 @@
     "part1/research/blend_partners_v1/selection.json": "663fbabc5ae1975884f1a5dfc43d9596ee2e7035d88aecaf54a3e7943a71a0df",
     "part1/research/blend_partners_v1/study.py": "bdaf846716c68441cd0718ef67b90160e9c0b4c52fa8f476835963f9a9229e28",
     "part1/research/blend_partners_v1/submission.json": "e5cb4a803dd9c4e1ab0d0269f551bff0d679d66509c5e078099787456090b5fa",
-    "part1/submissions/ready/part1_anchored90_partners10_trainval235.csv": "57cc00677d1b68b791b5655f65ab6936080e03e489b436b32e4dbe63b1465156"
+    "part1/submissions/archive/unsubmitted/part1_anchored90_partners10_trainval235.csv": "57cc00677d1b68b791b5655f65ab6936080e03e489b436b32e4dbe63b1465156"
   },
-  "bytes": 218966
+  "bytes": 71097
 }

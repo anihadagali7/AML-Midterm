@@ -1,5 +1,7 @@
 # Complementary classifier partners
 
+**Closed, not submitted.** The user confirmed that this candidate was skipped. It has no Kaggle score or score tag. The exact CSV is archived under `submissions/archive/unsubmitted/`; [outcome.json](outcome.json) records its path and hash.
+
 Selected `anchored90_partners10` as the second, riskier manual trial: 90% anchored, 5% tri-training and 5% SVM hard vote. It improves Train157 by .000796 and Pooled235 by .001862, ties validation and loses .013605 on chronology. Paired wins/ties/losses against current are 3/4/1 and 6/1/1 respectively: it fails the strict both-pool rule. Its chronology loss is concentrated in the 22-row 2007 window (.939394 to .878788). The 85/15 alternative slightly lowers Train157 and was not exported. Selection preceded opening the final test scores for this batch. The prepared CSV changes 4 of 312 labelsets; no score is known.
 
 ## Matched evaluation
@@ -24,7 +26,7 @@ The partner mixture is recovered as `(ensemble - .7 * matched_Ani_LDA_source) / 
 
 ## Retained evidence and verification
 
-Code, registered settings, all compact score tables and checks remain. Full CV/test score and prediction arrays are retained only for the two exported finalists, with exact CSVs and SHA-256 manifests. Existing source fits and controls are referenced without duplication; no failed fitted models or generated datasets were created. `retention.json` hashes current retained records. Preparation manifests are unsubmitted until a separate result record supersedes them.
+Code, registered settings, all compact score tables and checks remain. The user confirmed that both exported candidates were not submitted. Their exact small CSVs are archived under `submissions/archive/unsubmitted/`, with paths and hashes in each candidate study's `outcome.json`. After rescoring all 8,316 metrics and checking the exports, four redundant candidate CV/test prediction arrays (299,243 bytes total) were removed. Existing component/control scores still reproduce every result and both CSVs without refitting. The half-step had no detailed outputs to remove. `retention.json` hashes the currently retained records. Preparation manifests and their original file paths are historical; outcome records give the current archive paths. No new score tag is warranted.
 
 Both exports reuse components fitted on all 235 verified labels plus the 1,014 originally masked training rows, under the existing inductive protocol. This final fitting population is separate from the fold-local evaluation. No test input was used for fitting and no new fit was required to change blend weights.
 
@@ -34,6 +36,6 @@ From the repository root, run:
 .venv/bin/python part1/research/blend_followup_v1/verify.py
 ```
 
-This checks all three source registrations, re-scores 8,316 retained metric values, checks CV averages/SD and paired counts, verifies selected CV arrays, independently reconstructs both exported score arrays and CSVs, and checks retention hashes. The exports differ on three test labelsets from each other. For a fresh metric replay, use a disposable checkout with only these batches' generated result directories absent, then run each study's `evaluate` command. Registration and export commands refuse overwriting existing records.
+This checks all three source registrations, re-scores 8,316 retained metric values from existing component predictions, checks CV averages/SD and paired counts, independently reconstructs both archived CSVs, checks retention hashes and unsubmitted status, and verifies our existing 0.89850 result commit and annotated tag. Discarded candidate arrays are unnecessary for verification. The exports differ on three test labelsets from each other. For a fresh metric replay, use a disposable checkout with only these batches' generated result directories absent, then run each study's `evaluate` command. Registration and export commands refuse overwriting existing records.
 
 Environment: Python 3.12.13; numpy 2.5.2, pandas 3.0.5, scipy 1.18.1, scikit-learn 1.9.0.

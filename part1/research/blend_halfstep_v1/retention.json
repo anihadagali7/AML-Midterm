@@ -1,7 +1,8 @@
 {
-  "policy": "Full selected finalist evidence; compact source/protocol/results for rejected arms; existing component sources referenced without duplication.",
+  "policy": "Closed, unsubmitted experiments: source, protocol, complete compact results, verification and exact small archived CSVs. Existing leader/component evidence remains; redundant candidate arrays removed after verification.",
+  "candidate_prediction_arrays_retained": false,
   "files": {
-    "part1/research/blend_halfstep_v1/README.md": "582b7255b743904b8ed038ae2612d65414f5508a8abdb833cabf2cb12f6facff",
+    "part1/research/blend_halfstep_v1/README.md": "83215311da39c99c18019c55cfa7423bc7afe124cd90d00c6d8eab6f2d5380b0",
     "part1/research/blend_halfstep_v1/protocol.json": "e02eaa1d08b91ab8b6320bc4e28fa93e0869af03c57d4155d936364ed87831e1",
     "part1/research/blend_halfstep_v1/results/cv_summary.csv": "3951ca9adbcee2c038ce14212f221aed4cae7f959999d5b1dd2716756ab8e3a3",
     "part1/research/blend_halfstep_v1/results/paired_repeat_deltas.csv": "cd66d167bbd66140beee553f82ea81e79bec3b290bf307272268e8368019840e",
@@ -11,5 +12,5 @@
     "part1/research/blend_halfstep_v1/results/verification.json": "6c6a5901e2c1ab1c7b5ebac52bdd36ec2887946896660cd1c54df5e3abcfc2e5",
     "part1/research/blend_halfstep_v1/study.py": "6e13c147bbf963d33e963700c5793d8f2009711a24f55461f8f424dec3e0d44a"
   },
-  "bytes": 42256
+  "bytes": 42703
 }

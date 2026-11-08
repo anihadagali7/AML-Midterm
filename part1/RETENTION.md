@@ -33,6 +33,7 @@ Run historical replays in disposable output directories. Extract useful summarie
 | Earlier simple/trusted iterations | [Compact records and comparison correction](research/early_iterations/README.md) |
 | Anchored transductive ablations | [Fixed recipes, complete compact results and interpretation](research/anchored_transductive_v1/README.md); unsuccessful prediction caches removed after rescoring |
 | Anchored neighbor/blend ablations | [Three fixed ideas and complete results](research/anchored_neighbor_blend_v1/README.md); full evidence for the submitted 0.89850 blend and matched controls, compact results for unsuccessful neighbor changes |
+| Closed blend follow-ups | [Ten fixed recipes across three batches](research/blend_followup_v1/README.md); both exports explicitly unsubmitted, exact small CSVs archived, four duplicate candidate arrays removed after rescoring; retained components reproduce all results |
 | Submitted 75/25 blend | [Frozen final-235 preparation and score record](research/anchored_lda_blend_submission_v1/README.md); exact scored CSV and complete scores retained, existing component fits referenced |
 | LDA and feature research | [Existing retention and replay guide](research/lda_ensemble/EVIDENCE.html) |
 | New Directions | [Existing compact archive](research/new_directions/index.html); unchanged by this cleanup |

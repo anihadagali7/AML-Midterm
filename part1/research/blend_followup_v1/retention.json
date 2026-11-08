@@ -1,10 +1,11 @@
 {
-  "policy": "Full selected finalist evidence; compact source/protocol/results for rejected arms; existing component sources referenced without duplication.",
+  "policy": "Closed, unsubmitted experiments: source, protocol, complete compact results, verification and exact small archived CSVs. Existing leader/component evidence remains; redundant candidate arrays removed after verification.",
+  "candidate_prediction_arrays_retained": false,
   "files": {
-    "part1/research/blend_followup_v1/README.md": "e256deec44ef3dc046637124f08a2f4bc5977f96e5975bef845f7ea6e202192b",
-    "part1/research/blend_followup_v1/blend50_50_final.npz": "cb789dfd5d251cadec80ce935acd23975783da2389e6f06d106f79eaab7ffb66",
+    "part1/research/blend_followup_v1/README.md": "7cdea8af2c1ae31972357bf160929bb662fbca889be6c6fb2bc0af3443486383",
+    "part1/research/blend_followup_v1/closure_verification.json": "1c48a8570809b32ab8193efe54ff4775de6b56db776a504d3947f1e8563d5dbd",
     "part1/research/blend_followup_v1/export_verification.json": "12232b96d0d3f698e5c9d62a5efda2e00096c80627873e08ad13b73a648a108c",
-    "part1/research/blend_followup_v1/finalist_cv.npz": "73a30acf47151f9b8698ebd2f46a7044c2f52b8f8fb889fcb1de849e0f046007",
+    "part1/research/blend_followup_v1/outcome.json": "a5cef06c0c244519aa8f75d49c61758a6efa69f4bd250aaea4bd0577aad6139f",
     "part1/research/blend_followup_v1/protocol.json": "cb45ad5e0be2547ccf6d7813e746c5176e149a306ee3a03f205e3a31e6f2f533",
     "part1/research/blend_followup_v1/results/cv_summary.csv": "c30e3457b984a83554cb88bb112f07edaac1399bf963c8092e60d3a85330fe71",
     "part1/research/blend_followup_v1/results/paired_repeat_deltas.csv": "c6f2946e3db26b3f3a06d4a1e8cffc148dd423e329942288d5ba3338d5201685",
@@ -16,8 +17,8 @@
     "part1/research/blend_followup_v1/run.py": "ba6f9b8bd566306b104b90b8afd691386c7fadd6dc6d1f4fee08213eec67d5ea",
     "part1/research/blend_followup_v1/selection.json": "88024e6b1d5b108e8e337837e195ee91fd7d73662c959b815a0ea4f9b05b5c7d",
     "part1/research/blend_followup_v1/submissions.json": "7f2bbe73e72e827adba77d95ab47736b5cd24a2b1ee50ca036f643621c8eda99",
-    "part1/research/blend_followup_v1/verify.py": "7aadc754c39ca477c1c5702520e2b8212df97dc1c133025f66c735feb90aefd5",
-    "part1/submissions/ready/part1_blend50_50_trainval235.csv": "f390553295ed3b23379e3eba801bf5590f543b433d71188ca82c693a4182bcf3"
+    "part1/research/blend_followup_v1/verify.py": "7a85758c05c979ed5ec72ee0199298b0da87e3a5bc35ebb3493696fbcb532ac1",
+    "part1/submissions/archive/unsubmitted/part1_blend50_50_trainval235.csv": "f390553295ed3b23379e3eba801bf5590f543b433d71188ca82c693a4182bcf3"
   },
-  "bytes": 300072
+  "bytes": 153753
 }
