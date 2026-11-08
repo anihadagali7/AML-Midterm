@@ -1,0 +1,74 @@
+{
+  "status": "Prepared exploratory candidate; not uploaded; Kaggle score unknown",
+  "csv": "submissions/candidates/partial_other_unknown80_cand2_inductive20_trainval235.csv",
+  "sha256": "f6aed0af121d02364c346b38b7c4a6f83f2409b7e9e03fb49b74e5e0d25b353e",
+  "rows": 312,
+  "gold": 235,
+  "masked": 1014,
+  "test_inputs_used_for_fit": false,
+  "source_benchmark_recipe": "binary_unknown",
+  "source_benchmark_commit": "18af826a",
+  "parent_exact_scored_csv_reproduced": true,
+  "parent_max_score_error": 0.0,
+  "changed_label_sets": 47,
+  "added_labels": {
+    "Safety": 1,
+    "Funding": 1,
+    "Efficacy": 1,
+    "Recruitment": 0,
+    "Other": 37
+  },
+  "removed_labels": {
+    "Safety": 3,
+    "Funding": 0,
+    "Efficacy": 3,
+    "Recruitment": 3,
+    "Other": 2
+  },
+  "final_rounds": [
+    {
+      "step": 0,
+      "gold": 235,
+      "generated": 0,
+      "generated_multilabel": 0,
+      "observed_other_positive": 35,
+      "observed_other_negative": 200,
+      "unknown_other": 0,
+      "binary_training_rows": 235,
+      "binary_weight_by_class": [
+        187.99999999999966,
+        46.99999999999998
+      ]
+    },
+    {
+      "step": 1,
+      "gold": 235,
+      "generated": 683,
+      "generated_multilabel": 8,
+      "observed_other_positive": 73,
+      "observed_other_negative": 200,
+      "unknown_other": 645,
+      "binary_training_rows": 273,
+      "binary_weight_by_class": [
+        187.99999999999966,
+        46.999999999999964
+      ]
+    },
+    {
+      "step": 2,
+      "gold": 235,
+      "generated": 743,
+      "generated_multilabel": 17,
+      "observed_other_positive": 88,
+      "observed_other_negative": 200,
+      "unknown_other": 690,
+      "binary_training_rows": 288,
+      "binary_weight_by_class": [
+        187.99999999999966,
+        46.999999999999865
+      ]
+    }
+  ],
+  "prediction_sha256": "34a81d07974548b34a115b22995e45bc7c99372c6f1b8533d2bc44034ad74efa",
+  "export_protocol_sha256": "32b5da0d8055e706d3981be5f10742dd3ff1fc1e07b1efb79687080e763532b7"
+}

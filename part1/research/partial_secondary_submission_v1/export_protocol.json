@@ -1,0 +1,30 @@
+{
+  "registered_at": "2026-11-08T01:10:31.111606+00:00",
+  "recipe": "80% PartialOtherAnchored(binary_unknown) native scores +20% exact final235 five-seed strict-inductive Cand2 marginals; .3 cutoff and argmax.",
+  "source_benchmark_commit": "18af826a",
+  "source_benchmark_protocol_sha256": "fd98a9d74ecfb3bc9a50abb1b5ec81999c5484df108432bc928d56dab44b5086",
+  "trigger": "User asked whether an exploratory Kaggle test is worthwhile with five submissions remaining. Assistant recommended one trial and prepared this local artifact; no upload authorized or performed.",
+  "selection": "Full binary_unknown variant chosen for its .901020 chronology result and larger recovery of Other, before computing new test predictions. No hyperparameter, threshold, weight or per-test-row choice follows this selection.",
+  "exception": "Exploratory preparation after completed negative grouped CV. This does not change the original failed advancement status or promote the model. Current best reported score remains .89935.",
+  "known_metrics": {
+    "train": 0.9203821656050954,
+    "pooled": 0.9149822695035461,
+    "validation": 0.8910256410256411,
+    "chronology": 0.9010204081632653
+  },
+  "fitting": "235 supplied gold +1014 originally masked rows in original train-then-validation order. Test inputs only enter prediction; IDs only align outputs. Refit altered anchored and unchanged anchored control. Reuse exact existing Cand2 final fit.",
+  "output": "submissions/candidates/partial_other_unknown80_cand2_inductive20_trainval235.csv",
+  "files": {
+    "research/partial_secondary_submission_v1/export_candidate.py": "8c6532fda380c08bb036f2c68155e3f099bd56a8efaf2c99acfd8ea9cdde56bf",
+    "research/partial_secondary_submission_v1/component_provenance.json": "bbc860e64e0118e1763ad28187bd0577b8262a0f32bb14aa0f690a10ffe3bb36",
+    "research/partial_secondary_submission_v1/parent_final_components.npz": "640ca62408f5dfc9e92ba54fafce500b94387e3576ae5b5db6becb3f6f136c8a",
+    "research/partial_secondary_v1/protocol.json": "fd98a9d74ecfb3bc9a50abb1b5ec81999c5484df108432bc928d56dab44b5086",
+    "research/partial_secondary_v1/partial_model.py": "247efe08f68df7a21523987b92c41ccb9655d4012b2206352c500043314daf59",
+    "research/partial_secondary_v1/results/summary/verification.json": "b4c5365396f78c8c6d141703c4c111de8045d4e7a66d320f92aa6115be823ed4",
+    "anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921"
+  }
+}

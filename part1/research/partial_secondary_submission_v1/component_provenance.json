@@ -1,0 +1,8 @@
+{
+  "source_commit": "cde3d500",
+  "source_file": "part1/experiments/cand2_followup_v1/blend_final_predictions.npz",
+  "source_sha256": "640ca62408f5dfc9e92ba54fafce500b94387e3576ae5b5db6becb3f6f136c8a",
+  "parent_submission_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+  "model_benchmark_commit": "18af826a",
+  "note": "Reuse exact final235 strict-inductive five-seed Cand2 label marginals from scored .89935 parent. New Other model will be refitted on235 gold plus1014 masked inputs, with test prediction-only."
+}

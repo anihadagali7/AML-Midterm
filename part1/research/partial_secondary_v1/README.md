@@ -1,6 +1,6 @@
 # Keeping unselected Other pseudo-labels unknown
 
-**Outcome: the change recovers more Other labels, but none of the five fixed variants improves both grouped benchmarks. Keep the user-reported .89935 blend. No new Kaggle candidate was exported or uploaded.** All 84 outer cases finished, and independent verification passed.
+**Outcome: the change recovers more Other labels, but none of the five fixed variants improves both grouped benchmarks. Keep the user-reported .89935 blend.** All 84 outer cases finished, and independent verification passed. No candidate was exported at benchmark completion. After Michael asked about an exploratory trial with five submissions remaining, the exact full unknown-label recipe was [prepared separately](../partial_secondary_submission_v1/README.md); it has not been uploaded or scored, and the failed benchmark status is unchanged.
 
 | Recipe | Train157 | Pooled235 | Validation78 | Chronology98 | Pooled Other F1 |
 |---|---:|---:|---:|---:|---:|

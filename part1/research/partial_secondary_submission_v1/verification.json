@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows": 312,
+  "id_order_and_uniqueness": true,
+  "blend_formula_and_decoder": true,
+  "allowed_labels_and_nonempty_sets": true,
+  "source_hashes_unchanged": true,
+  "benchmark_values_checked": true,
+  "csv_sha256": "f6aed0af121d02364c346b38b7c4a6f83f2409b7e9e03fb49b74e5e0d25b353e"
+}
