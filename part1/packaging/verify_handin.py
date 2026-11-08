@@ -1,5 +1,6 @@
 """Execute the exported Part 1 hand-in in isolation, including fresh winner fits."""
 
+import csv
 import hashlib
 import json
 from pathlib import Path
@@ -43,6 +44,15 @@ def main():
         assert validation["seeds"] == final["seeds"] == list(range(5))
         assert validation["gold"] == 157 and final["gold"] == 235
         assert not validation["test_inputs_in_fit"] and not final["test_inputs_in_fit"]
+        completed_path = package / "generated/completed_training_reason_labels.csv"
+        with completed_path.open() as handle:
+            completed = list(csv.DictReader(handle))
+        assert len(completed) == 1171
+        assert sum(row["label_source"] == "supplied" for row in completed) == 157
+        assert sum(row["label_source"] == "anchored_prediction" for row in completed) == 1014
+        assert all(row[label] in {"0", "1"} for row in completed
+                   for label in ["Safety", "Funding", "Efficacy", "Recruitment", "Other"])
+        assert sha(completed_path) == sha(package / "results/completed_training_reason_labels.csv")
         # Preserve independent fresh-fit receipts, not the temporary working files.
         result = dict(
             passed=True,
@@ -56,6 +66,8 @@ def main():
             exact_winner_sha256=WINNER_SHA,
             fresh_validation=validation,
             fresh_final=final,
+            completed_training_labels=dict(rows=1171, supplied=157, generated=1014,
+                                           binary_labels=True, packaged_export_reproduced=True),
             scope="Portable Part 1 package; no Part 2 or report changes. Default cells train the winner and historical feature comparison; benchmark/negative studies rescore retained evidence.",
         )
     (REPO / "submission/part1_package_verification.json").write_text(

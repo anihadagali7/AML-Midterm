@@ -1,7 +1,7 @@
 {
   "archive": "part2-midterm-code.zip",
-  "archive_sha256": "1f29eb36d02f076410b90086f0c49765c74af0f5a93a30ad4ae09c0ae5f4f5c1",
-  "archive_bytes": 22893436,
+  "archive_sha256": "c3a90c30587e91503717f24461b599e55231e11aae5f0b2d2be5d7a2a169c344",
+  "archive_bytes": 22897619,
   "notebooks": [
     {
       "notebook": "01_final_model.ipynb",

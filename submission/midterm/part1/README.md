@@ -18,6 +18,12 @@ Use Python 3.12. Extract the complete ZIP, open a terminal in `midterm/part1`, a
 
 Notebook 01 runs fresh validation and final235 training by default. Set `RUN_FRESH_TRAINING=False` for a quicker retained-evidence review. Fresh scores are checked against the frozen benchmark only after fitting. No stored scores enter fresh fitting. New outputs go under `generated/`; the scored CSV and frozen resources are not overwritten.
 
+Its `completed_training_reason_labels.csv` export fills all 1,014 originally
+missing training-label rows with predictions from the fitted anchored component,
+preserves the 157 supplied rows, and identifies each label's source. The separate
+`anchored_augmented_labels.csv` records only the pseudo-labels accepted for
+self-training. Completion predictions do not add another training round.
+
 Notebook 02 deliberately preserves the **historical transductive preprocessing/pseudo-label pool** of the earlier feature experiment. It is not the final anchored/Cand2 model. Its displayed validation results must not be compared as if they used the current grouped protocol. Notebooks 03 and 04 clearly identify their use of retained predictions/statistics. They do not claim to refit all past experiments.
 
 `resources/` includes supplied Part 1 inputs, the exact model sources and configurations, selected predictions, compact results, and a SHA-256 manifest. No external trial data or hidden labels are fetched. `results/` contains tables, figures, fresh-fit receipts and execution checks. Figure-generation code is in the notebooks. The frozen scored artifact remains on its original immutable tag, `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`.
@@ -34,5 +40,9 @@ python part1/packaging/build_handin.py
 ```
 
 The builder copies verified local inputs/evidence, writes and executes the five notebooks, and creates `submission/dist/part1-midterm-code.zip` with a `midterm/part1/` root. Use `--skip-execution` for drafting or `--zip-only` to repackage existing executed notebooks. Run `python part1/packaging/verify_handin.py` to test the ZIP in an isolated directory with no research checkout.
+
+Existing numbered notebooks are preserved when building, so editorial changes
+survive packaging. `--refresh-notebooks` explicitly replaces their cells with
+the original templates; use it only when intentionally regenerating the narrative.
 
 This package leaves the separate Part 2 hand-in and combined report unchanged. The older `midterm/part1_best_model.ipynb` remains a historical artifact and is not the final model entry point.

@@ -6,12 +6,17 @@ was merged with Part 2 packaging checkpoint
 immutable score tags are preserved. No model search, fitting, or Kaggle upload
 was performed during this reconciliation.
 
-## Final locations
+## Locations at reconciliation
+
+This record describes the original integration checkpoint. Subsequent report
+edits and the move of its source to `../report/` are documented in the
+[current report guide](../report/README.md); the checkpoint hashes below remain
+historical evidence.
 
 - [Combined PDF](report.pdf): the incoming four-page report, byte-for-byte identical.
-- [Combined TeX source](report/main.tex): all incoming authored content retained;
+- [Combined TeX source](../report/main.tex): all incoming authored content retained;
   only resource paths and compilation instructions differ.
-- [Bibliography](report/main.bib): all incoming Part 1 additions preserved exactly.
+- [Bibliography](../report/main.bib): all incoming Part 1 additions preserved exactly.
 - [Part 1 model and artifact](../part1/MODEL.md): selected anchored80/Cand2_20
   winner, reported Kaggle sample-wise F1 **0.89935**.
 - [Final Part 2 notebooks](midterm/part2/README.md): file 13, reported Kaggle

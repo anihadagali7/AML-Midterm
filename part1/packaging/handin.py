@@ -150,6 +150,20 @@ def fit_winner(validation=True, output=None):
         )
         augmented.loc[accepted, "label_source"] = "anchored_pseudo"
         augmented.to_csv(output / "anchored_augmented_labels.csv", index=False)
+        if not validation:
+            # Complete the assignment's training-label export separately from the
+            # confidence-filtered rows actually accepted during self-training.
+            complete = train[["ID"] + LABELS].copy()
+            masked = train[LABELS].eq(-100).all(axis=1)
+            complete.loc[masked, LABELS] = select_reasons(
+                anchored.predict_proba(train.loc[masked, EMB].to_numpy(float))
+            )
+            complete["label_source"] = np.where(masked, "anchored_prediction", "supplied")
+            assert complete[LABELS].isin([0, 1]).all().all()
+            np.testing.assert_array_equal(
+                complete.loc[~masked, LABELS], train.loc[~masked, LABELS]
+            )
+            complete.to_csv(output / "completed_training_reason_labels.csv", index=False)
     return receipt, result
 
 

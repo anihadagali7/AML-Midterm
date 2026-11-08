@@ -142,6 +142,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--skip-execution", action="store_true", help="Generate notebooks without executing them.")
     parser.add_argument("--zip-only", action="store_true", help="Repackage already executed notebooks and materialized resources.")
+    parser.add_argument(
+        "--refresh-notebooks", action="store_true",
+        help="Regenerate notebooks from templates, replacing manual notebook edits.",
+    )
     args = parser.parse_args()
     if args.zip_only:
         entries = json.loads((HANDIN / "resources/PACKAGE_MANIFEST.json").read_text())["files"]
@@ -150,7 +154,9 @@ def main():
         files = inventory()
         print(f"Including {sum(include_resource(p) for p in files)} of {len(files)} working files; all input datasets and Python code retained.", flush=True)
         assert all(include_resource(p) for p in files if p.suffix == ".py")
-        build(REPO, files)
+        expected = ["01_final_model.ipynb", "02_experiments.ipynb", "03_source_code.ipynb"]
+        if args.refresh_notebooks or not all((HANDIN / name).is_file() for name in expected):
+            build(REPO, files)
         entries = materialize(files)
         if not args.skip_execution:
             execute_notebooks()

@@ -6,26 +6,30 @@ at the repository root remains the full Part 2 research history.
 | Material | Location |
 | --- | --- |
 | Current combined report PDF | [report.pdf](report.pdf) |
-| Combined report source and supporting files | [report/](report/README.md) |
+| Combined report source and supporting files | [../report/](../report/README.md) |
 | Final Part 1 notebooks and exact winning CSV | [midterm/part1/](midterm/part1/README.md) |
 | Part 1 code/data ZIP | `dist/part1-midterm-code.zip` (generated locally) |
 | Final Part 2 notebooks, winning CSV, and generated figures | [midterm/part2/](midterm/part2/README.md) |
 | Part 2 code/data ZIP | `dist/part2-midterm-code.zip` (generated locally) |
 | Reproduction and portability checks | [Verification](VERIFICATION.md) |
+| Current notebook review against the assignment | [Notebook readiness](NOTEBOOK_READINESS.md) |
 
 The assignment calls for a folder named **`midterm`** for the code/data hand-in,
 and a separate report PDF upload. The Part 2 ZIP therefore contains `midterm/part2/`.
 It is the Part 2 portion of the hand-in; it does not package or certify Part 1.
 
 The combined report includes the updated Part 1 **0.89935 anchored/Cand2 winner**
-and its evidence from `ee750f6f`. Its PDF is preserved byte-for-byte; source edits
-only adapt TeX paths to this layout. See the [reconciliation record](RECONCILIATION.md).
+and its evidence from `ee750f6f`. The report prose has since been revised in the
+team's voice, with the results unchanged. See the [reconciliation record](RECONCILIATION.md)
+for the original integration and relocation history.
 
 The current Part 1 hand-in is under [midterm/part1/](midterm/part1/README.md): five notebooks covering the complete .89935 winner, representative baseline/feature experiments, benchmarks/blends, unsuccessful directions, and source code. Its builder creates a separate portable ZIP. The older Part 1 files directly under `midterm/` remain historical artifacts; use the new numbered notebooks for the selected winner.
 
 The old root `midterm/` is a compatibility symlink to this folder's `midterm/`, so
-historical paths continue to resolve. `midterm/report` similarly points to the
-preserved earlier report source. These aliases are not included in the Part 2 ZIP.
+historical notebook paths continue to resolve. The report source is now at
+[`../report/`](../report/README.md), outside the code/data hand-in. The obsolete
+`midterm/report` shortcut was removed; the earlier draft is archived in
+`../report/previous/`. Compatibility aliases are not included in the Part 2 ZIP.
 
 ## Build the Part 2 hand-in
 

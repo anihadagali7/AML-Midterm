@@ -15,7 +15,7 @@ INCOMING_MAIN = "c2fb3fc18bb00a588c08f594977a1cf304950583"
 MERGED_EVIDENCE = "fd0b8528"
 REPORT_CHECKPOINT = "ee750f6fbbc9d3e15c729db7364043d9669393ea"
 PART2_PACKAGE_CHECKPOINT = "efe9a8f23a0085c4010d6f9f0964cc3523d93213"
-REPORT_SOURCE = ROOT / "submission/report/main.tex"
+REPORT_SOURCE = ROOT / "report/main.tex"
 REPORT_PDF = ROOT / "submission/report.pdf"
 
 
@@ -82,27 +82,45 @@ def main():
     # hand-in code; it must not be mistaken for a change to that earlier audit.
     assert not build.git("diff", "--name-only", INCOMING_MAIN, REPORT_CHECKPOINT,
                          "--", "part2").strip()
-    assert not build.git("diff", "--name-only", PART2_PACKAGE_CHECKPOINT,
-                         "--", "part2").strip()
+    part2_changed = build.git("diff", "--name-only", PART2_PACKAGE_CHECKPOINT,
+                              "--", "part2").decode().splitlines()
+    # Notebook packaging may evolve without changing the retained research.
+    assert all(p.startswith("part2/packaging/") for p in part2_changed), part2_changed
     previous = build.git("show", INCOMING_MAIN + ":report.tex").decode()
+    checkpoint = build.git("show", REPORT_CHECKPOINT + ":report.tex")
     current = REPORT_SOURCE.read_text()
-    assert report_part2(previous) == report_part2(current)
+    # Preserve the original integration check at its immutable checkpoint.
+    # The current report has subsequently received authorized editorial changes.
+    assert report_part2(previous) == report_part2(checkpoint.decode())
     assert (
         build.git("show", INCOMING_MAIN + ":README.md").decode().split("## Part 2:")[1]
         == (ROOT / "README.md").read_text().split("## Part 2:")[1]
     )
     assert "0.89935" in current and "80/20 Cand2" in current
     audit = build.read(HERE / "integration_checks.json")
-    upstream = build.git("show", REPORT_CHECKPOINT + ":report.tex")
-    assert hashlib.sha256(upstream).hexdigest() == audit["report"]["source_sha256"]
-    relocated = upstream.decode().replace(
-        "% Combined midterm report. Compile from the repository root:\n%   latexmk -pdf report.tex",
-        "% Combined midterm report. Compile from submission/report/:\n%   latexmk -pdf main.tex",
-    ).replace("midterm/report/", "")
-    assert current == relocated, "Authored report content changed beyond path relocation"
-    assert build.sha(REPORT_PDF) == audit["report"]["pdf_sha256"]
-    assert (ROOT / "submission/report/main.bib").read_bytes() == build.git(
-        "show", REPORT_CHECKPOINT + ":midterm/report/main.bib")
+    assert hashlib.sha256(checkpoint).hexdigest() == audit["report"]["source_sha256"]
+    checkpoint_pdf = build.git("show", REPORT_CHECKPOINT + ":report.pdf")
+    assert hashlib.sha256(checkpoint_pdf).hexdigest() == audit["report"]["pdf_sha256"]
+
+    # Current-report checks are intentionally separate from snapshot equality.
+    assert re.findall(r"\\section\{([^}]+)\}", current) == [
+        "Methods", "Results", "Discussion"
+    ]
+    assert r"\begin{abstract}" in current and r"\bibliography{main}" in current
+    assert current.count(r"\begin{table}") == 4
+    assert "AI disclosure" in current
+    assert current.index("AI disclosure") < current.index(r"\bibliographystyle")
+    assert REPORT_PDF.read_bytes().startswith(b"%PDF-")
+    bibliography = REPORT_SOURCE.with_name("main.bib").read_text()
+    entries = lambda text: set(re.findall(r"@\w+\s*\{\s*([^,]+)", text))
+    checkpoint_bib = build.git(
+        "show", REPORT_CHECKPOINT + ":midterm/report/main.bib").decode()
+    assert entries(checkpoint_bib) <= entries(bibliography)
+    citations = {key.strip() for block in re.findall(r"\\cite\{([^}]+)\}", current)
+                 for key in block.split(",")}
+    assert citations <= entries(bibliography), citations - entries(bibliography)
+    for name in ["preamble.tex", "cvpr.sty", "ieeenat_fullname.bst"]:
+        assert REPORT_SOURCE.with_name(name).is_file(), name
     for row in retained:
         for key in ["metric_source", "supplementary_source", "score_record"]:
             if row[key]:
@@ -115,7 +133,13 @@ def main():
         P1 / "submissions/README.md",
         HERE / "README.md",
         HERE / "INTEGRATION.md",
+        REPORT_SOURCE.with_name("README.md"),
+        ROOT / "submission/README.md",
+        ROOT / "submission/NOTEBOOK_READINESS.md",
+        ROOT / "submission/RECONCILIATION.md",
     ]
+    tracked = set(build.git("ls-files", "-z").decode().split("\0"))
+    documents = [p for p in documents if p.relative_to(ROOT).as_posix() in tracked]
     checked = 0
     for path in documents:
         text = path.read_text()
@@ -142,9 +166,10 @@ def main():
                 local_documentation_links=checked,
                 frozen_model_data_and_protocol_files_unchanged=True,
                 original_part1_report_checkpoint_preserved=True,
-                part2_working_tree_matches_packaging_checkpoint=True,
-                report_content_matches_latest_part1_checkpoint=True,
-                incoming_part2_report_content_unchanged=True,
+                part2_research_files_match_packaging_checkpoint=True,
+                historical_report_source_and_pdf_hashes_verified=True,
+                historical_incoming_part2_report_content_unchanged=True,
+                current_report_structure_and_citations_checked=True,
                 models_fitted=0,
             ),
             indent=2,

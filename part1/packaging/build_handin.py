@@ -246,13 +246,23 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--skip-execution", action="store_true")
     ap.add_argument("--zip-only", action="store_true")
+    ap.add_argument(
+        "--refresh-notebooks", action="store_true",
+        help="Regenerate notebooks from templates, replacing manual notebook edits.",
+    )
     args = ap.parse_args()
     if not args.zip_only:
         HANDIN.mkdir(parents=True, exist_ok=True)
         entries = materialize()
-        from notebooks import build
+        expected = [
+            "01_final_model.ipynb", "02_baselines_and_features.ipynb",
+            "03_benchmarks_and_blends.ipynb", "04_unsuccessful_directions.ipynb",
+            "05_source_code.ipynb",
+        ]
+        if args.refresh_notebooks or not all((HANDIN / name).is_file() for name in expected):
+            from notebooks import build
 
-        build(REPO, entries)
+            build(REPO, entries)
         if not args.skip_execution:
             records = execute(HANDIN)
             results = HANDIN / "results"
