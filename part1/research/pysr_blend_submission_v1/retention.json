@@ -1,0 +1,19 @@
+{
+  "policy": "Unsuccessful scored model: exact CSV, score provenance, frozen source/settings/dependencies, equations and compact results only. Full final state, generated data and score dumps removed after verification; no backup archive.",
+  "candidate_model_or_score_arrays_retained": false,
+  "files": {
+    "part1/research/pysr_blend_submission_v1/README.md": "f549bc0e5361fc97bf63d073daf5a294c3ce1343c0f8e44473a53f85121eda4c",
+    "part1/research/pysr_blend_submission_v1/changes_vs_89850.csv": "285cfafd15e2b98941015c9b3565c8b20aa6c3f5c5687f07d610a88acbb0316c",
+    "part1/research/pysr_blend_submission_v1/equations.json": "fcae304babe0510b014830a5d7167d678e26f392c4eb003f5f2f8b8b01555b84",
+    "part1/research/pysr_blend_submission_v1/export.py": "685f3e2567b0f10728e21efed3ac964db51f2d744abe6c67c92dafd453f0562c",
+    "part1/research/pysr_blend_submission_v1/manifest.json": "16840564b25314700ba27a4aea32898e78ec948bbc4328a655f302c37f7e57d0",
+    "part1/research/pysr_blend_submission_v1/protocol.json": "697677f5310fd6bd023243e5080b3bf9af912a76dcd66bf4c8c4b23277b7d676",
+    "part1/research/pysr_blend_submission_v1/retention_audit.json": "f9c4cbf85572c15446caa9688c060f47d4feaba34ec68b358207c8bd39b3ef6c",
+    "part1/research/pysr_blend_submission_v1/verification.json": "7c8a74ff0fa738aa6cdc44a8139d8057fdb5027ffe96efac48312f474603b3e2",
+    "part1/research/pysr_blend_submission_v1/verify.py": "32e1127c97c0ee108ae77b02de5d596cb9d8f98f425c087d759695af20d93350",
+    "part1/research/pysr_blend_submission_v1/verify_retained.py": "d0ff15f85227693416c245aa3cf765924d4a3f0ea1c2d9b6acaca4bbac9e14c3",
+    "part1/submissions/ready/part1_current80_pysr20_trainval235.csv": "742dc787fd33b24ab626dcf2ee29810cc3481f1d707de8df0678dec437127d66",
+    "part1/submissions/results/current80-pysr20-trainval235.json": "0f76cbf58b779eba89aabb43080e429fd8f7f4c979e86c893abc94a1a6b956cb"
+  },
+  "bytes": 41647
+}

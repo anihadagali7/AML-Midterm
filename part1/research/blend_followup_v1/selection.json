@@ -1,0 +1,15 @@
+{
+  "selected": [
+    "blend50_50"
+  ],
+  "specs": {
+    "blend50_50": {
+      "lda_weight": 0.5,
+      "cutoff": 0.5
+    }
+  },
+  "selected_at": "2026-11-07T23:48:10.812328+00:00",
+  "reason": "Selected after reviewing all fixed local checks and paired repeats; see README for tradeoffs.",
+  "test_scores_opened_before_selection": false,
+  "upload_status": "Prepared only; manual submission required"
+}

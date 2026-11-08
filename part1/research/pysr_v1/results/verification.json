@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "matched_cases": 84,
+  "new_geometry_fits": 84,
+  "symbolic_heads": 420,
+  "metrics_independently_checked": 2772,
+  "max_metric_error": 0.0,
+  "controls_reused": true,
+  "all_queries_excluded_from_fit": true,
+  "all_observed_labels_preserved": true,
+  "source_hashes_unchanged": true
+}

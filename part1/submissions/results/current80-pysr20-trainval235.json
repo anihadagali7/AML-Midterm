@@ -1,0 +1,53 @@
+{
+  "recipe": "current80-pysr20-trainval235",
+  "reported_kaggle_score": 0.89423,
+  "reported_score_display": "0.89423",
+  "recorded_at_utc": "2026-11-08T01:51:51.131319+00:00",
+  "tag": "part1-current80-pysr20-trainval235-kaggle-0.89423",
+  "submission_file": "part1/submissions/ready/part1_current80_pysr20_trainval235.csv",
+  "submission_sha256": "742dc787fd33b24ab626dcf2ee29810cc3481f1d707de8df0678dec437127d66",
+  "frozen_recipe_file": "part1/research/pysr_blend_submission_v1/protocol.json",
+  "frozen_recipe_sha256": "697677f5310fd6bd023243e5080b3bf9af912a76dcd66bf4c8c4b23277b7d676",
+  "preparation_commit": "d982f8c6",
+  "recipe_registration_commit": "99bf06e8",
+  "evaluation_commit": "80f713fb",
+  "preparation_manifest": "part1/research/pysr_blend_submission_v1/manifest.json",
+  "verified_training_labels": 235,
+  "originally_masked_training_rows": 1014,
+  "test_rows": 312,
+  "component_weights": {
+    "existing_89850_blend": 0.8,
+    "pysr": 0.2
+  },
+  "effective_component_weights": {
+    "anchored": 0.6,
+    "lda_ensemble": 0.2,
+    "pysr": 0.2
+  },
+  "fitting_access": "Inductive. Fresh unchanged PySR fit on all 235 observed labels plus 1,014 originally masked rows; the existing 75/25 component reuses its verified full-235 fits. Test inputs enter prediction only.",
+  "score_provenance": "User reported 0.89423 immediately after receiving the exact PySR blend CSV and scp command. Not independently queried from Kaggle.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "leaderboard_partition": "Not specified",
+  "record_type": "Newly user-reported manual submission; this recording performs no upload or refit.",
+  "preparation_manifest_preserved": true,
+  "comparison": {
+    "parent_recipe": "anchored75-lda25-trainval235",
+    "parent_reported_score": 0.8985,
+    "delta_vs_parent": -0.00427,
+    "matched_cross_agent_control_reported_score": 0.89935,
+    "delta_vs_that_control": -0.00512,
+    "changed_labelsets_vs_parent": 9
+  },
+  "local_evidence": {
+    "study": "part1/research/pysr_v1",
+    "train_mean_sample_f1": 0.927547770700637,
+    "pooled_mean_sample_f1": 0.9197695035460992,
+    "validation_sample_f1": 0.8846153846153846,
+    "chronology98_sample_f1": 0.8775510204081632,
+    "met_registered_both_pool_rule": false,
+    "all_four_headline_checks_regressed": true
+  },
+  "decision": "Do not promote. Kaggle and local checks agree in direction for this fixed PySR addition; this does not prove universal CV/Kaggle agreement or rule out every PySR recipe.",
+  "retention_role": "Compact scored reference for the symbolic-regression comparison. Keep exact CSV, full final scores, portable model state and equations at this checkpoint (about 0.4 MB); nonwinning CV caches and search models have already been discarded.",
+  "score_tie_note": "The numerical score equals original Ani's reported 0.89423, but this is a separate recipe and exact CSV with its own immutable tag."
+}

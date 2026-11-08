@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source_and_input_hashes": true,
+  "independent_sample_and_label_metrics": true,
+  "all_candidates": 5,
+  "evaluation_rows": 3312,
+  "three_control_metrics_reproduced": true,
+  "parent_scored_csv_reproduced": true,
+  "export_ids_labels_and_hash": true,
+  "independent_odds_formula": false,
+  "selected_csv_sha256": "911bc741f9db3b8d5d00c1b01113baac88da2313f493b74ea45e01209c4c8b14"
+}

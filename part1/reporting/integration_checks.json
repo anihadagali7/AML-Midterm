@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "incoming_main": "c2fb3fc18bb00a588c08f594977a1cf304950583",
+  "merged_evidence": "fd0b852802d660ecb9fc1725defffd27a7c444b3",
+  "model_fits": 0,
+  "scientific_evidence_checks": [
+    {
+      "command": "python part1/experiments/cand2_followup_v1/verify_retained.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/experiments/blend_refinement_v2/verify.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/other_combiner_v2/verify_retained.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/partial_secondary_v1/evidence_partial.py verify",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/complementary_heads_v2/evidence.py verify",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/pysr_v1/retained.py verify",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/pysr_blend_submission_v1/verify_retained.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/current_leaders_local.py verify",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/reporting/verify_derived.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python part1/research/blend_followup_v1/verify.py",
+      "exit_code": 0
+    }
+  ],
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0",
+    "iterative_stratification": "0.1.9"
+  },
+  "report": {
+    "pages": 4,
+    "engine": "Tectonic 0.17.0",
+    "source_sha256": "0ae6c67b367cb77d129ac3ea1dc008240219bc241ffaf258a1306e2555f4ebf4",
+    "pdf_sha256": "d98c70658ffa8e9755689b01fe38a854be9f148ace59b88dc0daa8071ccd9770",
+    "unresolved_references": false,
+    "overfull_boxes": false
+  },
+  "note": "Initial checks in the base environment lacked iterative-stratification. All three affected checks passed in the recorded research environment; reporting/requirements.txt includes that dependency."
+}

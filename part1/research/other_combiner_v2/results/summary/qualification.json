@@ -1,0 +1,9 @@
+{
+  "other_rbf": false,
+  "other_conditional_rbf": false,
+  "pseudo_lda_quarter": false,
+  "pseudo_lda_confidence": false,
+  "combiner_per_label": false,
+  "combiner_other_only": false,
+  "calibration_control": false
+}

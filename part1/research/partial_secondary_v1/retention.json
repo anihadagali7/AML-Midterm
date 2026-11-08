@@ -1,0 +1,37 @@
+{
+  "kept_recipes": [
+    "parent",
+    "binary_complete",
+    "binary_unknown"
+  ],
+  "reason": "Useful matched comparison isolates unknown labels from binary architecture and documents opposite CV/chronology behavior.",
+  "removed": "84 per-case prediction packets and84 JSON fit audits after checking all summaries. No fitted estimators or generated datasets were saved. Aggregate fit-count audits remain.",
+  "verification_before_cleanup": {
+    "passed": true,
+    "outer_cases": 84,
+    "metric_rows_independently_checked": 147,
+    "partial_label_rounds_checked": 504,
+    "gold_negative_labels_preserved": true,
+    "class_prior_weight_mass_fixed": true,
+    "parent_max_score_error": 0.0,
+    "parent_four_headlines_reproduced": true,
+    "ids_groups_and_coverage_checked": true,
+    "half_blend_formulas_checked": true,
+    "all_source_hashes_unchanged": true,
+    "protocol_sha256": "fd98a9d74ecfb3bc9a50abb1b5ec81999c5484df108432bc928d56dab44b5086"
+  },
+  "hashes": {
+    "results/summary/qualification.json": "ecdcb46dbee0459cf13a01df509d722aad2bdf682fa4a56d6e629c53acc6579e",
+    "results/summary/per_label_scores.csv": "096bf1763c12c83b63903b52513d6d507b77257aa8b2b4ed66901bab802f1005",
+    "results/summary/repeat_scores.csv": "a6eab6c36c41eb61406113fc2dd1502a08bebe0f3474782c4d4af4d761a4170a",
+    "results/summary/paired_summary.csv": "300a83c2562bee69439c30d5eb2cc5d2170404b96cbba1b434574aee0badfa29",
+    "results/summary/fit_summary.json": "91f021f191e916ba0a8d7ec249e7fbc279655ad453f01d263ec4921ab46ac91f",
+    "results/summary/training_audits.csv": "3da2045e9324e196b4d439da21c8c2d28697506e24dfc7d899cd2876c388b438",
+    "results/summary/overview.csv": "a8bf98dcc875fd61ca4fd66b79c6d0c729141d2dbaed1d630a626879468f3968",
+    "results/summary/paired_repeat_deltas.csv": "414da8a2c8e74a3101b3989831c49b2f75184965ab8453c11c601bb3addf0d6f",
+    "results/summary/verification.json": "b4c5365396f78c8c6d141703c4c111de8045d4e7a66d320f92aa6115be823ed4",
+    "results/summary/other_subgroups.csv": "ca2112f9556c5472bee6e30715c4161e26b9baa6da5e1d4ef7df44130fd17405",
+    "results/retained_comparison.npz": "021f32320f2ce2188352c58030f2aa5cec59be878518afafcf88051898274b5f",
+    "math_check.json": "03fd190cea353c493dde7758dc8dbcd4d053e318e85c3b600db0fcb6d2f08b23"
+  }
+}

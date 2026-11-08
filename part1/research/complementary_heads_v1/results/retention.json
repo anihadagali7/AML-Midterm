@@ -1,0 +1,34 @@
+{
+  "kept": [
+    "parent",
+    "anchored",
+    "calibration",
+    "head_ordinary",
+    "head_diverse10",
+    "head_diverse30",
+    "fusion_ordinary",
+    "fusion_diverse10",
+    "fusion_diverse30"
+  ],
+  "discarded": [
+    "blend_ordinary",
+    "blend_diverse10",
+    "blend_diverse30"
+  ],
+  "rationale": "Matched lambda0/.1/.3 heads and learned fusion diagnose diversity versus accuracy; calibration and two established controls support interpretation. Unsuccessful fixed-blend fold predictions and all optimizer/nested fold caches removed after full verification.",
+  "full_verification": "summary/verification.json",
+  "files": {
+    "matched_predictions.npz": "aee97038e17a32da1c8797179726430f15978481b05f5efba85fcabeacc00b2b",
+    "summary/diversity.csv": "3b6ec04ba71c4375ccccd9fb1fee1746bf7790cbeec89ee3f3933703a18fd10c",
+    "summary/fit_summary.json": "874e1802faa6223b9197d5bc50f89dd36804248e1a8b34aa017d2a0c0564c6a8",
+    "summary/optimization.csv": "3a0debd75b9cc5c90c358f4d821763d297edff2d10c9d6cf5a3f039e3199bea4",
+    "summary/other_subgroups.csv": "c34810b3828b9fd264073157b84c61bc58839d7eca491f8ff4407b971a2e5e6d",
+    "summary/overview.csv": "5332fefdec1054c25ccc8cb675e45c5a34aa823a71f072a28e48ea5c23f3fa33",
+    "summary/paired_repeat_deltas.csv": "7789fa6d1e2bf728831447f9b47b813a1217903fd12a73cc5d8021d649d0bec1",
+    "summary/paired_summary.csv": "ea1d0aacf17df289f6aa735f00400a7243da121dc81907fb9338cd03f7eca73d",
+    "summary/per_label_scores.csv": "99576f45517b18d6a6b0acac75441bf767e01b89b1afb51c9060c6f7d7dff55c",
+    "summary/qualification.json": "8d73c68859c2cbbac0ea9eb565e5e47a098ea40fa8465d398a85bacf14188b73",
+    "summary/repeat_scores.csv": "e8ac93ada8891fc4cdb64b4e95943fbfbba92068cbf381cc1fa6cf93150b2b10",
+    "summary/verification.json": "39255e2624fc193c5b2fa1db2368cdc91636b473ca12ea6769dd57f7769081be"
+  }
+}

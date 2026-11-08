@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-07T23:51:12.580084+00:00",
+  "parent": "80% anchored /20% Cand2, user-reported .89935",
+  "secondary_control": "Original anchored .89636 and previously submitted LDA ensemble .89401",
+  "candidates": [
+    "native_lda10",
+    "native_lda20",
+    "log_pool",
+    "uncertainty"
+  ],
+  "recipes": {
+    "native_lda10": "70% anchored +20% Cand2 +10% LDA after inverse centering to native .3 cutoff",
+    "native_lda20": "60% anchored +20% Cand2 +20% inverse-centered LDA",
+    "log_pool": "expit(.8*logit(anchored)+.2*logit(Cand2)); .3 cutoff",
+    "uncertainty": "Per-label Cand2 weight .4*(1-2*abs(centered_anchor-.5)); convex native score combination, .3 cutoff"
+  },
+  "centering": "expit(logit(clip(score,1e-9,1-1e-9))-logit(.3)); nonempty argmax fallback for every decoder",
+  "evaluation": "All saved grouped eight-repeat five-fold plans in both pools, original validation and all three chronology windows; reuse exact component predictions. No new classifier fitting.",
+  "supplementary_exception": "All four fixed candidates receive supplementary checks as an explicitly declared diagnostic.",
+  "promotion_rule": "Positive means and >=5/8 paired wins in BOTH pools against .89935 parent; keep supplementary regressions visible.",
+  "exploratory_selection": "Exclude candidates losing >.005 sample F1 on original validation or pooled chronology if any survive. Rank remaining by maximum minimum(train_delta,pooled_delta), then sum of those two deltas, then registration order. If none survive, rank all and disclose regression. Skip a candidate only if final label predictions exactly duplicate the scored parent. Export one; no automatic promotion.",
+  "access": "All component fits inductive on eligible training inputs; final components trained on 235 gold +1014 masked rows. Test inputs prediction only. IDs only alignment.",
+  "batch_history": "V1 nearby weights and centered LDA additions all failed to improve both pools. This second batch tests four fixed functional forms; no further batch. Deliver the best v2 candidate only if its registered CV ranking exceeds the v1 selected candidate; otherwise retain v1.",
+  "limitation": "Selected after the parent Kaggle outcome; small fixed search on heavily reused local development folds. Not an untouched estimate. No J tuning or hidden-label inference.",
+  "hashes": {
+    "run.py": "fbdb3313c30c18aeae90048f2855dc70772e9d9834f9bae6f90103f2ab323536",
+    "evaluation_inputs.npz": "1d741357d1e34815bc1dc93204fe44cceb261304d82611cb4c5c5a4eb4db200a",
+    "final_inputs.npz": "4c071f2e2b246dae979f6d0add0c5d14293d460dfc709f734ca6400770578c86",
+    "parent_scored.csv": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+    "parent_reported_result.json": "1c684c3a70eb7a50814bb00a165e4ed2bae6f2c90ccb8d9d6d9898f0856d88d6",
+    "provenance.json": "424dd335ec51652c30f62c0e41b82047935fb3f393ebad886430ec5d2eec2952"
+  }
+}

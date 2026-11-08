@@ -1,0 +1,22 @@
+{
+  "status": "prepared; no upload or Kaggle score",
+  "selected": {
+    "recipe": "parent_lda10",
+    "guardrail_passed": true,
+    "cv_min_delta": -0.0007961783439490444,
+    "cv_total_delta": -0.0007961783439490305,
+    "order": 3,
+    "full_promotion_rule": false,
+    "final_changed_rows_vs_parent": 1,
+    "changed_vs_parent": 1
+  },
+  "csv": "submissions/candidates/refinement_parent_lda10.csv",
+  "sha256": "911bc741f9db3b8d5d00c1b01113baac88da2313f493b74ea45e01209c4c8b14",
+  "rows": 312,
+  "gold": 235,
+  "masked": 1014,
+  "test_inputs_used_for_fitting": false,
+  "no_new_component_fits": true,
+  "parent_scored_csv_reproduced": true,
+  "protocol_sha256": "ddf314d9fa2ed4a0cc1d88eae28d04034d303209cf493eabe2ba205c4185f1b9"
+}

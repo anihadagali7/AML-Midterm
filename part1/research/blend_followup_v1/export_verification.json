@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "metric_values_recomputed": 8316,
+  "all_cases": 84,
+  "distinct_labelsets_between_candidates": 3,
+  "export_rows_each": 312
+}

@@ -1,0 +1,8 @@
+{
+  "parent_commit": "cde3d500",
+  "adapter_origin": "part1/experiments/cand2_followup_v1/strict_adapter.py",
+  "inputs_origin_commit": "da68252a",
+  "inputs_origin": "part1/experiments/blend_refinement_v2/evaluation_inputs.npz",
+  "base_main": "766d16d3bc74248cb7d8f4c1e7240094ebd5a55e",
+  "note": "Source modules copied unchanged; manifest native transductive flag is overridden by strict adapter. Parent input arrays retain original 84 case outputs."
+}

@@ -1,0 +1,6 @@
+{
+  "source_commit": "1150f9c",
+  "source_prediction_sha256": "445c54466ac5adefdb9ad593942e444014cbdc19080be51bfa163a4c2d2049dc",
+  "source_submission_sha256": "521f2825cfc20711f435edc633038b1ca59834e4804f06fc358fce05337ddde7",
+  "source_fitting_access": "strict inductive, 235 gold + 1014 masked; five inner seeds"
+}

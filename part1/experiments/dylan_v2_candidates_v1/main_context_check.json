@@ -1,0 +1,9 @@
+{
+  "main_head_at_completion": "5736028047e656ecd5d932c4bcf25c70e7384896",
+  "note": "Main independently gained an anchored transductive study during this run. Anchored source, testing policy and workflow instructions still match this worktree. No merge or rebase performed.",
+  "unchanged_hashes": {
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "part1/AGENTS.md": "1291b5fa796010eb32e7ac181d0e784a94a62e81b2c6601ef85fd7a156616cb9"
+  }
+}

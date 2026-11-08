@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "retained_metric_rows_rescored": 189,
+  "retained_recipes": [
+    "parent",
+    "anchored",
+    "calibration",
+    "head_ordinary",
+    "head_diverse10",
+    "head_diverse30",
+    "fusion_ordinary",
+    "fusion_diverse10",
+    "fusion_diverse30"
+  ],
+  "prediction_rows": 3312,
+  "outer_cases": 84,
+  "protected_hashes_unchanged": true
+}

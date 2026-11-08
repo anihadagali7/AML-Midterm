@@ -1,0 +1,53 @@
+{
+  "version": "partial-secondary-v1",
+  "registered_at": "2026-11-08T00:48:28.774951+00:00",
+  "base_main": "766d16d3bc74248cb7d8f4c1e7240094ebd5a55e",
+  "parent": "Scored .89935 arithmetic anchored80/Cand2_inductive5_20. Original anchored .89636 is secondary control.",
+  "hypothesis": "Confident primary pseudo-labels may incorrectly imply absent Other. Keep unselected Other unknown, with gold negatives still observed. Targets the rare Recruitment+Other combination without changing supplied labels.",
+  "motivation": "Prior full235 anchored fit generated 757 pseudo rows:756 single-label and1 two-label. Previous corrections/specialists failed the complete rule. This is a distinct hypothesis, not proof those pseudo labels are wrong.",
+  "candidates": {
+    "neighbor_unknown": "Only Other neighbor voting changes. Pseudo Other=0 is unknown and excluded from Other neighbor retrieval; gold0/1 and pseudo Other1 remain observed. Retrieve ten eligible Other neighbors. Original multiclass LR/LDA and cluster teacher unchanged. Relearn pseudo labels using altered neighbor votes each round.",
+    "binary_complete": "Architectural control. Replace only the Other output of LR/LDA with binary observed-label classifiers; all pseudo Other0/1 remain complete. Neighbor and cluster mapping retain complete labels.",
+    "binary_unknown": "Matched to binary_complete: exclude pseudo Other0 from binary Other LR/LDA fits, Other neighbor retrieval, and Other cluster-rate numerator/denominator/prior. Supplied negatives remain observed. Other four class outputs use original multiclass LR/LDA/votes; they can change through regenerated pseudo labels.",
+    "binary_complete_half": "Fixed conservative architectural control: .4 original anchored +.4 binary_complete anchored +.2 unchanged Cand2.",
+    "binary_unknown_half": "Fixed conservative partial-label variant: .4 original anchored +.4 binary_unknown anchored +.2 unchanged Cand2."
+  },
+  "binary_settings": "Other LR C.1,max_iter3000,tol1e-4. Raw gold weight1,pseudo.25. Rebalance observed class-weight masses to .8 negative/.2 positive and total gold-row count each fit, preventing removal of unknown negatives from changing effective prior/regularization mass. Other LDA uses raw1/.25 weights, weighted class means/shrinkage covariance, fixed .8/.2 priors. These match the original equal-five-class .2 Other prior in intent, not mathematical identity; binary_complete is required to isolate architecture from unknown treatment.",
+  "unchanged": "Original scaler,PCA30,GMM30,n_init3,seeds0,C.1,LR class weights, two pseudo refreshes, row acceptance max>=.8 and positive label cutoff.3+argmax. Only Other can be unknown; other four pseudo labels retain current treatment. Final80/20 blend and cutoff.3+argmax; no score normalization, thresholds or blend weights selected on outcomes.",
+  "schedule": "All five variants on80 saved grouped folds plus validation78 and three chronology windows. Fresh unchanged anchored and three altered model fits per case; half blends reuse scores. Cached strict five-seed Cand2 reused with matching IDs/truth/plans and frozen source provenance. No new Cand2 fits needed.",
+  "supplementary_exception": "Evaluate all variants on all four supplementary cases regardless of CV, predeclared to diagnose the hypothesis.",
+  "access": "Inductive: only eligible fitting gold/masked inputs; exact saved order and group purges. Original validation retains historical no-outer-purge boundary. Query functions receive embeddings only. No actual Kaggle test inputs loaded during benchmarking.",
+  "advancement": "Positive mean sample-F1 delta and>=5/8 paired wins in BOTH pools against .89935 parent. Also compare to anchored and binary_unknown versus matched binary_complete (likewise half). Keep every supplementary regression visible. No automatic promotion or upload. A qualifying variant with validation/chronology regressions no worse than .005 may receive a final235 candidate export.",
+  "scoring": "Complete OOF sample-F1 per repeat, population SD, paired deltas/wins/ties/losses, macro F1, every label precision/recall/F1/support, Other-only and Recruitment+Other recall/false positives, each chronology window and pooled98.",
+  "checks": "Fresh anchored matches all saved scores within1e-7 and decisions exactly; no-change subclass matches on first case. Unit-weight binary LDA equals sklearn shrinkage LDA, unknown pseudo rows cannot vote negative, known gold negatives retained, binary weighted prior masses fixed. Independently rescore outputs and verify IDs/groups/coverage/source hashes.",
+  "limitations": "Reused development labels/splits, only nine gold Recruitment+Other examples in pooled235, unknown-label omission may add false positives or broaden neighbor radius. Binary architecture changes require its complete-label control. No outer label/threshold tuning.",
+  "retention": "Keep source/protocol, complete compact summaries/negatives and independent verification. Keep detailed predictions only for qualifying/useful comparisons after checking all summaries; remove failed fold caches.",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0"
+  },
+  "sources": {
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "part1/research/anchored_transductive_v1/models.py": "948f22b61047bf469f510df22694e75b89b8a9422711d6d5318b558b6a991642",
+    "part1/research/anchored_transductive_v1/run.py": "f56bcac1e04156399b23d91df02cb036698490871046b0cf52333f51418c8ffb",
+    "part1/research/partial_secondary_v1/check_math.py": "44c1b35732be747b7de91fc674c4a4abaad03543566d5663575a81799d8ae273",
+    "part1/research/partial_secondary_v1/parent_inputs.npz": "1d741357d1e34815bc1dc93204fe44cceb261304d82611cb4c5c5a4eb4db200a",
+    "part1/research/partial_secondary_v1/parent_reported_result.json": "1c684c3a70eb7a50814bb00a165e4ed2bae6f2c90ccb8d9d6d9898f0856d88d6",
+    "part1/research/partial_secondary_v1/partial_model.py": "247efe08f68df7a21523987b92c41ccb9655d4012b2206352c500043314daf59",
+    "part1/research/partial_secondary_v1/provenance.json": "5cb5ae0b40de4e2a760ffd4ca193405b686c9fadfd509779298b618b9f4ede76",
+    "part1/research/partial_secondary_v1/study_run.py": "5e16fc2ab69b7cb4dcd0bdfbd060631ccdf44b835d8c915c21bda4399df5a609"
+  }
+}

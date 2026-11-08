@@ -1,0 +1,85 @@
+{
+  "source_commit": "2bf7e4f",
+  "copied_unchanged": {
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/__init__.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/__init__.py",
+      "sha256": "1a4193bd55a5a5b2a43a378cb9f54b65922f70dbbb652807e899db5224cd15d9"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/cache.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/cache.py",
+      "sha256": "548ed28caa2acf1b2b9eb629750327e137878e02fc476c75b35035f9cab795c8"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/features.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/features.py",
+      "sha256": "572ee22ba5e2ed855bff4eac11b1cbb19f98d424b19be937e691becbb18e80dd"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/blocks.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/blocks.py",
+      "sha256": "426c4c6df627f0a2f985d3797f95c33f1a159d732ab06a1a9f222a744fdca119"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/graph.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/graph.py",
+      "sha256": "c554b0f993074a695de7797f8b982e962a664eb23bc9e35887d61a130972c436"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/head.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/head.py",
+      "sha256": "cdede0e03b391fa6cc04cd81c6f9f88749711bf85ac60c20feb5624f6419191e"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/classifiers.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/classifiers.py",
+      "sha256": "192636327764c72061350a27b68eea55c2622f36b7cead3d3724ec93cc1a2a15"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/labelers.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/labelers.py",
+      "sha256": "f818fadb88de18386c4136b783383e6b06658c8816fcce315e34650217cfafd6"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/pipeline.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/pipeline.py",
+      "sha256": "bd7176f27af31cafb283c742762e02201d81684031be91826e589ba6003a232e"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/synth.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/synth.py",
+      "sha256": "0db8de6c693141e024da022d9a21b85dd6714f8e840422577e4ea81dd3e45c73"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/data.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/data.py",
+      "sha256": "04708ec48b1d0bb709b5bbb99d36ff936dec95a7eb116fad6a03bd5143b9b5fd"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/context.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/context.py",
+      "sha256": "6ebc82855ce3cd4bcf61e2be9179a9df65c250ecb8700f7727c9774e9d442b9f"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/strict_adapter.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/strict_adapter.py",
+      "sha256": "1455ac44397465fddba8d8e448828b5a8ab91e187f08a0429e8fe4cbf790eea0"
+    },
+    "part1/experiments/anchored_graph_components_v1/requirements-lock.txt": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/requirements-lock.txt",
+      "sha256": "faa81af5d99aa1ad7f95189c38fd349d7f154e0b32c7e902525cb56f9a469ff5"
+    },
+    "part1/experiments/anchored_graph_components_v1/cand1_source_manifest.json": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/manifests/cand1_selected_1se.manifest.json",
+      "sha256": "1da330d41ac98144489dccd3b4b84f588acbc87f86141a91ed75e9f01a89ac04"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/configs.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/configs.py",
+      "sha256": "fae1bea4abe340100fc9d65aa4e1c0088b197880d3753944297fcbf468b1fbf5"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/evaluate.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/evaluate.py",
+      "sha256": "8d4c12d023632889ef1b416eafe47fd5aa9904065f725ab327fa5f37cc0fff4c"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/search.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/search.py",
+      "sha256": "a7c0e64f08693342fd115dfa7cc6bb23f45afe565a852ffd91e2e0f141a68a7f"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/submit.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/submit.py",
+      "sha256": "e4eb29a5ae75631738c205b1de0c4433c34fcfeccf1f433f3b2b0ae8ded961dc"
+    },
+    "part1/experiments/anchored_graph_components_v1/vendor/p1lib/viz.py": {
+      "source": "/Users/matthew/Desktop/michael/AML-Midterm-derived-benchmarks/part1/experiments/dylan_v2_candidates_v1/source/p1lib/viz.py",
+      "sha256": "b4c28474fa7d34906bbecb45fe3a3a69dbf8cb7e79f7077f6d42772f8d2fad13"
+    }
+  }
+}

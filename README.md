@@ -1,13 +1,20 @@
 # AML-Midterm
 
+## Submission materials
+
+The [submission area](submission/README.md) contains the
+[combined report PDF](submission/report.pdf), its [source](submission/report/main.tex),
+and the [finalized Part 2 notebooks](submission/midterm/part2/README.md).
+The working projects and complete research histories remain in `part1/` and `part2/`.
+
 ## Part 1: stopping reasons
 
-The **75% anchored / 25% LDA ensemble blend** scored **0.89850 sample-wise F1** on Kaggle (user-reported; higher is better), improving the previous anchored result of 0.89636 by 0.00214. Both components use their verified full-235 fits. The [exact-file result](part1/submissions/results/anchored75-lda25-trainval235.json) records its CSV hash, recipe and score provenance.
+The selected report winner is **80% anchored / 20% strict-inductive five-seed Cand2**, with user-reported Kaggle sample-wise F1 **0.89935**. Model exploration is closed. The full source, scored artifact and completed research, including PySR, are consolidated here.
 
-- [Anchored component notebook](part1/part1.ipynb), [winning blend](part1/research/anchored_lda_blend_submission_v1/README.md), and [Part 1 overview](part1/README.md)
-- [Testing methodology](part1/TESTING_POLICY.md) and [research index](part1/RESEARCH_INDEX.html)
-- [Scored submissions](part1/submissions/README.md) and [retention policy](part1/RETENTION.md)
-- [Historical notebook archive](part1/research/historical_notebooks/README.md)
+- [Part 1 overview](part1/README.md), [complete winning model](part1/MODEL.md), and [report tables and limitations](part1/REPORT_GUIDE.md)
+- [Exact checkpoint and report handoff](part1/REPORT_HANDOFF.md), [research index](part1/RESEARCH_INDEX.html), and [verification](part1/reporting/README.md)
+- [Combined report source](submission/report/main.tex) and [compiled PDF](submission/report.pdf)
+- [Anchored component notebook](part1/part1.ipynb); the complete winner is reproduced by the frozen blend exporter linked above
 
 ## Part 2: current best submission
 

@@ -1,0 +1,20 @@
+{
+  "recipe": "anchored80-cand2-inductive20-trainval235",
+  "reported_kaggle_score": 0.89935,
+  "tag": "part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935",
+  "submission_file": "part1/submissions/candidates/anchored80_cand2_inductive20.csv",
+  "submission_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+  "frozen_recipe_file": "part1/experiments/cand2_followup_v1/blend_export_protocol.json",
+  "frozen_recipe_sha256": "8b4e2e9e69c2fddf026038a883411aa3c4e59cb870025d01c5fe2729a4b76cb4",
+  "fitting_source_commit": "ef4d7e0",
+  "verified_training_labels": 235,
+  "originally_masked_training_rows": 1014,
+  "fitting_access": "Inductive; test inputs prediction-only; anchored final235 plus five-seed Cand2 final235 scores.",
+  "score_provenance": "User reported 0.89935 immediately after receiving the exact 80/20 CSV and scp command. Not independently queried from Kaggle.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "leaderboard_partition": "Not specified",
+  "record_type": "Newly reported manual submission; no upload/refit by agent in this recording step.",
+  "recorded_at_utc": "2026-11-07T23:47:13.740711+00:00",
+  "previous_best_reported_score": 0.89636,
+  "reported_improvement": 0.00299
+}

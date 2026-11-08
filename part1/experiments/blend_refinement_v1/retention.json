@@ -1,0 +1,6 @@
+{
+  "status": "V1 candidates not chosen for submission; retained fixed code, inputs, full metrics, selection and verification.",
+  "removed_files": 3,
+  "removed_bytes": 41135,
+  "reason": "V2 log-odds blend outranked the V1 selected candidate under the same predeclared CV criterion. V1 prepared artifact hashes remain historical; no V1 candidate was uploaded."
+}

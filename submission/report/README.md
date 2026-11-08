@@ -1,9 +1,13 @@
 # Combined report
 
-`main.tex` is the combined report previously named `report.tex` at the repository
-root. `../report.pdf` is the corresponding existing PDF, preserved byte-for-byte.
+`main.tex` is the combined report from the Part 1 integration at `ee750f6f`,
+previously named `report.tex` at the repository root. It describes the selected
+Part 1 anchored/Cand2 blend at 0.89935 and the Part 2 file-13 model at 0.58465.
+`../report.pdf` is its verified four-page PDF, preserved byte-for-byte.
 Only TeX resource paths and compilation instructions changed during relocation.
-This move does not revise the scientific content or validate the Part 1 section.
+The current bibliography includes the incoming Part 1 additions. The
+[Part 1 report verifier](../../part1/reporting/README.md) checks the relocated
+source, PDF and bibliography against that upstream checkpoint.
 
 Compile from this directory with a LaTeX installation:
 

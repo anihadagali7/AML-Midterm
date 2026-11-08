@@ -1,0 +1,512 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Dylan v2 candidates on both benchmarks</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;margin:0;background:#f2f6f7;color:#19323c}
+main{max-width:1180px;margin:auto;padding:42px 30px 72px;background:white}
+h1{font-size:36px;line-height:1.2}h2{margin-top:36px;font-size:24px}p{max-width:1000px}
+.verdict{background:#eaf6f2;border-left:5px solid #16816f;padding:12px 22px}.note{font-size:14px;color:#536b75}
+a{color:#086f79}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;margin:16px 0}
+th,td{padding:10px 12px;border-bottom:1px solid #d7e1e6;text-align:right;vertical-align:top}
+th:first-child,td:first-child{text-align:left}th{background:#edf3f5}li{margin:8px 0}code{font-size:13px}
+@media print{body,main{padding:8px;background:white}}
+</style><main>
+<p class="note">Part 1 · four fixed standalone candidates · three supplied fixed blends · anchored control</p>
+<h1>How do Dylan’s new models score?</h1>
+<div class="verdict"><p><strong>None improves on anchored under our current benchmark.</strong>
+All four standalone candidates and all three blends score lower on Train157 CV, Pooled235 CV, original validation and chronology.
+Several do score higher on Dylan’s J, because they improve his chronological test while giving up random-CV performance.
+That is a difference in evaluation setup and model behavior, not an observed Kaggle gain.</p></div>
+
+<h2>What was tested</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Fixed definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cand1</td>
+      <td>Balanced shrinkage LDA; Correct &amp; Smooth graph pseudo-labels; temperature calibration; expected-F1 decoding. Dylan’s one-SE selection.</td>
+    </tr>
+    <tr>
+      <td>cand2</td>
+      <td>Balanced LDA with K-means(8) soft features and kNN-vote(20) features; different fixed graph and pseudo-label weights. Highest native J among the four candidates.</td>
+    </tr>
+    <tr>
+      <td>cand4</td>
+      <td>Equal LR, calibrated LDA and direct Correct &amp; Smooth predictions; SLD prior correction (strength 100); expected-F1 decoding.</td>
+    </tr>
+    <tr>
+      <td>cand5</td>
+      <td>Powerset LR C=0.1; Correct &amp; Smooth pseudo-labels; SLD prior correction (strength 25); expected-F1 decoding. Dylan’s recommended robustness hedge.</td>
+    </tr>
+    <tr>
+      <td>Blends</td>
+      <td>Three supplied equal-weight blends: anchored+cand1, anchored+cand5, and anchored+cand1+cand5. Average label scores, then the fixed 0.3 cutoff plus top-label fallback.</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>These are executable v2 pipelines, not the earlier v1 proposal sketches. The package’s cand3 is identical to cand1 and was not duplicated.
+The two files under its <code>reference/</code> directory are explicitly described as lacking the assignment’s unsupervised-label-filling step; they are documented in
+<a href="candidate_definitions.md">the supplied candidate inventory</a>, but are not additional proposed candidates in this panel.</p>
+<p>We freshly fit all four candidates and anchored on every evaluation context. The three blends reuse those per-context predictions with their supplied weights.
+There are 84 contexts under our policy and 54 under Dylan’s setup: 138 contexts and 1,104 recipe evaluations including blends.
+No classifier parameter, pseudo-label weight, graph setting, decoder, or blend weight was tuned.</p>
+
+<h2>Our benchmark, with our fitting rules</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Recipe</th>
+      <th>Train157 CV</th>
+      <th>Pooled235 CV</th>
+      <th>Validation78</th>
+      <th>Chronology98</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anchored (submitted leader)</td>
+      <td>0.93206</td>
+      <td>0.92137</td>
+      <td>0.89103</td>
+      <td>0.88435</td>
+    </tr>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>0.92171</td>
+      <td>0.90220</td>
+      <td>0.88248</td>
+      <td>0.86735</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>0.92330</td>
+      <td>0.90360</td>
+      <td>0.88034</td>
+      <td>0.86395</td>
+    </tr>
+    <tr>
+      <td>Cand4: LR/LDA/graph ensemble</td>
+      <td>0.91412</td>
+      <td>0.89415</td>
+      <td>0.85256</td>
+      <td>0.84150</td>
+    </tr>
+    <tr>
+      <td>Cand5: LR + graph labels + prior adjustment</td>
+      <td>0.91287</td>
+      <td>0.89676</td>
+      <td>0.85684</td>
+      <td>0.82653</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>0.92728</td>
+      <td>0.91649</td>
+      <td>0.88462</td>
+      <td>0.87925</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand5</td>
+      <td>0.92542</td>
+      <td>0.91622</td>
+      <td>0.87393</td>
+      <td>0.87245</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1 + cand5</td>
+      <td>0.92994</td>
+      <td>0.91312</td>
+      <td>0.86752</td>
+      <td>0.87075</td>
+    </tr>
+  </tbody>
+</table></div>
+<p class="note">Sample-wise F1; higher is better. Each CV pool uses all eight saved repeats × five grouped folds.
+Validation is the separate 157→78 fit. Chronology pools the three fixed windows, totaling 98 held-out rows.
+The supplied pipelines require the documented inductive adapters below to satisfy these rules.</p>
+<p>Cand2 is the strongest standalone model on the two CV pools, but it remains behind anchored by <strong>0.00876</strong> on Train157 and <strong>0.01777</strong> on Pooled235.
+Anchored+cand1 is the closest blend on Pooled235, behind by <strong>0.00488</strong>.
+The three-way blend is closest on Train157, but its Pooled235, validation and chronology scores all regress.</p>
+<p>All four standalone candidates lose to anchored on <strong>every one of the eight Pooled235 repeats</strong>.
+No candidate or blend has a positive mean difference in either pool, and none passes the requirement for at least five wins in both pools.
+The smaller blend gaps are uncertain; the result is a failure to demonstrate improvement, not proof of inferiority on every possible future sample.</p>
+
+<h2>Dylan’s original benchmark, reproduced</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Recipe</th>
+      <th>A: random CV</th>
+      <th>B: chronology</th>
+      <th>C: validation</th>
+      <th>J = ½A + ½B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anchored (submitted leader)</td>
+      <td>0.92461</td>
+      <td>0.84686</td>
+      <td>0.89103</td>
+      <td>0.88573</td>
+    </tr>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>0.90851</td>
+      <td>0.87604</td>
+      <td>0.88248</td>
+      <td>0.89227</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>0.90773</td>
+      <td>0.88984</td>
+      <td>0.87179</td>
+      <td>0.89879</td>
+    </tr>
+    <tr>
+      <td>Cand4: LR/LDA/graph ensemble</td>
+      <td>0.91233</td>
+      <td>0.84574</td>
+      <td>0.86538</td>
+      <td>0.87904</td>
+    </tr>
+    <tr>
+      <td>Cand5: LR + graph labels + prior adjustment</td>
+      <td>0.90909</td>
+      <td>0.86926</td>
+      <td>0.86538</td>
+      <td>0.88917</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>0.91901</td>
+      <td>0.87289</td>
+      <td>0.88462</td>
+      <td>0.89595</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand5</td>
+      <td>0.92234</td>
+      <td>0.85071</td>
+      <td>0.87821</td>
+      <td>0.88652</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1 + cand5</td>
+      <td>0.91872</td>
+      <td>0.87496</td>
+      <td>0.87607</td>
+      <td>0.89684</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Dylan A is ten repeats of ungrouped, label-combination-stratified five-fold CV on 235 labels.
+B averages the overlapping 2004, 2005 and 2006 chronological holdouts, while keeping all 1,014 masked training rows available.
+J weights A and B equally. C is the original validation check.</p>
+<p><strong>Cand2 is best on native J: 0.89879 versus anchored’s 0.88573.</strong>
+Its gain comes from B (+0.04298), while A falls by 0.01688 and validation falls by 0.01923.
+Cand1 and cand5 also trade lower A/C for higher B/J. Cand4 loses to anchored on all four native metrics.
+Anchored is best on A and C across this complete panel.</p>
+<p>All 28 supplied A/B/C/J checks for the four candidates and three blends reproduced, with maximum absolute difference
+1.1e-16. These are fresh measurements, not copied score cells.
+See <a href="native_reproduction.csv">the exact reproduction check</a>.</p>
+
+<h2>Five-seed averaging used by the proposed final CSVs</h2>
+<p>Dylan’s published benchmark uses inner seed0, but his final candidate builder averages seeds 0–4.
+After completing the primary comparison, we separately froze and tested that averaging procedure for every candidate on every context, with no settings changed and no candidates selected out.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Recipe</th>
+      <th>Our Train157</th>
+      <th>Our Pooled235</th>
+      <th>Our validation</th>
+      <th>Our chronology</th>
+      <th>Native five-seed J</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anchored (submitted leader)</td>
+      <td>0.93206</td>
+      <td>0.92137</td>
+      <td>0.89103</td>
+      <td>0.88435</td>
+      <td>0.88573</td>
+    </tr>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>0.92078</td>
+      <td>0.90220</td>
+      <td>0.87393</td>
+      <td>0.86735</td>
+      <td>0.89074</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>0.92330</td>
+      <td>0.90360</td>
+      <td>0.87179</td>
+      <td>0.86395</td>
+      <td>0.89786</td>
+    </tr>
+    <tr>
+      <td>Cand4: LR/LDA/graph ensemble</td>
+      <td>0.91332</td>
+      <td>0.89335</td>
+      <td>0.84829</td>
+      <td>0.84320</td>
+      <td>0.87610</td>
+    </tr>
+    <tr>
+      <td>Cand5: LR + graph labels + prior adjustment</td>
+      <td>0.91298</td>
+      <td>0.89624</td>
+      <td>0.85897</td>
+      <td>0.82823</td>
+      <td>0.89013</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>0.92755</td>
+      <td>0.91613</td>
+      <td>0.88462</td>
+      <td>0.87925</td>
+      <td>0.89624</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand5</td>
+      <td>0.92542</td>
+      <td>0.91613</td>
+      <td>0.87821</td>
+      <td>0.87075</td>
+      <td>0.88769</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1 + cand5</td>
+      <td>0.93020</td>
+      <td>0.91259</td>
+      <td>0.87179</td>
+      <td>0.87075</td>
+      <td>0.89828</td>
+    </tr>
+  </tbody>
+</table></div>
+<p><strong>Averaging five inner seeds leaves every candidate and blend below anchored on all four current-policy means.</strong> The averages combine raw class-combination probabilities and source priors before applying the decoder and prior correction, just like Dylan’s final builder.
+The native validation case matches that unchanged builder exactly for all four candidates, including its raw probabilities, headed probabilities and labels.
+Anchored is deterministic here; its already-fitted control predictions were reused, not counted as fresh fits.</p>
+<p class="note">These are five inner seeds per outer training split, not five new independent datasets or five extra outer-CV repeats.
+The native five-seed J column is newly measured and is distinct from Dylan’s published single-seed J above.
+The strict version still needs the same fitting-boundary adapters. No full-data submission CSV was regenerated.</p>
+<p><a href="five_seed/protocol.json">Supplementary protocol</a> · <a href="five_seed/paired_repeat_summary.csv">Paired repeat results</a> ·
+<a href="five_seed/paired_intervals.csv">Paired intervals</a> · <a href="five_seed/source_builder_checks.json">Source-builder verification</a></p>
+
+<h2>Why the fitting rules need explicit labels</h2>
+<p>The native runs use Dylan’s unchanged model source. By default, label-free preprocessing and graphs can use all 1,561 rows, including held-out and actual Kaggle test features.
+SLD estimates the target label frequencies from the query batch. Anchored retains its original inductive access, matching Dylan’s supplied comparison.
+Therefore his native table does not give every model the same feature access.</p>
+<p>The strict table uses the same classifier and head settings, but enforces the repository’s fitting boundaries:</p>
+<ul>
+<li>Each case contains only eligible fitting rows plus its query rows. Test rows and excluded validation-source rows are absent. Query labels are masked before fitting.</li>
+<li>Scaling, PCA, clustering, graph nodes and pseudo-labels use only the saved fitting populations. Group-matching masked rows are purged in grouped CV and chronology; chronology keeps only earlier-year fitting rows.</li>
+<li>Temperature calibration refits the complete uncalibrated pipeline within grouped inner folds. The source instead keeps pseudo-labels fixed while cross-validating only the final classifier.</li>
+<li>Correct & Smooth residuals use grouped inner folds with freshly fitted preprocessing. Synthetic kNN training features leave out the whole embedding group, including masked duplicates.</li>
+<li>Cand2’s soft K-means feature scale uses only fitting rows. The source’s scale uses a median over every global row.</li>
+<li>SLD estimates its target frequencies on the eligible masked training pool, following Dylan’s inductive convention. It does not adapt to the query batch.</li>
+</ul>
+<p>These are versioned evaluation adapters, not claims that the original submitted CSVs had these boundaries.
+Because the tables differ in splits, population sizes, feature access and inner fitting rules, the change between tables cannot be attributed to one factor alone.
+Native transductive behavior may be useful in a separately authorized setting; it has not beaten anchored under our current contract.</p>
+
+<h2>Repeat stability and uncertainty</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Recipe</th>
+      <th>Pool</th>
+      <th>Mean difference vs anchored</th>
+      <th>Repeat wins / ties / losses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>train</td>
+      <td>-0.01035</td>
+      <td>1 / 0 / 7</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>train</td>
+      <td>-0.00876</td>
+      <td>1 / 0 / 7</td>
+    </tr>
+    <tr>
+      <td>Cand4: LR/LDA/graph ensemble</td>
+      <td>train</td>
+      <td>-0.01794</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Cand5: LR + graph labels + prior adjustment</td>
+      <td>train</td>
+      <td>-0.01919</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>train</td>
+      <td>-0.00478</td>
+      <td>1 / 1 / 6</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand5</td>
+      <td>train</td>
+      <td>-0.00663</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1 + cand5</td>
+      <td>train</td>
+      <td>-0.00212</td>
+      <td>3 / 1 / 4</td>
+    </tr>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>pooled</td>
+      <td>-0.01917</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>pooled</td>
+      <td>-0.01777</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Cand4: LR/LDA/graph ensemble</td>
+      <td>pooled</td>
+      <td>-0.02722</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Cand5: LR + graph labels + prior adjustment</td>
+      <td>pooled</td>
+      <td>-0.02461</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>pooled</td>
+      <td>-0.00488</td>
+      <td>2 / 0 / 6</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand5</td>
+      <td>pooled</td>
+      <td>-0.00514</td>
+      <td>1 / 1 / 6</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1 + cand5</td>
+      <td>pooled</td>
+      <td>-0.00824</td>
+      <td>0 / 0 / 8</td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Recipe</th>
+      <th>Evaluation</th>
+      <th>Metric</th>
+      <th>Difference vs anchored</th>
+      <th>Conditional 95% lower</th>
+      <th>Conditional 95% upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>native_dylan</td>
+      <td>J</td>
+      <td>0.01305</td>
+      <td>-0.01144</td>
+      <td>0.03851</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>native_dylan</td>
+      <td>J</td>
+      <td>0.01021</td>
+      <td>-0.00706</td>
+      <td>0.03029</td>
+    </tr>
+    <tr>
+      <td>Cand1: balanced LDA + graph labels</td>
+      <td>strict_inductive</td>
+      <td>pooled</td>
+      <td>-0.01917</td>
+      <td>-0.03663</td>
+      <td>-0.00365</td>
+    </tr>
+    <tr>
+      <td>Cand2: LDA + cluster/neighbor features</td>
+      <td>strict_inductive</td>
+      <td>pooled</td>
+      <td>-0.01777</td>
+      <td>-0.03458</td>
+      <td>-0.00304</td>
+    </tr>
+    <tr>
+      <td>Anchored + cand1</td>
+      <td>strict_inductive</td>
+      <td>pooled</td>
+      <td>-0.00488</td>
+      <td>-0.01500</td>
+      <td>0.00498</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>The intervals resample 222 embedding groups 5,000 times with shared weights across models, repeats and overlapping cuts.
+They are conditional on the fitted predictions; they do not include the earlier candidate search, new refitting randomness or an unknown future distribution.
+In particular, cand2’s native J advantage has an interval crossing zero. These reused labels do not provide an untouched confirmation of the search-selected candidates.</p>
+
+<h2>How new are the ideas?</h2>
+<p>The fixed combinations and the Correct & Smooth implementation are concrete additions worth measuring.
+LDA, neighbors, clustering, ensembling, prior adjustment and expected-F1 decoding are not all new to this workspace: earlier
+<a href="../../research/new_directions/index.html">New Directions studies</a> already include expected-F1 compositional decoding and source-prior corrections.
+Those older attempts used different recipes and comparators, so this run supplies the direct comparison with the current anchored leader.</p>
+
+<h2>What these results establish</h2>
+<p><strong>Keep anchored as the current choice.</strong> The new models are useful alternatives and diagnostic controls, but none earns promotion on our benchmark.
+Their better native J scores are real, reproducible results under Dylan’s setup; they are not recorded Kaggle results.
+No candidate or blend has a recorded Kaggle score in our ledger, and this study generated no new submission.</p>
+<p>The primary comparison uses <strong>one inner seed, 0</strong>, matching Dylan’s evaluation harness; the supplementary comparison uses the final builder’s <strong>five-seed average</strong>.
+Both were evaluated on the saved benchmark populations; existing final candidate CSVs were not regenerated.
+The original scored anchored artifact remains 0.89636; no local score here replaces that recorded Kaggle number.</p>
+
+<h2>Verification and replay</h2>
+<p>All 1,104 prediction sets were independently rescored, including each expected-F1 decoder and fixed blend.
+Anchored exactly reproduced the retained reference predictions in all 138 contexts.
+All 40 protected hashes passed. The strict run recorded 66,535 nested boundary checks with zero group overlaps.</p>
+<p>The supplementary five-seed results add another 1,104 independently rescored prediction sets, with reused anchored controls and
+332,675 strict nested boundary checks. Its frozen inputs also passed verification.</p>
+<p>Additional fresh-fit probes changed held-out labels, changed one query embedding, and changed inner-calibration held-out labels.
+The relevant predictions and fitted temperatures remained identical where independence was required.
+See <a href="boundary_checks.json">boundary checks</a> and <a href="verification.json">verification results</a>.</p>
+<p>The original source snapshot is unchanged under <code>source/p1lib/</code>; strict adjustments live in
+<a href="strict_adapter.py">strict_adapter.py</a>. <a href="protocol.json">The frozen protocol</a> records the complete settings, access rules, source hashes and negative-result policy.
+Read <a href="README.md">README.md</a> for replay commands. Compact matched-control predictions are retained for this small fixed cross-protocol comparison;
+no fitted models, transformed feature matrices or duplicated datasets are saved.</p>
+<p>Files: <a href="strict_inductive_comparison.csv">our comparison</a>, <a href="native_dylan_comparison.csv">Dylan comparison</a>,
+<a href="aggregate_metrics.csv">per-label metrics</a>, <a href="block_metrics.csv">repeat/window metrics</a>,
+<a href="paired_repeat_summary.csv">paired repeat results</a>, <a href="paired_intervals.csv">paired intervals</a>,
+<a href="failure_notes.json">negative findings and limitations</a>.</p>
+</main></html>

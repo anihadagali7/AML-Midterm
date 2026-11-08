@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "outer_cases": 84,
+  "metric_rows_independently_checked": 147,
+  "partial_label_rounds_checked": 504,
+  "gold_negative_labels_preserved": true,
+  "class_prior_weight_mass_fixed": true,
+  "parent_max_score_error": 0.0,
+  "parent_four_headlines_reproduced": true,
+  "ids_groups_and_coverage_checked": true,
+  "half_blend_formulas_checked": true,
+  "all_source_hashes_unchanged": true,
+  "protocol_sha256": "fd98a9d74ecfb3bc9a50abb1b5ec81999c5484df108432bc928d56dab44b5086"
+}

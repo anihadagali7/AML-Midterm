@@ -1,0 +1,180 @@
+"""Build the portable HTML report from the checked audit tables."""
+from html import escape
+import json
+from pathlib import Path
+
+import pandas as pd
+
+HERE = Path(__file__).resolve().parent
+NAMES = {'dbscan': 'DBSCAN', 'tri_training': 'Tri-training', 'original_ani': 'Original Ani*',
+         'previous_ensemble': 'Previous ensemble', 'lda_ensemble': 'LDA ensemble', 'anchored': 'Anchored'}
+METRICS = {'dylan_A': 'Dylan A: random CV', 'dylan_B': 'Dylan B: chronology', 'dylan_J': 'Dylan J: ½A + ½B',
+           'validation': 'Official validation', 'grouped_train': 'Current grouped Train157',
+           'grouped_pooled': 'Current grouped Pooled235', 'chronology98': 'Current chronology98',
+           'strict_B': 'Strict Dylan B', 'aligned_J': '½ grouped Pooled235 + ½ strict B',
+           'current_J_diagnostic': '½ grouped Pooled235 + ½ chronology98'}
+
+
+def table(df, places=4):
+    return '<div class="scroll">' + df.to_html(index=False, border=0, classes='data',
+                                               float_format=lambda x: f'{x:.{places}f}', na_rep='—') + '</div>'
+
+
+def main():
+    comp = pd.read_csv(HERE / 'comparison.csv')
+    ranks = pd.read_csv(HERE / 'rank_agreement.csv')
+    paired = pd.read_csv(HERE / 'paired_differences.csv')
+    bound = pd.read_csv(HERE / 'boundary_audit.csv')
+    protocol = json.loads((HERE / 'protocol.json').read_text())
+    verified = json.loads((HERE / 'verification.json').read_text())
+    main_table = comp[['model', 'kaggle', 'dylan_A', 'dylan_B', 'dylan_J', 'grouped_train', 'grouped_pooled']].copy()
+    main_table.model = main_table.model.map(NAMES)
+    main_table.columns = ['Recipe', 'Reported Kaggle', 'Dylan A', 'Dylan B', 'Dylan J', 'Grouped Train157', 'Grouped Pooled235']
+    ranktable = ranks[(ranks.panel == 'all_six') & ranks.metric.isin(METRICS)].copy()
+    ranktable['Correct pairs'] = ranktable.correctly_ordered.astype(str) + '/' + ranktable.comparable_pairs.astype(str)
+    ranktable['Metric'] = ranktable.metric.map(METRICS)
+    ranktable['Top recipe'] = ranktable.top_by_benchmark.apply(lambda s: ', '.join(NAMES[v] for v in s.split('|')))
+    ranktable = ranktable[['Metric', 'spearman', 'Correct pairs', 'benchmark_ties', 'Top recipe']].rename(columns={'spearman': 'Rank correlation', 'benchmark_ties': 'Metric ties'})
+    sensitivity = ranks[ranks.panel.isin(['all_six', 'exclude_transductive_ani', 'top_four'])].pivot(index='metric', columns='panel', values='spearman')
+    sensitivity = sensitivity.loc[list(METRICS)].reset_index()
+    sensitivity.metric = sensitivity.metric.map(METRICS)
+    sensitivity.columns = ['Metric', 'All six', 'Exclude Ani: five', 'Top four only']
+    delta = paired[(paired['first'] == 'lda_ensemble') & (paired['second'] == 'anchored') & paired.metric.isin(METRICS)].copy()
+    delta.metric = delta.metric.map(METRICS)
+    delta = delta[['metric', 'delta', 'ci_low', 'ci_high']]
+    delta.columns = ['Metric', 'Anchored − LDA', 'Conditional 95% lower', 'Conditional 95% upper']
+    bounds = bound[bound.kind == 'B'][['case', 'gold', 'masked', 'query', 'gold_group_overlap', 'masked_group_overlap', 'masked_at_or_after_query_start']].copy()
+    bounds.columns = ['Case', 'Gold fit', 'Masked fit', 'Query', 'Gold group overlap', 'Masked group overlap', 'Masked later than fit cutoff']
+    supplied = json.loads((HERE / 'source_snapshot/benchmark_results.json').read_text())
+    candidate_rows = []
+    for name, key in [('Anchored (freshly reproduced)', 'michael_anchored'), ('Dylan cand1 (supplied results)', 'cand1_selected_1se'), ('Dylan cand5 (supplied results)', 'cand5_lr_cs_sld_robust')]:
+        r = supplied[key]
+        candidate_rows.append({'Recipe / evidence': name, 'A': r['A']['sample_f1'], 'B': r['B']['sample_f1'], 'C': r['C']['sample_f1'], 'J': r['J']})
+    artifacts = ''.join(f'<li>{escape(NAMES[r["name"]])}: <a href="../../{escape(r["csv"].removeprefix("part1/"))}">{escape(Path(r["csv"]).name)}</a>; SHA-256 <code>{r["sha256"]}</code>.</li>' for r in protocol['scored_artifacts'])
+    html = f'''<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Does Dylan v2's benchmark explain the Kaggle gains?</title>
+<style>
+:root {{color-scheme:light;--ink:#172e38;--muted:#526873;--line:#d6e0e4;--accent:#066c68}}
+body {{font:16px/1.6 system-ui,sans-serif;color:var(--ink);background:#f3f6f7;margin:0}}
+main {{max-width:1180px;margin:auto;padding:44px 32px 80px;background:white}}
+h1 {{font-size:36px;line-height:1.2;max-width:900px}} h2 {{margin-top:42px;font-size:24px}}
+h3 {{font-size:18px;margin-top:28px}} p {{max-width:980px}} a {{color:var(--accent)}}
+.meta,.note {{color:var(--muted);font-size:14px}} .verdict {{border-left:5px solid var(--accent);padding:14px 24px;background:#edf7f5}}
+.scroll {{overflow-x:auto}} table {{border-collapse:collapse;width:100%;font-size:14px;margin:16px 0}}
+th,td {{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}}
+th:first-child,td:first-child {{text-align:left}} th {{background:#edf3f5}} tr:hover td {{background:#f5faf9}}
+code {{font-size:12px;overflow-wrap:anywhere}} li {{margin:8px 0}} details {{margin-top:22px}} @media print {{body,main{{background:white;padding:10px}}}}
+</style><main>
+<p class="meta">Part 1 · fixed retrospective audit · six previously scored recipes · {verified['case_prediction_rescores']} recipe evaluations</p>
+<h1>Does Dylan v2's benchmark explain the Kaggle gains?</h1>
+<div class="verdict"><p><strong>It adds a useful distribution-shift diagnostic, but this audit does not support replacing our current comparison protocol with Dylan's combined J score.</strong>
+On these six recipes, J orders 10 of 14 unequal Kaggle pairs correctly; grouped Train157 orders 12.
+J also reverses the latest LDA-to-anchored improvement. With the mismatched original Ani artifact excluded, J gets 8 of 9 pairs and Train157 gets 9 of 9.
+These are retrospective checks on a small, selected panel—not proof that any metric will predict the next submission.</p></div>
+
+<h2>What changed, and what was tested</h2>
+<p>The updated main branch consolidates the historical LDA and New Directions research under <code>part1/research/</code>, with a current testing policy and submission ledger.
+Anchored remains the highest recorded user-reported Kaggle result at <strong>0.89636</strong>.
+This study starts at main <code>{protocol['base_commit'][:12]}</code> in the separate worktree <code>AML-Midterm-derived-benchmarks</code>, branch <code>codex/part1-derived-benchmark-audit</code>.</p>
+<p>Dylan v2 is substantially more complete than v1: it has executable graph pseudo-labeling, calibration, class-prior adjustment, decoding, candidate selection and benchmark scripts.
+The question here is whether its evaluation rules explain our historical Kaggle changes. We freshly evaluated six fixed historical recipes on 140 fitting/query contexts each, preserving all final 235-label submission artifacts.
+The 140 contexts comprise 50 Dylan random folds, three Dylan chronological cuts, three strict versions of those cuts, and our 84 canonical checks. Official validation is shared between the two protocols.
+Components shared by the historical ensembles are fitted once per context; “840 evaluations” is not a count of individual estimator <code>.fit()</code> calls.</p>
+<p>No model settings, split assignments, chronology cutoffs or combination weights were tuned to these Kaggle scores.
+The existing <a href="../../TESTING_POLICY.md">testing policy</a> remains unchanged. Exact recipes, source/data hashes, versions and exceptions are recorded in <a href="protocol.json">the frozen protocol</a>.</p>
+
+<h2>What the derived scores actually mean</h2>
+<ul>
+<li><strong>A:</strong> five-fold CV repeated ten times on all 235 labeled rows, stratified by label combination, seed 1. This is ungrouped.</li>
+<li><strong>B:</strong> average sample F1 across three tests: fit gold labels before 2004, 2005 or 2006 and evaluate all later gold labels. All 1,014 originally masked training rows remain available.</li>
+<li><strong>C:</strong> the original 157-label training to 78-label validation check. Dylan logs C as a supplementary check; it does not enter J.</li>
+<li><strong>J = ½A + ½B:</strong> an equal-weight preference for random-split and chronological performance. It is not a Kaggle score, probability of generalizing, or calibrated estimate of test F1.</li>
+<li><strong>One-standard-error selection:</strong> favors a simpler candidate close to the best J. It is a selection rule, not an additional benchmark. Its complexity ordering was built for Dylan's own search space.</li>
+</ul>
+<p>B's three cuts contain 293 evaluation occurrences but only <strong>109 unique labeled rows</strong>. They are overlapping tests, not three independent replications.
+All 50 A folds contain at least one gold embedding group crossing the fit/query boundary and at least one masked group matching a query group.
+Our existing grouped CV prevents those overlaps. Matching the splits therefore does not make the access assumptions identical.</p>
+
+<h2>Fresh results for the scored recipes</h2>
+{table(main_table, 5)}
+<p class="note">All scores are sample-wise F1. Kaggle numbers are recorded user reports, not new uploads. Original Ani* is a known mismatch: its .89423 scored CSV is transductive, while the historical local adapter is inductive. Its exclusion is therefore the cleaner sensitivity panel. The two .89401 scores are tied at their recorded precision.</p>
+<p>The latest contrast is decisive for interpreting the claim: LDA ensemble → anchored improved the recorded Kaggle score by <strong>+0.00235</strong>, while Dylan J fell by <strong>−0.00145</strong>.
+J correctly recognizes the large DBSCAN → tri-training improvement, but reverses tri-training → original Ani; that second contrast also has the access mismatch noted above.
+The earlier ensemble → LDA ensemble change raises J by 0.00274 despite equal recorded Kaggle scores.</p>
+
+<h2>How well do the rankings agree?</h2>
+{table(ranktable, 3)}
+<p>Rank correlation is Spearman's rho; higher means more agreement with the reported Kaggle ordering. Pair counts exclude the one Kaggle tie and give no credit to an unresolved benchmark tie.
+Official validation is a poor ranking signal in this panel: its best recipe includes DBSCAN, the lowest Kaggle scorer. That supports keeping multiple checks visible; it does not establish a new universally correct combined metric.</p>
+<h3>Sensitivity to which recipes are included</h3>
+{table(sensitivity, 3)}
+<p>Excluding original Ani removes the artifact/access mismatch. Dylan J then has exactly the same ranking as A and grouped Pooled235, so it adds no ordering benefit on those five recipes.
+Among only the four close leaders, no metric gives strong agreement. The tiny recorded gaps should not be treated as a reliably known population ordering.
+Across every leave-one-recipe-out panel, grouped Train157 has a higher rank correlation than J; J ranges from 0.103 to 0.821.
+Full Kendall tau, all pairwise differences and leave-one-out results are saved in <a href="rank_agreement.csv">rank_agreement.csv</a> and <a href="pairwise_orderings.csv">pairwise_orderings.csv</a>.</p>
+
+<h2>The chronology conclusion depends on the fitting boundary</h2>
+<p>We also held Dylan's three query populations fixed while purging duplicate embedding groups from fitting gold/masked rows and requiring every fitting masked row to predate the cutoff.
+This jointly changes group and time access; it is not an isolated ablation of either factor.</p>
+{table(bounds, 0)}
+<p>Under native B, tri-training is best and anchored trails LDA. Under strict B, anchored is best: <strong>0.85332 vs 0.84817</strong> for LDA.
+Combining strict B with grouped Pooled235 at the same fixed half/half weight also favors anchored (0.88734 vs 0.88490).
+That diagnostic has better retrospective agreement than native J, but still does not outperform grouped Train157 in the six-recipe panel.</p>
+<p>The native 2005 cut accounts for much of anchored's disadvantage: it loses to LDA by 0.02041 there while winning the 2004 and 2006 cuts.
+On that 98-row cut, anchored has better row F1 on 5 rows, worse on 8, and equal on 85. Under the strict 2005 boundary it wins 6, loses 2, and ties 90.
+Chronology is a useful stress test; these results do not justify treating one particular masked-data access rule as the definition of generalization.</p>
+
+<h2>Small leader differences remain uncertain</h2>
+{table(delta, 5)}
+<p>Intervals use 5,000 paired bootstrap resamples of the 222 embedding groups, with the same weights for all models and every appearance of each group across repeats and overlapping cuts.
+They are conditional on the fitted predictions; they do not include model-search uncertainty, refitting variation or an unseen target distribution.</p>
+<p>Anchored minus LDA has J = −0.00145 with a conditional interval of approximately <strong>[−0.01370, +0.01217]</strong>.
+The benchmark does not clearly separate the two leaders. Anchored's J standard error is 0.02029 under this group bootstrap, versus Dylan's 0.01751 approximation, which omits A/B covariance.
+A different random seed on the same 235 labels is a split-stability check, not an untouched confirmation set.</p>
+
+<h2>What this says about Dylan's new candidates</h2>
+{table(pd.DataFrame(candidate_rows), 5)}
+<p>These reproduce the supplied claim: anchored is stronger on A and C, while cand1/cand5 are stronger on B and J.
+Only anchored was freshly rerun in this candidate table; cand1/cand5 values come from <a href="source_snapshot/benchmark_results.json">Dylan's supplied results</a>.
+Neither has a recorded Kaggle score in our ledger, so neither enters the rank-correlation analysis.</p>
+<p>The updated package also proposes equal-weight anchored/cand1 blends, with supplied J values around .896–.897.
+Those blends likewise have no recorded Kaggle outcome here and were not freshly evaluated in this historical-recipe audit.</p>
+<p>Dylan's candidates use held-out and actual test features for label-free preprocessing by default, while the supplied anchored run excludes those rows from fitting.
+That is an explicit transductive comparison, not our default inductive test. It can be explored separately but does not establish that a new model beats the submitted one under matched access.</p>
+<p>The claim that anchored loses chronology <em>because</em> it lacks prior correction is not isolated by that comparison: the candidates also change pseudo-labeling, classifier, calibration, decoding and feature access.
+Cand1 uses balanced class priors, not the SLD head used by cand5. The supplied methodology itself reports that its search procedure can fail under a chronological outer split and that B may exaggerate target shift.
+Its broad claim that public score gaps below about 0.05 are noise is not established by this audit; we lack the public evaluation membership and labels needed to quantify those paired gaps.</p>
+
+<h2>Recommendation</h2>
+<ol>
+<li><strong>Keep anchored as the scored leader and retain both grouped CV pools as the primary comparison.</strong> Do not switch to Train157 alone because it won this retrospective ranking exercise.</li>
+<li><strong>Keep chronology as a visible secondary diagnostic.</strong> Strict B adds an earlier 2004 stress cut and an alternate fixed-origin view. Keep each cut's result visible; do not count the overlapping cuts as independent confirmations.</li>
+<li><strong>Do not promote using J alone.</strong> Its half/half weighting encodes a preference for these particular shift tests; this panel does not show that it improves Kaggle selection.</li>
+<li><strong>For a future candidate comparison, freeze candidates and access first.</strong> Compare anchored and Dylan v2 under the same grouped protocol, report any transductive experiment separately, and record the next scored artifact before revising the evaluation rule.</li>
+</ol>
+<p>There is also a hard limitation: the same DBSCAN recipe scored .87500 after a 157-label final fit and .86452 after its 235-label final fit.
+A fixed-recipe CV score cannot distinguish those two final artifacts without an explicit training-size experiment.
+This audit uses only the 235-label version in its primary panel to avoid counting one recipe twice; it does not explain every historical Kaggle movement.</p>
+
+<h2>Verification and retained evidence</h2>
+<p>All 840 stored predictions were independently rescored. All 320 saved grouped fold controls reproduce their historical label predictions and aligned scores.
+The four retained leaders match all 16 canonical aggregate scores; DBSCAN and tri-training match all eight archived aggregate checks.
+Anchored reproduces Dylan's supplied A/B/C/J exactly within floating-point tolerance. All {verified['protected_source_hashes']} frozen source/data/artifact hashes passed, and no Kaggle test inputs were used for model fitting or prediction in this audit.</p>
+<p>A verifier-only correction handled Ani's archived raw scores (cutoff .3) versus its centered ensemble-adapter scores (cutoff .5). Label predictions matched before the fix; no fitted output or metric changed.
+The original and corrected runner hashes and failure details are retained in <a href="failure_notes.json">failure_notes.json</a> and the protocol amendment.</p>
+<p>The approximately 9 MB study keeps compact matched-control predictions, exact splits, summaries and source snapshots. It retains no fitted estimators or duplicated datasets.
+See <a href="README.md">replay instructions</a>, <a href="verification.json">verification.json</a>, <a href="comparison.csv">comparison.csv</a>,
+<a href="aggregate_label_metrics.csv">per-label metrics</a>, <a href="paired_repeat_summary.csv">paired repeat results</a>,
+<a href="conditional_intervals.csv">conditional intervals</a>, and <a href="bootstrap_protocol.json">bootstrap protocol</a>.</p>
+<details><summary>Exact scored artifacts and source evidence</summary><ul>{artifacts}</ul>
+<p>Supplied definitions: <a href="source_snapshot/evaluate.py">evaluation code</a>, <a href="source_snapshot/context.py">feature access</a>,
+<a href="source_snapshot/methodology.md">methodology</a>, <a href="source_snapshot/benchmark_README.md">benchmark claims</a>.
+The copied source files are unchanged evidence from Dylan v2, not newly endorsed policy.</p></details>
+</main></html>'''
+    (HERE / 'report.html').write_text(html)
+    print(HERE / 'report.html')
+
+
+if __name__ == '__main__':
+    main()

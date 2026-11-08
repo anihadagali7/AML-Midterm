@@ -1,0 +1,5 @@
+baseline,pool,mode,mean_delta,wins,ties,losses,meets_pool_rule
+anchored,train,blend_halfstep,0.00026539278131633426,2,4,2,False
+anchored,pooled,blend_halfstep,0.002748226950354579,7,0,1,True
+current75_25,train,blend_halfstep,0.00026539278131634814,2,5,1,False
+current75_25,pooled,blend_halfstep,0.0007092198581560294,4,2,2,False

@@ -15,10 +15,15 @@ The assignment calls for a folder named **`midterm`** for the code/data hand-in,
 and a separate report PDF upload. The Part 2 ZIP therefore contains `midterm/part2/`.
 It is the Part 2 portion of the hand-in; it does not package or certify Part 1.
 
-The existing Part 1 files were moved with the old hand-in folder without changing
-their contents. They have not been refreshed or validated as part of this Part 2
-task. The report was relocated without editorial changes; its existing Part 1
-score and content should be reviewed by the person finalizing that section.
+The combined report includes the updated Part 1 **0.89935 anchored/Cand2 winner**
+and its evidence from `ee750f6f`. Its PDF is preserved byte-for-byte; source edits
+only adapt TeX paths to this layout. See the [reconciliation record](RECONCILIATION.md).
+
+The older Part 1 hand-in files in `midterm/` remain unchanged historical files;
+they do not implement the latest winner. The current Part 1 implementation,
+exact scored artifact and reproduction instructions are linked from
+[part1/MODEL.md](../part1/MODEL.md) and [the report handoff](../part1/REPORT_HANDOFF.md).
+This task reconciles that existing work; it does not build a new Part 1 notebook package.
 
 The old root `midterm/` is a compatibility symlink to this folder's `midterm/`, so
 historical paths continue to resolve. `midterm/report` similarly points to the

@@ -24,7 +24,9 @@ settings, summary results, figures, implementations and original notebook record
 are included. Intermediate arrays and repeated row predictions/audits are retained
 in the working project, with only those used by the final comparisons in the ZIP.
 
-The original report PDF and existing Part 1 hand-in files were preserved
-byte-for-byte during relocation. The combined TeX source changed only resource
-paths and compilation instructions. A LaTeX toolchain was not available, so the
-report was not recompiled or editorially revised in this Part 2 task.
+The original Part 1 hand-in files were preserved byte-for-byte during relocation.
+The report was subsequently reconciled with the newer Part 1 checkpoint at
+`ee750f6f`: the incoming four-page PDF is byte-identical, its complete authored
+TeX content is preserved with resource paths adjusted, and its bibliography is
+unchanged. See [reconciliation checks](RECONCILIATION.md). No report recompilation
+or editorial revision was needed for this folder reconciliation.

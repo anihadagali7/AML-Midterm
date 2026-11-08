@@ -1,0 +1,38 @@
+{
+  "status": "prepared; not uploaded; Kaggle score unknown",
+  "csv": "submissions/candidates/cand2_cs_features_inductive5.csv",
+  "sha256": "521f2825cfc20711f435edc633038b1ca59834e4804f06fc358fce05337ddde7",
+  "rows": 312,
+  "verified_gold": 235,
+  "originally_masked": 1014,
+  "test_features_used_for_fit": false,
+  "prior_cv_passed": false,
+  "changed_vs_anchored": 49,
+  "label_counts": {
+    "Safety": 45,
+    "Funding": 9,
+    "Efficacy": 41,
+    "Recruitment": 179,
+    "Other": 79
+  },
+  "mean_label_count": 1.1314102564102564,
+  "validation_replay_max_error": 0.0,
+  "validation_predictions_identical": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperatures": [
+    3.2709040919986596,
+    3.2018386078995675,
+    3.2140144081363946,
+    3.337937148370263,
+    3.3628871377164478
+  ],
+  "nested_contexts": 5725,
+  "prediction_sha256": "445c54466ac5adefdb9ad593942e444014cbdc19080be51bfa163a4c2d2049dc",
+  "protocol_sha256": "1e05a517e92f72e1aa5b4710e2c92c959736c0014c25ac5487d9dfff85308508"
+}

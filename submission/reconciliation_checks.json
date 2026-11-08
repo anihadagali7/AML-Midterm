@@ -1,0 +1,63 @@
+{
+  "incoming_part1_commit": "ee750f6fbbc9d3e15c729db7364043d9669393ea",
+  "part2_packaging_commit": "efe9a8f23a0085c4010d6f9f0964cc3523d93213",
+  "changed_part1_paths": [
+    "part1/README.md",
+    "part1/REPORT_HANDOFF.md",
+    "part1/reporting/README.md",
+    "part1/reporting/verify.py"
+  ],
+  "model_fits": 0,
+  "report_pages": 4,
+  "report_sha256": {
+    "submission/report/main.tex": "bc1f3c682228dcfb04ac3e1b26b7aeb1ebd93a5c847d7c60153e952cf2add389",
+    "submission/report.pdf": "d98c70658ffa8e9755689b01fe38a854be9f148ace59b88dc0daa8071ccd9770",
+    "submission/report/main.bib": "efc67149f0fa60b06f9f6cfb49e722a913e3b68023c00a622d2c3abac4ef7ae0"
+  },
+  "report_build": {
+    "passed": true,
+    "scored_artifacts": 12,
+    "rows_per_artifact": 312,
+    "exact_csv_recipe_hashes_and_annotated_tags_checked": true,
+    "comparison_rows": 9,
+    "selected_recipe": "anchored80-cand2-inductive20-trainval235",
+    "selected_score": 0.89935,
+    "model_fits": 0
+  },
+  "report_verification": {
+    "passed": true,
+    "scored_artifacts": 12,
+    "comparison_rows": 9,
+    "local_documentation_links": 241,
+    "frozen_model_data_and_protocol_files_unchanged": true,
+    "original_part1_report_checkpoint_preserved": true,
+    "part2_working_tree_matches_packaging_checkpoint": true,
+    "report_content_matches_latest_part1_checkpoint": true,
+    "incoming_part2_report_content_unchanged": true,
+    "models_fitted": 0
+  },
+  "part1_retained_winner_verification": true,
+  "part2_tests_passed": 19,
+  "part2_package_unchanged": true,
+  "part2_archive_sha256": "1f29eb36d02f076410b90086f0c49765c74af0f5a93a30ad4ae09c0ae5f4f5c1",
+  "part2_archive_bytes": 22893436,
+  "part2_standalone_notebooks": [
+    {
+      "notebook": "01_final_model.ipynb",
+      "errors": 0
+    },
+    {
+      "notebook": "02_experiments.ipynb",
+      "errors": 0
+    },
+    {
+      "notebook": "03_source_code.ipynb",
+      "errors": 0
+    }
+  ],
+  "part2_packaged_resources_verified": 825,
+  "scored_csv_sha256": {
+    "part1/submissions/candidates/anchored80_cand2_inductive20.csv": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+    "part2/submissions/13_file10_legacy30.csv": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "max_gradient_absolute_errors": [
+    2.128371377752014e-08,
+    2.362116952037141e-08,
+    2.035485299756168e-08
+  ],
+  "raw_blend_decoder_equivalence": true,
+  "synthetic_optimizer": true
+}

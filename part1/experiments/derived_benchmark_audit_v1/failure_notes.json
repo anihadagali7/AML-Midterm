@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp_utc": "2026-11-07T20:46:32.368302+00:00",
+    "failure": "Preflight and final verification compared raw archived Ani probabilities (cutoff .3) with centered adapter scores (cutoff .5). All label predictions agreed; maximum raw score discrepancy .20843722. Correct centering reduces discrepancy to about 3.3e-14.",
+    "correction": "Apply the archived adapter centering to the expected Ani scores in the parity verifier only. No recipe, prediction, split, metric, selection rule or fitted output changed. Full run completed before the final verifier correction; reuse its unchanged outputs.",
+    "old_runner_sha256": "43e28a2e5661b5587ff71db6bb2f149fd723a3a455537e988a67431e1454c29d",
+    "new_runner_sha256": "64c8d85149c219ca0b6f72e37fc1cfc9b673f1f3d9053154982abb46539a4a33"
+  }
+]

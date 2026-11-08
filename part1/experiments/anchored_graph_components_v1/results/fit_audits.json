@@ -1,0 +1,5705 @@
+[
+  {
+    "pool": "pooled",
+    "seed": 20261126,
+    "fold": 0,
+    "gold": 183,
+    "masked": 942,
+    "fit_ids_sha256": "1d445d604d0c6e23923374c1a432fd90290f34328b91ff36247a6760c29834d9",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 183,
+        "generated": 0,
+        "known_weight": 183.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 183,
+        "generated": 599,
+        "known_weight": 183.0,
+        "generated_weight": 90.50867825030059
+      },
+      {
+        "step": 2,
+        "known": 183,
+        "generated": 674,
+        "known_weight": 183.0,
+        "generated_weight": 107.2664383919703
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 610,
+      "generated_positive_counts": [
+        15,
+        13,
+        24,
+        546,
+        57
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 938,
+          "query": 35,
+          "fitting_ids_sha256": "d78889eb73c53a83bce7ae9f46824655642e46fd2390e8eb2372ca4adb00fbd0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 914,
+          "query": 35,
+          "fitting_ids_sha256": "3f8ba7cfbc986f4edf3c0a010b182638a8443141a26162b0cae664254cb359af",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 920,
+          "query": 37,
+          "fitting_ids_sha256": "1dc32ff72756c2b61ed7321ef80fc1335818be1fd0eeaba7a1e8417b144ba713",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 935,
+          "query": 34,
+          "fitting_ids_sha256": "a451c80968eac8a4f521921c84a4667ec566c68e5b0d642a166f9aaff95aa558",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 141,
+          "masked": 874,
+          "query": 42,
+          "fitting_ids_sha256": "bf5250ffcf975868979361400e99896ae02d2cbd86c5d8e2db54d6376b241146",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 183,
+          "generated": 0,
+          "known_weight": 183.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 183,
+          "generated": 610,
+          "known_weight": 183.0,
+          "generated_weight": 83.161528961263
+        },
+        {
+          "step": 2,
+          "known": 183,
+          "generated": 610,
+          "known_weight": 183.0,
+          "generated_weight": 83.161528961263
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 938,
+          "query": 35,
+          "fitting_ids_sha256": "d78889eb73c53a83bce7ae9f46824655642e46fd2390e8eb2372ca4adb00fbd0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 914,
+          "query": 35,
+          "fitting_ids_sha256": "3f8ba7cfbc986f4edf3c0a010b182638a8443141a26162b0cae664254cb359af",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 920,
+          "query": 37,
+          "fitting_ids_sha256": "1dc32ff72756c2b61ed7321ef80fc1335818be1fd0eeaba7a1e8417b144ba713",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 935,
+          "query": 34,
+          "fitting_ids_sha256": "a451c80968eac8a4f521921c84a4667ec566c68e5b0d642a166f9aaff95aa558",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 141,
+          "masked": 874,
+          "query": 42,
+          "fitting_ids_sha256": "bf5250ffcf975868979361400e99896ae02d2cbd86c5d8e2db54d6376b241146",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.912568306010929,
+      "residual_mean_l1": 0.3414725875328493,
+      "scale_quantiles": [
+        0.7992919365803011,
+        12.768515302677582,
+        31.380035931109166,
+        67.38030949252973,
+        341472587532.8493
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0010810828481465436,
+        0.011570244715034955,
+        0.23737613353871695
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005016934615993886,
+      "clipped_fraction": 0.1423076923076923,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.061857540689158344,
+      "clipped_fraction": 0.5653846153846154,
+      "changed_rows": 0
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.4868160411715508
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261126,
+    "fold": 1,
+    "gold": 193,
+    "masked": 1009,
+    "fit_ids_sha256": "d168200753265b7b7f8a217dd5fce1921dc923e14c61c3fb87b33c7eb0d53b2e",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 193,
+        "generated": 0,
+        "known_weight": 193.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 193,
+        "generated": 689,
+        "known_weight": 193.0,
+        "generated_weight": 104.58451834714992
+      },
+      {
+        "step": 2,
+        "known": 193,
+        "generated": 784,
+        "known_weight": 193.0,
+        "generated_weight": 124.6875997686524
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 685,
+      "generated_positive_counts": [
+        18,
+        8,
+        26,
+        613,
+        39
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 945,
+          "query": 39,
+          "fitting_ids_sha256": "c1d58fe630e71c2fc17179a775be3ca106d7c3eac65560ea57cdc7770d5759eb",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 993,
+          "query": 38,
+          "fitting_ids_sha256": "914dec081c0b1d428594f06b23527021315f8200f59e00a7bc5dbc0877ad2d7c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 157,
+          "masked": 1009,
+          "query": 36,
+          "fitting_ids_sha256": "cbce0402cb01a8190437a6860cfa3cdd82dbbe818b980384693c44d249666753",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 964,
+          "query": 40,
+          "fitting_ids_sha256": "bd13d569cd88133adde537a4a3f6843ab9e64e80b6d34b6b04afe2f6afb73ec3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 938,
+          "query": 40,
+          "fitting_ids_sha256": "562ba23c49f62f0c0e7187534d8b20a81fdd1f677909f2cb040354d1cfcba281",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 193,
+          "generated": 0,
+          "known_weight": 193.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 193,
+          "generated": 685,
+          "known_weight": 193.0,
+          "generated_weight": 87.39924567829831
+        },
+        {
+          "step": 2,
+          "known": 193,
+          "generated": 685,
+          "known_weight": 193.0,
+          "generated_weight": 87.39924567829831
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 945,
+          "query": 39,
+          "fitting_ids_sha256": "c1d58fe630e71c2fc17179a775be3ca106d7c3eac65560ea57cdc7770d5759eb",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 993,
+          "query": 38,
+          "fitting_ids_sha256": "914dec081c0b1d428594f06b23527021315f8200f59e00a7bc5dbc0877ad2d7c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 157,
+          "masked": 1009,
+          "query": 36,
+          "fitting_ids_sha256": "cbce0402cb01a8190437a6860cfa3cdd82dbbe818b980384693c44d249666753",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 964,
+          "query": 40,
+          "fitting_ids_sha256": "bd13d569cd88133adde537a4a3f6843ab9e64e80b6d34b6b04afe2f6afb73ec3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 938,
+          "query": 40,
+          "fitting_ids_sha256": "562ba23c49f62f0c0e7187534d8b20a81fdd1f677909f2cb040354d1cfcba281",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9343696027633851,
+      "residual_mean_l1": 0.2755277598556271,
+      "scale_quantiles": [
+        0.6196418896782908,
+        14.150449672276697,
+        31.895257708523303,
+        79.98835796025648,
+        275527759855.62714
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0008679473113507089,
+        0.008213385519274414,
+        0.25517964475658095
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004411270271541919,
+      "clipped_fraction": 0.1,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.049492046485464784,
+      "clipped_fraction": 0.5142857142857142,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5588707504794002
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261126,
+    "fold": 2,
+    "gold": 190,
+    "masked": 927,
+    "fit_ids_sha256": "53a535f9fc724a2b0b55a4d8641b48fdd3731f35f244c1cee54da6c512502da3",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 190,
+        "generated": 0,
+        "known_weight": 190.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 190,
+        "generated": 596,
+        "known_weight": 190.0,
+        "generated_weight": 93.76180877266533
+      },
+      {
+        "step": 2,
+        "known": 190,
+        "generated": 678,
+        "known_weight": 190.0,
+        "generated_weight": 110.17526176501413
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 559,
+      "generated_positive_counts": [
+        19,
+        9,
+        25,
+        490,
+        39
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 919,
+          "query": 35,
+          "fitting_ids_sha256": "6abd05ba3940b518bacff7c2b9a3dce515da8dbbcb8ccf44fd64cfa94bfd6d01",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 904,
+          "query": 41,
+          "fitting_ids_sha256": "46023281ff0a313b7445a43d1ef00219be949b1d7a5a071e7831b7e87143d954",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 925,
+          "query": 35,
+          "fitting_ids_sha256": "f4dc96677515540dd70bc05ca9b9be2050453d9b21ffc33d12b1e8d07390bd49",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 926,
+          "query": 37,
+          "fitting_ids_sha256": "ba367a22cc4bfe3cb075cf3c5a6e0f21b3c62df6e6298f3b6e242d3ec780636c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 847,
+          "query": 42,
+          "fitting_ids_sha256": "029c83d136cdb295acc21c29bb3f1d2a56b9b4db966f12c7210becb855bafb5d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 190,
+          "generated": 0,
+          "known_weight": 190.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 190,
+          "generated": 559,
+          "known_weight": 190.0,
+          "generated_weight": 76.3840948275862
+        },
+        {
+          "step": 2,
+          "known": 190,
+          "generated": 559,
+          "known_weight": 190.0,
+          "generated_weight": 76.3840948275862
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 919,
+          "query": 35,
+          "fitting_ids_sha256": "6abd05ba3940b518bacff7c2b9a3dce515da8dbbcb8ccf44fd64cfa94bfd6d01",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 904,
+          "query": 41,
+          "fitting_ids_sha256": "46023281ff0a313b7445a43d1ef00219be949b1d7a5a071e7831b7e87143d954",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 925,
+          "query": 35,
+          "fitting_ids_sha256": "f4dc96677515540dd70bc05ca9b9be2050453d9b21ffc33d12b1e8d07390bd49",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 926,
+          "query": 37,
+          "fitting_ids_sha256": "ba367a22cc4bfe3cb075cf3c5a6e0f21b3c62df6e6298f3b6e242d3ec780636c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 847,
+          "query": 42,
+          "fitting_ids_sha256": "029c83d136cdb295acc21c29bb3f1d2a56b9b4db966f12c7210becb855bafb5d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9052631578947369,
+      "residual_mean_l1": 0.34383294790587393,
+      "scale_quantiles": [
+        0.6889936974276016,
+        12.87041751102931,
+        31.521858653793746,
+        74.49534141992487,
+        1807.9555917587986
+      ],
+      "raw_field_abs_quantiles": [
+        3.6720674340199094e-08,
+        0.0010653559774682145,
+        0.012098784073658015,
+        0.25040647704185864
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.006459148551945991,
+      "clipped_fraction": 0.2577777777777778,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.06075978770190127,
+      "clipped_fraction": 0.5422222222222223,
+      "changed_rows": 0
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5449355002492666
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261126,
+    "fold": 3,
+    "gold": 185,
+    "masked": 994,
+    "fit_ids_sha256": "8b1eec5fe424d1d2b5d42790699155fc88d683210abf1b93d133e26735ab800f",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 185,
+        "generated": 0,
+        "known_weight": 185.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 185,
+        "generated": 659,
+        "known_weight": 185.0,
+        "generated_weight": 96.2323683261183
+      },
+      {
+        "step": 2,
+        "known": 185,
+        "generated": 729,
+        "known_weight": 185.0,
+        "generated_weight": 113.03419913419911
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 659,
+      "generated_positive_counts": [
+        23,
+        14,
+        21,
+        588,
+        52
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 922,
+          "query": 37,
+          "fitting_ids_sha256": "79448d555ac2a61a88029674c87413eee77fd12a7b2799cb3c8dc78317ffc94b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 142,
+          "masked": 913,
+          "query": 43,
+          "fitting_ids_sha256": "5e0a966cbe67ba203ab7471f06406abf10f55758af972cafb069aba312c70f9c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 979,
+          "query": 35,
+          "fitting_ids_sha256": "ea374f7546ec0414dd24139730105a80f153587de3023d3f9363fedff1533d46",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 994,
+          "query": 35,
+          "fitting_ids_sha256": "b670c188e98d063871dec76ef204dda84cc1b880d2354495375792b1a6cbda01",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 981,
+          "query": 35,
+          "fitting_ids_sha256": "f8e44b7122bf19730e331d7c6374626887821a805c232db9d4e692dc768bc734",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 185,
+          "generated": 0,
+          "known_weight": 185.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 185,
+          "generated": 659,
+          "known_weight": 185.0,
+          "generated_weight": 90.66301406926405
+        },
+        {
+          "step": 2,
+          "known": 185,
+          "generated": 659,
+          "known_weight": 185.0,
+          "generated_weight": 90.66301406926405
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 922,
+          "query": 37,
+          "fitting_ids_sha256": "79448d555ac2a61a88029674c87413eee77fd12a7b2799cb3c8dc78317ffc94b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 142,
+          "masked": 913,
+          "query": 43,
+          "fitting_ids_sha256": "5e0a966cbe67ba203ab7471f06406abf10f55758af972cafb069aba312c70f9c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 979,
+          "query": 35,
+          "fitting_ids_sha256": "ea374f7546ec0414dd24139730105a80f153587de3023d3f9363fedff1533d46",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 994,
+          "query": 35,
+          "fitting_ids_sha256": "b670c188e98d063871dec76ef204dda84cc1b880d2354495375792b1a6cbda01",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 981,
+          "query": 35,
+          "fitting_ids_sha256": "f8e44b7122bf19730e331d7c6374626887821a805c232db9d4e692dc768bc734",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9045045045045046,
+      "residual_mean_l1": 0.33978118391683765,
+      "scale_quantiles": [
+        0.6906998692401631,
+        12.486324785596036,
+        33.688981813594054,
+        82.05604517367345,
+        339781183916.83765
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0008718251435142803,
+        0.01132204671503718,
+        0.24902193186764732
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004522036633813775,
+      "clipped_fraction": 0.112,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.06160865110829305,
+      "clipped_fraction": 0.552,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.6425567921251059
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261126,
+    "fold": 4,
+    "gold": 189,
+    "masked": 997,
+    "fit_ids_sha256": "f772d676fd388d8b0aca52488f3d505b010f9bb497d32a3a8dd4828c55d04255",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 189,
+        "generated": 0,
+        "known_weight": 189.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 189,
+        "generated": 646,
+        "known_weight": 189.0,
+        "generated_weight": 93.50847642051872
+      },
+      {
+        "step": 2,
+        "known": 189,
+        "generated": 729,
+        "known_weight": 189.0,
+        "generated_weight": 112.9336030967
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 672,
+      "generated_positive_counts": [
+        22,
+        7,
+        17,
+        609,
+        62
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 996,
+          "query": 36,
+          "fitting_ids_sha256": "e73740d74acd33877bdba09855478cd7c3e9ab3491e077b184e6086c5b7ce77c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 985,
+          "query": 36,
+          "fitting_ids_sha256": "bd04cdf18d82c3e149471cbcf79a799deeccc7442447ee8be720c4f5fb0dd4d8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 996,
+          "query": 35,
+          "fitting_ids_sha256": "ec1d68aa2580b100712a72efd6ade0874080eb9e910e55eec0875e325b9b3019",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 147,
+          "masked": 829,
+          "query": 42,
+          "fitting_ids_sha256": "f363966989992540961822d57220ed3c615362ad40d93bf9b02052362976d284",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 995,
+          "query": 40,
+          "fitting_ids_sha256": "b5c7c325ae1d6a0360f7517174dd14e55b176c1e0b23bfbd6e7b95c1454f79ad",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 189,
+          "generated": 0,
+          "known_weight": 189.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 189,
+          "generated": 672,
+          "known_weight": 189.0,
+          "generated_weight": 86.93406751185904
+        },
+        {
+          "step": 2,
+          "known": 189,
+          "generated": 672,
+          "known_weight": 189.0,
+          "generated_weight": 86.93406751185904
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 996,
+          "query": 36,
+          "fitting_ids_sha256": "e73740d74acd33877bdba09855478cd7c3e9ab3491e077b184e6086c5b7ce77c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 985,
+          "query": 36,
+          "fitting_ids_sha256": "bd04cdf18d82c3e149471cbcf79a799deeccc7442447ee8be720c4f5fb0dd4d8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 996,
+          "query": 35,
+          "fitting_ids_sha256": "ec1d68aa2580b100712a72efd6ade0874080eb9e910e55eec0875e325b9b3019",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 147,
+          "masked": 829,
+          "query": 42,
+          "fitting_ids_sha256": "f363966989992540961822d57220ed3c615362ad40d93bf9b02052362976d284",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 995,
+          "query": 40,
+          "fitting_ids_sha256": "b5c7c325ae1d6a0360f7517174dd14e55b176c1e0b23bfbd6e7b95c1454f79ad",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9047619047619048,
+      "residual_mean_l1": 0.3229148769878323,
+      "scale_quantiles": [
+        0.6122251475148689,
+        12.963155853177266,
+        34.47403827797483,
+        92.11816781627455,
+        322914876987.8323
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0008799781268406849,
+        0.01027702443598352,
+        0.25431573647948597
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004844913106854551,
+      "clipped_fraction": 0.13478260869565217,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05874060303592122,
+      "clipped_fraction": 0.5869565217391305,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.7027736250311136
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261127,
+    "fold": 0,
+    "gold": 189,
+    "masked": 1006,
+    "fit_ids_sha256": "5f4a704f8446bba2c99b8b22b54725181bfe1598dcf87200ec4e6f42284d3f81",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 189,
+        "generated": 0,
+        "known_weight": 189.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 189,
+        "generated": 673,
+        "known_weight": 189.0,
+        "generated_weight": 100.3383325173815
+      },
+      {
+        "step": 2,
+        "known": 189,
+        "generated": 755,
+        "known_weight": 189.0,
+        "generated_weight": 116.85548406390758
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 671,
+      "generated_positive_counts": [
+        21,
+        13,
+        22,
+        601,
+        51
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 989,
+          "query": 41,
+          "fitting_ids_sha256": "46880626c4659e9be43dafa0baea269ea2061f8fd3ff7a19e268ede51ac2f77a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 1001,
+          "query": 35,
+          "fitting_ids_sha256": "f5a006a82557ea8fb372b1946ad2edcebf114f1ec3fc4348d8be695722e6064d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 1004,
+          "query": 37,
+          "fitting_ids_sha256": "efdade19ae14c7e51d66445e9eb174bb9bacdbd25edcf82d509cfe4ad8eef2c1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 955,
+          "query": 37,
+          "fitting_ids_sha256": "88a3816c373a8d2df3676de9d4b5d6ccaddf6e1aaeb1c13cb11e278cd4d7e3ff",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 888,
+          "query": 39,
+          "fitting_ids_sha256": "c52427ea5807fc04b37c671d9ba5482544f80410ced3e8303290dc8d5808c3b4",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 189,
+          "generated": 0,
+          "known_weight": 189.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 189,
+          "generated": 671,
+          "known_weight": 189.0,
+          "generated_weight": 91.29747713991112
+        },
+        {
+          "step": 2,
+          "known": 189,
+          "generated": 671,
+          "known_weight": 189.0,
+          "generated_weight": 91.29747713991112
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 989,
+          "query": 41,
+          "fitting_ids_sha256": "46880626c4659e9be43dafa0baea269ea2061f8fd3ff7a19e268ede51ac2f77a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 1001,
+          "query": 35,
+          "fitting_ids_sha256": "f5a006a82557ea8fb372b1946ad2edcebf114f1ec3fc4348d8be695722e6064d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 1004,
+          "query": 37,
+          "fitting_ids_sha256": "efdade19ae14c7e51d66445e9eb174bb9bacdbd25edcf82d509cfe4ad8eef2c1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 955,
+          "query": 37,
+          "fitting_ids_sha256": "88a3816c373a8d2df3676de9d4b5d6ccaddf6e1aaeb1c13cb11e278cd4d7e3ff",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 888,
+          "query": 39,
+          "fitting_ids_sha256": "c52427ea5807fc04b37c671d9ba5482544f80410ced3e8303290dc8d5808c3b4",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9109347442680775,
+      "residual_mean_l1": 0.3260945258229307,
+      "scale_quantiles": [
+        0.6594615980739347,
+        13.318642371877802,
+        33.55907924165503,
+        111.25338277579215,
+        326094525822.9307
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007722185671015273,
+        0.010681287512787954,
+        0.24951951436082465
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004426358375767013,
+      "clipped_fraction": 0.13478260869565217,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.059084282224821524,
+      "clipped_fraction": 0.5695652173913044,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.6282732924446464
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261127,
+    "fold": 1,
+    "gold": 190,
+    "masked": 945,
+    "fit_ids_sha256": "ef70e9181c23a74e7f73368616eee84b7ffc2561ad7e384b107d3207590d658b",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 190,
+        "generated": 0,
+        "known_weight": 190.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 190,
+        "generated": 596,
+        "known_weight": 190.0,
+        "generated_weight": 87.33027514682941
+      },
+      {
+        "step": 2,
+        "known": 190,
+        "generated": 683,
+        "known_weight": 190.0,
+        "generated_weight": 107.03214941314269
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 610,
+      "generated_positive_counts": [
+        14,
+        12,
+        16,
+        552,
+        48
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 850,
+          "query": 40,
+          "fitting_ids_sha256": "83d9747d39c32e2a2f24bf0f115baac60aa1da7fb6d886adbedc341a985d7f9b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 943,
+          "query": 35,
+          "fitting_ids_sha256": "95d881776dd93b22c8fbeffbdb9cddac39e4ed66ee73df9daa3b4a7ef2f1ee6c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 945,
+          "query": 37,
+          "fitting_ids_sha256": "61160634146c7055575480a9f979ac42e5e4a68a6c7ac6b6b92c0f84da8cf370",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 924,
+          "query": 37,
+          "fitting_ids_sha256": "edd602fb343489777a2e9039d920839debf5233093fd0e1b2ce01d6076276c4b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 931,
+          "query": 41,
+          "fitting_ids_sha256": "335a7dcb417b9c13571b0890fcf4931fa8f98a84ed33ef76afd6c75c079b8812",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 190,
+          "generated": 0,
+          "known_weight": 190.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 190,
+          "generated": 610,
+          "known_weight": 190.0,
+          "generated_weight": 79.51259312873353
+        },
+        {
+          "step": 2,
+          "known": 190,
+          "generated": 610,
+          "known_weight": 190.0,
+          "generated_weight": 79.51259312873353
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 850,
+          "query": 40,
+          "fitting_ids_sha256": "83d9747d39c32e2a2f24bf0f115baac60aa1da7fb6d886adbedc341a985d7f9b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 943,
+          "query": 35,
+          "fitting_ids_sha256": "95d881776dd93b22c8fbeffbdb9cddac39e4ed66ee73df9daa3b4a7ef2f1ee6c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 945,
+          "query": 37,
+          "fitting_ids_sha256": "61160634146c7055575480a9f979ac42e5e4a68a6c7ac6b6b92c0f84da8cf370",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 924,
+          "query": 37,
+          "fitting_ids_sha256": "edd602fb343489777a2e9039d920839debf5233093fd0e1b2ce01d6076276c4b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 931,
+          "query": 41,
+          "fitting_ids_sha256": "335a7dcb417b9c13571b0890fcf4931fa8f98a84ed33ef76afd6c75c079b8812",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9140350877192983,
+      "residual_mean_l1": 0.3224357718581779,
+      "scale_quantiles": [
+        0.7360144909121797,
+        13.281355311446784,
+        32.525477683575204,
+        67.9983024194974,
+        322435771858.1779
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0010293460556994479,
+        0.010195427504424051,
+        0.23816598278311918
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.00487243078294153,
+      "clipped_fraction": 0.15555555555555556,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05845058635347598,
+      "clipped_fraction": 0.5866666666666667,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.49354724958539
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261127,
+    "fold": 2,
+    "gold": 190,
+    "masked": 978,
+    "fit_ids_sha256": "73ee6bc82d6c54fc3539273d21a207f28a311f1eaac525991d28da71ee736c38",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 190,
+        "generated": 0,
+        "known_weight": 189.99999999999997,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 190,
+        "generated": 662,
+        "known_weight": 189.99999999999997,
+        "generated_weight": 98.48366082919654
+      },
+      {
+        "step": 2,
+        "known": 190,
+        "generated": 737,
+        "known_weight": 189.99999999999997,
+        "generated_weight": 116.44571157781562
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 656,
+      "generated_positive_counts": [
+        19,
+        10,
+        24,
+        586,
+        48
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 929,
+          "query": 39,
+          "fitting_ids_sha256": "f6ba2481e468917fe9dbc5377ea7a5bff73d76772325f59da4fce7b8f48049e4",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 974,
+          "query": 37,
+          "fitting_ids_sha256": "b77d453e1287e59bc69c26e3f394d6c1d365c82c17cc35d575690f252a1ccc3b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 896,
+          "query": 44,
+          "fitting_ids_sha256": "072856e198a47692656a463ec835bfd4423d70fd9b2cab10d83f51bdcc4e8a5b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 156,
+          "masked": 970,
+          "query": 34,
+          "fitting_ids_sha256": "5bdf522fa2770c2f3e04ab70842cbe349d89c0e314d3de7e170a8034f313592e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 956,
+          "query": 36,
+          "fitting_ids_sha256": "e5dfb6a187d432d0c359e4c3ddf756bc128c606b198c05368ade3c4bbb550802",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 190,
+          "generated": 0,
+          "known_weight": 189.99999999999997,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 190,
+          "generated": 656,
+          "known_weight": 189.99999999999997,
+          "generated_weight": 86.76097678201714
+        },
+        {
+          "step": 2,
+          "known": 190,
+          "generated": 656,
+          "known_weight": 189.99999999999997,
+          "generated_weight": 86.76097678201714
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 929,
+          "query": 39,
+          "fitting_ids_sha256": "f6ba2481e468917fe9dbc5377ea7a5bff73d76772325f59da4fce7b8f48049e4",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 974,
+          "query": 37,
+          "fitting_ids_sha256": "b77d453e1287e59bc69c26e3f394d6c1d365c82c17cc35d575690f252a1ccc3b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 896,
+          "query": 44,
+          "fitting_ids_sha256": "072856e198a47692656a463ec835bfd4423d70fd9b2cab10d83f51bdcc4e8a5b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 156,
+          "masked": 970,
+          "query": 34,
+          "fitting_ids_sha256": "5bdf522fa2770c2f3e04ab70842cbe349d89c0e314d3de7e170a8034f313592e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 956,
+          "query": 36,
+          "fitting_ids_sha256": "e5dfb6a187d432d0c359e4c3ddf756bc128c606b198c05368ade3c4bbb550802",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.924561403508772,
+      "residual_mean_l1": 0.29626432499785715,
+      "scale_quantiles": [
+        0.7070495690436939,
+        12.116843116986733,
+        30.017081563359255,
+        63.22279293217257,
+        296264324997.8572
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.001011916184917141,
+        0.00996063505388759,
+        0.2519285620719814
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0038510926356666777,
+      "clipped_fraction": 0.13333333333333333,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05499400168728736,
+      "clipped_fraction": 0.6044444444444445,
+      "changed_rows": 3
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5325040826573968
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261127,
+    "fold": 3,
+    "gold": 188,
+    "masked": 997,
+    "fit_ids_sha256": "3a6f891703513b88dd3e17aebce10ecd0fc1db7941ac6408bbf6f236f64b540d",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 188,
+        "generated": 0,
+        "known_weight": 188.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 188,
+        "generated": 643,
+        "known_weight": 188.0,
+        "generated_weight": 95.07466666666667
+      },
+      {
+        "step": 2,
+        "known": 188,
+        "generated": 734,
+        "known_weight": 188.0,
+        "generated_weight": 116.19955555555558
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 630,
+      "generated_positive_counts": [
+        20,
+        7,
+        19,
+        568,
+        30
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 942,
+          "query": 38,
+          "fitting_ids_sha256": "3370edf1ee415ed795d88ffe4f25de17361709fc77d78f3fe2a99548ed62cb3f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 975,
+          "query": 36,
+          "fitting_ids_sha256": "f0d9075751fed8f503b46abf19d9bccb3a75d783b079836c9de39e783211a3f0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 987,
+          "query": 36,
+          "fitting_ids_sha256": "8ae1ff554a07d37387f872ca136f30952927f5355164b4cd257571bb26e0e836",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 145,
+          "masked": 901,
+          "query": 43,
+          "fitting_ids_sha256": "32ec7d12304086202e178b2f0ed05ae05fab11b66b650ab08d11b01c5dc3c4fd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 996,
+          "query": 35,
+          "fitting_ids_sha256": "68e45c0bd65c99f5d920ffd30c7de17c0426f534666ed2769c45b4a683f4e0d9",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 188,
+          "generated": 0,
+          "known_weight": 188.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 188,
+          "generated": 630,
+          "known_weight": 188.0,
+          "generated_weight": 78.06888888888889
+        },
+        {
+          "step": 2,
+          "known": 188,
+          "generated": 630,
+          "known_weight": 188.0,
+          "generated_weight": 78.06888888888889
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 942,
+          "query": 38,
+          "fitting_ids_sha256": "3370edf1ee415ed795d88ffe4f25de17361709fc77d78f3fe2a99548ed62cb3f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 975,
+          "query": 36,
+          "fitting_ids_sha256": "f0d9075751fed8f503b46abf19d9bccb3a75d783b079836c9de39e783211a3f0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 987,
+          "query": 36,
+          "fitting_ids_sha256": "8ae1ff554a07d37387f872ca136f30952927f5355164b4cd257571bb26e0e836",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 145,
+          "masked": 901,
+          "query": 43,
+          "fitting_ids_sha256": "32ec7d12304086202e178b2f0ed05ae05fab11b66b650ab08d11b01c5dc3c4fd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 996,
+          "query": 35,
+          "fitting_ids_sha256": "68e45c0bd65c99f5d920ffd30c7de17c0426f534666ed2769c45b4a683f4e0d9",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.8971631205673758,
+      "residual_mean_l1": 0.3561928826959851,
+      "scale_quantiles": [
+        0.6149016222073181,
+        16.041660969667678,
+        41.63699975237821,
+        100.35874302185053,
+        356192882695.9851
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0009125771391301055,
+        0.010378100391548758,
+        0.2558046970336965
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005248583104479252,
+      "clipped_fraction": 0.16170212765957448,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.06309704808815324,
+      "clipped_fraction": 0.5404255319148936,
+      "changed_rows": 5
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.511447124183178
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261127,
+    "fold": 4,
+    "gold": 183,
+    "masked": 943,
+    "fit_ids_sha256": "a49d3ca4660098902225e27d45db6cbbe5f4197bb6964278c9d051ff53399afc",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 183,
+        "generated": 0,
+        "known_weight": 183.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 183,
+        "generated": 595,
+        "known_weight": 183.0,
+        "generated_weight": 89.29060751999583
+      },
+      {
+        "step": 2,
+        "known": 183,
+        "generated": 677,
+        "known_weight": 183.0,
+        "generated_weight": 108.34144819384181
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 624,
+      "generated_positive_counts": [
+        18,
+        13,
+        24,
+        556,
+        54
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 147,
+          "masked": 871,
+          "query": 36,
+          "fitting_ids_sha256": "e2f33c339ce0c07c1e06eef12c25bdc759c6c5a6ce8c64e191e967e551d5fc47",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 922,
+          "query": 34,
+          "fitting_ids_sha256": "12c02fe3ba795eaca13602921c92b4e582d36f3f8ce91535f7c80e56d5ba67ae",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 142,
+          "masked": 943,
+          "query": 41,
+          "fitting_ids_sha256": "09fdb9c64453b5c403f554f0c5cdcd80e8c5f62de1870cf15940451927c1f993",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 144,
+          "masked": 913,
+          "query": 39,
+          "fitting_ids_sha256": "7e2e247c7b38c13d63f849d7ad890792061eb6fa19cb36b58ad5c679e6b7a9f1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 936,
+          "query": 33,
+          "fitting_ids_sha256": "c455861fdaee67216be2e39e0d76dc225c36e90e613a48844d9455f97981684f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 183,
+          "generated": 0,
+          "known_weight": 183.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 183,
+          "generated": 624,
+          "known_weight": 183.0,
+          "generated_weight": 85.43310451408855
+        },
+        {
+          "step": 2,
+          "known": 183,
+          "generated": 624,
+          "known_weight": 183.0,
+          "generated_weight": 85.43310451408855
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 147,
+          "masked": 871,
+          "query": 36,
+          "fitting_ids_sha256": "e2f33c339ce0c07c1e06eef12c25bdc759c6c5a6ce8c64e191e967e551d5fc47",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 922,
+          "query": 34,
+          "fitting_ids_sha256": "12c02fe3ba795eaca13602921c92b4e582d36f3f8ce91535f7c80e56d5ba67ae",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 142,
+          "masked": 943,
+          "query": 41,
+          "fitting_ids_sha256": "09fdb9c64453b5c403f554f0c5cdcd80e8c5f62de1870cf15940451927c1f993",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 144,
+          "masked": 913,
+          "query": 39,
+          "fitting_ids_sha256": "7e2e247c7b38c13d63f849d7ad890792061eb6fa19cb36b58ad5c679e6b7a9f1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 936,
+          "query": 33,
+          "fitting_ids_sha256": "c455861fdaee67216be2e39e0d76dc225c36e90e613a48844d9455f97981684f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9271402550091075,
+      "residual_mean_l1": 0.29996041924666833,
+      "scale_quantiles": [
+        0.676377094508355,
+        11.704100318843588,
+        29.400058808198885,
+        59.18208716746588,
+        299960419246.66833
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.001063175588291007,
+        0.010889126037212123,
+        0.24022521488671805
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005689458683041483,
+      "clipped_fraction": 0.11153846153846154,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05525169550113161,
+      "clipped_fraction": 0.5076923076923077,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5196662908419967
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261128,
+    "fold": 0,
+    "gold": 184,
+    "masked": 954,
+    "fit_ids_sha256": "0bdb422fc4d2c34ef57df4a7daa306e469bf07fa22f8165bc9a8f64ce12cb219",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 184,
+        "generated": 0,
+        "known_weight": 183.99999999999994,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 184,
+        "generated": 609,
+        "known_weight": 183.99999999999994,
+        "generated_weight": 92.6867832167832
+      },
+      {
+        "step": 2,
+        "known": 184,
+        "generated": 695,
+        "known_weight": 183.99999999999994,
+        "generated_weight": 113.38578754578751
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 629,
+      "generated_positive_counts": [
+        16,
+        12,
+        22,
+        564,
+        53
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 954,
+          "query": 34,
+          "fitting_ids_sha256": "fe348a11c928619a6c63e4a7ef5aa3b0117f2e758034c0fb9962ffd64b2d560c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 940,
+          "query": 38,
+          "fitting_ids_sha256": "d207c7be2bd32e7b085e03d83f37b3ca0ebd2f2d5c9fed5d65c9753c55923194",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 943,
+          "query": 36,
+          "fitting_ids_sha256": "aa899329f7e30f73db17753cd8c117a7474fa969e56701738618ee3aa796019a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 935,
+          "query": 35,
+          "fitting_ids_sha256": "5a58a58a280002c66d2e821d2102647e7c675ceb40c04067a59b203fff06420e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 143,
+          "masked": 857,
+          "query": 41,
+          "fitting_ids_sha256": "85aaa9f73b4e860cbea393cb59dd04e77725ad69d8451c8503291d8cb5903149",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 184,
+          "generated": 0,
+          "known_weight": 183.99999999999994,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 184,
+          "generated": 629,
+          "known_weight": 183.99999999999994,
+          "generated_weight": 85.28061216561215
+        },
+        {
+          "step": 2,
+          "known": 184,
+          "generated": 629,
+          "known_weight": 183.99999999999994,
+          "generated_weight": 85.28061216561215
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 150,
+          "masked": 954,
+          "query": 34,
+          "fitting_ids_sha256": "fe348a11c928619a6c63e4a7ef5aa3b0117f2e758034c0fb9962ffd64b2d560c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 940,
+          "query": 38,
+          "fitting_ids_sha256": "d207c7be2bd32e7b085e03d83f37b3ca0ebd2f2d5c9fed5d65c9753c55923194",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 943,
+          "query": 36,
+          "fitting_ids_sha256": "aa899329f7e30f73db17753cd8c117a7474fa969e56701738618ee3aa796019a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 935,
+          "query": 35,
+          "fitting_ids_sha256": "5a58a58a280002c66d2e821d2102647e7c675ceb40c04067a59b203fff06420e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 143,
+          "masked": 857,
+          "query": 41,
+          "fitting_ids_sha256": "85aaa9f73b4e860cbea393cb59dd04e77725ad69d8451c8503291d8cb5903149",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9202898550724636,
+      "residual_mean_l1": 0.30948628467851325,
+      "scale_quantiles": [
+        0.7092957162622666,
+        13.608779453413419,
+        29.639965164677424,
+        62.731308680814664,
+        309486284678.51324
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0009745434704522644,
+        0.010072905784551809,
+        0.24125643482880854
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004010634941626104,
+      "clipped_fraction": 0.058823529411764705,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05489763434171933,
+      "clipped_fraction": 0.5019607843137255,
+      "changed_rows": 5
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.484920541755855
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261128,
+    "fold": 1,
+    "gold": 188,
+    "masked": 936,
+    "fit_ids_sha256": "48aa0958aa971b2df02dfb58568edb26c116c63f9a6beca980ec3a22d5db07f4",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 188,
+        "generated": 0,
+        "known_weight": 188.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 188,
+        "generated": 597,
+        "known_weight": 188.0,
+        "generated_weight": 89.82324308101619
+      },
+      {
+        "step": 2,
+        "known": 188,
+        "generated": 682,
+        "known_weight": 188.0,
+        "generated_weight": 108.81702410694007
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 599,
+      "generated_positive_counts": [
+        18,
+        7,
+        26,
+        534,
+        39
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 881,
+          "query": 36,
+          "fitting_ids_sha256": "a05c14baa20ab28d4c5d79fb3191f7ce65f2df958da7e9d816b3826fe41df06e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 935,
+          "query": 42,
+          "fitting_ids_sha256": "adfa85045512b444c0190f300ade61ba25003e35a29db086508810985467099d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 899,
+          "query": 39,
+          "fitting_ids_sha256": "da169d5dbaa887aab72aefb844b160e22eed2c47d8e0082094e950497f9e449c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 928,
+          "query": 36,
+          "fitting_ids_sha256": "73a2a3a0b78cf2a0d579f81da3287998941754da43e51b6e2f72f2237d36421e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 914,
+          "query": 35,
+          "fitting_ids_sha256": "83c6acc6bff5b61a4d3299a02a94898a9188b291ef6ff5aeeb374e86e052716d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 188,
+          "generated": 0,
+          "known_weight": 188.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 188,
+          "generated": 599,
+          "known_weight": 188.0,
+          "generated_weight": 77.42263939359528
+        },
+        {
+          "step": 2,
+          "known": 188,
+          "generated": 599,
+          "known_weight": 188.0,
+          "generated_weight": 77.42263939359528
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 881,
+          "query": 36,
+          "fitting_ids_sha256": "a05c14baa20ab28d4c5d79fb3191f7ce65f2df958da7e9d816b3826fe41df06e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 935,
+          "query": 42,
+          "fitting_ids_sha256": "adfa85045512b444c0190f300ade61ba25003e35a29db086508810985467099d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 149,
+          "masked": 899,
+          "query": 39,
+          "fitting_ids_sha256": "da169d5dbaa887aab72aefb844b160e22eed2c47d8e0082094e950497f9e449c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 928,
+          "query": 36,
+          "fitting_ids_sha256": "73a2a3a0b78cf2a0d579f81da3287998941754da43e51b6e2f72f2237d36421e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 914,
+          "query": 35,
+          "fitting_ids_sha256": "83c6acc6bff5b61a4d3299a02a94898a9188b291ef6ff5aeeb374e86e052716d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9148936170212766,
+      "residual_mean_l1": 0.30953609107845464,
+      "scale_quantiles": [
+        0.5939411130731401,
+        12.551962200819766,
+        29.18631603244779,
+        60.983703111892034,
+        309536091078.45465
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0011133007619166632,
+        0.011055647790860249,
+        0.2314963176437961
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004144729174236941,
+      "clipped_fraction": 0.13191489361702127,
+      "changed_rows": 2
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.056417605720456065,
+      "clipped_fraction": 0.5404255319148936,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5856702076271176
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261128,
+    "fold": 2,
+    "gold": 185,
+    "masked": 985,
+    "fit_ids_sha256": "c8775d033942bf691f1bf0522ec2f89150d15b7334282d1810fb17f24442385f",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 185,
+        "generated": 0,
+        "known_weight": 185.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 185,
+        "generated": 622,
+        "known_weight": 185.0,
+        "generated_weight": 91.88008816680454
+      },
+      {
+        "step": 2,
+        "known": 185,
+        "generated": 724,
+        "known_weight": 185.0,
+        "generated_weight": 116.51153981677237
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 622,
+      "generated_positive_counts": [
+        12,
+        15,
+        15,
+        568,
+        46
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 968,
+          "query": 34,
+          "fitting_ids_sha256": "a9d0b9ef1dfcb1b95833a9ae96384169ebda651db714d875eb2c741dde296b5a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 969,
+          "query": 34,
+          "fitting_ids_sha256": "e0379ee30fa8e7eb46ffd6ea0bbdabe6356f33997bfb5f4056ae67e468849139",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 936,
+          "query": 37,
+          "fitting_ids_sha256": "f320c953da4434394d3f29203b7d793c183b1cd636cd3c4d22712fd8330c7874",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 982,
+          "query": 39,
+          "fitting_ids_sha256": "0616bea79ffb1e041886ddf3b55f404188ed35e5c9e61faac97784f05c88a24d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 144,
+          "masked": 898,
+          "query": 41,
+          "fitting_ids_sha256": "b414db4cbdfe28a6101e0d132d9c88195ec83244885844528b4eb81097c3cee5",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 185,
+          "generated": 0,
+          "known_weight": 185.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 185,
+          "generated": 622,
+          "known_weight": 185.0,
+          "generated_weight": 79.97741606535527
+        },
+        {
+          "step": 2,
+          "known": 185,
+          "generated": 622,
+          "known_weight": 185.0,
+          "generated_weight": 79.97741606535527
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 968,
+          "query": 34,
+          "fitting_ids_sha256": "a9d0b9ef1dfcb1b95833a9ae96384169ebda651db714d875eb2c741dde296b5a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 969,
+          "query": 34,
+          "fitting_ids_sha256": "e0379ee30fa8e7eb46ffd6ea0bbdabe6356f33997bfb5f4056ae67e468849139",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 148,
+          "masked": 936,
+          "query": 37,
+          "fitting_ids_sha256": "f320c953da4434394d3f29203b7d793c183b1cd636cd3c4d22712fd8330c7874",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 146,
+          "masked": 982,
+          "query": 39,
+          "fitting_ids_sha256": "0616bea79ffb1e041886ddf3b55f404188ed35e5c9e61faac97784f05c88a24d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 144,
+          "masked": 898,
+          "query": 41,
+          "fitting_ids_sha256": "b414db4cbdfe28a6101e0d132d9c88195ec83244885844528b4eb81097c3cee5",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9207207207207206,
+      "residual_mean_l1": 0.3276103851977594,
+      "scale_quantiles": [
+        0.7515835603462314,
+        13.42591430420053,
+        34.17063511531508,
+        78.78834029736996,
+        327610385197.75946
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0008839585414573957,
+        0.010586705095383226,
+        0.2476678686452668
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005709709456313474,
+      "clipped_fraction": 0.184,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05880389632979047,
+      "clipped_fraction": 0.556,
+      "changed_rows": 3
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5736420834437013
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261128,
+    "fold": 3,
+    "gold": 191,
+    "masked": 994,
+    "fit_ids_sha256": "c2690c7bb6d7bf55448aed71b435170b750fdef9e02743d8d7226fbb315f7e8b",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 191,
+        "generated": 0,
+        "known_weight": 191.00000000000003,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 191,
+        "generated": 677,
+        "known_weight": 191.00000000000003,
+        "generated_weight": 100.29722459441572
+      },
+      {
+        "step": 2,
+        "known": 191,
+        "generated": 747,
+        "known_weight": 191.00000000000003,
+        "generated_weight": 116.5160202743472
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 630,
+      "generated_positive_counts": [
+        24,
+        12,
+        24,
+        555,
+        47
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 944,
+          "query": 39,
+          "fitting_ids_sha256": "2c9fbcb95e0f202fa6003a2aea6ae61e370f112ecc6cde01b22140b9d8384574",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 965,
+          "query": 37,
+          "fitting_ids_sha256": "7f89f1c68c1a9667a8e2afbe673aa092bd1a1521e3b779407fd6bc5e8176cc72",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 920,
+          "query": 40,
+          "fitting_ids_sha256": "384ee40009d3710e9adb2521f4c20e5620c52c6eec7af4e6e2d315765251e7a8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 969,
+          "query": 39,
+          "fitting_ids_sha256": "d4d8a1f5aa6684a35295d7678a422220ea2f7db281fde76a09bfbd81663cc749",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 991,
+          "query": 36,
+          "fitting_ids_sha256": "cfb8ec1c7f63a776e53dc5eb3cb2336683e634ca6806329b13f8caeb1eb77b54",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 191,
+          "generated": 0,
+          "known_weight": 191.00000000000003,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 191,
+          "generated": 630,
+          "known_weight": 191.00000000000003,
+          "generated_weight": 87.82405145713506
+        },
+        {
+          "step": 2,
+          "known": 191,
+          "generated": 630,
+          "known_weight": 191.00000000000003,
+          "generated_weight": 87.82405145713506
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 944,
+          "query": 39,
+          "fitting_ids_sha256": "2c9fbcb95e0f202fa6003a2aea6ae61e370f112ecc6cde01b22140b9d8384574",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 965,
+          "query": 37,
+          "fitting_ids_sha256": "7f89f1c68c1a9667a8e2afbe673aa092bd1a1521e3b779407fd6bc5e8176cc72",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 151,
+          "masked": 920,
+          "query": 40,
+          "fitting_ids_sha256": "384ee40009d3710e9adb2521f4c20e5620c52c6eec7af4e6e2d315765251e7a8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 152,
+          "masked": 969,
+          "query": 39,
+          "fitting_ids_sha256": "d4d8a1f5aa6684a35295d7678a422220ea2f7db281fde76a09bfbd81663cc749",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 155,
+          "masked": 991,
+          "query": 36,
+          "fitting_ids_sha256": "cfb8ec1c7f63a776e53dc5eb3cb2336683e634ca6806329b13f8caeb1eb77b54",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9092495636998255,
+      "residual_mean_l1": 0.33333839065296794,
+      "scale_quantiles": [
+        0.614942074346766,
+        13.3175092672614,
+        37.27295673689281,
+        95.82134076174074,
+        2748.07049522059
+      ],
+      "raw_field_abs_quantiles": [
+        1.5892476979002244e-06,
+        0.0008990377454348355,
+        0.010877007611422473,
+        0.24814876864527763
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005425979380842653,
+      "clipped_fraction": 0.1409090909090909,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05988974555172337,
+      "clipped_fraction": 0.5454545454545454,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.6271613333374262
+  },
+  {
+    "pool": "pooled",
+    "seed": 20261128,
+    "fold": 4,
+    "gold": 192,
+    "masked": 1000,
+    "fit_ids_sha256": "fcd04e10e54a32b4cf400c46e3f9886e63adf34de3ee6aa288a9c087d8f2e75d",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 192,
+        "generated": 0,
+        "known_weight": 192.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 192,
+        "generated": 676,
+        "known_weight": 192.0,
+        "generated_weight": 100.90300212068632
+      },
+      {
+        "step": 2,
+        "known": 192,
+        "generated": 759,
+        "known_weight": 192.0,
+        "generated_weight": 117.01655677655677
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 674,
+      "generated_positive_counts": [
+        18,
+        11,
+        25,
+        603,
+        39
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 929,
+          "query": 39,
+          "fitting_ids_sha256": "e0a2737feb8197db4b378e3ccfb79d4f651ae929df585512c49d8482f0206dcf",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 945,
+          "query": 38,
+          "fitting_ids_sha256": "5a9d9e3689f9ae440594f3a1e3977a1b730f2adecc87b5ce8f56234a96bfa464",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 979,
+          "query": 38,
+          "fitting_ids_sha256": "f0906b45d8f95001bb3123b1b9f778a06b54f5cb44866a511dbfee6abda7b63d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 994,
+          "query": 38,
+          "fitting_ids_sha256": "72d513d50aac077e2591470f94e883926c46306b21017b1652de2e262720bfda",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 966,
+          "query": 39,
+          "fitting_ids_sha256": "94b38ea33af5ec0b37699c4607472ec42ef0d5eaa73abc7945b4c66ae7657f74",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 192,
+          "generated": 0,
+          "known_weight": 192.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 192,
+          "generated": 674,
+          "known_weight": 192.0,
+          "generated_weight": 88.07595295932137
+        },
+        {
+          "step": 2,
+          "known": 192,
+          "generated": 674,
+          "known_weight": 192.0,
+          "generated_weight": 88.07595295932137
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 929,
+          "query": 39,
+          "fitting_ids_sha256": "e0a2737feb8197db4b378e3ccfb79d4f651ae929df585512c49d8482f0206dcf",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 945,
+          "query": 38,
+          "fitting_ids_sha256": "5a9d9e3689f9ae440594f3a1e3977a1b730f2adecc87b5ce8f56234a96bfa464",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 979,
+          "query": 38,
+          "fitting_ids_sha256": "f0906b45d8f95001bb3123b1b9f778a06b54f5cb44866a511dbfee6abda7b63d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 154,
+          "masked": 994,
+          "query": 38,
+          "fitting_ids_sha256": "72d513d50aac077e2591470f94e883926c46306b21017b1652de2e262720bfda",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 153,
+          "masked": 966,
+          "query": 39,
+          "fitting_ids_sha256": "94b38ea33af5ec0b37699c4607472ec42ef0d5eaa73abc7945b4c66ae7657f74",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9236111111111112,
+      "residual_mean_l1": 0.2945548927137877,
+      "scale_quantiles": [
+        0.6695572210164128,
+        12.48595391173965,
+        30.364496682656682,
+        86.94363347567307,
+        294554892713.7877
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0009969486131907491,
+        0.010072284216343633,
+        0.2544002007865219
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005349984374149974,
+      "clipped_fraction": 0.13953488372093023,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05329587873358578,
+      "clipped_fraction": 0.49767441860465117,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.3885894576087594
+  },
+  {
+    "pool": "train",
+    "seed": 20261126,
+    "fold": 0,
+    "gold": 126,
+    "masked": 1014,
+    "fit_ids_sha256": "104ea213a28b004c6c45b17e323fd6deb0039713adc30cb981eeeaf1c0e2077a",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 126,
+        "generated": 0,
+        "known_weight": 126.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 126,
+        "generated": 640,
+        "known_weight": 126.0,
+        "generated_weight": 88.83950226244343
+      },
+      {
+        "step": 2,
+        "known": 126,
+        "generated": 764,
+        "known_weight": 126.0,
+        "generated_weight": 112.04719457013573
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "no_teacher_clone_exact": true,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 690,
+      "generated_positive_counts": [
+        13,
+        13,
+        21,
+        628,
+        44
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "ca1e18c2b13da609ff6e3f0c0fe4d40320d5d818f00e8e9e54381523821a9181",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "1373f6fb58654e93cb228d2046aa344de395893331c77f275b5af19d2a6659b1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "bd0bd205518b185c1258db72b8763a029f96a1f40f6c19f5a7fb44d30bfc65d3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "f53fe39e5d7b68ad8a0713dbd827a64e1fafef3f40cd2831f437058b7c7d1395",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 30,
+          "fitting_ids_sha256": "2f9ee857f577d94eefb3668ab40cbe87e701868d36b4b987d877e8df97f9c820",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 126,
+          "generated": 0,
+          "known_weight": 126.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 126,
+          "generated": 690,
+          "known_weight": 126.0,
+          "generated_weight": 88.08470588235292
+        },
+        {
+          "step": 2,
+          "known": 126,
+          "generated": 690,
+          "known_weight": 126.0,
+          "generated_weight": 88.08470588235292
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "ca1e18c2b13da609ff6e3f0c0fe4d40320d5d818f00e8e9e54381523821a9181",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "1373f6fb58654e93cb228d2046aa344de395893331c77f275b5af19d2a6659b1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "bd0bd205518b185c1258db72b8763a029f96a1f40f6c19f5a7fb44d30bfc65d3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "f53fe39e5d7b68ad8a0713dbd827a64e1fafef3f40cd2831f437058b7c7d1395",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 30,
+          "fitting_ids_sha256": "2f9ee857f577d94eefb3668ab40cbe87e701868d36b4b987d877e8df97f9c820",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9338624338624338,
+      "residual_mean_l1": 0.26079991404846975,
+      "scale_quantiles": [
+        0.614692313680238,
+        18.21220811635044,
+        41.9569736976804,
+        79.02543437157271,
+        260799914048.46976
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007147250715036245,
+        0.006328643755633302,
+        0.25318621045469486
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0050073798689896755,
+      "clipped_fraction": 0.08387096774193549,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.04894187994226403,
+      "clipped_fraction": 0.5741935483870968,
+      "changed_rows": 1
+    },
+    "zero_residual_identity": true,
+    "query_batch_independence": true,
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.2697467496618629
+  },
+  {
+    "pool": "train",
+    "seed": 20261126,
+    "fold": 1,
+    "gold": 127,
+    "masked": 1014,
+    "fit_ids_sha256": "a175b7f593c0bb0d2aec7a85a3d0df5a02bcc521bbb628116a54622e4b57330b",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 127,
+        "generated": 0,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 127,
+        "generated": 609,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 88.69714396714397
+      },
+      {
+        "step": 2,
+        "known": 127,
+        "generated": 745,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 115.27114330114333
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 655,
+      "generated_positive_counts": [
+        10,
+        12,
+        23,
+        594,
+        35
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "fd3de428ebf2c9b13ab9edd10847607a04d083b380fec3e000a637236edfe4aa",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 26,
+          "fitting_ids_sha256": "ee360bac251e454a14a1679bb17613b4612df984c5ca0de1e1026d9a37cb2cd8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "79d02aa1be55877a777f26de9b19f21d7779bcb18a42f4a1d016a2a2b2ee1ecd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "9bf8182bea6d853964c5547249801022389a9cbe6b479c54d648725136a4b88e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 29,
+          "fitting_ids_sha256": "2ea1785f2bcb0a96b9e46df8da014329f5dc0123d40c812f4fa94669477197a3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 127,
+          "generated": 0,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 127,
+          "generated": 655,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 83.46105477855478
+        },
+        {
+          "step": 2,
+          "known": 127,
+          "generated": 655,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 83.46105477855478
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "fd3de428ebf2c9b13ab9edd10847607a04d083b380fec3e000a637236edfe4aa",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 26,
+          "fitting_ids_sha256": "ee360bac251e454a14a1679bb17613b4612df984c5ca0de1e1026d9a37cb2cd8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "79d02aa1be55877a777f26de9b19f21d7779bcb18a42f4a1d016a2a2b2ee1ecd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "9bf8182bea6d853964c5547249801022389a9cbe6b479c54d648725136a4b88e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 29,
+          "fitting_ids_sha256": "2ea1785f2bcb0a96b9e46df8da014329f5dc0123d40c812f4fa94669477197a3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9238845144356955,
+      "residual_mean_l1": 0.28007078299715665,
+      "scale_quantiles": [
+        0.6556798736799413,
+        20.754702368565603,
+        45.75084758987743,
+        109.10449223898678,
+        280070782997.1567
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006001558657936779,
+        0.006046813857572228,
+        0.24092725567363152
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.003182572848680944,
+      "clipped_fraction": 0.08666666666666667,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.051607838203527254,
+      "clipped_fraction": 0.56,
+      "changed_rows": 5
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.689867208711803
+  },
+  {
+    "pool": "train",
+    "seed": 20261126,
+    "fold": 2,
+    "gold": 127,
+    "masked": 1014,
+    "fit_ids_sha256": "44a701b196da2e3977e73a66fc08568ef140e9b9d68f9a6a84da203ec7d8dc3a",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 127,
+        "generated": 0,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 127,
+        "generated": 615,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 92.800571242483
+      },
+      {
+        "step": 2,
+        "known": 127,
+        "generated": 742,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 115.49420367214483
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 651,
+      "generated_positive_counts": [
+        17,
+        8,
+        21,
+        584,
+        54
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "4a77900d18ddbfb266af5e01c57bd1e5169e5bdfaa3a61c839f38e3d0729e002",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "5bf083a9569c3634eb371a631a842b026c91cd841d7d3efebef344c6b1dd8b4d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "eb50109c6c98065d8c262007b4589a60d41ccb8b36a2c175c4bc61f4981fc73a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "88147822e31f6e406577f86232f5f330f6d55351a42558f6f79a70df7486f378",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "8b4fcd0e48f84df2440735c30c042052d944c72bb891988e16d028056f61e098",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 127,
+          "generated": 0,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 127,
+          "generated": 651,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 84.19351490013254
+        },
+        {
+          "step": 2,
+          "known": 127,
+          "generated": 651,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 84.19351490013254
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "4a77900d18ddbfb266af5e01c57bd1e5169e5bdfaa3a61c839f38e3d0729e002",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "5bf083a9569c3634eb371a631a842b026c91cd841d7d3efebef344c6b1dd8b4d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "eb50109c6c98065d8c262007b4589a60d41ccb8b36a2c175c4bc61f4981fc73a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "88147822e31f6e406577f86232f5f330f6d55351a42558f6f79a70df7486f378",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "8b4fcd0e48f84df2440735c30c042052d944c72bb891988e16d028056f61e098",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9396325459317586,
+      "residual_mean_l1": 0.2800740523697968,
+      "scale_quantiles": [
+        0.7025279767604449,
+        18.196939127962352,
+        44.207382850101745,
+        106.39186292128332,
+        2519.856358284545
+      ],
+      "raw_field_abs_quantiles": [
+        2.2509190553577382e-07,
+        0.000631892120606792,
+        0.006673418640322557,
+        0.21459222022835012
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0026806621405794334,
+      "clipped_fraction": 0.13333333333333333,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.052285411636186996,
+      "clipped_fraction": 0.5733333333333334,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.619407624937594
+  },
+  {
+    "pool": "train",
+    "seed": 20261126,
+    "fold": 3,
+    "gold": 123,
+    "masked": 1013,
+    "fit_ids_sha256": "1841410ffa87af6053f661bb99a56c97f5fb30aa1717c8c67316b943871aea2c",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 123,
+        "generated": 0,
+        "known_weight": 123.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 123,
+        "generated": 677,
+        "known_weight": 123.00000000000001,
+        "generated_weight": 93.58840492840494
+      },
+      {
+        "step": 2,
+        "known": 123,
+        "generated": 773,
+        "known_weight": 123.00000000000001,
+        "generated_weight": 117.4892340992341
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 653,
+      "generated_positive_counts": [
+        13,
+        12,
+        16,
+        595,
+        39
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "5a7a05db3affc59a571bf5f07855415071441cd0e3c6095d7765a7e44462a662",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1013,
+          "query": 23,
+          "fitting_ids_sha256": "4b3944a79a1874eb93d4ad4ea16c9f55cddafd7046fa4c24717efa2016d5a280",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "87059b25f51a3d9cd187ec80d9fcbca5877a0676aa77f3e3fef6a63eaf8066fa",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "8edca661be2104fdc2ed86b9a0b68a71227526a57e3ccb5f2bbc729f70672e83",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "a9f22aa07c3e688dacce2c3cbb632f75a3b0ecd8636a0e68cc6a0692041a7e17",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 123,
+          "generated": 0,
+          "known_weight": 123.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 123,
+          "generated": 653,
+          "known_weight": 123.00000000000001,
+          "generated_weight": 81.88818181818182
+        },
+        {
+          "step": 2,
+          "known": 123,
+          "generated": 653,
+          "known_weight": 123.00000000000001,
+          "generated_weight": 81.88818181818182
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "5a7a05db3affc59a571bf5f07855415071441cd0e3c6095d7765a7e44462a662",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1013,
+          "query": 23,
+          "fitting_ids_sha256": "4b3944a79a1874eb93d4ad4ea16c9f55cddafd7046fa4c24717efa2016d5a280",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "87059b25f51a3d9cd187ec80d9fcbca5877a0676aa77f3e3fef6a63eaf8066fa",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "8edca661be2104fdc2ed86b9a0b68a71227526a57e3ccb5f2bbc729f70672e83",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "a9f22aa07c3e688dacce2c3cbb632f75a3b0ecd8636a0e68cc6a0692041a7e17",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.89159891598916,
+      "residual_mean_l1": 0.34582098099434977,
+      "scale_quantiles": [
+        0.8165476805865037,
+        21.276804966731916,
+        55.6044270210757,
+        118.05423908410238,
+        345820980994.3498
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006955954900649552,
+        0.0070652125291155105,
+        0.2494394132532958
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.00426495870053462,
+      "clipped_fraction": 0.11764705882352941,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.06327819372686812,
+      "clipped_fraction": 0.5764705882352941,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.6036286242306232
+  },
+  {
+    "pool": "train",
+    "seed": 20261126,
+    "fold": 4,
+    "gold": 125,
+    "masked": 1006,
+    "fit_ids_sha256": "fdef174bce92810b1f4c614ed27c17edfe585b9789109ae80bb30c5c8ecef3e4",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 125,
+        "generated": 0,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 125,
+        "generated": 627,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 90.48951048951051
+      },
+      {
+        "step": 2,
+        "known": 125,
+        "generated": 755,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 115.3459040959041
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 651,
+      "generated_positive_counts": [
+        11,
+        10,
+        14,
+        598,
+        36
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "1000a2e8c5977f71aab067c2880cfafc5a196386034ad536b814679ee27263c1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "04607349a75e4963e39805ac5e77b90f96e12bef222ba34494c7e34e7d234d0c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1006,
+          "query": 28,
+          "fitting_ids_sha256": "f7c5637c23f14b63d2713bce65868462bf6727616e1cdd0ee39545724a59a0be",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "99f6de08817c15e8fd1dad96c614755d661c5dece44a4b4b0f42e4c4013f7f25",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "18d3527bd6836175d4c50100b20b914846088b9f83315ed986f60ae0dcd2b974",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 125,
+          "generated": 0,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 125,
+          "generated": 651,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 77.37876706626709
+        },
+        {
+          "step": 2,
+          "known": 125,
+          "generated": 651,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 77.37876706626709
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "1000a2e8c5977f71aab067c2880cfafc5a196386034ad536b814679ee27263c1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "04607349a75e4963e39805ac5e77b90f96e12bef222ba34494c7e34e7d234d0c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1006,
+          "query": 28,
+          "fitting_ids_sha256": "f7c5637c23f14b63d2713bce65868462bf6727616e1cdd0ee39545724a59a0be",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "99f6de08817c15e8fd1dad96c614755d661c5dece44a4b4b0f42e4c4013f7f25",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "18d3527bd6836175d4c50100b20b914846088b9f83315ed986f60ae0dcd2b974",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9386666666666666,
+      "residual_mean_l1": 0.30571883203566347,
+      "scale_quantiles": [
+        0.7110207078191333,
+        18.49958361333685,
+        44.274769926625204,
+        94.54003933354463,
+        305718832035.66345
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007439635214124579,
+        0.007258504617860646,
+        0.2459496314699997
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0041651555392659325,
+      "clipped_fraction": 0.1375,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05596892189148726,
+      "clipped_fraction": 0.60625,
+      "changed_rows": 0
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.539758624508977
+  },
+  {
+    "pool": "train",
+    "seed": 20261127,
+    "fold": 0,
+    "gold": 127,
+    "masked": 1014,
+    "fit_ids_sha256": "a7ebcb6a3fddbae90d761e0918c8d2ba98de3034f06ec55e6f6cc6a96acbfa69",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 127,
+        "generated": 0,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 127,
+        "generated": 635,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 89.18800485550486
+      },
+      {
+        "step": 2,
+        "known": 127,
+        "generated": 758,
+        "known_weight": 127.00000000000001,
+        "generated_weight": 113.848545981046
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 644,
+      "generated_positive_counts": [
+        8,
+        9,
+        21,
+        587,
+        29
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1006,
+          "query": 31,
+          "fitting_ids_sha256": "6b96e13d0ddd62559bce97d17f55cd6398a88e522952350a38a7738e9ad417ee",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "02854f9a99eb227a8b6b42e7a0cab97e6de5eefdd74d9592004001d52f921044",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "1a543d9f8f990df2da55fe589c16f05e76f180f14d5ced4c48578165fa72f6d6",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "ef63e9e10ac85326566df085dd68296042e2f4727ac71bdf7dcb8d5c29958376",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "6ae89886daaf4e8901a84608d7386a928d1c7fcd46b5ef9d370c9aa5db1f43c5",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 127,
+          "generated": 0,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 127,
+          "generated": 644,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 77.25186966186968
+        },
+        {
+          "step": 2,
+          "known": 127,
+          "generated": 644,
+          "known_weight": 127.00000000000001,
+          "generated_weight": 77.25186966186968
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1006,
+          "query": 31,
+          "fitting_ids_sha256": "6b96e13d0ddd62559bce97d17f55cd6398a88e522952350a38a7738e9ad417ee",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "02854f9a99eb227a8b6b42e7a0cab97e6de5eefdd74d9592004001d52f921044",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "1a543d9f8f990df2da55fe589c16f05e76f180f14d5ced4c48578165fa72f6d6",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "ef63e9e10ac85326566df085dd68296042e2f4727ac71bdf7dcb8d5c29958376",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "6ae89886daaf4e8901a84608d7386a928d1c7fcd46b5ef9d370c9aa5db1f43c5",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.916010498687664,
+      "residual_mean_l1": 0.31209048625184616,
+      "scale_quantiles": [
+        0.7090907669073938,
+        20.72357546991225,
+        50.40610394162072,
+        135.23809769051798,
+        5169.8309721201695
+      ],
+      "raw_field_abs_quantiles": [
+        2.586491335217662e-07,
+        0.0006669885527476469,
+        0.0067916582061875175,
+        0.22026733146219568
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0032826902252011693,
+      "clipped_fraction": 0.08666666666666667,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05801159652090334,
+      "clipped_fraction": 0.64,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5131957503035665
+  },
+  {
+    "pool": "train",
+    "seed": 20261127,
+    "fold": 1,
+    "gold": 123,
+    "masked": 1013,
+    "fit_ids_sha256": "4945396b0e19da3f2a9e3d9cf14c45b10a429669454c0a932f8d3130e97eeb85",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 123,
+        "generated": 0,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 123,
+        "generated": 633,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 84.44071712601124
+      },
+      {
+        "step": 2,
+        "known": 123,
+        "generated": 745,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 112.84219799808035
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 654,
+      "generated_positive_counts": [
+        11,
+        12,
+        16,
+        599,
+        45
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "37314332d16e776e2351c93d430eab8b31cce81e70889651e42e1337d76fa5d3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "7ee05071ccc4172226a571f4e277adefc227eec6272aa5952df16963e2e789bc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1013,
+          "query": 22,
+          "fitting_ids_sha256": "526bfb075f5fd607eb23599b54eae447aa891e3d9d7878df0e84dd4d64e95e61",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1013,
+          "query": 23,
+          "fitting_ids_sha256": "0e997f24ea92177b42616de5c82d28df9d86c845ea83b5a868997249d5a38659",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1013,
+          "query": 26,
+          "fitting_ids_sha256": "3b7eb562353605ac0e136a096a94cb6cf78ab77f4292390976e385dc9181bc79",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 123,
+          "generated": 0,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 123,
+          "generated": 654,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 81.052019059372
+        },
+        {
+          "step": 2,
+          "known": 123,
+          "generated": 654,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 81.052019059372
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1013,
+          "query": 25,
+          "fitting_ids_sha256": "37314332d16e776e2351c93d430eab8b31cce81e70889651e42e1337d76fa5d3",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 96,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "7ee05071ccc4172226a571f4e277adefc227eec6272aa5952df16963e2e789bc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1013,
+          "query": 22,
+          "fitting_ids_sha256": "526bfb075f5fd607eb23599b54eae447aa891e3d9d7878df0e84dd4d64e95e61",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1013,
+          "query": 23,
+          "fitting_ids_sha256": "0e997f24ea92177b42616de5c82d28df9d86c845ea83b5a868997249d5a38659",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1013,
+          "query": 26,
+          "fitting_ids_sha256": "3b7eb562353605ac0e136a096a94cb6cf78ab77f4292390976e385dc9181bc79",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.8943089430894309,
+      "residual_mean_l1": 0.33148904716497923,
+      "scale_quantiles": [
+        0.8056046835330611,
+        20.001487150907927,
+        50.69358747327978,
+        103.4352019699817,
+        331489047164.97925
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007012916940469828,
+        0.0071956513610906036,
+        0.24643255454062504
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0042635120158618575,
+      "clipped_fraction": 0.17647058823529413,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.06058712446776285,
+      "clipped_fraction": 0.5705882352941176,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.500627958215773
+  },
+  {
+    "pool": "train",
+    "seed": 20261127,
+    "fold": 2,
+    "gold": 127,
+    "masked": 1014,
+    "fit_ids_sha256": "748d7c5314302c0e2e276673df05e5f9403c3ba639316c7553370b5a792070c0",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 127,
+        "generated": 0,
+        "known_weight": 127.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 127,
+        "generated": 630,
+        "known_weight": 127.0,
+        "generated_weight": 92.21505383505384
+      },
+      {
+        "step": 2,
+        "known": 127,
+        "generated": 760,
+        "known_weight": 127.0,
+        "generated_weight": 118.50950937950941
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 669,
+      "generated_positive_counts": [
+        17,
+        7,
+        22,
+        602,
+        57
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "5f1844ec01e159908f1e3aa757a92e7342c6d7d675940661101224c23a7f4b64",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1014,
+          "query": 27,
+          "fitting_ids_sha256": "79fae79e4ea232b0ffbd433f99dcfece4bddc49c1db092a120805d12260a960e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "ed29db4bbee8b4e6163d48c15d3f929c5452d5b473a4c3bb7c1ff0c9cd79521c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "0fd5cbe76fb6dc6e071fca8e1eb0f30272a3e5a2a76e49b5b1b057c3693e9fb8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "a6cfaddbe0862de25f37ead47ea22234216b4c542fbf2b50a7d188daa57ec7a8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 127,
+          "generated": 0,
+          "known_weight": 127.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 127,
+          "generated": 669,
+          "known_weight": 127.0,
+          "generated_weight": 86.13853590853591
+        },
+        {
+          "step": 2,
+          "known": 127,
+          "generated": 669,
+          "known_weight": 127.0,
+          "generated_weight": 86.13853590853591
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "5f1844ec01e159908f1e3aa757a92e7342c6d7d675940661101224c23a7f4b64",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1014,
+          "query": 27,
+          "fitting_ids_sha256": "79fae79e4ea232b0ffbd433f99dcfece4bddc49c1db092a120805d12260a960e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "ed29db4bbee8b4e6163d48c15d3f929c5452d5b473a4c3bb7c1ff0c9cd79521c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "0fd5cbe76fb6dc6e071fca8e1eb0f30272a3e5a2a76e49b5b1b057c3693e9fb8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "a6cfaddbe0862de25f37ead47ea22234216b4c542fbf2b50a7d188daa57ec7a8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9133858267716536,
+      "residual_mean_l1": 0.2605171395967378,
+      "scale_quantiles": [
+        0.623243196100036,
+        20.049792199310794,
+        44.84331244787404,
+        87.9985352344074,
+        260517139596.7378
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006625683648101504,
+        0.005676738443465152,
+        0.2511345708800757
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004613284775617359,
+      "clipped_fraction": 0.08666666666666667,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.04801842053519513,
+      "clipped_fraction": 0.6266666666666667,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.520377124659717
+  },
+  {
+    "pool": "train",
+    "seed": 20261127,
+    "fold": 3,
+    "gold": 126,
+    "masked": 1006,
+    "fit_ids_sha256": "49b1f999108b8e3049d40e3403f35b8d7b8a6a175f248feda53d5dbc0d3bffc8",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 126,
+        "generated": 0,
+        "known_weight": 126.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 126,
+        "generated": 658,
+        "known_weight": 126.0,
+        "generated_weight": 88.84129032258065
+      },
+      {
+        "step": 2,
+        "known": 126,
+        "generated": 767,
+        "known_weight": 126.0,
+        "generated_weight": 109.80168734491315
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 650,
+      "generated_positive_counts": [
+        10,
+        10,
+        13,
+        599,
+        36
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "15fd9b65a0992a23cc888fd581a09b767053dcf767dbacbf27e2e83e1b88a88d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 25,
+          "fitting_ids_sha256": "f113c4fc91e522b67942753565eb755398b68cd8769c8e805415de33b158dd0e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "954b11695475be2a752b1120b20a1839433c501b6471fd75c46480c28595543c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "4f621fe9ee0091d5a757a2b5d8a533936d4d29dab0157fcd696f421363dd0f19",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1006,
+          "query": 27,
+          "fitting_ids_sha256": "390f5c0c3347bcf934257af09f99b7df85d7a79c7bbe44da460a7898801b09c8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 126,
+          "generated": 0,
+          "known_weight": 126.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 126,
+          "generated": 650,
+          "known_weight": 126.0,
+          "generated_weight": 77.30744416873449
+        },
+        {
+          "step": 2,
+          "known": 126,
+          "generated": 650,
+          "known_weight": 126.0,
+          "generated_weight": 77.30744416873449
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "15fd9b65a0992a23cc888fd581a09b767053dcf767dbacbf27e2e83e1b88a88d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 25,
+          "fitting_ids_sha256": "f113c4fc91e522b67942753565eb755398b68cd8769c8e805415de33b158dd0e",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "954b11695475be2a752b1120b20a1839433c501b6471fd75c46480c28595543c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1006,
+          "query": 24,
+          "fitting_ids_sha256": "4f621fe9ee0091d5a757a2b5d8a533936d4d29dab0157fcd696f421363dd0f19",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1006,
+          "query": 27,
+          "fitting_ids_sha256": "390f5c0c3347bcf934257af09f99b7df85d7a79c7bbe44da460a7898801b09c8",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9312169312169312,
+      "residual_mean_l1": 0.26633037082136746,
+      "scale_quantiles": [
+        0.6552704855788549,
+        21.753243227594893,
+        49.76666938148257,
+        98.4905777310822,
+        266330370821.36746
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006033314658611672,
+        0.0054368008534540855,
+        0.24288206867247486
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.002667015331082847,
+      "clipped_fraction": 0.15483870967741936,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.04787873069529938,
+      "clipped_fraction": 0.6,
+      "changed_rows": 0
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.4770355839282274
+  },
+  {
+    "pool": "train",
+    "seed": 20261127,
+    "fold": 4,
+    "gold": 125,
+    "masked": 1014,
+    "fit_ids_sha256": "bf4355e9443acfea8b2e2eb7543c80a29d0961361577b318a85f6962a8102c66",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 125,
+        "generated": 0,
+        "known_weight": 125.00000000000003,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 125,
+        "generated": 623,
+        "known_weight": 125.00000000000003,
+        "generated_weight": 92.98142840132007
+      },
+      {
+        "step": 2,
+        "known": 125,
+        "generated": 759,
+        "known_weight": 125.00000000000003,
+        "generated_weight": 118.88422626135477
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 682,
+      "generated_positive_counts": [
+        18,
+        16,
+        22,
+        614,
+        46
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 26,
+          "fitting_ids_sha256": "df02b513620794cd9c657571aa8f12418a84aeb11a3c637c1dc117f9b50bae44",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "2dd1cf4bfcd571c18b197e98c6e37590e0a246e865e4f4e32bad3127aa0692e1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 27,
+          "fitting_ids_sha256": "c15607132b567bfb1ddb1626e7c127589f27e5444b4579851bb519def797ce7c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "4ee4fb754de21883fa8db4c0bdfb767d2a65088af966f64359d0410dd0d7b202",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 22,
+          "fitting_ids_sha256": "a49f8a192facb477232eaaf653291aee470ef8227614780f1b6ff38a238e6865",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 125,
+          "generated": 0,
+          "known_weight": 125.00000000000003,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 125,
+          "generated": 682,
+          "known_weight": 125.00000000000003,
+          "generated_weight": 91.17361063858743
+        },
+        {
+          "step": 2,
+          "known": 125,
+          "generated": 682,
+          "known_weight": 125.00000000000003,
+          "generated_weight": 91.17361063858743
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 26,
+          "fitting_ids_sha256": "df02b513620794cd9c657571aa8f12418a84aeb11a3c637c1dc117f9b50bae44",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "2dd1cf4bfcd571c18b197e98c6e37590e0a246e865e4f4e32bad3127aa0692e1",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 27,
+          "fitting_ids_sha256": "c15607132b567bfb1ddb1626e7c127589f27e5444b4579851bb519def797ce7c",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "4ee4fb754de21883fa8db4c0bdfb767d2a65088af966f64359d0410dd0d7b202",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 22,
+          "fitting_ids_sha256": "a49f8a192facb477232eaaf653291aee470ef8227614780f1b6ff38a238e6865",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9280000000000002,
+      "residual_mean_l1": 0.30384052872518824,
+      "scale_quantiles": [
+        0.7239258755681337,
+        19.301042557202464,
+        48.88127801944998,
+        94.26724926068266,
+        303840528725.18823
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007081106941535241,
+        0.006703180531397066,
+        0.24607863736817892
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.002987660315622263,
+      "clipped_fraction": 0.1,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.0562475856098014,
+      "clipped_fraction": 0.6,
+      "changed_rows": 3
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.525016374886036
+  },
+  {
+    "pool": "train",
+    "seed": 20261128,
+    "fold": 0,
+    "gold": 126,
+    "masked": 1014,
+    "fit_ids_sha256": "f5e80d5d2b9a690987a5b17a98e7f6feb31b012d53b2f586e23fdf7a5f8e50a8",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 126,
+        "generated": 0,
+        "known_weight": 126.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 126,
+        "generated": 605,
+        "known_weight": 126.0,
+        "generated_weight": 85.74208144796378
+      },
+      {
+        "step": 2,
+        "known": 126,
+        "generated": 737,
+        "known_weight": 126.0,
+        "generated_weight": 112.5745701357466
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 625,
+      "generated_positive_counts": [
+        21,
+        13,
+        20,
+        556,
+        53
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "6fcc85cfdca7775e42d5b1c9c44f29547f3b56b8ddb2ddc060a01e3f681cc4cc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "3da6c6bd6ffaa6ebe5430265eb3a6286a46e0b45e4411d7bb9f5187a953feccd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "4754b42d028b3746b4737e1613f2b2dcaeaed008d8fa0d5e786f854be2189308",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "0925c9d5f009dd54408d0ece011a6947e093bcaa452b6b4819ee17a137d512cf",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "19c49126f9b7ee337580c3138e80f9d040c25260f48b378b5b85fd50cb181ace",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 126,
+          "generated": 0,
+          "known_weight": 126.0,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 126,
+          "generated": 625,
+          "known_weight": 126.0,
+          "generated_weight": 86.90927601809955
+        },
+        {
+          "step": 2,
+          "known": 126,
+          "generated": 625,
+          "known_weight": 126.0,
+          "generated_weight": 86.90927601809955
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 103,
+          "masked": 1014,
+          "query": 23,
+          "fitting_ids_sha256": "6fcc85cfdca7775e42d5b1c9c44f29547f3b56b8ddb2ddc060a01e3f681cc4cc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "3da6c6bd6ffaa6ebe5430265eb3a6286a46e0b45e4411d7bb9f5187a953feccd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "4754b42d028b3746b4737e1613f2b2dcaeaed008d8fa0d5e786f854be2189308",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "0925c9d5f009dd54408d0ece011a6947e093bcaa452b6b4819ee17a137d512cf",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1006,
+          "query": 26,
+          "fitting_ids_sha256": "19c49126f9b7ee337580c3138e80f9d040c25260f48b378b5b85fd50cb181ace",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.917989417989418,
+      "residual_mean_l1": 0.3008901644919884,
+      "scale_quantiles": [
+        0.7106890971597938,
+        19.49152598248834,
+        45.1951768875618,
+        90.92984284153438,
+        300890164491.9884
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0007078217271495912,
+        0.0068508500334861205,
+        0.2521336958586367
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.005046628936427059,
+      "clipped_fraction": 0.1032258064516129,
+      "changed_rows": 2
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.05408565497205169,
+      "clipped_fraction": 0.6258064516129033,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5097475405782461
+  },
+  {
+    "pool": "train",
+    "seed": 20261128,
+    "fold": 1,
+    "gold": 125,
+    "masked": 1005,
+    "fit_ids_sha256": "f216ceb500ee981288d9191196f7b9cf675c0c8aa93ff806d1b6a6bb57ea53ef",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 125,
+        "generated": 0,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 125,
+        "generated": 647,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 88.97186035290873
+      },
+      {
+        "step": 2,
+        "known": 125,
+        "generated": 757,
+        "known_weight": 125.00000000000001,
+        "generated_weight": 111.64788392610973
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 646,
+      "generated_positive_counts": [
+        8,
+        11,
+        13,
+        597,
+        35
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "400d30874f11060c5233616fb0d28839474124727adbfbf3c039086b352f9542",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "dfb6dab6a86a2162021c493973533bbcc522ddbdcf00585ee183cd2695205b93",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "e9667cdde28ddb79b60859e1c12720923ffa6e73f2634a2bb8f88aff35ff3cbd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1005,
+          "query": 25,
+          "fitting_ids_sha256": "73f9636a9752091e33311a97f663b99f3865cdbc86552599901eddaa4ee9e3fd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1005,
+          "query": 28,
+          "fitting_ids_sha256": "bbad412bfd3328b3a9c3379ce6d01724b4c05ee5da5c9a50dc6475d896fb761b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 125,
+          "generated": 0,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 125,
+          "generated": 646,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 76.41241039426524
+        },
+        {
+          "step": 2,
+          "known": 125,
+          "generated": 646,
+          "known_weight": 125.00000000000001,
+          "generated_weight": 76.41241039426524
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "400d30874f11060c5233616fb0d28839474124727adbfbf3c039086b352f9542",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "dfb6dab6a86a2162021c493973533bbcc522ddbdcf00585ee183cd2695205b93",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 24,
+          "fitting_ids_sha256": "e9667cdde28ddb79b60859e1c12720923ffa6e73f2634a2bb8f88aff35ff3cbd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 100,
+          "masked": 1005,
+          "query": 25,
+          "fitting_ids_sha256": "73f9636a9752091e33311a97f663b99f3865cdbc86552599901eddaa4ee9e3fd",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 97,
+          "masked": 1005,
+          "query": 28,
+          "fitting_ids_sha256": "bbad412bfd3328b3a9c3379ce6d01724b4c05ee5da5c9a50dc6475d896fb761b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.92,
+      "residual_mean_l1": 0.29678569521487064,
+      "scale_quantiles": [
+        0.7005238162173385,
+        19.400978765243234,
+        48.78969987017638,
+        114.9379851110165,
+        296785695214.87067
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006480977898328522,
+        0.006567410533397678,
+        0.25271218019178465
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.004365281510669043,
+      "clipped_fraction": 0.15,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.0545213590604187,
+      "clipped_fraction": 0.575,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.5516000827774405
+  },
+  {
+    "pool": "train",
+    "seed": 20261128,
+    "fold": 2,
+    "gold": 128,
+    "masked": 1014,
+    "fit_ids_sha256": "5d89caa1b098828eab380a7ee28f77c684e5b354b12790e10112c8b5cfa737eb",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 128,
+        "generated": 0,
+        "known_weight": 127.99999999999997,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 128,
+        "generated": 631,
+        "known_weight": 127.99999999999997,
+        "generated_weight": 89.62394737878608
+      },
+      {
+        "step": 2,
+        "known": 128,
+        "generated": 758,
+        "known_weight": 127.99999999999997,
+        "generated_weight": 115.62555752491235
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 658,
+      "generated_positive_counts": [
+        15,
+        8,
+        21,
+        594,
+        35
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "d89f2ed1edf3a288048888f70fee8ee2ecd884f7d75bc3140215d50746b3896a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "49978838f9b4cbac579a60a1fe6680c7216b1d9c82c5d31bcdc3851c6de5f98d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "29383390bd05b84ba5545216519c3d13701f8fb6cc19dfb52b2666c707ac3f42",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 29,
+          "fitting_ids_sha256": "d05cfee89f8e5ed4ed76df152e4bba5f9745b970eff25d31ed20eaa547672e5f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "f0cd76a054d0714a88036b461f6407e1722a21abd4be4ca142217c36ca23f808",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 128,
+          "generated": 0,
+          "known_weight": 127.99999999999997,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 128,
+          "generated": 658,
+          "known_weight": 127.99999999999997,
+          "generated_weight": 81.2727092262576
+        },
+        {
+          "step": 2,
+          "known": 128,
+          "generated": 658,
+          "known_weight": 127.99999999999997,
+          "generated_weight": 81.2727092262576
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "d89f2ed1edf3a288048888f70fee8ee2ecd884f7d75bc3140215d50746b3896a",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1005,
+          "query": 27,
+          "fitting_ids_sha256": "49978838f9b4cbac579a60a1fe6680c7216b1d9c82c5d31bcdc3851c6de5f98d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "29383390bd05b84ba5545216519c3d13701f8fb6cc19dfb52b2666c707ac3f42",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 29,
+          "fitting_ids_sha256": "d05cfee89f8e5ed4ed76df152e4bba5f9745b970eff25d31ed20eaa547672e5f",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 104,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "f0cd76a054d0714a88036b461f6407e1722a21abd4be4ca142217c36ca23f808",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9166666666666666,
+      "residual_mean_l1": 0.2968393892763763,
+      "scale_quantiles": [
+        0.7365594310273167,
+        20.4952732328428,
+        50.069969291987405,
+        105.252813282935,
+        2732.258734439027
+      ],
+      "raw_field_abs_quantiles": [
+        1.8176369080175247e-07,
+        0.0006405159555186153,
+        0.00605101301118383,
+        0.21796359529873557
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.0030761854906505843,
+      "clipped_fraction": 0.1103448275862069,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.054572514204675855,
+      "clipped_fraction": 0.5862068965517241,
+      "changed_rows": 1
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.609033583663404
+  },
+  {
+    "pool": "train",
+    "seed": 20261128,
+    "fold": 3,
+    "gold": 123,
+    "masked": 1014,
+    "fit_ids_sha256": "eecade1767c45edccc3194938658a8278c1429c4675d77a031f1aab332112e3a",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 123,
+        "generated": 0,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 123,
+        "generated": 664,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 93.94498148909915
+      },
+      {
+        "step": 2,
+        "known": 123,
+        "generated": 773,
+        "known_weight": 123.00000000000003,
+        "generated_weight": 118.34723364870423
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 670,
+      "generated_positive_counts": [
+        14,
+        10,
+        17,
+        611,
+        41
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "30918de67e42f05b9ab862a2b834eb32a6046a7e77fc1ee951f665f446258331",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "25f73fbadde9f5caeb0cd38842926d462abed7489ec76fceb7b9d55b8e668db6",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "5e1d11f6612de69d301fe8eaaca9d3290a701a63e64f1018276a3afd0e352ad0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "255f0f99608751e698456534c6cc6eaef91809234babb9dcbcf26422cdec0256",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "4402ea6481450d229dcc2043dc90ef5d7f65bccfa8f59725e68a3a5364e86b00",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 123,
+          "generated": 0,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 123,
+          "generated": 670,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 82.9435537501714
+        },
+        {
+          "step": 2,
+          "known": 123,
+          "generated": 670,
+          "known_weight": 123.00000000000003,
+          "generated_weight": 82.9435537501714
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "30918de67e42f05b9ab862a2b834eb32a6046a7e77fc1ee951f665f446258331",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "25f73fbadde9f5caeb0cd38842926d462abed7489ec76fceb7b9d55b8e668db6",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 99,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "5e1d11f6612de69d301fe8eaaca9d3290a701a63e64f1018276a3afd0e352ad0",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "255f0f99608751e698456534c6cc6eaef91809234babb9dcbcf26422cdec0256",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "4402ea6481450d229dcc2043dc90ef5d7f65bccfa8f59725e68a3a5364e86b00",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9295392953929539,
+      "residual_mean_l1": 0.272150676901361,
+      "scale_quantiles": [
+        0.6376708881523478,
+        21.30769012191932,
+        49.76961978386805,
+        111.03021631830087,
+        272150676901.36102
+      ],
+      "raw_field_abs_quantiles": [
+        0.0,
+        0.0006339920585206998,
+        0.005368708111860133,
+        0.25510001134901733
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.00294100118976588,
+      "clipped_fraction": 0.08235294117647059,
+      "changed_rows": 0
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.04868418911808662,
+      "clipped_fraction": 0.5647058823529412,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.53211341612041
+  },
+  {
+    "pool": "train",
+    "seed": 20261128,
+    "fold": 4,
+    "gold": 126,
+    "masked": 1014,
+    "fit_ids_sha256": "da654284aaf0633c89df9b690d7e85220ea62049c4733759b3d4a4734be10f11",
+    "parent_rounds": [
+      {
+        "step": 0,
+        "known": 126,
+        "generated": 0,
+        "known_weight": 126.00000000000001,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 126,
+        "generated": 627,
+        "known_weight": 126.00000000000001,
+        "generated_weight": 85.82941057394619
+      },
+      {
+        "step": 2,
+        "known": 126,
+        "generated": 759,
+        "known_weight": 126.00000000000001,
+        "generated_weight": 113.4694915456061
+      }
+    ],
+    "reference_score_max_abs": 0.0,
+    "cs_pseudo": {
+      "teacher": "C&S powerset LR, grouped inner OOF",
+      "teacher_generated": 691,
+      "generated_positive_counts": [
+        18,
+        10,
+        19,
+        629,
+        38
+      ],
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "b7f83275fdac0cfd486d6e32f642720f9e0626509a27c22b97e774b6f77f49ec",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "6b8255f55e7ff5b9b982f7301fd4136876258523aa96c5018336641edd989b60",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "734dbe38d85616a402c0ec28d9982a520f11f622c36c06da427af7f0ee7acf0b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "0a8fa2d909ddfcdf84bd36c944b5cbc045c41aee3410a9d85646d677a20afbbc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "40a689a12a06c2cf48bd4f7e05044ff62c0eb68ac7f5c279f1d700f293a4686d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "rounds": [
+        {
+          "step": 0,
+          "known": 126,
+          "generated": 0,
+          "known_weight": 126.00000000000001,
+          "generated_weight": 0.0
+        },
+        {
+          "step": 1,
+          "known": 126,
+          "generated": 691,
+          "known_weight": 126.00000000000001,
+          "generated_weight": 85.86410633484164
+        },
+        {
+          "step": 2,
+          "known": 126,
+          "generated": 691,
+          "known_weight": 126.00000000000001,
+          "generated_weight": 85.86410633484164
+        }
+      ]
+    },
+    "residual": {
+      "inner": [
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1013,
+          "query": 24,
+          "fitting_ids_sha256": "b7f83275fdac0cfd486d6e32f642720f9e0626509a27c22b97e774b6f77f49ec",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1006,
+          "query": 25,
+          "fitting_ids_sha256": "6b8255f55e7ff5b9b982f7301fd4136876258523aa96c5018336641edd989b60",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 101,
+          "masked": 1014,
+          "query": 25,
+          "fitting_ids_sha256": "734dbe38d85616a402c0ec28d9982a520f11f622c36c06da427af7f0ee7acf0b",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 102,
+          "masked": 1014,
+          "query": 24,
+          "fitting_ids_sha256": "0a8fa2d909ddfcdf84bd36c944b5cbc045c41aee3410a9d85646d677a20afbbc",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        },
+        {
+          "depth": 1,
+          "gold": 98,
+          "masked": 1014,
+          "query": 28,
+          "fitting_ids_sha256": "40a689a12a06c2cf48bd4f7e05044ff62c0eb68ac7f5c279f1d700f293a4686d",
+          "gold_group_overlap": 0,
+          "masked_group_overlap": 0
+        }
+      ],
+      "inner_coverage_exactly_once": true,
+      "inner_oof_sample_f1": 0.9338624338624338,
+      "residual_mean_l1": 0.29374634767496777,
+      "scale_quantiles": [
+        0.7387734438298735,
+        20.54676519410288,
+        48.7200049907103,
+        101.42989545652551,
+        2004.5031404895253
+      ],
+      "raw_field_abs_quantiles": [
+        3.5554915715148114e-07,
+        0.0006250780412873221,
+        0.006456084444717086,
+        0.24607123599311764
+      ]
+    },
+    "graph_residual_raw": {
+      "correction_abs_mean": 0.002869874115181621,
+      "clipped_fraction": 0.09032258064516129,
+      "changed_rows": 1
+    },
+    "graph_residual_autoscale": {
+      "correction_abs_mean": 0.055484676106136895,
+      "clipped_fraction": 0.5870967741935483,
+      "changed_rows": 2
+    },
+    "gold_unchanged": true,
+    "elapsed_seconds": 1.4250534996390343
+  }
+]

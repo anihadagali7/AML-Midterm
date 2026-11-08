@@ -3,6 +3,7 @@
 % Course limit: 5 pages including figures. References may continue past that.
 
 \documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[pagenumbers]{cvpr}
 \input{preamble}
@@ -34,12 +35,11 @@ Cornell University
 
 \begin{abstract}
 Part~1 asks why a trial stopped early. Only 157 of 1,171 training trials have
-visible reason labels. We keep the 150 reason embeddings and discard eligibility
-text, diseases, drugs, and start year, because those inputs did not raise the
-validation score. A Gaussian mixture only helps decide which unlabeled trials
-are safe to learn from. Logistic regression, cosine neighbors, and shrinkage
-discriminant analysis then name the reasons. The reported Kaggle sample-wise F1
-is 0.89636.
+visible reason labels. We use the 150 supplied reason embeddings. An anchored
+classifier combines logistic regression, neighbors, and shrinkage discriminant
+analysis with clustering-assisted self-training. A second pipeline adds graph,
+cluster, and neighbor information. A fixed 80/20 blend scored a reported Kaggle
+sample-wise F1 of 0.89935, compared with 0.89636 for anchored alone.
 
 Part~2 asks whether a trial meets its primary endpoint. The score is log loss,
 and the test trials start later than the training trials. We upweight recent
@@ -67,60 +67,78 @@ marked $-100$, which means unknown. Validation has 78 labeled trials. Test has
 312 later trials, from 2010 to 2016. A trial can carry more than one of Safety,
 Funding, Efficacy, Recruitment, and Other. Among the 235 real labels,
 Recruitment appears on 64\% and Funding on 5\%. The labeled trials are mostly
-early, so those rates will not match the test set.
+early, so those rates may differ in the test set.
 
-The selection score is sample-wise F1, the average of a per-trial F1. We also
-report F1 for each reason and the average of those five scores. One validation
-trial moves sample-wise F1 by about 1.3 points, so we rechecked every choice
-with eight repeats of five grouped folds, once on the 157 training labels and
-once on all 235, plus three time-ordered windows.
+The selection score is sample-wise F1, the average of per-trial F1. We also
+report each reason's F1 and their macro average. One validation trial can move
+sample-wise F1 by about 1.3 percentage points. Later comparisons therefore use
+eight repeats of five grouped folds on the 157 training labels and on all 235,
+plus three earlier-to-later windows totaling 98 predictions. Embedding-duplicate
+groups stay together, and masked duplicates of held-out groups are purged.
+These splits were reused during development.
 
 \subsection{What the model does}
 
-Each trial is represented by 150 numbers from its stopping-reason text. We
-standardize them using only rows the current split may learn from. IDs are used
-to line up rows and are not features. Adding start year, eligibility text,
-disease names, pathways, or drug fingerprints~\cite{rogers2010extended,rdkit,milacic2024reactome}
-never raised validation sample-wise F1 on the earlier self-training model
-(0.893 for embeddings alone, 0.891 with year, 0.876 with eligibility or disease
-text, 0.889 with fingerprints). The embeddings already summarize the text the
-labels were written from. The other fields describe the trial, and year points
-the wrong way because the labels are early and the test is late.
+Each trial has 150 supplied stopping-reason embedding coordinates. IDs align
+rows and are not features; years define chronology checks. On the earlier
+self-training model, extra start year, eligibility text, disease, or drug
+features~\cite{rogers2010extended,rdkit,milacic2024reactome} did not improve
+validation sample-wise F1: embeddings alone scored .893, versus .891 with year,
+.876 with eligibility or disease text, and .889 with fingerprints. These are
+historical feature checks, not ablations of the final blend.
 
-Missing labels have to come from an unsupervised step. $k$-means and DBSCAN
-were useful checks, and one DBSCAN-plus-logistic setup reached about 0.910
-validation F1 under an earlier protocol. We did not submit it. Clustering
-mostly separates Recruitment from everything else. The piece we kept is a
-30-component diagonal Gaussian mixture on 30 principal components, about 77\%
-of the variance~\cite{dempster1977em,pedregosa2011scikit}. Components start from
-$k$-means++, three restarts, \texttt{random\_state}${}=0$. Expectation--maximization
-stops when the average log-likelihood improves by less than $10^{-3}$, or after
-100 iterations. The kept run converged in 29. Each component becomes a reason
-profile by averaging the real labels assigned to it, plus one pseudo-count of
-the overall rates. In the teaching step this profile has a 5\% vote. The
-classifier has the other 95\%.
+The \emph{anchored} component standardizes embeddings using permitted gold and
+masked training rows. A 30-component diagonal Gaussian mixture uses 30
+principal components~\cite{dempster1977em,pedregosa2011scikit}, with $k$-means
+initialization, three restarts, and seed zero. Component reason profiles average
+the gold labels with one pseudo-count of the overall rates. The pseudo-label
+teacher mixes 5\% of these profiles with 95\% of the classifier score.
+Earlier $k$-means and DBSCAN checks were weaker on Kaggle. DBSCAN-plus-logistic
+reached .910 validation F1 under an earlier protocol, but its original and
+235-label submissions scored .87500 and .86452 respectively.
 
-The classifier is one logistic regression over the five reasons ($C = 0.1$),
-not five separate classifiers. A two-reason trial is entered once per reason,
-with its weight split, so it is not counted twice. Class weights come from the
-real labels only and then stay fixed. A generated row counts as a quarter of a
-real row. We average three scores with fixed weights: logistic regression 50\%,
-cosine 10-nearest neighbors 30\%, and shrinkage linear discriminant analysis
-20\%. Neighbors vote with squared cosine similarity, and a neighbor that has
-two reasons votes for both. Only the mixture uses the 30 components. The
-classifiers see all 150 standardized embeddings.
+The anchored classifier combines multiclass logistic regression ($C=.1$),
+cosine 10-nearest-neighbor votes, and shrinkage linear discriminant analysis
+(LDA), with fixed weights .5/.3/.2. All use the 150 standardized coordinates.
+A multi-label trial is duplicated across its positive classes for the
+multiclass fits. Logistic weights divide its mass across positives and use
+class weights fixed from gold labels. Neighbors vote for every positive label,
+weighted by nonnegative cosine similarity squared. LDA uses equal class priors.
 
-Unlabeled trials are added in two rounds~\cite{yarowsky1995unsupervised,triguero2015selflabeled}.
-A trial is accepted when its best reason scores at least 0.8. Each round
-starts again from the real labels. On the final fit the rounds accept 685 and
-then 757 trials, with total weight about 103 and then 120, against 235 for the
-real labels. We always output the top reason, plus any other reason at 0.3 or
-above, because an empty prediction is always wrong. Test rows are used only for
-the final predictions. The 0.891 validation score belongs to a fit on 157
-labels. The submitted file is retrained on all 235, so that validation number
-is not an independent score of the submitted file. An earlier 0.89423
-submission had fit its scaler and mixture with the test rows included. We
-stopped doing that.
+Two pseudo-label refreshes give three classifier fits in total~\cite{yarowsky1995unsupervised,triguero2015selflabeled}.
+A masked trial is accepted when its best teacher score is at least .8. Each
+refresh rebuilds from gold plus the currently accepted rows. Generated rows
+receive logistic weight .25; the neighbor and LDA components use them without
+that downweighting. The final 235-label anchored fit accepts 757 masked rows in
+the last refresh. Gold labels remain fixed.
+
+The second component, \emph{Cand2}, models eight fixed label combinations. It
+adds soft eight-cluster $k$-means membership and 20-neighbor label-vote features
+to standardized embeddings. Its Correct-and-Smooth
+labeler~\cite{huang2020correctsmooth} uses a symmetric 10-neighbor graph on
+scaled, L2-normalized 64-dimensional PCA coordinates. Correction and smoothing
+coefficients are .8 and .419962. Generated labels require confidence .5 and
+receive weight .0630725 in balanced, weighted shrinkage LDA. The strict adapter
+refits preprocessing, graph labeling, and calibration within inner grouped
+partitions, with duplicate purges. Temperature calibration uses inner held-out
+predictions. We average five seeds and convert combination probabilities into
+five reason marginals.
+
+The selected rule combines anchored raw scores and Cand2 marginals:
+\[
+s = .8s_{\mathrm{anchored}} + .2p_{\mathrm{Cand2}}.
+\]
+We output every reason with $s_j\geq .3$ and always include the highest-scoring
+reason. These scores are not established calibrated probabilities. The blend
+is fixed; it has no learned final combiner. Standalone Cand2 used expected-F1
+decoding, which is not the blend's decision rule.
+
+Both components use only permitted training inputs under the strict adapter;
+test embeddings enter prediction only. Final export refit anchored on all 235
+gold labels plus the 1,014 masked rows and reused the verified five-seed Cand2
+final scores. The .891 validation score belongs to a separate 157-label fit,
+not independent validation of this final artifact. The anchored notebook is a
+component account; the frozen blend exporter specifies the complete winner.
 
 \section{Part 2: trial outcomes}
 \label{sec:p2}
@@ -182,30 +200,41 @@ so we did not replace file~13. One upload slot was left unused.
 \section{Results}
 \label{sec:results}
 
-Table~\ref{tab:p1} is why Part~1 submitted the final blend rather than the
-linear-discriminant ensemble. The two are tied under cross-validation. The
-ensemble wins the 78-trial validation score. The final blend wins the
-time-ordered check and the reported Kaggle score. On those 78 trials its
-per-reason F1 is 0.941 Safety (9 trials), 0.667 Funding (4), 0.759 Efficacy
-(14), 0.990 Recruitment (50), and 0.471 Other (10): sample-wise 0.891, macro
-0.765.
+Table~\ref{tab:p1} compares Part~1 recipes on the same grouped splits. The
+selected anchored/Cand2 blend has the highest reported Kaggle score; the prior
+anchored/LDA blend retains the higher Pooled235 mean. Against anchored, the
+winner's repeat wins/ties/losses were 5/1/2 on Train157 and 4/1/3 on Pooled235.
+It missed our original five-wins-in-both-pools advancement rule. An exploratory
+manual trial then supplied the best reported Kaggle result; we preserve that
+selection history. Local blend scores recombine retained held-out component
+predictions, rather than refitting both components for each blend.
+
+The winner's 78-row validation labels match anchored. Per-reason F1 is .941
+Safety (9 positives), .667 Funding (4), .759 Efficacy (14), .990 Recruitment
+(50), and .471 Other (10): sample-wise .891 and macro .765. These are development
+results, not hidden-test label scores. Kaggle values are user-reported; the
+leaderboard partition and actual uploaded bytes were not independently checked.
+Overlapping repeats do not establish independent statistical significance.
 
 \begin{table}[t]
 \centering\small
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{2pt}
 \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccccc@{}}
 \toprule
 Model & Train & Pooled & Val. & Time & Kaggle \\
 \midrule
-Final blend & \textbf{.9321} & .9214 & .891 & \textbf{.884} & \textbf{.89636} \\
-LDA ensemble & .9318 & \textbf{.9216} & \textbf{.906} & .878 & .89401 \\
-Earlier LDA blend & .9281 & .9154 & .872 & .874 & --- \\
-First submission & .9196 & .9098 & .891 & .861 & .89423 \\
+80/20 Cand2 & \textbf{.9352} & .9216 & .891 & \textbf{.888} & \textbf{.89935} \\
+75/25 LDA & .9321 & \textbf{.9234} & .891 & .884 & .89850 \\
+Anchored & .9321 & .9214 & .891 & .884 & .89636 \\
+LDA ensemble & .9318 & .9216 & \textbf{.906} & .878 & .89401 \\
+20\% PySR & .9275 & .9198 & .885 & .878 & .89423 \\
+20\% kernel & .9334 & .9209 & .887 & .871 & .89316 \\
 \bottomrule
 \end{tabular*}
-\caption{Part~1 on shared grouped checks. Train uses 157 labels, pooled uses
-235, validation is the original 78 trials, and time pools three chronological
-windows. Higher is better.}
+\caption{Part~1 sample-wise F1, higher is better. Train and pooled average
+eight grouped repeats on 157 and 235 labels; validation uses 78 trials; time
+pools three windows. Cand2, LDA, and kernel rows blend with anchored. PySR's
+parent is the earlier 75/25 anchored/LDA blend.}
 \label{tab:p1}
 \end{table}
 
@@ -318,23 +347,26 @@ under each.}
 \section{Why these choices}
 \label{sec:why}
 
-The Part~1 mixture is a poor labeler and a useful tie-breaker. On its own it
-was the weakest model we tried, because extra components split Recruitment
-rather than isolating Safety or Funding. A supervised model still reaches 0.941
-F1 on Safety from the same embeddings, so the features are not the problem.
-Cutting the mixture's vote to 5\% and the generated-row weight to one quarter
-lets a confident guess help without outvoting the 235 real labels.
+For Part~1, clustering supports missing-label generation, while supervised
+scores provide most of the prediction. Standalone Cand2 scored .89102, below
+anchored's .89636, but its small contribution raised the blend to .89935.
+This supports complementary errors for this fixed combination, not standalone
+superiority or a guarantee that greater diversity improves performance.
 
-Extra Part~1 features fail for a mechanical reason. The embeddings are a
-compressed copy of the text the labels came from. Criteria, diseases, and drugs
-describe what the trial was. Adding them means dozens or thousands of new
-inputs on 157 real labels, and 44\% of trials have no matched drug. Start year
-looks predictive only because the labeled trials were chosen to be early.
+Later trials did not improve the winner. Log-odds pooling scored .88888 despite
+small local gains; changing treatment of secondary Other labels scored .86645;
+a diversity-penalized kernel blend scored .89316; and bounded symbolic
+regression scored .89423. Learned combiners also failed local comparisons.
+The proposed derived ranking metric $J$ disagreed with some observed Kaggle
+orderings. Its small selected historical panel and different split boundaries
+do not establish a general ranking guarantee.
 
-We did not follow Part~1's higher validation score. Four Funding trials and ten
-Other trials can move the macro average by several points. The time-ordered
-windows look more like the test years, and they favor the submitted blend, as
-does the reported Kaggle score.
+Funding and Other remain weakly measured: validation contains only four and ten
+positive trials respectively. Extra-feature failures and chronology results
+are evidence within this development process, not proof that features cannot
+help or that the temporal checks represent the hidden test population. The
+selected result improves reported Kaggle F1 by .00299 over anchored and .00085
+over the prior blend, with no claim of statistical significance.
 
 In Part~2, log loss and F1 disagree on purpose. A model that moves an uncertain
 trial across 0.5 can lose F1 and still assign the better probability. The test

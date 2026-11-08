@@ -1,0 +1,32 @@
+{
+  "note": "Descriptive unmodified anchored final235 refit, no test inputs loaded and no submission exported. Triggered by identical weighted-LDA variants; no recipe changed.",
+  "rounds": [
+    {
+      "step": 0,
+      "known": 235,
+      "generated": 0,
+      "known_weight": 235.0,
+      "generated_weight": 0.0
+    },
+    {
+      "step": 1,
+      "known": 235,
+      "generated": 685,
+      "known_weight": 235.0,
+      "generated_weight": 102.79687754649603
+    },
+    {
+      "step": 2,
+      "known": 235,
+      "generated": 757,
+      "known_weight": 235.0,
+      "generated_weight": 119.52692709831274
+    }
+  ],
+  "final_generated_cardinality": {
+    "1": 756,
+    "2": 1
+  },
+  "completed_cases": 76,
+  "weighted_variant_max_score_difference": 0.005230497895185093
+}

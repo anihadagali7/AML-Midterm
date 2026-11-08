@@ -1,0 +1,16 @@
+{
+  "rows": 312,
+  "changed_rows": 5,
+  "single_label_removals": true,
+  "removed_recruitment": 3,
+  "removed_safety": 2,
+  "reported_parent": 0.89935,
+  "reported_candidate": 0.88888,
+  "reported_delta": -0.01047,
+  "all_312_sample_f1_delta_lower_bound": -0.010149572649572648,
+  "all_312_sample_f1_delta_upper_bound": 0.004914529914529915,
+  "scope": "Universal algebraic bounds over arbitrary nonempty five-label truth sets. No hidden truth labels inferred or fitted.",
+  "interpretation": "The reported difference exceeds the maximum possible drop if these exact files were scored by equally weighted sample F1 over all312 rows. A leaderboard subset, different metric, or score/file association remains unverified. Preserve reported scores; do not infer individual correctness.",
+  "same_score_column_user_confirmed": true,
+  "scored_row_population_known": false
+}

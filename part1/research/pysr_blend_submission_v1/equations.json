@@ -1,0 +1,86 @@
+{
+  "feature_names": [
+    "neighbor_logodds",
+    "centroid_margin",
+    "cluster_logodds",
+    "rival_neighbor_logodds",
+    "rival_centroid_margin"
+  ],
+  "equations": [
+    {
+      "label": "Safety",
+      "expression": "centroid_margin*7.359843760743546 - 8.951242202406322",
+      "complexity": 5,
+      "loss": 0.1226158685197752,
+      "constant_fallback": false
+    },
+    {
+      "label": "Funding",
+      "expression": "neighbor_logodds - 3.848337099230391",
+      "complexity": 3,
+      "loss": 0.0834783745899769,
+      "constant_fallback": false
+    },
+    {
+      "label": "Efficacy",
+      "expression": "neighbor_logodds*2.0873936333716605 - 3.3356007640509078",
+      "complexity": 5,
+      "loss": 0.1392462927048679,
+      "constant_fallback": false
+    },
+    {
+      "label": "Recruitment",
+      "expression": "1.8536755316370817 - (-4.3040390876651)*neighbor_logodds",
+      "complexity": 5,
+      "loss": 0.1415462649457168,
+      "constant_fallback": false
+    },
+    {
+      "label": "Other",
+      "expression": "-rival_neighbor_logodds - 1.9470670524709162",
+      "complexity": 3,
+      "loss": 0.3294685812474744,
+      "constant_fallback": false
+    }
+  ],
+  "model_audit": {
+    "gold_rows": 235,
+    "masked_rows": 1014,
+    "generated_positive_counts": [
+      260,
+      0,
+      114,
+      724,
+      260
+    ],
+    "generated_weight": 23.5,
+    "observed_labels_preserved": true,
+    "training_feature_group_exclusion": true,
+    "query_inputs_used_for_fit": false,
+    "search": {
+      "niterations": 80,
+      "populations": 8,
+      "population_size": 27,
+      "ncycles_per_iteration": 100,
+      "maxsize": 15,
+      "maxdepth": 5,
+      "binary_operators": [
+        "+",
+        "-",
+        "*"
+      ],
+      "unary_operators": [],
+      "model_selection": "best",
+      "parsimony": 0.003,
+      "batching": true,
+      "batch_size": 128,
+      "parallelism": "serial",
+      "deterministic": true,
+      "precision": 64,
+      "progress": false,
+      "verbosity": 0,
+      "update_verbosity": 0,
+      "elementwise_loss": "weighted_logistic(x, y, w) = w * (max(x, zero(x)) - x*y + log1p(exp(-abs(x))))"
+    }
+  }
+}
