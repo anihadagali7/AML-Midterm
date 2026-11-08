@@ -10,6 +10,7 @@ These records identify manually submitted CSVs, exact hashes, frozen recipes, fi
 |---|---:|---|
 | [Anchored75/LDA25, 235 labels](results/anchored75-lda25-trainval235.json) | **0.89850** | `part1-anchored75-lda25-trainval235-kaggle-0.89850` |
 | [Anchored, 235 labels](results/anchored-trainval235.json) | 0.89636 | `part1-anchored-trainval235-kaggle-0.89636` |
+| [80% anchored/LDA blend +20% PySR, 235 labels](results/current80-pysr20-trainval235.json) | 0.89423 | `part1-current80-pysr20-trainval235-kaggle-0.89423` |
 | [Original Ani](results/ani-original.json) | 0.89423 | `part1-ani-original-kaggle-0.89423` |
 | [LDA 70/15/15 ensemble, 235 labels](results/lda-ensemble-trainval235.json) | 0.89401 | `part1-lda-ensemble-trainval235-kaggle-0.89401` |
 | [Previous 70/15/15 ensemble, 235 labels](results/three-way-trainval235.json) | 0.89401 | `part1-three-way-trainval235-kaggle-0.89401` |
@@ -36,7 +37,7 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
-The fixed blend has been reported submitted at **0.89850**. Its [preparation and verification record](../research/anchored_lda_blend_submission_v1/README.md) remains frozen. A user-requested exploratory [80% current blend /20% PySR candidate](ready/part1_current80_pysr20_trainval235.csv) is prepared for manual submission. PySR was freshly fitted on all 235 verified labels plus 1,014 masked rows; nine of 312 labelsets differ from the 0.89850 submission. No score is reported. The [frozen preparation](../research/pysr_blend_submission_v1/README.md) records the explicit trial decision despite weaker local checks.
+The fixed blend has been reported submitted at **0.89850**. Its [preparation and verification record](../research/anchored_lda_blend_submission_v1/README.md) remains frozen. A user-requested exploratory [80% current blend /20% PySR candidate](ready/part1_current80_pysr20_trainval235.csv) was manually submitted and the user reported **0.89423**, down **0.00427** from the 0.89850 parent. PySR was freshly fitted on all 235 verified labels plus 1,014 masked rows; nine of 312 labelsets differ. Its [result record](results/current80-pysr20-trainval235.json) supersedes the preparation-time status. It is not promoted or queued for another upload. The [frozen preparation](../research/pysr_blend_submission_v1/README.md) records the explicit trial decision despite weaker local checks.
 
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 
