@@ -17,13 +17,19 @@ Preparation was frozen in commit `99bf06e8` before fitting or opening final test
 
 ## Retention and verification
 
-`model_state.npz` preserves portable preprocessing, cluster and gold-bank state, feature scalings, all fitting IDs, augmented labels and weights. `equations.json` keeps the five formulas. `prediction_scores.npz` keeps both components and final predictions. The exact augmented-label table, changed-labelset list, manifests and verification are retained. No Julia search cache or pickled search model is needed to reproduce predictions.
+After the reported regression, the retention audit removed the final fitted state, augmented-label copy and score dump (366,692 bytes). The exact scored CSV, formulas, recipe, hashes, score record, fit summary and compact evaluation results remain. The separate PySR study's detailed arrays contain only matched leader/control predictions; its failed candidate CV caches were already removed.
+
+The task-specific Python/Julia environment was also removed after confirming that retained verification runs in the existing project Python environment. Pinned Python requirements and Julia project/manifest files remain for a future refit. Other environments and shared package caches were not changed.
+
+From the repository root, with an existing Python environment containing NumPy, pandas and scikit-learn:
 
 ```sh
-.venv/bin/python part1/research/pysr_blend_submission_v1/verify.py
-.venv/bin/python part1/research/pysr_v1/retained.py verify
+python part1/research/pysr_blend_submission_v1/verify_retained.py
+python part1/research/pysr_v1/retained.py verify
 ```
 
-The export verifier reconstructs normalized inputs, cluster assignment, similarities and equations independently from portable state, reproduces the blended scores and exact CSV labels, checks every ID and all artifact/source hashes, and verifies gold preservation. Maximum reconstructed PySR-score error was about 5.55e-11; all labels match exactly. The smallest final distance to the .5 cutoff is .00072957. Single-row versus batch predictions also matched. The compact final evidence (about 0.4 MB) is retained as a scored symbolic-regression reference, including the portable model state identified in the result record. Earlier failed CV caches and search models remain discarded under the retention policy.
+The compact export check verifies source and retention hashes, the exact 312-row CSV, ID/label format, all nine changed labelsets, reported score and immutable tag. The complete equation/model reconstruction passed before removal (maximum score error about 5.55e-11); it is not repeated by the compact check. The second command reconstructs all 2,772 CV/supplementary metrics from retained sufficient statistics and rechecks full leader/control predictions.
 
-`export.py prepare` can regenerate the fixed fit only in a disposable checkout where this version's generated outputs are absent; it refuses to overwrite the existing candidate. Python/Julia dependencies and underlying model settings are frozen in the prior study. This reported result has its own exact-file result commit and immutable tag `part1-current80-pysr20-trainval235-kaggle-0.89423`. It is distinct from the original Ani recipe that happens to share the same reported score. The original preparation manifest remains unchanged as a historical record.
+`manifest.json`, `verification.json`, `protocol.json` and the scored result are historical records and may name removed artifacts. `retention.json` defines the current files; `retention_audit.json` records the verified cleanup. The immutable scored tag `part1-current80-pysr20-trainval235-kaggle-0.89423` still preserves its original checkpoint. No tag was moved and Git history was not rewritten.
+
+For full prediction reconstruction, use that scored checkpoint in a disposable checkout, or rebuild the environment from `../pysr_v1/requirements-lock.txt` and the recorded Julia versions, then rerun the unchanged exporter in a disposable checkout with generated outputs absent. The historical `verify.py` expects the removed final state and score packet. It remains frozen so the tagged preparation stays reproducible.

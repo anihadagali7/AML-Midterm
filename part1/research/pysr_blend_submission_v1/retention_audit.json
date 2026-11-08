@@ -1,0 +1,58 @@
+{
+  "recorded_utc": "2026-11-08T01:58:20.822384+00:00",
+  "scope": "Our PySR and prior anchored/blend studies only; no other agent worktrees modified.",
+  "finding": "Earlier failed CV caches and blend prediction arrays were already pruned. Final PySR model state, augmented data and final score packet unnecessarily survived after the scored regression.",
+  "pre_cleanup_verification": {
+    "full_prediction_reconstruction_passed": true,
+    "csv_and_tag_hashes_matched": true,
+    "pysr_cv_metric_values_reconstructed": 2772,
+    "earlier_blend_metric_values_reconstructed": 8316,
+    "transductive_retained_checks_passed": true
+  },
+  "candidate_artifacts_removed": 3,
+  "candidate_artifact_bytes_removed": 366692,
+  "isolated_environment_removed": true,
+  "isolated_environment_bytes_removed": 1050008957,
+  "ignored_bytecode_bytes_removed": 58578,
+  "environment": "Removed only AML-Midterm-pysr/.venv after confirming compact verification works in the existing AML-Midterm Python environment. Pinned Python requirements and Julia project/manifest retained. Shared Julia/uv caches and other environments untouched.",
+  "retained": "Exact scored CSV, score/provenance, frozen recipe/source/dependencies, complete compact CV statistics, equations, fit summaries and useful leader controls. No nonwinning fitted state, generated datasets or prediction dumps remain in these recent experiment folders.",
+  "immutable_result_commit": "fb4aa960335e09796eacc038b44f3b33af70c2e2",
+  "immutable_tag": "part1-current80-pysr20-trainval235-kaggle-0.89423",
+  "git_history": "No history rewrite or tag movement. The original scored checkpoint still contains its historical model evidence; current retention lists current files.",
+  "verification_boundary": "The new verify_retained.py checks current compact evidence. Historical verify.py requires a refit or the scored checkpoint because its three generated artifacts were removed.",
+  "post_cleanup_inventory": {
+    "anchored_transductive_v1": {
+      "file_bytes": 82370,
+      "files": 15,
+      "array_files": []
+    },
+    "blend_followup_v1": {
+      "file_bytes": 150432,
+      "files": 17,
+      "array_files": []
+    },
+    "blend_partners_v1": {
+      "file_bytes": 67236,
+      "files": 13,
+      "array_files": []
+    },
+    "blend_halfstep_v1": {
+      "file_bytes": 44198,
+      "files": 10,
+      "array_files": []
+    },
+    "pysr_v1": {
+      "file_bytes": 633545,
+      "files": 26,
+      "array_files": [
+        "controls.npz"
+      ]
+    },
+    "pysr_blend_submission_v1": {
+      "file_bytes": 33956,
+      "files": 11,
+      "array_files": []
+    }
+  },
+  "post_cleanup_research_bytes_approximately": 1011737
+}
