@@ -1,0 +1,17 @@
+{
+  "compact_metrics_and_gate_verified": true,
+  "source_and_protected_hashes_verified": true,
+  "screen_passers": [],
+  "outer_cases": 30,
+  "inner_boundaries": 150,
+  "prediction_rows": 4704,
+  "independent_row_and_label_rescoring": true,
+  "decoder_verified": true,
+  "ids_truth_and_fold_coverage_verified": true,
+  "nested_group_boundaries_verified": true,
+  "baseline_reference_max_abs": 0,
+  "preflight_no_teacher_clone_exact": true,
+  "preflight_zero_residual_identity": true,
+  "preflight_query_batch_independence": true,
+  "gold_unchanged": true
+}

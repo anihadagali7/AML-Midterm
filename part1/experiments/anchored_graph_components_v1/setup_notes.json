@@ -1,0 +1,3 @@
+{
+  "pre_fit_fix": "Initial package subset omitted evaluate.py imported by p1lib.__init__; restored all original package modules before protocol freeze or any model fits."
+}

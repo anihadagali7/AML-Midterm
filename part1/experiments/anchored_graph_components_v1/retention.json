@@ -1,0 +1,25 @@
+{
+  "policy": "../../RETENTION.md",
+  "status": "Unsuccessful screen; no promotion or submission",
+  "kept": "Frozen source/settings, compact metrics, fit counts/audits, complementarity, verification; parent predictions at current_leaders_grouped_v1",
+  "removed": {
+    "temporary_fold_files": 60,
+    "temporary_bytes": 386294,
+    "includes": "30 NPZ prediction files and 30 per-case JSON files",
+    "full_rescoring_before_removal": true
+  },
+  "retained_result_sha256": {
+    "results/complementarity.csv": "8f1e38fbe3eb6b1957d44a4b3a2d6dd221d190a2db191800321ee8b78d70627f",
+    "results/fit_audits.json": "dce17ecfdc2b8aada558f0b12f4694d49e3d3b25f97d63f8143fd51257bfac06",
+    "results/mechanism_summary.csv": "859b54edc7b95413abc8880c596247a6c765974c57309d9ab8010d024dedc7d2",
+    "results/paired_repeat_scores.csv": "a393ae32b89442325e608f5e27d72ecce7a5f8e24c87f90a9fbc165d5cddbdf2",
+    "results/per_label_repeat_scores.csv": "35932f90c8ecc015ab9dd14a88e8c383a007107dba5c7f2a8a2afb4477001b05",
+    "results/per_label_summary.csv": "e7fe2b198df7ed4a4b5b8f47e74f505d1e5193ecefffcbfec92f4bceadd8ff4a",
+    "results/repeat_scores.csv": "407a96d85cafa3d90e1c9018c547cd8ad6a96ea68f159f980bc527714d567d13",
+    "results/screen_gate.json": "7bfc4e0445ba4be2b1801f09ebd97afb567c259e91503dcd7b1923aca3542729",
+    "results/summary.csv": "f9f185ad217f06f2eb793478079da5f5c91324e2e1ca9fb6e8416027f6b4bbd2",
+    "results/verification.json": "f077e2789b4d6999a63bdea67a0254616bfbe4eec10dd934e4bf4acc1ed844da"
+  },
+  "python": "3.12.13",
+  "machine": "arm64"
+}
