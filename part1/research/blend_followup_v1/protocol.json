@@ -1,0 +1,105 @@
+{
+  "version": "blend-followup-v1",
+  "registered_at": "2026-11-07T23:45:45.302634+00:00",
+  "authorization": "User requested one or two improved submission candidates within 15 minutes.",
+  "parent": "Anchored 0.89636 retained as policy parent; submitted 75/25 blend 0.89850 is primary practical comparator.",
+  "hypotheses": [
+    "Nearby fixed component weights may improve complementary error correction.",
+    "A small global decoder change may improve sample F1 by adjusting label-set size."
+  ],
+  "specs": {
+    "anchored": {
+      "lda_weight": 0.0,
+      "cutoff": 0.5
+    },
+    "current75_25": {
+      "lda_weight": 0.25,
+      "cutoff": 0.5
+    },
+    "lda_control": {
+      "lda_weight": 1.0,
+      "cutoff": 0.5
+    },
+    "blend90_10": {
+      "lda_weight": 0.1,
+      "cutoff": 0.5
+    },
+    "blend80_20": {
+      "lda_weight": 0.2,
+      "cutoff": 0.5
+    },
+    "blend70_30": {
+      "lda_weight": 0.3,
+      "cutoff": 0.5
+    },
+    "blend60_40": {
+      "lda_weight": 0.4,
+      "cutoff": 0.5
+    },
+    "blend50_50": {
+      "lda_weight": 0.5,
+      "cutoff": 0.5
+    },
+    "blend75_25_cut475": {
+      "lda_weight": 0.25,
+      "cutoff": 0.475
+    },
+    "blend75_25_cut525": {
+      "lda_weight": 0.25,
+      "cutoff": 0.525
+    }
+  },
+  "search_size": "Seven fixed candidates, three controls. No crossed weight/threshold grid, per-label fitting, seed selection or test-label feedback.",
+  "schedule": "Every recipe evaluated on all 80 saved CV folds, validation78, and three chronological windows. Reuse exact matched fold-local components; no new component model fits.",
+  "supplementary_exception": "All seven candidates receive all supplementary checks regardless of CV outcome, fixed before scoring.",
+  "scoring": "Complete OOF sample F1 per repeat, population SD, macro and all per-label metrics, paired repeats against both controls, every chronological window and pooled98.",
+  "strict_confirmation": "Positive mean paired delta and at least 5/8 wins in both pools, reported separately against anchored and the current75_25 blend.",
+  "shortlist": "Prefer improved mean CV in at least one pool with neither CV mean lower and no validation/chronology sample-F1 loss. Any tradeoff is explicit. Select at most two locally supported candidates, then check final prediction equality only to avoid duplicate submissions. No automatic promotion or upload.",
+  "access": "Same inductive saved fits, group purges and query IDs as the verified prior study. Actual full235 test score arrays are opened only after finalist selection is recorded.",
+  "limitation": "Small adaptive development search on reused labels, motivated by an earlier Kaggle result. Local ranking and Kaggle gain remain uncertain.",
+  "retention": "Keep source, protocol and all compact results for every arm. Full prediction evidence for exported finalists; existing controls referenced without duplication.",
+  "source_sha256": {
+    "part1/research/anchored_neighbor_blend_v1/study.py": "e9fc442d84739e0c90127952b81bbb5667edeaf03ac574515106daff279053b6",
+    "part1/research/anchored_neighbor_blend_v1/neighbor_models.py": "ebd13d5d0cb41b207d21b5dde42c07e13f9a5e044227cab2d694d568475c4cf2",
+    "part1/research/anchored_neighbor_blend_v1/check_neighbor_math.py": "698ba1c738606bf90285c87293e29627cc3a2f11ba7d85cc96dde29d91d20964",
+    "part1/research/anchored_transductive_v1/run.py": "f56bcac1e04156399b23d91df02cb036698490871046b0cf52333f51418c8ffb",
+    "part1/research/anchored_transductive_v1/models.py": "948f22b61047bf469f510df22694e75b89b8a9422711d6d5318b558b6a991642",
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/experiments/current_leaders_grouped_v1/diagnostic_predictions.csv": "764ff5034d6ea208afc68097687867bd2e0ea8136b2ba12ae5ef72306091fc8e",
+    "part1/experiments/current_leaders_grouped_v1/comparison.csv": "6b58415662e1066338dac70159bd943dbc91af080db8bffe72f94ccd4cdbf4b0",
+    "part1/submissions/results/anchored-trainval235.json": "5683786415e501a74e76b0b2131c5021c2ddd3986fd05c685f2be75e1104ab99",
+    "part1/submissions/results/lda-ensemble-trainval235.json": "d389c2339aff8c64606080d7c5686437edce436a08371da90f27fe265fe7db68",
+    "part1/submissions/archive/submitted/anchored_reason_trainval235__kaggle_0.89636.csv": "1db6433dc5a5b900d440db16e5ef8375eb51dcf02d3f270217527d8b174319eb",
+    "part1/research/lda_ensemble/experiments/final_lda_ensemble_trainval235_v1/frozen_recipe.json": "ad0c07b065ba74f8414219efad41a53508289c9679c7fc6e08c274871af1476c",
+    "part1/experiments/current_leaders_grouped_v1/anchored_train.npz": "7d9114ef710dbdd364bcae6c7f5aca8f4c9a331debe2091cb5c96b4b8bd4be95",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/lda_ensemble_train.npz": "966fbc07d365614b663bfd8560fde203fbb1e4bffc9d998f42d58dbbd5a24f55",
+    "part1/experiments/current_leaders_grouped_v1/anchored_pooled.npz": "2851299685f75fc599cedf2d35dd7523a8cb036ea34bc6be5881890ce22ea379",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/lda_ensemble_pooled.npz": "5d940fac979c680c8ad50af85b376ad0230a16db42e9b0370419072ad5474799",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15",
+    "part1/research/lda_ensemble/experiments/ani_lda_revision_cv_v1/supplementary/window0_ensemble__revision_full.npz": "3328430622063b73d192c562a8a14ef50e0a6dc0dbaefa84c1b260c3fc68d996",
+    "part1/research/lda_ensemble/experiments/ani_lda_revision_cv_v1/supplementary/window1_ensemble__revision_full.npz": "6c1dc6c1dc100f155678b59283d9a0bf91fc778e15c9e2c11a885d343aaf91aa",
+    "part1/research/lda_ensemble/experiments/ani_lda_revision_cv_v1/supplementary/window2_ensemble__revision_full.npz": "77e5ef831b69e9da5c0d5fce9d49bf7369dd9d84579dbebebb359257f16be7e1",
+    "part1/research/lda_ensemble/experiments/ani_lda_revision_cv_v1/supplementary/window3_ensemble__revision_full.npz": "7ebcf9e9436e92e10e044b224f0a73b7c359c25b6b9425c42ae904172f78f1a8",
+    "part1/research/blend_followup_v1/run.py": "ba6f9b8bd566306b104b90b8afd691386c7fadd6dc6d1f4fee08213eec67d5ea",
+    "part1/research/anchored_neighbor_blend_v1/evidence.py": "8f856aa75c3da116faf32fb4c1faa880059bc2711ac73860ddd5c23452b0f632",
+    "part1/research/anchored_neighbor_blend_v1/protocol.json": "1ea1621d81b0fb0360f15283473a06f99b7a7e1ce522d5d984d2f02d90393995",
+    "part1/research/anchored_neighbor_blend_v1/retention.json": "e73db57a371344cccf3cc7465eeed8d0aeaefa048aa389e371e761ebb27ce372",
+    "part1/research/anchored_neighbor_blend_v1/results/useful_comparison.npz": "c0c2a152b2aa52e6fac6a52ec79448fe50da5643f3c998eee8f09baeacfb2499",
+    "part1/research/anchored_neighbor_blend_v1/results/repeat_scores.csv": "fc203bf8681a6e88e2a555cf3d8ae622a4fc536e866c0ea07e5f7f8b1a99211e",
+    "part1/research/anchored_neighbor_blend_v1/results/supplementary_scores.csv": "545863b199ec3444b8fd3aeaea4c2efc67d37403f96f1afbae021c6a64a2a2be",
+    "part1/research/anchored_lda_blend_submission_v1/prediction_scores.npz": "0e4b059936fa4906907787628b6fbc6cac29cf4f2bdd46fec5b6cbf8c760ae47",
+    "part1/research/anchored_lda_blend_submission_v1/manifest.json": "07a1fba4587f5fc4a244c9bec13f982b2bc4a272eddee7a278ce0819d11b1e3d",
+    "part1/research/anchored_lda_blend_submission_v1/frozen_recipe.json": "84d75d9f41c25aaf61c84114565f7255ee3d49a9c2ab6c891750c9e16108b9e1",
+    "part1/submissions/results/anchored75-lda25-trainval235.json": "b89c8feccf51dea2e249fbbe350fac76cad020b8652986a0dcf1e1b1d2786aba",
+    "part1/data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1/submissions/ready/part1_anchored75_lda25_trainval235.csv": "6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b"
+  }
+}

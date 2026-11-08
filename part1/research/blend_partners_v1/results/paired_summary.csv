@@ -1,0 +1,9 @@
+baseline,pool,mode,mean_delta,wins,ties,losses,meets_pool_rule
+anchored,train,anchored90_partners10,0.0007961783439490444,3,4,1,False
+anchored,train,anchored85_partners15,-0.0002653927813163204,4,1,3,False
+anchored,pooled,anchored90_partners10,0.0039007092198581617,7,0,1,True
+anchored,pooled,anchored85_partners15,0.0036347517730496437,7,1,0,True
+current75_25,train,anchored90_partners10,0.0007961783439490583,3,4,1,False
+current75_25,train,anchored85_partners15,-0.0002653927813163065,4,2,2,False
+current75_25,pooled,anchored90_partners10,0.0018617021276596118,6,1,1,True
+current75_25,pooled,anchored85_partners15,0.0015957446808510939,6,0,2,True

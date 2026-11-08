@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-11-08T00:07:10.775772+00:00",
+  "verification_before_cleanup": {
+    "passed": true,
+    "metric_values_recomputed": 8316,
+    "matched_cases": 84,
+    "export_rows_each": 312,
+    "distinct_labelsets_between_candidates": 3
+  },
+  "removed_prediction_arrays": [
+    {
+      "study": "blend_followup_v1",
+      "files_removed": 2,
+      "bytes_removed": 149735
+    },
+    {
+      "study": "blend_partners_v1",
+      "files_removed": 2,
+      "bytes_removed": 149508
+    }
+  ],
+  "submitted_recipe": "anchored75-lda25-trainval235",
+  "submitted_score_display": "0.89850",
+  "result_commit": "39a5b46a58c650c29d921ae2dabb8cf2a29ab403",
+  "existing_annotated_tag": "part1-anchored75-lda25-trainval235-kaggle-0.89850",
+  "tag_action": "Verified existing immutable tag; not moved or recreated.",
+  "scope": "Only this research track. No other worktree or submission records changed."
+}

@@ -1,0 +1,18 @@
+{
+  "recipe": "anchored90_partners10",
+  "file": "part1/submissions/ready/part1_anchored90_partners10_trainval235.csv",
+  "sha256": "57cc00677d1b68b791b5655f65ab6936080e03e489b436b32e4dbe63b1465156",
+  "rows": 312,
+  "changed_labelsets_vs_current": 4,
+  "component_weights": {
+    "anchored": 0.9,
+    "tri_training": 0.05,
+    "svm_hard_vote": 0.05
+  },
+  "all_components_verified_labels": 235,
+  "original_masked_rows": 1014,
+  "new_component_fits": 0,
+  "test_inputs_used_for_fit": false,
+  "uploaded": false,
+  "kaggle_score": null
+}
