@@ -21,7 +21,7 @@ All links are relative to this repository. No separate research worktree is need
 
 - [Complete method](MODEL.md) describes both components and the fixed final decision rule.
 - [Generated report guide](REPORT_GUIDE.md) contains nine comparable models, required per-label results, paired comparisons, and limitations, with source paths in the adjacent CSV table.
-- [Report source](../submission/report/main.tex) and [compiled PDF](../submission/report.pdf) describe the selected blend and reported .89935 result in the finalized submission layout. Part 2 report content is preserved from the incoming main branch.
+- [Report source](../report/main.tex) and [compiled PDF](../submission/report.pdf) describe the selected blend and reported .89935 result. The current report includes subsequent editorial revisions; the original integration remains preserved in Git.
 - [Verification and integration record](reporting/README.md) explains how to audit artifacts, numerical summaries, and documentation without retraining.
 - [Research index](RESEARCH_INDEX.html) and [submission ledger](submissions/README.md) cover the completed alternatives, including PySR .89423, fixed diverse kernel .89316, log-odds pooling .88888, and partial-Other .86645.
 

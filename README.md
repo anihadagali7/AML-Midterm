@@ -3,8 +3,10 @@
 ## Submission materials
 
 The [submission area](submission/README.md) contains the
-[combined report PDF](submission/report.pdf), its [source](submission/report/main.tex),
-and the [finalized Part 2 notebooks](submission/midterm/part2/README.md).
+[combined report PDF](submission/report.pdf), the
+[finalized Part 1 notebooks](submission/midterm/part1/README.md), and the
+[finalized Part 2 notebooks](submission/midterm/part2/README.md).
+The [report source](report/main.tex) is maintained separately in `report/`.
 The working projects and complete research histories remain in `part1/` and `part2/`.
 
 ## Part 1: stopping reasons
@@ -13,7 +15,7 @@ The selected report winner is **80% anchored / 20% strict-inductive five-seed Ca
 
 - [Part 1 overview](part1/README.md), [complete winning model](part1/MODEL.md), and [report tables and limitations](part1/REPORT_GUIDE.md)
 - [Exact checkpoint and report handoff](part1/REPORT_HANDOFF.md), [research index](part1/RESEARCH_INDEX.html), and [verification](part1/reporting/README.md)
-- [Combined report source](submission/report/main.tex) and [compiled PDF](submission/report.pdf)
+- [Combined report source](report/main.tex) and [compiled PDF](submission/report.pdf)
 - [Anchored component notebook](part1/part1.ipynb); the complete winner is reproduced by the frozen blend exporter linked above
 
 ## Part 2: current best submission

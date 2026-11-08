@@ -11,7 +11,7 @@ python3 part1/reporting/build.py
 python3 part1/reporting/verify.py
 ```
 
-The first command regenerates the guide and tables from retained evidence, checks CSV and frozen-recipe hashes, and compares all twelve result records and exact CSVs to their annotated tags. The second checks generated tables, report links, preserved model/data/protocol files, and report text. It preserves the original Part 1 integration audit at `ee750f6f`, verifies that current Part 2 working files match packaging checkpoint `efe9a8f2`, and checks that the relocated report differs from the Part 1 checkpoint only in TeX paths and compilation instructions. Neither fits a model. A full Git checkout with the original scored tags is required; fetch the tags when verifying a new clone.
+The first command regenerates the guide and tables from retained evidence, checks CSV and frozen-recipe hashes, and compares all twelve result records and exact CSVs to their annotated tags. The second checks generated tables, report links, preserved model/data/protocol files, and report text. It preserves the original Part 1 integration audit at `ee750f6f`, verifies that current Part 2 working files match packaging checkpoint `efe9a8f2`, verifies the original report source/PDF at that historical checkpoint, and separately checks the current edited report structure and bibliography. Neither fits a model. A full Git checkout with the original scored tags is required; fetch the tags when verifying a new clone.
 
 ## Scientific evidence
 
@@ -36,11 +36,22 @@ Evidence checks are not a fresh training replay. Use each study's recorded depen
 
 ## Report build
 
-From `submission/report/`, with a LaTeX toolchain:
+From `report/` at the repository root, with a LaTeX toolchain:
 
 ```sh
 latexmk -pdf main.tex
-cp main.pdf ../report.pdf
+cp main.pdf ../submission/report.pdf
 ```
 
-The committed PDF was originally built with Tectonic 0.17.0 at the old root path and then moved byte-for-byte to `submission/report.pdf`. To use that engine in the new layout, run `tectonic --keep-logs --outdir /tmp/aml-part1-report-build main.tex` from `submission/report/`, then copy the resulting `main.pdf` to `submission/report.pdf`. The verified PDF is four pages including references, within the five-page course limit. T1 font encoding keeps the supplied CVPR template's Times fonts under either engine. Two existing BibTeX warnings concern undated RDKit/ClinicalTrials.gov references, which retain access dates; there are no unresolved citations or overfull boxes. Build intermediates stay outside the repository.
+Alternatively, run `tectonic --keep-logs --outdir /tmp/aml-part1-report-build main.tex`
+from `report/`, then copy its `main.pdf` to `submission/report.pdf`. The active
+source is separate from the code/data hand-in in `submission/midterm/`.
+The current PDF has five pages of content, with references continuing onto page
+six, within the assignment limit. Build intermediates stay outside the repository.
+Two existing BibTeX warnings concern undated RDKit/ClinicalTrials.gov references;
+there are no unresolved citations or overfull boxes.
+
+The report prose, sections and comparison tables have been edited since the
+original integration. The verifier checks the immutable historical checkpoint
+against its original hashes and checks the current report separately, rather
+than requiring the current PDF or prose to be identical to the old snapshot.

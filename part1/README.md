@@ -11,7 +11,7 @@ The [submission notebooks](../submission/midterm/part1/README.md) provide a port
 3. [Exact checkpoint and report handoff](REPORT_HANDOFF.md): immutable score tag, CSV hash, source references, and report files.
 4. [Research index](RESEARCH_INDEX.html): every research family, including the later PySR and complementary-head trials.
 
-The [report source](../submission/report/main.tex) and [compiled PDF](../submission/report.pdf) describe the selected blend. The [executed notebook](part1.ipynb) describes and refits its anchored component. Use the [winning exporter](experiments/cand2_followup_v1/export_blend.py) for the complete blend; the notebook alone is not the final model.
+The [report source](../report/main.tex) and [compiled PDF](../submission/report.pdf) describe the selected blend. The [executed notebook](part1.ipynb) describes and refits its anchored component. Use the [winning exporter](experiments/cand2_followup_v1/export_blend.py) for the complete blend; the notebook alone is not the final model.
 
 ## Testing and verification
 
