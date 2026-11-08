@@ -1,0 +1,175 @@
+{
+ "name": "cand2_compliant_argmax",
+ "csv": "/home/dleiferives/school/michael/aml-midterm/midterm/part1/submissions/cand2_compliant_argmax.csv",
+ "sha1": "a6d31c42861a7584e7525734b026b4c792c329f9",
+ "created": "2026-11-06T17:15:41",
+ "config": {
+  "model": {
+   "features": {
+    "scale": true,
+    "pca": null,
+    "l2": false,
+    "blocks": {}
+   },
+   "synth": [
+    {
+     "type": "kmeans",
+     "k": 8,
+     "out": "soft"
+    },
+    {
+     "type": "knn_vote",
+     "k": 20
+    }
+   ],
+   "labeler": {
+    "type": "cs",
+    "graph": {
+     "space": {
+      "scale": true,
+      "pca": 64,
+      "l2": true
+     },
+     "k": 10,
+     "s": 1.0,
+     "sym": "max"
+    },
+    "lam": 0.06307249103049938,
+    "a1": 0.8,
+    "a2": 0.4199619766036297,
+    "hard": true,
+    "tau": 0.5
+   },
+   "clf": {
+    "type": "lda",
+    "class_weight": "balanced"
+   },
+   "temperature": true
+  },
+  "head": {
+   "prior": "none",
+   "decode": "expf1"
+  },
+  "transductive": true
+ },
+ "transductive_test_features_used": true,
+ "trained_on": "157 labeled train rows + 78 val rows (235); 1,014 unlabeled train rows as pool",
+ "n_seeds": 5,
+ "scores": {
+  "A": {
+   "sample_f1": 0.9077304964539007,
+   "sample_f1_se": 0.015526634220420842,
+   "macro_f1": 0.8383728413601224,
+   "f1_Safety": 0.9143387354941976,
+   "f1_Funding": 0.8330100334448162,
+   "f1_Efficacy": 0.8806405255192569,
+   "f1_Recruitment": 0.9702620278675976,
+   "f1_Other": 0.5936128844747437,
+   "sample_f1_rep_sd": 0.006648450205513565,
+   "n": 235,
+   "R": 10,
+   "macro_f1_se": 0.02760682089372788,
+   "f1_Safety_se": 0.03226024376550164,
+   "f1_Funding_se": 0.07975347167427599,
+   "f1_Efficacy_se": 0.04447084813287233,
+   "f1_Recruitment_se": 0.009155777579911185,
+   "f1_Other_se": 0.06156654343363665
+  },
+  "B": {
+   "sample_f1": 0.8898401619377573,
+   "sample_f1_se": 0.027825233030273816,
+   "macro_f1": 0.8491444895461068,
+   "f1_Safety": 0.9165242165242166,
+   "f1_Funding": 0.784313725490196,
+   "f1_Efficacy": 0.8921271538918599,
+   "f1_Recruitment": 0.9562221069019201,
+   "f1_Other": 0.6965352449223418,
+   "n": 97.66666666666667,
+   "macro_f1_se": 0.036116468282554395,
+   "f1_Safety_se": 0.04886801179281319,
+   "f1_Funding_se": 0.12368103137868602,
+   "f1_Efficacy_se": 0.050184687337856325,
+   "f1_Recruitment_se": 0.023513586868162167,
+   "f1_Other_se": 0.08707621715913776
+  },
+  "B2005": {
+   "sample_f1": 0.8945578231292517,
+   "sample_f1_se": 0.027177990497553383,
+   "macro_f1": 0.8610103908525716,
+   "f1_Safety": 0.9444444444444444,
+   "f1_Funding": 0.8235294117647058,
+   "f1_Efficacy": 0.8636363636363636,
+   "f1_Recruitment": 0.9512195121951219,
+   "f1_Other": 0.7222222222222222,
+   "n": 98,
+   "macro_f1_se": 0.036558695293796274,
+   "f1_Safety_se": 0.041870069354615465,
+   "f1_Funding_se": 0.11412947330948174,
+   "f1_Efficacy_se": 0.0579216798735052,
+   "f1_Recruitment_se": 0.025278407771105658,
+   "f1_Other_se": 0.08095404086620217,
+   "cut": 2005
+  },
+  "C": {
+   "sample_f1": 0.8717948717948718,
+   "sample_f1_se": 0.03174176222388937,
+   "macro_f1": 0.7453460051887542,
+   "f1_Safety": 0.9411764705882353,
+   "f1_Funding": 0.6666666666666666,
+   "f1_Efficacy": 0.5833333333333334,
+   "f1_Recruitment": 0.9900990099009901,
+   "f1_Other": 0.5454545454545454,
+   "n": 78,
+   "macro_f1_se": 0.07131965230758448,
+   "f1_Safety_se": 0.06888793200126334,
+   "f1_Funding_se": 0.2923475359227673,
+   "f1_Efficacy_se": 0.1268706191926747,
+   "f1_Recruitment_se": 0.01012340426551793,
+   "f1_Other_se": 0.13466010525430294
+  },
+  "J": 0.898785329195829,
+  "J_se": 0.015932042896344027,
+  "protocol_note": "A: 5-fold x 10 repeats over 235 labeled rows (CV seed 1, not the search seed); B: mean of chrono cuts 2004/2005/2006; C: 157 labeled-train -> 78 val. Post-selection numbers are optimistic: see results/search/nested for the honest estimate.",
+  "description": "lda(bal) syn:kmeans8 syn:knn_vote20 lab:cs(\u03bb=0.063) T expf1",
+  "why": "highest re-evaluated J among rule-compliant configs",
+  "complexity": 3.75,
+  "unsupervised_label_filling": true,
+  "selection_entry": "search#691"
+ },
+ "test_pred_label_rate": {
+  "Safety": 0.144,
+  "Funding": 0.029,
+  "Efficacy": 0.128,
+  "Recruitment": 0.574,
+  "Other": 0.26
+ },
+ "test_pred_cardinality": 1.1346153846153846,
+ "test_pred_combo_counts": {
+  "Other": 45,
+  "Recruitment": 146,
+  "Recruitment+Other": 29,
+  "Efficacy": 34,
+  "Efficacy+Other": 4,
+  "Funding": 4,
+  "Funding+Other": 1,
+  "Funding+Recruitment": 4,
+  "Safety": 41,
+  "Safety+Other": 2,
+  "Safety+Efficacy": 2
+ },
+ "sld_test_prior_labels": null,
+ "train_prior_labels": {
+  "Safety": 0.25,
+  "Funding": 0.25,
+  "Efficacy": 0.25,
+  "Recruitment": 0.375,
+  "Other": 0.25
+ },
+ "temperature": [
+  3.008051372454589,
+  2.989058577797382,
+  2.9855556696186514,
+  3.0260213845884563,
+  2.9937324977729154
+ ]
+}

@@ -19,6 +19,7 @@ These records identify manually submitted CSVs, exact hashes, frozen recipes, fi
 | [LDA 70/15/15 ensemble, 235 labels](results/lda-ensemble-trainval235.json) | 0.89401 | `part1-lda-ensemble-trainval235-kaggle-0.89401` |
 | [Previous 70/15/15 ensemble, 235 labels](results/three-way-trainval235.json) | 0.89401 | `part1-three-way-trainval235-kaggle-0.89401` |
 | [Tri-training, 235 labels](results/tri-training-trainval235.json) | 0.88012 | `part1-tri-training-trainval235-kaggle-0.88012` |
+| [Cand2 graph/features, inductive five-seed, 235 labels](results/cand2-cs-features-inductive5-trainval235.json) | 0.89102 | `part1-cand2-cs-features-inductive5-trainval235-kaggle-0.89102` |
 
 Scores come from user/branch reports; uploaded bytes and leaderboard partition were not independently inspected. Original Ani's .89423 identifies the original `a548721` transductive artifact. The later `8a8c3fc` best-model source and CSV changed; no score is established for that changed CSV. See [Ani provenance](../research/lda_ensemble/research/ani_snapshots/README.md).
 
