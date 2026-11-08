@@ -1,0 +1,4 @@
+metric,correct,wrong,tied,total
+dylan_J,10,4,0,14
+grouped_train,14,0,0,14
+grouped_pooled,13,1,0,14

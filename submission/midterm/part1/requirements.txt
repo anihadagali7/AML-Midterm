@@ -1,0 +1,3 @@
+-r resources/part1/requirements-simple.txt
+iterative-stratification==0.1.9
+rdkit==2026.9.1

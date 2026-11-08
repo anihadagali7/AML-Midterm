@@ -30,3 +30,27 @@ The report was subsequently reconciled with the newer Part 1 checkpoint at
 TeX content is preserved with resource paths adjusted, and its bibliography is
 unchanged. See [reconciliation checks](RECONCILIATION.md). No report recompilation
 or editorial revision was needed for this folder reconciliation.
+
+## Part 1 notebook package
+
+The report-focused Part 1 package is under `midterm/part1/`. Five notebooks were
+executed in the working tree and again from the exported ZIP in a temporary
+folder with no Git repository or research checkout. The default final-model
+notebook freshly fits anchored and all five Cand2 seeds for original validation
+and final235. Both reproduce their frozen predictions; final235 reproduces the
+exact `.89935` CSV SHA-256
+`c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257`.
+
+The baseline/feature notebook freshly reproduces the report's historical
+validation feature comparison and explicitly labels its transductive boundary.
+Other notebooks rescore 84 winner/control cases, paired-repeat and J rankings,
+63 retained Other-combiner rows, 63 partial-label rows, 189 complementary-head
+rows, and 96 grouped PySR repeat summaries from sufficient statistics. These
+are retained-evidence checks, not fresh fits of every historical experiment.
+
+[Part 1 verification receipt](part1_package_verification.json) records the ZIP
+hash/size, notebook execution, fitting populations, and fresh-fit errors. The
+ZIP includes supplied inputs and selected evidence as real files, without
+fitted-model dumps. Its source notebook exposes the packaged implementations.
+Historical runners remain source records and can require omitted intermediate
+regeneration; portability is asserted for the five finalized notebooks.

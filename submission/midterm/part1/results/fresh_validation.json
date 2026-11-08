@@ -1,0 +1,43 @@
+{
+  "validation": true,
+  "gold": 157,
+  "originally_masked": 1014,
+  "rows": 78,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fresh_anchored": true,
+  "fresh_cand2": true,
+  "test_inputs_in_fit": false,
+  "max_anchored_error": 0.0,
+  "max_cand2_error": 0.0,
+  "identical_predictions": true,
+  "seconds": 15.557918458245695,
+  "anchored_refreshes": [
+    {
+      "step": 0,
+      "known": 157,
+      "generated": 0,
+      "known_weight": 157.0,
+      "generated_weight": 0.0
+    },
+    {
+      "step": 1,
+      "known": 157,
+      "generated": 657,
+      "known_weight": 157.0,
+      "generated_weight": 96.48171234402852
+    },
+    {
+      "step": 2,
+      "known": 157,
+      "generated": 758,
+      "known_weight": 157.0,
+      "generated_weight": 116.410619986631
+    }
+  ]
+}

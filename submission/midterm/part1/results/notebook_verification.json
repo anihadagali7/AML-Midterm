@@ -1,0 +1,30 @@
+{
+  "notebooks": [
+    {
+      "notebook": "01_final_model.ipynb",
+      "code_cells": 6,
+      "errors": 0
+    },
+    {
+      "notebook": "02_baselines_and_features.ipynb",
+      "code_cells": 10,
+      "errors": 0
+    },
+    {
+      "notebook": "03_benchmarks_and_blends.ipynb",
+      "code_cells": 4,
+      "errors": 0
+    },
+    {
+      "notebook": "04_unsuccessful_directions.ipynb",
+      "code_cells": 5,
+      "errors": 0
+    },
+    {
+      "notebook": "05_source_code.ipynb",
+      "code_cells": 140,
+      "errors": 0
+    }
+  ],
+  "default_execution": "Fresh validation and final235 winner fitting (all five Cand2 seeds), fresh historical feature/baseline validation, and retained benchmark/negative-evidence rescoring."
+}

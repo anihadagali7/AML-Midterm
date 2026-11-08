@@ -12,3 +12,8 @@ submission/midterm/part2/resources/
 submission/midterm/part2/generated/
 submission/midterm/part2/_source_export/
 submission/dist/
+
+# Materialized Part 1 hand-in; builder reconstructs supplied inputs and evidence.
+submission/midterm/part1/resources/
+submission/midterm/part1/generated/
+submission/midterm/part1/_source_export/

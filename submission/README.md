@@ -7,6 +7,8 @@ at the repository root remains the full Part 2 research history.
 | --- | --- |
 | Current combined report PDF | [report.pdf](report.pdf) |
 | Combined report source and supporting files | [report/](report/README.md) |
+| Final Part 1 notebooks and exact winning CSV | [midterm/part1/](midterm/part1/README.md) |
+| Part 1 code/data ZIP | `dist/part1-midterm-code.zip` (generated locally) |
 | Final Part 2 notebooks, winning CSV, and generated figures | [midterm/part2/](midterm/part2/README.md) |
 | Part 2 code/data ZIP | `dist/part2-midterm-code.zip` (generated locally) |
 | Reproduction and portability checks | [Verification](VERIFICATION.md) |
@@ -19,11 +21,7 @@ The combined report includes the updated Part 1 **0.89935 anchored/Cand2 winner*
 and its evidence from `ee750f6f`. Its PDF is preserved byte-for-byte; source edits
 only adapt TeX paths to this layout. See the [reconciliation record](RECONCILIATION.md).
 
-The older Part 1 hand-in files in `midterm/` remain unchanged historical files;
-they do not implement the latest winner. The current Part 1 implementation,
-exact scored artifact and reproduction instructions are linked from
-[part1/MODEL.md](../part1/MODEL.md) and [the report handoff](../part1/REPORT_HANDOFF.md).
-This task reconciles that existing work; it does not build a new Part 1 notebook package.
+The current Part 1 hand-in is under [midterm/part1/](midterm/part1/README.md): five notebooks covering the complete .89935 winner, representative baseline/feature experiments, benchmarks/blends, unsuccessful directions, and source code. Its builder creates a separate portable ZIP. The older Part 1 files directly under `midterm/` remain historical artifacts; use the new numbered notebooks for the selected winner.
 
 The old root `midterm/` is a compatibility symlink to this folder's `midterm/`, so
 historical paths continue to resolve. `midterm/report` similarly points to the
@@ -48,3 +46,13 @@ No data is downloaded by the builder and no submission is uploaded.
 The finalized notebooks default to rescore/replay mode. Fresh winning-model
 training is an explicit cell in notebook 01; its independent preparation-time
 verification is included with the evidence.
+
+## Build the Part 1 hand-in
+
+```sh
+python -m pip install -r part1/reporting/requirements.txt rdkit==2026.9.1
+python part1/packaging/build_handin.py
+python part1/packaging/verify_handin.py
+```
+
+The resulting ZIP contains `midterm/part1/`. Part 1 and Part 2 packages can be extracted into the same `midterm/` folder. The Part 1 notebook package freshly fits the exact winner by default and explicitly distinguishes current inductive measurements from historical transductive feature comparisons. See its README for scope and runtime modes.

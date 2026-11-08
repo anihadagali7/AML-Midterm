@@ -71,9 +71,12 @@ def main():
             "submissions/README.md",
         ]
     }
-    assert all(p in allowed or p.startswith("part1/reporting/") for p in changed), (
-        changed
-    )
+    # Notebook packaging adds portable wrappers; frozen study/model paths must
+    # still match the evidence checkpoint exactly.
+    assert all(
+        p in allowed or p.startswith(("part1/reporting/", "part1/packaging/"))
+        for p in changed
+    ), changed
     # Preserve the original Part 1 report integration audit at its closed
     # checkpoint. The later, authorized Part 2 packaging adds documentation and
     # hand-in code; it must not be mistaken for a change to that earlier audit.

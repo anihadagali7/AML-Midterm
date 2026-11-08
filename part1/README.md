@@ -2,6 +2,8 @@
 
 **Selected report winner: 80% anchored / 20% strict-inductive five-seed Cand2, reported Kaggle sample-wise F1 0.89935.** Model exploration is closed for this report phase. The complete winning source, exact scored CSV, benchmark evidence, and subsequent negative experiments are available in this checkout.
 
+The [submission notebooks](../submission/midterm/part1/README.md) provide a portable, report-focused code/data hand-in, including a fresh fit of both winning components.
+
 ## Read this first
 
 1. [Winning model](MODEL.md): inputs, both components, fitting boundaries, and the final prediction rule.

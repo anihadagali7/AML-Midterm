@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "archive": "submission/dist/part1-midterm-code.zip",
+  "zip_sha256": "5bce1217175005dbf75a856f1ec2c1cc6c7f8af5e1361204ef3d66c12afcef89",
+  "zip_bytes": 9012207,
+  "zip_files": 786,
+  "notebooks": [
+    {
+      "notebook": "01_final_model.ipynb",
+      "code_cells": 6,
+      "errors": 0
+    },
+    {
+      "notebook": "02_baselines_and_features.ipynb",
+      "code_cells": 10,
+      "errors": 0
+    },
+    {
+      "notebook": "03_benchmarks_and_blends.ipynb",
+      "code_cells": 4,
+      "errors": 0
+    },
+    {
+      "notebook": "04_unsuccessful_directions.ipynb",
+      "code_cells": 5,
+      "errors": 0
+    },
+    {
+      "notebook": "05_source_code.ipynb",
+      "code_cells": 140,
+      "errors": 0
+    }
+  ],
+  "extracted_without_git": true,
+  "extracted_without_research_checkout": true,
+  "exact_winner_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+  "fresh_validation": {
+    "validation": true,
+    "gold": 157,
+    "originally_masked": 1014,
+    "rows": 78,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "fresh_anchored": true,
+    "fresh_cand2": true,
+    "test_inputs_in_fit": false,
+    "max_anchored_error": 0.0,
+    "max_cand2_error": 0.0,
+    "identical_predictions": true,
+    "seconds": 13.026236250065267,
+    "anchored_refreshes": [
+      {
+        "step": 0,
+        "known": 157,
+        "generated": 0,
+        "known_weight": 157.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 157,
+        "generated": 657,
+        "known_weight": 157.0,
+        "generated_weight": 96.48171234402852
+      },
+      {
+        "step": 2,
+        "known": 157,
+        "generated": 758,
+        "known_weight": 157.0,
+        "generated_weight": 116.410619986631
+      }
+    ]
+  },
+  "fresh_final": {
+    "validation": false,
+    "gold": 235,
+    "originally_masked": 1014,
+    "rows": 312,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "fresh_anchored": true,
+    "fresh_cand2": true,
+    "test_inputs_in_fit": false,
+    "max_anchored_error": 0.0,
+    "max_cand2_error": 0.0,
+    "identical_predictions": true,
+    "seconds": 19.333651166409254,
+    "anchored_refreshes": [
+      {
+        "step": 0,
+        "known": 235,
+        "generated": 0,
+        "known_weight": 235.0,
+        "generated_weight": 0.0
+      },
+      {
+        "step": 1,
+        "known": 235,
+        "generated": 685,
+        "known_weight": 235.0,
+        "generated_weight": 102.79687754649603
+      },
+      {
+        "step": 2,
+        "known": 235,
+        "generated": 757,
+        "known_weight": 235.0,
+        "generated_weight": 119.52692709831274
+      }
+    ],
+    "submission_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257"
+  },
+  "scope": "Portable Part 1 package; no Part 2 or report changes. Default cells train the winner and historical feature comparison; benchmark/negative studies rescore retained evidence."
+}
