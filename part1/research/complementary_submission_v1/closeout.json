@@ -1,0 +1,35 @@
+{
+  "recorded_at_utc": "2026-11-08T01:53:38.911601+00:00",
+  "passed": true,
+  "experiment_commits": [
+    "735ad7a3",
+    "a2b0aa62",
+    "f9016b9b"
+  ],
+  "protected_source_and_retained_file_hashes_checked": 68,
+  "source_settings_protocols_summaries_and_negative_findings_retained": true,
+  "unsuccessful_fold_caches_absent": true,
+  "exact_scored_csv_and_recipe_hashes_verified_at_annotated_tags": true,
+  "tags": [
+    {
+      "recipe": "anchored80-cand2-inductive20-trainval235",
+      "score": 0.89935,
+      "tag": "part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935",
+      "result_commit": "cde3d500e1304f2afeeb6dc4c7f50e49190c6a4b",
+      "csv_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+      "annotated_tag": true
+    },
+    {
+      "recipe": "anchored80-diverse-kernel20-trainval235",
+      "score": 0.89316,
+      "tag": "part1-anchored80-diverse-kernel20-trainval235-kaggle-0.89316",
+      "result_commit": "f9016b9b51815c9a0c58cbbec69363ee03e0c9c0",
+      "csv_sha256": "97f311bc840843876e42f203a9c47d350e5c9df6a0ceb2c84ff4e35e6f79ff54",
+      "annotated_tag": true
+    }
+  ],
+  "report_winner": "anchored80-cand2-inductive20-trainval235",
+  "selection": "User explicitly closed this experiment and selected the current .89935 leader for report writing.",
+  "fresh_model_fits": 0,
+  "new_kaggle_uploads": 0
+}

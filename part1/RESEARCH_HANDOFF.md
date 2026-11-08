@@ -1,14 +1,18 @@
 # Part 1 research handoff
 
+**Current phase: report writing.** The user selected the **anchored80/Cand2_20 winner at .89935** and closed the complementary-head experiment at .89316. See [REPORT_HANDOFF.md](REPORT_HANDOFF.md) for exact scored tags, source/evidence locations, experiment commits and reporting limitations. No further model experiments are queued.
+
+The material below describes the earlier consolidated-main checkpoint at .89850. Preserve it as historical context; the report selection and current evidence pointers above supersede its leader and next-experiment statements.
+
 Read the [Part 1 README](README.md) for the current model and comparable results, then [TESTING_POLICY.md](TESTING_POLICY.md) before new experiments. The detailed experiment history is indexed separately in [RESEARCH_INDEX.html](RESEARCH_INDEX.html).
 
-## Current position
+## Earlier consolidated-main position
 
 The **75% anchored / 25% LDA ensemble blend** is the highest recorded, user-reported Kaggle result at **0.89850**, up **0.00214** over anchored's 0.89636. Both components use existing final fits on all 235 verified labels plus the 1,014 originally masked training rows, with inductive input access. The [scored result](submissions/results/anchored75-lda25-trainval235.json) identifies the frozen recipe and exact CSV. Its five changed label sets came from the fixed blend; no new fitting or tuning was added during preparation. The historical preparation manifest still says unsubmitted; the later score record supersedes that status.
 
 On the common grouped benchmark, anchored beats current Ani LDA in both CV pools. Against the submitted LDA ensemble it is essentially tied: Train157 +.000265, Pooled235 −.000266, lower original validation, higher pooled chronology. The [complete comparison](experiments/current_leaders_grouped_v1/comparison.csv) preserves the tradeoffs. Original Ani's .89423 belongs to its original transductive artifact; no Kaggle score is established for the changed current Ani LDA CSV.
 
-## Next experiment
+## Historical next-experiment guidance
 
 The frozen testing policy and completed studies use anchored 0.89636 as their declared parent. Preserve those controls and rules, and include the submitted 0.89850 blend as a matched reference in future predeclared comparisons. Start with a small, explicit hypothesis and the saved grouped splits. Complete both pools and the supplementary checks before claiming a full comparison. A negative finding against an older parent does not establish that the same change fails against the new blend.
 
