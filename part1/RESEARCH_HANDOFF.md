@@ -8,6 +8,10 @@ The **75% anchored / 25% LDA ensemble blend** is the highest recorded, user-repo
 
 On the common grouped benchmark, anchored beats current Ani LDA in both CV pools. Against the submitted LDA ensemble it is essentially tied: Train157 +.000265, Pooled235 −.000266, lower original validation, higher pooled chronology. The [complete comparison](experiments/current_leaders_grouped_v1/comparison.csv) preserves the tradeoffs. Original Ani's .89423 belongs to its original transductive artifact; no Kaggle score is established for the changed current Ani LDA CSV.
 
+## Completed PySR experiment
+
+The [bounded symbolic-classifier study](research/pysr_v1/README.md) completed all 84 standard cases, with 420 fresh symbolic heads. PySR alone scored .869559 / .884184 on Train157 / Pooled235, validation .844017 and chronology .750000. Adding 20% PySR to our submitted 75/25 blend also lowered all four headline checks. A linear head on the same geometry was included as a diagnostic; the reported 0.89935 anchored/Cand2 model was included as a matched control. No candidate was exported or submitted. Independent rescoring passed; complete compact results and equations remain, with nonwinning prediction caches removed.
+
 ## Next experiment
 
 The frozen testing policy and completed studies use anchored 0.89636 as their declared parent. Preserve those controls and rules, and include the submitted 0.89850 blend as a matched reference in future predeclared comparisons. Start with a small, explicit hypothesis and the saved grouped splits. Complete both pools and the supplementary checks before claiming a full comparison. A negative finding against an older parent does not establish that the same change fails against the new blend.

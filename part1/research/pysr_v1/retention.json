@@ -1,0 +1,32 @@
+{
+  "policy": "Compact complete scores, sufficient statistics, equations, fit audits, dependencies and source retained. Existing full control snapshot retained. No fitted search models or backup archives.",
+  "candidate_prediction_arrays_retained": false,
+  "files": {
+    "part1/research/pysr_v1/.gitignore": "1a670ccd4be0a4bdb5a624b02bb6d87c6aebd9dcc2d59da637c489e5b670d5de",
+    "part1/research/pysr_v1/JuliaManifest.toml": "ce4601341384fe1092964ca38057850abd06c6f78a07fb923e368f598bea81d1",
+    "part1/research/pysr_v1/JuliaProject.toml": "51bcf51dcc11e384f926769741b4469c371e6d90cccd661bc59cb36fddd6a1f2",
+    "part1/research/pysr_v1/README.md": "752159dc418e89bb25b15d18d4b019a1c2b79a71d2a031f7665f333b4a64ccf8",
+    "part1/research/pysr_v1/best_control_result.json": "1c684c3a70eb7a50814bb00a165e4ed2bae6f2c90ccb8d9d6d9898f0856d88d6",
+    "part1/research/pysr_v1/build_controls.py": "8d9add91d42e00ee50c12a6399daa01e982ff7e1a466e3f81e003a106054013c",
+    "part1/research/pysr_v1/check_geometry.py": "1ef2eec4a370cba514215171082be069a89fa6de949e725b3f17ae9c4dd260f9",
+    "part1/research/pysr_v1/common.py": "8c263e62274435c2f83926c6a2dbe0fee7a99a8b973373b69c4caf691fb0622b",
+    "part1/research/pysr_v1/control_provenance.json": "d83352d18f20638a93513489bd41f6f9c6f54ecc3b457e6035cc8b5a1c39cd31",
+    "part1/research/pysr_v1/controls.npz": "8a7f28f1a21629ad2b10a1ac0d7b075718e8de5605e528c2b7d7c6874d95759a",
+    "part1/research/pysr_v1/model.py": "558a8ac53a61008c6c75d5ae1a722c9dbc9ad1aeb1ac8f52079acf8e71596029",
+    "part1/research/pysr_v1/outcome.json": "55f3bc8f46e0dfa713b815e7c513a6b58b9302e23783e6e61cb6aac5ae7f1644",
+    "part1/research/pysr_v1/protocol.json": "9084150eaafe9e3dbe38b8da0360ced2eb73cda68d453a8b2c025ae0cd7abe7b",
+    "part1/research/pysr_v1/requirements-lock.txt": "530d2055111c9f1eafaacac8f5b71ae084c272b42e11ce62e0538c25b44f1d0c",
+    "part1/research/pysr_v1/results/cv_summary.csv": "a23aa7882812ec77863941e15e2e3c34fa05c27aae7a73697c4385f6019c1de5",
+    "part1/research/pysr_v1/results/equations.csv": "4089648f831953ceb38b8b5d7b7b2796e85e41dbca372f86397d582ea18446c9",
+    "part1/research/pysr_v1/results/fit_audits.csv": "6717852535a01437dd1df6ceafe24ef06b4100001e3f7f0b59b98d3d057e7cb6",
+    "part1/research/pysr_v1/results/paired_repeat_deltas.csv": "85cf176eddcefdf21939978d3c3a45a477354e97a434a59b601cce28228aecc5",
+    "part1/research/pysr_v1/results/paired_summary.csv": "4be145d89f709539a714193137c558b454b3097bfdbe893b278bbe5a7ab00d9b",
+    "part1/research/pysr_v1/results/repeat_scores.csv": "bb43d02d23a0b54880e80401644f11ec22c4bcaa97801fd1e3416d359399d629",
+    "part1/research/pysr_v1/results/sufficient_statistics.csv": "cdd9e2e10d1575d7d38d4b169e6d69181cdccc40eaffd8ddf95c3e893582a899",
+    "part1/research/pysr_v1/results/supplementary_scores.csv": "2740fda31ed5558f4cc84bf9bf2428500b4bd240ed9f7f05c329ae3873172881",
+    "part1/research/pysr_v1/results/verification.json": "f59591511771d3423909045f8fed1b1d06481fccd5e23d4bac9b4a97cd2a21d1",
+    "part1/research/pysr_v1/retained.py": "58551d3a5c724b8aec39298815eddfa4a6acf0f7523469cd7678307d81a665ae",
+    "part1/research/pysr_v1/study.py": "38490c9d582b35925d92e1ef72aba076262482f00ac8697f2d947139e7fa7d21"
+  },
+  "bytes": 630310
+}
