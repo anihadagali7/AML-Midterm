@@ -19,8 +19,9 @@ and a separate report PDF upload. The Part 2 ZIP therefore contains `midterm/par
 It is the Part 2 portion of the hand-in; it does not package or certify Part 1.
 
 The combined report includes the updated Part 1 **0.89935 anchored/Cand2 winner**
-and its evidence from `ee750f6f`. Its PDF is preserved byte-for-byte; source edits
-only adapt TeX paths to this layout. See the [reconciliation record](RECONCILIATION.md).
+and its evidence from `ee750f6f`. The report prose has since been revised in the
+team's voice, with the results unchanged. See the [reconciliation record](RECONCILIATION.md)
+for the original integration and relocation history.
 
 The current Part 1 hand-in is under [midterm/part1/](midterm/part1/README.md): five notebooks covering the complete .89935 winner, representative baseline/feature experiments, benchmarks/blends, unsuccessful directions, and source code. Its builder creates a separate portable ZIP. The older Part 1 files directly under `midterm/` remain historical artifacts; use the new numbered notebooks for the selected winner.
 

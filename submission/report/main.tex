@@ -34,19 +34,20 @@ Cornell University
 \maketitle
 
 \begin{abstract}
-Part~1 asks why a trial stopped early. Only 157 of 1,171 training trials have
-visible reason labels. We use the 150 supplied reason embeddings. An anchored
-classifier combines logistic regression, neighbors, and shrinkage discriminant
-analysis with clustering-assisted self-training. A second pipeline adds graph,
-cluster, and neighbor information. A fixed 80/20 blend scored a reported Kaggle
-sample-wise F1 of 0.89935, compared with 0.89636 for anchored alone.
+We address two clinical trial prediction tasks. In Part~1, only 157 of 1,171
+training trials have observed stopping-reason labels. Using 150-dimensional
+embeddings, we combine an anchored self-training classifier with a second
+pipeline that adds graph, cluster, and neighbor information. Our fixed 80/20
+blend achieved a Kaggle sample-wise F1 of 0.89935, compared with 0.89636 for
+anchored alone.
 
-Part~2 asks whether a trial meets its primary endpoint. The score is log loss,
-and the test trials start later than the training trials. We upweight recent
-trials, average in a neighbor model that also prefers recent matches, and mix
-in 30\% of an earlier text-and-tree ensemble that errs on different trials. The
-reported Kaggle log loss is 0.58465. A blend that looked better on our
-historical checks scored 0.58492, so we kept the first result.
+In Part~2, we predict whether a trial meets its primary endpoint. To account
+for the later test period, we give recent trials more weight and incorporate
+neighbors that favor recent matches. Blending in 30\% of an earlier
+text-and-tree ensemble achieved a Kaggle log loss of 0.58465. A later blend
+improved our historical evaluation scores but scored 0.58492 on Kaggle, so we
+retained the earlier model.
+
 \end{abstract}
 
 \noindent\textbf{Team responsibilities.}
@@ -54,46 +55,66 @@ All three authors worked on both parts and on this report.
 \textbf{Michael Mazzola} led the Part~1 model.
 \textbf{Tarun Mandalapu} built the first Part~2 classifier, and
 \textbf{Anirudha Hadagali} led the later Part~2 tuning.
-Tarun Mandalapu drafted the longer project notes that this summary condenses.
+Tarun Mandalapu also drafted the project notes used to prepare this report.
 
-\section{Part 1: stopping reasons}
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Part 1: stopping reasons}
 \label{sec:p1}
 
-\subsection{Data and the score}
+\subsubsection{Data and evaluation}
 
-The files hold 1,561 trials that stopped early~\cite{fu2022hint,clinicaltrials}.
-Training has 1,171 trials: 157 with real labels and 1,014 with every reason
-marked $-100$, which means unknown. Validation has 78 labeled trials. Test has
-312 later trials, from 2010 to 2016. A trial can carry more than one of Safety,
-Funding, Efficacy, Recruitment, and Other. Among the 235 real labels,
-Recruitment appears on 64\% and Funding on 5\%. The labeled trials are mostly
-early, so those rates may differ in the test set.
+The dataset contains 1,561 trials that stopped early~\cite{fu2022hint,clinicaltrials}.
+The training set has 1,171 trials: 157 with observed labels and 1,014 with every
+reason marked $-100$, indicating an unknown label. The validation set has 78
+labeled trials, and the test set has 312 later trials from 2010 to 2016.
+A trial can have more than one of five stopping reasons: Safety, Funding,
+Efficacy, Recruitment, and Other. Among the 235 labeled trials, Recruitment
+appears on 64\% and Funding on 5\%. Most labeled trials are from earlier years,
+so these rates may differ in the test set.
 
-The selection score is sample-wise F1, the average of per-trial F1. We also
-report each reason's F1 and their macro average. One validation trial can move
-sample-wise F1 by about 1.3 percentage points. Later comparisons therefore use
-eight repeats of five grouped folds on the 157 training labels and on all 235,
-plus three earlier-to-later windows totaling 98 predictions. Embedding-duplicate
-groups stay together, and masked duplicates of held-out groups are purged.
-These splits were reused during development.
+We initially selected models and features using sample-wise F1 on the supplied
+validation set, alongside per-reason F1 and its macro average. As we tested
+more configurations, we became concerned that repeatedly tuning against the
+same 78 trials could overfit our model choices to that particular split.
+A single trial can change sample-wise F1 by about 1.3 percentage points.
+This is selection overfitting, even when validation labels are excluded from
+training.
 
-\subsection{What the model does}
+We therefore moved to repeated grouped cross-validation as a more stable guide
+for tuning, averaging over eight repeats of five folds on both the 157 training
+labels and all 235 labels, called Train157 and Pooled235 in the notebooks and results. This lets
+us judge whether a change helps across
+several held-out groups rather than only the original validation set. Trials
+with identical embeddings stay together, and we remove masked duplicates of
+held-out trials. We also use three chronological windows totaling 98
+predictions to check performance on later trials. These reused development
+splits reduce dependence on a single holdout, but do not eliminate selection
+bias or provide a new independent test set.
 
-Each trial has 150 supplied stopping-reason embedding coordinates. IDs align
-rows and are not features; years define chronology checks. On the earlier
-self-training model, extra start year, eligibility text, disease, or drug
-features~\cite{rogers2010extended,rdkit,milacic2024reactome} did not improve
-validation sample-wise F1: embeddings alone scored .893, versus .891 with year,
-.876 with eligibility or disease text, and .889 with fingerprints. These are
-historical feature checks, not ablations of the final blend.
+\subsubsection{Models and training}
 
-The \emph{anchored} component standardizes embeddings using permitted gold and
+We use the 150 supplied stopping-reason embedding coordinates as features.
+Trial IDs align rows, and start years define our chronological evaluation
+splits. In an earlier self-training model, adding start year, eligibility text,
+disease, or drug features~\cite{rogers2010extended,rdkit,milacic2024reactome}
+did not improve validation sample-wise F1. Embeddings alone scored .893,
+compared with .891 with year, .876 with eligibility or disease text, and .889
+with fingerprints. These experiments guided our feature choices, although we
+did not repeat the same feature comparisons with the final blend.
+
+Our \emph{anchored} component standardizes embeddings using the labeled and
 masked training rows. A 30-component diagonal Gaussian mixture uses 30
 principal components~\cite{dempster1977em,pedregosa2011scikit}, with $k$-means
-initialization, three restarts, and seed zero. Component reason profiles average
-the gold labels with one pseudo-count of the overall rates. The pseudo-label
-teacher mixes 5\% of these profiles with 95\% of the classifier score.
-Earlier $k$-means and DBSCAN checks were weaker on Kaggle. DBSCAN-plus-logistic
+initialization, three restarts, and seed zero. EM stops when the average
+lower-bound gain falls below $10^{-3}$, with a maximum of 100 iterations; we
+check convergence before using the fit. The logistic classifier allows 3,000
+iterations with tolerance $10^{-4}$. For each component, we estimate
+reason frequencies from the current training labels, adding one pseudo-count based on the
+overall rates. The pseudo-label teacher mixes 5\% of these profiles with 95\%
+of the classifier score. Our earlier $k$-means and DBSCAN models performed
+worse on Kaggle. DBSCAN-plus-logistic
 reached .910 validation F1 under an earlier protocol, but its original and
 235-label submissions scored .87500 and .86452 respectively.
 
@@ -102,119 +123,174 @@ cosine 10-nearest-neighbor votes, and shrinkage linear discriminant analysis
 (LDA), with fixed weights .5/.3/.2. All use the 150 standardized coordinates.
 A multi-label trial is duplicated across its positive classes for the
 multiclass fits. Logistic weights divide its mass across positives and use
-class weights fixed from gold labels. Neighbors vote for every positive label,
+class weights fixed from observed labels. Neighbors vote for every positive label,
 weighted by nonnegative cosine similarity squared. LDA uses equal class priors.
 
 Two pseudo-label refreshes give three classifier fits in total~\cite{yarowsky1995unsupervised,triguero2015selflabeled}.
-A masked trial is accepted when its best teacher score is at least .8. Each
-refresh rebuilds from gold plus the currently accepted rows. Generated rows
-receive logistic weight .25; the neighbor and LDA components use them without
+We accept a masked trial when its highest teacher score is at least .8. At each
+refresh, we rebuild the training set from observed labels and the currently
+accepted pseudo-labels. These pseudo-labeled rows receive logistic weight .25;
+the neighbor and LDA components use them without
 that downweighting. The final 235-label anchored fit accepts 757 masked rows in
-the last refresh. Gold labels remain fixed.
+the last refresh. We keep observed labels fixed throughout self-training.
 
-The second component, \emph{Cand2}, models eight fixed label combinations. It
-adds soft eight-cluster $k$-means membership and 20-neighbor label-vote features
+Our graph-based label-combination model, called \emph{Cand2} in the notebooks,
+models eight fixed label combinations. It adds soft eight-cluster $k$-means
+membership and 20-neighbor label-vote features
 to standardized embeddings. Its Correct-and-Smooth
 labeler~\cite{huang2020correctsmooth} uses a symmetric 10-neighbor graph on
 scaled, L2-normalized 64-dimensional PCA coordinates. Correction and smoothing
 coefficients are .8 and .419962. Generated labels require confidence .5 and
-receive weight .0630725 in balanced, weighted shrinkage LDA. The strict adapter
-refits preprocessing, graph labeling, and calibration within inner grouped
-partitions, with duplicate purges. Temperature calibration uses inner held-out
-predictions. We average five seeds and convert combination probabilities into
-five reason marginals.
+receive weight .0630725 in balanced, weighted shrinkage LDA. To prevent leakage
+during evaluation, we refit preprocessing, graph labeling, and calibration within inner grouped
+partitions and remove duplicates of held-out trials. We fit temperature
+calibration using the inner held-out predictions. We average five seeds and
+convert combination probabilities into five reason marginals.
 
 The selected rule combines anchored raw scores and Cand2 marginals:
 \[
 s = .8s_{\mathrm{anchored}} + .2p_{\mathrm{Cand2}}.
 \]
 We output every reason with $s_j\geq .3$ and always include the highest-scoring
-reason. These scores are not established calibrated probabilities. The blend
-is fixed; it has no learned final combiner. Standalone Cand2 used expected-F1
-decoding, which is not the blend's decision rule.
+reason. We treat these scores as decision scores rather than calibrated
+probabilities and keep the blend weights fixed. For standalone
+Cand2, we instead decode label combinations by maximizing expected F1.
 
-Both components use only permitted training inputs under the strict adapter;
-test embeddings enter prediction only. Final export refit anchored on all 235
-gold labels plus the 1,014 masked rows and reused the verified five-seed Cand2
-final scores. The .891 validation score belongs to a separate 157-label fit,
-not independent validation of this final artifact. The anchored notebook is a
-component account; the frozen blend exporter specifies the complete winner.
+Beyond these components, we compared known-label logistic regression,
+nearest-neighbor classifiers, Gaussian naive Bayes, RBF support vector
+machines, and LDA ensembles. We tested $k$-means, GMM, DBSCAN, and graph-based
+label generation, then explored kernel and symbolic-regression
+(PySR~\cite{cranmer2023pysr}) blend partners,
+learned combiners, and alternative treatment of secondary Other labels. These
+comparisons cover different ways to generate labels, represent trials, and
+combine predictions; the notebooks retain the full configurations.
 
-\section{Part 2: trial outcomes}
+We fit both components using training inputs only and use test embeddings only
+for prediction. For our final submission, we refit anchored on all 235 observed
+labels plus the 1,014 masked rows and combine its scores with the saved
+five-seed Cand2 predictions. The .891 validation score comes from a separate
+fit using only the 157 training labels; it does not independently evaluate the
+final model trained on all 235 labels. Our final-model notebook documents both
+components and the complete blend.
+For local blend comparisons, we combine the components' saved held-out scores
+on the same trials, without retraining them for each set of blend weights.
+
+\subsection{Part 2: trial outcomes}
 \label{sec:p2}
 
-\subsection{Data and the score}
+\subsubsection{Data and evaluation}
 
-Each row is one trial in one phase. A combined-phase trial appears twice and
-those rows stay together in every split. Training has 8,037 rows through 2013,
-validation has 1,013 rows from the same years, and the test file has 1,500
-later rows, 500 per phase, from 2013 to 2022. Kaggle averages the three phase
-log losses. We select on that same average. F1 at 0.5, ROC-AUC, and
-precision-recall AUC are diagnostics. Part~1 reasons are joined only after
-prediction, for the error table. They are not model inputs.
+Each row represents one trial in one phase. Combined-phase trials appear twice,
+so we keep their rows together in every split. The training set has 8,037 rows
+through 2013, validation has 1,013 rows from the same years, and the test set
+has 1,500 later rows from 2013 to 2022, with 500 per phase. We evaluate models
+using the average of the three phase log losses, matching the Kaggle metric.
+We also examine F1 at a 0.5 cutoff, ROC-AUC, and precision-recall AUC, computed as average precision with success as the positive
+class. We join Part~1 stopping reasons after prediction to analyze errors;
+neither reason labels nor reason embeddings enter the outcome models.
 
-\subsection{What the model does}
+\subsubsection{Models and training}
 
-The baseline is logistic regression on eligibility text: word and bigram
-counts, at most 35,000 terms, minimum document frequency 3, sublinear counts,
+Our baseline uses logistic regression on eligibility text: TF-IDF features from
+words and bigrams, at most 35,000 terms, minimum document frequency 3,
+sublinear term frequency,
 three phase indicators, and $C = 2$. Separate phase-only fits overfit Phase~I.
 Drug fingerprints did not reliably help, and a matched drug is less common in
-test (39\%) than in training (46\%). Naive Bayes ranked trials but was far too
-confident for log loss.
+test (39\%) than in training (46\%). Naive Bayes ranked trials reasonably well
+but produced overconfident probabilities, resulting in poor log loss.
 
-The model we built on is a stack of eight classifiers~\cite{wolpert1992stacked}:
+We then built on a stack of eight classifiers~\cite{wolpert1992stacked}:
 logistic models on eligibility text, diseases, drug names, codes, drug
 annotations, and metadata, plus naive Bayes and a 50-neighbor model on the
-eligibility text. A second logistic regression learns the weights from
-out-of-fold predictions, five folds, with a trial never split across folds.
+eligibility text. A second logistic regression learns to combine them from
+five-fold out-of-fold predictions, keeping each trial within a single fold.
 Recent trials get more weight, with a three-year exponential time constant, so
 a trial loses about half its weight every two years. That stack, refit on all
 9,050 labeled rows, scored 0.58688. The same stack without recency weights
 scored 0.58810. Our first ensembles had used only the 8,037 training rows, so
 part of the earlier gap was the extra data.
 
-The neighbor piece inside the stack ignored time and pulled estimates toward a
-50\% success rate. File~10 does not replace the stack. It averages it, half and
-half, with a second stack that decays faster (two-year time constant) and that
-also sees eight neighborhood estimates: several sizes, sharper similarity, and
-similarity that includes disease, drug, and ICD text. The weights are fixed.
-This improved every time-ordered window and scored 0.58609, even though the
-random validation log loss got slightly worse.
+The neighbor model within the stack ignored time and pulled estimates toward a
+50\% success rate. To address this, we created a recency-and-neighbor blend
+(submission file~10 in the notebooks) by averaging the recency
+stack with a second stack that uses a shorter, two-year time constant. The
+second stack also includes eight neighborhood estimates that vary the number
+of neighbors and similarity weighting, with some incorporating disease, drug,
+and ICD text. We give the two stacks equal weight. This improved every
+chronological window and achieved 0.58609 on Kaggle, although log loss on the
+random validation split became slightly worse.
 
-File~10 is weaker when the years are mixed. Our earlier ensemble is weaker on
-later years. That ensemble is half three logistic models, a quarter a depth-6
-tree, and a quarter a depth-8 tree. We first added 20\% of it (Kaggle 0.58474).
-Raising that share to 30\% gained only another 0.00009, so we stopped. The
-submitted probability is
+File~10 performed less well on splits that mixed years, while our earlier
+text-and-tree ensemble was weaker on later trials. Its trees use
+CatBoost~\cite{prokhorenkova2017catboost}, with 1,000 boosting iterations,
+learning rate .035, and L2 leaf regularization 6.
+The earlier ensemble assigns
+half its weight to three logistic models, a quarter to a depth-6 tree, and a
+quarter to a depth-8 tree. Combining the models helped: a 20\% contribution
+from the earlier ensemble achieved 0.58474 on Kaggle. Increasing its share to
+30\% reduced log loss by a further 0.00009. We selected this blend, file~13,
+with submitted probability
 \[
 0.70\,P_{10} + 0.30\,P_{\text{early}},
 \quad
 P_{10} = 0.50\,P_{\text{recency}} + 0.50\,P_{\text{fast neighbors}}.
 \]
-Supervised pieces are refit on all 9,050 labeled rows after the recipe is
-frozen. Test labels are never used. In the inherited stack, word lists may see
-unlabeled test text. That changes the features, not the answers. A later blend
-with an extra tree and a phase trend looked better locally and scored 0.58492,
-so we did not replace file~13. One upload slot was left unused.
+We clip the final probabilities to $[.001,.999]$.
+After fixing the model configuration, we refit the supervised components on all
+9,050 labeled rows. The original stack allows vocabulary construction to use
+unlabeled test text, but no test labels are used in training. A later blend (file~15)
+with an additional tree and a phase trend improved our local scores but
+achieved a worse Kaggle log loss of 0.58492, so we retained file~13.
+
+\subsubsection{Validation and error analysis}
+
+For later outcome candidates, we compare the supplied validation split,
+two repeats of three-fold trial-grouped cross-validation, and three forward
+windows trained through 2007, 2009, or 2011. The grouped checks compare models
+across held-out trials, while the forward windows assess the shift to later
+test years. We refit preprocessing within each training
+split, including inner stacking folds, and track the worst temporal window as
+well as the mean. All official validation metrics below hold out the 1,013
+validation outcomes from fitting, even though we later refit the submission
+model on all 9,050 labeled rows.
+
+For failed validation trials, we match trial IDs to Part~1. We use observed
+training or validation reason labels where available; otherwise we use
+predictions from our frozen historical DBSCAN/logistic model, with a 0.5 cutoff
+and highest-score fallback. We keep this reason assignment fixed across outcome
+models. Unmatched trials form the ``no recorded stopping reason'' group.
+Multi-label trials enter each applicable category, and a combined-phase trial
+is counted once within each phase. The false-success rate is the fraction of
+failed trials assigned success probability at least 0.5.
 
 \section{Results}
 \label{sec:results}
 
-Table~\ref{tab:p1} compares Part~1 recipes on the same grouped splits. The
-selected anchored/Cand2 blend has the highest reported Kaggle score; the prior
-anchored/LDA blend retains the higher Pooled235 mean. Against anchored, the
-winner's repeat wins/ties/losses were 5/1/2 on Train157 and 4/1/3 on Pooled235.
-It missed our original five-wins-in-both-pools advancement rule. An exploratory
-manual trial then supplied the best reported Kaggle result; we preserve that
-selection history. Local blend scores recombine retained held-out component
-predictions, rather than refitting both components for each blend.
+\subsection{Part 1: stopping reasons}
 
-The winner's 78-row validation labels match anchored. Per-reason F1 is .941
-Safety (9 positives), .667 Funding (4), .759 Efficacy (14), .990 Recruitment
-(50), and .471 Other (10): sample-wise .891 and macro .765. These are development
-results, not hidden-test label scores. Kaggle values are user-reported; the
-leaderboard partition and actual uploaded bytes were not independently checked.
-Overlapping repeats do not establish independent statistical significance.
+Table~\ref{tab:p1} compares our Part~1 models on the same grouped splits.
+We tested small contributions from LDA or Cand2 while keeping anchored as the
+main component. Cand2 was weaker on its own, but its graph and label-combination
+approach could complement anchored's predictions. The 80/20 blend matched
+anchored's original validation F1 and remained close on both CV pools, with
+small gains in their means and the pooled chronological score.
+
+We were concerned that anchored might not generalize as well to later trials.
+Cand2's original search considered CV and chronological performance through
+the combined score $J$. It outperformed anchored on $J$'s chronological checks,
+although this advantage did not hold on our stricter chronology benchmark.
+That mixed evidence motivated trying a small Cand2 contribution while keeping
+most of anchored's predictions. The blend maintained similar local performance
+and subsequently scored .89935 on Kaggle, compared with .89850 for
+anchored/LDA, so we retained it as our final model.
+
+On the 78-row validation set, the selected blend predicts the same labels as
+anchored. Its per-reason F1 is .941 for Safety (9 positives), .667 for Funding
+(4), .759 for Efficacy (14), .990 for Recruitment (50), and .471 for Other (10).
+Overall, sample-wise F1 is .891 and macro F1 is .765. These validation results
+reflect our development split; the Kaggle column gives the leaderboard scores
+recorded for our submissions. The repeated splits overlap, so these results
+do not establish statistical significance.
 
 \begin{table}[t]
 \centering\small
@@ -238,9 +314,11 @@ parent is the earlier 75/25 anchored/LDA blend.}
 \label{tab:p1}
 \end{table}
 
-Table~\ref{tab:p2} is the Part~2 path. Lower log loss is better. File~13 is the
-submission. File~15 wins both local columns and loses on Kaggle, which is why
-the local ranking was not enough.
+\subsection{Part 2: outcome prediction}
+
+Table~\ref{tab:p2} summarizes our Part~2 results; lower log loss is better.
+We selected file~13. File~15 improved both local scores but performed worse
+on Kaggle, showing that these local gains did not carry over.
 
 \begin{table}[t]
 \centering\small
@@ -264,126 +342,192 @@ local protocol, so those cells are blank.}
 \label{tab:p2}
 \end{table}
 
-Table~\ref{tab:phase} is the supplied validation split, with preprocessing fit
-only on that split's training rows. The recency stack improves Phase~III log
-loss from 0.529 to 0.516 and Phase~I F1 from 0.765 to 0.793. It does not
-improve Phase~II F1. File~10 is slightly worse than the recency stack on this
-random split and better on the later-year windows in Table~\ref{tab:p2}. That
-is why a higher validation F1 was not the submission rule.
+\subsubsection{Validation by phase}
+
+Table~\ref{tab:phase} compares the same held-out validation rows. Relative to
+the baseline, our final model improves ROC-AUC in all three phases and F1 in
+Phases~I and~III, while Phase~II F1 falls from .657 to .647. Phase~III log loss
+improves from .529 to .513, but Phase~I rises from .556 to .559. Thus the
+modification has mixed effects even though the phase-averaged log loss improves.
+The final model's phase-averaged validation log loss is .55328, compared with
+.58465 on Kaggle, a gap of .03137 consistent with the later test cohort being
+harder to predict. File~10 also illustrates the selection trade-off: it is
+weaker than the recency stack on random validation but stronger on the forward
+windows and Kaggle.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{llcccc}
+\toprule
+Phase & Metric & Base & Recency & File 10 & Final \\
+\midrule
+\multirow{4}{*}{I}
+ & F1 & 0.765 & \textbf{0.793} & 0.762 & 0.788 \\
+ & ROC-AUC & 0.783 & \textbf{0.794} & 0.787 & 0.791 \\
+ & PR-AUC & \textbf{0.835} & 0.830 & 0.824 & 0.832 \\
+ & log loss & 0.556 & 0.556 & 0.560 & 0.559 \\
+\midrule
+\multirow{4}{*}{II}
+ & F1 & \textbf{0.657} & 0.647 & 0.638 & 0.647 \\
+ & ROC-AUC & 0.740 & 0.753 & 0.754 & \textbf{0.757} \\
+ & PR-AUC & 0.717 & 0.732 & 0.730 & \textbf{0.735} \\
+ & log loss & 0.600 & 0.593 & 0.593 & \textbf{0.587} \\
+\midrule
+\multirow{4}{*}{III}
+ & F1 & 0.833 & 0.825 & 0.829 & \textbf{0.839} \\
+ & ROC-AUC & 0.774 & 0.790 & 0.786 & \textbf{0.795} \\
+ & PR-AUC & 0.862 & 0.882 & 0.877 & \textbf{0.883} \\
+ & log loss & 0.529 & 0.516 & 0.521 & \textbf{0.513} \\
+\bottomrule
+\end{tabular}
+\caption{Part~2 held-out validation metrics. Final is file~13; Base is the
+eligibility logistic model. F1 uses a 0.5 cutoff; PR-AUC is average precision.
+Phase sizes are 149, 501, and 363. Best value per row is bold; ties at the
+displayed precision are unbolded.}
+\label{tab:phase}
+\end{table}
+
+\subsubsection{Errors by stopping reason}
+
+Table~\ref{tab:err} compares the baseline and final model using the same reason
+groups. False-success rates fall for Phase~I Recruitment (.36 to .09) and
+Phase~II Recruitment (.20 to .14), and for trials without a recorded reason in
+Phases~I and~II. Phase~III remains difficult: Recruitment errors increase from
+.52 to .57, while the no-reason rate stays at .56. Efficacy errors fall from
+8/9 to 7/9, but all nine reason tags are predictions. Small groups also move
+in opposite directions: Phase~I Safety improves from 5/9 to 3/9, while Efficacy
+worsens from 1/2 to 2/2. These small counts make category-specific gains
+uncertain.
 
 \begin{table}[t]
 \centering\small
 \setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{llccc}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llcccc@{}}
 \toprule
-Phase & Metric & Baseline & Recency & File 10 \\
+Phase & Reason & $n$ & Obs./Pred. & Base & Final \\
 \midrule
-\multirow{4}{*}{I}
- & F1       & 0.765 & \textbf{0.793} & 0.762 \\
- & ROC-AUC  & 0.783 & \textbf{0.794} & 0.787 \\
- & PR-AUC   & \textbf{0.835} & 0.830 & 0.824 \\
- & log loss & 0.556 & 0.556 & 0.560 \\
-\midrule
-\multirow{4}{*}{II}
- & F1       & \textbf{0.657} & 0.647 & 0.638 \\
- & ROC-AUC  & 0.740 & 0.753 & \textbf{0.754} \\
- & PR-AUC   & 0.717 & \textbf{0.732} & 0.730 \\
- & log loss & 0.600 & 0.593 & 0.593 \\
-\midrule
-\multirow{4}{*}{III}
- & F1       & \textbf{0.833} & 0.825 & 0.829 \\
- & ROC-AUC  & 0.774 & \textbf{0.790} & 0.786 \\
- & PR-AUC   & 0.862 & \textbf{0.882} & 0.877 \\
- & log loss & 0.529 & \textbf{0.516} & 0.521 \\
-\bottomrule
-\end{tabular}
-\caption{Part~2 validation by phase. F1 uses a cutoff of 0.5. The other rows
-use the probability of success. Phase sizes are 149, 501, and 363. Best value
-per row in bold. Tied log losses are left unbolded.}
-\label{tab:phase}
-\end{table}
-
-Table~\ref{tab:err} counts failed validation trials that the outcome model
-called successful. The ensemble is the early text-and-tree model that later
-became 30\% of file~13. The readable groups are Phase~II Recruitment and the
-three no-reason groups. Phase~III failures are called successful much more
-often than Phase~II failures. Most reason tags are Part~1 predictions. The
-later neighbor model still called all 9 Phase~III efficacy-tagged failures
-successful.
-
-\begin{table}[t]
-\centering\small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llccc@{}}
-\toprule
-Phase & Reason & $n$ & Base & Ens. \\
-\midrule
-I & Safety & 9 & .56 & .44 \\
-I & Funding & 4 & .50 & .50 \\
-I & Efficacy & 2 & .50 & .50 \\
-I & Recruitment & 22 & .36 & .27 \\
-I & Other & 5 & .80 & .80 \\
-I & No reason & 28 & .43 & .39 \\
-II & Safety & 15 & .40 & .40 \\
-II & Funding & 4 & .00 & .25 \\
-II & Efficacy & 10 & .30 & .30 \\
-II & Recruitment & 87 & .20 & .16 \\
-II & Other & 18 & .33 & .28 \\
-II & No reason & 144 & .35 & .34 \\
-III & Safety & 6 & .50 & .67 \\
-III & Funding & 0 & --- & --- \\
-III & Efficacy & 9 & .89 & .67 \\
-III & Recruitment & 21 & .52 & .57 \\
-III & Other & 8 & .63 & .75 \\
-III & No reason & 82 & .56 & .55 \\
+I & Safety & 9 & 1/8 & .56 & .33 \\
+I & Funding & 4 & 1/3 & .50 & .25 \\
+I & Efficacy & 2 & 0/2 & .50 & 1.00 \\
+I & Recruitment & 22 & 2/20 & .36 & .09 \\
+I & Other & 5 & 0/5 & .80 & .40 \\
+I & No reason & 28 & --- & .43 & .32 \\
+II & Safety & 15 & 1/14 & .40 & .33 \\
+II & Funding & 4 & 1/3 & .00 & .00 \\
+II & Efficacy & 10 & 0/10 & .30 & .30 \\
+II & Recruitment & 87 & 12/75 & .20 & .14 \\
+II & Other & 18 & 3/15 & .33 & .22 \\
+II & No reason & 144 & --- & .35 & .28 \\
+III & Safety & 6 & 1/5 & .50 & .50 \\
+III & Funding & 0 & 0/0 & --- & --- \\
+III & Efficacy & 9 & 0/9 & .89 & .78 \\
+III & Recruitment & 21 & 5/16 & .52 & .57 \\
+III & Other & 8 & 2/6 & .63 & .63 \\
+III & No reason & 82 & --- & .56 & .56 \\
 \bottomrule
 \end{tabular*}
-\caption{Share of failed validation trials predicted successful. ``No reason''
-means the trial is absent from Part~1. A trial with several reasons is listed
-under each.}
+\caption{False-success rates among failed validation trials. Obs./Pred.
+counts observed and predicted reason tags within each group. ``No reason''
+means absent from Part~1. Multi-label trials enter each applicable reason.}
 \label{tab:err}
 \end{table}
 
-\section{Why these choices}
+\section{Discussion}
 \label{sec:why}
 
-For Part~1, clustering supports missing-label generation, while supervised
-scores provide most of the prediction. Standalone Cand2 scored .89102, below
-anchored's .89636, but its small contribution raised the blend to .89935.
-This supports complementary errors for this fixed combination, not standalone
-superiority or a guarantee that greater diversity improves performance.
+\subsection{Part 1: what changed our approach}
 
-Later trials did not improve the winner. Log-odds pooling scored .88888 despite
-small local gains; changing treatment of secondary Other labels scored .86645;
-a diversity-penalized kernel blend scored .89316; and bounded symbolic
-regression scored .89423. Learned combiners also failed local comparisons.
-The proposed derived ranking metric $J$ disagreed with some observed Kaggle
-orderings. Its small selected historical panel and different split boundaries
-do not establish a general ranking guarantee.
+We began with logistic regression trained only on the observed labels. This
+gave us a reference for deciding whether semi-supervised learning actually
+helped, rather than assuming that adding generated labels would improve the
+model. The first $k$-means experiments showed the risk: their generated labels
+mostly reinforced Recruitment and hurt validation performance, especially for
+rarer reasons. We learned to pay attention to which labels we were adding,
+not just how many trials we could add. This motivated more conservative label
+generation and the combination of supervised scores with clustering.
 
-Funding and Other remain weakly measured: validation contains only four and ten
-positive trials respectively. Extra-feature failures and chronology results
-are evidence within this development process, not proof that features cannot
-help or that the temporal checks represent the hidden test population. The
-selected result improves reported Kaggle F1 by .00299 over anchored and .00085
-over the prior blend, with no claim of statistical significance.
+Our evaluation procedure changed as we experimented. Initially, we relied
+heavily on the supplied validation set, but repeatedly choosing settings on
+just 78 trials could favor quirks of that split. We moved to repeated CV on
+both the 157 training labels and the pooled 235 training-plus-validation
+labels. The first kept the original training setting as a reference; the
+second let each fold fit on more observed labels while still holding out the
+trials being evaluated. Looking for gains across both pools gave us a more
+stable basis for tuning than repeatedly chasing the best validation score.
+These were still development comparisons, not independent confirmation.
 
-In Part~2, log loss and F1 disagree on purpose. A model that moves an uncertain
-trial across 0.5 can lose F1 and still assign the better probability. The test
-file is a later, more successful cohort than the random validation split, so we
-trusted time-ordered checks. Recency weights and recent neighbors are two ways
-of saying that an old similar trial is a weaker example. The 30\% older
-ensemble is there because it misses different trials, and the second 10\% of
-that share was only worth 0.00009 on Kaggle. After file~15 lost on the
-leaderboard, a better historical average was no longer a reason to upload.
+We also tested whether the available clinical and drug information could add
+to the embeddings. We added eligibility text, disease and drug information,
+pathways, molecular features, and year to the strongest models at that stage,
+but the feature screens did not improve their primary score. We therefore
+returned to embeddings as our main inputs. Our interpretation is that the
+embeddings already describe the stopping reason directly, while the other
+fields describe broader clinical context. With few observed labels, extra
+sparse dimensions and missing drug annotations could add noise more easily
+than useful information. These experiments supported a simpler representation,
+although we did not repeat every feature screen on the final blend.
 
-The reason table says where outcome errors live, not how to tune a cutoff.
-Failed Phase~III trials often ran to the end and simply missed the endpoint, so
-the eligibility text looks like a success. Recruitment and funding failures are
-more administrative, and the ensemble catches a few more of them. Safety,
-Funding, and Other are small in every phase. Only Phase~II Recruitment and the
-no-reason groups are large, and the no-reason group is a lookup rather than a
-prediction.
+Random CV did not address our concern about predicting future trials: the test
+trials started later, and the mix of stopping reasons could change over time.
+We added earlier-to-later checks to see how models behaved under that shift.
+They gave us another benchmark, but did not consistently identify the best
+Kaggle candidate. We also investigated the combined evaluation score $J$,
+defined in the benchmark notebook as $J=(A+B)/2$. Here $A$ is ten-repeat random
+CV on 235 labels, and $B$ is the mean of three chronological checks. This
+experiment used different split boundaries from our grouped benchmark and aimed
+to rank models by broader generalization. Its rankings sometimes disagreed
+with Kaggle. We learned that averaging two
+plausible checks does not automatically produce a dependable selection metric;
+we kept chronology as a separate diagnostic rather than relying on $J$ alone.
+
+The per-reason results also showed that a strong overall score could hide
+weaknesses in Funding and Other. We tried extra weighting for those labels
+and nonlinear specialists for Other, hoping that a focused model could recover
+cases the shared classifier missed. The weighting changes did not improve
+decisions, and the specialists did not give a reliable overall gain. We also
+found that almost all generated examples had only one positive reason,
+suggesting that self-training could reinforce missed secondary labels.
+Leaving unselected Other labels unknown recovered more true Other cases, but
+also introduced enough false positives to reduce overall F1. The lesson was
+that improving recall for a difficult reason was insufficient if precision
+fell too far. Funding remained especially hard to assess with so few examples.
+
+These findings shaped our blending strategy. We kept most of the weight on
+the stronger anchored model and used LDA or Cand2 to contribute different
+prediction patterns. Cand2's weaker standalone result did not rule out a
+useful contribution, and its small share improved the final blend. However,
+learned combiners, explicit diversity penalties, log-odds pooling, and symbolic
+regression did not improve our selected result. Our strongest model combined different approaches without moving far from the
+model that already worked well.
+
+\subsection{Part 2: temporal shift and error trade-offs}
+
+In Part~2, better log loss did not always mean better F1: a probability can
+become more accurate while crossing the 0.5 threshold in a way that lowers F1.
+Because the test trials start later and success rates rose within our labeled
+data, we prioritized chronological evaluation. Recency
+weighting and recent neighbors reduce the influence of older trials. The
+earlier ensemble helped through different error patterns, although increasing
+its share from 20\% to 30\% improved Kaggle log loss by only 0.00009. File~15's
+worse leaderboard result reinforced the limits of historical averages.
+
+Our error analysis suggests that Phase~III failures are particularly difficult.
+These trials may reach completion but miss their endpoints, leaving eligibility
+text similar to that of successful trials. Recruitment and funding failures
+may reflect administrative constraints, and the ensemble identifies some
+additional cases. This motivated adding clinical context beyond eligibility
+text, but the final model still trades improvements in some groups for errors
+in others. These
+explanations remain tentative: Safety, Funding, and Other have few examples in
+each phase, and predicted reason tags can place trials in the wrong category.
+The no-reason groups contain trials absent from Part~1, rather than a predicted
+``no reason'' category.
+
+\smallskip
+\noindent\textbf{AI disclosure.}
+We used AI tools to assist with model improvements, resolve errors, automate
+testing, and edit and format this report.
 
 {
     \small
