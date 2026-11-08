@@ -1,0 +1,22 @@
+{
+  "status": "prepared; no upload or Kaggle score",
+  "selected": {
+    "recipe": "log_pool",
+    "guardrail_passed": true,
+    "cv_min_delta": 0.0005307855626326824,
+    "cv_total_delta": 0.0013286579030581669,
+    "order": 2,
+    "full_promotion_rule": false,
+    "final_changed_rows_vs_parent": 5,
+    "changed_vs_parent": 5
+  },
+  "csv": "submissions/candidates/refinement_log_pool.csv",
+  "sha256": "43d8c7ef4d090461630ed293cacaefffa4607bacee5a03e6d9ea7dd9fd614abe",
+  "rows": 312,
+  "gold": 235,
+  "masked": 1014,
+  "test_inputs_used_for_fitting": false,
+  "no_new_component_fits": true,
+  "parent_scored_csv_reproduced": true,
+  "protocol_sha256": "7324fdb7d4986f4d9089ae6022023176aa2afb472050c36e83b0b21848dd643f"
+}
