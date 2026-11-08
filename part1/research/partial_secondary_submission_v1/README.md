@@ -1,6 +1,6 @@
 # Exploratory partial-Other submission
 
-Prepared one candidate after Michael asked whether the unknown-secondary model was worth a manual test with five submissions remaining. **It has not been uploaded or scored. It is not a promoted leader.** The current best reported score remains .89935.
+Prepared one candidate after Michael asked whether the unknown-secondary model was worth a manual test with five submissions remaining. **Outcome: user-reported Kaggle .86645, a regression of .03290 from the .89935 parent.** Retain the .89935 leader. [Exact-file result](../../submissions/results/partial-other-unknown80-cand2-inductive20-trainval235.json). The preparation details below describe the earlier export.
 
 Use [partial_other_unknown80_cand2_inductive20_trainval235.csv](../../submissions/candidates/partial_other_unknown80_cand2_inductive20_trainval235.csv). SHA-256: `f6aed0af121d02364c346b38b7c4a6f83f2409b7e9e03fb49b74e5e0d25b353e`.
 
