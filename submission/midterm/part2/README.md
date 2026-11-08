@@ -48,6 +48,15 @@ identified separately. Regenerating that table itself belongs to the separate
 Part 1 workflow. See notebook 01 for the train/validation pooling and unlabeled
 test-text vocabulary/IDF policy.
 
+Notebook 01 displays every reason category for each phase, including counts,
+false-success rates, and known versus inferred label counts. The following
+discussion compares the baseline and final classifier, including phase II's F1
+regression and the remaining phase III errors. Zero-count categories have an
+undefined rate rather than a zero error rate.
+
+Building preserves the edited numbered notebooks. Use `--refresh-notebooks`
+only to replace their cells with the original templates.
+
 The initial search has 318 component-table rows and 434 ensemble-table rows;
 later phases add fixed benchmark, stack/neighbor, sprint and refinement recipes.
 These counts overlap controls and reuse predictions, so they are not a count of

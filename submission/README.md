@@ -12,6 +12,7 @@ at the repository root remains the full Part 2 research history.
 | Final Part 2 notebooks, winning CSV, and generated figures | [midterm/part2/](midterm/part2/README.md) |
 | Part 2 code/data ZIP | `dist/part2-midterm-code.zip` (generated locally) |
 | Reproduction and portability checks | [Verification](VERIFICATION.md) |
+| Current notebook review against the assignment | [Notebook readiness](NOTEBOOK_READINESS.md) |
 
 The assignment calls for a folder named **`midterm`** for the code/data hand-in,
 and a separate report PDF upload. The Part 2 ZIP therefore contains `midterm/part2/`.

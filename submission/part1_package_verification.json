@@ -1,9 +1,9 @@
 {
   "passed": true,
   "archive": "submission/dist/part1-midterm-code.zip",
-  "zip_sha256": "5bce1217175005dbf75a856f1ec2c1cc6c7f8af5e1361204ef3d66c12afcef89",
-  "zip_bytes": 9012207,
-  "zip_files": 786,
+  "zip_sha256": "13b7d2fec6884b8f2dcbcd6f3652ef9ceba7957f839de2d7a0c152008534d1af",
+  "zip_bytes": 9020718,
+  "zip_files": 787,
   "notebooks": [
     {
       "notebook": "01_final_model.ipynb",
@@ -52,7 +52,7 @@
     "max_anchored_error": 0.0,
     "max_cand2_error": 0.0,
     "identical_predictions": true,
-    "seconds": 13.026236250065267,
+    "seconds": 14.43939016701188,
     "anchored_refreshes": [
       {
         "step": 0,
@@ -95,7 +95,7 @@
     "max_anchored_error": 0.0,
     "max_cand2_error": 0.0,
     "identical_predictions": true,
-    "seconds": 19.333651166409254,
+    "seconds": 23.90335404104553,
     "anchored_refreshes": [
       {
         "step": 0,
@@ -121,5 +121,18 @@
     ],
     "submission_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257"
   },
-  "scope": "Portable Part 1 package; no Part 2 or report changes. Default cells train the winner and historical feature comparison; benchmark/negative studies rescore retained evidence."
+  "completed_training_labels": {
+    "rows": 1171,
+    "supplied": 157,
+    "generated": 1014,
+    "binary_labels": true,
+    "packaged_export_reproduced": true
+  },
+  "scope": "Portable Part 1 package; no Part 2 or report changes. Default cells train the winner and historical feature comparison; benchmark/negative studies rescore retained evidence.",
+  "documentation_update_after_execution": {
+    "files": [
+      "midterm/part1/README.md"
+    ],
+    "all_notebook_code_data_and_result_bytes_match_verified_archive": true
+  }
 }
