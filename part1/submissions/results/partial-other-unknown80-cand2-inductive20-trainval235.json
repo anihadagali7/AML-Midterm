@@ -1,0 +1,21 @@
+{
+  "recipe": "partial-other-unknown80-cand2-inductive20-trainval235",
+  "reported_kaggle_score": 0.86645,
+  "tag": "part1-partial-other-unknown80-cand2-inductive20-trainval235-kaggle-0.86645",
+  "submission_file": "submissions/candidates/partial_other_unknown80_cand2_inductive20_trainval235.csv",
+  "submission_sha256": "f6aed0af121d02364c346b38b7c4a6f83f2409b7e9e03fb49b74e5e0d25b353e",
+  "frozen_recipe_file": "research/partial_secondary_submission_v1/export_protocol.json",
+  "frozen_recipe_sha256": "32b5da0d8055e706d3981be5f10742dd3ff1fc1e07b1efb79687080e763532b7",
+  "fitting_source_commit": "9577d5a3",
+  "verified_training_labels": 235,
+  "originally_masked_training_rows": 1014,
+  "fitting_access": "Inductive final235. Fresh partial-Other anchored fit; same saved strict five-seed Cand2 final fit. Test inputs prediction-only.",
+  "score_provenance": "User reported 0.86645 immediately after receiving the exact prepared file and scp command. Not independently queried from Kaggle.",
+  "actual_uploaded_bytes_independently_verified": false,
+  "leaderboard_partition": "Not specified",
+  "record_type": "Newly reported manual submission; no upload or refit during this recording step.",
+  "parent_reported_score": 0.89935,
+  "reported_delta_vs_parent": -0.0329,
+  "changed_label_sets_vs_parent": 47,
+  "recorded_at_utc": "2026-11-08T01:18:30.639310+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "base_main": "766d16d3bc74248cb7d8f4c1e7240094ebd5a55e",
+  "parent_evidence_commit": "0243e9ac",
+  "parent_inputs_origin": "part1/research/other_combiner_v2/parent_inputs.npz",
+  "parent_recipe_result_commit": "cde3d500",
+  "new_hypothesis": "Retain unknown Other labels on pseudo-labeled examples when Other is unselected. Compare neighbor-only and all-Other-predictor implementations, plus a complete-label architectural control and one fixed half-strength variant."
+}
