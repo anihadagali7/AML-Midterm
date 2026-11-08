@@ -1,6 +1,6 @@
 # Fixed complementary-head submission
 
-**Prepared for the user's manual exploratory trial; not uploaded; Kaggle score unknown.**
+**User-reported Kaggle score: 0.89316**, below the .89935 leader by .00619 and standalone anchored's .89636 by .00320. The [exact-file result record](../../submissions/results/anchored80-diverse-kernel20-trainval235.json) supersedes the frozen preparation-time status.
 
 The user requested the best candidate to try despite the negative advancement result, then explicitly chose the fixed blend. The selected recipe is `complementary-heads-v2/blend_diverse30`: **80% anchored raw scores +20% diverse kernel probabilities**, with diversity penalty .3, a .3 label cutoff and argmax fallback. This is the fixed blend, with no learned combiner applied to its predictions.
 
@@ -27,4 +27,6 @@ Independent [verification](verification.json) checks exact CSV bytes, sample ord
 python part1/research/complementary_submission_v1/verify_fixed.py
 ```
 
-Do not overwrite this export or attach a score to different bytes. A subsequently reported manual result should get a separate result commit and immutable annotated score tag. No upload, push or merge was performed.
+The submitted recipe regressed in the direction indicated by all four local benchmark comparisons against the .89935 leader. This does not isolate the diversity penalty: its matched ordinary-kernel control was not submitted. The learned combiner and joint neural-head proposal were not tested by this upload.
+
+Do not overwrite this export or transfer its score to different bytes. The result has a separate commit and immutable annotated tag `part1-anchored80-diverse-kernel20-trainval235-kaggle-0.89316`. Submission was manual; the agent performed no upload, push or merge. Frozen preparation manifests retain their original status.
