@@ -1,0 +1,7 @@
+exclude_original_ani,metric,correct,wrong,tied,total
+False,dylan_J,12,8,0,20
+False,grouped_train,17,3,0,20
+False,grouped_pooled,17,3,0,20
+True,dylan_J,10,4,0,14
+True,grouped_train,14,0,0,14
+True,grouped_pooled,13,1,0,14

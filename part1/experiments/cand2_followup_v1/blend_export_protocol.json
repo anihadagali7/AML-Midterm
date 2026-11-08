@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-07T23:23:52.751911+00:00",
+  "recipe": "80% anchored raw decision scores + 20% strict-inductive five-seed Cand2 label marginals; .3+argmax",
+  "purpose": "Concrete next exploratory direction after reported Cand2 result and fixed blend diagnostic; not a promoted leader.",
+  "status": "Fails full both-pool repeat-win rule; no Kaggle outcome or upload.",
+  "settings_unchanged_from_scored_protocol": "09d2568347f2ecc2d242ed32bcd02be6f88e8a70d0fb494906ef61e6e8f3b4f8",
+  "builder_sha256": "3e40c0e4a70b781d3b5d330a3e6244543e8355b03bce11d7ba3a5198b64f12ae",
+  "cand2_prediction_sha256": "445c54466ac5adefdb9ad593942e444014cbdc19080be51bfa163a4c2d2049dc",
+  "parent_source_sha256": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+  "access": "Inductive final235; original 1014 masked training rows; test inputs prediction only. No new Cand2 fitting.",
+  "source_prediction_record": "cand2_final_provenance.json"
+}

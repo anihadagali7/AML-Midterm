@@ -1,0 +1,8 @@
+{
+  "independent_metric_arithmetic": true,
+  "prior_current_metrics_reproduced": true,
+  "cases": 138,
+  "prediction_rows": 18099,
+  "fresh_J_parent_reproduced": true,
+  "independent_vs_runner_metrics": true
+}
