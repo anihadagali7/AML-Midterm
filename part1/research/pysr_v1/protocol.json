@@ -1,0 +1,107 @@
+{
+  "registered_utc": "2026-11-08T01:23:06.486571+00:00",
+  "request": "User specifically requested trying PySR after closing prior blend experiments.",
+  "parent": "Anchored 0.89636 policy parent; own submitted 0.89850 blend and current cross-agent 0.89935 blend are matched practical controls.",
+  "hypothesis": "Short symbolic formulas can combine nonlinear interactions between neighbor support, class-centroid affinity, cluster label support and competing reasons, without searching individual randomly rotated coordinates.",
+  "feature_access": "Only 150 supplied reason embeddings. Fit StandardScaler, normalization and KMeans(12) on eligible fitting rows. Gold-derived nearest neighbors, positive-minus-negative centroid cosine margins and smoothed cluster label rates use fitting gold only. Each training row excludes its complete embedding group from these label-derived signals; held-out queries use the frozen fitting bank. Five features per reason: its neighbor logodds, centroid margin, cluster logodds and strongest competing neighbor logodds/centroid margin. Clip rate inputs to [.01,.99]; scale derived features using fitting rows only.",
+  "augmentation": "Generate every originally masked fitting labelset using KMeans cluster gold rates with one global-prior pseudocount, .3 threshold and argmax. Preserve observed gold exactly. Pseudo rows have total weight .10 times gold-row count. IDs serve only split/group audits.",
+  "settings": {
+    "clusters": 12,
+    "neighbors": 10,
+    "pseudo_mass": 0.1,
+    "cutoff": 0.3,
+    "seed": 42
+  },
+  "search": {
+    "niterations": 80,
+    "populations": 8,
+    "population_size": 27,
+    "ncycles_per_iteration": 100,
+    "maxsize": 15,
+    "maxdepth": 5,
+    "binary_operators": [
+      "+",
+      "-",
+      "*"
+    ],
+    "unary_operators": [],
+    "model_selection": "best",
+    "parsimony": 0.003,
+    "batching": true,
+    "batch_size": 128,
+    "parallelism": "serial",
+    "deterministic": true,
+    "precision": 64,
+    "progress": false,
+    "verbosity": 0,
+    "update_verbosity": 0,
+    "elementwise_loss": "weighted_logistic(x, y, w) = w * (max(x, zero(x)) - x*y + log1p(exp(-abs(x))))"
+  },
+  "search_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "feature_names": [
+    "neighbor_logodds",
+    "centroid_margin",
+    "cluster_logodds",
+    "rival_neighbor_logodds",
+    "rival_centroid_margin"
+  ],
+  "search_boundary": "Each PySR search is a fresh fit wholly inside the outer training partition. Serial deterministic evolution; no wall-clock early cutoff. Formula selected using PySR best training loss/complexity rule, never held-out labels. At most 15 nodes and depth5, operators +,-,* only. Weighted logistic loss; sigmoid gives label scores. No later threshold or weight search.",
+  "recipes": {
+    "pysr": "Five independent PySR binary heads; sigmoid, .3 cutoff, nonempty argmax. Constant smoothed prevalence fallback only if fitting target has one class.",
+    "linear_geometry": "Diagnostic LogisticRegression(C=1) heads on precisely the same features, generated labels, weights and cutoff. Distinguishes signal quality from symbolic-search value; not another hyperparameter search.",
+    "current80_pysr20": "Fixed .8 submitted75_25 centered scores + .2 PySR scores centered from .3; .5 cutoff plus argmax. No fitting of blending weights."
+  },
+  "evaluation": "All eight saved five-fold repeats in both Train157 and Pooled235, validation78 and all three chronology windows for every recipe, irrespective of screening result. 84 fresh geometry pipelines and up to420 symbolic searches plus420 linear diagnostic heads. Controls are reused exact case-matched predictions, not new fits.",
+  "advancement": "Positive paired mean and >=5/8 repeat wins in BOTH pools versus anchored; separately report same rule against both submitted blends. Keep every supplementary regression visible; no automatic promotion or Kaggle upload.",
+  "boundaries": "Strict inductive. Existing saved split generator enforces masked duplicate purges and chronological fitting years. Query labels never passed to fit or feature generation. Train157 excludes all validation-source rows. Actual Kaggle test inputs hashed only; final fit only if local evidence merits a candidate.",
+  "setup_checks": "Synthetic-only API, weighted-loss, query-batch-invariance and timing checks before evaluation; no real-label pilot or tuning.",
+  "retention": "Source, fixed settings, dependencies, all compact scores, paired deltas, equations and fit audits retained. Full predictions only for qualifying candidates/useful controls. Independently rescore before deleting failed caches. No fitted PySR models or search logs retained.",
+  "references": [
+    "https://pysr.ai/api",
+    "https://github.com/astroautomata/PySR",
+    "https://arxiv.org/abs/2305.01582"
+  ],
+  "limitations": "A compact fixed PySR search budget and one feature construction, not an exhaustive test of symbolic regression. Existing validation data have influenced prior research. Label-dependent similarity features are part of the model, so these are not equations directly in original physical variables.",
+  "versions": {
+    "pysr": "2.7.2",
+    "juliacall": "0.9.36",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0"
+  },
+  "julia": "1.13.3",
+  "sources": {
+    "part1/research/pysr_v1/common.py": "8c263e62274435c2f83926c6a2dbe0fee7a99a8b973373b69c4caf691fb0622b",
+    "part1/research/pysr_v1/model.py": "558a8ac53a61008c6c75d5ae1a722c9dbc9ad1aeb1ac8f52079acf8e71596029",
+    "part1/research/pysr_v1/study.py": "38490c9d582b35925d92e1ef72aba076262482f00ac8697f2d947139e7fa7d21",
+    "part1/research/pysr_v1/build_controls.py": "8d9add91d42e00ee50c12a6399daa01e982ff7e1a466e3f81e003a106054013c",
+    "part1/research/pysr_v1/controls.npz": "8a7f28f1a21629ad2b10a1ac0d7b075718e8de5605e528c2b7d7c6874d95759a",
+    "part1/research/pysr_v1/control_provenance.json": "d83352d18f20638a93513489bd41f6f9c6f54ecc3b457e6035cc8b5a1c39cd31",
+    "part1/research/pysr_v1/best_control_result.json": "1c684c3a70eb7a50814bb00a165e4ed2bae6f2c90ccb8d9d6d9898f0856d88d6",
+    "part1/research/pysr_v1/requirements-lock.txt": "530d2055111c9f1eafaacac8f5b71ae084c272b42e11ce62e0538c25b44f1d0c",
+    "part1/research/pysr_v1/JuliaProject.toml": "51bcf51dcc11e384f926769741b4469c371e6d90cccd661bc59cb36fddd6a1f2",
+    "part1/research/pysr_v1/JuliaManifest.toml": "ce4601341384fe1092964ca38057850abd06c6f78a07fb923e368f598bea81d1",
+    "part1/research/anchored_transductive_v1/run.py": "f56bcac1e04156399b23d91df02cb036698490871046b0cf52333f51418c8ffb",
+    "part1/research/anchored_transductive_v1/models.py": "948f22b61047bf469f510df22694e75b89b8a9422711d6d5318b558b6a991642",
+    "part1/anchored_solution.py": "a158aadb66745472e1a91c0fac7fe0a422a5793ffcd0077c22bb26dbf24239a7",
+    "part1/TESTING_POLICY.md": "f554752db594da9408eb92319797f94e83452a42c6472e19a1dc0a851e8045e7",
+    "Midterm_Project.pdf": "0d027e47108328ce18bfc168ecb314d1af921ecf24708ef301a003dc72c494b5",
+    "part1/data/part1_sample_submission.csv": "a0caf0cafcae62aa37b02db9c0a7bdede245bee36959a8ea11a0184a28107921",
+    "part1/data/pathway_catalog.csv": "561f4e23ba21f70432095cca204b9f71cf57d3c8e883a5767dc792ba27d655d2",
+    "part1/data/part1_train.csv": "f6019e7c0940434e671236554342c1b24983ca81f4a0ae06411a788f36c29170",
+    "part1/data/part1_test.csv": "8eeae3db75134c428c33acc97a79f893c504a7c9907367a6448eb9a093633b0a",
+    "part1/data/part1_val.csv": "342d748026affa043863ac9909b267249c35b0190283a491d324594431a1eec8",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train3.json": "9fa17db946684b9fa24219ecd340b8e7d71a607910d3f9b10643e94187385c09",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/train5.json": "845382b8d8d8e9ea6637931b08bb860a253c31ec1d5f837b8e85969f4961dc7d",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled3.json": "a50affc27027e14bbac76d542f1548a737b4a69192844dd02bb95da8f4216a94",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/pooled5.json": "1ab85ab8f37b4490759a680dbfdc1c33b06199c52badc3566a0a3b9c12b8ab29",
+    "part1/experiments/current_leaders_grouped_v1/snapshots/chronology.json": "ff1e72537923f1f7f892e6eec6c6e675fd3062b491c7973adab40b86df455a15"
+  }
+}
