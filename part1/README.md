@@ -1,85 +1,43 @@
-# Part 1
+# Part 1: stopping reasons
 
-The user has selected **80% anchored /20% strict-inductive five-seed Cand2** as the report winner, with **0.89935 user-reported Kaggle sample-wise F1**. This phase of model exploration is complete. The [report handoff](REPORT_HANDOFF.md) identifies the exact artifact, annotated score tag, source checkout, evaluation evidence and reporting limitations. The full winner is preserved on `codex/part1-cand2-followup` at `cde3d500`; this branch contains the completed complementary-head experiments.
+**Selected report winner: 80% anchored / 20% strict-inductive five-seed Cand2, reported Kaggle sample-wise F1 0.89935.** Model exploration is closed for this report phase. The complete winning source, exact scored CSV, benchmark evidence, and subsequent negative experiments are available in this checkout.
 
-The winner uses 235 supplied gold labels plus 1,014 originally masked rows and combines raw anchored scores with Cand2 label marginals at fixed weights 80/20, followed by threshold .3 and argmax fallback. Kaggle test inputs are prediction-only. The [executed notebook](part1.ipynb) describes and refits the anchored component; use the winner's exporter and source references in the handoff for the complete blend. The previous 75/25 anchored/LDA model scored .89850. The newly tested anchored/diverse-kernel fixed blend scored .89316 and did not replace the winner.
+## Read this first
 
-## Comparable results
+1. [Winning model](MODEL.md): inputs, both components, fitting boundaries, and the final prediction rule.
+2. [Report guide](REPORT_GUIDE.md): comparable measurements, per-label results, negative findings, and limitations. Its tables are generated from retained evidence.
+3. [Exact checkpoint and report handoff](REPORT_HANDOFF.md): immutable score tag, CSV hash, source references, and report files.
+4. [Research index](RESEARCH_INDEX.html): every research family, including the later PySR and complementary-head trials.
 
-These results use the same saved **grouped, eight-repeat, five-fold** plans in each pool. Validation describes a separate fit on 157 labels; chronology pools the three fixed windows. [Original component comparison](experiments/current_leaders_grouped_v1/comparison.csv) and [complete blend study with paired results](research/anchored_neighbor_blend_v1/README.md).
-
-| Model | Train157 CV | Pooled235 CV | Validation78 | Chronology98 | Reported Kaggle |
-|---|---:|---:|---:|---:|---:|
-| **Selected anchored80/Cand2_20** | **.935244** | .921631 | .891026 | **.887755** | **.89935** |
-| Previous anchored75/LDA25 blend | .932059 | **.923404** | .891026 | .884354 | .89850 |
-| Anchored | .932059 | .921365 | .891026 | .884354 | .89636 |
-| LDA 70/15/15 ensemble | .931794 | .921631 | .905983 | .877551 | .89401 |
-| Current Ani LDA source | .928079 | .915426 | .871795 | .874150 | Unknown |
-
-The previous 75/25 blend improved Pooled235 in all eight repeats and tied anchored's other three sample-F1 headlines. It did not meet the strict both-pool CV advancement rule because Train157's average tied (3 wins / 3 ties / 2 losses). The user authorized a manual trial after reviewing that distinction; its subsequently reported Kaggle score improved. Preserve that outcome without retroactively changing the evaluation rule. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
-
-Ani's [original notebook](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb), [original scored CSV](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_submission.csv), and [result checkpoint](submissions/results/ani-original.json) are preserved on this branch. The notebook matches source commit `a548721` byte for byte; the score tag is `part1-ani-original-kaggle-0.89423`. The [later LDA notebook](research/lda_ensemble/research/ani_snapshots/8a8c3fc/part1_best_model.ipynb) is preserved separately. Archived handoff statements about its evaluation status describe their original checkpoint; the common comparison above includes the later source.
-
-The selected 80/20 winner improves both grouped means versus anchored, but has only 4/8 Pooled235 repeat wins and therefore did not pass the original both-pool advancement rule. Its later manual Kaggle result determines the user's report selection. See the [handoff](REPORT_HANDOFF.md) for the exact source evidence; preserve the original advancement outcome.
+The [report source](../report.tex) and [compiled PDF](../report.pdf) describe the selected blend. The [executed notebook](part1.ipynb) describes and refits its anchored component. Use the [winning exporter](experiments/cand2_followup_v1/export_blend.py) for the complete blend; the notebook alone is not the final model.
 
 ## Testing and verification
 
-Use [TESTING_POLICY.md](TESTING_POLICY.md) for the exact folds, fitting boundaries, metric, and advancement rules. A full comparison requires **40 fits on Train157, 40 on Pooled235, the original validation fit, and three chronological fits per recipe**. Older ungrouped CV remains a separate historical benchmark.
+[TESTING_POLICY.md](TESTING_POLICY.md) defines the saved grouped folds, access boundaries, metric, and advancement rule. Train157 and Pooled235 each use eight repeats of five folds. Original validation uses a separate 157-label fit; chronology combines three earlier-to-later windows. The winner's blend comparisons reuse verified held-out component scores.
 
-Run these commands from the repository root with the project's Python environment active ([dependencies](requirements-simple.txt)). They check existing evidence without retraining:
+The winner improved both grouped means versus anchored, but its 5/1/2 Train157 and 4/1/3 Pooled235 wins/ties/losses did not satisfy the original five-wins-in-both-pools rule. The subsequent authorized exploratory submission supplied the highest reported Kaggle score. The previous 75/25 anchored/LDA blend still has a higher Pooled235 mean. These are reused development comparisons, not an untouched holdout or a significance test.
 
-```sh
-python part1/current_leaders_local.py verify
-python part1/research/anchored_neighbor_blend_v1/evidence.py verify
-python part1/research/anchored_lda_blend_submission_v1/verify.py
-python part1/research/legacy_retention_v1/verify.py
-python part1/research/early_iterations/verify.py
-python part1/research/consolidation_v1/verify.py
-python part1/research/consolidation_v1/verify_leaders.py
-python part1/research/new_directions/verify.py
-```
-
-To explicitly replay the frozen comparison, choose an output directory that does not exist:
+From the repository root:
 
 ```sh
-python part1/current_leaders_local.py replay --output /tmp/part1-leaders-replay
+python part1/reporting/build.py
+python part1/reporting/verify.py
 ```
 
-The replay performs 80 anchored CV fits, 80 current Ani control CV fits, and four additional anchored validation/chronology fits. Other comparison entries use retained predictions from the identical plans. It does not refit every archived competitor. Use the [research index](RESEARCH_INDEX.html) for individual study replay instructions. Historical scripts can contain paths to removed worktrees; use these relocation wrappers instead of running old drivers or submission exporters directly.
+These verify retained artifacts and report organization without fitting models. The [verification guide](reporting/README.md) lists the scientific evidence checks and recorded environments. For retraining, follow each study's frozen recipe in a disposable checkout; numerical environments differ between studies. Historical absolute paths are provenance, not current run commands.
 
-### Research environments
-
-The research families recorded different package versions. Keep their environments separate when reproducing numerical results:
-
-| Work | Recorded dependencies |
-|---|---|
-| Anchored model and common comparison | [requirements-simple.txt](requirements-simple.txt) |
-| LDA research | [requirements-lock.txt](research/lda_ensemble/research/independent/requirements-lock.txt) |
-| New Directions | [requirements.txt](research/new_directions/reproduction/requirements.txt) |
-
-The earlier documentation audit passed the four original evidence checks in the existing environment. The later retention cleanup added its own retained-file check. The LDA replay import check also passed. The New Directions replay import check stopped because that environment lacks `iterative-stratification`; its recorded NumPy, pandas, and scikit-learn versions also differ. Install that archive's requirements in a separate environment before replaying it, then check imports without fitting:
-
-```sh
-python part1/research/new_directions/reproduce.py v6 --recipe teacher_mean3 --check
-```
-
-Passing evidence verification checks retained files and scores; it does not establish that every historical training environment is installed. The [documentation audit](research/documentation_audit_v1.json) records the checks and this remaining setup requirement.
-
-## Evidence storage
-
-Follow [RETENTION.md](RETENTION.md): keep full leader/control results and compact recipes plus results for unsuccessful experiments. The [older-study cleanup](research/legacy_retention_v1/README.md) reduced tracked experiment outputs from 1,474 MiB to 38 MiB after checking the saved scores.
-
-The [earlier-iteration archive](research/early_iterations/README.md) also preserves the simple/trusted prototypes and corrected Ani comparison that previously existed only in the working folder. Their recipes and summaries are committed; nonwinning generated caches are excluded. The selected anchored ablation and useful Ani control retain detailed evidence at their original paths.
-
-## Where things belong
+## Folder guide
 
 | Location | Purpose |
 |---|---|
-| [Testing policy](TESTING_POLICY.md) | Current evaluation contract and saved protocol paths |
-| [Research handoff](RESEARCH_HANDOFF.md) | Short current status and guidance for the next experiment |
-| [Research index](RESEARCH_INDEX.html) | Experiment families, negative findings, and replay guides |
-| [Historical entry notebooks](research/historical_notebooks/README.md) | Both former `part1.ipynb` versions and older main exports |
-| [Submission guide](submissions/README.md) | Scored CSVs, immutable tags, and score provenance |
-| [Workflow](AGENTS.md) | Branch, commit, and retention conventions |
+| [MODEL.md](MODEL.md), [REPORT_GUIDE.md](REPORT_GUIDE.md), [REPORT_HANDOFF.md](REPORT_HANDOFF.md) | Current report entry points |
+| [reporting/](reporting/) | Generated comparison and submission tables, verification, integration record |
+| [submissions/](submissions/README.md) | Exact scored artifacts, immutable result records, historical unsubmitted files |
+| [experiments/](experiments/) and [research/](RESEARCH_INDEX.html) | Frozen studies at their original paths; use the index to navigate both |
+| [data/](data/) | Supplied Part 1 inputs |
+| [part1.ipynb](part1.ipynb), [anchored_solution.py](anchored_solution.py) | Anchored component, preserved for exact reproduction |
+| [RESEARCH_HANDOFF.md](RESEARCH_HANDOFF.md) | Closed research phase and outcome summary |
+| [TESTING_POLICY.md](TESTING_POLICY.md), [RETENTION.md](RETENTION.md), [AGENTS.md](AGENTS.md) | Evaluation, storage, and workflow rules |
+| [Historical notebooks](research/historical_notebooks/README.md) | Earlier entry notebooks and exports |
 
-Keep current model artifacts at their existing paths: frozen recipes and provenance records refer to them. New work goes in a named, versioned study directory. Load the relevant research history when needed; the archived handoffs do not redefine the current benchmark or model status.
+Study directories retain their original names because frozen protocols and hashes depend on them. Preparation-time manifests and archived READMEs describe their original checkpoints; later [scored records](submissions/README.md) determine submitted status. The report winner is explicitly identified above, regardless of historical filenames containing “best” or “current.”

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scored_artifacts": 12,
+  "rows_per_artifact": 312,
+  "exact_csv_recipe_hashes_and_annotated_tags_checked": true,
+  "comparison_rows": 9,
+  "selected_recipe": "anchored80-cand2-inductive20-trainval235",
+  "selected_score": 0.89935,
+  "model_fits": 0
+}

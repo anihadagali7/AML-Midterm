@@ -2,13 +2,12 @@
 
 ## Part 1: stopping reasons
 
-The user has selected the **80% anchored /20% strict-inductive five-seed Cand2 blend** as the report winner at **0.89935 sample-wise F1** on Kaggle (user-reported). Model exploration is complete for this phase. The [report handoff](part1/REPORT_HANDOFF.md) identifies the exact scored CSV, immutable winner tag, full recipe/source checkout, benchmark evidence and reporting limitations.
+The selected report winner is **80% anchored / 20% strict-inductive five-seed Cand2**, with user-reported Kaggle sample-wise F1 **0.89935**. Model exploration is closed. The full source, scored artifact and completed research, including PySR, are consolidated here.
 
-- [Report handoff and selected winner](part1/REPORT_HANDOFF.md), [Part 1 overview](part1/README.md), and [research handoff](part1/RESEARCH_HANDOFF.md)
-- [Anchored component notebook](part1/part1.ipynb), which covers the anchored component rather than the full winning blend
-- [Testing methodology](part1/TESTING_POLICY.md), [research index](part1/RESEARCH_INDEX.html), and [retention policy](part1/RETENTION.md)
-- [Completed complementary-head experiment](part1/research/complementary_heads_v2/README.md): reported .89316, below the selected winner
-- [Historical notebook archive](part1/research/historical_notebooks/README.md)
+- [Part 1 overview](part1/README.md), [complete winning model](part1/MODEL.md), and [report tables and limitations](part1/REPORT_GUIDE.md)
+- [Exact checkpoint and report handoff](part1/REPORT_HANDOFF.md), [research index](part1/RESEARCH_INDEX.html), and [verification](part1/reporting/README.md)
+- [Combined report source](report.tex) and [compiled PDF](report.pdf)
+- [Anchored component notebook](part1/part1.ipynb); the complete winner is reproduced by the frozen blend exporter linked above
 
 ## Part 2: current best submission
 

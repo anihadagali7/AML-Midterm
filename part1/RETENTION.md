@@ -10,7 +10,7 @@ Keep **complete results for active leaders and useful matched controls**. For un
 
 ## Keep detailed evidence selectively
 
-- The active 75/25 anchored/LDA blend: frozen recipe, exact scored CSV, full component/blend predictions, and matched evaluation evidence. Preserve the existing anchored and LDA component artifacts and fitting/generated-label records without duplicating them.
+- The selected anchored80/Cand2_20 winner and previous 75/25 anchored/LDA control: frozen recipe, exact scored CSV, full component/blend predictions, and matched evaluation evidence. Preserve the existing anchored and LDA component artifacts and fitting/generated-label records without duplicating them.
 - The common grouped comparison and competitive LDA/Ani references: predictions, scores, truth, IDs, and audits needed to rescore and make paired comparisons.
 - Exact scored submission CSVs, their hashes, source/recipe, fitting population/access, score provenance, and immutable tags. Preserve selected historical checkpoint models when their result records identify them.
 - Original supplied inputs and saved split assignments. Keep useful benchmark-control predictions when existing comparisons or replay helpers depend on them.
@@ -29,6 +29,11 @@ Run historical replays in disposable output directories. Extract useful summarie
 
 | Research family | Retention and verification |
 |---|---|
+| Report integration | [Current audit](reporting/INTEGRATION.md); no scored recipes or artifacts rewritten |
+| Selected Cand2 blend and candidate audit | [Winner evidence](experiments/cand2_followup_v1/README.md), [strict final export](experiments/cand2_submission_v1/README.md), [candidate controls](experiments/dylan_v2_candidates_v1/README.md); exact score packets remain useful for matched comparisons |
+| Graph, refinement, Other, and partial-label studies | [Research index](RESEARCH_INDEX.html) links fixed settings, complete compact summaries, failures, and retention records; log-odds and partial-Other scored CSVs retained |
+| Complementary heads | [Full v1/v2 evidence and closeout](research/complementary_submission_v1/README.md); useful matched predictions and exact .89316 CSV retained, unsuccessful fold caches and fitted estimators removed |
+| Closed weight/partner follow-ups | [Closeout](research/blend_followup_v1/README.md); two exact unsubmitted exports retained as provenance, redundant candidate arrays removed |
 | Older main Part 1 experiments | [31-study catalog and cleanup verification](research/legacy_retention_v1/README.md) |
 | Earlier simple/trusted iterations | [Compact records and comparison correction](research/early_iterations/README.md) |
 | Anchored transductive ablations | [Fixed recipes, complete compact results and interpretation](research/anchored_transductive_v1/README.md); unsuccessful prediction caches removed after rescoring |

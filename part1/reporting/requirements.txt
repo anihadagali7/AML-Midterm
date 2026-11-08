@@ -1,0 +1,2 @@
+-r ../requirements-simple.txt
+iterative-stratification==0.1.9

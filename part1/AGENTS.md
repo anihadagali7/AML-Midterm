@@ -7,8 +7,10 @@ The workspace GitHub account and commit identity rules still apply.
 
 Read `README.md` and `TESTING_POLICY.md` before new model work. Use
 `RESEARCH_HANDOFF.md` for the short handoff and `RESEARCH_INDEX.html` to find
-relevant historical experiments. When improving the submitted model, declare
-the anchored 0.89636 recipe as the parent before scoring. Use only supplied
+relevant historical experiments. Model search is closed for the current report. If new model work is requested,
+declare the selected anchored80/Cand2_20 0.89935 recipe as the parent before
+scoring, and retain anchored 0.89636 as the historical benchmark control.
+Preserve the frozen testing policy and original study advancement decisions. Use only supplied
 Part 1 inputs; keep held-out labels and test inputs outside fitting under the
 default inductive protocol.
 
