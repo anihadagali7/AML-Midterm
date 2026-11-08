@@ -1,0 +1,34 @@
+{
+  "registered_at": "2026-11-08T01:43:50.896620+00:00",
+  "recipe": "complementary-heads-v2/blend_diverse30: raw .8*anchored+.2*diverse_kernel_probability; .3 cutoff+argmax",
+  "source_benchmark_commit": "735ad7a3",
+  "source_benchmark_protocol_sha256": "d157adf2d7b354e3a6c8d29d7aca32a236eb328e2338032f98694f1b5237a4c6",
+  "trigger": "User requested the best candidate to try despite the negative advancement result, then explicitly chose fixed rather than learned combination: nah do fixed.",
+  "selection": "Select stronger-head v2 fixed blend with diversity penalty .3 before fitting or inspecting new test predictions. It has the highest pooled CV among v2 combined candidates and ties the best Train157. Do not select by test changes.",
+  "exception": "User-authorized exploratory final refit after failed both-pool advancement. Does not change original benchmark status or promote this recipe. No upload is performed; best reported Kaggle remains .89935.",
+  "settings": "Unchanged frozen v2 source. Kernel nonintercept L2 .00005,128 Nystr\u00f6m RBF components,gamma1/150,seed270303,diversity .3,ordinary warm start. Full235 kernel uses anchor crossfit seed270301 with group purges. Gold-only kernel supervised loss, eligible gold+masked feature geometry. Anchor unchanged.",
+  "fitting": "235 supplied gold +1014 originally masked rows, original train-then-validation order. Exact benchmark fit_pair entrypoint refits all nested training stages; only the fixed blend is exported. No learned combiner is applied to the submission. Query inputs prediction-only.",
+  "known_metrics": {
+    "train": 0.9333864118895966,
+    "pooled": 0.9209219858156028,
+    "validation": 0.8867521367521368,
+    "chronology98": 0.870748299319728
+  },
+  "parent_reference": {
+    "score": 0.89935,
+    "source_commit": "cde3d500",
+    "original_components": "part1/experiments/cand2_followup_v1/blend_final_predictions.npz",
+    "components_sha256": "640ca62408f5dfc9e92ba54fafce500b94387e3576ae5b5db6becb3f6f136c8a",
+    "submission_sha256": "c20aa937fa8b1e5aea55bcd6564c6acd952f0d74030cc7c1a437eac54a1ee257",
+    "access": "Cached final test scores only validate unchanged anchored and count differences; never enter candidate training or selection."
+  },
+  "output": "submissions/candidates/anchored80_diverse_kernel20_trainval235.csv",
+  "files": {
+    "research/complementary_submission_v1/export_fixed.py": "e64ef0113c9260d21971a9b698fae5a7ed9767450a1157ecd6243bf32e3211bc",
+    "research/complementary_submission_v1/verify_fixed.py": "cff2138ffdc388c6a8d5508e8b67ab83badb7f2c51edd951ed68408431f66ad9",
+    "research/complementary_submission_v1/parent_final_components.npz": "640ca62408f5dfc9e92ba54fafce500b94387e3576ae5b5db6becb3f6f136c8a",
+    "research/complementary_heads_v2/protocol.json": "d157adf2d7b354e3a6c8d29d7aca32a236eb328e2338032f98694f1b5237a4c6",
+    "research/complementary_heads_v2/results/summary/verification.json": "d49b83bf3d4f90d061b9327057b50acca9f8cf3516fa22c439908780804c5f34",
+    "research/complementary_heads_v2/results/summary/overview.csv": "b0681222211ce04cec0d0ddf3ed1c503ef1ae41a2e6556058d94716eed002233"
+  }
+}

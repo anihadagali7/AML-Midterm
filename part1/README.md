@@ -1,8 +1,8 @@
 # Part 1
 
-Start here for the current model and testing procedure. The **75% anchored / 25% LDA ensemble blend** has the highest recorded, user-reported Kaggle score: **0.89850**, up **0.00214** from anchored's 0.89636. Both components use their existing final fits on **235 verified labels** and the **1,014 originally masked training rows**; Kaggle test inputs were used only for prediction. See the [winning blend recipe and verification](research/anchored_lda_blend_submission_v1/README.md) and [exact-file score record](submissions/results/anchored75-lda25-trainval235.json).
+The user has selected **80% anchored /20% strict-inductive five-seed Cand2** as the report winner, with **0.89935 user-reported Kaggle sample-wise F1**. This phase of model exploration is complete. The [report handoff](REPORT_HANDOFF.md) identifies the exact artifact, annotated score tag, source checkout, evaluation evidence and reporting limitations. The full winner is preserved on `codex/part1-cand2-followup` at `cde3d500`; this branch contains the completed complementary-head experiments.
 
-The blend aligns component decision cutoffs before combining scores. Its anchored component combines logistic regression, cosine nearest neighbors, and shrinkage LDA over the supplied reason embeddings, with clustering supporting missing-label generation. The [executed Part 1 notebook](part1.ipynb) still explains and refits that anchored component and reproduces its 0.89636 CSV; the winning blend's separate export adds the existing LDA ensemble. The notebook also verifies saved comparisons; fresh 80-fold CV is a separate replay. Frozen preparation manifests retain their earlier status; later score records supersede it.
+The winner uses 235 supplied gold labels plus 1,014 originally masked rows and combines raw anchored scores with Cand2 label marginals at fixed weights 80/20, followed by threshold .3 and argmax fallback. Kaggle test inputs are prediction-only. The [executed notebook](part1.ipynb) describes and refits the anchored component; use the winner's exporter and source references in the handoff for the complete blend. The previous 75/25 anchored/LDA model scored .89850. The newly tested anchored/diverse-kernel fixed blend scored .89316 and did not replace the winner.
 
 ## Comparable results
 
@@ -10,14 +10,17 @@ These results use the same saved **grouped, eight-repeat, five-fold** plans in e
 
 | Model | Train157 CV | Pooled235 CV | Validation78 | Chronology98 | Reported Kaggle |
 |---|---:|---:|---:|---:|---:|
-| **Anchored75/LDA25 blend** | .932059 | **.923404** | .891026 | .884354 | **.89850** |
+| **Selected anchored80/Cand2_20** | **.935244** | .921631 | .891026 | **.887755** | **.89935** |
+| Previous anchored75/LDA25 blend | .932059 | **.923404** | .891026 | .884354 | .89850 |
 | Anchored | .932059 | .921365 | .891026 | .884354 | .89636 |
 | LDA 70/15/15 ensemble | .931794 | .921631 | .905983 | .877551 | .89401 |
 | Current Ani LDA source | .928079 | .915426 | .871795 | .874150 | Unknown |
 
-The winning blend improved Pooled235 in all eight repeats and tied anchored's other three sample-F1 headlines. It did not meet the strict both-pool CV advancement rule because Train157's average tied (3 wins / 3 ties / 2 losses). The user authorized a manual trial after reviewing that distinction; its subsequently reported Kaggle score improved. Preserve that outcome without retroactively changing the evaluation rule. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
+The previous 75/25 blend improved Pooled235 in all eight repeats and tied anchored's other three sample-F1 headlines. It did not meet the strict both-pool CV advancement rule because Train157's average tied (3 wins / 3 ties / 2 losses). The user authorized a manual trial after reviewing that distinction; its subsequently reported Kaggle score improved. Preserve that outcome without retroactively changing the evaluation rule. Original Ani's .89423 belongs to a different, transductive submitted artifact; it is not the score of the current Ani LDA source.
 
 Ani's [original notebook](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_model.ipynb), [original scored CSV](research/lda_ensemble/research/ani_snapshots/a548721/part1_best_submission.csv), and [result checkpoint](submissions/results/ani-original.json) are preserved on this branch. The notebook matches source commit `a548721` byte for byte; the score tag is `part1-ani-original-kaggle-0.89423`. The [later LDA notebook](research/lda_ensemble/research/ani_snapshots/8a8c3fc/part1_best_model.ipynb) is preserved separately. Archived handoff statements about its evaluation status describe their original checkpoint; the common comparison above includes the later source.
+
+The selected 80/20 winner improves both grouped means versus anchored, but has only 4/8 Pooled235 repeat wins and therefore did not pass the original both-pool advancement rule. Its later manual Kaggle result determines the user's report selection. See the [handoff](REPORT_HANDOFF.md) for the exact source evidence; preserve the original advancement outcome.
 
 ## Testing and verification
 

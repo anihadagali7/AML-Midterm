@@ -1,6 +1,8 @@
 # Part 1 submission records
 
-The highest recorded, user-reported Kaggle score is **Anchored75/LDA25: 0.89850**, improving anchored's 0.89636 by **0.00214**. Its exact [scored CSV](ready/part1_anchored75_lda25_trainval235.csv) combines the two existing verified full-235 fits and changes five of 312 label sets. Both components used the 1,014 originally masked training rows with inductive access; test inputs entered only prediction. SHA-256: `6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b`. The CSV remains at its preparation path to preserve frozen references; its [result record](results/anchored75-lda25-trainval235.json) carries the submitted status.
+The selected report winner is **anchored80/Cand2_20 at 0.89935**, user-reported. Its separate score commit is `cde3d500`, with annotated tag `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`. The [report handoff](../REPORT_HANDOFF.md) identifies the exact CSV, source checkout and frozen recipe at that immutable checkpoint. The latest [anchored80/diverse-kernel20 result](results/anchored80-diverse-kernel20-trainval235.json) scored .89316 and did not replace it. Model exploration is closed for this report phase.
+
+The previous consolidated winner, **Anchored75/LDA25: 0.89850**, improved anchored's 0.89636 by .00214. Its exact [scored CSV](ready/part1_anchored75_lda25_trainval235.csv) combines the two existing verified full-235 fits and changes five of 312 label sets. Both components used the 1,014 originally masked training rows with inductive access; test inputs entered only prediction. SHA-256: `6331d245a73148ab8d155623059f60371e28a4b25312bd12c8e23fb926c20c8b`. The CSV remains at its preparation path to preserve frozen references; its [result record](results/anchored75-lda25-trainval235.json) carries the submitted status.
 
 ## Scored checkpoints
 
@@ -8,7 +10,9 @@ These records identify manually submitted CSVs, exact hashes, frozen recipes, fi
 
 | Recipe | Reported Kaggle F1 | Immutable annotated tag |
 |---|---:|---|
-| [Anchored75/LDA25, 235 labels](results/anchored75-lda25-trainval235.json) | **0.89850** | `part1-anchored75-lda25-trainval235-kaggle-0.89850` |
+| [Selected anchored80/Cand2_20, 235 labels](../REPORT_HANDOFF.md) | **0.89935** | `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935` |
+| [Anchored80/diverse-kernel20, 235 labels](results/anchored80-diverse-kernel20-trainval235.json) | 0.89316 | `part1-anchored80-diverse-kernel20-trainval235-kaggle-0.89316` |
+| [Anchored75/LDA25, 235 labels](results/anchored75-lda25-trainval235.json) | 0.89850 | `part1-anchored75-lda25-trainval235-kaggle-0.89850` |
 | [Anchored, 235 labels](results/anchored-trainval235.json) | 0.89636 | `part1-anchored-trainval235-kaggle-0.89636` |
 | [80% anchored/LDA blend +20% PySR, 235 labels](results/current80-pysr20-trainval235.json) | 0.89423 | `part1-current80-pysr20-trainval235-kaggle-0.89423` |
 | [Original Ani](results/ani-original.json) | 0.89423 | `part1-ani-original-kaggle-0.89423` |
@@ -37,7 +41,7 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
-The fixed blend has been reported submitted at **0.89850**. Its [preparation and verification record](../research/anchored_lda_blend_submission_v1/README.md) remains frozen. A user-requested exploratory [80% current blend /20% PySR candidate](ready/part1_current80_pysr20_trainval235.csv) was manually submitted and the user reported **0.89423**, down **0.00427** from the 0.89850 parent. PySR was freshly fitted on all 235 verified labels plus 1,014 masked rows; nine of 312 labelsets differ. Its [result record](results/current80-pysr20-trainval235.json) supersedes the preparation-time status. It is not promoted or queued for another upload. The [frozen preparation](../research/pysr_blend_submission_v1/README.md) records the explicit trial decision despite weaker local checks. Its current retention guide documents removal of nonwinning model/data/score caches while preserving the exact scored CSV and tag.
+The user selected the **0.89935 anchored80/Cand2_20** result for report writing. Both that winner's frozen preparation record and the latest .89316 exploratory preparation remain unchanged; their later score records supersede preparation-time unsubmitted statuses. No additional submission is queued.
 
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 

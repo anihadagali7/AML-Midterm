@@ -1,0 +1,9 @@
+{
+  "cases": 84,
+  "fresh_anchored_fits": 1092,
+  "kernel_fits": 1008,
+  "fusion_fits": 336,
+  "cached_cand2_control_cases": 84,
+  "total_fit_seconds": 363.3658474525437,
+  "max_anchor_error": 0.0
+}

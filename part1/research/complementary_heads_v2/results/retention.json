@@ -1,0 +1,34 @@
+{
+  "kept": [
+    "parent",
+    "anchored",
+    "calibration",
+    "head_ordinary",
+    "head_diverse30",
+    "blend_ordinary",
+    "blend_diverse30",
+    "fusion_ordinary",
+    "fusion_diverse30"
+  ],
+  "discarded": [
+    "head_diverse10",
+    "blend_diverse10",
+    "fusion_diverse10"
+  ],
+  "rationale": "Retain the matched lambda0/.3 heads, fixed blends and learned fusion, plus calibration and established controls. This preserves the small fixed-blend diversity benefit alongside its standalone accuracy cost. Intermediate .1 predictions and all fold caches were independently verified before removal; every summary is kept.",
+  "full_verification": "summary/verification.json",
+  "files": {
+    "matched_predictions.npz": "6163144d87855fd483f74d723dc92627c4c35ede2aa3f2fcba9687638bfde918",
+    "summary/diversity.csv": "85f0ab0e5b5d9b2d451f11877a7b9f976f542d511c674e98d597d42bac669a4b",
+    "summary/fit_summary.json": "8b48b619997f7694db67b9da9d3718627dd33829c6949f72d3bda843616652cb",
+    "summary/optimization.csv": "ac6e6941cbe6112b4449dc3fec804cdc01e47f93bce42204b5fad84c21e4bf42",
+    "summary/other_subgroups.csv": "770f64a6f000482a528368737ff2788503977fe9df7957f5375e5ff65a4dbf2a",
+    "summary/overview.csv": "b0681222211ce04cec0d0ddf3ed1c503ef1ae41a2e6556058d94716eed002233",
+    "summary/paired_repeat_deltas.csv": "575e4f666297230204d2b3228f6b8de5d47b8188ce5eca3e337cc3c25286131b",
+    "summary/paired_summary.csv": "4bc1eea19bba18f62d8d7ebe2466425c3381220a934cfbb0b035a7851ad48a72",
+    "summary/per_label_scores.csv": "df282b6405a8c66ea0ec8357645cc54ee0afd03c21a986fad0e55495403b3571",
+    "summary/qualification.json": "8d73c68859c2cbbac0ea9eb565e5e47a098ea40fa8465d398a85bacf14188b73",
+    "summary/repeat_scores.csv": "cadf7f88cbbcb1384ab3a3bb49239557c53f21d89fe245706906c6210747c2a6",
+    "summary/verification.json": "d49b83bf3d4f90d061b9327057b50acca9f8cf3516fa22c439908780804c5f34"
+  }
+}

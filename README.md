@@ -2,11 +2,12 @@
 
 ## Part 1: stopping reasons
 
-The **75% anchored / 25% LDA ensemble blend** scored **0.89850 sample-wise F1** on Kaggle (user-reported; higher is better), improving the previous anchored result of 0.89636 by 0.00214. Both components use their verified full-235 fits. The [exact-file result](part1/submissions/results/anchored75-lda25-trainval235.json) records its CSV hash, recipe and score provenance.
+The user has selected the **80% anchored /20% strict-inductive five-seed Cand2 blend** as the report winner at **0.89935 sample-wise F1** on Kaggle (user-reported). Model exploration is complete for this phase. The [report handoff](part1/REPORT_HANDOFF.md) identifies the exact scored CSV, immutable winner tag, full recipe/source checkout, benchmark evidence and reporting limitations.
 
-- [Anchored component notebook](part1/part1.ipynb), [winning blend](part1/research/anchored_lda_blend_submission_v1/README.md), and [Part 1 overview](part1/README.md)
-- [Testing methodology](part1/TESTING_POLICY.md) and [research index](part1/RESEARCH_INDEX.html)
-- [Scored submissions](part1/submissions/README.md) and [retention policy](part1/RETENTION.md)
+- [Report handoff and selected winner](part1/REPORT_HANDOFF.md), [Part 1 overview](part1/README.md), and [research handoff](part1/RESEARCH_HANDOFF.md)
+- [Anchored component notebook](part1/part1.ipynb), which covers the anchored component rather than the full winning blend
+- [Testing methodology](part1/TESTING_POLICY.md), [research index](part1/RESEARCH_INDEX.html), and [retention policy](part1/RETENTION.md)
+- [Completed complementary-head experiment](part1/research/complementary_heads_v2/README.md): reported .89316, below the selected winner
 - [Historical notebook archive](part1/research/historical_notebooks/README.md)
 
 ## Part 2: current best submission
