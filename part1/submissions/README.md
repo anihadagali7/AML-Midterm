@@ -36,7 +36,7 @@ The original DBSCAN validation F1 .910256 belongs to its 157-label fit. The 235-
 
 ## Future submissions
 
-The fixed blend has been reported submitted at **0.89850**. Its [preparation and verification record](../research/anchored_lda_blend_submission_v1/README.md) remains frozen. No additional submission is queued.
+The fixed blend has been reported submitted at **0.89850**. Its [preparation and verification record](../research/anchored_lda_blend_submission_v1/README.md) remains frozen. A user-requested exploratory [80% current blend /20% PySR candidate](ready/part1_current80_pysr20_trainval235.csv) is prepared for manual submission. PySR was freshly fitted on all 235 verified labels plus 1,014 masked rows; nine of 312 labelsets differ from the 0.89850 submission. No score is reported. The [frozen preparation](../research/pysr_blend_submission_v1/README.md) records the explicit trial decision despite weaker local checks.
 
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 

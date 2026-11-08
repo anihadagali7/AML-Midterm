@@ -10,7 +10,7 @@ On the common grouped benchmark, anchored beats current Ani LDA in both CV pools
 
 ## Completed PySR experiment
 
-The [bounded symbolic-classifier study](research/pysr_v1/README.md) completed all 84 standard cases, with 420 fresh symbolic heads. PySR alone scored .869559 / .884184 on Train157 / Pooled235, validation .844017 and chronology .750000. Adding 20% PySR to our submitted 75/25 blend also lowered all four headline checks. A linear head on the same geometry was included as a diagnostic; the reported 0.89935 anchored/Cand2 model was included as a matched control. No candidate was exported or submitted. Independent rescoring passed; complete compact results and equations remain, with nonwinning prediction caches removed.
+The [bounded symbolic-classifier study](research/pysr_v1/README.md) completed all 84 standard cases, with 420 fresh symbolic heads. PySR alone scored .869559 / .884184 on Train157 / Pooled235, validation .844017 and chronology .750000. Adding 20% PySR to our submitted 75/25 blend also lowered all four headline checks. A linear head on the same geometry was included as a diagnostic; the reported 0.89935 anchored/Cand2 model was included as a matched control. The initial study ended without an export. The user subsequently requested the fixed 20% PySR blend as a manual trial; its [full235 preparation](research/pysr_blend_submission_v1/README.md) retains the exact CSV, model state, equations and predictions. It changes 9 of 312 labelsets from our 0.89850 submission; no score has been reported. Independent local rescoring passed, and the nonwinning CV caches remain compact.
 
 ## Next experiment
 

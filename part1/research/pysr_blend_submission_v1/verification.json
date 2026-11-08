@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows": 312,
+  "verified_training_labels": 235,
+  "originally_masked_rows": 1014,
+  "independent_feature_equation_and_csv_reconstruction": true,
+  "maximum_pysr_score_error": 5.5478995556706065e-11,
+  "changed_labelsets_vs_89850": 9,
+  "submission_sha256": "742dc787fd33b24ab626dcf2ee29810cc3481f1d707de8df0678dec437127d66"
+}

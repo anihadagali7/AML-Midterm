@@ -34,6 +34,7 @@ Run historical replays in disposable output directories. Extract useful summarie
 | Anchored transductive ablations | [Fixed recipes, complete compact results and interpretation](research/anchored_transductive_v1/README.md); unsuccessful prediction caches removed after rescoring |
 | Anchored neighbor/blend ablations | [Three fixed ideas and complete results](research/anchored_neighbor_blend_v1/README.md); full evidence for the submitted 0.89850 blend and matched controls, compact results for unsuccessful neighbor changes |
 | PySR symbolic classifiers | [Complete negative study](research/pysr_v1/README.md); all 84 cases, sufficient statistics, equations, fit audits and controls retained; nonwinning prediction caches removed after independent rescoring |
+| User-requested PySR blend trial | [Full235 preparation](research/pysr_blend_submission_v1/README.md); preserve exact CSV, portable model state, all formulas, generated labels and full component/final scores while active; no reported score yet |
 | Submitted 75/25 blend | [Frozen final-235 preparation and score record](research/anchored_lda_blend_submission_v1/README.md); exact scored CSV and complete scores retained, existing component fits referenced |
 | LDA and feature research | [Existing retention and replay guide](research/lda_ensemble/EVIDENCE.html) |
 | New Directions | [Existing compact archive](research/new_directions/index.html); unchanged by this cleanup |
