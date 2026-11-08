@@ -41,3 +41,7 @@ The fixed blend has been reported submitted at **0.89850**. Its [preparation and
 Use the [current testing policy](../TESTING_POLICY.md) to compare recipes and [AGENTS.md](../AGENTS.md) for result commits and immutable tags. A final 235-label refit is a separate artifact from CV and original validation. Preserve its exact CSV, hash, fitting population, input access, recipe/source, and reported score provenance.
 
 Uploads remain manual. An archived CSV or preparation manifest does not queue an upload. Earlier statements about remaining daily slots are historical and do not establish a current budget.
+
+## Log-odds follow-up outcome
+
+The user reported **0.88888** for [refinement_log_pool.csv](candidates/refinement_log_pool.csv), compared with **0.89935** for its arithmetic 80/20 parent. The same score column was confirmed. [Exact-file result and provenance](results/anchored80-cand2-inductive20-log-odds-trainval235.json); the scored row population remains unverified. The arithmetic parent remains the highest user-reported result in this research track.

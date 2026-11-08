@@ -1,8 +1,10 @@
 # Follow-up to the reported 0.89935 blend
 
-**Next exploratory CSV:** [refinement_log_pool.csv](../../submissions/candidates/refinement_log_pool.csv). It keeps the same anchored/Cand2 components and 80/20 weights, but averages log-odds instead of raw selection scores. It changes **five of 312** test label sets. No upload or score is recorded for this new file.
+**Outcome: user-reported Kaggle 0.88888, a regression of 0.01047 from the arithmetic parent. Retain the 0.89935 arithmetic blend.** [Exact-file result](../../submissions/results/anchored80-cand2-inductive20-log-odds-trainval235.json). The user confirmed the same score column. Preparation-time statements below describe the earlier export.
 
-The user reported **0.89935** for the arithmetic 80/20 blend and requested a follow-up within ten minutes. That exact result was recorded separately at commit `cde3d50` with immutable tag `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`; this branch starts from current main `31f3fa9`. [Parent result](parent_reported_result.json), [exact parent CSV](parent_scored.csv).
+**Scored exploratory CSV:** [refinement_log_pool.csv](../../submissions/candidates/refinement_log_pool.csv). It keeps the same anchored/Cand2 components and 80/20 weights, but averages log-odds instead of raw selection scores. It changes **five of 312** test label sets. The user subsequently reported 0.88888 for this file.
+
+The user reported **0.89935** for the arithmetic 80/20 blend and requested a follow-up within ten minutes. That exact result was recorded separately at commit `cde3d50` with immutable tag `part1-anchored80-cand2-inductive20-trainval235-kaggle-0.89935`; this branch started from then-current main `766d16d3`. [Parent result](parent_reported_result.json), [exact parent CSV](parent_scored.csv).
 
 ## Selected candidate
 
@@ -48,3 +50,9 @@ All eight repeats and supplementary cases were declared for both small diagnosti
 Independent arithmetic checked sample F1 and every label's precision/recall/F1/support across all nine candidates and controls. The final log-odds formula was independently checked through the equivalent weighted-product-of-odds formula. IDs, row count, valid nonempty labels, exact parent CSV reproduction, source hashes and output SHA-256 passed. [Verification receipt](verification.json).
 
 Python 3.12.13 with the repository's [numerical dependencies](../../requirements-simple.txt). From the repository root, `python part1/experiments/blend_refinement_v2/verify.py` checks retained evidence without fitting. Each `run.py` replays its fixed batch and refuses to overwrite an exported file. Use disposable checkouts for replays, preserving the exact candidate supplied to the user. Detailed selected predictions remain for this useful candidate; compact source, inputs, all scores and negatives remain for both batches.
+
+## Outcome interpretation
+
+The small positive CV deltas did not predict a Kaggle improvement. The log-odds rule removes one label on each of five changed trials: Recruitment on three and Safety on two. Aggregate scores do not establish which individual changes helped or hurt. This is evidence against this fixed rule on the reported leaderboard comparison, not against every possible pooling rule. Do not select individual test-row reversals from the score.
+
+The [consistency check](reported_result_consistency.json) also records a limit on interpretation: if equally weighted sample F1 covered all 312 rows, these exact five changes could reduce the mean by at most 0.0101496, slightly less than the reported 0.01047 drop. The user confirmed the same score column, but its row population and uploaded bytes were not independently inspected. A scoring subset or another unverified scoring detail may explain the difference. Preserve the reported score, keep that uncertainty explicit, and do not infer hidden labels.
