@@ -1,11 +1,11 @@
-% Combined midterm report. Compile from the repository root:
-%   latexmk -pdf report.tex
+% Combined midterm report. Compile from submission/report/:
+%   latexmk -pdf main.tex
 % Course limit: 5 pages including figures. References may continue past that.
 
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
-\usepackage[pagenumbers]{midterm/report/cvpr}
-\input{midterm/report/preamble}
+\usepackage[pagenumbers]{cvpr}
+\input{preamble}
 
 \definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
 \usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
@@ -355,8 +355,8 @@ prediction.
 
 {
     \small
-    \bibliographystyle{midterm/report/ieeenat_fullname}
-    \bibliography{midterm/report/main}
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{main}
 }
 
 \end{document}

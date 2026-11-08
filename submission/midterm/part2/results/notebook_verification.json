@@ -1,0 +1,22 @@
+{
+  "notebooks": [
+    {
+      "notebook": "01_final_model.ipynb",
+      "code_cells": 7,
+      "errors": 0
+    },
+    {
+      "notebook": "02_experiments.ipynb",
+      "code_cells": 5,
+      "errors": 0
+    },
+    {
+      "notebook": "03_source_code.ipynb",
+      "code_cells": 71,
+      "errors": 0
+    }
+  ],
+  "expected_winner_sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+  "source_files": 68,
+  "note": "Default execution rescores saved predictions and replays recorded components; see fresh-fit receipt separately."
+}

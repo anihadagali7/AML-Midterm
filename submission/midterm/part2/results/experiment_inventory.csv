@@ -1,0 +1,11 @@
+stage,result_rows,table
+Initial component search,318,model_search/all_component_scores.csv
+Initial ensemble search,434,model_search/ensemble_scores.csv
+Stack proposals and controls,13,stack_improvements/runs/097ac8161372126d/strict/summary.csv
+Meta extensions and controls,22,ani_extensions/meta/76d98f1d5e9d5ff1/strict/summary.csv
+Neighbor extensions and controls,24,ani_extensions/neighbors/a27759052dfa9571/strict/summary.csv
+Files 01–10 on the common benchmark,13,all_submissions/runs/8f68385e25e07615/comparison_strict.csv
+Sprint: 32 proposals plus controls,39,leaderboard_sprint/runs/4dc0f274d45bce9e/summary_strict.csv
+Recent trees: 4 proposals plus controls,7,leaderboard_sprint/recent_tree/dea847f57c7c07ee/summary_strict.csv
+Refinement: 19 proposals plus controls,23,leaderboard_sprint/refine/2e5c792462013673/summary_strict.csv
+Final slot: 9 proposals plus controls,12,leaderboard_sprint/finish/b235582538f63f9c/summary_strict.csv

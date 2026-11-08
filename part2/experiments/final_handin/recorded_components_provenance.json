@@ -1,0 +1,10 @@
+{
+  "kind": "Native inference from original fitted caches; not a fresh fit",
+  "original_caches": {
+    "experiments/ani_extensions/cache/decision/final/submission_bundle.joblib": "276a5b130b0b393fc0a3e432d9bf2125486a9149217dba8b13d63c750a558648",
+    "experiments/leaderboard_sprint/cache/legacy_full.joblib": "64e92af91de47452510b008b73759afabe5970772fc2583792f70cadb34f3ead"
+  },
+  "component_archive_sha256": "342481ad7023cf8e1773a5c2a23ac2087d005fa9a0fabd72da6cc6ecdf5a7437",
+  "recorded_submission_sha256": "be29fc849f63ed4c23b31e67c97aaa97c6940f569b0af0920cf9799b428f7636",
+  "maximum_probability_difference": 1.1102230246251565e-16
+}

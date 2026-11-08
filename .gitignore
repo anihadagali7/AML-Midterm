@@ -6,3 +6,9 @@ part2/experiments/stack_improvements/cache/
 part2/experiments/ani_extensions/cache/
 part2/experiments/all_submissions/cache/
 part2/experiments/leaderboard_sprint/cache/
+
+# Materialized hand-in data/evidence and reproducible export artifacts.
+submission/midterm/part2/resources/
+submission/midterm/part2/generated/
+submission/midterm/part2/_source_export/
+submission/dist/

@@ -1,0 +1,9 @@
+model,kaggle_log_loss,source
+ani_first,0.5881,Score reported in Ani commit message; not a fresh Kaggle API query.
+ani_stack,0.58688,User-reported and Ani commit-reported score; not a fresh Kaggle API query.
+03_phase_specialized.csv,0.59562,User-reported Kaggle result
+02_text_heavy.csv,0.58993,User-reported Kaggle result
+10_ani_fast2_neighbors_half.csv,0.58609,User-reported Kaggle result; not a fresh Kaggle API query.
+11_file10_legacy20.csv,0.58474,User-reported Kaggle result and first place; not a fresh Kaggle API query.
+13_file10_legacy30.csv,0.58465,User-reported Kaggle result; not a fresh Kaggle API query.
+15_file10_legacy20_tree10_trend10.csv,0.58492,User-reported Kaggle result; not a fresh Kaggle API query.

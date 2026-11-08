@@ -1,0 +1,60 @@
+{
+  "description": "Folder move only for existing Part 1 artifacts; report source edits only adjust relative TeX paths and compile instructions. Part 2 hand-in is replaced by the scored file-13 recipe.",
+  "moves": [
+    {
+      "old": "midterm",
+      "new": "submission/midterm",
+      "sha256": null
+    },
+    {
+      "old": "submission/midterm/report",
+      "new": "submission/report/previous",
+      "sha256": null
+    },
+    {
+      "old": "report.pdf",
+      "new": "submission/report.pdf",
+      "sha256": "c2207f20f922bbc3c676909a6036e796172069470653e9a8d68deb47b6eff9e0"
+    },
+    {
+      "old": "report.tex",
+      "new": "submission/report/main.tex",
+      "sha256": "78bf8082c7d737bfcb86630bc0f6683b4ca98b3cf800c120316cad7ce049e841"
+    },
+    {
+      "old": "submission/midterm/part2_alt_phase3_trend_submission.csv",
+      "new": "part2/experiments/previous_handin/part2_alt_phase3_trend_submission.csv",
+      "sha256": "79bc34c128e6be1e34feb8ac4e0694ac899b0c4f52b8886d15becbc7a094248e"
+    },
+    {
+      "old": "submission/midterm/part2_best_model.ipynb",
+      "new": "part2/experiments/previous_handin/part2_best_model.ipynb",
+      "sha256": "c9b011786e0da58b6773d45e10b4cba1ecb705714f4f74782a33105ab6d2f807"
+    },
+    {
+      "old": "submission/midterm/part2_best_submission.csv",
+      "new": "part2/experiments/previous_handin/part2_best_submission.csv",
+      "sha256": "17caa6b02af919c8ba6358d680075208ba8d4f1d11c20d5b6d06e8f6d494b3c2"
+    },
+    {
+      "old": "submission/midterm/part2_error_by_reason.png",
+      "new": "part2/experiments/previous_handin/part2_error_by_reason.png",
+      "sha256": "fc038e22b0d47b817e6e3f6afbaaa58f140e0d0bd712f19a0622227dc67125be"
+    },
+    {
+      "old": "submission/midterm/part2_first_error_by_reason.png",
+      "new": "part2/experiments/previous_handin/part2_first_error_by_reason.png",
+      "sha256": "fc038e22b0d47b817e6e3f6afbaaa58f140e0d0bd712f19a0622227dc67125be"
+    },
+    {
+      "old": "submission/midterm/part2_first_submission.csv",
+      "new": "part2/experiments/previous_handin/part2_first_submission.csv",
+      "sha256": "63a5ed6154c6c96cb838c27fa7feb2656a24960362a1c69be05cd6c3d7c789e5"
+    },
+    {
+      "old": "submission/midterm/part2_first_submission_model.ipynb",
+      "new": "part2/experiments/previous_handin/part2_first_submission_model.ipynb",
+      "sha256": "3fa80ff7451f64262234b28afb88a8dfcd1ae7cf5a56e794b4a0e98d7e1ca56c"
+    }
+  ]
+}

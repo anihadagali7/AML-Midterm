@@ -4,10 +4,15 @@
 Kaggle log loss 0.58465 (user-reported first place).** Lower is better.
 File 15 scored 0.58492; file 16 remains unsubmitted.
 
+This folder is the **working research history**. The finalized notebooks and
+hand-in entry point are in [submission/midterm/part2/](../submission/midterm/part2/README.md).
+Build their portable code/data ZIP with `python part2/packaging/build_handin.py`.
+
 ## What do you want to do?
 
 | Task | Start here |
 | --- | --- |
+| Read or build the finalized hand-in | [Final Part 2 notebooks](../submission/midterm/part2/README.md) and [package builder](packaging/README.md) |
 | Understand why we chose the final model | [Model development and tuning history](MODEL_DEVELOPMENT.md) |
 | Find the exact winning CSV | [13_file10_legacy30.csv](submissions/13_file10_legacy30.csv) |
 | Compare models and understand the latest decision | [Submission sprint results](experiments/leaderboard_sprint/RESULTS.md) |

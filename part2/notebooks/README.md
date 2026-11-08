@@ -1,5 +1,9 @@
 # Executed notebooks
 
+These are the working notebooks. The consolidated hand-in has a
+[final-model notebook, experiment history and complete source appendix](../../submission/midterm/part2/README.md),
+including the later files 11–16 that were originally documented in scripts and reports.
+
 These notebooks retain their original analyses, embedded source, and saved
 outputs. A new first cell locates the organized checkout and prepares the
 execution directory. Run that cell before subsequent cells. Training remains
