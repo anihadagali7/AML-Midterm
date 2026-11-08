@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "case": "native_dylan__validation",
+  "checks": [
+    {
+      "model": "cand1",
+      "raw_average_max_error": 0.0,
+      "headed_probability_max_error": 0.0,
+      "identical_predictions": true
+    },
+    {
+      "model": "cand2",
+      "raw_average_max_error": 0.0,
+      "headed_probability_max_error": 0.0,
+      "identical_predictions": true
+    },
+    {
+      "model": "cand4",
+      "raw_average_max_error": 0.0,
+      "headed_probability_max_error": 0.0,
+      "identical_predictions": true
+    },
+    {
+      "model": "cand5",
+      "raw_average_max_error": 0.0,
+      "headed_probability_max_error": 0.0,
+      "identical_predictions": true
+    }
+  ],
+  "reference": "Unmodified source/p1lib/submit.py final_fit and predict_test, with named final sets mapped to the validation case. No new test CSV."
+}

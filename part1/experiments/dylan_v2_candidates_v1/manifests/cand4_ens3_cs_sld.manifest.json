@@ -1,0 +1,213 @@
+{
+ "name": "cand4_ens3_cs_sld",
+ "csv": "/home/dleiferives/school/michael/aml-midterm/midterm/part1/submissions/cand4_ens3_cs_sld.csv",
+ "sha1": "ed1afa5207571fcdc34748b59477cb7df76300d6",
+ "created": "2026-11-06T17:15:43",
+ "config": {
+  "model": {
+   "ensemble": [
+    {
+     "features": {
+      "scale": true
+     },
+     "synth": [],
+     "labeler": null,
+     "clf": {
+      "type": "lr",
+      "C": 0.1
+     },
+     "temperature": false
+    },
+    {
+     "features": {
+      "scale": true
+     },
+     "synth": [],
+     "labeler": null,
+     "clf": {
+      "type": "lda"
+     },
+     "temperature": true
+    },
+    {
+     "features": {
+      "scale": true
+     },
+     "synth": [],
+     "labeler": null,
+     "clf": {
+      "type": "direct",
+      "labeler": {
+       "type": "cs",
+       "graph": {
+        "space": {
+         "scale": true,
+         "pca": 64,
+         "l2": true
+        },
+        "k": 10,
+        "s": 1.0,
+        "sym": "max"
+       },
+       "a1": 0.5,
+       "a2": 0.5
+      }
+     },
+     "temperature": false
+    }
+   ],
+   "weights": null
+  },
+  "head": {
+   "prior": "sld",
+   "sld_a": 100,
+   "decode": "expf1"
+  },
+  "transductive": true
+ },
+ "transductive_test_features_used": true,
+ "trained_on": "157 labeled train rows + 78 val rows (235); 1,014 unlabeled train rows as pool",
+ "n_seeds": 5,
+ "scores": {
+  "A": {
+   "sample_f1": 0.9123262411347517,
+   "sample_f1_se": 0.014988074229357155,
+   "macro_f1": 0.8385510455056984,
+   "f1_Safety": 0.9130271683141341,
+   "f1_Funding": 0.815836120401338,
+   "f1_Efficacy": 0.8966041463017269,
+   "f1_Recruitment": 0.967630881757864,
+   "f1_Other": 0.5996569107534292,
+   "sample_f1_rep_sd": 0.0056924239871466885,
+   "n": 235,
+   "R": 10,
+   "macro_f1_se": 0.028820374716025686,
+   "f1_Safety_se": 0.03631120002323566,
+   "f1_Funding_se": 0.08348688327759486,
+   "f1_Efficacy_se": 0.039257236534434914,
+   "f1_Recruitment_se": 0.009574359410162811,
+   "f1_Other_se": 0.06275199272043974
+  },
+  "B": {
+   "sample_f1": 0.8457442474891956,
+   "sample_f1_se": 0.029988765402571223,
+   "macro_f1": 0.7841452247133752,
+   "f1_Safety": 0.8941254618673974,
+   "f1_Funding": 0.6520660265400798,
+   "f1_Efficacy": 0.8653315679134944,
+   "f1_Recruitment": 0.9269802914747413,
+   "f1_Other": 0.5822227757711628,
+   "n": 97.66666666666667,
+   "macro_f1_se": 0.034496749695074304,
+   "f1_Safety_se": 0.05817139550966858,
+   "f1_Funding_se": 0.11277221408784881,
+   "f1_Efficacy_se": 0.05767528879344236,
+   "f1_Recruitment_se": 0.028625094671523788,
+   "f1_Other_se": 0.09358223951550536
+  },
+  "B2005": {
+   "sample_f1": 0.8435374149659864,
+   "sample_f1_se": 0.030561552654571326,
+   "macro_f1": 0.7771303493254713,
+   "f1_Safety": 0.9142857142857143,
+   "f1_Funding": 0.6153846153846154,
+   "f1_Efficacy": 0.8333333333333334,
+   "f1_Recruitment": 0.9512195121951219,
+   "f1_Other": 0.5714285714285714,
+   "n": 98,
+   "macro_f1_se": 0.03785515730321275,
+   "f1_Safety_se": 0.05032373891455021,
+   "f1_Funding_se": 0.11911530984506878,
+   "f1_Efficacy_se": 0.059847784880538664,
+   "f1_Recruitment_se": 0.025511626014926292,
+   "f1_Other_se": 0.09434242615913993,
+   "cut": 2005
+  },
+  "C": {
+   "sample_f1": 0.8653846153846154,
+   "sample_f1_se": 0.03205128205128205,
+   "macro_f1": 0.6890566438392526,
+   "f1_Safety": 0.8888888888888888,
+   "f1_Funding": 0.4,
+   "f1_Efficacy": 0.7692307692307693,
+   "f1_Recruitment": 0.9523809523809523,
+   "f1_Other": 0.43478260869565216,
+   "n": 78,
+   "macro_f1_se": 0.06716502050537833,
+   "f1_Safety_se": 0.08903294970420575,
+   "f1_Funding_se": 0.29836719463998834,
+   "f1_Efficacy_se": 0.10172204624474378,
+   "f1_Recruitment_se": 0.02100225308077764,
+   "f1_Other_se": 0.13994093790563308
+  },
+  "J": 0.8790352443119737,
+  "J_se": 0.016762819120565407,
+  "protocol_note": "A: 5-fold x 10 repeats over 235 labeled rows (CV seed 1, not the search seed); B: mean of chrono cuts 2004/2005/2006; C: 157 labeled-train -> 78 val. Post-selection numbers are optimistic: see results/search/nested for the honest estimate.",
+  "description": "ENS[lrC=0.1 + lda T + direct-cs] SLD100 expf1",
+  "why": "research-report ensemble: LR + LDA + C&S (graph), SLD(a=100) + exp-F1; hedge with a different mechanism",
+  "complexity": 3.75,
+  "unsupervised_label_filling": true,
+  "selection_entry": null
+ },
+ "test_pred_label_rate": {
+  "Safety": 0.141,
+  "Funding": 0.019,
+  "Efficacy": 0.115,
+  "Recruitment": 0.615,
+  "Other": 0.301
+ },
+ "test_pred_cardinality": 1.1923076923076923,
+ "test_pred_combo_counts": {
+  "Other": 41,
+  "Recruitment": 146,
+  "Recruitment+Other": 39,
+  "Efficacy": 28,
+  "Efficacy+Other": 6,
+  "Efficacy+Recruitment+Other": 2,
+  "Funding+Other": 1,
+  "Funding+Recruitment": 5,
+  "Safety": 39,
+  "Safety+Other": 5
+ },
+ "sld_test_prior_labels": {
+  "Safety": 0.137,
+  "Funding": 0.034,
+  "Efficacy": 0.113,
+  "Recruitment": 0.589,
+  "Other": 0.26
+ },
+ "train_prior_labels": {
+  "Safety": 0.106,
+  "Funding": 0.051,
+  "Efficacy": 0.132,
+  "Recruitment": 0.643,
+  "Other": 0.149
+ },
+ "temperature": [
+  [
+   1.0,
+   3.3290175017377797,
+   1.0
+  ],
+  [
+   1.0,
+   3.282708183291443,
+   1.0
+  ],
+  [
+   1.0,
+   3.396199181424586,
+   1.0
+  ],
+  [
+   1.0,
+   3.3773904363937977,
+   1.0
+  ],
+  [
+   1.0,
+   3.2477667078971812,
+   1.0
+  ]
+ ]
+}

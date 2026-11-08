@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "case_prediction_rescores": 840,
+  "protected_source_hashes": 167,
+  "exact_historical_fold_controls": 320,
+  "DBSCAN_tri_aggregate_controls": [
+    {
+      "model": "dbscan",
+      "metric": "grouped_train",
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "model": "dbscan",
+      "metric": "grouped_pooled",
+      "delta": 0.0
+    },
+    {
+      "model": "dbscan",
+      "metric": "validation",
+      "delta": 0.0
+    },
+    {
+      "model": "dbscan",
+      "metric": "chronology98",
+      "delta": 0.0
+    },
+    {
+      "model": "tri_training",
+      "metric": "grouped_train",
+      "delta": 0.0
+    },
+    {
+      "model": "tri_training",
+      "metric": "grouped_pooled",
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "model": "tri_training",
+      "metric": "validation",
+      "delta": 0.0
+    },
+    {
+      "model": "tri_training",
+      "metric": "chronology98",
+      "delta": 0.0
+    }
+  ],
+  "current_leader_aggregate_controls": 16,
+  "complete_OOF_repeats": 26,
+  "supplied_anchored_A_B_C_J_reproduced": true,
+  "zero_test_input_access": true,
+  "strict_and_canonical_group_boundaries": true,
+  "study_outputs": "Predictions are matched benchmark controls, not new submission artifacts."
+}
