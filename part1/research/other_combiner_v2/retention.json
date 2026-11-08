@@ -1,0 +1,42 @@
+{
+  "kept_comparisons": [
+    "parent",
+    "pseudo_lda_quarter",
+    "combiner_other_only"
+  ],
+  "reasons": {
+    "parent": "Scored .89935 reference.",
+    "pseudo_lda_quarter": "Useful matched diagnosis: recovers more Recruitment+Other but regresses chronology.",
+    "combiner_other_only": "Useful matched diagnosis: tied CV averages with a small chronology improvement."
+  },
+  "full_checks_before_cleanup": {
+    "passed": true,
+    "outer_cases": 84,
+    "inner_folds": 252,
+    "metric_rows_checked": 189,
+    "independent_sample_and_per_label_arithmetic": true,
+    "parent_four_headlines_reproduced": true,
+    "ids_groups_and_nested_coverage_checked": true,
+    "all_learned_heads_reconstructed": true,
+    "all_source_hashes_unchanged": true,
+    "protocol_sha256": "d239bc7babd071dfe2af96ec806780a83c2b786a13327d16afd5b8d503703e6b"
+  },
+  "discard": "84 per-case npz and 84 fit-audit JSON files, containing unsuccessful inner predictions/features and per-case fitted coefficients; per-case coefficient aggregate removed. Source, compact metrics for all seven variants, negative results and reproduction code retained.",
+  "retained_sha256": {
+    "results/summary/qualification.json": "85ed7501027403eaa31c8daa38a20cc059399b66312f9d113c14b758e61e8217",
+    "results/summary/per_label_scores.csv": "d9f17c45cf372c8e70221ec0709ee22ee20fb965abfe764d8663ea041ef7b7f7",
+    "results/summary/repeat_scores.csv": "1847d3be338112ff110258ec62d196dcf8c33a836242deed1055bb500c8b012e",
+    "results/summary/paired_summary.csv": "b07e2c4fe4ffe2121ce8381eca0b328fb56252ddebc75de3e4b7a2fd75a6896d",
+    "results/summary/discrimination_diagnostic.csv": "f5435e87cd628141f2fbcdc05ea0cb82fd64590eb2d9a4de17f6abe822b85440",
+    "results/summary/coefficient_summary.json": "cabeb16eac504c50b5d7136a0095e89e9a0cf8b6ea524c7b58976cf6ce9292f5",
+    "results/summary/fit_summary.json": "5adbe41a332d1f0aa08f8d5b839f639b5538f392e0538c6faf84f0786185bd31",
+    "results/summary/overview.csv": "954c58b4d168c35d35fb33b7995c038eedc284857d42a1b21532971ef0641ef9",
+    "results/summary/pseudo_variants_equivalence.json": "02f3d1ad6a5e32761c8be281297045d927ba503d17f39f682305a0231abb5154",
+    "results/summary/paired_repeat_deltas.csv": "00d85c44512f87a247447cd943af0b84efbf402bb8a9eb46aff61c1343e355ef",
+    "results/summary/verification.json": "dce0934d72988bb495ba1243f8b82665e638ce873e9843a84dc9d4d064bf627c",
+    "results/summary/change_diagnostic.csv": "421e1230c02cded018b97ed462187e18b651b5b9e70e37b647c422181b4e6bdf",
+    "results/summary/other_subgroups.csv": "d77cf8622aeaf9380c22dffe7cd863222ff4ae5f0ba81c4cf8738ee5f672aaa0",
+    "results/retained_comparison.npz": "1d157f776a850e352f4b5f455c359402020321c5a2e274147ec7d9e824ead068"
+  },
+  "retained_check_note": "Full 189-record verification passed before pruning. The first cleanup callback resolved an unrelated historical helper with the same module name; explicit file-path loading fixed the helper resolution, and the correct retained 63-record check passed after pruning. No model, predictions or metric summaries changed."
+}

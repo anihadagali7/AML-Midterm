@@ -1,0 +1,7 @@
+{
+  "previous": "../other_combiner_v1",
+  "reason": "pandas read-only label array",
+  "change": "to_numpy(int,copy=True) when preparing Cand2 hidden-label context",
+  "completed_candidate_packets_before_change": 0,
+  "recipe_settings_changed": false
+}

@@ -1,0 +1,6 @@
+{
+  "kept": "Original failed runner, model source, frozen protocol and failure note.",
+  "shared_inputs_and_dependencies": "Byte-identical source modules and input files are retained under ../other_combiner_v2; restore these under v1 to reproduce the pandas failure. Protocol hashes describe the initial complete folder.",
+  "completed_candidate_outputs": 0,
+  "removed_redundant_files": 40
+}
