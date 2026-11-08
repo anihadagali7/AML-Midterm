@@ -1,0 +1,33 @@
+{
+  "status": "Prepared for manual exploratory submission; not uploaded; score unknown",
+  "recipe": "blend_diverse30",
+  "csv": "submissions/candidates/anchored80_diverse_kernel20_trainval235.csv",
+  "sha256": "97f311bc840843876e42f203a9c47d350e5c9df6a0ceb2c84ff4e35e6f79ff54",
+  "rows": 312,
+  "gold": 235,
+  "masked": 1014,
+  "source_benchmark_commit": "735ad7a3",
+  "source_benchmark_protocol_sha256": "d157adf2d7b354e3a6c8d29d7aca32a236eb328e2338032f98694f1b5237a4c6",
+  "export_protocol_sha256": "7bad405925e6a9c82ebc597ec5cc4ed2b77e9d9699276f3f859cc2ec1c7c8dfa",
+  "prediction_sha256": "4dfc2cbc99bd3a7baa3475d77a6c418fe51e26a50d1de80d78b1746b44c91696",
+  "fit_audit_sha256": "5648984fc4179fc6d570f16d1df99efdbc6477903971ebe57e8c06f9f33e7a23",
+  "test_inputs_used_for_fit": false,
+  "learned_combiner_used": false,
+  "parent_scored_csv_reproduced": true,
+  "parent_max_score_error": 0.0,
+  "changed_label_sets": 12,
+  "added_labels": {
+    "Safety": 4,
+    "Funding": 0,
+    "Efficacy": 2,
+    "Recruitment": 2,
+    "Other": 0
+  },
+  "removed_labels": {
+    "Safety": 0,
+    "Funding": 0,
+    "Efficacy": 0,
+    "Recruitment": 3,
+    "Other": 4
+  }
+}

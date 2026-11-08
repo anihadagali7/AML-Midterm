@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows": 312,
+  "csv_sha256": "97f311bc840843876e42f203a9c47d350e5c9df6a0ceb2c84ff4e35e6f79ff54",
+  "nested_boundaries_checked": 12,
+  "full235_fit_checked": true,
+  "exact_parent_scored_csv_reproduced": true,
+  "models_fitted": 0,
+  "uploaded": false
+}

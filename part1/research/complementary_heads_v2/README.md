@@ -58,3 +58,5 @@ Only the classical fixed-anchor adaptation was evaluated. The user's complete si
 ```sh
 python part1/research/complementary_heads_v2/evidence.py verify
 ```
+
+After this benchmark was completed, the user explicitly authorized an exploratory manual trial and chose the fixed blend. The separate [full235 export](../complementary_submission_v1/README.md) prepares `blend_diverse30` without changing this study's frozen settings or failed advancement status. Its Kaggle score is unknown.
